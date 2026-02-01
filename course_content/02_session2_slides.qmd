@@ -1,0 +1,186 @@
+---
+title: "Session 2: The Workbench (Project Architecture)"
+subtitle: "From Chat to Architecture"
+author: "Prompt Engineering 2-Day Course"
+date: today
+format:
+  revealjs:
+    theme: [default, assets/sdaia.scss]
+    logo: assets/sdaia.svg
+    transition: slide
+    transition-speed: default
+    background-transition: fade
+    footer: "Prompt Engineering 2-Day Course"
+    slide-number: true
+    controls: true
+    controls-tutorial: true
+    progress: true
+    hash: true
+    center-title-slide: true
+    title-slide-attributes:
+      data-background-image: "assets/anim.svg"
+      data-background-opacity: "0.15"
+      data-background-size: "cover"
+---
+
+# Introduction {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00ae8d)"}
+
+## The Goal
+
+::: {.r-fit-text}
+Move **Context** from Chat (Ephemeral) to Project (Permanent).
+:::
+
+. . .
+
+- **Chat:** Disposable, one-off tasks.
+- **Projects:** Durable, repeatable workflows.
+
+# Part 1: The "Manager" Philosophy {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #625d9c)"}
+
+## The Brain vs. The Conversation
+
+:::: {.columns}
+::: {.column width="50%"}
+### 💭 Chat Window
+**Short-term Memory (RAM)**
+
+- Resets every time
+- Good for executing tasks
+- "I have to explain myself again..."
+:::
+
+::: {.column width="50%"}
+### 🧠 Project
+**Long-term Memory (Hard Drive)**
+
+- Persists forever
+- Stores "Role" & "Context"
+- "It already knows me."
+:::
+::::
+
+## The Manager's Mindset
+
+> "I don't want to type 'I am a Senior Analyst' every day. I don't want to upload my strategy doc every time. I want the AI to just **KNOW** it."
+
+. . .
+
+::: {.callout-tip}
+## The Objective
+We are building a digital "Department" where the AI already knows the job description.
+:::
+
+# Part 2: Building the Brain {.sdaia-dark background-gradient="linear-gradient(135deg, #00ae8d, #1C355E)"}
+
+## Instructor Demo: "Skill Planner"
+
+**Scenario:** Building a reusable Career Coach.
+
+**Steps:**
+
+1.  **Create Project:** Name it "Skill Acquisition Planner".
+2.  **Upload Context (The 'C'):**
+    *   Upload `personal_profile.md` (5 years of background).
+3.  **Set Custom Instructions (The 'R'):**
+    *   Paste the Role Prompts: "You are a professional development coach..."
+
+::: {.notes}
+Highlight that uploading the profile once saves typing it 100 times.
+:::
+
+## The Result (Example Output) {.scrollable}
+
+::: {.callout-note appearance="simple"}
+**Input Prompt:** "Create a learning plan for me."
+:::
+
+```markdown
+# PYTHON LEARNING PLAN FOR MONTH-END CLOSE AUTOMATION
+**For:** Ahmed Ali, Senior Financial Analyst  
+**Goal:** Automate SAP data consolidation using Python & pandas  
+**Timeline:** 12 weeks (Feb–Apr 2026)  
+**Time Commitment:** 3 hours/week (mid-month); pause during month-end crunch
+
+---
+
+## OVERVIEW
+This plan takes you from "Python novice" → "able to replace your Excel consolidation macro with a Python script" in 12 weeks. Every lesson maps to a real task in your month-end close workflow.
+
+---
+
+## PHASE 1: FOUNDATIONS (Weeks 1–3)
+**Goal:** Build Python syntax confidence + understand pandas basics  
+**Time:** ~9 hours total (3 hrs/week)
+
+### Week 1: Python Essentials for Finance People
+**Why this order:** You know VBA already, so we'll use that as a bridge.
+
+**Learn:**
+- Variables, data types (int, float, string, datetime)
+- Lists and dictionaries
+- Basic loops and conditions
+- Why Python > Excel for data work
+
+**Cookbook Resources:**
+- **Free:** DataCamp's "Introduction to Python" (2 hours) OR Codecademy's Python course
+- **Paid:** LinkedIn Learning "Python for Finance" (intro section)
+- **Your actual work:** Export a small SAP GL data sample; follow along with the course using YOUR data, not dummy examples
+
+**Practical Task:**
+Write 3 simple scripts that mimic what you do manually:
+1. Read a CSV file (your GL export)
+2. Add a calculated column (e.g., variance = actual – budget)
+3. Print results to console
+
+**Time:** 3 hours
+```
+
+# Part 3: One-Sentence Delegation {.sdaia-dark background-gradient="linear-gradient(135deg, #e96852, #1C355E)"}
+
+## The Payoff
+
+:::: {.columns}
+::: {.column width="50%"}
+**The Prompt**
+
+> "Create a learning plan for me."
+
+. . .
+
+*Simple. Vague. Short.*
+:::
+
+::: {.column width="50%"}
+**The Result**
+
+> A perfect, tailored plan.
+
+. . .
+
+*Detailed. Specific. Accurate.*
+:::
+::::
+
+. . .
+
+::: {.callout-important}
+## Key Takeaway
+We moved the complexity from the **Prompt** to the **Project**.
+:::
+
+## 🛠️ Student Activity {.sdaia-dark background-color="#00ae8d"}
+
+### Build Your First Project
+
+1.  **Create a Project** for YOUR business process.
+2.  **Upload Context:**
+    *   Your sanitized Strategy Doc, Policy, or Previous Report.
+3.  **Set Instructions (Role):**
+    *   Who is the AI? (e.g., "Senior Compliance Officer", "Procurement Specialist").
+4.  **Test It:**
+    *   Give it a one-sentence instruction.
+
+::: {.notes}
+Walk around. Ensure they are uploading files to the Project Knowledge, not just the chat.
+:::

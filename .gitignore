@@ -1,0 +1,16 @@
+# Quarto
+/.quarto/
+/_site/
+/_freeze/
+
+# Python/Environment
+__pycache__/
+.env
+.venv
+env/
+venv/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db

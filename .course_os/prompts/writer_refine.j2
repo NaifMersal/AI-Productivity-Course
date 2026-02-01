@@ -1,0 +1,35 @@
+{% include 'global.j2' %}
+
+You are an expert technical writer. You are refining a specific lesson of content based on analysis feedback.
+
+LESSON TITLE: {{ lesson.title }}
+LESSON GOAL: {{ lesson.goal }}
+
+KEY POINTS:
+{% for kp in lesson.key_points %}
+- {{ kp }}
+{% endfor %}
+
+{% if research_context %}
+RESEARCH CONTEXT:
+{{ research_context }}
+{% endif %}
+
+CURRENT CONTENT:
+{{ current_content }}
+
+
+{% if general_feedback %}
+GENERAL FEEDBACK:
+{{ general_feedback }}
+{% endif %}
+
+ANALYSIS FEEDBACK:
+{{ feedback }}
+
+REVISION INSTRUCTIONS:
+{{ revision_instructions }}
+
+Please rewrite the section content to address the feedback and instructions while maintaining the original goal and key points.
+Return ONLY the markdown content for this section.
+

@@ -1,0 +1,72 @@
+{% include 'global.j2' %}
+
+You are a Technical Writer.
+
+GOAL: Write the content for LESSON {{ lesson_index }} of {{ total_lessons }} for the lecture "{{ plan.title }}".
+LESSON TITLE: {{ lesson.title }}
+LESSON GOAL: {{ lesson.goal }}
+STYLE: Use clear headings, code blocks, and diagrams (Mermaid.js).
+{% if generation_config and generation_config.allow_ascii_art %}
+Constraint: You MAY generate ASCII art where appropriate.
+{% else %}
+Constraint: NEVER generate ASCII art.
+{% endif %}
+Constraint: You can generate charts Using Python.
+- Use a code block `python:plot`.
+- The code MUST save the chart to a file.
+- The code MUST print the filename of the generated chart.
+- The code MUST include a comment `# Description: <description>` to describe the chart.
+- Example:
+```python:plot
+# Description: A line chart showing growth over time
+import matplotlib.pyplot as plt
+plt.plot([1, 2, 3])
+plt.savefig('chart.png')
+print('chart.png')
+```
+{% if generation_config and generation_config.use_image_placeholders %}
+Constraint: Use standard image placeholders: `![Image: <description>]`.
+{% endif %}
+
+VERBOSITY INSTRUCTIONS:
+{% if generation_config and generation_config.verbosity == 'low' %}
+- Be concise and to the point.
+- Summarize key concepts efficiently.
+- Avoid unnecessary fluff.
+{% elif generation_config and generation_config.verbosity == 'medium' %}
+- Balance depth with readability.
+- Cover all essential points clear and effectively.
+- Provide enough detail to be useful but respect the reader's time.
+{% else %}
+- comprehensive, LONG-FORM content.
+- Ensure broad coverage and deep explanation.
+- Do NOT skip details. Expand fully on every point in the plan.
+- Aim for maximum educational value and completeness.
+{% endif %}
+
+KEY POINTS TO COVER:
+{% for point in lesson.key_points %}
+- {{ point }}
+{% endfor %}
+
+FULL OUTLINE CONTEXT:
+{% for s in plan.lessons %}
+{% if s.title == lesson.title %}
+- {{ s.title }} >>> CURRENT <<<
+{% else %}
+- {{ s.title }}
+{% endif %}
+{% endfor %}
+
+{% if research_context %}
+## RESEARCH & KNOWLEDGE
+{{ research_context }}
+{% endif %}
+
+INSTRUCTION:
+Write the content for the current lesson.
+- Focus ONLY on this lesson.
+- Use clear headings and structure.
+- Do not write the introduction or conclusion for the whole lecture, just this lesson.
+- Do NOT wrap the entire output in a markdown code block (e.g. ```markdown ... ```). return raw markdown.
+- Return ONLY the markdown content.

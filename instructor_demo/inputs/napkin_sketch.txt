@@ -1,0 +1,6 @@
+
+Hi,
+
+I need to automate my monthly reports for the CFO. I'm drowning in Excel hell every month end. Can you teach me enough Python to just automate this one thing? I don't want to be a programmer.
+
+Thanks.
