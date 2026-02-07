@@ -39,8 +39,8 @@ New users often fall into one of three traps that limit their success or create 
 ### **Trap 3: Over-trusting (The "Hallucination" Trap)**
 *   **The Mistake:** Assuming the AI is always right or AI is a **Knowledge Database**.
     *   *Reality:* AI is a **Statistical Prediction Machine**. It does not "know" answers; it simply predicts the next likely word. It is designed to be *plausible*, not necessarily *truthful*.
-    *   **Example:** If you type *"The cat sat on the..."*, the AI predicts *"mat"* (90%), *"chair"* (5%), or *"floor"* (4%). It doesn't *know* there is a cat; it just knows that "mat" statistically follows "sat on the".
-    *   **Hallucination Example:** If you ask *"Who was the first King of Mars?"*, the AI might predict *"Elon Musk"* or *"John Carter"* because those names statistically appear near "Mars" in texts. It answers the question by predicting the next words, even though the fact doesn't exist.
+    *   **Example:** If you type *"The capital of Saudi Arabia is..."*, the AI predicts *"Riyadh"* because that is the statistically highest probability.
+    *   **Hallucination Example:** If you ask *"What does Article 214 of the new Saudi Investment Law say about foreign ownership?"* (assuming the law is brand new or the article doesn't exist), the AI might confidently invent a paragraph about "100% ownership rights" because those words often appear near "Investment Law." It answers by predicting authoritative-sounding legal text, even if the clause is fiction.
 *   **The Fix:** **Trust but Verify.**
     *   Use AI for *logic, structure, and drafting*.
     *   Be skeptical of AI for *facts, dates, and math* (unless using a tool like Wolfram or Code Interpreter/Analysis).
@@ -87,13 +87,13 @@ You can still use AI for sensitive tasks if you **sanitize** the data first. Rem
 
 **Instructions:** Identify whether the following prompts are **SAFE** or **RISKY**.
 
-1.  **Scenario:** "Here is a list of all client emails. Please format them into a CSV."
-    *   **Verdict:** [RISKY] (Uploading PII)
-2.  **Scenario:** "I have a budget of 375,000 SAR for a marketing campaign. Give me a breakdown of how to spend it effectively."
-    *   **Verdict:** [SAFE] (General numbers, no specific sensitive context)
-3.  **Scenario:** "Summarize this public annual report from Aramco."
-    *   **Verdict:** [SAFE] (Publicly available information)
-4.  **Scenario:** "Draft a termination letter for Faris leveraging this specific performance data: [Pastes entire disciplinary record]."
-    *   **Verdict:** [RISKY] (Highly sensitive, specific HR data)
-5.  **Scenario:** "Draft a termination letter template for an employee who has missed targets due to attendance."
-    *   **Verdict:** [SAFE] (Requesting a template/structure, not processing specific personal data)
+1.  **Scenario:** "Summarize the key risks in these meeting notes: [Pastes internal minutes from a Strategy Meeting discussing unannounced merger targets]."
+    *   **Verdict:** [RISKY] (Material Non-Public Information - MNPI).
+2.  **Scenario:** "I have a budget of 375,000 SAR for a National Day campaign. Suggest a media mix (Social, OOH, Influencers)."
+    *   **Verdict:** [SAFE] (General numbers, no specific sensitive context or trade secrets).
+3.  **Scenario:** "Summarize this PDF: [Uploaded the publicly released Q3 Investor Presentation from STC]."
+    *   **Verdict:** [SAFE] (Publicly available information).
+4.  **Scenario:** "Draft a termination letter for Employee #4421 who has missed targets due to unexcused absences (dates attached). Do not use their name."
+    *   **Verdict:** [SAFE] (If specific PII is removed and only the *behavior* is described, it is generally safe for drafting structure, but verify company policy).
+5.  **Scenario:** "Analyze this spreadsheet of 5,000 customer transaction records (Names, IBANs, Transaction IDs) to find spending patterns."
+    *   **Verdict:** [RISKY] (Massive PII leak. Never upload raw customer databases).

@@ -14,6 +14,13 @@ But next week, when you have an update about **Solar Panel Supply Chains**, what
 
 **The Solution:**
 Instead of typing the Context every time (Local Context), we bake it into the AI's "Brain" (Global Context).
+
+| Feature | Local Context (Chat) | Global Context (Gem/Project) |
+| :--- | :--- | :--- |
+| **Memory** | Forgets when chat closes | Remembers forever |
+| **Best For** | One-off questions | Recurring roles/tasks |
+| **Setup** | None | One-time setup (5 mins) |
+
 *   **Google Gemini:** Called "Gems".
 *   **ChatGPT/Claude:** Called "Projects" or "GPTs".
 
@@ -106,3 +113,9 @@ Where do you fix this?
 *   B) In the "System Instructions" (Global Context) of the Gem.
 *   C) You can't fix it.
 *   **Answer:** B. Fix it once in the "Brain," and it's fixed forever.
+
+**Question 2:**
+You need to write a quick, one-off email to a vendor you will never speak to again. Do you build a Gem for this?
+*   A) Yes, always build a Gem.
+*   B) No, use the normal Chat window (Short-term memory).
+*   **Answer:** B. Gems are for **recurring** tasks (Global Context). Chats are for **one-off** tasks (Local Context). Don't over-engineer!

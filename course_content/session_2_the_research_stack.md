@@ -30,6 +30,7 @@ The **Trust Layer** is the practice of forcing the AI to use *your* sources as i
 
 **The Golden Rule:** *If it doesn't have a citation, it didn't happen.*
 
+
 ---
 
 ## 3. Tools in Action: Building Your Stack
@@ -51,12 +52,12 @@ We will look at three tools that solve the "Research Problem" in different ways.
     *   *Prompt:* "Find the top 5 complaints mentioned in tourist reviews for 5-star hotels in Riyadh during 'Riyadh Season' 2024. Group them by category (Service, Traffic, Price). Cite the specific TripAdvisor or Booking.com review source."
     *   *Result:* "30% of reviews cited 'Valet Parking Delays' (Source: Booking.com, Review #42)." — *Actionable intel, not generic fluff.*
 
-### **C. Project Knowledge (Claude Projects / Gemini Gems)**
+### **C. Project Knowledge (Claude Projects / ChatGPT Team)**
 *   **Best For:** Long-term project memory.
 *   **The Magic:** You upload the "Project Charter" once, and it remembers it forever.
 *   **Saudi Scenario (Fintech/Startups):**
     *   *Context:* You are launching a new 'Buy Now, Pay Later' (BNPL) app.
-    *   *Setup:* Upload the "SAMA BNPL Guidelines" ([Download PDF](https://sama.gov.sa/en-US/RulesInstructions/FinanceRules/BNPL_rules_en.pdf)) and your "Product One-Pager" into a Project.
+    *   *Setup:* Upload the "SAMA BNPL Guidelines" ([Download PDF](https://sama.gov.sa/en-US/RulesInstructions/FinanceRules/BNPL_rules_en.pdf)) and your "Product One-Pager" into a **Claude Project** or **Custom GPT**.
     *   *Prompt:* "Does our proposed 'Late Fee' structure (Section 4 of Product Doc) comply with Article 7 of the SAMA Guidelines? Highlight specific risk clauses."
 
 ---
@@ -75,6 +76,7 @@ Old Way: Read frantically, highlight, panic-type. (Time: 2 hours).
 3.  **The "Interrogation" Prompt:**
     > "Act as a Strategy Consultant for a Saudi Energy company.
     > Based *strictly* on this report, outline the 3 biggest opportunities and 3 biggest risks for our market.
+    > If the information is not in the report, state 'Not found in source' DO NOT hallucinate.
     > Include page references for every point.
     > Conclude with a 'Recommended Stance' for the board meeting."
 4.  **The Polish:** Verify the citations. (Click the little numbers to check the source text).
@@ -82,6 +84,8 @@ Old Way: Read frantically, highlight, panic-type. (Time: 2 hours).
 
 > **Quick Instruction for the Activity:**
 > For the **"10-Minute Research Task"**, download the **IEA Hydrogen Report** linked above. It is over 100 pages. Uploading this to NotebookLM and asking it to "Find the 3 biggest risks for a Saudi Energy company" will perfectly demonstrate the power of the tool, as it will have to synthesize data from multiple chapters instantly.
+
+> **Instructor Note:** Ensure you have the PDFs downloaded locally before the session starts to avoid internet bandwidth issues.
 
 ---
 

@@ -45,8 +45,8 @@
 
 #### **Session 5: The Assembly Line (SOPs & Workflows) (15:15 – 16:30)**
 
-*   **The Problem:** The "Copy-Paste Friction." Taking data from one tool, formatting it, and putting it into another is a waste of human intelligence.
-*   **The "Pepsi Challenge":** Try to get AI to "clean up this mess" *without* an SOP first. Watch it fail (bad formatting/hallucinations). Then run the SOP. *Lesson: "Without a process, AI is just guessing. With an SOP, it's an employee."*
+*   **The Reality:** "Garbage In, Garbage Out." We all know that vague inputs lead to messy outputs.
+*   **The Friction:** The "Copy-Paste Loop"—taking bad AI data, fixing it manually, and trying again is a waste of time.
 *   **The Solution:** **Markdown SOPs**. Teaching the AI a step-by-step Standard Operating Procedure.
 *   **Student Activity:** The "Expense Report" Nightmare.
     *   *Scenario:* It's the end of the month. You have a crumpled photo of a dinner receipt, a forwarded airline confirmation email, and a sporadic list of taxi rides in WhatsApp.

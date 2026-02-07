@@ -7,15 +7,21 @@
 ## 1. The Framework: R-C-T-C
 
 Most people fail with AI because they **ask** instead of **delegate**.
-*   *Bad:* "Write an email about the meeting." (The AI has to guess: Who is it for? What is the tone? What matters?)
-*   *Good:* The **R-C-T-C** Framework.
+
+| The "Lazy" Prompt (Bad) | The "Delegation" Prompt (Good) |
+| :--- | :--- |
+| "Write an email about the meeting." | **Act as** a Project Manager. **Given** these notes, **Draft** a recap email. **Ensure** you use bullet points. |
+| *Result:* The AI guesses. It might be too casual, too long, or miss the point. | *Result:* The AI knows exactly *who* it is, *what* it knows, *what* to do, and *how* to do it. |
 
 To get a perfect result, you must provide the four pillars of delegation:
 
 1.  **Role:** Who is the AI? (A Senior Consultant? A Python Expert? An Angry Customer?)
 2.  **Context:** What is the background? (The efficient "brain dump" we learned in Session 2).
 3.  **Task:** What exactly do you need? (Be specific: "Draft a 200-word email").
-4.  **Constraint:** What are the rules? (No jargon, use bullet points, strict formatting).
+4.  **Constraint:** What are the rules?
+    *   *Formatting:* "Use a markdown table", "Use bold headers".
+    *   *Tone:* "Professional but warm", "Strictly factual".
+    *   *Behavior:* "If the notes are unclear, ask me clarifying questions." (**Crucial for accuracy**).
 
 > **Formula:**
 > "Act as a **[Role]**. Given the following **[Context]**, complete this **[Task]**. Follow these **[Constraints]**."
@@ -40,10 +46,10 @@ Instead of panic-writing, I built a reliable system using R-C-T-C.
 *   **Context:** I just had a call with a VIP client, Lisa. We are negotiating a large contract. I have pasted my raw, messy notes below.
 *   **Task:** Draft a professional follow-up email to Lisa summarizing our conversation and confirming next steps.
 *   **Constraint:**
-    *   Tone: Warm but professional.
-    *   Structure: Use clear headers (Summary, Decisions, Next Steps).
-    *   **Crucial:** Highlight the "Action Items" with deadlines in **bold**.
-    *   Include a personal note at the end about her personal news.
+    *   **Tone:** Warm but professional.
+    *   **Structure:** Use clear headers (Summary, Decisions, Next Steps).
+    *   **Action Items:** Highlight deadlines in **bold**.
+    *   **Clarifications:** If any critical details are missing from my notes, add a section at the bottom called "Clarifications Needed."
 
 ### **The Result (AI Output):**
 > **Subject:** Recap & Next Steps: Acme Retail & [Your Company] Partnership
@@ -62,7 +68,8 @@ Instead of panic-writing, I built a reliable system using R-C-T-C.
 > **Next Steps**
 > *   **Action:** I will send the updated proposal with the discount applied by **this Friday**.
 >
-> Please let me know if I missed anything.
+> **Clarifications Needed (Internal):**
+> *   *You mentioned "send a card" for her son's graduation. Do you want me to draft a separate note for that, or include it here? (Included a brief PS below for now).*
 >
 > Best,
 > [My Name]
@@ -82,7 +89,7 @@ You need to send an urgent update to your **Director**, "Dr. Ahmed," who is head
 Write an R-C-T-C prompt to generate a **"Red Flag Report"** email.
 
 **The "Messy" Context (Copy/Paste this into your prompt):**
-> *Just finished the IEA report. Big issues. Europe is moving slower than expected on hydrogen imports. This affects our export strategy for 2030. We might need to look at Asian markets (Japan/Korea) instead. Also, technology costs are dropping, which is good for us. Need to tell Dr. Ahmed we should pause the "Euro-Deal" for 2 weeks until we see the new policy. Meeting is in 1 hour. Keep it short.*
+> *Just finished the IEA report. Big issues. Europe is moving slower than expected on hydrogen imports. This affects our export strategy for 2030. We might need to look at Asian markets (Japan/Korea) instead. Also, tech costs are dropping... actually, wait, electrolyzer costs are UP by 10% due to inflation. Good for us? No, bad for us. Need to tell Dr. Ahmed we should pause the "Euro-Deal" for 2 weeks until we see the new policy. Meeting is in 1 hour. Keep it short.*
 
 **Step-by-Step Task:**
 
@@ -94,8 +101,8 @@ Write an R-C-T-C prompt to generate a **"Red Flag Report"** email.
     *   **Constraint:**
         *   Tone: Direct, urgent, executive-level (Saudi professional standard).
         *   Format: Bullet points for "Key Risks" and "Recommendations."
-        *   Length: Under 150 words (she is reading this on her phone).
-3.  **Execute & Refine:** Run the prompt. Does it sound like *you*? (e.g., polite opening: "Dear Dr. Ahmed," vs. direct: "Urgent Update").
+        *   **Pro Tip:** Add the "Clarifications Needed" constraint. The context has a contradiction ("Good for us? No, bad for us")—see if the AI catches it!
+3.  **Execute & Refine:** Run the prompt. Does it sound like *you*?
 
 ---
 
@@ -116,3 +123,9 @@ In the "Lisa" example, why was the **Constraint** ("Include a personal note") so
 *   B) It builds the relationship and proves you were listening.
 *   C) The AI needs more words to process.
 *   **Answer:** B. AI is great at data, but *relationships* are human. You must delegate the "human touch" explicitly.
+
+---
+
+## 5. Coming Up Next: Building the "Brain"
+Right now, you are typing this R-C-T-C prompt manually every time.
+**In Session 4**, we will turn this prompt into a permanent **"Button"** (Gem/GPT) so you never have to type it again. You will correct it once, save it forever.
