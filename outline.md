@@ -6,27 +6,6 @@
 
 ---
 
-## 📧 PRE-COURSE (1 Week Before)
-
-### Email to Participants:
-* **Account Setup:**
-  * Create account on preferred platform (Claude, ChatGPT, or Gemini - Pro/Teams/Advanced recommended)
-  * Login credentials verification
-* **Pre-Work Assignment:**
-  * Identify your business process using the template provided
-  * **CRITICAL: Data Sanitization**
-    * Redact ANY sensitive personal data (names, SSNs) or secrets (API keys, passwords) from your documents.
-    * Replace real names with placeholders (e.g., "Client A", "Technician 1").
-  * Gather 1-2 *sanitized* relevant documents (strategy docs, policy files, sample reports)
-  * Complete the "Process Identification Worksheet"
-* **Tech Check:** 
-  * Login to your AI Platform
-  * Create a test Project (Claude/ChatGPT) or Gem (Gemini)
-  * Upload a test document
-
-
----
-
 ## DAY 1: Foundations & Architecture
 
 ### Opening: The Setup & Safety First (45 Minutes)
@@ -34,18 +13,23 @@
 **Session Objectives:**
 * Understand the professional shift AI brings
 * Draw inspiration from real-world success stories
-* Understand the "delegation" vs. "chatbot" mindset
+* **Live Tech Check:** Verification of accounts and platform access
+* **Data Prep:** Identify and sanitize real-world business documents
 * **CRITICAL:** Apply Data Safety & Anonymization standards
 * Set up Project (Claude/ChatGPT) or Gem (Gemini) workspace
-* Upload foundational documents
 
 **Content:**
 * **09:00:** Welcome & The "Why": How AI is reshaping work
 * **09:10:** Inspiration: Real-world Success Stories
-* **09:20:** Data Safety Breakdown (The "Newspaper Test")
-  * *Rule:* "Don't put anything in the chat you wouldn't want on the front page of the newspaper."
-  * *Action:* Anonymize documents BEFORE uploading. (Replace names with "User ID", redact financials).
-* **09:35:** **The "Manager's Mindset" Reveal**
+* **09:20:** **Tech & Data Setup (The "Workbench")**
+  * **Account Check:** Login to Claude/ChatGPT/Gemini.
+  * **Project Setup:** Create a new Project or Gem.
+  * **Process Identification:** Identify a specific business process to automate.
+  * **Data Sanitization (CRITICAL):**
+    * Redact sensitive data (names, SSNs, credentials).
+    * Replace real names with placeholders ("Client A").
+    * *Action:* Upload *sanitized* foundational documents.
+* **09:40:** **The "Manager's Mindset" Reveal**
   * *Instructor:* "We aren't learning to 'chat' with a bot. We are learning to **delegate** to a junior PMP who works at 1,000x speed. I will build a structured Project Management Office (PMO) workflow live. You will build your own process alongside me."
 
 ---
@@ -162,8 +146,6 @@
 
 *   **Part 4: Day 1 Wrap (15 min)**
     *   **Homework:** "Identify one 'Edge Case' that might break your SOP."
-
-
 
 
 ---
