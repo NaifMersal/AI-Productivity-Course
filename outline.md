@@ -10,7 +10,7 @@
 
 ### Email to Participants:
 * **Account Setup:**
-  * Create Claude account (Pro/Teams - specify requirement)
+  * Create account on preferred platform (Claude, ChatGPT, or Gemini - Pro/Teams/Advanced recommended)
   * Login credentials verification
 * **Pre-Work Assignment:**
   * Identify your business process using the template provided
@@ -20,8 +20,8 @@
   * Gather 1-2 *sanitized* relevant documents (strategy docs, policy files, sample reports)
   * Complete the "Process Identification Worksheet"
 * **Tech Check:** 
-  * Login to Claude
-  * Create a test Project
+  * Login to your AI Platform
+  * Create a test Project (Claude/ChatGPT) or Gem (Gemini)
   * Upload a test document
 
 
@@ -29,20 +29,23 @@
 
 ## DAY 1: Foundations & Architecture
 
-### Opening: The Setup & Safety First (30 Minutes)
+### Opening: The Setup & Safety First (45 Minutes)
 
 **Session Objectives:**
+* Understand the professional shift AI brings
+* Draw inspiration from real-world success stories
 * Understand the "delegation" vs. "chatbot" mindset
 * **CRITICAL:** Apply Data Safety & Anonymization standards
-* Set up Claude Projects workspace
+* Set up Project (Claude/ChatGPT) or Gem (Gemini) workspace
 * Upload foundational documents
 
 **Content:**
-* **09:00:** Welcome & Logistics
-* **09:05: Data Safety Breakdown (The "Newspaper Test")**
+* **09:00:** Welcome & The "Why": How AI is reshaping work
+* **09:10:** Inspiration: Real-world Success Stories
+* **09:20:** Data Safety Breakdown (The "Newspaper Test")
   * *Rule:* "Don't put anything in the chat you wouldn't want on the front page of the newspaper."
   * *Action:* Anonymize documents BEFORE uploading. (Replace names with "User ID", redact financials).
-* **09:15:** **The "Manager's Mindset" Reveal**
+* **09:35:** **The "Manager's Mindset" Reveal**
   * *Instructor:* "We aren't learning to 'chat' with a bot. We are learning to **delegate** to a junior PMP who works at 1,000x speed. I will build a structured Project Management Office (PMO) workflow live. You will build your own process alongside me."
 
 ---
@@ -85,22 +88,22 @@
 ### Session 2: The Workbench (Project Architecture) (1.25 Hours)
 
 **Learning Objectives:**
-*   Architect a "Claude Project" to act as a permanent context engine
-*   Distinguish **Global RCTC** (Project Instructions) from **Local RCTC** (Chat)
+*   Architect a "Project" (Claude/ChatGPT) or "Gem" (Gemini) to act as a permanent context engine
+*   Distinguish **Global RCTC** (Project/Gem Instructions) from **Local RCTC** (Chat)
 *   Automate your context to achieve "One-Sentence Delegation"
 
 **Content:**
 *   **Part 1: The "Lazy Manager" Philosophy (15 min)**
     *   *Concept:* DRY (Don't Repeat Yourself).
     *   **Short-Term Memory (Context Window):** This is the active "conversation" (The Chat). It resets every time.
-    *   **Long-Term Memory (Project Knowledge):** This is the "Brain" (The Project). It persists forever.
-    *   *Goal:* Move Context from the "Chat Window" (Ephemeral) to the "Project" (Permanent).
+    *   **Long-Term Memory (Project/Gem Knowledge):** This is the "Brain" (The Project/Gem). It persists forever.
+    *   *Goal:* Move Context from the "Chat Window" (Ephemeral) to the "Project/Gem" (Permanent).
 *   **Part 2: Building the Brain (45 min)**
-    *   **Instructor Demo:** Setting up the "Global Role" & Uploading "Global Context".
-    *   **Student Build:** Create the Project for *their* specific business process.
+    *   **Instructor Demo:** Setting up the "Global Role" & Uploading "Global Context" (Project/Gem).
+    *   **Student Build:** Create the Project/Gem for *their* specific business process.
 *   **Part 3: One-Sentence Delegation (15 min)**
-    *   **Execution:** Run a *short, simple* prompt inside the Project.
-    *   *Result:* High-quality output because the Project handled the complexity.
+    *   **Execution:** Run a *short, simple* prompt inside the Project/Gem.
+    *   *Result:* High-quality output because the Project/Gem handled the complexity.
 
 **Reflection:** "I just saved myself 5 minutes of typing for every future request."
 
@@ -138,96 +141,78 @@
 
 **Learning Objectives:**
 *   Convert manual "Chains" into a formal Standard Operating Procedure (SOP)
-*   "Install" the SOP into the Project Brain (The Process Lobe)
+*   "Install" the SOP into the Project/Gem Brain (The Process Lobe)
 *   Execute complex workflows with "One-Sentence Delegation"
 
 **Content:**
 *   **Part 1: The "Playbook" (30 min)**
     *   *Concept:* The SOP is the written version of the Manual Chain we just built.
-    *   **Instructor Demo:** Uploading `skill_sop.md` to the Project.
+    *   **Instructor Demo:** Uploading `skill_sop.md` to the Project/Gem.
 *   **Part 2: Automated Execution (45 min)**
     *   **The Payoff:** Run `Execute the entire Skill Acquisition Process for Ahmed.`
-    *   *Result:* The AI follows the SOP automatically because it's in the Project Knowledge.
+    *   *Result:* The AI follows the SOP automatically because it's in the Project/Gem Knowledge.
     *   **Teaching Point:** "In Session 3, YOU were the glue. In Session 4, THE SOP is the glue. You moved yourself out of the loop."
 *   **Part 3: Peer Logic Check (15 min)**
     *   Swap SOPs. "If I used this map, where would I get lost?"
+
+* **Packaging as a Skill (Claude Only) (20 min)**
+  * *Concept:* Skills = Reusable, Shareable Prompt Templates
+  * *Demo:* Instructor packages the "Skill Planner" workflow as a Skill:
+    * **Skill name and description** - Clear, action-oriented naming
+
 *   **Part 4: Day 1 Wrap (15 min)**
     *   **Homework:** "Identify one 'Edge Case' that might break your SOP."
 
 
 
----
-
-## DAY 2: Engineering & Operations
-
-### Session 5A: Day 1 Debrief (15 Minutes) 
-
-**Content:**
-* Rapid-fire: What worked? What edge case did you find?
-* **Update Project Knowledge:**
-  * "Take your SOP from yesterday (Session 3) and upload it to your Claude Project."
-  * This commits your "Process Map" to the AI's long-term memory.
-* *Goal:* Transition immediately to "making it bulletproof".
 
 ---
 
-### Session 5B: Operational Readiness - Skill Packaging (1.75 Hours)
+## DAY 2: Research, Analysis & Personal Productivity
+
+### Session 5: Research & Information Processing (1.5 Hours)
 
 **Learning Objectives:**
-* Package workflows as Claude Skills for team deployment
-* Implement Version Control for Prompts
-* Run end-to-end stress test of the full workflow
+*   Synthesize large volumes of information without losing nuance
+*   Extract structured insights from unstructured documents
+*   **CRITICAL:** Fact-checking and preventing "hallucinations" in professional work
 
 **Content:**
-* **Phase 1: Packaging as a Claude Skill (45 min)**
-  * *Concept:* Skills = Reusable, Shareable Prompt Templates
-  * *Demo:* Instructor packages the "Skill Planner" workflow as a Skill:
-    * **Skill name and description** - Clear, action-oriented naming
-    * **System prompt** - Combining R-C-T-C elements into a single instruction set
-    * **Input variables** - What the user provides (e.g., `[SKILL]`, `[TIMEFRAME]`)
-    * **Output format expectations** - Structured deliverables
-  * *Activity:* Students create a Skill from their Step 1 prompt:
-    * Define the Skill's purpose and trigger
-    * Set up the system instructions
-    * Test with a colleague
-
-* **Phase 2: Version Control (30 min)**
-  * *Concept:* Prompts are Code. They degrade if changed randomly.
-  * **Create `prompts.md` Library:**
-    * Create a new artifact (file) in your Project called `prompts.md`.
-    * Store your "Golden Prompts" here with version numbers.
-  * **Version Log:**
-    * V1.0 - Initial Draft
-    * V1.1 - Added Safety Check (Date)
-    * V2.0 - Packaged as Skill (Date)
-
-* **Phase 3: Final Logic Check (30 min)**
-  * Run the full process end-to-end with the packaged Skill + Safety Checks.
-  * Ensure the "Handoffs" still work.
-
-*Transition:* "Your Skill works. But does it work SAFELY? Let's add the guardrails."
+*   **Part 1: The AI Researcher (30 min)**
+    *   *Concept:* Moving beyond "TL;DR".
+    *   **Techniques:**
+        *   *Summarization Constraints:* "Summarize for an executive vs. a technical peer."
+        *   *Extraction:* "Pull all dates, dollar amounts, and deliverables into a table."
+*   **Part 2: Competitive Intelligence & Market Research (30 min)**
+    *   **Activity:** Upload competitor reports/whitepapers.
+    *   *Prompt:* "Compare the pricing model of Company A vs Company B based on these files."
+*   **Part 3: The Truth Check (30 min)**
+    *   **Risk:** AI can sound confident while being wrong.
+    *   **Protocol:** Sourcing and Verification. "Cite your sources."
+    *   *Hands-on:* Verify a generated claim against the source document.
 
 ---
 
-### ☕ Break (15 Minutes)
+### Session 6: Data & Analysis (Without Code!) (2 Hours)
 
----
-
-### Session 6: Advanced Risk & Compliance (1.25 Hours) 
 **Learning Objectives:**
-* Create safety checklists for organizational use
-* Identify "Red Zones" where AI is forbidden
+*   Analyze spreadsheet data using plain English exploration
+*   Design effective surveys and questionnaires
+*   Interpret trends and basic financial scenarios
 
 **Content:**
-* **Part 1: Data Safety Review (15 min)**
-  * Recap functionality of masking/anonymization from Day 1.
-* **Part 2: Organizational Safety & SOPs (45 min)**
-  * **Activity:** Students add a "Safety Check" step to their SOP.
-  * *Discussion:* How to enforce this in a team?
-* **Part 3: When NOT to Use AI (15 min)**
-  * Legal documents, Final hiring decisions, Non-consensual data.
-
-**Reflection:** "Where is the 'Human in the Loop' in your process?"
+*   **Part 1: Conversational Data Analysis (45 min)**
+    *   *Concept:* "Interviewing" your data.
+    *   **Activity:** Upload a dummy sales/budget spreadsheet.
+    *   *Prompts:* "What is the fastest growing category?", "Show me the trend for Q3."
+    *   *Visuals:* Asking for charts/graphs to visualize the text data.
+*   **Part 2: Structure for Input (Survey Design) (45 min)**
+    *   *Concept:* Better questions yield better data.
+    *   **Activity:** "Create a 5-question employee engagement survey."
+    *   *Critique:* Ask AI to critique its own survey for bias.
+*   **Part 3: Budget & Scenario Planning (30 min)**
+    *   **Activity:** "What if" scenarios.
+    *   *Prompt:* "If we reduce marketing spend by 10%, how does that impact the total budget?"
 
 ---
 
@@ -235,40 +220,26 @@
 
 ---
 
-### Session 7: Optimization & Advanced Engineering (1.75 Hours)
+### Session 7: Personal Productivity Systems (2 Hours)
 
 **Learning Objectives:**
-* Use Advanced Prompting (CoT, Few-Shot) to optimize packaged Skills
-* Implement "Parallel Option Generation" (Tree of Thought) for better decisions
-* Refine prompt logic for higher quality outputs
+*   Build a "Personal Automation Toolkit"
+*   Configure "Custom Instructions" to reduce repetitive prompting
+*   Integrate AI into daily workflows (Email, Calendar logic, etc.)
 
 **Content:**
-* **Part 1: The "Power Tools" (30 min)**
-  * *Concept:* When R-C-T-C isn't enough.
-  * **One-Shot / Few-Shot:**
-    * *Problem:* AI tone is generic.
-    * *Fix:* Give it 2 examples of *perfect* past reports. "Write like this."
-  * **Chain of Thought (CoT):**
-    * *Problem:* AI makes logic errors.
-    * *Fix:* "Think step by step." (Force the model to show its work).
-  * **Parallel Option Generation / Tree of Thought (ToT):**
-    * *Problem:* AI gives one answer, but you need to compare options.
-    * *Fix:* "Generate 3 approaches, then recommend one."
-
-* **Practice Exercises (10-15 min each):**
-  * **Few-Shot Mini-Lab:** "Here's a generic scenario. Apply few-shot prompting to match this tone/style."
-  * **CoT Challenge:** "Debug this flawed logic prompt using step-by-step reasoning."
-  * **ToT Exercise:** "Generate 3 parallel options for this decision point, then compare."
-
-* **Part 2: Student Optimization (45 min)**
-  * "Take your packaged Skill from Session 5B. Apply one of these power tools to make it better."
-  * **A/B Test / Quality Rubric:** Compare V1 (Packaged Skill) vs V2 (Optimized).
-    * Score both versions (1-5) on:
-      * **Accuracy:** Facts/Data correct?
-      * **Format:** Followed constraints?
-      * **Tone:** Professional/On-brand?
-      * **Completeness:** Missed any inputs?
-  * **Update `prompts.md`:** Record V2.0 with the optimization applied
+*   **Part 1: Custom Instructions (45 min)**
+    *   *Concept:* Setting the "Default Persona" for your AI.
+    *   **Activity:** Write your "User Profile" (Role, Tone, Format Preferences).
+*   **Part 2: The Prompt Library (45 min)**
+    *   *Concept:* Saved "Recipes" for recurring tasks.
+    *   **Hands-on:** Create a personal "Prompt Library" (in Excel/Notion) for:
+        *   Email polishing
+        *   Meeting summaries
+        *   Project kickoffs
+*   **Part 3: Time-Saving Automations (30 min)**
+    *   *Idea Gen:* Brainstorming where AI fits in *your* specific workday.
+    *   *Workflow Mapping:* "I get an email -> AI summarizes it -> I draft reply."
 
 ---
 
@@ -279,40 +250,35 @@
 ### Session 8: Solution Showcase (1.5 Hours)
 
 **Learning Objectives:**
-* Present completed workflows to peers
-* Identify cross-applicable techniques
-* Calculate ROI and efficiency gains
+*   Demonstrate "Time Back" (ROI) from personal productivity improvements
+*   Share "Superpower" workflows with the cohort
 
 **Content:**
-* **Part 1: The ROI Calculation (20 min)**
-  * **Before/After Analysis Template:** 
-    * Time spent manual vs Time spent AI-assisted.
-    * *Example:* "3.5 hours savings per role x 10 roles = 35 hours saved."
-* **Part 2: Gallery Walk (60 min)**
-  * **Solution Showcase:** 3-5 different business processes (Finance, HR, Ops, IT).
-  * Everyone learns: "If THAT can be automated, what about THIS?"
-  * Instructor ties back: "I showed you a skill planner. You built procurement workflows, report generators. The METHOD is identical."
-* **Part 3: Management Highlights & Closing (10 min)**
-  * Instructor highlights: "The Strategist," "The Efficiency Win," etc.
+*   **Part 1: ROI Calculation (20 min)**
+    *   **Worksheet:** Estimate hours saved per week using Day 2 techniques.
+    *   *Formula:* (Task Frequency x Duration) x % AI Efficiency = Time Saved.
+*   **Part 2: Gallery Walk (60 min)**
+    *   **Showcase:** Participants present "The one thing I will automate on Monday."
+    *   *Feedback:* Peer review and instructor refinement.
+*   **Part 3: Closing (10 min)**
+    *   Final thoughts: "You are now the Chief AI Officer of your own desk."
 
 ### Closing & Certification (30 Minutes)
 
-* **Certification Requirements:**
-  * ✓ Functional Workflow (SOP + Prompts)
-  * ✓ Safety Checklist
-  * ✓ Completed Claude Skill
-  * ✓ ROI Analysis
-* **Final Q&A**
+*   **Certification Requirements:**
+    *   ✓ Completed "Custom Instructions" Profile
+    *   ✓ Personal Prompt Library (Min. 3 Prompts)
+    *   ✓ ROI Analysis Worksheet
+*   **Final Q&A**
 
 ---
 
 ## 📦 TAKE-HOME MATERIALS
-1. **Completed Claude Skill** (shareable with team)
-2. **Safety Checklist**
-3. **Troubleshooting Guide**
-4. **Version Control Template**
-5. **Rollout Plan**
-6. **ROI Analysis Worksheet**
+1.  **Personal Prompt Library Template**
+2.  **Data Safety Checklist (Updated)**
+3.  **"How to Talk to Data" Cheatsheet**
+4.  **ROI Calculation Worksheet**
+5.  **Course Certificate**
 
 ---
 
@@ -336,7 +302,7 @@
 **Day 1:** 9:00 AM - 5:00 PM (8 hours)
 * Focus: Architecture, Process Mapping, Basic Implementation.
 
-**Day 2:** 9:00 AM - 5:30 PM (8.5 hours)
-* Focus: Optimization, Safety, Operations, ROI.
+**Day 2:** 9:00 AM - 5:45 PM (8.75 hours)
+* Focus: Research & Analysis, Personal Productivity, ROI.
 
-**Total:** 16.5 Contact Hours.
+**Total:** 16.75 Contact Hours.
