@@ -46,12 +46,8 @@ You have **3 chaotic inputs** that you need to turn into a clean Excel table for
 
 ### **The 3 Chaotic Inputs:**
 
-**Input 1: The Crumpled Receipt (Photo/OCR)**
-> *Restaurant: Najd Village, Riyadh.*
-> *Items: Kabsa (Chicken) x2, Jareesh, Vimto.*
-> *Total: SAR 145.00*
-> *Date: 25/10/2025*
-> *VAT Number: 300012345600003*
+**Input 1: The Crumpled Receipt (Image)**
+![Shawarma House Receipt](../assets/Shawarma_House_Receipt.png)
 
 **Input 2: The Forwarded Email (Flynas)**
 > *From: Flynas Reservations*
@@ -107,7 +103,7 @@ If you run the SOP above, the AI ignores the "chatty" parts of the WhatsApp note
 
 | Date | Vendor | Category | Amount (SAR) | VAT (15%) | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2025-10-25 | Najd Village | Meals | 145.00 | 18.91 | Team Dinner |
+| 2026-01-29 | Shawarma House | Meals | 23.00 | 3.00 | Big Shawarma Chicken, Meat Shawerma Sajia |
 | 2025-10-26 | Flynas | Travel | 1,250.00 | 163.04 | Flight RUH-JED |
 | 2025-10-26 | Careem | Transport | 45.00 | 5.87 | Hotel to Ministry |
 | 2025-10-26 | Uber | Transport | 105.00 | 13.70 | Ministry to Airport |
