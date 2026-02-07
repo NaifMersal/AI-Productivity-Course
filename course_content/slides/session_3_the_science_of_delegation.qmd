@@ -1,0 +1,371 @@
+---
+title: "The Science of Delegation"
+subtitle: "Session 3 — The R-C-T-C Framework"
+date: today
+format:
+  revealjs:
+    theme: [default, assets/sdaia.scss]
+    logo: assets/sdaia.svg
+    transition: slide
+    transition-speed: default
+    background-transition: fade
+    title-slide-attributes:
+      data-background-image: "assets/anim.svg"
+      data-background-opacity: "0.15"
+      data-background-size: "cover"
+---
+
+# First-Shot Perfection {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Stop asking. Start delegating.
+
+## From Research to Action {auto-animate=true}
+
+::: {data-id="approach" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+Session 2: We mastered **Input** (The Trust Layer)
+:::
+
+. . .
+
+::: {data-id="approach" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+Session 3: We master **Output** (The Delegation Layer)
+:::
+
+## The Paradigm Shift {auto-animate=true}
+
+::: {data-id="shift"}
+Stop **Chatting**. Start **Delegating**.
+:::
+
+. . .
+
+::: {style="margin-top: 1em;"}
+You don't need a "chat bot". You need a **Direct Report**.
+:::
+
+. . .
+
+::: {data-id="example" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; margin-top: 1em;"}
+**Don't Ask:** "Write an email about the meeting."
+
+**Delegate:** "Act as a Project Manager. Draft a recap email using these notes. Highlight action items."
+:::
+
+# R-C-T-C {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The 4 Pillars of Delegation
+
+## The Framework {auto-animate=true}
+
+::: {data-id="rctc" style="font-size: 1.1em;"}
+
+::: {.fragment .fade-in}
+**R — Role:** Who is the AI?
+:::
+::: {.fragment .fade-in}
+**C — Context:** What does it know?
+:::
+::: {.fragment .fade-in}
+**T — Task:** What exactly should it do?
+:::
+::: {.fragment .fade-in}
+**C — Constraint:** What are the rules?
+:::
+
+:::
+
+## R — Role {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**Who** should the AI be?
+:::
+
+. . .
+
+::: {.incremental}
+- A Senior Consultant
+- A Python Expert
+- An Angry Customer
+- A Legal Compliance Officer
+:::
+
+. . .
+
+The role shapes the AI's vocabulary, perspective, and priorities.
+
+## C — Context {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**What** does it know?
+:::
+
+. . .
+
+The "brain dump" from Session 2 — paste your notes, upload your docs, give it the raw material.
+
+. . .
+
+::: {.callout-tip}
+## Remember
+No context = hallucination. Context comes **before** content.
+:::
+
+## T — Task {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**What** exactly should it do?
+:::
+
+. . .
+
+Be specific. Not "write something about the project" — instead:
+
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+"Draft a **200-word** executive summary email to the Director."
+:::
+:::
+
+## C — Constraint {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**What** are the rules?
+:::
+
+. . .
+
+::: {.incremental}
+- **Format:** "Use a markdown table", "Use bold headers"
+- **Tone:** "Professional but warm", "Strictly factual"
+- **Behavior:** "If notes are unclear, ask me clarifying questions"
+:::
+
+## The Formula
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.05em;"}
+"Act as a **[Role]**. Given the following **[Context]**, complete this **[Task]**. Follow these **[Constraints]**."
+:::
+
+# Live Demo {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
+
+The "Client Relationship Assistant"
+
+## The Story {auto-animate=true}
+
+::: {data-id="story"}
+I nearly lost an **$18,000 deal** because of seven words in a notebook:
+<br>
+<span style="font-size:0.6em">*(Based on [I Built My First Custom Gemini Gem in 10 Minutes](https://medium.com/@ConnectAIbiz/i-built-my-first-custom-gemini-gem-in-10-minutes-bdb52e522e1b))*</span>
+:::
+
+. . .
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; font-style: italic;"}
+"Follow up on the pricing stuff soon."
+:::
+
+. . .
+
+3 days later — the client asked if I had **forgotten her**.
+
+## The Messy Notes {auto-animate=true}
+
+::: {data-id="story" style="font-size: 0.85em;"}
+This is what I actually had:
+:::
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.8em; font-style: italic;"}
+"Meeting with Lisa from Acme Retail. Tuesday. She's worried about lead times. Wants to know if we can ship by Q3. Pricing: she needs a 10% discount if they buy bulk. Mentioned her kid's graduation is next week (send a card?). Action: send updated proposal by Friday."
+:::
+
+## The R-C-T-C Prompt {auto-animate=true}
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.8em;"}
+**Role:** Act as my Senior Client Relationship Manager.
+
+**Context:** I just had a call with a VIP client, Lisa. We are negotiating a large contract. Here are my raw notes: *[paste notes]*
+
+**Task:** Draft a professional follow-up email summarizing our conversation and confirming next steps.
+
+**Constraints:**
+
+- **Tone:** Warm but professional
+- **Structure:** Use headers — Summary, Decisions, Next Steps
+- **Action items:** Highlight deadlines in **bold**
+- **Clarifications:** If details are missing, add a "Clarifications Needed" section
+:::
+
+## The Result {auto-animate=true}
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.75em;"}
+**Subject:** Recap & Next Steps: Acme Retail Partnership
+
+Hi Lisa,
+
+Great speaking with you on Tuesday.
+
+**Summary** — We discussed timeline concerns and pricing for the bulk order.
+
+**Decisions**
+
+- **Timeline:** Targeting Q3 delivery to align with your launch
+- **Pricing:** 10% discount approved for bulk order
+
+**Next Steps**
+
+- Updated proposal with discount by **this Friday**
+
+**Clarifications Needed (Internal):**
+
+- *You mentioned "send a card" for her son's graduation — draft a separate note?*
+
+*P.S. Best of luck with your son's graduation next week!*
+:::
+
+## What Made It Work
+
+::: {.incremental}
+- **Role** → knew to write as a relationship manager, not a robot
+- **Context** → messy notes were enough — AI extracted the structure
+- **Task** → specific deliverable: a follow-up email
+- **Constraint** → caught the personal detail (graduation card)
+:::
+
+# Activity {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+The "Project Lead" Simulation
+
+## Your Scenario {auto-animate=true}
+
+::: {data-id="activity"}
+You are a **Project Lead** at a major Saudi entity (PIF / Ministry).
+:::
+
+You've read the [Green Hydrogen Report](https://www.iea.org/reports/global-hydrogen-review-2024) from Session 2. Now you need to send an urgent **"Red Flag Report"** email to **Dr. Ahmed** before his Ministry of Energy meeting.
+
+## Your Messy Notes {auto-animate=true}
+
+::: {data-id="activity" style="font-size: 0.85em;"}
+Copy/paste this into your prompt:
+:::
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-style: italic; font-size: 0.8em;"}
+"Just finished the IEA report. Big issues. Europe is moving slower than expected on hydrogen imports. This affects our export strategy for 2030. We might need to look at Asian markets (Japan/Korea) instead. Also, tech costs are dropping... actually, wait, electrolyzer costs are UP by 10% due to inflation. Good for us? No, bad for us. Need to tell Dr. Ahmed we should pause the 'Euro-Deal' for 2 weeks until we see the new policy. Meeting is in 1 hour. Keep it short."
+:::
+
+## Your Task {auto-animate=true}
+
+::: {data-id="activity" style="font-size: 0.85em;"}
+Build an R-C-T-C prompt:
+:::
+
+::: {.incremental}
+1. **Role** — Who should the AI be? (Strategic Advisor? Crisis Manager?)
+2. **Context** — Paste the messy notes
+3. **Task** — Draft a high-priority email to Dr. Ahmed
+4. **Constraints:**
+   - Tone: Direct, urgent, executive-level
+   - Format: Bullet points for "Key Risks" and "Recommendations"
+   - Add a "Clarifications Needed" section
+:::
+
+## The Hidden Test
+
+::: {.callout-note}
+## Did the AI catch it?
+The notes contain a contradiction: *"tech costs are dropping... actually, wait, electrolyzer costs are UP."*
+
+If you added the **Clarifications** constraint, the AI should flag this.
+:::
+
+. . .
+
+**Run it. Refine it. Does it sound like *you*?**
+
+# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Test Your Understanding
+
+## Quiz — Question 1
+
+You prompt: *"Write a marketing post about our new coffee shop in Riyadh."*
+
+Which R-C-T-C elements are **missing**?
+
+. . .
+
+::: {.fragment .fade-in}
+:::: {.columns}
+::: {.column width="25%"}
+::: {style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
+**R** — Role
+
+Who is writing?
+:::
+:::
+::: {.column width="25%"}
+::: {style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
+**C** — Context
+
+What's special about the shop?
+:::
+:::
+::: {.column width="25%"}
+::: {style="background: #00C9A7; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
+**T** — Task
+
+Partially there
+:::
+:::
+::: {.column width="25%"}
+::: {style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
+**C** — Constraint
+
+Platform? Length? Tone?
+:::
+:::
+::::
+:::
+
+## Quiz — Question 2
+
+In the "Lisa" example, why was the **personal note constraint** important?
+
+. . .
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**Not because** it makes the email longer or gives AI more words.
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Because** it builds the relationship and proves you were listening. The "human touch" must be **delegated explicitly**.
+:::
+:::
+:::
+::::
+
+## Coming Up Next {.sdaia-dark background-color="#1C355E"}
+
+Right now, you type R-C-T-C manually every time.
+
+. . .
+
+::: {style="font-size: 1.3em; text-align: center;"}
+In **Session 4**, we turn this prompt into a permanent **"Button"** — write it once, use it forever.
+:::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **Delegate, don't ask** — brief the AI like a direct report
+2. **R-C-T-C** — Role, Context, Task, Constraint
+3. **Constraints are the secret weapon** — tone, format, and "ask me if unclear"
+4. **Messy notes are fine** — AI extracts the structure, you verify the substance
+5. **First-shot perfection** is achievable — if you provide all 4 pillars
+:::

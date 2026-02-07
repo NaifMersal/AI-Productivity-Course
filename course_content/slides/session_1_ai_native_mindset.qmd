@@ -1,7 +1,6 @@
 ---
 title: "The AI-Native Mindset"
-subtitle: "Session 1 · From Search to Strategic Partner"
-author: "SDAIA Academy"
+subtitle: "Session 1"
 date: today
 format:
   revealjs:
@@ -10,427 +9,339 @@ format:
     transition: slide
     transition-speed: default
     background-transition: fade
-    slide-number: true
-    controls: true
-    controls-tutorial: true
-    progress: true
-    hash: true
-    center-title-slide: true
     title-slide-attributes:
       data-background-image: "assets/anim.svg"
       data-background-opacity: "0.15"
       data-background-size: "cover"
 ---
 
-<!--
-PLAN:
-1. Section 1 (The Paradigm Shift) -> 4 Slides
-   - Slide 1: Concept (Search vs Partner intro) -> Concept Slide
-   - Slide 2: Comparison Table (Search vs Partner) -> Table Slide
-   - Slide 3: Example Scenario (Search prompt) -> Example Slide
-   - Slide 4: Example Scenario (Partner prompt) -> Example Slide
-2. Section 2 (The 3 Traps of AI) -> 5 Slides
-   - Slide 1: Intro (List of 3 traps) -> Concept Slide
-   - Slide 2: Trap 1 details -> Concept Slide
-   - Slide 3: Trap 2 details -> Concept Slide
-   - Slide 4: Trap 3 details (Hallucination) -> Concept Slide
-   - Slide 5: Trust but Verify -> Concept Slide
-3. Section 3 (Safety First) -> 3 Slides
-   - Slide 1: The Newspaper Test -> Concept Slide
-   - Slide 2: High-Risk Data -> Concept Slide
-   - Slide 3: Activity: Apply the Newspaper Test -> Activity Slide
-4. Section 4 (Data Hygiene) -> 3 Slides
-   - Slide 1: Sanitization Intro -> Concept Slide
-   - Slide 2: Sanitization Techniques -> Concept Slide
-   - Slide 3: Example Before/After -> Example Slide
-5. Section 5 (Micro-Check Quiz) -> 6 Slides
-   - Slides 1-5: One scenario per slide -> Quiz Slides
-   - Slide 6: Recap / Transition -> Transition Slide
--->
+# The Paradigm Shift {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
-# The Paradigm Shift {.splash}
-
-::: {.r-fit-text}
 From "Search" to "Partner"
-:::
 
-::: {.notes}
-Open big. Ask the room: "How many of you used ChatGPT or another AI tool today?" Most hands go up. Follow with: "And how many of you used it the same way you'd use Google — type a question, get an answer, close the tab?" Most hands stay up. That's our starting point. Today we're going to fundamentally change how you think about AI — from a search engine to a strategic partner on your team.
-:::
+## How Most People Use AI {auto-animate=true}
 
-## Most People Use AI Like Google
-
-::: {.incremental}
-- **Search Mindset:** Type a question → get a link → done
-- **Partner Mindset:** Have a conversation → give context → iterate
-- The difference? **10x better output**
-- Think of AI as a brilliant but junior colleague
-- It needs context, instruction, and feedback to deliver
-:::
-
-::: {.notes}
-Set up the core metaphor here. Say: "Imagine you just hired a smart intern from a top university. Would you walk up to them and say 'Write an email'? No — you'd tell them who it's for, what the situation is, what tone to use. AI works exactly the same way." Let this analogy land before moving to the comparison table.
-:::
-
-## Search vs. Partner: Side by Side {.smaller}
-
-| Dimension | Search Mindset 🔍 | Partner Mindset 🤝 |
-|-----------|-------------------|---------------------|
-| **Interaction** | Query & Response | Conversation & Iteration |
-| **Context** | Minimal ("Excel formula for VLOOKUP") | Rich ("I have two sheets, one with sales data...") |
-| **Goal** | Information Retrieval | Problem Solving & Creation |
-| **Analogy** | A Library | A Research Assistant |
-
-::: {.notes}
-Walk through the table row by row. Linger on "Interaction" — Google gives you a blue link; AI gives you a draft. That requires a conversation, not just a query. On "Context," use the VLOOKUP example: a Google search works fine for that. But when you need to draft a strategy document, you need to give context. Ask: "Which column surprised you the most?"
-:::
-
-## The Search Prompt
-
-**What most people type:**
-
-> "Write an email to a client about a delay."
-
-. . .
-
-**What the AI produces:**
-
-> A generic, robotic email that sounds fake and needs to be rewritten from scratch.
-
-::: {.notes}
-Read the search prompt out loud in a flat, rushed voice. Then show the result description. Ask: "Has anyone gotten output like this and just deleted it?" You'll get knowing nods. Say: "The problem isn't the AI — it's the instruction. Let me show you the fix."
-:::
-
-## The Partner Prompt in Action
-
-::: {data-id="prompt" style="background: #1C355E; color: #FFFFFF; padding: 1.5em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
-"I need to write a difficult email to **Client X** explaining that their project is delayed by **3 days** because we are waiting for final internal approval. The tone should be **respectful but confident**. Here is the project context..."
+::: {data-id="mindset" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+Ask a question → Get an answer
 :::
 
 . . .
 
-::: {.callout-tip}
-## The Result
-A tailored, professional draft that sounds like **you** wrote it — ready to send with minor edits.
-:::
+This is the **Search Mindset** — and it wastes 90% of AI's value.
 
-::: {.notes}
-Read the partner prompt slowly and confidently. Emphasize the bold parts. Then reveal the result. Ask: "See the difference? Same AI, same tool, completely different output." This is the core lesson of the entire course: the quality of your output is determined by the quality of your input. Transition: "So if the partner mindset is so powerful, why doesn't everyone use it? Because of three common traps."
-:::
+## The Partner Mindset {auto-animate=true}
 
-# The 3 Traps of AI {.splash}
-
-::: {.r-fit-text}
-What Holds People Back
-:::
-
-::: {.notes}
-Transition: "Now that we know where we're going — the Partner Mindset — let's talk about what stops most people from getting there. I call these the three traps, and I guarantee at least one of them will feel personally familiar." Smile. This section is about building awareness, not judgment.
-:::
-
-## Three Traps That Limit Your AI Results
-
-::: {.incremental}
-1. **Trap 1:** Treating AI like Search
-2. **Trap 2:** Treating AI like a Person
-3. **Trap 3:** Over-trusting the output (Hallucinations)
+::: {data-id="mindset" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+Give context → Iterate together → Get real results
 :::
 
 . . .
 
-> The fix for all three? **Context, Clarity, and Verification.**
+> Treat the AI like a smart intern who needs **context**, **instruction**, and **feedback**.
 
-::: {.notes}
-Show the three traps incrementally. After all three appear, ask: "Which one do you think is the most common in your team?" Take a few answers. Then say: "Let's break each one down — and more importantly, let's talk about how to fix them."
-:::
-
-## Trap 1: Treating AI Like Search
-
-**The Mistake:**
-
-Asking for a single fact or a quick answer without giving the "why"
-
-. . .
-
-**The Fix:**
-
-::: {.callout-tip}
-## Always Provide Context
-Tell the AI **who** you are, **what** you are trying to achieve, and **why** it matters.
-:::
-
-::: {.notes}
-Give a concrete example: "If you ask 'What's a good KPI for my team?' the AI has no idea if you run marketing, finance, or IT. But if you say 'I manage a 12-person IT helpdesk team and I need KPIs for our quarterly review focused on response time and satisfaction,' you get a usable answer." Ask: "Who has fallen for this one?" Wait for hands. Reassure them: "Even experts do this when they're in a rush."
-:::
-
-## Trap 2: Treating AI Like a Person
-
-**The Mistake:**
-
-Being overly polite — "Please," "Thank you," "I'm sorry to bother you"
-
-. . .
-
-**The Fix:**
-
-::: {.callout-tip}
-## Be Direct and Professional
-The AI doesn't have feelings — it has instructions. Clear commands beat politeness every time.
-:::
-
-::: {.notes}
-This usually gets a laugh. Say: "I've seen prompts that start with 'Dear AI, I hope you're having a good day.' The AI doesn't have days. What it does have is an instruction parser — the clearer your instruction, the better the output." Clarify: "I'm not saying be rude. I'm saying be efficient. Validating the AI's output is more useful than thanking it."
-:::
-
-## Trap 3: The Hallucination Trap
-
-**The Mistake:** Assuming AI is a knowledge database
-
-**The Reality:** AI is a **Statistical Prediction Machine**
-
-. . .
+## Search vs. Partner {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
-**You type:**
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**Search Mindset**
 
-"The capital of Saudi Arabia is..."
-
-**AI predicts:** "Riyadh" ✅
-
-*(High probability — correct)*
+- Query → Response
+- Minimal context
+- Information retrieval
+- Like a **library**
+:::
+:::
 :::
 ::: {.column width="50%"}
-**You type:**
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Partner Mindset**
 
-"What does Article 214 of the new Saudi Investment Law say?"
-
-**AI predicts:** A confident, detailed paragraph ❌
-
-*(Plausible-sounding fiction)*
+- Conversation → Iteration
+- Rich context
+- Problem solving & creation
+- Like a **research assistant**
+:::
+:::
 :::
 ::::
 
-::: {.notes}
-This is the most important trap. Slow down here. Explain: "The AI doesn't 'know' anything. It predicts the next most likely word based on patterns. For common facts like capitals, it's almost always right. But for specific, niche, or recent information — like a new legal article — it will confidently generate text that sounds authoritative but is completely made up." Let the Saudi Investment Law example sink in. They might ask about data privacy here — remind them of the newspaper test coming up next.
+## Example: Client Delay Email {auto-animate=true}
+
+::: {data-id="prompt" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**Search Mindset:**
+
+"Write an email to a client about a delay."
 :::
 
-## Trust, But Verify
+::: {.fragment .fade-in}
+**Result:** Generic, robotic, sounds fake.
+:::
+
+## Example: Client Delay Email {auto-animate=true}
+
+::: {data-id="prompt" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Partner Mindset:**
+
+"I need to email Client X about a 3-day delay — we're waiting for final internal approval. Tone: respectful but confident. Here is the project context..."
+:::
+
+::: {.fragment .fade-in}
+**Result:** Tailored, professional — sounds like **you**.
+:::
+
+# The 3 Traps {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+What limits new users
+
+## Trap 1: Treating It Like Search {auto-animate=true}
+
+::: {data-id="trap1"}
+**The Mistake**
+
+Asking for a single fact without giving the "why."
+:::
+
+. . .
+
+::: {.callout-tip}
+## The Fix
+Always provide **context** — *who* you are, *what* you need, *why* it matters.
+:::
+
+## Trap 2: Treating It Like a Person {auto-animate=true}
+
+::: {data-id="trap2"}
+**The Mistake**
+
+> "Please," "Thank you," "I'm sorry to bother you..."
+:::
+
+. . .
+
+::: {.callout-tip}
+## The Fix
+Be **direct**. Clear commands > polite requests. Validate output, don't compliment it.
+:::
+
+## Trap 3: Over-Trusting {auto-animate=true}
+
+::: {data-id="trap3"}
+**The Mistake**
+
+Assuming AI is a **knowledge database** that is always right.
+:::
+
+. . .
+
+::: {.fragment .fade-in}
+**Reality:** AI is a [Statistical Prediction Machine]{.accent} — designed to be *plausible*, not *truthful*.
+:::
+
+## How It Actually Works {auto-animate=true}
+
+::: {style="font-size: 1.3em; margin-bottom: 1em;"}
+The AI predicts the **next word** based on probability.
+:::
+
+"The capital of Saudi Arabia is..."
+
+. . .
+
+::: {.fragment .fade-in-then-semi-out}
+- **Riyadh** (99.8%) ✅
+:::
+::: {.fragment .fade-in-then-semi-out}
+- Jeddah (0.1%)
+:::
+::: {.fragment .fade-in-then-semi-out}
+- Paris (0.00001%)
+:::
+
+. . .
+
+It doesn't "know" geography. It knows that "Riyadh" almost always follows that sentence.
+
+## When It Guesses Wrong (Hallucinations) {auto-animate=true}
+
+::: {style="font-size: 1.1em; margin-bottom: 1em;"}
+What happens when it doesn't know the answer? **It guesses.**
+:::
+
+"According to Article 214 of the new Saudi Investment Law: ..."
+
+. . .
+
+::: {.fragment .fade-in}
+- **The** (45%)
+- **Foreign** (30%)
+- **Capital** (15%)
+:::
+
+. . .
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin-top: 1em;"}
+The AI constructs a sentence that *sounds* legal, but it has never read the actual document.
+:::
+
+## Trust but Verify
+
+::: {.callout-important}
+## The Rule
+AI is a **drafting** tool, not a **fact-checking** tool.
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+**Trust AI for:**
+
+- Logic & structure
+- Drafting & writing
+- Brainstorming
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+**Verify AI on:**
+
+- Facts & dates
+- Math & calculations
+- Legal citations
+:::
+:::
+::::
+
+# Safety First {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
+
+The "Newspaper Test"
+
+## The Newspaper Test {auto-animate=true}
+
+::: {data-id="test"}
+Before pasting *anything* into AI, ask:
+:::
+
+. . .
+
+::: {data-id="question" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 0.95em;"}
+**"If this appeared on the front page of the New York Times, would I be fired or sued?"**
+:::
+
+. . .
+
+::: {style="text-align: center; font-size: 1.2em;"}
+Yes or Maybe → **DO NOT PASTE IT.**
+:::
+
+## High-Risk Data
+
+::: {.callout-warning}
+## Never share with AI
+:::
 
 ::: {.incremental}
-- ✅ **Trust AI for:** Logic, structure, drafting, brainstorming
-- ⚠️ **Be skeptical of AI for:** Facts, dates, math, legal citations
-- 🛡️ **Always verify:** Numbers, references, and anything you'd stake your reputation on
+- **PII** — Names, National IDs (Iqama/Saudi ID), phone numbers
+- **Financial secrets** — Unreleased earnings, bank accounts, salary data
+- **Trade secrets** — Proprietary code, formulas, unreleased strategy docs
 :::
 
-. . .
+# Data Hygiene {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
-::: {.callout-important}
-## The Golden Rule
-AI is your **drafting partner**, not your **fact checker**.
-:::
-
-::: {.notes}
-Reinforce the key message: "Use AI to think faster, not to think for you." Give a practical tip: "When I use AI for a report, I let it draft the structure and arguments, but I personally verify every number and every claim. That's the sweet spot." Transition: "Now that we know the traps, let's talk about something even more important — safety."
-:::
-
-# Safety First {.splash}
-
-::: {.r-fit-text}
-The Newspaper Test
-:::
-
-::: {.notes}
-Shift the energy here. Say: "Everything we've covered so far is about getting better results. This section is about protecting yourself and your organization. This is non-negotiable." Make eye contact with the room. This section matters more than technique.
-:::
-
-## The Newspaper Test
-
-Before pasting **anything** into an AI tool, ask yourself:
-
-. . .
-
-::: {data-id="test" style="background: #1C355E; color: #FFFFFF; padding: 1.5em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
-"If this screenshot appeared on the **front page of a newspaper** tomorrow, would I be **fired or sued**?"
-:::
-
-. . .
-
-If the answer is **"Yes"** or **"Maybe"** → **DO NOT PASTE IT.**
-
-::: {.notes}
-Read the question slowly and deliberately. Pause after "fired or sued." Say: "This is the simplest and most powerful rule in AI safety. It takes 3 seconds and it will save you from 90% of potential problems." Ask: "Can anyone think of a time when they almost pasted something they shouldn't have?" You might get honest answers — handle them respectfully.
-:::
-
-## High-Risk Data: Never Upload {.smaller}
-
-| Category | Examples | Why It's Dangerous |
-|----------|----------|--------------------|
-| **PII** | Names, National IDs (Iqama/Saudi ID), phone numbers | Privacy law violations |
-| **Financial Secrets** | Unreleased earnings, bank accounts, salary data | Insider trading / regulatory risk |
-| **Trade Secrets** | Proprietary code, secret formulas, strategy docs | Competitive loss / legal liability |
-
-. . .
-
-::: {.callout-important}
-## Remember
-Once data enters an AI system, you **cannot** guarantee where it goes or how it's stored.
-:::
-
-::: {.notes}
-Go through each row and give a Saudi-specific example: "Imagine pasting a client's Iqama number into ChatGPT to auto-fill a form. That's a PII violation." For financial secrets: "Think SAMA regulations — if unreleased earnings leak through an AI tool, that's a compliance nightmare." For trade secrets: "Your company's pricing algorithm or strategy deck should never touch a general-purpose AI tool."
-:::
-
-# Data Hygiene {.splash}
-
-::: {.r-fit-text}
 The Art of Sanitization
-:::
 
-::: {.notes}
-Transition: "So does this mean you can never use AI for sensitive work? No — it means you need to learn one critical skill: sanitization. This is what separates beginners from professionals." This section gives them a practical tool they can use immediately.
-:::
+## Sanitization: 3 Steps
 
-## Sanitize Before You Share
-
-You **can** use AI for sensitive tasks — if you **remove the specifics** first.
+Remove the specifics, **keep the structure**.
 
 ::: {.incremental}
-- **Anonymize Names:** "Mohammed Al-Salem" → "[Employee A]"
-- **Generalize Numbers:** "5,000,000 SAR" → "5M+ SAR"
-- **Remove Identifiers:** Strip company names, project codes, addresses
+1. **Anonymize** — "Mohammed Al-Salem" → "[Employee A]"
+2. **Generalize** — "5,000,000 SAR" → "5M+ SAR"
+3. **Strip identifiers** — Remove company names, project codes, addresses
 :::
 
-. . .
+## Before: Unsafe {auto-animate=true}
 
-> Keep the **structure**. Remove the **specifics**.
-
-::: {.notes}
-Walk through each technique with a real-world example. Say: "You don't need to stop using AI for HR tasks or financial analysis. You just need to strip out anything that identifies a real person, real company, or real number. The AI only needs the pattern — not the identity." Ask: "What would you anonymize in your daily work?" Take 2-3 examples from the room.
+::: {data-id="review" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+"**Layla Al-Harbi** missed her **Q3 sales target of 1.5M SAR** by 15%. She blamed the delay in the **Riyadh Season Campaign** launch."
 :::
 
-## Sanitization in Practice
-
-**❌ Unsafe (Original):**
-
-::: {data-id="unsafe" style="background: #1C355E; color: #FFFFFF; padding: 1.5em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
-"Layla Al-Harbi missed her Q3 sales target of 1.5M SAR by 15%. She blamed the delay in the Riyadh Season Campaign launch."
+::: {style="text-align: center; color: #FF7A5C; font-weight: bold;"}
+Names, amounts, projects — all exposed.
 :::
 
-. . .
+## After: Sanitized {auto-animate=true}
 
-**✅ Safe (Sanitized):**
-
-::: {data-id="safe" style="background: #1C355E; color: #FFFFFF; padding: 1.5em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-"[Employee] missed their quarterly sales target by 15%. They cited delays in [Key Project] launch as the primary reason."
+::: {data-id="review" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+"**[Employee]** missed their quarterly sales target by 15%. They cited delays in **[Key Project]** launch as the primary reason."
 :::
 
-. . .
-
-*Now you can safely ask: "Draft a constructive feedback script for [Employee] based on this context..."*
-
-::: {.notes}
-Read both versions out loud. Point out exactly what changed: name gone, specific amount gone, campaign name gone — but the structure and percentages remain, so the AI can still give useful advice. Say: "Notice we kept the 15% — that's a general number, not an identifier. We removed 'Layla Al-Harbi' and '1.5M SAR' and 'Riyadh Season Campaign' because those are traceable." Transition: "Let's test what you've learned."
+::: {.fragment .fade-in}
+Now you can safely ask: *"Draft constructive feedback for [Employee] based on this..."*
 :::
 
-# Micro-Check {.splash}
+# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
-::: {.r-fit-text}
 Safe or Risky?
+
+## Quiz — Round 1
+
+**1.** "Summarize the key risks in these meeting notes: *[internal minutes about unannounced merger targets]*"
+
+::: {.fragment .fade-in}
+::: {.callout-warning}
+## RISKY — Material Non-Public Information (MNPI)
 :::
-
-::: {.notes}
-Energy shift: make this interactive. Say: "Time for a quick quiz. I'm going to show you five scenarios. For each one, decide: is this SAFE to paste into an AI tool, or RISKY? Think fast — you have 5 seconds per scenario." This is a formative check, not a test. Keep it light and fun.
 :::
-
-## Scenario 1 {.sdaia-dark background-color="#FF7A5C"}
-
-> "Summarize the key risks in these meeting notes: [Pastes internal minutes from a Strategy Meeting discussing **unannounced merger targets**]."
 
 . . .
 
-::: {.callout-important}
-## RISKY ❌
-Material Non-Public Information (MNPI). This could trigger insider trading violations.
-:::
+**2.** "I have a budget of 375,000 SAR for a National Day campaign. Suggest a media mix."
 
-::: {.notes}
-Ask: "Who said risky?" Praise them. Explain: "Merger targets are the textbook definition of MNPI. If this leaks — even accidentally through an AI tool — it's a regulatory and legal disaster. The newspaper test fails immediately here."
-:::
-
-## Scenario 2 {.sdaia-dark background-color="#FF7A5C"}
-
-> "I have a budget of **375,000 SAR** for a National Day campaign. Suggest a media mix (Social, OOH, Influencers)."
-
-. . .
-
+::: {.fragment .fade-in}
 ::: {.callout-tip}
-## SAFE ✅
-General budget numbers with no sensitive context or trade secrets.
+## SAFE — General numbers, no sensitive context
+:::
 :::
 
-::: {.notes}
-Some people might hesitate here. Explain: "A round budget number for a public event doesn't identify anyone or reveal trade secrets. This is exactly the kind of task AI is great at — brainstorming resource allocation. The newspaper test passes: 'Company plans 375K National Day campaign' is not a scandal."
-:::
+## Quiz — Round 2
 
-## Scenario 3 {.sdaia-dark background-color="#FF7A5C"}
+**3.** "Summarize this PDF: *[Q3 Investor Presentation from STC — publicly released]*"
 
-> "Summarize this PDF: [Uploaded the publicly released **Q3 Investor Presentation** from STC]."
-
-. . .
-
+::: {.fragment .fade-in}
 ::: {.callout-tip}
-## SAFE ✅
-Publicly available information. Already disclosed to the market.
+## SAFE — Publicly available information
 :::
-
-::: {.notes}
-Quick one. Say: "If it's already on the STC investor relations website, it's public. AI can help you summarize it, extract key metrics, or compare it to previous quarters. No risk here."
 :::
-
-## Scenario 4 {.sdaia-dark background-color="#FF7A5C"}
-
-> "Draft a termination letter for Employee #4421 who has missed targets due to unexcused absences. **Do not use their name.**"
 
 . . .
 
+**4.** "Draft a termination letter for Employee #4421 who missed targets. No name used."
+
+::: {.fragment .fade-in}
 ::: {.callout-tip}
-## SAFE ✅ (with caution)
-PII is removed. Only behavior is described. But always verify with your company's AI policy.
+## SAFE — PII removed, only behavior described
+:::
 :::
 
-::: {.notes}
-This one sparks discussion. Say: "The key detail is 'Do not use their name' — they've already self-sanitized. The AI is drafting structure, not handling personal data. However — and this is important — always check your company's specific policy on using AI for HR documents. Some organizations have stricter rules."
-:::
+## Quiz — Round 3
 
-## Scenario 5 {.sdaia-dark background-color="#FF7A5C"}
-
-> "Analyze this spreadsheet of **5,000 customer transaction records** (Names, IBANs, Transaction IDs) to find spending patterns."
+**5.** "Analyze 5,000 customer records (Names, IBANs, Transaction IDs) to find spending patterns."
 
 . . .
 
-::: {.callout-important}
-## RISKY ❌
-Massive PII leak. Never upload raw customer databases with identifiable information.
+::: {.callout-warning}
+## RISKY — Massive PII leak. Never upload raw customer databases.
 :::
 
-::: {.notes}
-Say: "This is the worst-case scenario. Five thousand records with names and bank account numbers? This fails every test. If you need spending pattern analysis, either use an internal tool or sanitize the data first — remove names, mask IBANs, replace Transaction IDs with random codes. The AI only needs the pattern, not the identity."
-:::
-
-## Session 1 Recap {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
 
 ::: {.incremental}
-- 🔄 **Mindset Shift:** From Search to Partner — give context, iterate, collaborate
-- ⚠️ **Three Traps:** Don't search, don't personify, don't over-trust
-- 🛡️ **Newspaper Test:** If it would make headlines, don't paste it
-- 🧹 **Sanitize:** Keep the structure, remove the specifics
-:::
-
-. . .
-
-**Coming Up Next:** The R-C-T-C Framework — your blueprint for writing prompts that work every time.
-
-::: {.notes}
-Wrap up with energy. Say: "In 45 minutes, you've learned the single most important mindset shift for AI productivity AND the safety framework to protect yourself. You're already ahead of 90% of AI users." Preview Session 2: "Next, we're going to give you a concrete formula — Role, Context, Task, Constraint — that turns everything we just discussed into a repeatable system. See you after the break."
+1. **Partner, not search engine** — give context, iterate
+2. **Avoid the 3 traps** — Search, Person, Over-Trust
+3. **Trust but verify** — draft with AI, fact-check yourself
+4. **Newspaper Test** — if in doubt, don't paste it
+5. **Sanitize first** — remove PII, keep the structure
 :::
