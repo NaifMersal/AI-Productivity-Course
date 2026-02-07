@@ -6,10 +6,10 @@
 /*-- scss:defaults --*/
 // Core palette (kept as Sass variables for compile-time styling)
 $sdaia-navy: #1C355E;
-$sdaia-orange: #e96852;
-$sdaia-teal: #00ae8d;
+$sdaia-orange: #FF7A5C;
+$sdaia-teal: #00C9A7;
 
-$sdaia-purple: #625d9c;
+$sdaia-purple: #9B8EC0;
 $sdaia-cyan: #00c1de;
 $sdaia-green: #6abf4b;
 $sdaia-yellow: #FFB548;
@@ -63,10 +63,10 @@ $callout-color-success: $sdaia-green;
 // Also expose the palette as CSS custom properties for slide authors.
 :root {
   --sdaia-navy: #1C355E;
-  --sdaia-orange: #e96852;
-  --sdaia-teal: #00ae8d;
+  --sdaia-orange: #FF7A5C;
+  --sdaia-teal: #00C9A7;
 
-  --sdaia-purple: #625d9c;
+  --sdaia-purple: #9B8EC0;
   --sdaia-cyan: #00c1de;
   --sdaia-green: #6abf4b;
   --sdaia-yellow: #FFB548;
