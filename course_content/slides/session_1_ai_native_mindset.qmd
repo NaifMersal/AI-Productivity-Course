@@ -15,6 +15,33 @@ format:
       data-background-size: "cover"
 ---
 
+# Course Overview {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Building Your Digital Factory
+
+# The Journey {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+From Search to Systems
+
+## Day 1: Architecting the Brain
+
+::: {.incremental}
+- **Session 1:** The AI-Native Mindset
+- **Session 2:** The Research Stack (Context & Trust)
+- **Session 3:** The Science of Delegation (R-C-T-C)
+- **Session 4:** Building Specialized Brains
+- **Session 5:** The Assembly Line (SOPs)
+:::
+
+## Day 2: Advanced Intelligence
+
+::: {.incremental}
+- **Session 6:** The Data Factory (Enrichment)
+- **Session 7:** Interviewing Your Data
+- **Session 8:** Personal Productivity Systems
+- **Session 9:** The Finale & ROI
+:::
+
 # The Paradigm Shift {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
 From "Search" to "Partner"

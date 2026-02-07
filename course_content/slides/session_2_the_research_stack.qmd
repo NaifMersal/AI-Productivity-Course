@@ -15,6 +15,29 @@ format:
       data-background-size: "cover"
 ---
 
+# Recap: The Partner Mindset {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+The Bridge from Session 1
+
+## Why Context Matters {auto-animate=true}
+
+::: {data-id="intro" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+**Session 1:** We built the **Partner Mindset**.
+:::
+
+. . .
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em; margin-top: 1em;"}
+**Session 2:** Giving that Partner the **Facts**.
+:::
+
+. . .
+
+::: {.callout-note}
+## The Goal
+Without **grounding** in real data, even the smartest partner will hallucinate.
+:::
+
 # Context Before Content {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
 Stop asking. Start interrogating.

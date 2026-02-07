@@ -139,7 +139,7 @@ Finance and ZATCA are strict. You have **3 chaotic inputs** that need to become 
 ## Input 1: The Crumpled Receipt {auto-animate=true}
 
 ::: {data-id="inputs"}
-![](../assets/Shawarma_House_Receipt.png){height="450" fig-align="center"}
+![](assets/Shawarma_House_Receipt.png){height="450" fig-align="center"}
 :::
 
 ## Input 2: The Forwarded Email {auto-animate=true}
@@ -182,7 +182,7 @@ Turn chaos into structure
 
 → Vague instructions = unreliable output. Every. Single. Time.
 
-## The SOP Prompt {auto-animate=true .smaller}
+## The SOP Prompt {auto-animate=true}
 
 ::: {data-id="prompt" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; font-size: 0.75em;"}
 **Role:** You are a Senior Accountant for a Saudi consulting firm.
@@ -208,7 +208,7 @@ Turn chaos into structure
 - Do not chat. Just output the table.
 :::
 
-## Anatomy of the SOP {.smaller}
+## Anatomy of the SOP
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -251,7 +251,7 @@ Missing VAT? Unknown vendor? Handle it.
 
 Structured data from chaos
 
-## The Result {.smaller}
+## The Result
 
 | Date | Vendor | Category | Amount (SAR) | VAT (15%) | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
