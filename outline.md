@@ -50,13 +50,9 @@
 
 Before they automate, students must feel the friction of the manual process (copy-pasting between chats):
 
-Step 1: Paste a chaotic, consistency-breaking list of expenses (mixed dates, currencies, and formats) into the AI to force manual correction friction.
+Step 1: Paste a chaotic, consistency-breaking list of expenses (mixed dates, currencies, and formats)format it into a CSV table.
 
-Step 2: Ask the AI to categorize them (Food, Transport, Entertainment).
-
-Step 3: Manually copy that result and ask the AI to format it into a CSV table.
-
-Step 4: Copy the CSV and paste it into Google Sheets.
+Step 2: Copy the CSV and paste it into Google Sheets.
 
 * **The Playbook:** Convert that manual chain into a **Markdown SOP** and "install" it into your Gem/Project brain.
 * **The Payoff:** Execute a complex 4-step workflow with a single "One-Sentence Delegation."
