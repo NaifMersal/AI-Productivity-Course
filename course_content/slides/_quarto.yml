@@ -46,4 +46,7 @@ format:
         - title: "Index"
           icon: "<svg width='1.8rem' viewBox='0 0 24 24'><path d='M5 7h14M5 12h14M5 17h7' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>"
           src: "../index.html"
+    include-in-header:
+      - text: |
+          <link rel = "shortcut icon" href = "assets/icon.svg" />
           
