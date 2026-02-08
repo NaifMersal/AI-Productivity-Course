@@ -123,25 +123,25 @@ Give context → Iterate together → Get real results
 
 What limits new users
 
-## Trap 1: Treating It Like Search {auto-animate=true}
+## Trap 1: Generally treating it like Search {auto-animate=true}
 
 ::: {data-id="trap1"}
-**The Mistake**
+**The Input Mistake**
 
-Asking for a single fact without giving the "why."
+Asking short questions like a Google search.
 :::
 
 . . .
 
 ::: {.callout-tip}
-## The Fix
-Always provide **context** — *who* you are, *what* you need, *why* it matters.
+## The Fix: Better Inputs
+Shift from **Querying** to **Conversag**. Give context.
 :::
 
 ## Trap 2: Treating It Like a Person {auto-animate=true}
 
 ::: {data-id="trap2"}
-**The Mistake**
+**The Interaction Mistake**
 
 > "Please," "Thank you," "I'm sorry to bother you..."
 :::
@@ -149,22 +149,22 @@ Always provide **context** — *who* you are, *what* you need, *why* it matters.
 . . .
 
 ::: {.callout-tip}
-## The Fix
+## The Fix: Direct Commands
 Be **direct**. Clear commands > polite requests. Validate output, don't compliment it.
 :::
 
-## Trap 3: Over-Trusting {auto-animate=true}
+## Trap 3: Over-trusting {auto-animate=true}
 
 ::: {data-id="trap3"}
-**The Mistake**
+**The Output Mistake**
 
-Assuming AI is a **knowledge database** that is always right.
+Assuming AI contains **facts** like a database.
 :::
 
 . . .
 
 ::: {.fragment .fade-in}
-**Reality:** AI is a [Statistical Prediction Machine]{.accent} — designed to be *plausible*, not *truthful*.
+**Reality:** AI is a [Prediction Engine]{.accent} — it guesses the next word. It does not "know" facts.
 :::
 
 ## How It Actually Works {auto-animate=true}
