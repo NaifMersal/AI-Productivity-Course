@@ -139,7 +139,7 @@ Finance and ZATCA are strict. You have **3 chaotic inputs** that need to become 
 ## Input 1: The Crumpled Receipt {auto-animate=true}
 
 ::: {data-id="inputs"}
-![](assets/Shawarma_House_Receipt.png){height="450" fig-align="center"}
+![](assets/Shawarma_House_Receipt.png){height="600" width="450" fig-align="center"}
 :::
 
 ## Input 2: The Forwarded Email {auto-animate=true}
