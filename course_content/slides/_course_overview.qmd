@@ -1,0 +1,24 @@
+# Course Overview {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Building Your Digital Factory
+
+# The Journey {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+From Search to Systems
+
+## Day 1: Architecting the Brain
+
+- **Session 1:** The AI-Native Mindset
+- **Session 2:** The Science of Delegation (R-C-T-C)
+- **Session 3:** Building Specialized Brains
+- **Session 4:** The Research Stack
+- **Session 5:** The Narrative Architect
+
+
+## Day 2: Advanced Intelligence
+
+- **Session 6:** The Design Engine
+- **Session 7:** The Data Factory (Enrichment)
+- **Session 8:** Personal Productivity Systems
+- **Session 9:** The Finale & ROI
+

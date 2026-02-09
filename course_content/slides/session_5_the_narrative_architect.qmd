@@ -1,0 +1,206 @@
+---
+title: "The Narrative Architect"
+subtitle: "Session 5 — The Amazon Method"
+date: today
+format:
+  revealjs:
+    theme: [default, assets/sdaia.scss]
+    logo: assets/sdaia.svg
+    transition: slide
+    transition-speed: default
+    background-transition: fade
+    title-slide-attributes:
+      data-background-image: "assets/anim.svg"
+      data-background-opacity: "0.15"
+      data-background-size: "cover"
+---
+
+# Death by PowerPoint {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+Why most presentations fail
+
+## The Problem {auto-animate=true}
+
+::: {data-id="problem" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+It's not the design. It's the **story**.
+:::
+
+. . .
+
+::: {.incremental}
+- Too much text
+- No clear argument
+- "Frankenstein" decks (pasted from 5 different files)
+:::
+
+## The Amazon Method {auto-animate=true}
+
+::: {data-id="amazon"}
+Amazon banned PowerPoint in meetings.
+:::
+
+. . .
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+**Narrative First.** Design Second.
+:::
+
+. . .
+
+Writing a 6-page memo forces you to **think**. Slides allow you to **hide**.
+
+# Chain of Thought (CoT) {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Using AI to logic-check your story
+
+## What is CoT? {auto-animate=true}
+
+::: {data-id="cot" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+Asking the AI to "Think step-by-step" or "Show your work" before giving the answer.
+:::
+
+. . .
+
+::: {.callout-tip}
+## Why?
+This drastically reduces hallucinations and improves logic.
+:::
+
+## The Narrative Workflow {auto-animate=true}
+
+::: {data-id="steps"}
+**1. The Brain Dump**
+:::
+
+Paste raw context (notes, goals).
+
+. . .
+
+::: {data-id="steps"}
+**2. The Narrative (The Pitch)**
+:::
+
+AI writes a 1-page memo.
+
+. . .
+
+::: {data-id="steps"}
+**3. The Roast (The Stress Test)**
+:::
+
+AI acts as a Skeptic/CFO and finds holes in the logic.
+
+. . .
+
+::: {data-id="steps"}
+**4. The Blueprint**
+:::
+
+Convert the refined memo into a Slide Outline.
+
+# Step-by-Step {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Building the Prompt
+
+## Step 1: The Narrative Prompt {auto-animate=true}
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.85em;"}
+**Role:** You represent the Project Lead.
+
+**Task:** Write a 1-page "Amazon Style" narrative memo pitching [Project X].
+
+**Context:**
+- Goal: Get $50k budget approved
+- Problem: Current system is too slow
+- Solution: Implement Tool Z
+
+**Constraint:** Be concise, brutal, and data-driven. No fluff.
+:::
+
+## Step 2: The Roast {auto-animate=true}
+
+::: {data-id="roast" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+**Crucial Step**
+:::
+
+. . .
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin-top: 1em;"}
+**Role:** You are the skeptical CFO.
+
+**Task:** Roast this memo. Find the holes in the logic. Where is the ROI unclear? What risks are missing? **Be harsh.**
+:::
+
+## Step 3: The Blueprint {auto-animate=true}
+
+Once the logic is solid, turn text into visuals.
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; font-size: 0.85em;"}
+**Task:** Convert the Narrative into a 5-Slide Outline.
+
+**Format:**
+- **Slide Title:** (Action-oriented)
+- **The Hook:** (One sentence summary)
+- **Visual:** (Describe the EXACT chart needed. e.g., "Bar chart showing 20% growth", NOT "A picture of growth")
+- **Speaker Notes:** (Bullet points)
+:::
+
+# Activity {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
+
+The Strategic Pitch
+
+## Choose Your Scenario {auto-animate=true}
+
+::: {data-id="scenario" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px;"}
+You are pitching to a Skeptical CEO.
+:::
+
+. . .
+
+::: {.incremental}
+- **Option A:** A new "Remote Work Policy"
+- **Option B:** Requesting budget for a new AI Tool
+- **Option C:** Proposing a new Senior Hire
+:::
+
+## Your Mission {auto-animate=true}
+
+1. **Draft:** Use AI to write the 1-page argument.
+2. **Roast:** Ask AI to tear it apart.
+3. **Refine:** Fix the logic gaps.
+4. **Blueprint:** Generate the 5-slide outline with **Visual Descriptors**.
+
+# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+## Quiz
+
+**Question:** Why do we ask the AI to "specify the Visual" (e.g., Bar chart vs Pie chart)?
+
+. . .
+
+::: {.fragment .fade-in}
+**1.** Because AI likes charts.
+:::
+
+. . .
+
+::: {.fragment .fade-in}
+**2.** Because "Death by PowerPoint" happens when text/visuals don't match.
+:::
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: white; padding: 0.8em; border-radius: 12px;"}
+**3. So we can use it in Session 6 (The Design Engine).**
+:::
+:::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **Story before Slides** — Never open PowerPoint first.
+2. **Chain of Thought** — Use AI to *think*, not just write.
+3. **The Roast** — Let the AI be your harshest critic.
+4. **The Blueprint** — Your "Visual" instructions are the fuel for Session 6.
+:::

@@ -1,0 +1,336 @@
+---
+title: "Building Specialized Brains"
+subtitle: "Session 3 — Global Context"
+date: today
+format:
+  revealjs:
+    theme: [default, assets/sdaia.scss]
+    logo: assets/sdaia.svg
+    transition: slide
+    transition-speed: default
+    background-transition: fade
+    title-slide-attributes:
+      data-background-image: "assets/anim.svg"
+      data-background-opacity: "0.15"
+      data-background-size: "cover"
+---
+
+# The "Groundhog Day" Problem {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+Stop repeating yourself.
+
+## Remember Session 2? {auto-animate=true}
+
+::: {data-id="problem" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+We wrote a perfect R-C-T-C prompt to update Dr. Ahmed about the Hydrogen Report.
+
+**It worked great.**
+:::
+
+## Next Week... {auto-animate=true}
+
+::: {data-id="problem" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+You have an update about **Solar Panel Supply Chains**.
+
+You open a new chat. The AI has **amnesia**.
+:::
+
+. . .
+
+::: {.incremental}
+- It doesn't know you're a Project Lead
+- It doesn't know Dr. Ahmed likes bullet points
+- It doesn't know the tone must be "Saudi Executive"
+- You type the **Role** and **Constraints** all over again
+:::
+
+## Local vs. Global Context {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**Local Context (Chat)**
+
+- Forgets when chat closes
+- Best for one-off questions
+- No setup needed
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Global Context (Brain)**
+
+- Remembers forever
+- Best for recurring tasks
+- One-time setup (5 min)
+:::
+:::
+:::
+::::
+
+## The Solution
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
+Instead of typing the context every time, **bake it into the AI's brain**.
+:::
+
+. . .
+
+:::: {.columns}
+::: {.column width="33%"}
+::: {style="text-align: center;"}
+**Google Gemini**
+
+"Gems"
+:::
+:::
+::: {.column width="33%"}
+::: {style="text-align: center;"}
+**ChatGPT**
+
+"GPTs" / "Projects"
+:::
+:::
+::: {.column width="33%"}
+::: {style="text-align: center;"}
+**Claude**
+
+"Projects"
+:::
+:::
+::::
+
+# The Digital Twin {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Your pre-trained specialist
+
+## General AI vs. Digital Twin {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**General AI**
+
+A brilliant graduate who knows everything but nothing about *you*.
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Digital Twin (Gem)**
+
+That same graduate — but you've given them your **Employee Handbook**.
+:::
+:::
+:::
+::::
+
+## What We're Building {auto-animate=true}
+
+::: {data-id="briefer" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+**"The Executive Briefer"**
+:::
+
+. . .
+
+A specialized brain designed solely to turn messy notes into executive-ready reports for your leadership team.
+
+# Building the Brain {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Instructor Demo
+
+## Step 1: System Instructions {auto-animate=true}
+
+::: {data-id="instructions" style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.8em;"}
+You are the **Strategy Unit Reporting Lead** for a Saudi Giga-Project. Your goal is to take raw, messy field notes and convert them into high-priority **"Red Flag Reports"** for the Director (Dr. Ahmed).
+
+**Your Rules:**
+
+1. **Tone:** Executive, direct, concise. No fluff.
+2. **Format:**
+   - **Headline:** [Topic] — [Urgency Level]
+   - **Executive Summary:** One sentence, BLUF (Bottom Line Up Front)
+   - **Key Risks:** Bullet points (max 3)
+   - **Required Decision:** What do you need? (Yes / No / Meeting)
+3. **Language:** Professional English (UK spelling), culturally aware
+:::
+
+## Step 2: Test with New Input {auto-animate=true}
+
+::: {data-id="instructions" style="background: #f7f9fc; padding: 0.6em; border-radius: 12px; font-size: 0.7em; border-left: 4px solid #00C9A7;"}
+System Instructions loaded — "Executive Briefer" is ready.
+:::
+
+Now test with a **completely different scenario** to prove it remembers:
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-style: italic; font-size: 0.8em;"}
+"Site visit today. Glass panels for the main facade stuck in customs at Jeddah Islamic Port. Delay is 2 weeks. Opening ceremony in 3 weeks! Disaster. Need to pay an expeditor SR 50,000 to release by Thursday or we miss the Royal Commission visit. Need approval ASAP."
+:::
+
+## The Output {auto-animate=true}
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.85em;"}
+
+**AlUla Visitor Centre Facade — CRITICAL DELAY**
+
+**Executive Summary:**
+Glass panels held at Jeddah Customs, risking a 2-week delay that conflicts with the Royal Commission visit.
+
+**Key Risks:**
+
+- Missed deadline for Opening Ceremony (3 weeks out)
+- Reputational risk during Royal Commission visit
+
+**Required Decision:**
+
+- **APPROVE** SR 50,000 for customs expeditor — release by Thursday
+- *Response needed by COB today*
+:::
+
+## What Just Happened
+
+::: {.incremental}
+- We pasted **raw notes only** — no Role, no Constraints
+- The brain already knew the format, tone, and rules
+- It produced an executive-ready report in **10 seconds**
+:::
+
+. . .
+
+::: {.callout-important}
+## The Point
+Write the prompt once. Use the brain forever.
+:::
+
+# The ROI {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
+
+Why this matters
+
+## Manual vs. Brain {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C; text-align: center;"}
+**Manual R-C-T-C**
+
+~5 minutes per prompt to get the tone right
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7; text-align: center;"}
+**With the Brain**
+
+Paste notes → Enter → Send
+
+**10 seconds. 30x faster.**
+:::
+:::
+:::
+::::
+
+## Other "Digital Twin" Ideas
+
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #9B8EC0; margin-bottom: 0.5em;"}
+**"The Policy Translator"**
+
+Upload your HR manual or Procurement Law → Ask "Can we buy this software?" → It checks against *your* specific rules.
+:::
+:::
+
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+**"The Vision Aligner"**
+
+Upload your company's 2030 strategy → Ask "Review this proposal" → It critiques alignment with *your* KPIs.
+:::
+:::
+
+# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Test Your Understanding
+
+## Quiz — Question 1
+
+The Gem keeps using **American spelling** ("Color", "Center") instead of UK standard ("Colour", "Centre").
+
+Where do you fix it?
+
+. . .
+
+::: {.fragment .fade-in}
+:::: {.columns}
+::: {.column width="33%"}
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; text-align: center;"}
+A) Fix it in the chat every time
+
+❌
+:::
+:::
+::: {.column width="33%"}
+::: {style="background: #00C9A7; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
+B) Fix it in the System Instructions
+
+✅
+:::
+:::
+::: {.column width="33%"}
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; text-align: center;"}
+C) You can't fix it
+
+❌
+:::
+:::
+::::
+:::
+
+. . .
+
+Fix it once in the **Brain** → fixed forever.
+
+## Quiz — Question 2
+
+You need a quick email to a vendor you'll **never speak to again**. Build a Gem?
+
+. . .
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**A) Yes, always build a Gem**
+
+❌ Over-engineering.
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**B) No, use the normal chat**
+
+✅ Gems = recurring tasks.
+
+Chats = one-off tasks.
+:::
+:::
+:::
+::::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **Stop repeating yourself** — bake context into the Brain
+2. **Local vs. Global** — chats forget, Gems/Projects remember
+3. **Digital Twin** — a pre-trained specialist that knows *your* rules
+4. **Write once, use forever** — 5 min setup saves hours
+5. **Don't over-engineer** — Gems for recurring, chats for one-off
+:::
