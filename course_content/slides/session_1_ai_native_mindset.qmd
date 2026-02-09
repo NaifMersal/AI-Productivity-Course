@@ -66,34 +66,6 @@ Give context → Iterate together → Get real results
 
 > Treat the AI like a smart intern who needs **context**, **instruction**, and **feedback**.
 
-## Search vs. Partner
-
-:::: {.columns}
-::: {.column width="50%"}
-::: {.fragment .fade-in}
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
-**Search Mindset**
-
-- Query → Response
-- Minimal context
-- Information retrieval
-- Like a **library**
-:::
-:::
-:::
-::: {.column width="50%"}
-::: {.fragment .fade-in}
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-**Partner Mindset**
-
-- Conversation → Iteration
-- Rich context
-- Problem solving & creation
-- Like a **research assistant**
-:::
-:::
-:::
-::::
 
 ## Example: Client Delay Email {auto-animate=true}
 

@@ -1,0 +1,119 @@
+---
+title: "Automating Customer Support"
+subtitle: "The 'Oud & Scents' Eid Rush Scenario"
+date: today
+format:
+  revealjs:
+    theme: [default, assets/sdaia.scss]
+    logo: assets/sdaia.svg
+    transition: slide
+    transition-speed: default
+    background-transition: fade
+    title-slide-attributes:
+      data-background-image: "assets/anim.svg"
+      data-background-opacity: "0.15"
+      data-background-size: "cover"
+---
+
+# 🚀 Automating Customer Support with n8n & AI {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+The "Oud & Scents" Eid Rush Scenario
+
+## 🌙 The Context: "Oud & Scents" (Riyadh) {auto-animate=true}
+
+::: {style="font-size: 0.9em;"}
+- **The Business:** A popular local e-commerce store selling luxury perfumes and incense.
+- **The Time:** 2 days before **Eid al-Fitr** (The busiest gifting season).
+- **The Hero:** **Omar**, the only Customer Support Agent.
+- **The Problem:** Omar logs in to find **800+ unread emails**.
+  - Some are urgent crises.
+  - Some are simple questions.
+  - Some are spam.
+:::
+
+. . .
+
+::: {.callout-important}
+## The Risk
+If Omar answers emails in order (oldest to newest), he might miss a VIP crisis while replying to spam.
+:::
+
+## The Challenge (3 Incoming Emails)
+
+:::: {.columns}
+
+::: {.column width="33%"}
+::: {.fragment .fade-in}
+::: {style="background: #FFF5F5; border: 2px solid #FF7A5C; padding: 0.5em; border-radius: 8px; font-size: 0.7em; color: #333;"}
+**1. The Crisis (VIP) 🚨**
+
+**Sender:** Ahmed Al-Ghamdi
+**Subject:** "Order not received! Traveling to Dammam!"
+
+"Salam, I ordered the limited edition Oud... Fix this NOW or refund me."
+
+**Status:** *High Risk of Reputation Damage.*
+:::
+:::
+:::
+
+::: {.column width="33%"}
+::: {.fragment .fade-in}
+::: {style="background: #F0F4F8; border: 2px solid #1C355E; padding: 0.5em; border-radius: 8px; font-size: 0.7em; color: #333;"}
+**2. The Easy Sale 💳**
+
+**Sender:** Sarah
+**Subject:** "Tabby or Tamara?"
+
+"Marhaba, I want to buy the large gift set. Do you accept Tabby for installments?"
+
+**Status:** *Needs a quick 'Yes' to close the sale.*
+:::
+:::
+:::
+
+::: {.column width="33%"}
+::: {.fragment .fade-in}
+::: {style="background: #F9F9F9; border: 2px solid #999; padding: 0.5em; border-radius: 8px; font-size: 0.7em; color: #333;"}
+**3. The Noise (Spam) 🗑️**
+
+**Sender:** Cheap SEO Services
+**Subject:** "Rank #1 on Google"
+
+**Status:** *Waste of time.*
+:::
+:::
+:::
+
+::::
+
+## The Solution (The n8n Workflow) {.sdaia-dark background-color="#1C355E"}
+
+We build an automated "Traffic Controller" using n8n.
+
+::: {.incremental}
+1.  **Step 1: The Trigger (Gmail/Outlook)**
+    -   New email arrives at `support@oudandscents.sa`.
+2.  **Step 2: The Brain (AI Agent)**
+    -   n8n sends the email text to an AI model (like ChatGPT or Gemini).
+    -   **Prompt:** "Classify urgency (High/Low) and Type (Complaint/Sales/Spam)."
+3.  **Step 3: The Route (Switch Node)**
+    -   **If High Urgency (Ahmed):** ➡️ Send **WhatsApp Alert** to Logistics Manager immediately.
+    -   **If Sales Inquiry (Sarah):** ➡️ Send **Auto-Reply:** "Yes, we accept Tabby! Shop now."
+    -   **If Spam:** ➡️ **Archive** immediately.
+:::
+
+## The Impact {background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+| Metric | Manual (Omar) | Automated (n8n) |
+| :--- | :--- | :--- |
+| **Response Time** | Hours (Too late for Ahmed) | **Seconds** (Saved Ahmed's Eid) |
+| **Focus** | Drowning in spam | Focused on solving problems |
+| **Sales** | Missed opportunities | **Instant conversion** (Sarah buys immediately) |
+| **Customer Mood** | Frustrated 😡 | Delighted & Loyal 😍 |
+
+. . .
+
+::: {style="margin-top: 1em;"}
+> **Key Takeaway:** Automation isn't about replacing Omar; it's about giving him superpowers so he can focus on what matters.
+:::
