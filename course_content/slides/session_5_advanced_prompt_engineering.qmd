@@ -1,0 +1,444 @@
+---
+title: "Advanced Prompt Engineering"
+subtitle: "Session 5 — Thinking Slow"
+date: today
+format:
+  revealjs:
+    theme: [default, assets/sdaia.scss]
+    logo: assets/sdaia.svg
+    transition: slide
+    transition-speed: default
+    background-transition: fade
+    title-slide-attributes:
+      data-background-image: "assets/anim.svg"
+      data-background-opacity: "0.15"
+      data-background-size: "cover"
+---
+
+# The "Fast vs. Slow" Problem {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+Why AI makes dumb mistakes on smart questions
+
+## Two Thinking Systems {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**System 1 — Fast**
+
+Intuitive, instant, lazy.
+
+"Write me a poem."
+
+*Works fine.*
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**System 2 — Slow**
+
+Deliberate, logical, step-by-step.
+
+"Solve this scheduling conflict."
+
+*Needs effort.*
+:::
+:::
+:::
+::::
+
+## The Problem {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+By default, AI runs in **System 1** — fast and sloppy.
+:::
+
+. . .
+
+::: {.callout-important}
+## The Rule
+Complex tasks require **System 2**. Your job is to *force* the AI to think slow.
+:::
+
+. . .
+
+Today: **3 techniques** to activate System 2 thinking.
+
+# Technique 1: Chain of Thought {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Force the AI to show its work
+
+## What is Chain of Thought? {auto-animate=true}
+
+::: {data-id="cot-concept" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
+Add **"Think step by step"** to force the AI to check its own logic *before* answering.
+:::
+
+. . .
+
+::: {.callout-tip}
+## Why It Works
+When the AI writes out its reasoning, it catches errors that it would otherwise skip over — like a student showing their work on an exam.
+:::
+
+## The Lunch Break {auto-animate=true}
+
+::: {data-id="cot-concept" style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.8em; border-left: 4px solid #00C9A7;"}
+Chain of Thought — Scheduling Example
+:::
+
+**Context:** You are building a schedule.
+
+::: {.incremental}
+- 2-hour meeting starting at **11:00 AM**
+- **Constraint:** Must pause for **30-minute lunch** at **12:00 PM**
+:::
+
+## The Standard Prompt {auto-animate=true}
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+"I have a 2-hour meeting starting at 11:00 AM.
+**Constraint:** We must pause for a 30-minute lunch break at 12:00 PM.
+When does the meeting end?"
+:::
+
+. . .
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin-top: 0.5em;"}
+**AI answers:** "Starts 11:00, lasts 2 hours, ends **1:00 PM**."
+
+It ignores the break logic.
+:::
+
+. . .
+
+::: {style="text-align: center; color: #FF7A5C; font-weight: bold; font-size: 1.2em;"}
+Wrong.
+:::
+
+## The CoT Prompt {auto-animate=true}
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; font-size: 0.85em;"}
+"I have a 2-hour meeting starting at 11:00 AM.
+**Constraint:** We must pause for a 30-minute lunch break at 12:00 PM.
+When does the meeting end? **Think step-by-step.**"
+:::
+
+## The Result {auto-animate=true}
+
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; margin-bottom: 0.5em;"}
+**1.** Meeting starts **11:00**
+:::
+:::
+
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; margin-bottom: 0.5em;"}
+**2.** First hour: **11:00 – 12:00**
+:::
+:::
+
+::: {.fragment .fade-in}
+::: {style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; margin-bottom: 0.5em;"}
+**3.** Pause for Lunch: **12:00 – 12:30**
+:::
+:::
+
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; margin-bottom: 0.5em;"}
+**4.** Second hour: **12:30 – 1:30 PM**
+:::
+:::
+
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: white; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+**Final End Time: 1:30 PM**
+:::
+:::
+
+# Technique 2: Tree of Thoughts {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Simulate a team meeting inside the AI
+
+## What is Tree of Thoughts? {auto-animate=true}
+
+::: {data-id="tot-concept" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
+Make the AI **debate itself** from multiple perspectives before deciding.
+:::
+
+. . .
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center;"}
+Think of it as a **Team Meeting** happening inside the AI's head.
+:::
+
+## The Angry Client {auto-animate=true}
+
+::: {data-id="tot-concept" style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.8em; border-left: 4px solid #9B8EC0;"}
+Tree of Thoughts — Strategy Example
+:::
+
+**Context:** A major client is furious about a missed deadline.
+
+**Task:** Write an email response — but what tone? What strategy?
+
+. . .
+
+::: {style="text-align: center; font-style: italic; color: #666;"}
+One perspective isn't enough. You need a debate.
+:::
+
+## The "Experts" Prompt {auto-animate=true .smaller}
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #9B8EC0; font-size: 0.85em;"}
+"Imagine three experts debating the best response:
+
+1. **The Empathetic Support Lead:** Apologize profusely, offer a refund.
+2. **The Pragmatic Project Manager:** Explain *why* it happened, propose a new timeline.
+3. **The Legal Advisor:** Admit nothing to avoid liability.
+
+**Step 1:** Have them debate the pros/cons of each approach.
+
+**Step 2:** Synthesize a final response that balances empathy with professional boundaries."
+:::
+
+## Why This Works
+
+:::: {.columns}
+::: {.column width="33%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**Empathy Only**
+
+Risks appearing weak. Client may demand more concessions.
+:::
+:::
+:::
+::: {.column width="33%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+**Logic Only**
+
+Feels cold. Client stays angry.
+:::
+:::
+:::
+::: {.column width="33%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Balanced**
+
+Acknowledges the issue, explains the fix, protects the relationship.
+:::
+:::
+:::
+::::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+The AI finds the **synthesis** — something no single perspective would produce.
+:::
+
+# Technique 3: Self-Consistency {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
+
+Trust but verify — with math
+
+## What is Self-Consistency? {auto-animate=true}
+
+::: {data-id="sc-concept" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
+Ask the AI to solve the **same problem 3 times independently**. If all 3 match — trust it. If not — flag it.
+:::
+
+. . .
+
+::: {.callout-tip}
+## Best For
+Data extraction, math, calculations — anywhere a wrong number could be expensive.
+:::
+
+## The Invoice Checker {auto-animate=true}
+
+::: {data-id="sc-concept" style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.8em; border-left: 4px solid #FF7A5C;"}
+Self-Consistency — Accuracy Example
+:::
+
+**Context:** A messy PDF invoice with hard-to-read handwriting.
+
+**Task:** Verify if the 'Total Amount' matches the sum of line items.
+
+## The Prompt {auto-animate=true}
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; font-size: 0.85em;"}
+"Extract the line items and sum them up.
+
+Do this calculation **3 separate times independently**.
+
+- Run 1 Result: [Sum]
+- Run 2 Result: [Sum]
+- Run 3 Result: [Sum]
+
+If all three match, output **'Verified'**.
+
+If there is any difference, output **'Manual Review Needed'**."
+:::
+
+## Why This Works {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: white; padding: 1.2em; border-radius: 12px; text-align: center;"}
+**3/3 Match**
+
+SR 47,250 = SR 47,250 = SR 47,250
+
+**Verified**
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #FF7A5C; color: white; padding: 1.2em; border-radius: 12px; text-align: center;"}
+**Mismatch**
+
+SR 47,250 ≠ SR 47,520 ≠ SR 47,250
+
+**Manual Review Needed**
+:::
+:::
+:::
+::::
+
+. . .
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center;"}
+The AI becomes its own **auditor**. Disagreement = uncertainty = human check.
+:::
+
+# The Decision Matrix {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Pick the right technique
+
+## When to Use What {.smaller}
+
+| Problem Type | Technique | Why |
+| :--- | :--- | :--- |
+| Logic / Math / Scheduling | **Chain of Thought** | Forces step-by-step reasoning |
+| Strategy / Brainstorming | **Tree of Thoughts** | Explores multiple perspectives |
+| Data Extraction / Verification | **Self-Consistency** | Catches errors through repetition |
+
+. . .
+
+::: {.callout-note}
+## Tip
+You can **combine** techniques. Use CoT *inside* a Tree of Thoughts. Use Self-Consistency to verify a CoT result.
+:::
+
+# Activity: The Team Offsite {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
+
+Put it all together
+
+## The Scenario {auto-animate=true}
+
+::: {data-id="scenario" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px;"}
+You are scheduling a **1-Day Team Retreat**. Build an agenda that fits everyone's constraints.
+:::
+
+## The Constraints {auto-animate=true .smaller}
+
+::: {data-id="scenario" style="background: #f7f9fc; padding: 0.6em; border-radius: 12px; font-size: 0.7em; border-left: 4px solid #FF7A5C;"}
+1-Day Team Retreat — Scheduling Challenge
+:::
+
+::: {.incremental}
+1. Start at **9:00 AM**
+2. Must include a **2-hour "Strategy Workshop"**
+3. Must include **Salat Al-Dhuhr** (20 mins)
+4. **Lunch** (1 hour) must be *after* Salat
+5. The **CEO can only attend for 1 hour** between 11:00 and 13:00
+:::
+
+. . .
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center;"}
+**Your Goal:** The Strategy Workshop must overlap with the CEO's availability — without missing Prayer or Lunch.
+:::
+
+## Your Task
+
+Use **Chain of Thought** to build the schedule.
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; font-size: 0.85em;"}
+**Think step-by-step:**
+
+1. Block out the CEO's window (11:00 – 13:00)
+2. Place the Strategy Workshop to maximize CEO overlap
+3. Check for Salat Al-Dhuhr timing (~12:00)
+4. Schedule Lunch *after* Salat
+5. Fill remaining slots with other activities
+6. Verify: Does the CEO attend the workshop? Is Salat respected? Is Lunch after Salat?
+:::
+
+. . .
+
+**Time: 20 minutes**
+
+# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Match the Technique
+
+## Quiz — Question 1
+
+A government ministry asks you to **verify budget figures** extracted from a scanned Arabic PDF.
+
+Which technique?
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: white; padding: 1em; border-radius: 12px; text-align: center;"}
+**Self-Consistency** — Extract 3 times, compare results, flag mismatches.
+:::
+:::
+
+## Quiz — Question 2
+
+Your team needs to decide whether to **build or buy** a new CRM system.
+
+Which technique?
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #9B8EC0; color: white; padding: 1em; border-radius: 12px; text-align: center;"}
+**Tree of Thoughts** — Have the AI debate as CTO, CFO, and End-User before deciding.
+:::
+:::
+
+## Quiz — Question 3
+
+You need to calculate **project delivery dates** accounting for Ramadan working hours and public holidays.
+
+Which technique?
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: white; padding: 1em; border-radius: 12px; text-align: center;"}
+**Chain of Thought** — Step through each constraint before calculating the final date.
+:::
+:::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **AI defaults to fast thinking** — your job is to force it to think slow
+2. **Chain of Thought** — "think step by step" for logic and math
+3. **Tree of Thoughts** — simulate a team debate for strategy decisions
+4. **Self-Consistency** — run it 3 times for data verification
+5. **Combine techniques** — CoT inside ToT, Self-Consistency to verify CoT
+:::
