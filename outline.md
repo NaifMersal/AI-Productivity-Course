@@ -36,7 +36,7 @@
 
 #### **Session 4: Building "Specialized Brains" (Context) (13:30 – 15:00)**
 
-*   **Global vs. Local Context:** Move from the "Chat Window" (short-term memory) to a **Gem** (Gemini) or **Project/GPT** (Claude/ChatGPT) (long-term memory).
+*   **Global vs. Local Context:** Move from the "Chat Window" (short-term memory) to a **Gem** (Gemini) or **Project/GPT** (Claude/ChatGPT) (long-term memory including personal memory and preferences).
 *   **The "Digital Twin" Concept:** How to build a persistent assistant that knows your style and rules.
 *   **Practical Application:** Convert the "Client Relationship Assistant" or "Project Lead" prompt from Session 3 into a reusable **Gem**.
     *   *Input:* Messy notes/emails.
@@ -46,7 +46,7 @@
 #### **Session 5: The Assembly Line (SOPs & Workflows) (15:15 – 16:30)**
 
 *   **The Reality:** "Garbage In, Garbage Out." We all know that vague inputs lead to messy outputs.
-*   **The Friction:** The "Copy-Paste Loop"—taking bad AI data, fixing it manually, and trying again is a waste of time.
+
 *   **The Solution:** **Markdown SOPs**. Teaching the AI a step-by-step Standard Operating Procedure.
 *   **Student Activity:** The "Expense Report" Nightmare.
     *   *Scenario:* It's the end of the month. You have a crumpled photo of a dinner receipt, a forwarded airline confirmation email, and a sporadic list of taxi rides in WhatsApp.

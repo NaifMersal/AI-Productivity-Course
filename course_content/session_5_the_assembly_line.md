@@ -18,9 +18,7 @@ Most people treat AI like a chatty intern for these tasks.
 *   *User:* "Here are some notes, make them look nice."
 *   *AI:* "Sure! Here is a lovely summary..." (Misses 3 key dates, hallucinates a budget item, and formats it as a poem).
 
-**The Friction (The "Copy-Paste Loop"):**
-You spend 5 seconds pasting the data, and 10 minutes fixing the AI's mistakes.
-If you have to check every single line, **the AI is not saving you time.**
+
 
 ---
 
@@ -111,7 +109,7 @@ If you run the SOP above, the AI ignores the "chatty" parts of the WhatsApp note
 
 **Why this matters:**
 This isn't just a table. It is **Structured Data**.
-In **Session 6 (The Data Factory)**, we will take this exact dataset and ask the AI:
+In **Session 6 (The Data Factory)**, we will take a larger version of this dataset (available as `data/expenses_export.csv`) and ask the AI:
 *"Analyze my travel spend vs. meals for Q4"* or *"Visualize this data."*
 
 **You cannot analyze chaos. You can only analyze structure.**
