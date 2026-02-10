@@ -6,7 +6,7 @@
 
 ## 1. The Problem: The "Groundhog Day" Loop
 
-In Session 2, we wrote a perfect R-C-T-C prompt to update **Dr. Ahmad** about the Hydrogen Report. It worked great.
+In Session 2, we wrote a perfect R-C-T-C prompt to update **Ms. Sarah** about the **App Launch Security Crisis**. It worked great.
 But next week, when you have an update about **Solar Panel Supply Chains**, what happens?
 *   You open a new chat.
 *   The AI has **amnesia**. It doesn't know you are a Project Lead. It doesn't know Dr. Ahmad likes bullet points. It doesn't know the tone must be "Saudi Executive."
@@ -45,17 +45,18 @@ Recall our **Project Lead** scenario from Session 2. We are going to turn that "
 We will configure the Gem/Project with the following **System Instructions** (The "Global Context"):
 
 > **System Instructions:**
-> You are the **Strategy Unit Reporting Lead** for a Saudi Giga-Project.
-> Your goal is to take raw, messy field notes and convert them into high-priority **"Red Flag Reports"** for the Director (Dr. Ahmed).
+> You are the **Product Operations Lead** for a major FinTech company.
+> Your goal is to take raw, messy updates from the tech team and convert them into high-priority **"Decision Memos"** for the C-Suite.
 > 
 > **Your Rules (Constraints):**
-> 1.  **Tone:** Executive, direct, and concise. No "fluff" or happy talk.
+> 1.  **Tone:** Direct, solution-oriented, and "Private Sector Fast."
 > 2.  **Format:**
->     *   **Headline:** [Topic] - [Urgency Level]
->     *   **Executive Summary:** One sentence, BLUF (Bottom Line Up Front).
->     *   **Key Risks:** Bullet points (max 3).
->     *   **Required Decision:** What do you need from the Director? (Yes/No/Meeting).
-> 3.  **Language:** Professional English (UK spelling), but culturally aware (e.g., use "Ramadan working hours" if relevant, accurate Hijri dates if mentioned).
+>     *   **Subject:** [Topic] - [Status: CRITICAL/DELAYED/ON TRACK]
+>     *   **BLUF (Bottom Line Up Front):** One sentence summary.
+>     *   **The Problem:** Concise explanation of the blocker.
+>     *   **The Options:** Option A (Safe but slow) vs. Option B (Fast but risky).
+>     *   **Recommendation:** Your professional opinion.
+> 3.  **Language:** Professional English, focused on business impact (Revenue, Reputation, User Experience).
 
 ---
 
@@ -66,24 +67,26 @@ Create this Gem (mentally or actually if you have the tool open).
 Now, we will **TEST** it with a totally different scenario to prove it "remembers" the rules.
 
 **The New "Messy" Input (Scenario B):**
-You are managing the construction of a new Visitor Centre in AlUla. You just got off a call with the main contractor.
-> *Notes: Site visit today. The glass panels for the main facade are stuck in customs at Jeddah Islamic Port. Delay is 2 weeks. The opening ceremony is in 3 weeks! This is a disaster. We need to pay an expeditor SR 50,000 to release them by Thursday or we miss the Royal Commission visit. Need approval for the money ASAP.*
+You are managing the "Ramadan Promo" marketing campaign.
+> *Notes: The creative agency just called. The main video file is corrupted. They can't re-export until tomorrow morning. But the paid ads are scheduled to go live at midnight tonight! If we miss the midnight slot, we lose the 'first day of Ramadan' traffic spike. We can run a static image ad instead, but conversion will be 50% lower. What do you want to do? Need answer now.*
 
 **The Gem Output (What we expect):**
-Because we built the **"Executive Briefer,"** we don't need to tell it to be professional or use bullet points. It just listens to the note and says:
+Because we built the **"Executive Briefer"** (or "Product Ops Bot"), it adapts perfectly:
 
-> **Headline:** AlUla Visitor Centre Facade - **CRITICAL DELAY**
+> **Subject:** Ramadan Promo Launch - **CRITICAL ISSUE**
 > 
-> **Executive Summary:**
-> Glass panels are held at Jeddah Customs, risking a 2-week delay that conflicts with the Royal Commission visit/Opening Ceremony.
+> **BLUF:**
+> Main video asset is corrupted, putting the midnight launch at risk.
 > 
-> **Key Risks:**
-> *   Missed deadline for Opening Ceremony (3 weeks out).
-> *   Reputational risk during Royal Commission visit.
+> **The Problem:**
+> Agency cannot deliver video until tomorrow morning. We will miss the high-traffic midnight slot.
 > 
-> **Required Decision:**
-> *   **APPROVE** SR 50,000 budget for customs expeditor to release cargo by Thursday.
-> *   *Response needed by COB today.*
+> **The Options:**
+> *   **Option A:** Delay launch to tomorrow (Miss peak traffic, preserve brand quality).
+> *   **Option B:** Launch tonight with Static Image (Hit peak traffic, lower conversion).
+> 
+> **Recommendation:**
+> *   **Go with Option B (Static Image).** It is critical to be present at midnight. We can swap in the video tomorrow morning for the rest of the campaign.
 
 ---
 

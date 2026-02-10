@@ -10,15 +10,16 @@ From Search to Systems
 
 - **Session 1:** The AI-Native Mindset
 - **Session 2:** The Science of Delegation (R-C-T-C)
-- **Session 3:** Building Specialized Brains
-- **Session 4:** The Research Stack
-- **Session 5:** The Narrative Architect
+- **Session 3:** Building "Specialized Brains" (Context)
+- **Session 4:** The First Interaction – The Research Stack
+- **Session 5:** Advanced Prompt Engineering
 
 
-## Day 2: Advanced Intelligence
+## Day 2: Advanced Intelligence & Executive Output
 
-- **Session 6:** The Design Engine
-- **Session 7:** The Data Factory (Enrichment)
-- **Session 8:** Personal Productivity Systems
-- **Session 9:** The Finale & ROI
+- **Session 6:** The Narrative Architect
+- **Session 7:** The Design Engine
+- **Session 8:** Interviewing Your Data
+- **Session 9:** Personal Productivity Systems
+- **Session 10:** The Finale & ROI
 

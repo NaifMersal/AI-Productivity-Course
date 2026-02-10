@@ -80,7 +80,13 @@ Old Way: Read frantically, highlight, panic-type. (Time: 2 hours).
     > Include page references for every point.
     > Conclude with a 'Recommended Stance' for the board meeting."
 4.  **The Polish:** Verify the citations. (Click the little numbers to check the source text).
-5.  **The Flex (Optional):** Generate an "Audio Overview" and send the link to your manager saying: *"Here is the summary, and I also generated a 5-minute podcast version if you prefer to listen on your way to the meeting."*
+5.  **Part 2: The Action (Closing the Loop):**
+    *   Now that you have the facts, **Delegation** kicks in (Session 2 skill).
+    *   *Prompt:* "Based on this summary, draft a high-priority email to my Director, Dr. Ahmed.
+        *   **Context:** He is heading into a ministry meeting.
+        *   **Task:** Warn him about the 'Euro-Deal' risks we found.
+        *   **Constraint:** Use 'Saudi Executive' tone. Bullet points only."
+6.  **The Flex (Optional):** Generate an "Audio Overview" and send the link to your manager saying: *"Here is the summary, and I also generated a 5-minute podcast version if you prefer to listen on your way to the meeting."*
 
 > **Quick Instruction for the Activity:**
 > For the **"10-Minute Research Task"**, download the **IEA Hydrogen Report** linked above. It is over 100 pages. Uploading this to NotebookLM and asking it to "Find the 3 biggest risks for a Saudi Energy company" will perfectly demonstrate the power of the tool, as it will have to synthesize data from multiple chapters instantly.

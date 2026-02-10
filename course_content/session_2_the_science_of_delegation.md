@@ -81,28 +81,28 @@ Instead of panic-writing, I built a reliable system using R-C-T-C.
 ## 3. Student Activity: The "Project Lead" Simulation (Part 1)
 
 **Scenario:**
-You are a **Project Lead** at a major Saudi entity (e.g., PIF Giga-project or Ministry).
-You have just received urgency messy notes from a strategy session regarding the **"Global Green Hydrogen Report"**.
-You need to send an urgent update to your **Director**, "Dr. Ahmed," who is heading into a strategy meeting at the Ministry of Energy.
+You are the **Product Lead** for a leading Saudi FinTech company.
+You are 3 days away from launching your new mobile app.
+You just received a panicked update from your Tech Lead regarding a security issue.
+You need to send an urgent recommendation to your **CEO**, "Ms. Sarah."
 
 **Your Goal:**
 Write an R-C-T-C prompt to generate a **"Red Flag Report"** email.
 
 **The "Messy" Context (Copy/Paste this into your prompt):**
-> *Just finished reading the IEA report. Big issues. Europe is moving slower than expected on hydrogen imports. This affects our export strategy for 2030. We might need to look at Asian markets (Japan/Korea) instead. Also, tech costs are dropping... actually, wait, electrolyzer costs are UP by 10% due to inflation. Good for us? No, bad for us. Need to tell Dr. Ahmed we should pause the "Euro-Deal" for 2 weeks until we see the new policy. Meeting is in 1 hour. Keep it short.*
+> *Bad news. The external penetration testing report just came back. They found a critical vulnerability in the login API. If we launch on Sunday, hackers could bypass 2FA. We cannot go live. The dev team needs 5 days to fix and re-test. But the marketing campaign with the influencers is already paid for and starts Monday! We need to either delay the launch (and lose marketing money) or launch a "Lite" version with no login. I need a decision by 5 PM.*
 
 **Step-by-Step Task:**
 
 1.  **Open Cloud/ChatGPT/Gemini.**
 2.  **Apply R-C-T-C:**
-    *   **Role:** Who should the AI be? (Strategic Advisor? Crisis Manager?)
+    *   **Role:** Who should the AI be? (Product Manager? Crisis Communicator?)
     *   **Context:** Paste the "Messy Context" above.
-    *   **Task:** Draft a high-priority email to Dr. Ahmed.
+    *   **Task:** Draft a high-priority email to Ms. Sarah.
     *   **Constraint:**
-        *   Tone: Direct, urgent, executive-level (Saudi professional standard).
-        *   Format: Bullet points for "Key Risks" and "Recommendations."
-        *   **Pro Tip:** Add the "Clarifications Needed" constraint. The context has a contradiction ("Good for us? No, bad for us")—see if the AI catches it!
-3.  **Execute & Refine:** Run the prompt. Does it sound like *you*?
+        *   Tone: Direct, urgent, professional (Private Sector speed).
+        *   Format: "BLUF" (Bottom Line Up Front), Bullet points for "Options" and "Recommendation".
+3.  **Execute & Refine:** Run the prompt. Does it sound like a leader solving a problem, or just reporting one?
 
 ---
 
