@@ -238,10 +238,10 @@ The "Project Lead" Simulation
 ## Your Scenario {auto-animate=true}
 
 ::: {data-id="activity"}
-You are a **Project Lead** at a major Saudi entity (PIF / Ministry).
+You are the **Product Lead** for a leading Saudi FinTech company.
 :::
 
-You've read the [Green Hydrogen Report](https://www.iea.org/reports/global-hydrogen-review-2024) from Session 2. Now you need to send an urgent **"Red Flag Report"** email to **Dr. Ahmed** before his Ministry of Energy meeting.
+You are 3 days away from launching your new mobile app. You just received a panicked update from your Tech Lead regarding a critical security issue. You need to send an urgent recommendation to your **CEO**, "Ms. Sarah."
 
 ## Your Messy Notes {auto-animate=true}
 
@@ -250,7 +250,7 @@ Copy/paste this into your prompt:
 :::
 
 ::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-style: italic; font-size: 0.8em;"}
-"Just finished the IEA report. Big issues. Europe is moving slower than expected on hydrogen imports. This affects our export strategy for 2030. We might need to look at Asian markets (Japan/Korea) instead. Also, tech costs are dropping... actually, wait, electrolyzer costs are UP by 10% due to inflation. Good for us? No, bad for us. Need to tell Dr. Ahmed we should pause the 'Euro-Deal' for 2 weeks until we see the new policy. Meeting is in 1 hour. Keep it short."
+"Bad news. The external penetration testing report just came back. They found a critical vulnerability in the login API. If we launch on Sunday, hackers could bypass 2FA. We cannot go live. The dev team needs 5 days to fix and re-test. But the marketing campaign with the influencers is already paid for and starts Monday! We need to either delay the launch (and lose marketing money) or launch a 'Lite' version with no login. I need a decision by 5 PM."
 :::
 
 ## Your Task {auto-animate=true}
@@ -260,27 +260,26 @@ Build an R-C-T-C prompt:
 :::
 
 ::: {.incremental}
-1. **Role** — Who should the AI be? (Strategic Advisor? Crisis Manager?)
+1. **Role** — Who should the AI be? (Product Manager? Crisis Communicator?)
 2. **Context** — Paste the messy notes
-3. **Task** — Draft a high-priority email to Dr. Ahmed
+3. **Task** — Draft a high-priority email to Ms. Sarah
 4. **Constraints:**
-   - Tone: Direct, urgent, executive-level
-   - Format: Bullet points for "Key Risks" and "Recommendations"
-   - Add a "Clarifications Needed" section
+   - Tone: Direct, urgent, professional (Private Sector speed)
+   - Format: "BLUF" (Bottom Line Up Front), Bullet points for "Options" and "Recommendation"
 :::
 
 ## The Hidden Test
 
 ::: {.callout-note}
 ## Did the AI catch it?
-The notes contain a contradiction: *"tech costs are dropping... actually, wait, electrolyzer costs are UP."*
+The prompt needs to weigh **Security Risk** (Hacking) vs **Business Risk** (Lost Marketing Money).
 
-If you added the **Clarifications** constraint, the AI should flag this.
+If you added the **Recommendation** constraint, the AI should clearly argue for one path (usually Security First).
 :::
 
 . . .
 
-**Run it. Refine it. Does it sound like *you*?**
+**Run it. Refine it. Does it sound like a leader?**
 
 # Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 

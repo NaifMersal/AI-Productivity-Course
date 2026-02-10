@@ -276,7 +276,21 @@ Polish and share your output:
 ::: {.incremental}
 1. **Verify citations** — click the page references, check the source text
 2. **Edit for tone** — match your company's board style
-3. **Optional flex** — generate an Audio Overview and send the link: *"Here's the summary, plus a 5-min podcast version for the drive to the meeting."*
+3. **Optional flex** — generate an Audio Overview and send the link
+:::
+
+## Step 4: The Action (Closing the Loop) {auto-animate=true}
+
+::: {data-id="steps"}
+Now that you have the facts, **Delegation** kicks in.
+:::
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.85em;"}
+"Based on this summary, draft a high-priority email to my Director, Dr. Ahmed.
+
+- **Context:** He is heading into a ministry meeting.
+- **Task:** Warn him about the 'Euro-Deal' risks we found.
+- **Constraint:** Use 'Saudi Executive' tone. Bullet points only."
 :::
 
 # Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}

@@ -22,7 +22,7 @@ Stop repeating yourself.
 ## Remember Session 2? {auto-animate=true}
 
 ::: {data-id="problem" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-We wrote a perfect R-C-T-C prompt to update Dr. Ahmed about the Hydrogen Report.
+We wrote a perfect R-C-T-C prompt to update Ms. Sarah about the **App Launch Security Crisis**.
 
 **It worked great.**
 :::
@@ -38,9 +38,9 @@ You open a new chat. The AI has **amnesia**.
 . . .
 
 ::: {.incremental}
-- It doesn't know you're a Project Lead
-- It doesn't know Dr. Ahmed likes bullet points
-- It doesn't know the tone must be "Saudi Executive"
+- It doesn't know you're a Product Lead
+- It doesn't know Ms. Sarah likes "BLUF"
+- It doesn't know the tone must be "Private Sector Fast"
 - You type the **Role** and **Constraints** all over again
 :::
 
@@ -147,17 +147,17 @@ Instructor Demo
 ## Step 1: System Instructions {auto-animate=true}
 
 ::: {data-id="instructions" style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.8em;"}
-You are the **Strategy Unit Reporting Lead** for a Saudi Giga-Project. Your goal is to take raw, messy field notes and convert them into high-priority **"Red Flag Reports"** for the Director (Dr. Ahmed).
+You are the **Product Operations Lead** for a major FinTech company. Your goal is to take raw, messy updates from the tech team and convert them into high-priority **"Decision Memos"** for the C-Suite.
 
 **Your Rules:**
 
-1. **Tone:** Executive, direct, concise. No fluff.
+1. **Tone:** Direct, solution-oriented, "Private Sector Fast"
 2. **Format:**
-   - **Headline:** [Topic] — [Urgency Level]
-   - **Executive Summary:** One sentence, BLUF (Bottom Line Up Front)
-   - **Key Risks:** Bullet points (max 3)
-   - **Required Decision:** What do you need? (Yes / No / Meeting)
-3. **Language:** Professional English (UK spelling), culturally aware
+   - **Subject:** [Topic] - [Status]
+   - **BLUF:** Bottom Line Up Front
+   - **Problem & Options:** Concise bullets
+   - **Recommendation:** Clear professional opinion
+3. **Language:** Professional English, focused on business impact
 :::
 
 ## Step 2: Test with New Input {auto-animate=true}
@@ -169,27 +169,28 @@ System Instructions loaded — "Executive Briefer" is ready.
 Now test with a **completely different scenario** to prove it remembers:
 
 ::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-style: italic; font-size: 0.8em;"}
-"Site visit today. Glass panels for the main facade stuck in customs at Jeddah Islamic Port. Delay is 2 weeks. Opening ceremony in 3 weeks! Disaster. Need to pay an expeditor SR 50,000 to release by Thursday or we miss the Royal Commission visit. Need approval ASAP."
+"Creative agency called. Main video file is corrupted. Can't re-export until tomorrow. Paid ads go live at midnight! If we miss it, we lose the 'first day of Ramadan' spike. We can run a static image, but conversion is 50% lower. What do you want to do? Need answer now."
 :::
 
 ## The Output {auto-animate=true}
 
 ::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.85em;"}
 
-**AlUla Visitor Centre Facade — CRITICAL DELAY**
+**Subject:** Ramadan Promo Launch - **CRITICAL ISSUE**
 
-**Executive Summary:**
-Glass panels held at Jeddah Customs, risking a 2-week delay that conflicts with the Royal Commission visit.
+**BLUF:**
+Main video asset corrupted; recommended launching Static Image to save midnight slot.
 
-**Key Risks:**
+**The Problem:**
+Agency delayed. Missing the midnight launch risks 100% of 'Day 1' traffic.
 
-- Missed deadline for Opening Ceremony (3 weeks out)
-- Reputational risk during Royal Commission visit
+**The Options:**
 
-**Required Decision:**
+- **Option A:** Delay (Miss traffic, high quality)
+- **Option B:** Static Image (Hit traffic, lower conversion)
 
-- **APPROVE** SR 50,000 for customs expeditor — release by Thursday
-- *Response needed by COB today*
+**Recommendation:**
+**Option B.** Presence is critical. Swap video tomorrow.
 :::
 
 ## What Just Happened
