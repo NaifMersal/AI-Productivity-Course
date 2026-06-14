@@ -19,5 +19,8 @@ Thumbs.db
 # Claude Code
 .claude/
 
+# Quarto preview assets
+*_files/
 
 **/*.quarto_ipynb
+

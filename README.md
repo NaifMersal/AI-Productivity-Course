@@ -1,6 +1,8 @@
-# Prompt Engineering 2 Days Course
+# AI at Work: Build the Workflows That Win Back Your Week
 
-This repository contains the course materials and slide decks for the Prompt Engineering course.
+This repository contains the course materials and slide decks for **AI at Work** — a 2-day
+workshop that teaches managers and professionals to turn the work they repeat into reusable,
+measurable AI workflows.
 
 > [!NOTE]
 > Please refer to [outline.md](outline.md) for the detailed course outline, schedule, and session descriptions.
@@ -21,8 +23,8 @@ quarto render
 To render or preview a single deck with live reload:
 
 ```bash
-quarto render course_content/slides/session_1_ai_native_mindset.qmd
-quarto preview course_content/slides/session_1_ai_native_mindset.qmd
+quarto render course_content/slides/session_1_mindset_and_automation_backlog.qmd
+quarto preview course_content/slides/session_1_mindset_and_automation_backlog.qmd
 ```
 
 ## Project Structure

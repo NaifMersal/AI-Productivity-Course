@@ -1,25 +1,25 @@
 # Course Overview {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
-Building Your Digital Factory
+AI at Work: Build the Workflows That Win Back Your Week
 
 # The Journey {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
-From Search to Systems
+From One-Off Prompts to Reusable Workflows
 
-## Day 1: Architecting the Brain
+## Day 1: Build Your First Workflows
 
-- **Session 1:** The AI-Native Mindset
-- **Session 2:** The Science of Delegation (RICE)
-- **Session 3:** Building "Specialized Brains" (Context)
-- **Session 4:** The First Interaction – The Research Stack
-- **Session 5:** Advanced Prompt Engineering
+- **Session 1:** The AI-Native Mindset & Your Automation Backlog
+- **Session 2:** Delegating to AI — The RICE Pattern
+- **Session 3:** Reusable Workflows — Building Specialized Assistants
+- **Session 4:** Grounding AI in Truth — The Research Workflow
+- **Session 5:** Solving Hard Problems
 
 
-## Day 2: Advanced Intelligence & Executive Output
+## Day 2: Executive Output & Personal Systems
 
-- **Session 6:** The Narrative Architect
+- **Session 6:** From Notes to Narrative
 - **Session 7:** The Design Engine
 - **Session 8:** Interviewing Your Data
-- **Session 9:** Personal Productivity Systems
-- **Session 10:** The Finale & ROI
+- **Session 9:** Your Personal AI System
+- **Session 10:** The ROI Finale
 

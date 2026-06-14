@@ -4,13 +4,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**The AI-Native Professional: Building Your Digital Factory** — a 2-day, 10-session
+**AI at Work: Build the Workflows That Win Back Your Week** — a 2-day, 10-session
 instructor-led workshop teaching managers and professionals to use AI as a permanent
 member of their operations team (not as a search engine). The deliverable is a set of
-reusable AI workflows for business process automation.
+reusable AI workflows for business process automation, framed around **AI productivity**
+and **measurable time won back**.
 
-The delivery loop is **Show** (instructor demo) → **Build** (students apply the
-framework to a project) → **Refine** (group critique).
+The delivery loop is **Show** (instructor demo) → **Build** (students apply a workflow
+to a real task) → **Refine** (group critique).
+
+**The running spine:** In Session 1 each participant writes an **Automation Backlog**
+(their recurring tasks) and starts a **Time Log**. Every build session pulls one task
+from that backlog, builds a workflow for it, and records before/after time; Session 10
+totals it into **hours won back per week** (the ROI capstone). The worksheet lives at
+`prompts/automation_backlog_and_time_log.md`.
+
+> Note: Sessions 7–10 are described in `outline.md` but their slide decks are not yet
+> authored — only Sessions 1–6 have `.qmd` files.
 
 ### Key Files
 - `outline.md` — master course outline (10 sessions, schedule, activities). Primary doc.
@@ -44,14 +54,16 @@ the source path into `output/`, e.g. `course_content/slides/foo.qmd` →
 
 ## Core Teaching Framework
 
-**RICE Pattern** (introduced in Session 2, The Science of Delegation):
+**RICE Pattern** (introduced in Session 2, Delegating to AI) — the delegation pattern:
 - **R**ole: Who should the AI be?
 - **I**nstructions: What exactly should it do? (includes format, length, tone rules)
 - **C**ontext: What information should it have?
 - **E**xamples: A sample of the desired output (few-shot prompting)
 
-**Advanced Techniques** (Session 5): Chain of Thought (CoT), Tree of Thoughts (ToT),
-Self-Consistency.
+**Solving Hard Problems** (Session 5) — taught in plain language, with the industry term
+kept as a label so learners recognize it: **think step by step** (Chain of Thought),
+**debate it out** (Tree of Thoughts), **double-check** (Self-Consistency). Lead with the
+plain-language move, not the jargon.
 
 ## Content Authoring Guidelines
 
@@ -64,16 +76,16 @@ When generating or modifying course content:
 
 ## Course Schedule Reference
 
-**Day 1 — Architecting the Brain (Sessions 1–5)**
-1. The AI-Native Mindset
-2. The Science of Delegation (RICE)
-3. Building "Specialized Brains" (Context)
-4. The First Interaction — The Research Stack
-5. Advanced Prompt Engineering (CoT, ToT, Self-Consistency)
+**Day 1 — Build Your First Workflows (Sessions 1–5)**
+1. The AI-Native Mindset & Your Automation Backlog
+2. Delegating to AI — The RICE Pattern
+3. Reusable Workflows — Building Specialized Assistants
+4. Grounding AI in Truth — The Research Workflow
+5. Solving Hard Problems (think step by step / debate it out / double-check)
 
-**Day 2 — Advanced Intelligence & Executive Output (Sessions 6–10)**
-6. The Narrative Architect (The Amazon Method)
+**Day 2 — Executive Output & Personal Systems (Sessions 6–10)**
+6. From Notes to Narrative (The Amazon Method)
 7. The Design Engine
 8. Interviewing Your Data
-9. Personal Productivity Systems
-10. The Finale & ROI
+9. Your Personal AI System
+10. The ROI Finale
