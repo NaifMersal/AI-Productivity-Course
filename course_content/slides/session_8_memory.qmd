@@ -1,0 +1,183 @@
+---
+title: "Memory"
+subtitle: "Session 8 — Teaching the Agent to Remember You"
+date: today
+format: revealjs
+---
+
+# The Notebook {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Facts the agent keeps about you
+
+## Stop Re-Introducing Yourself {auto-animate=true}
+
+::: {data-id="notebook" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+A **notebook** where the office jots down lasting facts about you — your role, your
+preferences, your recurring projects — and flips back to it on future visits.
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 0.5em;"}
+**Persistent facts**, stored **across sessions** and re-sent when relevant — so you don't
+restate them each time.
+:::
+
+## The Difference It Makes {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.15em;"}
+The agent stops feeling like a **stranger every morning**.
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 0.5em;"}
+The difference between a **temp** and an assistant who's worked with you **for a year**.
+:::
+
+# Memory vs. `CLAUDE.md` {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Two notebooks, two jobs
+
+## Rules You Set vs. Facts It Keeps {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #1C355E;"}
+**`CLAUDE.md`** — the wall note
+
+Rules **you set** on purpose.
+
+Per **Project**.
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Memory** — the notebook
+
+Facts the agent **accumulates** about you.
+
+**Across** Projects.
+:::
+:::
+:::
+::::
+
+. . .
+
+::: {.callout-note}
+## Rule of thumb
+A standing **rule for one project** → `CLAUDE.md`. A fact about **you** that's true
+everywhere → Memory.
+:::
+
+# Your Default Persona {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Sound like you, everywhere
+
+## Set It Once {auto-animate=true}
+
+Seed Memory with your defaults so the agent always sounds like **you**, not a robot —
+across **every** Project:
+
+::: {.incremental}
+- **Role** — who you are and what you do
+- **Tone** — how you write (concise, warm, direct…)
+- **Format** — your go-to structure (BLUF, bullets, headers)
+:::
+
+. . .
+
+::: {.callout-tip}
+## The payoff
+A new Project still starts in your voice — no setup, no reminding.
+:::
+
+# Build: Seed the Notebook {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Then prove it carries over
+
+## Hands-On {auto-animate=true}
+
+::: {.callout-tip}
+## Steps
+1. Seed Memory with your **working style** + a few **standing facts**.
+2. **Start a fresh session.**
+3. Ask for something — confirm it **carries your style over** with zero reminders.
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+That carry-over **is** the office re-sending the right pages (Session 2).
+:::
+
+# Safety Beat {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
+
+Memory is context too
+
+## Keep the Notebook Clean {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.15em;"}
+Memory gets **re-sent** to the brain. So the **Newspaper Test** applies here too.
+:::
+
+. . .
+
+::: {.callout-warning}
+## Nothing in the notebook…
+…that you wouldn't want re-sent. Keep it **sanitized** — no secrets, no raw PII.
+:::
+
+# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Memory, `CLAUDE.md`, or neither?
+
+## Quiz {auto-animate=true}
+
+**1.** "I'm a Procurement Director; I always want bullet points."
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: white; padding: 0.6em; border-radius: 12px; text-align: center;"}
+**Memory** — a lasting fact about you, true across every Project.
+:::
+:::
+
+. . .
+
+**2.** "In *this* Board project, always cite the FY24 plan."
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #1C355E; color: white; padding: 0.6em; border-radius: 12px; text-align: center;"}
+**`CLAUDE.md`** — a standing rule for **one** Project.
+:::
+:::
+
+. . .
+
+**3.** "Use 38,500 SAR for this one calculation."
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #FF7A5C; color: white; padding: 0.6em; border-radius: 12px; text-align: center;"}
+**Neither** — a one-off detail. Just say it in the message.
+:::
+:::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **Memory = the notebook** — persistent facts about you, across sessions
+2. **`CLAUDE.md` vs Memory** — rules you set (per project) vs facts it keeps (everywhere)
+3. **Default persona** — set Role, Tone, Format once; sound like you everywhere
+4. **It's still context** — keep Memory sanitized; nothing you wouldn't want re-sent
+5. **One-off details** — belong in the message, not the notebook
+:::

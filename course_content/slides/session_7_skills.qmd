@@ -1,0 +1,215 @@
+---
+title: "Skills"
+subtitle: "Session 7 — Your Reusable Workflow Library"
+date: today
+format: revealjs
+---
+
+# From Delegation to Capability {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Build it once. Run it forever.
+
+## Remember the RICE Prompt? {auto-animate=true}
+
+::: {data-id="recall" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+In Session 3 you wrote a great delegation — but you typed it out **by hand**.
+:::
+
+. . .
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em; margin-top: 1em;"}
+A **Skill** turns that one-time delegation into a **permanent capability** the agent
+runs on command.
+:::
+
+. . .
+
+::: {style="text-align: center; color: #666; font-size: 0.9em;"}
+*The agent-era successor to a "Gem" (Gemini) / "GPT" (ChatGPT) / saved prompt.*
+:::
+
+# Anatomy of a Skill {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+In plain language
+
+## A Saved Recipe Card {auto-animate=true}
+
+::: {data-id="anatomy" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+A **recipe card filed in the office.** You say "make the quarterly summary" and the agent
+pulls the card and follows it — you don't re-explain the steps.
+:::
+
+. . .
+
+A Skill is just three things:
+
+::: {.incremental}
+- **A name** — what you call it
+- **When to use it** — so the agent knows when to reach for it
+- **The steps** — the recipe, in plain language
+:::
+
+. . .
+
+::: {.callout-note}
+## No code
+You **describe the steps**. That's a "script" — Session 2's recipe card, saved.
+:::
+
+# Instructor Demo {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
+
+"The Executive Briefer"
+
+## What We're Building {auto-animate=true}
+
+::: {data-id="briefer" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+**"The Executive Briefer"**
+:::
+
+. . .
+
+Paste **raw, messy notes** → get a **board-ready decision memo**. Save it once as a
+Skill — then run it on any future crisis.
+
+## Step 1: The Recipe {auto-animate=true}
+
+::: {data-id="recipe" style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.8em;"}
+**Name:** Executive Briefer
+
+**When to use:** Any time I paste messy updates that leadership needs as a decision.
+
+**Steps / rules:**
+
+1. **Tone:** Direct, solution-oriented, "Private Sector Fast"
+2. **Format:** Subject → **BLUF** (Bottom Line Up Front) → Problem & Options → Recommendation
+3. **Language:** Professional English, focused on business impact
+:::
+
+## Step 2: Run It on a New Scenario {auto-animate=true}
+
+::: {data-id="recipe" style="background: #f7f9fc; padding: 0.6em; border-radius: 12px; font-size: 0.7em; border-left: 4px solid #00C9A7;"}
+Skill saved — now paste a **completely different** crisis to prove it remembers:
+:::
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-style: italic; font-size: 0.8em;"}
+"Creative agency called. Main video file is corrupted. Can't re-export until tomorrow. Paid ads go live at midnight! If we miss it, we lose the 'first day of Ramadan' spike. We can run a static image, but conversion is 50% lower. What do you want to do? Need answer now."
+:::
+
+## The Output {auto-animate=true}
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.85em;"}
+
+**Subject:** Ramadan Promo Launch — **CRITICAL ISSUE**
+
+**BLUF:**
+Main video asset corrupted; recommend launching static image to save the midnight slot.
+
+**The Problem:**
+Agency delayed. Missing midnight risks 100% of 'Day 1' traffic.
+
+**The Options:**
+
+- **Option A:** Delay (miss traffic, high quality)
+- **Option B:** Static image (hit traffic, lower conversion)
+
+**Recommendation:**
+**Option B.** Presence is critical. Swap the video tomorrow.
+:::
+
+## What Just Happened {auto-animate=true}
+
+::: {.incremental}
+- We pasted **raw notes only** — no Role, no rules, no format
+- The Skill already knew the recipe
+- Board-ready memo in **10 seconds**
+:::
+
+. . .
+
+::: {.callout-important}
+## The point
+Write the recipe **once**. Run the Skill **forever**.
+:::
+
+# Build: From Your Backlog {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Package a recurring task
+
+## Make One Skill {auto-animate=true}
+
+::: {.callout-tip}
+## Hands-on
+1. Pick one **recurring** task from your Automation Backlog.
+2. Package it as a **Skill** (name, when-to-use, steps).
+3. Run it **twice** — on two different inputs — to prove it generalizes.
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+Log the **recurring weekly saving** — this one repeats every week.
+:::
+
+# Don't Over-Engineer {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Skills vs. plain chat
+
+## The Right Tool {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7; text-align: center;"}
+**Build a Skill**
+
+Recurring tasks you do again and again
+:::
+:::
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C; text-align: center;"}
+**Use plain chat**
+
+True one-offs you'll never repeat
+:::
+:::
+::::
+
+# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Skill or one-off chat?
+
+## Quiz {auto-animate=true}
+
+You need a quick email to a vendor you'll **never speak to again**. Build a Skill?
+
+. . .
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**A) Yes, always build a Skill**
+
+❌ Over-engineering.
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**B) No, use plain chat**
+
+✅ Skills = recurring. Chat = one-off.
+:::
+:::
+:::
+::::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **Skill = a saved recipe card** the agent runs on command
+2. **Anatomy** — a name, when to use it, the steps (plain language, no code)
+3. **Write once, run forever** — a one-time delegation becomes a permanent capability
+4. **Prove it generalizes** — run the Skill on a different input
+5. **Don't over-engineer** — Skills for recurring tasks, chat for true one-offs
+:::
