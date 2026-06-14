@@ -4,26 +4,36 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**AI at Work: Build the Workflows That Win Back Your Week** — a 2-day, 10-session
+**AI at Work: Build the Workflows That Win Back Your Week** — a 3-day, 12-session
 instructor-led workshop teaching managers and professionals to use AI as a permanent
 member of their operations team (not as a search engine). The deliverable is a set of
 reusable AI workflows for business process automation, framed around **AI productivity**
 and **measurable time won back**.
+
+**Primary stack:** The hands-on tool is the **Hermes desktop agent** (Projects,
+`CLAUDE.md`/`AGENTS.md`, Skills, Memory, Cron, Connectors). Concepts stay **portable** —
+each feature is taught as *the general idea → how Hermes does it → what other apps
+(ChatGPT, Gemini, Claude, Coworker) call it*. The audience is non-technical, so the agent
+is demystified, not assumed: **nobody writes code.**
 
 The delivery loop is **Show** (instructor demo) → **Build** (students apply a workflow
 to a real task) → **Refine** (group critique).
 
 **The running spine:** In Session 1 each participant writes an **Automation Backlog**
 (their recurring tasks) and starts a **Time Log**. Every build session pulls one task
-from that backlog, builds a workflow for it, and records before/after time; Session 10
+from that backlog, builds a workflow for it, and records before/after time; Session 12
 totals it into **hours won back per week** (the ROI capstone). The worksheet lives at
 `prompts/automation_backlog_and_time_log.md`.
 
-> Note: Sessions 7–10 are described in `outline.md` but their slide decks are not yet
-> authored — only Sessions 1–6 have `.qmd` files.
+> Note: `outline.md` and the concepts reference are the current source of truth. The
+> `.qmd` slide decks have **not** yet been re-authored for the 3-day/Hermes redesign —
+> the existing decks under `course_content/slides/` reflect the older 2-day structure.
 
 ### Key Files
-- `outline.md` — master course outline (10 sessions, schedule, activities). Primary doc.
+- `outline.md` — master course outline (12 sessions, schedule, activities). Primary doc.
+- `course_content/reference/mental_model_and_agent_concepts.md` — canonical plain-language
+  definitions (two layers, context, script, Project, `CLAUDE.md`, Skill, Memory, Cron,
+  Connector, blast radius). Source of truth for the Session 2 + Day-2 slide decks.
 - `course_content/slides/*.qmd` — the SDAIA-branded Quarto reveal.js slide decks (one per session).
 - `course_content/slides/_course_overview.qmd` — canonical session list / agenda.
 - `_quarto.yml` — Quarto project config at the **repo root** (global SDAIA branding; renders the source tree into repo-root `output/`).
@@ -54,16 +64,37 @@ the source path into `output/`, e.g. `course_content/slides/foo.qmd` →
 
 ## Core Teaching Framework
 
-**RICE Pattern** (introduced in Session 2, Delegating to AI) — the delegation pattern:
+**The Two Layers** (the keystone, introduced in Session 2) — the mental model everything
+else hangs off. The **model layer** is a "brain in a jar": stateless, knows nothing about
+you, just predicts the next word, forgets everything when a request ends. The **app layer**
+is the "office around the brain": it stores your info in a directory and **re-sends the
+relevant context on every request**. Once learners see this, `CLAUDE.md`, Projects, Memory,
+and Skills stop being magic — they're all the app getting smarter about *what to re-send*.
+Full definitions live in `course_content/reference/mental_model_and_agent_concepts.md`;
+reuse its analogies verbatim across decks.
+
+**Agent-stack vocabulary** (Day 2–3) — taught with the analogy first, the term as a label:
+**Project** (a dedicated office/folder), **`CLAUDE.md` / `AGENTS.md`** (standing
+instructions pinned to the wall — two filenames, one idea), **Skill** (a saved recipe
+card), **Memory** (the agent's notebook about you), **Cron** (a standing appointment),
+**Connector / MCP** (giving the agent keys to email/calendar/drive). A **script** is just
+"saved, repeatable steps" — plain language, never code.
+
+**RICE Pattern** (introduced in Session 3, Delegating to AI) — the delegation pattern:
 - **R**ole: Who should the AI be?
 - **I**nstructions: What exactly should it do? (includes format, length, tone rules)
-- **C**ontext: What information should it have?
+- **C**ontext: What information should it have? (the same "context" defined in Session 2)
 - **E**xamples: A sample of the desired output (few-shot prompting)
 
-**Solving Hard Problems** (Session 5) — taught in plain language, with the industry term
-kept as a label so learners recognize it: **think step by step** (Chain of Thought),
+**Advanced moves** (folded into Session 3) — taught in plain language, with the industry
+term kept as a label so learners recognize it: **think step by step** (Chain of Thought),
 **debate it out** (Tree of Thoughts), **double-check** (Self-Consistency). Lead with the
 plain-language move, not the jargon.
+
+**Two safety rules** — **Newspaper Test** (guards what you *paste in*; sanitize first) and,
+once agents can act, **Blast Radius / Human-in-the-Loop** (guards what the agent *does*;
+start every Skill/Cron/Connector in draft / notify-me mode before act-on-its-own). All
+hands-on agent work runs in a **sandbox folder with dummy data**.
 
 ## Content Authoring Guidelines
 
@@ -76,16 +107,20 @@ When generating or modifying course content:
 
 ## Course Schedule Reference
 
-**Day 1 — Build Your First Workflows (Sessions 1–5)**
+**Day 1 — Foundations: Think Like an AI-Native (Sessions 1–4)**
 1. The AI-Native Mindset & Your Automation Backlog
-2. Delegating to AI — The RICE Pattern
-3. Reusable Workflows — Building Specialized Assistants
+2. How AI Actually Works — The Two Layers (model vs app layer, context, script)
+3. Delegating to AI — The RICE Pattern + advanced moves (think step by step / debate it out / double-check)
 4. Grounding AI in Truth — The Research Workflow
-5. Solving Hard Problems (think step by step / debate it out / double-check)
 
-**Day 2 — Executive Output & Personal Systems (Sessions 6–10)**
-6. From Notes to Narrative (The Amazon Method)
-7. The Design Engine
-8. Interviewing Your Data
-9. Your Personal AI System
-10. The ROI Finale
+**Day 2 — Meet Your Agent: Build Your Hermes Operations Team (Sessions 5–8)**
+5. Meet Hermes — Setup & Your First Agent Run (agent-era safety: blast radius / human-in-the-loop)
+6. Projects & Standing Instructions — `CLAUDE.md` / `AGENTS.md`
+7. Skills — Your Reusable Workflow Library
+8. Memory — Teaching the Agent to Remember You
+
+**Day 3 — Agents That Act: Executive Output & ROI (Sessions 9–12)**
+9. Cron & Connectors — The Agent That Acts on Its Own
+10. From Notes to Narrative — The Amazon Method + Design Engine
+11. Interviewing Your Data
+12. The ROI Finale + Your Workflow Library

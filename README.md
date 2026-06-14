@@ -1,8 +1,9 @@
 # AI at Work: Build the Workflows That Win Back Your Week
 
-This repository contains the course materials and slide decks for **AI at Work** — a 2-day
+This repository contains the course materials and slide decks for **AI at Work** — a 3-day
 workshop that teaches managers and professionals to turn the work they repeat into reusable,
-measurable AI workflows.
+measurable AI workflows, run by an AI agent that works as a permanent member of their
+operations team.
 
 > [!NOTE]
 > Please refer to [outline.md](outline.md) for the detailed course outline, schedule, and session descriptions.
