@@ -1,0 +1,150 @@
+---
+title: "The ROI Finale"
+subtitle: "Session 12 — Your Workflow Library"
+date: today
+format: revealjs
+---
+
+# You Built a Teammate {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Let's add up what it's worth
+
+## The Stack, End to End {auto-animate=true}
+
+::: {style="font-size: 1.05em;"}
+
+::: {.incremental}
+- **Research** → ground answers in your sources *(S4)*
+- **Delegate** → RICE + advanced moves *(S3)*
+- **Project + `CLAUDE.md`** → standing instructions *(S6)*
+- **Skills** → reusable recipe cards *(S7)*
+- **Memory** → the agent knows you *(S8)*
+- **Cron + Connectors** → it acts on its own *(S9)*
+:::
+
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+The full pipeline you now operate — all of it just **context management** *(S2)*.
+:::
+
+# Your Workflow Library {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Your personal recipe book
+
+## Package Your Best Work {auto-animate=true}
+
+::: {data-id="library" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+Bundle your best **Skills** so a teammate could run them **tomorrow** — your personal
+"recipe book".
+:::
+
+. . .
+
+::: {.callout-tip}
+## The real habit
+Reach for the library at **each bottleneck** — instead of solving the same task from
+scratch, again.
+:::
+
+# ROI Calculation {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
+
+The proof the course worked
+
+## Total Your Time Log {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.05em;"}
+**Task Frequency × Duration × % AI Efficiency = hours per week won back**
+:::
+
+. . .
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.85em; margin-top: 0.5em;"}
+**Example:** A report you do **5×/week**, **40 min** each, now **75% faster**
+→ 5 × 40 × 0.75 = **150 minutes** = **2.5 hours/week** won back — from **one** workflow.
+:::
+
+## Add Up Every Backlog Item {auto-animate=true}
+
+::: {.incremental}
+- Go down your **Automation Backlog** row by row
+- For each automated task, run the formula
+- **Sum** the weekly hours across all of them
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; font-size: 1.2em; margin-top: 0.5em;"}
+That total is your **return** — in hours, every single week.
+:::
+
+# Showcase {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+3 minutes each
+
+## "The One Process I'll Never Do Manually Again" {auto-animate=true}
+
+::: {.callout-tip}
+## Your 3-minute presentation
+1. The **bottleneck** you picked
+2. The **workflow** you built (which parts of the stack)
+3. The **hours/week** it wins back
+:::
+
+. . .
+
+::: {style="text-align: center; font-style: italic; margin-top: 0.5em;"}
+**I like / I wish / I wonder** — group feedback after each.
+:::
+
+# Final Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The whole course in 3 questions
+
+## Quiz {auto-animate=true}
+
+**1.** The AI gets your tone wrong every time. Which **layer**?
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: white; padding: 0.5em; border-radius: 12px; text-align: center;"}
+App layer — fix the **standing instructions**.
+:::
+:::
+
+. . .
+
+**2.** A standing rule for one project lives in…?
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #1C355E; color: white; padding: 0.5em; border-radius: 12px; text-align: center;"}
+**`CLAUDE.md`** — the wall note.
+:::
+:::
+
+. . .
+
+**3.** A new scheduled job should start in which mode?
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #FF7A5C; color: white; padding: 0.5em; border-radius: 12px; text-align: center;"}
+**Draft / notify-me** — mind the blast radius.
+:::
+:::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **One mental model** — two layers; everything is context management
+2. **One coherent stack** — Research → Delegate → Project → Skills → Memory → Cron
+3. **Your library** — packaged Skills you reach for at every bottleneck
+4. **Your ROI** — Frequency × Duration × % Efficiency = hours won back per week
+5. **The habit** — never do the repeatable work manually again
+:::

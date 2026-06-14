@@ -1,0 +1,163 @@
+---
+title: "Interviewing Your Data"
+subtitle: "Session 11 — Conversational Analysis"
+date: today
+format: revealjs
+---
+
+# Skip the Pivot Table {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Ask your data questions like a colleague
+
+## The Old Way vs. The New Way {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**Old way**
+
+VLOOKUP, pivot tables, formulas, hours of wrangling.
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**New way**
+
+Upload the file. **Ask in plain language.**
+:::
+:::
+:::
+::::
+
+. . .
+
+::: {style="text-align: center; margin-top: 0.5em;"}
+You hand the agent the spreadsheet (the desk), then **interview** it.
+:::
+
+# Conversational Analysis {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Just ask
+
+## Questions, Not Formulas {auto-animate=true}
+
+Upload `expenses_export.csv` and ask:
+
+::: {.incremental}
+- *"What is our **fastest-growing** expense category?"*
+- *"Summarize the spending **trends** for Q3 vs. Q2."*
+- *"Which **vendor** did we spend the most with — and on what?"*
+- *"Flag any expense that looks like a **duplicate** or an outlier."*
+:::
+
+. . .
+
+::: {.callout-tip}
+## The skill is the question
+A precise question gets a precise answer. Vague in, vague out.
+:::
+
+# Extract & Enrich {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+From a photo to a row
+
+## Read a Receipt, Reconcile It {auto-animate=true}
+
+::: {data-id="ocr" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+Hand the agent a **receipt image** → it pulls out vendor, date, amount, VAT (**OCR**) →
+then **reconciles** it against the expense export.
+:::
+
+. . .
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; margin-top: 0.5em;"}
+*"Does this receipt match a row in the file? If not, add it."*
+:::
+
+. . .
+
+::: {.callout-note}
+## Verify the numbers
+A great moment for **double-check** (Session 3) — totals are expensive to get wrong.
+:::
+
+# "What If" Scenarios {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Model the change, then ask
+
+## Plan on the Enriched Data {auto-animate=true}
+
+::: {.incremental}
+- *"If we **cut Travel by 20%**, what's the new monthly total?"*
+- *"What's the VAT impact if **Meals** doubles next quarter?"*
+- *"Which **two categories** would I trim to save 10,000 SAR?"*
+:::
+
+. . .
+
+::: {.callout-warning}
+## Newspaper Test still applies
+Real financials? **Sanitize** or use the **sandbox** dataset before uploading.
+:::
+
+# Build: Interview the File {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Hands-on
+
+## Run a Real Interview {auto-animate=true}
+
+::: {.callout-tip}
+## Hands-on
+Open `course_content/data/expenses_export.csv` in the agent and run an **interview**:
+ask 3 questions, extract one receipt, and model one "what-if".
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+Log the time **vs. building the formulas by hand**.
+:::
+
+# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Conversational command structures
+
+## Quiz {auto-animate=true}
+
+Which question will get the **most useful** answer?
+
+. . .
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**A)** "Tell me about the expenses."
+
+❌ Too vague — you'll get a shrug.
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**B)** "Top 3 categories by total spend, with the % each is of the month."
+
+✅ Specific metric, grouping, and format.
+:::
+:::
+:::
+::::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **Interview, don't formula** — upload the file and ask in plain language
+2. **Precise questions win** — name the metric, the grouping, the format
+3. **Extract & enrich** — OCR a receipt, then reconcile against the data
+4. **"What if" on the spot** — model budget changes conversationally
+5. **Verify & sanitize** — double-check the numbers; mind the Newspaper Test
+:::
