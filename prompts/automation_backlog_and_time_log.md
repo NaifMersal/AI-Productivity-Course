@@ -1,7 +1,8 @@
 # Your Automation Backlog & Time Log
 
-This is the worksheet you carry through the whole workshop. You start it in **Session 1**
-and you total it in **Session 10** to prove how many hours per week you've won back.
+This is the worksheet you carry through the whole 3-day workshop. You start it in
+**Session 1** and you total it in **Session 12** to prove how many hours per week you've
+won back.
 
 Keep it somewhere you can edit live — a Notion page, a spreadsheet, or just this file.
 
@@ -33,13 +34,17 @@ For each task, capture what it costs you *today* (before AI):
 
 > Current weekly minutes = *How often* × *Minutes each time*.
 
-## Step 3 — Build a workflow, record the new cost (Sessions 2–9)
+## Step 3 — Build a workflow, record the new cost (Sessions 2–11)
 
-Each build session, pull one task from the list above and build a workflow for it
-(a RICE delegation, a saved assistant, a research workflow, etc.). Then record the new cost:
+Each build session, pull one task from the list above and build a workflow for it. As the
+course progresses the workflows get more powerful — a RICE delegation, a research workflow,
+a saved **Skill**, a scheduled **Cron** job. Record the new cost each time:
 
 | # | Workflow built | Session | New minutes each time | Minutes saved each time | Weekly minutes saved |
 |---|----------------|---------|-----------------------|-------------------------|----------------------|
+| *e.g.* | *RICE delegation: meeting notes → action items* | *3* | *2* | *13* | *65* |
+| *e.g.* | *"Executive Briefer" saved as a **Skill*** | *7* | *1* | *14* | *70* |
+| *e.g.* | *Weekly status draft on a **Cron** schedule* | *9* | *0 (runs itself)* | *20* | *20* |
 | 1 |                |         |                       |                         |                      |
 | 2 |                |         |                       |                         |                      |
 | 3 |                |         |                       |                         |                      |
@@ -48,7 +53,7 @@ Each build session, pull one task from the list above and build a workflow for i
 
 > Weekly minutes saved = (*old minutes each time* − *new minutes each time*) × *How often per week*.
 
-## Step 4 — Total your ROI (Session 10)
+## Step 4 — Total your ROI (Session 12)
 
 ```
 Hours won back per week  =  (sum of weekly minutes saved) ÷ 60
