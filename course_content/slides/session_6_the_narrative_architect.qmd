@@ -1,6 +1,6 @@
 ---
 title: "The Narrative Architect"
-subtitle: "Session 5 — The Amazon Method"
+subtitle: "Session 6 — The Amazon Method"
 date: today
 format:
   revealjs:
