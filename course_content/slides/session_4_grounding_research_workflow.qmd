@@ -1,6 +1,6 @@
 ---
-title: "The Research Stack"
-subtitle: "Session 4"
+title: "Grounding AI in Truth"
+subtitle: "Session 4 — The Research Workflow"
 date: today
 format: revealjs
 ---
@@ -281,6 +281,15 @@ Now that you have the facts, **Delegation** kicks in.
 - **Context:** He is heading into a ministry meeting.
 - **Task:** Warn him about the 'Euro-Deal' risks we found.
 - **Constraint:** Use 'Saudi Executive' tone. Bullet points only."
+:::
+
+## Now: Your Backlog
+
+::: {.callout-tip}
+## Apply it to real work
+Got a "read a long document and summarize it" task on your Automation Backlog? Run this
+research workflow on a real (safe) document and log the time: **10 minutes vs. the hours
+it used to take.**
 :::
 
 # Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}

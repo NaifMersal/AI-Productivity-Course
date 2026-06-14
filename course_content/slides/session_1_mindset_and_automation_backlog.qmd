@@ -1,5 +1,5 @@
 ---
-title: "The AI-Native Mindset"
+title: "The AI-Native Mindset & Your Automation Backlog"
 subtitle: "Session 1"
 date: today
 format: revealjs
@@ -72,7 +72,7 @@ Asking short questions like a Google search.
 
 ::: {.callout-tip}
 ## The Fix: Better Inputs
-Shift from **Querying** to **Conversag**. Give context.
+Shift from **Querying** to **Conversing**. Give context.
 :::
 
 ## Trap 2: Treating It Like a Person {auto-animate=true}
@@ -178,6 +178,37 @@ AI is a **drafting** tool, not a **fact-checking** tool.
 :::
 ::::
 
+# Where AI Pays Off {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Pick the right work to hand over
+
+## The Bottleneck Test
+
+Hand a task to AI when it is:
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+**✅ Good fit**
+
+- **Repetitive & mundane** — routine emails, status updates
+- **Data-intensive** — summarizing, finding patterns
+- **Drafting & brainstorming** — beating the blank page
+- **Predictable** — clear, logical steps
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+**⚠️ Keep a human in the loop**
+
+- **High-stakes** — ethics, safety, big consequences
+- **Deeply human** — empathy, relationships
+- **Confidential** — sensitive or proprietary data
+- **Originality is the point** — a truly unique take
+:::
+:::
+::::
+
 # Safety First {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
 
 The "Newspaper Test"
@@ -246,6 +277,30 @@ Names, amounts, projects — all exposed.
 Now you can safely ask: *"Draft constructive feedback for [Employee] based on this..."*
 :::
 
+# Build: Your Automation Backlog {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+The list we'll work from for two days
+
+## List the Work That Eats Your Week
+
+::: {style="font-size: 1.1em; margin-bottom: 0.8em;"}
+Write down **3–5 recurring tasks** that pass the Bottleneck Test.
+:::
+
+::: {.incremental}
+- For each, note **how often** (per week) and **minutes each time**
+- That's your **Time Log** — current cost, *before* AI
+- Every build session, you'll pull one task from this list and automate it
+- In Session 10 we total the minutes saved → **hours won back per week**
+:::
+
+::: {.fragment .fade-in}
+::: {.callout-tip}
+## Worksheet
+Use `prompts/automation_backlog_and_time_log.md`. Keep it open all course.
+:::
+:::
+
 # Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
 Safe or Risky?
@@ -305,7 +360,8 @@ Safe or Risky?
 ::: {.incremental}
 1. **Partner, not search engine** — give context, iterate
 2. **Avoid the 3 traps** — Search, Person, Over-Trust
-3. **Trust but verify** — draft with AI, fact-check yourself
-4. **Newspaper Test** — if in doubt, don't paste it
-5. **Sanitize first** — remove PII, keep the structure
+3. **Automate the right work** — repetitive, data-heavy, drafting, predictable
+4. **Trust but verify** — draft with AI, fact-check yourself
+5. **Newspaper Test & sanitize** — if in doubt, don't paste it
+6. **Your backlog is the target** — we automate it over the next two days
 :::

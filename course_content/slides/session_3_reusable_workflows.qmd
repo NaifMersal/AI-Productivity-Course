@@ -1,6 +1,6 @@
 ---
-title: "Building Specialized Brains"
-subtitle: "Session 3 — Global Context"
+title: "Reusable Workflows"
+subtitle: "Session 3 — Building Specialized Assistants"
 date: today
 format: revealjs
 ---
@@ -128,7 +128,7 @@ That same graduate — but you've given them your **Employee Handbook**.
 
 . . .
 
-A specialized brain designed solely to turn messy notes into executive-ready reports for your leadership team.
+A specialized assistant designed solely to turn messy notes into executive-ready reports for your leadership team. **Build it once — it becomes a reusable workflow you run forever.**
 
 # Building the Brain {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
@@ -217,7 +217,7 @@ Why this matters
 ::: {.column width="50%"}
 ::: {.fragment .fade-in}
 ::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7; text-align: center;"}
-**With the Brain**
+**With the Assistant**
 
 Paste notes → Enter → Send
 
@@ -226,6 +226,14 @@ Paste notes → Enter → Send
 :::
 :::
 ::::
+
+. . .
+
+::: {.callout-tip}
+## Log it
+This is a recurring task you do every week — so the saving recurs every week. Convert your
+Session 2 backlog item into a saved assistant and record the **weekly minutes saved** in your Time Log.
+:::
 
 ## Other "Digital Twin" Ideas
 
@@ -322,6 +330,6 @@ Chats = one-off tasks.
 1. **Stop repeating yourself** — bake context into the Brain
 2. **Local vs. Global** — chats forget, Gems/Projects remember
 3. **Digital Twin** — a pre-trained specialist that knows *your* rules
-4. **Write once, use forever** — 5 min setup saves hours
-5. **Don't over-engineer** — Gems for recurring, chats for one-off
+4. **Write once, use forever** — a reusable workflow; 5 min setup saves hours
+5. **Don't over-engineer** — assistants for recurring, chats for one-off
 :::

@@ -1,6 +1,6 @@
 ---
-title: "The Science of Delegation"
-subtitle: "Session 2 — The RICE Framework"
+title: "Delegating to AI"
+subtitle: "Session 2 — The RICE Pattern"
 date: today
 format: revealjs
 ---
@@ -18,7 +18,7 @@ Session 1: The AI-Native Mindset
 . . .
 
 ::: {data-id="approach" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
-Session 2: The Science of Delegation
+Session 2: Delegating to AI
 :::
 
 ## The Paradigm Shift {auto-animate=true}
@@ -280,6 +280,15 @@ If you added the **Recommendation** constraint, the AI should clearly argue for 
 
 **Run it. Refine it. Does it sound like a leader?**
 
+## Now: Your Backlog
+
+::: {.callout-tip}
+## Apply it to real work
+Pick one **"turn messy input into a clean output"** task from your Automation Backlog
+(Session 1). Write a RICE delegation for it, run it, and log how long it took vs. doing it
+by hand. That's your first entry in the **Time Log**.
+:::
+
 # Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
 Test Your Understanding
@@ -365,5 +374,5 @@ In **Session 3**, we turn this prompt into a permanent **"Button"** — write it
 2. **RICE** — Role, Instructions, Context, Examples
 3. **Examples are the secret weapon** — one good sample beats a paragraph of rules
 4. **Messy notes are fine** — AI extracts the structure, you verify the substance
-5. **First-shot perfection** is achievable — if you provide all 4 pillars
+5. **A usable first result** is achievable — if you provide all 4 pillars
 :::

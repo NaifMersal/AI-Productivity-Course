@@ -1,23 +1,23 @@
 ---
-title: "Advanced Prompt Engineering"
-subtitle: "Session 5 — Thinking Slow"
+title: "Solving Hard Problems"
+subtitle: "Session 5 — Make the AI Slow Down"
 date: today
 format: revealjs
 ---
 
-# The "Fast vs. Slow" Problem {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+# Fast Answers vs. Right Answers {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
 
 Why AI makes dumb mistakes on smart questions
 
-## Two Thinking Systems {auto-animate=true}
+## Two Speeds {auto-animate=true}
 
 :::: {.columns}
 ::: {.column width="50%"}
 ::: {.fragment .fade-in}
 ::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
-**System 1 — Fast**
+**Fast (the default)**
 
-Intuitive, instant, lazy.
+Instant, intuitive, a little lazy.
 
 "Write me a poem."
 
@@ -28,9 +28,9 @@ Intuitive, instant, lazy.
 ::: {.column width="50%"}
 ::: {.fragment .fade-in}
 ::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-**System 2 — Slow**
+**Slow (deliberate)**
 
-Deliberate, logical, step-by-step.
+Step-by-step, logical, careful.
 
 "Solve this scheduling conflict."
 
@@ -43,28 +43,34 @@ Deliberate, logical, step-by-step.
 ## The Problem {auto-animate=true}
 
 ::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
-By default, AI runs in **System 1** — fast and sloppy.
+By default, AI answers **fast** — and fast is sloppy on hard problems.
 :::
 
 . . .
 
 ::: {.callout-important}
 ## The Rule
-Complex tasks require **System 2**. Your job is to *force* the AI to think slow.
+Complex tasks need the **slow** answer. Your job is to make the AI slow down.
 :::
 
 . . .
 
-Today: **3 techniques** to activate System 2 thinking.
+Today: **3 moves** that force a slower, more careful answer.
 
-# Technique 1: Chain of Thought {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+# Move 1: Think Step by Step {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
-Force the AI to show its work
+Make the AI show its work
 
-## What is Chain of Thought? {auto-animate=true}
+## What is it? {auto-animate=true}
 
 ::: {data-id="cot-concept" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
-Add **"Think step by step"** to force the AI to check its own logic *before* answering.
+Add **"Think step by step"** to make the AI check its own logic *before* answering.
+:::
+
+. . .
+
+::: {style="text-align: center; color: #666; font-size: 0.9em;"}
+*Industry term: **Chain of Thought (CoT)**.*
 :::
 
 . . .
@@ -77,7 +83,7 @@ When the AI writes out its reasoning, it catches errors that it would otherwise 
 ## The Lunch Break {auto-animate=true}
 
 ::: {data-id="cot-concept" style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.8em; border-left: 4px solid #00C9A7;"}
-Chain of Thought — Scheduling Example
+Think Step by Step — Scheduling Example
 :::
 
 **Context:** You are building a schedule.
@@ -109,7 +115,7 @@ It ignores the break logic.
 Wrong.
 :::
 
-## The CoT Prompt {auto-animate=true}
+## The "Step by Step" Prompt {auto-animate=true}
 
 ::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; font-size: 0.85em;"}
 "I have a 2-hour meeting starting at 11:00 AM.
@@ -149,26 +155,32 @@ When does the meeting end? **Think step-by-step.**"
 :::
 :::
 
-# Technique 2: Tree of Thoughts {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+# Move 2: Debate It Out {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
-Simulate a team meeting inside the AI
+Run a team meeting inside the AI
 
-## What is Tree of Thoughts? {auto-animate=true}
+## What is it? {auto-animate=true}
 
 ::: {data-id="tot-concept" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
-Make the AI **debate itself** from multiple perspectives before deciding.
+Make the AI **argue from several viewpoints** before it decides.
 :::
 
 . . .
 
 ::: {style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center;"}
-Think of it as a **Team Meeting** happening inside the AI's head.
+Think of it as a **team meeting** happening inside the AI's head.
+:::
+
+. . .
+
+::: {style="text-align: center; color: #ccc; font-size: 0.9em;"}
+*Industry term: **Tree of Thoughts (ToT)**.*
 :::
 
 ## The Angry Client {auto-animate=true}
 
 ::: {data-id="tot-concept" style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.8em; border-left: 4px solid #9B8EC0;"}
-Tree of Thoughts — Strategy Example
+Debate It Out — Strategy Example
 :::
 
 **Context:** A major client is furious about a missed deadline.
@@ -233,11 +245,11 @@ Acknowledges the issue, explains the fix, protects the relationship.
 The AI finds the **synthesis** — something no single perspective would produce.
 :::
 
-# Technique 3: Self-Consistency {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
+# Move 3: Double-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
 
-Trust but verify — with math
+Make the AI verify its own numbers
 
-## What is Self-Consistency? {auto-animate=true}
+## What is it? {auto-animate=true}
 
 ::: {data-id="sc-concept" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
 Ask the AI to solve the **same problem 3 times independently**. If all 3 match — trust it. If not — flag it.
@@ -250,10 +262,16 @@ Ask the AI to solve the **same problem 3 times independently**. If all 3 match �
 Data extraction, math, calculations — anywhere a wrong number could be expensive.
 :::
 
+. . .
+
+::: {style="text-align: center; color: #666; font-size: 0.9em;"}
+*Industry term: **Self-Consistency**.*
+:::
+
 ## The Invoice Checker {auto-animate=true}
 
 ::: {data-id="sc-concept" style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.8em; border-left: 4px solid #FF7A5C;"}
-Self-Consistency — Accuracy Example
+Double-Check — Accuracy Example
 :::
 
 **Context:** A messy PDF invoice with hard-to-read handwriting.
@@ -309,23 +327,23 @@ SR 47,250 ≠ SR 47,520 ≠ SR 47,250
 The AI becomes its own **auditor**. Disagreement = uncertainty = human check.
 :::
 
-# The Decision Matrix {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+# Which Move, When? {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
-Pick the right technique
+Match the move to the problem
 
 ## When to Use What {.smaller}
 
-| Problem Type | Technique | Why |
+| Problem Type | Move | Why |
 | :--- | :--- | :--- |
-| Logic / Math / Scheduling | **Chain of Thought** | Forces step-by-step reasoning |
-| Strategy / Brainstorming | **Tree of Thoughts** | Explores multiple perspectives |
-| Data Extraction / Verification | **Self-Consistency** | Catches errors through repetition |
+| Logic / Math / Scheduling | **Think step by step** *(CoT)* | Forces careful, ordered reasoning |
+| Strategy / Brainstorming | **Debate it out** *(ToT)* | Explores multiple perspectives |
+| Data Extraction / Verification | **Double-check** *(Self-Consistency)* | Catches errors through repetition |
 
 . . .
 
 ::: {.callout-note}
 ## Tip
-You can **combine** techniques. Use CoT *inside* a Tree of Thoughts. Use Self-Consistency to verify a CoT result.
+You can **combine** moves. Make it *think step by step* inside a *debate*. *Double-check* a step-by-step result.
 :::
 
 # Activity: The Team Offsite {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
@@ -360,7 +378,7 @@ You are scheduling a **1-Day Team Retreat**. Build an agenda that fits everyone'
 
 ## Your Task
 
-Use **Chain of Thought** to build the schedule.
+Use **Think step by step** to build the schedule.
 
 ::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; font-size: 0.85em;"}
 **Think step-by-step:**
@@ -377,6 +395,14 @@ Use **Chain of Thought** to build the schedule.
 
 **Time: 20 minutes**
 
+## Now: Your Backlog
+
+::: {.callout-tip}
+## Apply it to real work
+Got a recurring **decision** or **calculation** on your Automation Backlog? Pick the matching
+move — *debate it out* for a judgment call, *double-check* for numbers — and run it on a real task.
+:::
+
 # Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
 Match the Technique
@@ -391,7 +417,7 @@ Which technique?
 
 ::: {.fragment .fade-in}
 ::: {style="background: #00C9A7; color: white; padding: 1em; border-radius: 12px; text-align: center;"}
-**Self-Consistency** — Extract 3 times, compare results, flag mismatches.
+**Double-check** *(Self-Consistency)* — Extract 3 times, compare results, flag mismatches.
 :::
 :::
 
@@ -405,7 +431,7 @@ Which technique?
 
 ::: {.fragment .fade-in}
 ::: {style="background: #9B8EC0; color: white; padding: 1em; border-radius: 12px; text-align: center;"}
-**Tree of Thoughts** — Have the AI debate as CTO, CFO, and End-User before deciding.
+**Debate it out** *(Tree of Thoughts)* — Have the AI debate as CTO, CFO, and End-User before deciding.
 :::
 :::
 
@@ -419,16 +445,16 @@ Which technique?
 
 ::: {.fragment .fade-in}
 ::: {style="background: #00C9A7; color: white; padding: 1em; border-radius: 12px; text-align: center;"}
-**Chain of Thought** — Step through each constraint before calculating the final date.
+**Think step by step** *(Chain of Thought)* — Step through each constraint before calculating the final date.
 :::
 :::
 
 ## Key Takeaways {.sdaia-dark background-color="#1C355E"}
 
 ::: {.incremental}
-1. **AI defaults to fast thinking** — your job is to force it to think slow
-2. **Chain of Thought** — "think step by step" for logic and math
-3. **Tree of Thoughts** — simulate a team debate for strategy decisions
-4. **Self-Consistency** — run it 3 times for data verification
-5. **Combine techniques** — CoT inside ToT, Self-Consistency to verify CoT
+1. **AI defaults to fast** — your job is to make it slow down on hard problems
+2. **Think step by step** *(CoT)* — for logic, math, and scheduling
+3. **Debate it out** *(ToT)* — simulate a team debate for strategy decisions
+4. **Double-check** *(Self-Consistency)* — run it 3 times for data verification
+5. **Combine the moves** — debate step-by-step, double-check the result
 :::
