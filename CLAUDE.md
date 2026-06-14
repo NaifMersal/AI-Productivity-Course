@@ -25,9 +25,10 @@ from that backlog, builds a workflow for it, and records before/after time; Sess
 totals it into **hours won back per week** (the ROI capstone). The worksheet lives at
 `prompts/automation_backlog_and_time_log.md`.
 
-> Note: `outline.md` and the concepts reference are the current source of truth. The
-> `.qmd` slide decks have **not** yet been re-authored for the 3-day/Hermes redesign —
-> the existing decks under `course_content/slides/` reflect the older 2-day structure.
+> Note: `outline.md` and the concepts reference are the source of truth. The `.qmd` slide
+> decks under `course_content/slides/` have been re-authored to match the 3-day/12-session
+> Hermes program — one deck per session (`session_1`–`session_12`) plus
+> `_course_overview.qmd`. Keep decks aligned with `outline.md` if the outline changes.
 
 ### Key Files
 - `outline.md` — master course outline (12 sessions, schedule, activities). Primary doc.

@@ -5,27 +5,27 @@ date: today
 format: revealjs
 ---
 
-# Recap: The Partner Mindset {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+# The Cleanest Proof of Session 2 {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
 
-The Bridge from Session 1
+When you control the context, you control the answer
 
 ## Why Context Matters {auto-animate=true}
 
 ::: {data-id="intro" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
-**Session 1:** We built the **Partner Mindset**.
+**Session 2:** The model has amnesia — it only knows what's on the desk.
 :::
 
 . . .
 
 ::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em; margin-top: 1em;"}
-**Session 4:** Giving that Partner the **Facts**.
+**Session 4:** So put the **right facts** on the desk — and make it answer from those only.
 :::
 
 . . .
 
 ::: {.callout-note}
 ## The Goal
-Without **grounding** in real data, even the smartest partner will hallucinate.
+Without **grounding** in real sources, even the smartest brain will **guess**.
 :::
 
 # Context Before Content {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
@@ -129,9 +129,29 @@ Market numbers must match Tadawul disclosures, not internet estimates.
 
 # Your Research Toolkit {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
-3 tools, 3 superpowers
+Hermes first — portable alternatives second
 
-## Tool A: NotebookLM (Google) {auto-animate=true}
+## Primary: Hermes {auto-animate=true}
+
+::: {data-id="tool-hermes" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Best for:** Your everyday workflow — upload your files and have the agent answer
+**only from them**, with citations.
+:::
+
+::: {.fragment .fade-in}
+**Superpower:** It's the same agent you'll build on Day 2 — your sources, your rules, in
+one place. **Drop in the document → "Based only on this, summarize and cite."**
+:::
+
+. . .
+
+::: {.callout-note}
+## The idea is portable
+The *general move* — ground the answer in your sources — works in any tool. Below are the
+alternatives when you're not in Hermes.
+:::
+
+## Alternative A: NotebookLM (Google) {auto-animate=true}
 
 ::: {data-id="tool-a" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
 **Best for:** Deep reading of massive documents (50+ pages)
@@ -153,7 +173,7 @@ Market numbers must match Tadawul disclosures, not internet estimates.
 - **Bonus:** Generate an Audio Overview to listen on the drive to KAFD
 :::
 
-## Tool B: Deep Research {auto-animate=true}
+## Alternative B: Deep Research {auto-animate=true}
 
 ::: {data-id="tool-b" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
 **Best for:** Real-time synthesis of the live web
@@ -189,6 +209,7 @@ Perplexity / ChatGPT Pro / Google Gemini
 
 | Need | Tool | Why |
 | :--- | :--- | :--- |
+| Your day-to-day, your files | **Hermes** | One agent, your sources + rules, cites |
 | Analyze a 100-page PDF | **NotebookLM** | Grounded in your docs only |
 | Live market intelligence | **Deep Research** | Real-time web with citations |
 
@@ -227,7 +248,7 @@ Upload → Instruct → Verify
 ## Step 1: Upload {auto-animate=true}
 
 ::: {data-id="steps"}
-Open **NotebookLM** (or Claude/ChatGPT with file upload)
+Open **Hermes** (or NotebookLM / Claude / ChatGPT with file upload)
 :::
 
 Drag and drop the PDF.
@@ -325,6 +346,6 @@ Live web access. NotebookLM can't do this — it only reads your docs.
 1. **Context before content** — never start with a blank prompt
 2. **Build a Trust Layer** — upload your sources, constrain the AI
 3. **No citation = didn't happen** — demand page references
-4. **Right tool, right job** — NotebookLM / Deep Research
+4. **Right tool, right job** — Hermes first; NotebookLM / Deep Research as alternatives
 5. **10 minutes, not 10 hours** — upload, interrogate, verify
 :::
