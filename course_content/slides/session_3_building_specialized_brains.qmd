@@ -2,17 +2,7 @@
 title: "Building Specialized Brains"
 subtitle: "Session 3 — Global Context"
 date: today
-format:
-  revealjs:
-    theme: [default, assets/sdaia.scss]
-    logo: assets/sdaia.svg
-    transition: slide
-    transition-speed: default
-    background-transition: fade
-    title-slide-attributes:
-      data-background-image: "assets/anim.svg"
-      data-background-opacity: "0.15"
-      data-background-size: "cover"
+format: revealjs
 ---
 
 # The "Groundhog Day" Problem {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}

@@ -2,17 +2,7 @@
 title: "The Science of Delegation"
 subtitle: "Session 2 — The R-C-T-C Framework"
 date: today
-format:
-  revealjs:
-    theme: [default, assets/sdaia.scss]
-    logo: assets/sdaia.svg
-    transition: slide
-    transition-speed: default
-    background-transition: fade
-    title-slide-attributes:
-      data-background-image: "assets/anim.svg"
-      data-background-opacity: "0.15"
-      data-background-size: "cover"
+format: revealjs
 ---
 
 # First-Shot Perfection {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}

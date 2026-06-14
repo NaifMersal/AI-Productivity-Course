@@ -2,17 +2,7 @@
 title: "The AI-Native Mindset"
 subtitle: "Session 1"
 date: today
-format:
-  revealjs:
-    theme: [default, assets/sdaia.scss]
-    logo: assets/sdaia.svg
-    transition: slide
-    transition-speed: default
-    background-transition: fade
-    title-slide-attributes:
-      data-background-image: "assets/anim.svg"
-      data-background-opacity: "0.15"
-      data-background-size: "cover"
+format: revealjs
 ---
 
 {{< include _course_overview.qmd >}}
