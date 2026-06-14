@@ -1,24 +1,24 @@
 ---
 title: "Delegating to AI"
-subtitle: "Session 2 — The RICE Pattern"
+subtitle: "Session 3 — The RICE Pattern + Advanced Moves"
 date: today
 format: revealjs
 ---
 
-# First-Shot Perfection {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+# Stop Asking. Start Delegating. {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
-Stop asking. Start delegating.
+Brief the AI like a direct report
 
-## From Research to Action {auto-animate=true}
+## From Mental Model to Action {auto-animate=true}
 
 ::: {data-id="approach" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
-Session 1: The AI-Native Mindset
+Session 2: How AI actually works — the two layers
 :::
 
 . . .
 
 ::: {data-id="approach" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
-Session 2: Delegating to AI
+Session 3: Putting the right context on the desk — on purpose
 :::
 
 ## The Paradigm Shift {auto-animate=true}
@@ -118,9 +118,9 @@ The "brain dump" — paste your notes, upload your docs, give it the raw materia
 
 . . .
 
-::: {.callout-tip}
-## Remember
-No context = hallucination. Context comes **before** content.
+::: {.callout-note}
+## This is the *same* context from Session 2
+You are loading the pages onto the brain's desk. **No context = the brain guesses.**
 :::
 
 ## E — Examples {auto-animate=true}
@@ -160,8 +160,6 @@ The "Client Relationship Assistant"
 
 ::: {data-id="story"}
 I nearly lost an **$18,000 deal** because of seven words in a notebook:
-<br>
-<span style="font-size:0.6em">*(Based on [I Built My First Custom Gemini Gem in 10 Minutes](https://medium.com/@ConnectAIbiz/i-built-my-first-custom-gemini-gem-in-10-minutes-bdb52e522e1b))*</span>
 :::
 
 . . .
@@ -196,104 +194,122 @@ This is what I actually had:
 **Example:** Match this opening style — *"Hi Lisa, great speaking with you on Tuesday. Here's where we landed: …"*
 :::
 
-## The Result {auto-animate=true}
-
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.75em;"}
-**Subject:** Recap & Next Steps: Acme Retail Partnership
-
-Hi Lisa,
-
-Great speaking with you on Tuesday.
-
-**Summary** — We discussed timeline concerns and pricing for the bulk order.
-
-**Decisions**
-
-- **Timeline:** Targeting Q3 delivery to align with your launch
-- **Pricing:** 10% discount approved for bulk order
-
-**Next Steps**
-
-- Updated proposal with discount by **this Friday**
-
-**Clarifications Needed (Internal):**
-
-- *You mentioned "send a card" for her son's graduation — draft a separate note?*
-
-*P.S. Best of luck with your son's graduation next week!*
-:::
-
 ## What Made It Work
 
 ::: {.incremental}
 - **Role** → knew to write as a relationship manager, not a robot
 - **Instructions** → specific deliverable + format, tone, and the "Clarifications" rule
 - **Context** → messy notes were enough — AI extracted the structure
-- **Example** → matched the warm opening style, so it caught the human touch (graduation card)
+- **Example** → matched the warm opening, so it caught the human touch (graduation card)
 :::
 
-# Activity {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+# When AI Fumbles a Smart Question {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
 
-The "Project Lead" Simulation
+3 advanced moves
 
-## Your Scenario {auto-animate=true}
+## Fast vs. Right {auto-animate=true}
 
-::: {data-id="activity"}
-You are the **Product Lead** for a leading Saudi FinTech company.
-:::
-
-You are 3 days away from launching your new mobile app. You just received a panicked update from your Tech Lead regarding a critical security issue. You need to send an urgent recommendation to your **CEO**, "Ms. Sarah."
-
-## Your Messy Notes {auto-animate=true}
-
-::: {data-id="activity" style="font-size: 0.85em;"}
-Copy/paste this into your prompt:
-:::
-
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-style: italic; font-size: 0.8em;"}
-"Bad news. The external penetration testing report just came back. They found a critical vulnerability in the login API. If we launch on Sunday, hackers could bypass 2FA. We cannot go live. The dev team needs 5 days to fix and re-test. But the marketing campaign with the influencers is already paid for and starts Monday! We need to either delay the launch (and lose marketing money) or launch a 'Lite' version with no login. I need a decision by 5 PM."
-:::
-
-## Your Task {auto-animate=true}
-
-::: {data-id="activity" style="font-size: 0.85em;"}
-Build a RICE prompt:
-:::
-
-::: {.incremental}
-1. **Role** — Who should the AI be? (Product Manager? Crisis Communicator?)
-2. **Instructions** — Draft a high-priority email to Ms. Sarah. Direct, urgent, professional (Private Sector speed). Use "BLUF" (Bottom Line Up Front) with bullet points for "Options" and "Recommendation".
-3. **Context** — Paste the messy notes
-4. **Example** — Show one BLUF opener to copy, e.g. *"RECOMMENDATION: Delay launch 5 days. Here's why: …"*
-:::
-
-## The Hidden Test
-
-::: {.callout-note}
-## Did the AI catch it?
-The prompt needs to weigh **Security Risk** (Hacking) vs **Business Risk** (Lost Marketing Money).
-
-If you added the **Recommendation** constraint, the AI should clearly argue for one path (usually Security First).
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+By default, AI answers **fast and shallow** — and fast is sloppy on hard problems.
 :::
 
 . . .
 
-**Run it. Refine it. Does it sound like a leader?**
+::: {.callout-important}
+## The Rule
+Complex tasks need the **slow** answer. These 3 moves force the AI to slow down.
+:::
 
-## Now: Your Backlog
+## Move 1 — Think Step by Step {auto-animate=true}
+
+::: {data-id="m1" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+Add **"think step by step"** — make the AI show its reasoning *before* the answer.
+:::
+
+::: {style="text-align: center; color: #666; font-size: 0.9em;"}
+*Industry term: **Chain of Thought (CoT)**. Best for logic, math, scheduling.*
+:::
+
+. . .
+
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.85em;"}
+*"I have a 2-hour meeting from 11:00, with a 30-min lunch at 12:00. When does it end?
+**Think step by step.**"* → It blocks each segment and lands on **1:30 PM**, not 1:00.
+:::
+
+## Move 2 — Debate It Out {auto-animate=true}
+
+::: {data-id="m2" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+Make the AI **argue from several expert viewpoints**, then synthesize.
+:::
+
+::: {style="text-align: center; color: #666; font-size: 0.9em;"}
+*Industry term: **Tree of Thoughts (ToT)**. Best for strategy and judgment calls.*
+:::
+
+. . .
+
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.85em;"}
+*"Three experts debate the reply to an angry client — Empathetic Lead, Pragmatic PM,
+Legal Advisor. Have them argue, then synthesize one balanced response."*
+:::
+
+## Move 3 — Double-Check {auto-animate=true}
+
+::: {data-id="m3" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+Have the AI solve the **same problem 3 times independently** — match = trust, mismatch = flag.
+:::
+
+::: {style="text-align: center; color: #666; font-size: 0.9em;"}
+*Industry term: **Self-Consistency**. Best for numbers and data extraction.*
+:::
+
+. . .
+
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.85em;"}
+*"Sum these invoice line items 3 separate times. If all three match, output 'Verified';
+if not, 'Manual Review Needed'."*
+:::
+
+## Which Move, When? {.smaller}
+
+| Problem Type | Move | Why |
+| :--- | :--- | :--- |
+| Logic / Math / Scheduling | **Think step by step** *(CoT)* | Forces careful, ordered reasoning |
+| Strategy / Judgment calls | **Debate it out** *(ToT)* | Explores multiple perspectives |
+| Data Extraction / Numbers | **Double-check** *(Self-Consistency)* | Catches errors through repetition |
+
+. . .
+
+::: {.callout-note}
+## You can combine them
+*Double-check* a *step-by-step* result. *Think step by step* inside a *debate*.
+:::
+
+# Build: From Your Backlog {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Delegate a real task
+
+## Apply It to Real Work
 
 ::: {.callout-tip}
-## Apply it to real work
-Pick one **"turn messy input into a clean output"** task from your Automation Backlog
-(Session 1). Write a RICE delegation for it, run it, and log how long it took vs. doing it
-by hand. That's your first entry in the **Time Log**.
+## Two-part build
+1. Pick a **"messy input → clean output"** task from your Automation Backlog and write a
+   full **RICE** delegation for it.
+2. Pick a **decision or calculation** task and add the **matching advanced move**.
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+Run it. Refine it. **Log the time saved** in your Time Log.
 :::
 
 # Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
 Test Your Understanding
 
-## Quiz — Question 1
+## Quiz — Question 1 {auto-animate=true}
 
 You prompt: *"Write a marketing post about our new coffee shop in Riyadh."*
 
@@ -314,7 +330,7 @@ Who is writing?
 ::: {style="background: #00C9A7; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
 **I** — Instructions
 
-Partially there — platform? length? tone?
+Partial — platform? length? tone?
 :::
 :::
 ::: {.column width="25%"}
@@ -334,37 +350,29 @@ No sample of the voice you want
 ::::
 :::
 
-## Quiz — Question 2
+## Quiz — Question 2 {auto-animate=true}
 
-In the "Lisa" example, why did **explicitly instructing** the AI to keep the personal note matter?
+A ministry asks you to **verify budget figures** extracted from a scanned Arabic PDF.
 
-. . .
-
-:::: {.columns}
-::: {.column width="50%"}
-::: {.fragment .fade-in}
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
-**Not because** it makes the email longer or gives AI more words.
-:::
-:::
-:::
-::: {.column width="50%"}
-::: {.fragment .fade-in}
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-**Because** it builds the relationship and proves you were listening. The "human touch" must be **delegated explicitly**.
-:::
-:::
-:::
-::::
-
-## Coming Up Next {.sdaia-dark background-color="#1C355E"}
-
-Right now, you type RICE manually every time.
+Which advanced move?
 
 . . .
 
-::: {style="font-size: 1.3em; text-align: center;"}
-In **Session 3**, we turn this prompt into a permanent **"Button"** — write it once, use it forever.
+::: {.fragment .fade-in}
+::: {style="background: #FF7A5C; color: white; padding: 1em; border-radius: 12px; text-align: center;"}
+**Double-check** *(Self-Consistency)* — extract 3 times, compare, flag mismatches.
+:::
+:::
+
+## Coming Up {.sdaia-dark background-color="#1C355E"}
+
+Right now, you type RICE **manually** every time.
+
+. . .
+
+::: {style="font-size: 1.2em; text-align: center;"}
+On **Day 2 (Session 7)**, we turn a delegation like this into a permanent **Skill** —
+write it once, run it forever.
 :::
 
 ## Key Takeaways {.sdaia-dark background-color="#1C355E"}
@@ -373,6 +381,6 @@ In **Session 3**, we turn this prompt into a permanent **"Button"** — write it
 1. **Delegate, don't ask** — brief the AI like a direct report
 2. **RICE** — Role, Instructions, Context, Examples
 3. **Examples are the secret weapon** — one good sample beats a paragraph of rules
-4. **Messy notes are fine** — AI extracts the structure, you verify the substance
-5. **A usable first result** is achievable — if you provide all 4 pillars
+4. **Slow it down on hard problems** — step by step, debate it out, double-check
+5. **Match the move to the problem** — logic / strategy / numbers
 :::

@@ -1,6 +1,6 @@
 ---
 title: "From Notes to Narrative"
-subtitle: "Session 6 — The Amazon Method"
+subtitle: "Session 10 — The Amazon Method + Design Engine"
 date: today
 format: revealjs
 ---
@@ -37,11 +37,11 @@ Amazon banned PowerPoint in meetings.
 
 . . .
 
-Writing a 6-page memo forces you to **think**. Slides allow you to **hide**.
+Writing the memo forces you to **think**. Slides let you **hide**.
 
 # Think Step by Step {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
-Using AI to logic-check your story
+Use AI to logic-check your story
 
 ## The Move {auto-animate=true}
 
@@ -53,7 +53,8 @@ Ask the AI to "think step by step" or "show your work" before giving the answer.
 
 ::: {.callout-tip}
 ## Why?
-This drastically reduces hallucinations and improves logic. *(Session 5's first move — now applied to a story.)*
+It drastically reduces hallucinations and improves logic. *(Session 3's first advanced
+move — now applied to a story.)*
 :::
 
 ## The Narrative Workflow {auto-animate=true}
@@ -78,7 +79,7 @@ AI writes a 1-page memo.
 **3. The Roast (The Stress Test)**
 :::
 
-AI acts as a Skeptic/CFO and finds holes in the logic.
+AI acts as a skeptical CFO and finds holes in the logic.
 
 . . .
 
@@ -86,11 +87,11 @@ AI acts as a Skeptic/CFO and finds holes in the logic.
 **4. The Blueprint**
 :::
 
-Convert the refined memo into a Slide Outline.
+Convert the refined memo into a slide outline.
 
 # Step-by-Step {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
-Building the Prompt
+Building the prompt
 
 ## Step 1: The Narrative Prompt {auto-animate=true}
 
@@ -126,77 +127,114 @@ Building the Prompt
 Once the logic is solid, turn text into visuals.
 
 ::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; font-size: 0.85em;"}
-**Task:** Convert the Narrative into a 5-Slide Outline.
+**Task:** Convert the narrative into a 5-slide outline.
 
 **Format:**
-- **Slide Title:** (Action-oriented)
-- **The Hook:** (One sentence summary)
-- **Visual:** (Describe the EXACT chart needed. e.g., "Bar chart showing 20% growth", NOT "A picture of growth")
-- **Speaker Notes:** (Bullet points)
+- **Slide Title:** (action-oriented)
+- **The Hook:** (one-sentence summary)
+- **Visual:** (describe the EXACT chart — e.g. "Bar chart showing 20% growth", NOT "a picture of growth")
+- **Speaker Notes:** (bullet points)
 :::
 
-# Activity {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
+# The Design Engine {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
 
-The Strategic Pitch
+Blueprint → board-ready deck in minutes
 
-## Choose Your Scenario {auto-animate=true}
+## Two Routes {auto-animate=true}
 
-::: {data-id="scenario" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px;"}
-You are pitching to a Skeptical CEO.
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Method A — One-Click**
+
+**Gamma:** paste the outline → generate a full deck.
+
+*Fast, modern, great for internal use.*
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+**Method B — Corporate-Safe**
+
+**Word / Markdown → PowerPoint:** outline into your **official template**.
+
+*Zero manual formatting, on-brand.*
+:::
+:::
+:::
+::::
+
+. . .
+
+::: {.callout-tip}
+## Same blueprint, either engine
+Your "Visual" descriptors from Step 3 are the **fuel** — they tell the engine exactly
+what each slide shows.
+:::
+
+# Build: The Emergency Board Update {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+It's 11:50. The board meets at 12:00.
+
+## Your Mission {auto-animate=true}
+
+::: {data-id="mission" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px;"}
+From **raw crisis notes**, produce a **roasted narrative** *and* a **5-slide on-brand deck**
+— before the meeting starts.
 :::
 
 . . .
 
 ::: {.incremental}
-- **Option A:** A new "Remote Work Policy"
-- **Option B:** Requesting budget for a new AI Tool
-- **Option C:** Proposing a new Senior Hire
+1. **Draft** — AI writes the 1-page argument
+2. **Roast** — AI tears it apart; you fix the logic
+3. **Blueprint** — 5-slide outline with visual descriptors
+4. **Design Engine** — outline → finished deck (Gamma or template)
 :::
 
-## Your Mission {auto-animate=true}
-
-1. **Draft:** Use AI to write the 1-page argument.
-2. **Roast:** Ask AI to tear it apart.
-3. **Refine:** Fix the logic gaps.
-4. **Blueprint:** Generate the 5-slide outline with **Visual Descriptors**.
+. . .
 
 ::: {.callout-tip}
-## Or use a real pitch
-Have a presentation you actually owe someone? Run *that* through the workflow and keep the
-blueprint — we turn it into a finished deck in Session 7.
+## Log it
+Record the time vs. building the deck by hand. Have a real pitch you owe someone? Run *that*.
 :::
 
 # Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
-## Quiz
+## Quiz {auto-animate=true}
 
-**Question:** Why do we ask the AI to "specify the Visual" (e.g., Bar chart vs Pie chart)?
+**Question:** Why do we write the narrative *before* we open the design engine?
 
 . . .
 
 ::: {.fragment .fade-in}
-**1.** Because AI likes charts.
+**1.** Because AI likes memos.
 :::
 
 . . .
 
 ::: {.fragment .fade-in}
-**2.** Because "Death by PowerPoint" happens when text/visuals don't match.
+**2.** Because the **story** is the hard part — and a roasted argument makes every later
+slide stronger.
 :::
 
 . . .
 
 ::: {.fragment .fade-in}
 ::: {style="background: #00C9A7; color: white; padding: 0.8em; border-radius: 12px;"}
-**3. So we can use it in Session 7 (The Design Engine).**
+**3. Design is cheap once the logic is solid — the engine just dresses a sound argument.**
 :::
 :::
 
 ## Key Takeaways {.sdaia-dark background-color="#1C355E"}
 
 ::: {.incremental}
-1. **Story before Slides** — Never open PowerPoint first.
-2. **Think step by step** — Use AI to *think*, not just write.
-3. **The Roast** — Let the AI be your harshest critic.
-4. **The Blueprint** — Your "Visual" instructions are the fuel for Session 7.
+1. **Story before slides** — never open the design tool first
+2. **Think step by step** — use AI to *think*, not just write
+3. **The Roast** — let the AI be your harshest critic
+4. **The Blueprint** — visual descriptors are the fuel for the engine
+5. **The Design Engine** — Gamma (one-click) or template (corporate-safe) finishes the deck
 :::
