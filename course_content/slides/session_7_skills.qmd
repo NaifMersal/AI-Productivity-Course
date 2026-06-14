@@ -18,8 +18,8 @@ In Session 3 you wrote a great delegation — but you typed it out **by hand**.
 . . .
 
 ::: {style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em; margin-top: 1em;"}
-A **Skill** turns that one-time delegation into a **permanent capability** the agent
-runs on command.
+A **Skill** turns that one-time delegation into a **permanent capability** you
+**invoke on command** — by name or a trigger phrase, never re-typed.
 :::
 
 . . .
@@ -45,7 +45,7 @@ A Skill is just three things:
 
 ::: {.incremental}
 - **A name** — what you call it
-- **When to use it** — so the agent knows when to reach for it
+- **When to use it (the trigger)** — the phrase that makes the agent *reach for the card* (e.g. "turn this into a deck")
 - **The steps** — the recipe, in plain language
 :::
 
@@ -56,79 +56,113 @@ A Skill is just three things:
 You **describe the steps**. That's a "script" — Session 2's recipe card, saved.
 :::
 
+# Skill or Standing Instruction? {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+The test: *always-on* vs *invoked on demand*
+
+## Two Homes for a Rule {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+**Standing Instruction** — *Session 6*
+
+A tone, format, or rule you want applied to **every** request.
+**Pinned to the Project wall** (`CLAUDE.md`) — always on, you never ask for it.
+:::
+:::
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Skill** — *Session 7*
+
+A procedure you **invoke** for a specific job — often producing an **artifact**.
+You call it by name / trigger when you need it.
+:::
+:::
+::::
+
+. . .
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; margin-top: 1em;"}
+"Always write memos in our house voice" → **standing instruction.**
+"Turn *these* notes into a memo, now" → **Skill you invoke.**
+:::
+
+::: {style="text-align: center; color: #666; font-size: 0.85em; margin-top: 0.4em;"}
+*Same capability — the test is whether it's always-on or invoked on demand.*
+:::
+
 # Instructor Demo {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
 
-"The Executive Briefer"
+"Build-a-Deck"
 
 ## What We're Building {auto-animate=true}
 
-::: {data-id="briefer" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
-**"The Executive Briefer"**
+::: {data-id="deck" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+**"Build-a-Deck"**
 :::
 
 . . .
 
-Paste **raw, messy notes** → get a **board-ready decision memo**. Save it once as a
-Skill — then run it on any future crisis.
+Paste **raw, messy notes** → get an **on-brand slide deck** you can export to **`.pptx`**.
+Save it once as a Skill — then **invoke** it on any future update.
 
 ## Step 1: The Recipe {auto-animate=true}
 
 ::: {data-id="recipe" style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.8em;"}
-**Name:** Executive Briefer
+**Name:** Build-a-Deck
 
-**When to use:** Any time I paste messy updates that leadership needs as a decision.
+**When to use (the trigger):** When I say *"turn these notes / this update into a deck."*
 
-**Steps / rules:**
+**Steps:**
 
-1. **Tone:** Direct, solution-oriented, "Private Sector Fast"
-2. **Format:** Subject → **BLUF** (Bottom Line Up Front) → Problem & Options → Recommendation
-3. **Language:** Professional English, focused on business impact
+1. **Outline first** — draft the storyline before any slide
+2. **One idea per slide** — a clear title + a few supporting points
+3. **Apply our house style** — colors, fonts, logo
+4. **Export** — hand back a downloadable **`.pptx`**
 :::
 
-## Step 2: Run It on a New Scenario {auto-animate=true}
+## Step 2: Invoke It {auto-animate=true}
 
 ::: {data-id="recipe" style="background: #f7f9fc; padding: 0.6em; border-radius: 12px; font-size: 0.7em; border-left: 4px solid #00C9A7;"}
-Skill saved — now paste a **completely different** crisis to prove it remembers:
+Skill saved — now **type the trigger** on a fresh input to prove it pulls the recipe:
 :::
 
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-style: italic; font-size: 0.8em;"}
-"Creative agency called. Main video file is corrupted. Can't re-export until tomorrow. Paid ads go live at midnight! If we miss it, we lose the 'first day of Ramadan' spike. We can run a static image, but conversion is 50% lower. What do you want to do? Need answer now."
+::: {style="background: #1C355E; color: #ffffff; padding: 0.8em; border-radius: 12px; font-style: italic; font-size: 0.8em; text-align: center;"}
+"Turn this into a **5-slide deck**: Q3 hit target, two regions lagging, new hire starts Monday, asking the board for budget."
 :::
 
 ## The Output {auto-animate=true}
 
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.85em;"}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.8em;"}
+A titled, on-brand deck — exportable to **`.pptx`**:
 
-**Subject:** Ramadan Promo Launch — **CRITICAL ISSUE**
+1. **Q3 Results** — target met, momentum strong
+2. **Where We're Lagging** — two regions below plan
+3. **The Plan** — new hire starts Monday
+4. **The Ask** — budget for next quarter
+5. **Next Steps** — owners + dates
+:::
 
-**BLUF:**
-Main video asset corrupted; recommend launching static image to save the midnight slot.
-
-**The Problem:**
-Agency delayed. Missing midnight risks 100% of 'Day 1' traffic.
-
-**The Options:**
-
-- **Option A:** Delay (miss traffic, high quality)
-- **Option B:** Static image (hit traffic, lower conversion)
-
-**Recommendation:**
-**Option B.** Presence is critical. Swap the video tomorrow.
+::: {style="text-align: center; color: #00C9A7; font-weight: bold; margin-top: 0.5em; font-size: 0.9em;"}
+↓ Download as .pptx
 :::
 
 ## What Just Happened {auto-animate=true}
 
 ::: {.incremental}
-- We pasted **raw notes only** — no Role, no rules, no format
-- The Skill already knew the recipe
-- Board-ready memo in **10 seconds**
+- We typed **one trigger phrase** — no Role, no format, no re-explaining the steps
+- The Skill pulled the saved recipe and built the deck
+- A downloadable **artifact** in seconds
 :::
 
 . . .
 
-::: {.callout-important}
-## The point
-Write the recipe **once**. Run the Skill **forever**.
+::: {.callout-note}
+## Coming in Session 10
+Making that deck genuinely **board-ready** — the narrative (Amazon Method) and the
+Design Engine — is Session 10. Here the point is simply: a Skill can **produce an
+artifact on command**.
 :::
 
 # Build: From Your Backlog {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
@@ -140,14 +174,38 @@ Package a recurring task
 ::: {.callout-tip}
 ## Hands-on
 1. Pick one **recurring** task from your Automation Backlog.
-2. Package it as a **Skill** (name, when-to-use, steps).
-3. Run it **twice** — on two different inputs — to prove it generalizes.
+2. Package it as a **Skill** (name, **trigger**, steps).
+3. **Invoke the same trigger twice** — on two different inputs — to prove it generalizes.
 :::
 
 . . .
 
 ::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
 Log the **recurring weekly saving** — this one repeats every week.
+:::
+
+# Your Workflow Library {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+One recipe at a time
+
+## Skills Managers Actually Use {auto-animate=true}
+
+Each one is a **trigger → recipe** the agent pulls on command:
+
+::: {style="font-size: 0.85em;"}
+| You say… | The Skill it pulls |
+|---|---|
+| "make a deck" | **Build-a-Deck** → on-brand `.pptx` |
+| "/summarize these notes" | **Briefer** → BLUF decision memo |
+| "meeting → actions" | **Minutes → Actions** → owners + deadlines |
+| "draft the weekly report" | **Weekly Status** → leadership update *(automate in Session 9)* |
+| "summarize this contract" | **Document Summary** → key changes + risks |
+:::
+
+. . .
+
+::: {style="text-align: center; color: #00C9A7; font-weight: bold; margin-top: 0.6em;"}
+Your library grows **one recipe at a time** — build the ones you repeat.
 :::
 
 # Don't Over-Engineer {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
@@ -207,9 +265,9 @@ You need a quick email to a vendor you'll **never speak to again**. Build a Skil
 ## Key Takeaways {.sdaia-dark background-color="#1C355E"}
 
 ::: {.incremental}
-1. **Skill = a saved recipe card** the agent runs on command
-2. **Anatomy** — a name, when to use it, the steps (plain language, no code)
-3. **Write once, run forever** — a one-time delegation becomes a permanent capability
-4. **Prove it generalizes** — run the Skill on a different input
+1. **Skill = a saved recipe card you invoke by a trigger** (vs an always-on Standing Instruction — Session 6)
+2. **Anatomy** — a name, a **trigger** (when-to-use), the steps (plain language, no code)
+3. **Skills produce artifacts** — a deck/`.pptx`, a memo, a report — on command
+4. **Write once, invoke forever** — prove it generalizes by running the trigger on a new input
 5. **Don't over-engineer** — Skills for recurring tasks, chat for true one-offs
 :::
