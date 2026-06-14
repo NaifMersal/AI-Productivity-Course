@@ -76,10 +76,13 @@ reuse its analogies verbatim across decks.
 
 **Agent-stack vocabulary** (Day 2–3) — taught with the analogy first, the term as a label:
 **Project** (a dedicated office/folder), **`CLAUDE.md` / `AGENTS.md`** (standing
-instructions pinned to the wall — two filenames, one idea), **Skill** (a saved recipe
-card), **Memory** (the agent's notebook about you), **Cron** (a standing appointment),
-**Connector / MCP** (giving the agent keys to email/calendar/drive). A **script** is just
-"saved, repeatable steps" — plain language, never code.
+instructions pinned to the wall — two filenames, one idea), **Skill** (a book in the
+office library — pulled and opened only when the task calls for it), **Memory** (the
+agent's notebook about you), **Cron** (a standing appointment), **Connector / MCP**
+(giving the agent keys to email/calendar/drive). A **script** is "saved, repeatable
+steps" — instructions the *agent* writes and runs as real code for exact, repeatable
+work; you never write (or see) code. A Skill is instructions the agent *reads and
+follows*; a script is code it *runs to compute*.
 
 **RICE Pattern** (introduced in Session 3, Delegating to AI) — the delegation pattern:
 - **R**ole: Who should the AI be?

@@ -220,19 +220,20 @@ This is the entire reason `CLAUDE.md`, Projects, and Memory exist — coming on 
 
 Demystified before Day 2
 
-## A Script Is a Recipe Card {auto-animate=true}
+## A Script Is Saved, Repeatable Steps {auto-animate=true}
 
 ::: {data-id="script" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-A **recipe card** of steps, written down once, so the job runs the same way every
-time — whether a person or the agent follows it.
+**Saved steps, written down once,** so the job runs the **same way every time** — exact,
+down to the last row.
 :::
 
 . . .
 
 ::: {.callout-note}
 ## Not a programmer thing
-A "script" is just *"do these steps, in this order, every time."*
-**You never write code in this course** — you describe the steps in plain language.
+A "script" is just *"do these exact steps, in this order, every time."* For precise work,
+the **agent writes and runs it as real code** — **you never write, or even see, code in
+this course.** You describe what you want; you get the result.
 :::
 
 # It All Clicks {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
@@ -248,7 +249,7 @@ to re-send**:
 - **`CLAUDE.md`** — standing instructions, re-sent every time
 - **Project** — pulls *the right folder's* pages onto the desk
 - **Memory** — facts about you, re-sent when relevant
-- **Skill** — a saved recipe the app runs on command
+- **Skill** — a book in the library the app opens on command
 :::
 
 . . .

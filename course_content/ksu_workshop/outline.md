@@ -67,7 +67,7 @@ concept is taught **with automation** (where Cowork actually writes scripts), no
 ### Session 2 — Meet Cowork + Automating Your Work (`cowork_and_automation.qmd`)
 - **Objectives:** chat vs. agent; the **working directory** (the real folder = the office);
   install/open Cowork, run a first end-to-end task; the second safety rule (the undo test /
-  blast radius); then **Skill** = saved recipe card invoked by a trigger; **`/schedule`** =
+  blast radius); then **Skill** = a book in your library opened by a trigger; **`/schedule`** =
   a standing appointment (start notify-me); **script** (defined here) = Cowork writing/running
   a small script for a repeatable calculation — no coding.
 - **Demos:** "read these three files → one summary"; Build-a-Deck Skill (notes → `.pptx`);

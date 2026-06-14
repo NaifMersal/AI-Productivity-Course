@@ -84,7 +84,7 @@ A quick, non-scary tour
 ::: {.incremental}
 - **Your files** — the documents and data for the work
 - **Your standing instructions** — `CLAUDE.md` (the wall note — Session 6)
-- **Your saved Skills** — reusable recipe cards (Session 7)
+- **Your saved Skills** — books in your library (Session 7)
 - **Your Memory** — the agent's notebook about you (Session 8)
 :::
 

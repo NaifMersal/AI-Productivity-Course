@@ -17,7 +17,7 @@ Let's add up what it's worth
 - **Research** → ground answers in your sources *(S4)*
 - **Delegate** → RICE + advanced moves *(S3)*
 - **Project + `CLAUDE.md`** → standing instructions *(S6)*
-- **Skills** → reusable recipe cards *(S7)*
+- **Skills** → books in your library *(S7)*
 - **Memory** → the agent knows you *(S8)*
 - **Cron + Connectors** → it acts on its own *(S9)*
 :::
@@ -32,13 +32,13 @@ The full pipeline you now operate — all of it just **context management** *(S2
 
 # Your Workflow Library {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
-Your personal recipe book
+Your personal shelf
 
 ## Package Your Best Work {auto-animate=true}
 
 ::: {data-id="library" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
-Bundle your best **Skills** so a teammate could run them **tomorrow** — your personal
-"recipe book".
+Bundle your best **Skills** so a teammate could run them **tomorrow** — your own
+**library** of books.
 :::
 
 . . .

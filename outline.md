@@ -33,7 +33,7 @@
     *   **The App Layer — "the office around the brain":** stores your info in files/a directory and **re-sends the relevant pages on every single request**. *This* is what makes AI feel like it remembers.
 *   **What "context" really is:** everything the app stacks on the brain's desk before it works. **Quality is mostly a context problem, not a smartness problem.**
 *   **The "desk" has limits (context window):** why long chats start "forgetting," and why saved instructions beat re-pasting.
-*   **What a "script" is:** saved, repeatable steps — a recipe card, *not* programming. Demystify the word before Day 2.
+*   **What a "script" is:** saved, repeatable steps run the same way every time — for exact work the *agent* writes and runs it as real code; *you* never write any. Demystify the word before Day 2.
 *   **The Payoff:** Once you see the two layers, `CLAUDE.md`, Projects, Memory, and Skills stop being mysterious — they're all just the app getting smarter about **what to re-send**.
 *   **Build (from your backlog):** Take a task and write a short "context pack" for it — the standing facts the AI would need every time. (This becomes raw material for your `CLAUDE.md` on Day 2.)
 *   **Micro-Check:** Live Quiz: "Which layer do you fix?" (wrong tone every time vs. a made-up fact).
@@ -87,7 +87,7 @@
 #### **Session 7: Skills — Your Reusable Workflow Library (13:15 – 14:45)**
 
 *   **From delegation to capability:** turn the RICE delegation from Session 3 into a **saved Skill** the agent runs on command — the agent-era successor to a "Gem"/"GPT"/saved prompt.
-*   **Anatomy of a Skill (in plain language):** a name, when to use it, and the steps (the "recipe card"). No code.
+*   **Anatomy of a Skill (in plain language):** a name, when to use it (the trigger), and the steps — a book the agent pulls and opens only when the task calls for it. No code.
 *   **Instructor Demo:** build **"The Executive Briefer"** — paste raw notes, get a board-ready decision memo — then save it as a Skill and run it on a *completely different* scenario to prove it remembers.
 *   **Build (from your backlog):** package one recurring task as a Skill, run it twice on different inputs, and log the recurring weekly saving.
 *   **Don't over-engineer:** Skills for recurring tasks; plain chat for true one-offs.
@@ -143,7 +143,7 @@
 #### **Session 12: The ROI Finale + Your Workflow Library (15:15 – 16:30)**
 
 *   **The Stack, end to end:** Research → Delegate → Project + `CLAUDE.md` → Skills → Memory → Cron + Connectors. The full pipeline you now operate.
-*   **Your Workflow Library:** package your best Skills so a teammate could run them tomorrow — your personal "recipe book," and the habit of reaching for it at each bottleneck.
+*   **Your Workflow Library:** package your best Skills so a teammate could run them tomorrow — your own library of books, and the habit of reaching for it at each bottleneck.
 *   **ROI Calculation:** Total your **Time Log**: **(Task Frequency × Duration × % AI Efficiency)** = hours per week won back.
 *   **Showcase:** 3-minute presentation — "The one process I will never do manually again."
 *   **Micro-Check:** Final Quiz on the two layers, the agent stack, and course ROI.

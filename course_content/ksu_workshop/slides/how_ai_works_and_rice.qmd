@@ -221,7 +221,7 @@ Everything you'll build today is just **the app deciding what to re-send**:
 ::: {.incremental}
 - **Standing instructions** — your rules, re-sent every time
 - **Memory** — facts about you, re-sent when relevant
-- **Skill** — a saved recipe the app runs on command
+- **Skill** — a book in the library the app opens on command
 - **Grounding** — your sources put on the desk, on purpose
 :::
 

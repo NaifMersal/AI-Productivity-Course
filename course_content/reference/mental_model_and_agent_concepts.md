@@ -85,14 +85,17 @@ For each term: the **analogy**, **what it really is**, and **why a manager cares
 
 ### Script
 
-- **Analogy:** A **recipe card** of steps written down once so the job runs the same way
-  every time — whether a person or the agent follows it.
-- **What it really is:** Saved, repeatable instructions. In this course a script is
-  **plain-language steps**, not programming. (Under the hood some scripts are code, but
-  **you never write code in this course** — you describe the steps.)
+- **Analogy:** A **little program the agent writes and runs** — saved steps that execute the
+  same way every time, exact down to the last row. (Different from a Skill: a Skill is
+  *instructions the agent reads and follows*; a script is *code the agent runs to compute*.)
+- **What it really is:** Saved, repeatable instructions. You describe what you want in
+  **plain language**; for exact work (totals, weighted scores, distributions) the agent
+  **writes and runs it as real code**. The brain in a jar *estimates* and can slip on
+  arithmetic; a computer *computes the same way every time*. **You never write — or even
+  see — code in this course;** you get the result.
 - **Why a manager cares:** Demystifies the word. A "script" isn't a programmer thing — it's
-  just *"do these steps, in this order, every time."* That's the foundation of every
-  workflow you'll build.
+  *"do these exact steps, in this order, every time."* That's the foundation of every
+  workflow you'll build, and why numbers it produces are trustworthy.
 
 ### Project
 
@@ -114,10 +117,12 @@ For each term: the **analogy**, **what it really is**, and **why a manager cares
   recurring rule here **once**, and it's fixed for every future request — no re-typing,
   no reminding.
 
-### Skill — "a saved recipe card the agent can pull out"
+### Skill — "a book in the office library"
 
-- **Analogy:** A **recipe card filed in the office**. You say "make the quarterly summary"
-  and the agent pulls the card and follows it — you don't re-explain the steps.
+- **Analogy:** A **book on the office library shelf**. You say "make the quarterly summary"
+  and the agent pulls *that* book and follows it — and **only** that one, not the whole
+  shelf. You don't re-explain the steps; the agent opens the book only when your task calls
+  for it.
 - **What it really is:** A named, reusable workflow saved into the agent that it can invoke
   on command. The agent-era successor to a "Gem" (Gemini) / "GPT" (ChatGPT) / saved prompt.
 - **Why a manager cares:** This is how a one-time good delegation becomes a **permanent
@@ -189,7 +194,7 @@ The original course had **one** safety rule. An agent that can *act* needs a **s
                           • CLAUDE.md (wall note)                             • predicts the next words
                           • Project (the right folder)                        • forgets it all afterward
                           • Memory (the notebook)                                     │
-                          • Skill (the recipe card)                                   │
+                          • Skill (a book in the library)                            │
                           • Connector (the keys) / Cron (the calendar)                ▼
         YOU ◀──answer/action──────────────────  files the result back  ◀──────────────
 ```
