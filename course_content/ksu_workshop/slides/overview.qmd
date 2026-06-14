@@ -1,0 +1,114 @@
+---
+title: "Building Your Own AI Assistant"
+subtitle: "A Hands-On Workshop for KSU Faculty"
+date: today
+format: revealjs
+---
+
+# Welcome {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Four hours. One working AI assistant — yours.
+
+## What You'll Walk Out With {auto-animate=true}
+
+::: {data-id="promise" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+An AI assistant **you set up yourself** — plus **2–3 automations** running on your
+own academic work.
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 1em;"}
+Not a search engine. A **member of your team** that drafts, summarizes, and calculates.
+:::
+
+## Who This Is For {auto-animate=true}
+
+::: {.callout-note}
+## KSU faculty — no coding required
+If you can write an email, you can build everything in this workshop. **Nobody writes
+code** — you describe the steps in plain language.
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 0.5em;"}
+We use **Claude Cowork** today because it's the fastest to set up — but every idea works
+in ChatGPT, Gemini, and Claude too.
+:::
+
+## The Day in Five Blocks {auto-animate=true}
+
+::: {style="font-size: 0.9em;"}
+| Block | You'll… |
+|---|---|
+| **How AI Works + RICE** | See *why* it works — and delegate like you brief a TA |
+| *Practice + break* | Write a real RICE prompt for your own work |
+| **Cowork + Automation** | Set up your agent; build Skills / Schedule / Scripts |
+| *Practice* | Run a task and package your first Skill |
+| **NotebookLM** | Turn your sources into grounded summaries and decks |
+| **Wrap-up** | Tally the hours you won back |
+:::
+
+## How We'll Work {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="33%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7; text-align: center;"}
+**Show**
+
+I demo it live
+:::
+:::
+::: {.column width="33%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0; text-align: center;"}
+**Build**
+
+You apply it to *your* work
+:::
+:::
+::: {.column width="33%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C; text-align: center;"}
+**Refine**
+
+Quick group critique
+:::
+:::
+::::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+~70% hands-on. Bring a real task you'd love to hand off.
+:::
+
+## Two Rules We Never Break {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {style="background: rgba(255,255,255,0.1); padding: 1.2em; border-radius: 12px;"}
+**Newspaper Test**
+
+Watch what you *paste in*. Sanitize student data and unpublished work first.
+:::
+:::
+::: {.column width="50%"}
+::: {style="background: rgba(255,255,255,0.1); padding: 1.2em; border-radius: 12px;"}
+**The Undo Test** *(blast radius)*
+
+Watch what the agent *does*. Start in **draft / notify-me** mode.
+:::
+:::
+::::
+
+. . .
+
+::: {style="text-align: center; margin-top: 0.8em;"}
+All hands-on work runs in a **sandbox folder with dummy data**.
+:::
+
+## Let's Begin {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+::: {.r-fit-text}
+How AI Works →
+:::

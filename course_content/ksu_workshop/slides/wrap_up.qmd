@@ -1,0 +1,129 @@
+---
+title: "Your AI Assistant"
+subtitle: "Wrap-up & Hours Won Back"
+date: today
+format: revealjs
+---
+
+# You Built It {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+From a chat box to a working assistant
+
+## The Toolkit You Now Have {auto-animate=true}
+
+::: {.incremental}
+- **A good prompt (RICE)** — delegate like you brief a TA
+- **Claude Cowork** — an assistant working on your real files
+- **Skills / Schedule / Scripts** — recurring work, done for you
+- **NotebookLM** — grounded summaries and decks from your sources
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+None of it is magic — it's all the office getting smarter about **what to re-send.**
+:::
+
+## Your Assistant Checklist {auto-animate=true}
+
+::: {style="font-size: 0.95em;"}
+| ✓ | I can… |
+|---|---|
+| ☐ | Write a RICE prompt for a recurring task |
+| ☐ | Point Cowork at a folder and run a task in propose mode |
+| ☐ | Save and invoke a Skill by its trigger |
+| ☐ | Schedule a notify-me job |
+| ☐ | Ground a summary in my sources and check citations |
+:::
+
+# Count the Hours {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+The whole point: time won back
+
+## Tally Your Savings {auto-animate=true}
+
+::: {data-id="roi" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+For each workflow you built today: **minutes saved × times per week.**
+:::
+
+. . .
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em; margin-top: 0.8em;"}
+**Hours won back per week = (sum of weekly minutes saved) ÷ 60**
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 0.5em;"}
+Grade summaries, feedback notes, lecture decks, paper briefs — they **repeat every week.**
+:::
+
+## Never Break These Two {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #1C355E;"}
+**Newspaper Test**
+
+Watch what you *paste in*. Sanitize student & unpublished data.
+:::
+:::
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**The Undo Test** *(blast radius)*
+
+Watch what it *does*. Draft / notify-me before act-on-its-own.
+:::
+:::
+::::
+
+# Where to Go Next {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Keep building
+
+## This Week {auto-animate=true}
+
+::: {.incremental}
+- Turn **one** weekly task into a Skill and actually use it
+- Schedule **one** notify-me digest
+- Ground your **next** reading in NotebookLM instead of skimming
+:::
+
+. . .
+
+::: {.callout-tip}
+## The habit
+Every time you do something twice, ask: *"Could this be a Skill?"*
+:::
+
+## Feedback: I Like / I Wish / I Wonder {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="33%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7; text-align: center;"}
+**I like…**
+
+what worked for you
+:::
+:::
+::: {.column width="33%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0; text-align: center;"}
+**I wish…**
+
+what you'd change
+:::
+:::
+::: {.column width="33%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C; text-align: center;"}
+**I wonder…**
+
+what's next for you
+:::
+:::
+::::
+
+## Thank You {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+::: {.r-fit-text}
+Now go win back your week.
+:::

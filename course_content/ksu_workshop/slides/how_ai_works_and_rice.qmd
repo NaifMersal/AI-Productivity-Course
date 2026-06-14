@@ -1,0 +1,500 @@
+---
+title: "How AI Works & Writing Great Prompts"
+subtitle: "The Two Layers + The RICE Pattern"
+date: today
+format: revealjs
+---
+
+# The One Big Idea {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+When you "talk to AI," you talk to **two things**
+
+## Why Start Here? {auto-animate=true}
+
+::: {data-id="why" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+Understand *how* it works and you'll know **what to trust**, **what to check**, and
+**how to get better answers**.
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 1em;"}
+Everything else today hangs off one insight: you're talking to **two layers stacked
+together**.
+:::
+
+## Two Layers, Stacked {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center;"}
+**The Model Layer**
+
+"The brain in a jar"
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center;"}
+**The App Layer**
+
+"The office around the brain"
+:::
+:::
+:::
+::::
+
+. . .
+
+::: {style="text-align: center; margin-top: 1em;"}
+Tell these apart and Cowork, Skills, and Memory stop being magic.
+:::
+
+# The Model Layer {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+The brain in a jar
+
+## A Brilliant Brain — With Amnesia {auto-animate=true}
+
+::: {data-id="brain" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+A brilliant graduate's brain floating in a **jar**. It has read most of the internet,
+so it's clever — but it has **total amnesia**.
+:::
+
+. . .
+
+::: {.incremental}
+- Knows nothing about *you*, your department, or what you said five minutes ago
+- The instant it finishes answering, it **forgets everything**
+- All it does is **predict the next word** from the text it was just handed
+:::
+
+## It Just Predicts the Next Word {auto-animate=true}
+
+Under the hood it does **one** thing: guess the **next word** based on probability.
+
+::: {data-id="predict" style="background: #f7f9fc; padding: 0.7em 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin: 0.5em 0;"}
+*"The capital of Saudi Arabia is…"*
+:::
+
+::: {style="font-size: 0.95em;"}
+::: {.fragment .fade-in-then-semi-out}
+- **Riyadh** (99.8%) ✅
+:::
+::: {.fragment .fade-in-then-semi-out}
+- Jeddah (0.1%) · Paris (0.00001%)
+:::
+:::
+
+. . .
+
+It doesn't *"know"* geography — it knows **"Riyadh" almost always follows that sentence.**
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.3em;"}
+It does this *even when it has no idea* — the next slide.
+:::
+
+## When It Guesses Wrong (Hallucinations) {auto-animate=true}
+
+::: {style="font-size: 1.1em; margin-bottom: 1em;"}
+What happens when it doesn't know the answer? **It guesses.**
+:::
+
+"According to Article 214 of the new Saudi Investment Law: ..."
+
+. . .
+
+::: {.fragment .fade-in}
+- **The** (45%)
+- **Foreign** (30%)
+- **Capital** (15%)
+:::
+
+. . .
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin-top: 1em;"}
+The AI constructs a sentence that *sounds* legal, but it has never read the actual document.
+:::
+
+## The Limit That Explains Everything {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.15em;"}
+The model is **stateless**. It does not "remember" and it does not "look things up."
+:::
+
+. . .
+
+::: {.callout-important}
+## This is why it "hallucinates"
+When it doesn't know, it predicts a **plausible-sounding** answer anyway — a confident,
+made-up citation, a journal that doesn't exist, a wrong date.
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+Anything you want it to "know," you must **hand it every single time**.
+:::
+
+# The App Layer {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The office around the brain
+
+## We Build an Office {auto-animate=true}
+
+::: {data-id="office" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+The brain in a jar can't open files or remember your name. So we build an **office**
+around it: filing cabinets, a notebook, a standing to-do list.
+:::
+
+. . .
+
+Every time you ask for something, the office **gathers the relevant pages and hands
+them to the brain** along with your request — then files the answer back.
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+The brain still has amnesia. The *office* is what makes it feel like it remembers.
+:::
+
+## The Sentence to Remember {auto-animate=true}
+
+::: {style="background: #00C9A7; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
+The model **knows nothing and forgets everything**;
+the app **re-sends what matters on every request.**
+:::
+
+. . .
+
+::: {.callout-tip}
+## The features you've seen
+"Memory," "Projects," "Custom Instructions" are all just the **app** gathering and
+re-sending context for you. Cowork (later today) is a very capable office.
+:::
+
+# What "Context" Really Is {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+The pages on the brain's desk
+
+## Context = the Desk {auto-animate=true}
+
+::: {data-id="context" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Context** is everything stacked on the brain's desk before it starts — your request
+**plus** the background pages it needs: your instructions, the paper you pasted, your rules.
+:::
+
+. . .
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em; margin-top: 1em;"}
+Output quality is mostly a **context problem**, not a **smartness problem.**
+:::
+
+## The Desk Has Limits {auto-animate=true}
+
+::: {data-id="window" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+The desk has a **fixed size**. Pile on too much and **older pages fall off the edge** —
+that's why a long chat starts forgetting how it began.
+:::
+
+. . .
+
+::: {.callout-tip}
+## The fix
+**Saved instructions beat re-pasting.** The office puts the important pages back on the
+desk for you every time — the foundation of the assistant you'll build today.
+:::
+
+
+# It All Clicks {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The payoff
+
+## The Office Getting Smarter {auto-animate=true}
+
+Everything you'll build today is just **the app deciding what to re-send**:
+
+::: {.incremental}
+- **Standing instructions** — your rules, re-sent every time
+- **Memory** — facts about you, re-sent when relevant
+- **Skill** — a saved recipe the app runs on command
+- **Grounding** — your sources put on the desk, on purpose
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+None of it is magic. It's all **context management.**
+:::
+
+## Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The AI cites a journal article that **doesn't exist**. Which layer failed?
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #9B8EC0; color: white; padding: 1em; border-radius: 12px; text-align: center;"}
+**The Model Layer** — the brain **guessed**. Ground it in a real source and **verify**
+(later, with NotebookLM).
+:::
+:::
+
+# Stop Asking. Start Delegating. {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Now put the two layers to work — brief the AI like a teaching assistant
+
+## The Shift {auto-animate=true}
+
+::: {data-id="shift" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+You don't need a "chat bot." You need a **capable assistant** you can delegate to.
+:::
+
+. . .
+
+::: {data-id="example" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; margin-top: 1em;"}
+**Don't ask:** "Write an email about the meeting."
+
+**Delegate:** "Act as a thesis advisor. Draft a recap email to my student from these
+notes. Highlight the revisions due before the next committee."
+:::
+
+# RICE {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+The 4 pillars of a good prompt
+
+## The Framework {auto-animate=true}
+
+::: {data-id="rice" style="font-size: 1.1em;"}
+
+::: {.fragment .fade-in}
+**R — Role:** Who should the AI be?
+:::
+::: {.fragment .fade-in}
+**I — Instructions:** What exactly should it do? (format, length, tone)
+:::
+::: {.fragment .fade-in}
+**C — Context:** What information does it need?
+:::
+::: {.fragment .fade-in}
+**E — Examples:** Show it what "good" looks like.
+:::
+
+:::
+
+## R — Role {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**Who** should the AI be?
+:::
+
+. . .
+
+::: {.incremental}
+- A patient teaching assistant
+- A peer reviewer for a journal
+- A curriculum committee chair
+- A grant-proposal editor
+:::
+
+. . .
+
+The role shapes the AI's vocabulary, perspective, and priorities.
+
+## I — Instructions {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**What** exactly should it do?
+:::
+
+. . .
+
+Bundle the task **with** its format, length, and tone:
+
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+"Draft a **150-word** feedback note to the student. Encouraging but specific. Use a
+bulleted 'What to fix next' list."
+:::
+:::
+
+. . .
+
+::: {.callout-tip}
+## Pro move
+Add: "If anything is unclear, **ask me before you write**."
+:::
+
+## C — Context {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**What** information does it need?
+:::
+
+. . .
+
+The "brain dump" — paste your notes, the rubric, the draft, the syllabus.
+
+. . .
+
+::: {.callout-note}
+## This is the *same* context from the two layers
+You're loading the pages onto the brain's desk. **No context = the brain guesses.**
+:::
+
+## E — Examples {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**Show** it what "good" looks like.
+:::
+
+. . .
+
+Don't just *describe* the output — **paste one sample**. The AI copies its structure,
+tone, and length.
+
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+"Match this style: *'Dear Sara, strong progress this week. Three things to tighten before
+we meet: …'*"
+:::
+:::
+
+. . .
+
+::: {.callout-tip}
+## One example beats a paragraph
+A single sample teaches more than ten lines of rules.
+:::
+
+## The Formula {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #625D9C)"}
+
+::: {style="background: rgba(255,255,255,0.12); padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.05em;"}
+"Act as a **[Role]**. Your job is to **[Instructions]**. Here is the **[Context]**.
+Match this **[Example]**."
+:::
+
+# Live Demo {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Messy meeting notes → a clean student email
+
+## The Messy Notes {auto-animate=true}
+
+::: {data-id="story" style="font-size: 0.9em;"}
+What you actually scribbled after the committee meeting:
+:::
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.82em; font-style: italic;"}
+"Met Sara re: thesis ch.3. Stats section weak — needs effect sizes, not just p-values.
+Lit review missing 2 key papers (ask her to add). Committee wants revised draft in 3 weeks.
+She's nervous about the defense — reassure. Reminder: ethics form still not submitted."
+:::
+
+## The RICE Prompt {auto-animate=true}
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.72em;"}
+**Role:** Act as a supportive thesis advisor.
+
+**Instructions:** Draft a warm, clear follow-up email to my student. Use headers —
+Summary, Required Revisions, Deadline, Admin. Put the deadline in **bold**. End on an
+encouraging note. If anything is missing, add a "Questions for me" section.
+
+**Context:** Notes from today's committee meeting on Chapter 3: *[paste notes]*
+
+**Example:** Match this opening — *"Dear Sara, good progress this week. Here's where we
+landed: …"*
+:::
+
+## What Made It Work {auto-animate=true}
+
+::: {.incremental}
+- **Role** → wrote as a mentor, not a robot
+- **Instructions** → clear sections + tone + the "Questions for me" rule
+- **Context** → messy notes were enough — the AI extracted the structure
+- **Example** → matched the warm, personal opening
+:::
+
+# When AI Fumbles a Hard Question {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+One move to trust the numbers
+
+## Slow It Down — Especially on Numbers {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.05em;"}
+By default AI answers **fast and shallow** — risky on grades, totals, and data.
+:::
+
+. . .
+
+::: {data-id="dc" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin-top: 0.6em;"}
+**Double-check:** have it solve the **same task 2–3 times** — match = trust, mismatch = flag.
+
+::: {style="font-size: 0.82em; margin-top: 0.4em;"}
+*"Total these 40 exam scores three times. If all three match, output 'Verified'; if not,
+'Manual Review Needed'."* — *industry term: **Self-Consistency**.*
+:::
+:::
+
+. . .
+
+::: {style="text-align: center; color: #666; font-size: 0.9em; margin-top: 0.5em;"}
+Two more nudges for harder calls: **"think step by step"** *(Chain of Thought — logic)* ·
+**"debate it out"** *(Tree of Thoughts — judgment)*.
+:::
+
+# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Test your understanding
+
+## Quiz {auto-animate=true}
+
+You prompt: *"Write feedback on this essay."* Which RICE elements are **missing**?
+
+. . .
+
+::: {.fragment .fade-in}
+:::: {.columns}
+::: {.column width="25%"}
+::: {style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
+**R** — Role
+
+Who's giving it?
+:::
+:::
+::: {.column width="25%"}
+::: {style="background: #00C9A7; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
+**I** — Instructions
+
+Length? tone? rubric?
+:::
+:::
+::: {.column width="25%"}
+::: {style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
+**C** — Context
+
+The essay? the rubric?
+:::
+:::
+::: {.column width="25%"}
+::: {style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
+**E** — Example
+
+No sample of good feedback
+:::
+:::
+::::
+:::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **Two layers** — the model (brain) and the app (office) stacked together
+2. **The brain has amnesia** — stateless, predicts the next word, can hallucinate
+3. **Quality is a context problem** — the right pages on the desk → the right answer
+4. **Delegate, don't ask** — brief the AI with **RICE** (Role, Instructions, Context, Examples)
+5. **Examples are the secret weapon**; slow it down on hard problems — step by step, debate it out, double-check
+:::
