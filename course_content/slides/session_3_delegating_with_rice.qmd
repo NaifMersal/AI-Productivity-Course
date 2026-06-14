@@ -217,7 +217,7 @@ By default, AI answers **fast and shallow** — and fast is sloppy on hard probl
 
 ::: {.callout-important}
 ## The Rule
-Complex tasks need the **slow** answer. These 3 moves force the AI to slow down.
+Complex tasks need the **slow** answer. These 3 moves force the AI to slow down — **or, use a thinking model that does it automatically.**
 :::
 
 ## Move 1 — Think Step by Step {auto-animate=true}
@@ -235,6 +235,13 @@ Add **"think step by step"** — make the AI show its reasoning *before* the ans
 ::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.85em;"}
 *"I have a 2-hour meeting from 11:00, with a 30-min lunch at 12:00. When does it end?
 **Think step by step.**"* → It blocks each segment and lands on **1:30 PM**, not 1:00.
+:::
+
+. . .
+
+::: {.callout-tip}
+## 2025 update — thinking models do this automatically
+**Thinking models** (o3, Gemini 2.0 Flash Thinking, Claude 3.7 Sonnet…) run CoT internally before every reply. You don't need to say it — but you *do* need to **choose the right model** for hard problems.
 :::
 
 ## Move 2 — Debate It Out {auto-animate=true}
@@ -271,7 +278,7 @@ Have the AI solve the **same problem 3 times independently** — match = trust, 
 if not, 'Manual Review Needed'."*
 :::
 
-## Which Move, When? {.smaller}
+## Which Move, When?
 
 | Problem Type | Move | Why |
 | :--- | :--- | :--- |
