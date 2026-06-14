@@ -31,6 +31,8 @@ Watch it work across files
 ## Build
 Point Cowork at the **sandbox folder**, then give it one end-to-end task — e.g.
 *"Read these three student feedback files and produce one summary note."*
+
+Sample files: [`feedback_student_1.md`](../data/feedback_student_1.md), [`feedback_student_2.md`](../data/feedback_student_2.md), [`feedback_student_3.md`](../data/feedback_student_3.md)
 :::
 
 . . .
@@ -53,6 +55,12 @@ Build it once, run it forever
    summary).
 2. Save it as a **Skill** — give it a **name**, a **trigger** phrase, and the **steps**.
 3. **Invoke the trigger twice** on two different inputs to prove it generalizes.
+:::
+
+. . .
+
+::: {.callout-note}
+No idea? Try a *"student feedback note"* Skill using [`sample_essay.md`](../data/sample_essay.md) + [`rubric.md`](../data/rubric.md) as one input and [`feedback_student_1.md`](../data/feedback_student_1.md) as another. All at [`../data/`](../data/).
 :::
 
 . . .

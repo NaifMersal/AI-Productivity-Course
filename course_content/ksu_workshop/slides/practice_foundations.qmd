@@ -64,6 +64,15 @@ Pick one recurring **"messy input → clean output"** task and write a full **RI
 reading → 1-page brief · rubric + essay → feedback note
 :::
 
+. . .
+
+::: {.callout-tip}
+## Stuck for a task? Use our sample data
+- [`committee_notes.md`](../data/committee_notes.md) → draft a committee-report email
+- [`sample_essay.md`](../data/sample_essay.md) + [`rubric.md`](../data/rubric.md) → write a feedback note
+- [`grades.csv`](../data/grades.csv) → double-check exam totals
+:::
+
 ## Run It, Then Tighten It {auto-animate=true}
 
 ::: {.incremental}
@@ -98,6 +107,12 @@ Pick a **calculation or judgment** task and add the move that fits:
 ::: {style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; font-style: italic; font-size: 0.85em; text-align: center; margin-top: 0.6em;"}
 "Total these exam scores three times. If all three match, output 'Verified'; if not,
 'Manual Review Needed'."
+:::
+
+. . .
+
+::: {.callout-note}
+Sample grades to practice on: [`grades.csv`](../data/grades.csv)
 :::
 
 # Refine {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}

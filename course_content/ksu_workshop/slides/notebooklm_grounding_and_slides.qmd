@@ -159,7 +159,7 @@ Source → grounded summary → deck
 
 ## Your Mission {auto-animate=true}
 
-::: {data-id="mission" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px;"}
+::: {data-id="mission" style="background: #f7f9fc; padding: 0.8em 1.2em; border-radius: 12px;"}
 Take a **real (safe) paper or policy PDF**. Produce a **1-page grounded summary** and a
 **presenter deck** — in 10 minutes.
 :::
@@ -175,6 +175,10 @@ Take a **real (safe) paper or policy PDF**. Produce a **1-page grounded summary*
 :::
 
 . . .
+
+::: {style="font-size: 0.8em; margin: 0.3em 0;"}
+*No source? Use one of your own — or [`sample_paper.md`](../data/sample_paper.md) (links to open-access papers & policies).*
+:::
 
 ::: {.callout-tip}
 ## Log it
