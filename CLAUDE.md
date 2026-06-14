@@ -16,19 +16,31 @@ framework to a project) → **Refine** (group critique).
 - `outline.md` — master course outline (10 sessions, schedule, activities). Primary doc.
 - `course_content/slides/*.qmd` — the SDAIA-branded Quarto reveal.js slide decks (one per session).
 - `course_content/slides/_course_overview.qmd` — canonical session list / agenda.
-- `course_content/slides/_quarto.yml` — Quarto project config (renders `*.qmd` to `output/`).
+- `_quarto.yml` — Quarto project config at the **repo root** (global SDAIA branding; renders the source tree into repo-root `output/`).
+- `slides_template/assets/` — SDAIA brand assets (`sdaia.scss`, logo/icon SVGs, `splash.lua`, `favicon.html`) referenced globally by `_quarto.yml`.
 - `course_content/data/` — datasets used in hands-on activities (e.g. `expenses_export.csv`).
 - `prompts/` — prompt guides and instructor templates.
 - `notes/` — loose planning notes, idea lists, and drafts.
 
 ## Slides
 
-Slides are SDAIA-branded Quarto reveal.js decks. Author, render, preview, screenshot,
-and visually verify them with the **`author-verify-slides`** skill — branding and Quarto
-patterns are constant across SDAIA slide projects.
+Slides are SDAIA-branded Quarto reveal.js decks. Branding is applied globally in the
+root `_quarto.yml`, so each deck's front matter stays minimal
+(`title` / `subtitle` / `date` / `format: revealjs`). Author, render, preview,
+screenshot, and visually verify them with the **`author-verify-slides`** skill —
+branding and Quarto patterns are constant across SDAIA slide projects.
 
-- Render: `quarto render` (run from `course_content/slides/`; outputs to `output/`, gitignored).
-- Preview with live reload: `quarto preview`.
+**Run all commands from the repo root** (Quarto finds `_quarto.yml` there and mirrors
+the source path into `output/`, e.g. `course_content/slides/foo.qmd` →
+`output/course_content/slides/foo.html`):
+
+- Render one deck: `quarto render course_content/slides/<deck>.qmd`
+- Render all decks: `quarto render`
+- Preview with live reload: `quarto preview course_content/slides/<deck>.qmd`
+- Render + screenshot + verify branding/overflow:
+  `python .claude/skills/author-verify-slides/driver.py course_content/slides/<deck>.qmd --all --reveal-all`
+
+`output/` is gitignored.
 
 ## Core Teaching Framework
 

@@ -8,25 +8,27 @@ This repository contains the course materials and slide decks for the Prompt Eng
 ## Rendering Slides
 
 This project uses [Quarto](https://quarto.org/) for slide generation. The Quarto
-project lives in `course_content/slides/`, so run the commands from there.
+project config (`_quarto.yml`) lives at the **repo root** and applies SDAIA branding
+globally, so run all commands from the repo root. Rendered HTML is written to a
+repo-root `output/` directory (gitignored), mirroring the source path.
 
-To render the slides, run:
+To render all slide decks, run:
 
 ```bash
-cd course_content/slides
 quarto render
 ```
 
-To preview the slides locally with live reload:
+To render or preview a single deck with live reload:
 
 ```bash
-cd course_content/slides
-quarto preview
+quarto render course_content/slides/session_1_ai_native_mindset.qmd
+quarto preview course_content/slides/session_1_ai_native_mindset.qmd
 ```
 
 ## Project Structure
 
-- **`course_content/slides/`**: The Quarto (`.qmd`) reveal.js slide decks — one per session. Render from here.
+- **`_quarto.yml`** / **`slides_template/assets/`**: Root Quarto config and SDAIA brand assets (theme, logos, fonts) applied globally to every deck.
+- **`course_content/slides/`**: The Quarto (`.qmd`) reveal.js slide decks — one per session.
 - **`course_content/data/`**: Datasets used in the hands-on activities.
 - **`prompts/`**: Prompt guides and instructor templates.
 - **`notes/`**: Loose planning notes, idea lists, and drafts.
