@@ -7,23 +7,27 @@ This repository contains the course materials and slide decks for the Prompt Eng
 
 ## Rendering Slides
 
-This project uses [Quarto](https://quarto.org/) for slide generation.
+This project uses [Quarto](https://quarto.org/) for slide generation. The Quarto
+project lives in `course_content/slides/`, so run the commands from there.
 
 To render the slides, run:
 
 ```bash
+cd course_content/slides
 quarto render
 ```
 
 To preview the slides locally with live reload:
 
 ```bash
+cd course_content/slides
 quarto preview
 ```
 
 ## Project Structure
 
-- **`course_content/`**: Contains the source markdown and Qmd files for the course sessions.
-- **`prompts/`**: Contains prompt guides and templates.
-- **`instructor_demo/`**: Contains demo outputs and instructor resources.
+- **`course_content/slides/`**: The Quarto (`.qmd`) reveal.js slide decks — one per session. Render from here.
+- **`course_content/data/`**: Datasets used in the hands-on activities.
+- **`prompts/`**: Prompt guides and instructor templates.
+- **`notes/`**: Loose planning notes, idea lists, and drafts.
 - **`outline.md`**: The master outline for the course.
