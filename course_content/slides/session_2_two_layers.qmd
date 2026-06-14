@@ -1,0 +1,326 @@
+---
+title: "How AI Actually Works"
+subtitle: "Session 2 — The Two Layers"
+date: today
+format: revealjs
+---
+
+# The One Big Idea {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+When you "talk to AI", you talk to **two things**
+
+## Session 1 Left a Question {auto-animate=true}
+
+::: {data-id="bridge" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+AI **predicts** the next word. It doesn't "know" facts.
+:::
+
+. . .
+
+::: {style="text-align: center; font-size: 1.2em; margin-top: 1em;"}
+So how does it ever feel like it **remembers you**?
+:::
+
+. . .
+
+::: {.callout-important}
+## Today's keystone
+Everything else in this course hangs off one insight: you're really talking to
+**two layers stacked together**.
+:::
+
+## Two Layers, Stacked {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center;"}
+**The Model Layer**
+
+"The brain in a jar"
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center;"}
+**The App Layer**
+
+"The office around the brain"
+:::
+:::
+:::
+::::
+
+. . .
+
+::: {style="text-align: center; margin-top: 1em;"}
+Tell these apart and `CLAUDE.md`, Projects, Memory, and Skills stop being magic.
+:::
+
+# The Model Layer {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The brain in a jar
+
+## A Brilliant Brain — With Amnesia {auto-animate=true}
+
+::: {data-id="brain" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+A brilliant graduate's brain floating in a **jar**. It has read most of the internet,
+so it's clever — but it has **total amnesia**.
+:::
+
+. . .
+
+::: {.incremental}
+- Knows nothing about *you*, your company, or what you said five minutes ago
+- The instant it finishes answering, it **forgets everything**
+- All it does is **predict the next word** from the text it was just handed
+:::
+
+## What It Really Is {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.15em;"}
+The model is **stateless**. It does not "remember" and it does not "look things up".
+:::
+
+. . .
+
+::: {.callout-note}
+## The same prediction engine from Session 1
+When it doesn't know, it predicts a plausible-sounding word **anyway** — that's a
+*hallucination*.
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+Anything you want it to "know", you must **hand it every single time**.
+:::
+
+# The App Layer {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+The office around the brain
+
+## We Build an Office {auto-animate=true}
+
+::: {data-id="office" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+The brain in a jar can't open files or remember your name. So we build an **office**
+around it: filing cabinets, a notebook, a standing to-do list.
+:::
+
+. . .
+
+Every time you ask for something, the office **gathers the relevant pages and hands
+them to the brain** along with your request — then files the answer back.
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+The brain still has amnesia. The *office* is what makes it feel like it remembers.
+:::
+
+## What It Really Is {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
+The **app** (ChatGPT, Gemini, Claude, the **Hermes** agent…) is the software
+wrapped around the model.
+:::
+
+. . .
+
+It **stores your information in files / a directory** and **re-sends the relevant parts
+on every request**.
+
+. . .
+
+::: {.callout-tip}
+## The features you've seen
+"Memory", "Projects", "Custom Instructions" are all just the **app** doing this
+gathering-and-resending for you.
+:::
+
+## The Sentence to Remember {auto-animate=true}
+
+::: {style="background: #00C9A7; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
+The model **knows nothing and forgets everything**;
+the app **re-sends what matters on every request.**
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 1em;"}
+Every feature in this course is just the app getting smarter about **what to re-send.**
+:::
+
+# What "Context" Really Is {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The pages on the brain's desk
+
+## Context = the Desk {auto-animate=true}
+
+::: {data-id="context" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+**Context** is everything the office stacks on the brain's desk before it starts —
+your request **plus** the background pages it needs to do the job well.
+:::
+
+. . .
+
+Your instructions, pasted documents, standing rules, relevant memory — the model's
+**entire world** for that one request.
+
+## The Big Reframe {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+Output quality is mostly a **context problem**, not a **smartness problem**.
+:::
+
+. . .
+
+::: {.callout-important}
+## What this means for you
+A weak answer usually means weak **context**, not a weak model.
+**"Give it context" is the whole skill.**
+:::
+
+# The Desk Has Limits {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
+
+The context window
+
+## Why Long Chats "Forget" {auto-animate=true}
+
+::: {data-id="window" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+The brain's desk has a **fixed size**. You can only fit so many pages on it at once.
+Pile on too much and **older pages fall off the edge**.
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 0.5em;"}
+That's the **context window** — and it's why a long conversation starts losing the
+thread from the beginning.
+:::
+
+## The Payoff: Saved Beats Re-Pasted {auto-animate=true}
+
+::: {.callout-tip}
+## The rule
+**Saved instructions beat re-pasting.**
+:::
+
+The app puts the important pages back on the desk for you **every time**, so they never
+fall off the edge.
+
+. . .
+
+::: {style="text-align: center; font-style: italic; margin-top: 0.5em;"}
+This is the entire reason `CLAUDE.md`, Projects, and Memory exist — coming on Day 2.
+:::
+
+# One More Word: "Script" {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Demystified before Day 2
+
+## A Script Is a Recipe Card {auto-animate=true}
+
+::: {data-id="script" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+A **recipe card** of steps, written down once, so the job runs the same way every
+time — whether a person or the agent follows it.
+:::
+
+. . .
+
+::: {.callout-note}
+## Not a programmer thing
+A "script" is just *"do these steps, in this order, every time."*
+**You never write code in this course** — you describe the steps in plain language.
+:::
+
+# It All Clicks {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The payoff
+
+## The Office Getting Smarter {auto-animate=true}
+
+Once you see the two layers, the whole Day-2 toolkit is just **the app deciding what
+to re-send**:
+
+::: {.incremental}
+- **`CLAUDE.md`** — standing instructions, re-sent every time
+- **Project** — pulls *the right folder's* pages onto the desk
+- **Memory** — facts about you, re-sent when relevant
+- **Skill** — a saved recipe the app runs on command
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+None of it is magic. It's all **context management**.
+:::
+
+# Build: Your Context Pack {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Raw material for Day 2
+
+## Write the Pages the Brain Needs {auto-animate=true}
+
+Pick one task from your **Automation Backlog** (Session 1). Write its **context pack** —
+the standing facts the AI would need **every single time** to do it well:
+
+::: {.incremental}
+- Who you are and your role
+- The tone and format you always want
+- The rules that never change (audience, do's and don'ts)
+- The background facts the task always assumes
+:::
+
+. . .
+
+::: {.callout-tip}
+## Keep it
+On Day 2 this becomes your first **`CLAUDE.md`** — paste it once, never re-type it again.
+:::
+
+# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Which layer do you fix?
+
+## Quiz — Question 1 {auto-animate=true}
+
+The AI gets the **tone wrong every single time** — too casual for your board.
+
+Which layer?
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: white; padding: 1em; border-radius: 12px; text-align: center;"}
+**The App Layer** — fix your **standing instructions**. It's a re-send problem,
+not the brain.
+:::
+:::
+
+## Quiz — Question 2 {auto-animate=true}
+
+The AI cites **"Article 214"** of a law — and the article doesn't exist.
+
+Which layer?
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #9B8EC0; color: white; padding: 1em; border-radius: 12px; text-align: center;"}
+**The Model Layer** — the brain **guessed**. Ground it in a real source and
+**verify** (Session 4).
+:::
+:::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **Two layers** — the model (brain) and the app (office) stacked together
+2. **The brain has amnesia** — stateless, predicts the next word, forgets everything
+3. **The office re-sends context** — that's what makes AI feel like it remembers
+4. **Quality is a context problem** — give it the right pages, get the right answer
+5. **The desk is finite** — saved instructions beat re-pasting
+6. **Day 2 = the office getting smarter** about what to re-send
+:::
