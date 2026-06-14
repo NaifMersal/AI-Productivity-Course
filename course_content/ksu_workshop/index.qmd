@@ -21,13 +21,13 @@ This page is the canonical order — open each deck in turn.
 
 | # | Block | Deck | Mins |
 |---|---|---|---|
-| 1 | Welcome + agenda | [Overview](overview.html) | 10 |
-| 2 | How AI works + RICE prompting | [How AI Works & Writing Great Prompts](how_ai_works_and_rice.html) | 45 |
-| 3 | Practice + break | [Practice — Delegate a Real Task](practice_foundations.html) | 25 + 10 |
-| 4 | Meet Cowork + automation | [Meet Claude Cowork & Automating Your Work](cowork_and_automation.html) | 50 |
-| 5 | Practice | [Practice — Build Your First Workflows](practice_automation.html) | 30 |
-| 6 | Grounding + slides | [Grounding & Creating with NotebookLM](notebooklm_grounding_and_slides.html) | 40 |
-| 7 | Wrap-up + ROI | [Your AI Assistant](wrap_up.html) | 30 |
+| 1 | Welcome + agenda | [Overview](slides/overview.html) | 10 |
+| 2 | How AI works + RICE prompting | [How AI Works & Writing Great Prompts](slides/how_ai_works_and_rice.html) | 45 |
+| 3 | Practice + break | [Practice — Delegate a Real Task](slides/practice_foundations.html) | 25 + 10 |
+| 4 | Meet Cowork + automation | [Meet Claude Cowork & Automating Your Work](slides/cowork_and_automation.html) | 50 |
+| 5 | Practice | [Practice — Build Your First Workflows](slides/practice_automation.html) | 30 |
+| 6 | Grounding + slides | [Grounding & Creating with NotebookLM](slides/notebooklm_grounding_and_slides.html) | 40 |
+| 7 | Wrap-up + ROI | [Your AI Assistant](slides/wrap_up.html) | 30 |
 
 _Total ≈ 240 minutes, including a 10-minute break after the first practice block._
 
