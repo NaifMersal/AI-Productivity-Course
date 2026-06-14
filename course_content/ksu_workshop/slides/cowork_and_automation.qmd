@@ -97,7 +97,7 @@ This folder **is** the office. Your context lives here as real, openable files.
 | Feature | In plain language |
 |---|---|
 | **Read / edit / create files** | Works on your real documents |
-| **Skills** | Saved recipe cards it can reuse *(next)* |
+| **Skills** | A library of playbooks it opens when needed *(next)* |
 | **`/schedule`** | A standing appointment to run a task *(next)* |
 | **Plugins** | Bundles of skills + connections for a role |
 | **Dispatch** | Clicks around apps when there's no shortcut |
@@ -211,7 +211,7 @@ Three ways Cowork does work *for* you
 ::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7; text-align: center;"}
 **Skill**
 
-A saved recipe you invoke by name
+A book in your library, opened by name
 :::
 :::
 :::
@@ -229,7 +229,7 @@ A standing appointment that runs on its own
 ::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C; text-align: center;"}
 **Script**
 
-Saved steps it writes to crunch data
+Code it writes & runs to compute exactly
 :::
 :::
 :::
@@ -243,38 +243,42 @@ All three turn a one-time effort into a **permanent capability**.
 
 # Skills {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
 
-A saved recipe card
+A library of books you open when needed
 
 ## What a Skill Is {auto-animate=true}
 
 ::: {data-id="anatomy" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
-A **recipe card filed in the office.** You say "make the weekly digest" and Cowork pulls
-the card and follows it — you don't re-explain the steps.
+Your Skills are a **library**. Each Skill is a **book** — a written playbook for one
+recurring task.
 :::
 
 . . .
 
-A Skill is just three things:
-
-::: {.incremental}
-- **A name** — what you call it
-- **When to use it (the trigger)** — the phrase that makes it reach for the card
-- **The steps** — the recipe, in plain language *(that's a "script")*
+::: {style="background: #1C355E; color: #ffffff; padding: 0.8em; border-radius: 12px; text-align: center; margin-top: 0.5em; font-size: 0.95em;"}
+Cowork keeps the whole shelf, but **only opens the book your task calls for** — not every
+book, every time. *(just like the office puts only the relevant page on the desk)*
 :::
 
-## Demo 1 — "Build-a-Deck" {auto-animate=true}
+. . .
+
+::: {.incremental}
+- **The title on the spine** — the trigger that tells Cowork which book to pull
+- **What's written inside** — the steps, in plain language
+:::
+
+## Demo 1 — "Lecture Deck" (revealjs) {auto-animate=true}
 
 ::: {data-id="deck" style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
-Lecture notes → an on-brand slide deck you can export to **`.pptx`**
+Lecture notes → an on-brand **revealjs** slide deck you open in your browser.
 :::
 
 . . .
 
 ::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.78em; margin-top: 0.6em;"}
-**Name:** Build-a-Deck &nbsp;•&nbsp; **Trigger:** *"turn these notes into a lecture deck"*
+**Name:** Lecture Deck &nbsp;•&nbsp; **Trigger:** *"turn these notes into a revealjs deck"*
 
 **Steps:** 1) outline the storyline · 2) one idea per slide · 3) apply my course style ·
-4) export a **`.pptx`**
+4) generate a **revealjs** file with a Quarto front-matter
 :::
 
 ## Invoke It on Fresh Input {auto-animate=true}
@@ -291,32 +295,34 @@ limiting factors, today's lab."
 . . .
 
 ::: {style="text-align: center; color: #00C9A7; font-weight: bold; margin-top: 0.5em;"}
-One phrase → a downloadable deck. No re-explaining.
+One phrase → a browser-ready deck. No re-explaining.
 :::
 
 # Scripts {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
 When the task is *calculation*
 
-## A Script Is a Recipe Card {auto-animate=true}
+## What a Script Is {auto-animate=true}
 
 ::: {data-id="script" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
-A **recipe card** of steps, written down once, so a job runs the same way every time —
-whether a person or the agent follows it.
+A **little program Cowork writes and runs** when the job is exact, repeatable
+calculation — math and data done the same way every single time.
+:::
+
+. . .
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; margin-top: 0.6em;"}
+The brain in a jar **estimates** — and can slip on arithmetic. A computer **computes the
+same way every time.** So Cowork doesn't do the math in its head — it writes a script.
 :::
 
 . . .
 
 ::: {.callout-note}
-## Not a programmer thing
-A "script" is just *"do these steps, in this order, every time."* **You never write code**
-in this workshop — you describe the steps in plain language…
-:::
-
-. . .
-
-::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
-…and Cowork **writes and runs the script for you.**
+## You still never touch code
+This is Session 2's *"repeatable steps, every time"* — now done as real code. **You never
+write or even see it:** you describe what you want, Cowork **writes and runs the script**,
+you get the result.
 :::
 
 ## Demo 2 — Grade Summaries {auto-animate=true}
@@ -333,12 +339,16 @@ distribution — every term.
 project 30%), the class average, and a grade distribution. Save it as a new sheet."
 :::
 
+::: {.callout-note}
+Sample data: [`grades.csv`](../data/grades.csv)
+:::
+
 ## Why a Script Here {auto-animate=true}
 
 ::: {.incremental}
-- Cowork **writes a small script** to do the math — exactly, every row, every time
-- It runs the same way next term — no formula errors, no copy-paste
-- You never see code unless you ask — you get the **result**
+- **Exact, every row** — the script computes, it doesn't estimate
+- **Reproducible next term** — same script, same method; no formula errors, no copy-paste
+- **You get the result, not the code** — describe it once, Cowork writes and runs it
 :::
 
 . . .
@@ -382,14 +392,14 @@ after you've watched it get it right.
 
 # Skills Faculty Actually Use {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
 
-Your library grows one recipe at a time
+Your library grows one book at a time
 
 ## A Starter Library {auto-animate=true}
 
 ::: {style="font-size: 0.85em;"}
 | You say… | The Skill it pulls |
 |---|---|
-| "make a lecture deck" | **Build-a-Deck** → on-brand `.pptx` |
+| "make a lecture deck" | **Lecture Deck** → on-brand revealjs slides |
 | "summarize this paper" | **Paper Briefer** → 1-page summary + key findings |
 | "notes → feedback" | **Feedback Writer** → student-ready comments |
 | "draft my week-ahead" | **Weekly Digest** → teaching summary *(schedule it!)* |
@@ -399,7 +409,7 @@ Your library grows one recipe at a time
 . . .
 
 ::: {style="text-align: center; color: #00C9A7; font-weight: bold; margin-top: 0.5em;"}
-Your library grows **one recipe at a time.**
+Your library grows **one book at a time.**
 :::
 
 # Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
@@ -414,24 +424,33 @@ Which scheduled job should **never** run in act-on-its-own mode on day one?
 
 :::: {.columns}
 ::: {.column width="50%"}
-::: {.fragment .fade-in}
 ::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
 **A)** Every morning, **summarize** new course-forum posts into a note.
-
-✅ Read-only. Easy to undo *(low blast radius)*.
-:::
 :::
 :::
 ::: {.column width="50%"}
-::: {.fragment .fade-in}
 ::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
 **B)** Every morning, **auto-reply** to all student emails.
-
-❌ Hard to undo *(high blast radius)*. Draft-only.
-:::
 :::
 :::
 ::::
+
+. . .
+
+::: {.fragment .fade-in}
+:::: {.columns}
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7; text-align: center;"}
+✅ Read-only. Easy to undo *(low blast radius)*.
+:::
+:::
+::: {.column width="50%"}
+::: {style="background: #fff0ed; padding: 0.8em; border-radius: 12px; border-left: 4px solid #FF7A5C; text-align: center; font-weight: bold;"}
+❌ **This one.** Hard to undo *(high blast radius)*. Draft-only.
+:::
+:::
+::::
+:::
 
 ## Key Takeaways {.sdaia-dark background-color="#1C355E"}
 
@@ -439,6 +458,6 @@ Which scheduled job should **never** run in act-on-its-own mode on day one?
 1. **Cowork ≠ chat** — it opens files, runs steps, and can act
 2. **Setup is three clicks** — install, point at a folder, type a task; the working directory **is** the office
 3. **Second safety rule** — the undo test / human-in-the-loop (*blast radius*); sandbox + dummy data
-4. **Skill** — a saved recipe you invoke by a trigger; **Script** — Cowork writes the steps to crunch data exactly
+4. **Skill** — a book in your library Cowork opens by its trigger; **Script** — code Cowork writes & runs to compute exactly
 5. **Schedule (`/schedule`)** — a standing appointment; guardrails first: every job starts in draft / notify-me
 :::
