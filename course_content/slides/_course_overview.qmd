@@ -9,7 +9,7 @@ From Search to Systems
 ## Day 1: Architecting the Brain
 
 - **Session 1:** The AI-Native Mindset
-- **Session 2:** The Science of Delegation (R-C-T-C)
+- **Session 2:** The Science of Delegation (RICE)
 - **Session 3:** Building "Specialized Brains" (Context)
 - **Session 4:** The First Interaction – The Research Stack
 - **Session 5:** Advanced Prompt Engineering

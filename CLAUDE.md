@@ -44,11 +44,11 @@ the source path into `output/`, e.g. `course_content/slides/foo.qmd` →
 
 ## Core Teaching Framework
 
-**R-C-T-C Pattern** (introduced in Session 2, The Science of Delegation):
+**RICE Pattern** (introduced in Session 2, The Science of Delegation):
 - **R**ole: Who should the AI be?
+- **I**nstructions: What exactly should it do? (includes format, length, tone rules)
 - **C**ontext: What information should it have?
-- **T**ask: What exactly should it do?
-- **C**onstraint: What are the limitations/rules?
+- **E**xamples: A sample of the desired output (few-shot prompting)
 
 **Advanced Techniques** (Session 5): Chain of Thought (CoT), Tree of Thoughts (ToT),
 Self-Consistency.
@@ -66,7 +66,7 @@ When generating or modifying course content:
 
 **Day 1 — Architecting the Brain (Sessions 1–5)**
 1. The AI-Native Mindset
-2. The Science of Delegation (R-C-T-C)
+2. The Science of Delegation (RICE)
 3. Building "Specialized Brains" (Context)
 4. The First Interaction — The Research Stack
 5. Advanced Prompt Engineering (CoT, ToT, Self-Consistency)

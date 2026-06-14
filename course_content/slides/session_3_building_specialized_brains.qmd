@@ -12,7 +12,7 @@ Stop repeating yourself.
 ## Remember Session 2? {auto-animate=true}
 
 ::: {data-id="problem" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-We wrote a perfect R-C-T-C prompt to update Ms. Sarah about the **App Launch Security Crisis**.
+We wrote a perfect RICE prompt to update Ms. Sarah about the **App Launch Security Crisis**.
 
 **It worked great.**
 :::
@@ -208,7 +208,7 @@ Why this matters
 ::: {.column width="50%"}
 ::: {.fragment .fade-in}
 ::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C; text-align: center;"}
-**Manual R-C-T-C**
+**Manual RICE**
 
 ~5 minutes per prompt to get the tone right
 :::

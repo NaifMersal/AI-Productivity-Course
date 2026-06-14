@@ -97,7 +97,7 @@ Building the Prompt
 ::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.85em;"}
 **Role:** You represent the Project Lead.
 
-**Task:** Write a 1-page "Amazon Style" narrative memo pitching [Project X].
+**Instructions:** Write a 1-page "Amazon Style" narrative memo pitching [Project X].
 
 **Context:**
 - Goal: Get $50k budget approved
@@ -118,7 +118,7 @@ Building the Prompt
 ::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin-top: 1em;"}
 **Role:** You are the skeptical CFO.
 
-**Task:** Roast this memo. Find the holes in the logic. Where is the ROI unclear? What risks are missing? **Be harsh.**
+**Instructions:** Roast this memo. Find the holes in the logic. Where is the ROI unclear? What risks are missing? **Be harsh.**
 :::
 
 ## Step 3: The Blueprint {auto-animate=true}

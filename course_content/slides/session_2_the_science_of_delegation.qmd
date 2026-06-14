@@ -1,6 +1,6 @@
 ---
 title: "The Science of Delegation"
-subtitle: "Session 2 — The R-C-T-C Framework"
+subtitle: "Session 2 — The RICE Framework"
 date: today
 format: revealjs
 ---
@@ -41,25 +41,25 @@ You don't need a "chat bot". You need a **Direct Report**.
 **Delegate:** "Act as a Project Manager. Draft a recap email using these notes. Highlight action items."
 :::
 
-# R-C-T-C {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+# RICE {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
 The 4 Pillars of Delegation
 
 ## The Framework {auto-animate=true}
 
-::: {data-id="rctc" style="font-size: 1.1em;"}
+::: {data-id="rice" style="font-size: 1.1em;"}
 
 ::: {.fragment .fade-in}
 **R — Role:** Who is the AI?
 :::
 ::: {.fragment .fade-in}
+**I — Instructions:** What exactly should it do?
+:::
+::: {.fragment .fade-in}
 **C — Context:** What does it know?
 :::
 ::: {.fragment .fade-in}
-**T — Task:** What exactly should it do?
-:::
-::: {.fragment .fade-in}
-**C — Constraint:** What are the rules?
+**E — Examples:** Show it what "good" looks like.
 :::
 
 :::
@@ -83,6 +83,29 @@ The 4 Pillars of Delegation
 
 The role shapes the AI's vocabulary, perspective, and priorities.
 
+## I — Instructions {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**What** exactly should it do?
+:::
+
+. . .
+
+Be specific — bundle the task **with** its format, length, and tone:
+
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+"Draft a **200-word** executive summary email to the Director. Professional but warm. Use bold headers."
+:::
+:::
+
+. . .
+
+::: {.callout-tip}
+## Pro move
+Add: "If anything is unclear, ask me before you write."
+:::
+
 ## C — Context {auto-animate=true}
 
 ::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
@@ -91,7 +114,7 @@ The role shapes the AI's vocabulary, perspective, and priorities.
 
 . . .
 
-The "brain dump" from Session 2 — paste your notes, upload your docs, give it the raw material.
+The "brain dump" — paste your notes, upload your docs, give it the raw material.
 
 . . .
 
@@ -100,40 +123,33 @@ The "brain dump" from Session 2 — paste your notes, upload your docs, give it 
 No context = hallucination. Context comes **before** content.
 :::
 
-## T — Task {auto-animate=true}
+## E — Examples {auto-animate=true}
 
 ::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
-**What** exactly should it do?
+**Show** it what "good" looks like.
 :::
 
 . . .
 
-Be specific. Not "write something about the project" — instead:
+Don't just *describe* the output you want — **paste one sample**. The AI copies its structure, tone, and length.
 
 ::: {.fragment .fade-in}
 ::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-"Draft a **200-word** executive summary email to the Director."
+"Match this style: *'Hi [Name], great speaking Tuesday. Here's where we landed: …'*"
 :::
-:::
-
-## C — Constraint {auto-animate=true}
-
-::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
-**What** are the rules?
 :::
 
 . . .
 
-::: {.incremental}
-- **Format:** "Use a markdown table", "Use bold headers"
-- **Tone:** "Professional but warm", "Strictly factual"
-- **Behavior:** "If notes are unclear, ask me clarifying questions"
+::: {.callout-tip}
+## One example beats a paragraph
+A single sample teaches more than ten lines of rules.
 :::
 
 ## The Formula
 
 ::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.05em;"}
-"Act as a **[Role]**. Given the following **[Context]**, complete this **[Task]**. Follow these **[Constraints]**."
+"Act as a **[Role]**. Your job is to **[Instructions]**. Here is the **[Context]**. Match this **[Example]**."
 :::
 
 # Live Demo {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
@@ -168,21 +184,16 @@ This is what I actually had:
 "Meeting with Lisa from Acme Retail. Tuesday. She's worried about lead times. Wants to know if we can ship by Q3. Pricing: she needs a 10% discount if they buy bulk. Mentioned her kid's graduation is next week (send a card?). Action: send updated proposal by Friday."
 :::
 
-## The R-C-T-C Prompt {auto-animate=true}
+## The RICE Prompt {auto-animate=true}
 
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.8em;"}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.75em;"}
 **Role:** Act as my Senior Client Relationship Manager.
+
+**Instructions:** Draft a warm-but-professional follow-up email summarizing our conversation and confirming next steps. Use headers — Summary, Decisions, Next Steps. Highlight deadlines in **bold**. If details are missing, add a "Clarifications Needed" section.
 
 **Context:** I just had a call with a VIP client, Lisa. We are negotiating a large contract. Here are my raw notes: *[paste notes]*
 
-**Task:** Draft a professional follow-up email summarizing our conversation and confirming next steps.
-
-**Constraints:**
-
-- **Tone:** Warm but professional
-- **Structure:** Use headers — Summary, Decisions, Next Steps
-- **Action items:** Highlight deadlines in **bold**
-- **Clarifications:** If details are missing, add a "Clarifications Needed" section
+**Example:** Match this opening style — *"Hi Lisa, great speaking with you on Tuesday. Here's where we landed: …"*
 :::
 
 ## The Result {auto-animate=true}
@@ -216,9 +227,9 @@ Great speaking with you on Tuesday.
 
 ::: {.incremental}
 - **Role** → knew to write as a relationship manager, not a robot
+- **Instructions** → specific deliverable + format, tone, and the "Clarifications" rule
 - **Context** → messy notes were enough — AI extracted the structure
-- **Task** → specific deliverable: a follow-up email
-- **Constraint** → caught the personal detail (graduation card)
+- **Example** → matched the warm opening style, so it caught the human touch (graduation card)
 :::
 
 # Activity {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
@@ -246,16 +257,14 @@ Copy/paste this into your prompt:
 ## Your Task {auto-animate=true}
 
 ::: {data-id="activity" style="font-size: 0.85em;"}
-Build an R-C-T-C prompt:
+Build a RICE prompt:
 :::
 
 ::: {.incremental}
 1. **Role** — Who should the AI be? (Product Manager? Crisis Communicator?)
-2. **Context** — Paste the messy notes
-3. **Task** — Draft a high-priority email to Ms. Sarah
-4. **Constraints:**
-   - Tone: Direct, urgent, professional (Private Sector speed)
-   - Format: "BLUF" (Bottom Line Up Front), Bullet points for "Options" and "Recommendation"
+2. **Instructions** — Draft a high-priority email to Ms. Sarah. Direct, urgent, professional (Private Sector speed). Use "BLUF" (Bottom Line Up Front) with bullet points for "Options" and "Recommendation".
+3. **Context** — Paste the messy notes
+4. **Example** — Show one BLUF opener to copy, e.g. *"RECOMMENDATION: Delay launch 5 days. Here's why: …"*
 :::
 
 ## The Hidden Test
@@ -279,7 +288,7 @@ Test Your Understanding
 
 You prompt: *"Write a marketing post about our new coffee shop in Riyadh."*
 
-Which R-C-T-C elements are **missing**?
+Which RICE elements are **missing**?
 
 . . .
 
@@ -293,6 +302,13 @@ Who is writing?
 :::
 :::
 ::: {.column width="25%"}
+::: {style="background: #00C9A7; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
+**I** — Instructions
+
+Partially there — platform? length? tone?
+:::
+:::
+::: {.column width="25%"}
 ::: {style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
 **C** — Context
 
@@ -300,17 +316,10 @@ What's special about the shop?
 :::
 :::
 ::: {.column width="25%"}
-::: {style="background: #00C9A7; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
-**T** — Task
-
-Partially there
-:::
-:::
-::: {.column width="25%"}
 ::: {style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
-**C** — Constraint
+**E** — Example
 
-Platform? Length? Tone?
+No sample of the voice you want
 :::
 :::
 ::::
@@ -318,7 +327,7 @@ Platform? Length? Tone?
 
 ## Quiz — Question 2
 
-In the "Lisa" example, why was the **personal note constraint** important?
+In the "Lisa" example, why did **explicitly instructing** the AI to keep the personal note matter?
 
 . . .
 
@@ -341,7 +350,7 @@ In the "Lisa" example, why was the **personal note constraint** important?
 
 ## Coming Up Next {.sdaia-dark background-color="#1C355E"}
 
-Right now, you type R-C-T-C manually every time.
+Right now, you type RICE manually every time.
 
 . . .
 
@@ -353,8 +362,8 @@ In **Session 3**, we turn this prompt into a permanent **"Button"** — write it
 
 ::: {.incremental}
 1. **Delegate, don't ask** — brief the AI like a direct report
-2. **R-C-T-C** — Role, Context, Task, Constraint
-3. **Constraints are the secret weapon** — tone, format, and "ask me if unclear"
+2. **RICE** — Role, Instructions, Context, Examples
+3. **Examples are the secret weapon** — one good sample beats a paragraph of rules
 4. **Messy notes are fine** — AI extracts the structure, you verify the substance
 5. **First-shot perfection** is achievable — if you provide all 4 pillars
 :::

@@ -1,6 +1,6 @@
 ## **Course Title: The AI-Native Professional: Building Your Digital Factory**
 
-**The Delivery Loop:** **Show** (Instructor high-energy demo)  **Build** (Students apply R-C-T-C to a project)  **Refine** (Group critique of "Managerial Logic").
+**The Delivery Loop:** **Show** (Instructor high-energy demo)  **Build** (Students apply RICE to a project)  **Refine** (Group critique of "Managerial Logic").
 
 ---
 
@@ -16,16 +16,16 @@
 *   **Data Hygiene:** Applying **Data Sanitization** (anonymizing names/secrets) before any upload.
 *   **Micro-Check:** Live Quiz: Identify the "Safe vs. Risky" prompt.
 
-#### **Session 2: The Science of Delegation (R-C-T-C) (10:00 – 11:30)**
+#### **Session 2: The Science of Delegation (RICE) (10:00 – 11:30)**
 
-*   **The Framework:** Master the **Role-Context-Task-Constraint** (R-C-T-C) framework to ensure high-quality "first-shot" results.
+*   **The Framework:** Master the **Role-Instructions-Context-Examples** (RICE) framework to ensure high-quality "first-shot" results.
 *   **Instructor Demo:** Building a **Client Relationship Assistant** live.
     *   *Scenario:* Taking messy notes from a call with "Lisa" where a deal was almost lost due to vague follow-up.
     *   *Solution:* Creating a structured prompt that parses messy notes into: Context, Key Points, Decisions, Action Items (Owner/Deadline).
 *   **Student Activity:** The "Project Lead" Simulation (Part 1).
     *   *Scenario:* You are a Project Lead. You just received messy notes from a strategy meeting.
-    *   *Task:* Write an R-C-T-C prompt to draft a **Client Update Email** summarizing the notes for a stakeholder.
-*   **Micro-Check:** Live Quiz on spotting the missing element in an R-C-T-C prompt.
+    *   *Task:* Write a RICE prompt to draft a **Client Update Email** summarizing the notes for a stakeholder.
+*   **Micro-Check:** Live Quiz on spotting the missing element in a RICE prompt.
 
 #### **Session 3: Building "Specialized Brains" (Context) (11:45 – 12:30)**
 
