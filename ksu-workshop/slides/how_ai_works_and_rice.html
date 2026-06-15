@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-html/tabby.min.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
   <meta name="dcterms.date" content="2026-06-15">
-  <title>AI at Work – Building Your Own AI Assistant</title>
+  <title>AI at Work – How AI Works &amp; Writing Great Prompts</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,11 +32,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-5e52468ea78ecf062a33c93e46e8ca0a.css">
-  <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-5e52468ea78ecf062a33c93e46e8ca0a.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -131,9 +131,9 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="../../../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title">Building Your Own AI Assistant</h1>
-  <p class="subtitle">A Hands-On Workshop for KSU Faculty</p>
+<section id="title-slide" data-background-image="../../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title">How AI Works &amp; Writing Great Prompts</h1>
+  <p class="subtitle">The Two Layers + The RICE Pattern</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -141,160 +141,514 @@
   <p class="date">2026-06-15</p>
 </section>
 <section>
-<section id="welcome" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h1>Welcome</h1>
-<p>Four hours. One working AI assistant — yours.</p>
+<section id="the-one-big-idea" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>The One Big Idea</h1>
+<p>When you “talk to AI,” you talk to <strong>two things</strong></p>
 </section>
-<section id="what-youll-walk-out-with" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">What You’ll Walk Out With</h2>
-<div data-id="promise" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;">
-<p>An AI assistant <strong>you set up yourself</strong> — plus <strong>2–3 automations</strong> running on your own academic work.</p>
+<section id="why-start-here" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Why Start Here?</h2>
+<div data-id="why" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;">
+<p>Understand <em>how</em> it works and you’ll know <strong>what to trust</strong>, <strong>what to check</strong>, and <strong>how to get better answers</strong>.</p>
 </div>
 <div class="fragment">
 <div style="text-align: center; margin-top: 1em;">
-<p>Not a search engine. A <strong>member of your team</strong> that drafts, summarizes, and calculates.</p>
+<p>Everything else today hangs off one insight: you’re talking to <strong>two layers stacked together</strong>.</p>
 </div>
 </div>
 </section>
-<section id="who-this-is-for" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Who This Is For</h2>
+<section id="two-layers-stacked" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Two Layers, Stacked</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment fade-in">
+<div style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center;">
+<p><strong>The Model Layer</strong></p>
+<p>“The brain in a jar”</p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment fade-in">
+<div style="background: #00C9A7; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center;">
+<p><strong>The App Layer</strong></p>
+<p>“The office around the brain”</p>
+</div>
+</div>
+</div></div>
+<div class="fragment">
+<div style="text-align: center; margin-top: 1em;">
+<p>Tell these apart and Cowork, Skills, and Memory stop being magic.</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="the-model-layer" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
+<h1>The Model Layer</h1>
+<p>The brain in a jar</p>
+</section>
+<section id="a-brilliant-brain-with-amnesia" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">A Brilliant Brain — With Amnesia</h2>
+<div data-id="brain" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;">
+<p>A brilliant graduate’s brain floating in a <strong>jar</strong>. It has read most of the internet, so it’s clever — but it has <strong>total amnesia</strong>.</p>
+</div>
+<div class="fragment">
+<ul>
+<li class="fragment">Knows nothing about <em>you</em>, your department, or what you said five minutes ago</li>
+<li class="fragment">The instant it finishes answering, it <strong>forgets everything</strong></li>
+<li class="fragment">All it does is <strong>predict the next word</strong> from the text it was just handed</li>
+</ul>
+</div>
+</section>
+<section id="it-just-predicts-the-next-word" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">It Just Predicts the Next Word</h2>
+<p>Under the hood it does <strong>one</strong> thing: guess the <strong>next word</strong> based on probability.</p>
+<div data-id="predict" style="background: #f7f9fc; padding: 0.7em 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin: 0.5em 0;">
+<p><em>“The capital of Saudi Arabia is…”</em></p>
+</div>
+<div style="font-size: 0.95em;">
+<div class="fragment fade-in-then-semi-out">
+<ul>
+<li><strong>Riyadh</strong> (99.8%) ✅</li>
+</ul>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<ul>
+<li>Jeddah (0.1%) · Paris (0.00001%)</li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<p>It doesn’t <em>“know”</em> geography — it knows <strong>“Riyadh” almost always follows that sentence.</strong></p>
+</div>
+<div class="fragment">
+<div style="text-align: center; font-weight: bold; margin-top: 0.3em;">
+<p>It does this <em>even when it has no idea</em> — the next slide.</p>
+</div>
+</div>
+</section>
+<section id="when-it-guesses-wrong-hallucinations" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">When It Guesses Wrong (Hallucinations)</h2>
+<div style="font-size: 1.1em; margin-bottom: 1em;">
+<p>What happens when it doesn’t know the answer? <strong>It guesses.</strong></p>
+</div>
+<p>“According to Article 214 of the new Saudi Investment Law: …”</p>
+<div class="fragment">
+<div class="fragment fade-in">
+<ul>
+<li><strong>The</strong> (45%)</li>
+<li><strong>Foreign</strong> (30%)</li>
+<li><strong>Capital</strong> (15%)</li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin-top: 1em;">
+<p>The AI constructs a sentence that <em>sounds</em> legal, but it has never read the actual document.</p>
+</div>
+</div>
+</section>
+<section id="the-limit-that-explains-everything" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Limit That Explains Everything</h2>
+<div style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.15em;">
+<p>The model is <strong>stateless</strong>. It does not “remember” and it does not “look things up.”</p>
+</div>
+<div class="fragment">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>This is why it “hallucinates”</strong></p>
+</div>
+<div class="callout-content">
+<p>When it doesn’t know, it predicts a <strong>plausible-sounding</strong> answer anyway — a confident, made-up citation, a journal that doesn’t exist, a wrong date.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div style="text-align: center; font-weight: bold; margin-top: 0.5em;">
+<p>Anything you want it to “know,” you must <strong>hand it every single time</strong>.</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="the-app-layer" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>The App Layer</h1>
+<p>The office around the brain</p>
+</section>
+<section id="we-build-an-office" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">We Build an Office</h2>
+<div data-id="office" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;">
+<p>The brain in a jar can’t open files or remember your name. So we build an <strong>office</strong> around it: filing cabinets, a notebook, a standing to-do list.</p>
+</div>
+<div class="fragment">
+<p>Every time you ask for something, the office <strong>gathers the relevant pages and hands them to the brain</strong> along with your request — then files the answer back.</p>
+</div>
+<div class="fragment">
+<div style="text-align: center; font-weight: bold; margin-top: 0.5em;">
+<p>The brain still has amnesia. The <em>office</em> is what makes it feel like it remembers.</p>
+</div>
+</div>
+</section>
+<section id="the-sentence-to-remember" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Sentence to Remember</h2>
+<div style="background: #00C9A7; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;">
+<p>The model <strong>knows nothing and forgets everything</strong>; the app <strong>re-sends what matters on every request.</strong></p>
+</div>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>The features you’ve seen</strong></p>
+</div>
+<div class="callout-content">
+<p>“Memory,” “Projects,” “Custom Instructions” are all just the <strong>app</strong> gathering and re-sending context for you. Cowork (later today) is a very capable office.</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="what-context-really-is" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>What “Context” Really Is</h1>
+<p>The pages on the brain’s desk</p>
+</section>
+<section id="context-the-desk" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Context = the Desk</h2>
+<div data-id="context" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;">
+<p><strong>Context</strong> is everything stacked on the brain’s desk before it starts — your request <strong>plus</strong> the background pages it needs: your instructions, the paper you pasted, your rules.</p>
+</div>
+<div class="fragment">
+<div style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em; margin-top: 1em;">
+<p>Output quality is mostly a <strong>context problem</strong>, not a <strong>smartness problem.</strong></p>
+</div>
+</div>
+</section>
+<section id="the-desk-has-limits" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Desk Has Limits</h2>
+<div data-id="window" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;">
+<p>The desk has a <strong>fixed size</strong>. Pile on too much and <strong>older pages fall off the edge</strong> — that’s why a long chat starts forgetting how it began.</p>
+</div>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>The fix</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Saved instructions beat re-pasting.</strong> The office puts the important pages back on the desk for you every time — the foundation of the assistant you’ll build today.</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="it-all-clicks" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>It All Clicks</h1>
+<p>The payoff</p>
+</section>
+<section id="the-office-getting-smarter" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Office Getting Smarter</h2>
+<p>Everything you’ll build today is just <strong>the app deciding what to re-send</strong>:</p>
+<ul>
+<li class="fragment"><strong>Standing instructions</strong> — your rules, re-sent every time</li>
+<li class="fragment"><strong>Memory</strong> — facts about you, re-sent when relevant</li>
+<li class="fragment"><strong>Skill</strong> — a book in the library the app opens on command</li>
+<li class="fragment"><strong>Grounding</strong> — your sources put on the desk, on purpose</li>
+</ul>
+<div class="fragment">
+<div style="text-align: center; font-weight: bold; margin-top: 0.5em;">
+<p>None of it is magic. It’s all <strong>context management.</strong></p>
+</div>
+</div>
+</section>
+<section id="micro-check" class="slide level2 sdaia-dark" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h2>Micro-Check</h2>
+<p>The AI cites a journal article that <strong>doesn’t exist</strong>. Which layer failed?</p>
+<div class="fragment">
+<div class="fragment fade-in">
+<div style="background: #9B8EC0; color: white; padding: 1em; border-radius: 12px; text-align: center;">
+<p><strong>The Model Layer</strong> — the brain <strong>guessed</strong>. Ground it in a real source and <strong>verify</strong> (later, with NotebookLM).</p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="stop-asking.-start-delegating." class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>Stop Asking. Start Delegating.</h1>
+<p>Now put the two layers to work — brief the AI like a teaching assistant</p>
+</section>
+<section id="the-shift" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Shift</h2>
+<div data-id="shift" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.2em;">
+<p>You don’t need a “chat bot.” You need a <strong>capable assistant</strong> you can delegate to.</p>
+</div>
+<div class="fragment">
+<div data-id="example" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; margin-top: 1em;">
+<p><strong>Don’t ask:</strong> “Write an email about the meeting.”</p>
+<p><strong>Delegate:</strong> “Act as a thesis advisor. Draft a recap email to my student from these notes. Highlight the revisions due before the next committee.”</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="rice" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
+<h1>RICE</h1>
+<p>The 4 pillars of a good prompt</p>
+</section>
+<section id="the-framework" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Framework</h2>
+<div data-id="rice" style="font-size: 1.1em;">
+<div class="fragment fade-in">
+<p><strong>R — Role:</strong> Who should the AI be?</p>
+</div>
+<div class="fragment fade-in">
+<p><strong>I — Instructions:</strong> What exactly should it do? (format, length, tone)</p>
+</div>
+<div class="fragment fade-in">
+<p><strong>C — Context:</strong> What information does it need?</p>
+</div>
+<div class="fragment fade-in">
+<p><strong>E — Examples:</strong> Show it what “good” looks like.</p>
+</div>
+</div>
+</section>
+<section id="r-role" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">R — Role</h2>
+<div data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;">
+<p><strong>Who</strong> should the AI be?</p>
+</div>
+<div class="fragment">
+<ul>
+<li class="fragment">A patient teaching assistant</li>
+<li class="fragment">A peer reviewer for a journal</li>
+<li class="fragment">A curriculum committee chair</li>
+<li class="fragment">A grant-proposal editor</li>
+</ul>
+</div>
+<div class="fragment">
+<p>The role shapes the AI’s vocabulary, perspective, and priorities.</p>
+</div>
+</section>
+<section id="i-instructions" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">I — Instructions</h2>
+<div data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;">
+<p><strong>What</strong> exactly should it do?</p>
+</div>
+<div class="fragment">
+<p>Bundle the task <strong>with</strong> its format, length, and tone:</p>
+<div class="fragment fade-in">
+<div style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7;">
+<p>“Draft a <strong>150-word</strong> feedback note to the student. Encouraging but specific. Use a bulleted ‘What to fix next’ list.”</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Pro move</strong></p>
+</div>
+<div class="callout-content">
+<p>Add: “If anything is unclear, <strong>ask me before you write</strong>.”</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="c-context" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">C — Context</h2>
+<div data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;">
+<p><strong>What</strong> information does it need?</p>
+</div>
+<div class="fragment">
+<p>The “brain dump” — paste your notes, the rubric, the draft, the syllabus.</p>
+</div>
+<div class="fragment">
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>KSU faculty — no coding required</strong></p>
+<p><strong>This is the <em>same</em> context from the two layers</strong></p>
 </div>
 <div class="callout-content">
-<p>If you can write an email, you can build everything in this workshop. <strong>Nobody writes code</strong> — you describe the steps in plain language.</p>
+<p>You’re loading the pages onto the brain’s desk. <strong>No context = the brain guesses.</strong></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="e-examples" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">E — Examples</h2>
+<div data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;">
+<p><strong>Show</strong> it what “good” looks like.</p>
+</div>
+<div class="fragment">
+<p>Don’t just <em>describe</em> the output — <strong>paste one sample</strong>. The AI copies its structure, tone, and length.</p>
+<div class="fragment fade-in">
+<div style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7;">
+<p>“Match this style: <em>‘Dear Sara, strong progress this week. Three things to tighten before we meet: …’</em>”</p>
 </div>
 </div>
 </div>
 <div class="fragment">
-<div style="text-align: center; margin-top: 0.5em;">
-<p>We use <strong>Claude Cowork</strong> today because it’s the fastest to set up — but every idea works in ChatGPT, Gemini, and Claude too.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>One example beats a paragraph</strong></p>
+</div>
+<div class="callout-content">
+<p>A single sample teaches more than ten lines of rules.</p>
+</div>
+</div>
 </div>
 </div>
 </section>
-<section id="the-day-in-five-blocks" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">The Day in Five Blocks</h2>
-<div style="font-size: 0.9em;">
-<table class="caption-top">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Block</th>
-<th>You’ll…</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>How AI Works + RICE</strong></td>
-<td>See <em>why</em> it works — and delegate like you brief a TA</td>
-</tr>
-<tr class="even">
-<td><em>Practice + break</em></td>
-<td>Write a real RICE prompt for your own work</td>
-</tr>
-<tr class="odd">
-<td><strong>Cowork + Automation</strong></td>
-<td>Set up your agent; build Skills / Schedule / Scripts</td>
-</tr>
-<tr class="even">
-<td><em>Practice</em></td>
-<td>Run a task and package your first Skill</td>
-</tr>
-<tr class="odd">
-<td><strong>NotebookLM</strong></td>
-<td>Turn your sources into grounded summaries and decks</td>
-</tr>
-<tr class="even">
-<td><strong>Wrap-up</strong></td>
-<td>Tally the hours you won back</td>
-</tr>
-</tbody>
-</table>
+<section id="the-formula" class="slide level2 sdaia-dark" data-background-gradient="linear-gradient(135deg, #1C355E, #625D9C)">
+<h2>The Formula</h2>
+<div style="background: rgba(255,255,255,0.12); padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.05em;">
+<p>“Act as a <strong>[Role]</strong>. Your job is to <strong>[Instructions]</strong>. Here is the <strong>[Context]</strong>. Match this <strong>[Example]</strong>.”</p>
+</div>
+</section></section>
+<section>
+<section id="live-demo" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>Live Demo</h1>
+<p>Messy meeting notes → a clean student email</p>
+</section>
+<section id="the-messy-notes" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Messy Notes</h2>
+<div data-id="story" style="font-size: 0.9em;">
+<p>What you actually scribbled after the committee meeting:</p>
+</div>
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.82em; font-style: italic;">
+<p>“Met Sara re: thesis ch.3. Stats section weak — needs effect sizes, not just p-values. Lit review missing 2 key papers (ask her to add). Committee wants revised draft in 3 weeks. She’s nervous about the defense — reassure. Reminder: ethics form still not submitted.”</p>
 </div>
 </section>
-<section id="how-well-work" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">How We’ll Work</h2>
+<section id="the-rice-prompt" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The RICE Prompt</h2>
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.72em;">
+<p><strong>Role:</strong> Act as a supportive thesis advisor.</p>
+<p><strong>Instructions:</strong> Draft a warm, clear follow-up email to my student. Use headers — Summary, Required Revisions, Deadline, Admin. Put the deadline in <strong>bold</strong>. End on an encouraging note. If anything is missing, add a “Questions for me” section.</p>
+<p><strong>Context:</strong> Notes from today’s committee meeting on Chapter 3: <em>[paste notes]</em></p>
+<p><strong>Example:</strong> Match this opening — <em>“Dear Sara, good progress this week. Here’s where we landed: …”</em></p>
+</div>
+</section>
+<section id="what-made-it-work" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">What Made It Work</h2>
+<ul>
+<li class="fragment"><strong>Role</strong> → wrote as a mentor, not a robot</li>
+<li class="fragment"><strong>Instructions</strong> → clear sections + tone + the “Questions for me” rule</li>
+<li class="fragment"><strong>Context</strong> → messy notes were enough — the AI extracted the structure</li>
+<li class="fragment"><strong>Example</strong> → matched the warm, personal opening</li>
+</ul>
+</section></section>
+<section>
+<section id="when-ai-fumbles-a-hard-question" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>When AI Fumbles a Hard Question</h1>
+<p>One move to trust the numbers</p>
+</section>
+<section id="slow-it-down-especially-on-numbers" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Slow It Down — Especially on Numbers</h2>
+<div style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.05em;">
+<p>By default AI answers <strong>fast and shallow</strong> — risky on grades, totals, and data.</p>
+</div>
+<div class="fragment">
+<div data-id="dc" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin-top: 0.6em;">
+<p><strong>Double-check:</strong> have it solve the <strong>same task 2–3 times</strong> — match = trust, mismatch = flag.</p>
+<div style="font-size: 0.82em; margin-top: 0.4em;">
+<p><em>“Total these 40 exam scores three times. If all three match, output ‘Verified’; if not, ‘Manual Review Needed’.”</em> — <em>industry term: <strong>Self-Consistency</strong>.</em></p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div style="text-align: center; color: #666; font-size: 0.9em; margin-top: 0.5em;">
+<p>Two more nudges for harder calls: <strong>“think step by step”</strong> <em>(Chain of Thought — logic)</em> · <strong>“debate it out”</strong> <em>(Tree of Thoughts — judgment)</em>.</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="micro-check-1" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>Micro-Check</h1>
+<p>Test your understanding</p>
+</section>
+<section id="quiz" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Quiz</h2>
+<p>You prompt: <em>“Write feedback on this essay.”</em> Which RICE elements are <strong>missing</strong>?</p>
+<div class="fragment">
+<div class="fragment fade-in">
 <div class="columns">
-<div class="column" style="width:33%;">
-<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7; text-align: center;">
-<p><strong>Show</strong></p>
-<p>I demo it live</p>
+<div class="column" style="width:25%;">
+<div style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;">
+<p><strong>R</strong> — Role</p>
+<p>Who’s giving it?</p>
 </div>
-</div><div class="column" style="width:33%;">
-<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0; text-align: center;">
-<p><strong>Build</strong></p>
-<p>You apply it to <em>your</em> work</p>
+</div><div class="column" style="width:25%;">
+<div style="background: #00C9A7; color: white; padding: 0.8em; border-radius: 12px; text-align: center;">
+<p><strong>I</strong> — Instructions</p>
+<p>Length? tone? rubric?</p>
 </div>
-</div><div class="column" style="width:33%;">
-<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C; text-align: center;">
-<p><strong>Refine</strong></p>
-<p>Quick group critique</p>
+</div><div class="column" style="width:25%;">
+<div style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;">
+<p><strong>C</strong> — Context</p>
+<p>The essay? the rubric?</p>
+</div>
+</div><div class="column" style="width:25%;">
+<div style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;">
+<p><strong>E</strong> — Example</p>
+<p>No sample of good feedback</p>
 </div>
 </div></div>
-<div class="fragment">
-<div style="text-align: center; font-weight: bold; margin-top: 0.5em;">
-<p>~70% hands-on. Bring a real task you’d love to hand off.</p>
 </div>
 </div>
 </section>
-<section id="two-rules-we-never-break" class="slide level2 sdaia-dark" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
-<h2>Two Rules We Never Break</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div style="background: rgba(255,255,255,0.1); padding: 1.2em; border-radius: 12px;">
-<p><strong>Newspaper Test</strong></p>
-<p>Watch what you <em>paste in</em>. Sanitize student data and unpublished work first.</p>
-</div>
-</div><div class="column" style="width:50%;">
-<div style="background: rgba(255,255,255,0.1); padding: 1.2em; border-radius: 12px;">
-<p><strong>The Undo Test</strong> <em>(blast radius)</em></p>
-<p>Watch what the agent <em>does</em>. Start in <strong>draft / notify-me</strong> mode.</p>
-</div>
-</div></div>
-<div class="fragment">
-<div style="text-align: center; margin-top: 0.8em;">
-<p>All hands-on work runs in a <strong>sandbox folder with dummy data</strong>.</p>
-</div>
-</div>
-</section>
-<section id="lets-begin" class="slide level2 sdaia-dark" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h2>Let’s Begin</h2>
-<div class="r-fit-text">
-<p>How AI Works →</p>
-</div>
+<section id="key-takeaways" class="slide level2 sdaia-dark" data-background-color="#1C355E">
+<h2>Key Takeaways</h2>
+<ol type="1">
+<li class="fragment"><strong>Two layers</strong> — the model (brain) and the app (office) stacked together</li>
+<li class="fragment"><strong>The brain has amnesia</strong> — stateless, predicts the next word, can hallucinate</li>
+<li class="fragment"><strong>Quality is a context problem</strong> — the right pages on the desk → the right answer</li>
+<li class="fragment"><strong>Delegate, don’t ask</strong> — brief the AI with <strong>RICE</strong> (Role, Instructions, Context, Examples)</li>
+<li class="fragment"><strong>Examples are the secret weapon</strong>; slow it down on hard problems — step by step, debate it out, double-check</li>
+</ol>
 
 
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="../../../slides_template/assets/sdaia.svg" class="slide-logo"></p>
+<p><img src="../../slides_template/assets/sdaia.svg" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../../../site_libs/revealjs/dist/reveal.js"></script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="../../../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

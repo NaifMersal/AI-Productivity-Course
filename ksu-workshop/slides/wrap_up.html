@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.38">
 
   <meta name="dcterms.date" content="2026-06-15">
-  <title>AI at Work – Interviewing Your Data</title>
+  <title>AI at Work – Your AI Assistant</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -132,8 +132,8 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="../../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title">Interviewing Your Data</h1>
-  <p class="subtitle">Session 11 — Conversational Analysis</p>
+  <h1 class="title">Your AI Assistant</h1>
+  <p class="subtitle">Wrap-up &amp; Hours Won Back</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -141,185 +141,148 @@
   <p class="date">2026-06-15</p>
 </section>
 <section>
-<section id="skip-the-pivot-table" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h1>Skip the Pivot Table</h1>
-<p>Ask your data questions like a colleague</p>
+<section id="you-built-it" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>You Built It</h1>
+<p>From a chat box to a working assistant</p>
 </section>
-<section id="the-old-way-vs.-the-new-way" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">The Old Way vs.&nbsp;The New Way</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="fragment fade-in">
-<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;">
-<p><strong>Old way</strong></p>
-<p>VLOOKUP, pivot tables, formulas, hours of wrangling.</p>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="fragment fade-in">
-<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;">
-<p><strong>New way</strong></p>
-<p>Upload the file. <strong>Ask in plain language.</strong></p>
-</div>
-</div>
-</div></div>
-<div class="fragment">
-<div style="text-align: center; margin-top: 0.5em;">
-<p>You hand the agent the spreadsheet (the desk), then <strong>interview</strong> it.</p>
-</div>
-</div>
-</section></section>
-<section>
-<section id="conversational-analysis" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h1>Conversational Analysis</h1>
-<p>Just ask</p>
-</section>
-<section id="questions-not-formulas" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Questions, Not Formulas</h2>
-<p>Upload <code>expenses_export.csv</code> and ask:</p>
+<section id="the-toolkit-you-now-have" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Toolkit You Now Have</h2>
 <ul>
-<li class="fragment"><em>“What is our <strong>fastest-growing</strong> expense category?”</em></li>
-<li class="fragment"><em>“Summarize the spending <strong>trends</strong> for Q3 vs.&nbsp;Q2.”</em></li>
-<li class="fragment"><em>“Which <strong>vendor</strong> did we spend the most with — and on what?”</em></li>
-<li class="fragment"><em>“Flag any expense that looks like a <strong>duplicate</strong> or an outlier.”</em></li>
+<li class="fragment"><strong>A good prompt (RICE)</strong> — delegate like you brief a TA</li>
+<li class="fragment"><strong>Claude Cowork</strong> — an assistant working on your real files</li>
+<li class="fragment"><strong>Skills / Schedule / Scripts</strong> — recurring work, done for you</li>
+<li class="fragment"><strong>NotebookLM</strong> — grounded summaries and decks from your sources</li>
 </ul>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>The skill is the question</strong></p>
-</div>
-<div class="callout-content">
-<p>A precise question gets a precise answer. Vague in, vague out.</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="extract-enrich" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h1>Extract &amp; Enrich</h1>
-<p>From a photo to a row</p>
-</section>
-<section id="read-a-receipt-reconcile-it" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Read a Receipt, Reconcile It</h2>
-<div data-id="ocr" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;">
-<p>Hand the agent a <strong>receipt image</strong> → it pulls out vendor, date, amount, VAT (<strong>OCR</strong>) → then <strong>reconciles</strong> it against the expense export.</p>
-</div>
-<div class="fragment">
-<div style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; margin-top: 0.5em;">
-<p><em>“Does this receipt match a row in the file? If not, add it.”</em></p>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Verify the numbers</strong></p>
-</div>
-<div class="callout-content">
-<p>A great moment for <strong>double-check</strong> (Session 3) — totals are expensive to get wrong.</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="what-if-scenarios" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h1>“What If” Scenarios</h1>
-<p>Model the change, then ask</p>
-</section>
-<section id="plan-on-the-enriched-data" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Plan on the Enriched Data</h2>
-<ul>
-<li class="fragment"><em>“If we <strong>cut Travel by 20%</strong>, what’s the new monthly total?”</em></li>
-<li class="fragment"><em>“What’s the VAT impact if <strong>Meals</strong> doubles next quarter?”</em></li>
-<li class="fragment"><em>“Which <strong>two categories</strong> would I trim to save 10,000 SAR?”</em></li>
-</ul>
-<div class="fragment">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Newspaper Test still applies</strong></p>
-</div>
-<div class="callout-content">
-<p>Real financials? <strong>Sanitize</strong> or use the <strong>sandbox</strong> dataset before uploading.</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="build-interview-the-file" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h1>Build: Interview the File</h1>
-<p>Hands-on</p>
-</section>
-<section id="run-a-real-interview" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Run a Real Interview</h2>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Hands-on</strong></p>
-</div>
-<div class="callout-content">
-<p>Open <code>course_content/data/expenses_export.csv</code> in the agent and run an <strong>interview</strong>: ask 3 questions, extract one receipt, and model one “what-if”.</p>
-</div>
-</div>
-</div>
 <div class="fragment">
 <div style="text-align: center; font-weight: bold; margin-top: 0.5em;">
-<p>Log the time <strong>vs.&nbsp;building the formulas by hand</strong>.</p>
+<p>None of it is magic — it’s all the office getting smarter about <strong>what to re-send.</strong></p>
 </div>
+</div>
+</section>
+<section id="your-assistant-checklist" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Your Assistant Checklist</h2>
+<div style="font-size: 0.95em;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>✓</th>
+<th>I can…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>☐</td>
+<td>Write a RICE prompt for a recurring task</td>
+</tr>
+<tr class="even">
+<td>☐</td>
+<td>Point Cowork at a folder and run a task in propose mode</td>
+</tr>
+<tr class="odd">
+<td>☐</td>
+<td>Save and invoke a Skill by its trigger</td>
+</tr>
+<tr class="even">
+<td>☐</td>
+<td>Schedule a notify-me job</td>
+</tr>
+<tr class="odd">
+<td>☐</td>
+<td>Ground a summary in my sources and check citations</td>
+</tr>
+</tbody>
+</table>
 </div>
 </section></section>
 <section>
-<section id="micro-check" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h1>Micro-Check</h1>
-<p>Conversational command structures</p>
+<section id="count-the-hours" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
+<h1>Count the Hours</h1>
+<p>The whole point: time won back</p>
 </section>
-<section id="quiz" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Quiz</h2>
-<p>Which question will get the <strong>most useful</strong> answer?</p>
+<section id="tally-your-savings" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Tally Your Savings</h2>
+<div data-id="roi" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;">
+<p>For each workflow you built today: <strong>minutes saved × times per week.</strong></p>
+</div>
 <div class="fragment">
+<div style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em; margin-top: 0.8em;">
+<p><strong>Hours won back per week = (sum of weekly minutes saved) ÷ 60</strong></p>
+</div>
+</div>
+<div class="fragment">
+<div style="text-align: center; margin-top: 0.5em;">
+<p>Grade summaries, feedback notes, lecture decks, paper briefs — they <strong>repeat every week.</strong></p>
+</div>
+</div>
+</section>
+<section id="never-break-these-two" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Never Break These Two</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="fragment fade-in">
-<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;">
-<p><strong>A)</strong> “Tell me about the expenses.”</p>
-<p>❌ Too vague — you’ll get a shrug.</p>
-</div>
+<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #1C355E;">
+<p><strong>Newspaper Test</strong></p>
+<p>Watch what you <em>paste in</em>. Sanitize student &amp; unpublished data.</p>
 </div>
 </div><div class="column" style="width:50%;">
-<div class="fragment fade-in">
-<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;">
-<p><strong>B)</strong> “Top 3 categories by total spend, with the % each is of the month.”</p>
-<p>✅ Specific metric, grouping, and format.</p>
-</div>
+<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;">
+<p><strong>The Undo Test</strong> <em>(blast radius)</em></p>
+<p>Watch what it <em>does</em>. Draft / notify-me before act-on-its-own.</p>
 </div>
 </div></div>
+</section></section>
+<section>
+<section id="where-to-go-next" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>Where to Go Next</h1>
+<p>Keep building</p>
+</section>
+<section id="this-week" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">This Week</h2>
+<ul>
+<li class="fragment">Turn <strong>one</strong> weekly task into a Skill and actually use it</li>
+<li class="fragment">Schedule <strong>one</strong> notify-me digest</li>
+<li class="fragment">Ground your <strong>next</strong> reading in NotebookLM instead of skimming</li>
+</ul>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>The habit</strong></p>
+</div>
+<div class="callout-content">
+<p>Every time you do something twice, ask: <em>“Could this be a Skill?”</em></p>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="key-takeaways" class="slide level2 sdaia-dark" data-background-color="#1C355E">
-<h2>Key Takeaways</h2>
-<ol type="1">
-<li class="fragment"><strong>Interview, don’t formula</strong> — upload the file and ask in plain language</li>
-<li class="fragment"><strong>Precise questions win</strong> — name the metric, the grouping, the format</li>
-<li class="fragment"><strong>Extract &amp; enrich</strong> — OCR a receipt, then reconcile against the data</li>
-<li class="fragment"><strong>“What if” on the spot</strong> — model budget changes conversationally</li>
-<li class="fragment"><strong>Verify &amp; sanitize</strong> — double-check the numbers; mind the Newspaper Test</li>
-</ol>
+<section id="feedback-i-like-i-wish-i-wonder" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Feedback: I Like / I Wish / I Wonder</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7; text-align: center;">
+<p><strong>I like…</strong></p>
+<p>what worked for you</p>
+</div>
+</div><div class="column" style="width:33%;">
+<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0; text-align: center;">
+<p><strong>I wish…</strong></p>
+<p>what you’d change</p>
+</div>
+</div><div class="column" style="width:33%;">
+<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C; text-align: center;">
+<p><strong>I wonder…</strong></p>
+<p>what’s next for you</p>
+</div>
+</div></div>
+</section>
+<section id="thank-you" class="slide level2 sdaia-dark" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h2>Thank You</h2>
+<div class="r-fit-text">
+<p>Now go win back your week.</p>
+</div>
 
 
 </section></section>

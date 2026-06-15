@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-html/tabby.min.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
   <meta name="dcterms.date" content="2026-06-15">
-  <title>AI at Work – Practice — Build Your First Workflows</title>
+  <title>AI at Work – Interviewing Your Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,11 +32,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-5e52468ea78ecf062a33c93e46e8ca0a.css">
-  <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-5e52468ea78ecf062a33c93e46e8ca0a.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -131,9 +131,9 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="../../../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title">Practice — Build Your First Workflows</h1>
-  <p class="subtitle">Run Cowork, Then Package a Skill</p>
+<section id="title-slide" data-background-image="../../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title">Interviewing Your Data</h1>
+  <p class="subtitle">Session 11 — Conversational Analysis</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -141,170 +141,210 @@
   <p class="date">2026-06-15</p>
 </section>
 <section>
-<section id="hands-on-the-agent" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h1>Hands On the Agent</h1>
-<p>Point Cowork at the sandbox and put it to work</p>
+<section id="skip-the-pivot-table" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>Skip the Pivot Table</h1>
+<p>Ask your data questions like a colleague</p>
 </section>
-<section id="ground-rules" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Ground Rules</h2>
-<div style="background: #00C9A7; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.1em;">
-<p>Everything runs in the <strong>sandbox folder</strong> with <strong>dummy data</strong> — start in <strong>propose mode</strong>.</p>
-</div>
-<div class="fragment">
-<div style="text-align: center; margin-top: 0.5em;">
-<p>A mistake here can’t touch a real grade sheet or a real inbox.</p>
-</div>
-</div>
-</section></section>
-<section>
-<section id="exercise-1-your-first-run" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
-<h1>Exercise 1 — Your First Run</h1>
-<p>Watch it work across files</p>
-</section>
-<section id="give-it-a-real-sandboxed-task" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Give It a Real (Sandboxed) Task</h2>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Build</strong></p>
-</div>
-<div class="callout-content">
-<p>Point Cowork at the <strong>sandbox folder</strong>, then give it one end-to-end task — e.g. <em>“Read these three student feedback files and produce one summary note.”</em></p>
-<p>Sample files: <a href="../data/feedback_student_1.md"><code>feedback_student_1.md</code></a>, <a href="../data/feedback_student_2.md"><code>feedback_student_2.md</code></a>, <a href="../data/feedback_student_3.md"><code>feedback_student_3.md</code></a></p>
-</div>
-</div>
-</div>
-<div class="fragment">
-<ul>
-<li class="fragment">Watch it <strong>open files</strong>, not just chat</li>
-<li class="fragment">Watch it <strong>run steps</strong> in order</li>
-<li class="fragment">It <strong>proposes</strong> the result — you stay in the loop and approve</li>
-</ul>
-</div>
-</section></section>
-<section>
-<section id="exercise-2-package-a-skill" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h1>Exercise 2 — Package a Skill</h1>
-<p>Build it once, run it forever</p>
-</section>
-<section id="make-one-skill" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Make One Skill</h2>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Build</strong></p>
-</div>
-<div class="callout-content">
-<ol type="1">
-<li>Pick one <strong>recurring</strong> task from your week (feedback notes, weekly digest, reading summary).</li>
-<li>Save it as a <strong>Skill</strong> — give it a <strong>name</strong>, a <strong>trigger</strong> phrase, and the <strong>steps</strong>.</li>
-<li><strong>Invoke the trigger twice</strong> on two different inputs to prove it generalizes.</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>No idea? Try a <em>“student feedback note”</em> Skill (essay + rubric → feedback note). Run it on <a href="../data/sample_essay.md"><code>sample_essay.md</code></a>, then again on <a href="../data/sample_essay_2.md"><code>sample_essay_2.md</code></a> — same <a href="../data/rubric.md"><code>rubric.md</code></a> both times. All at <a href="../data/"><code>../data/</code></a>.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div style="text-align: center; font-weight: bold; margin-top: 0.5em;">
-<p>This one repeats every week — note the <strong>recurring</strong> time saved.</p>
-</div>
-</div>
-</section>
-<section id="stretch-schedule-it-notify-me" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Stretch — Schedule It (Notify-Me)</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Optional</strong></p>
-</div>
-<div class="callout-content">
-<p>Turn your Skill into a standing appointment with <strong><code>/schedule</code></strong> — <em>“Every Sunday 5pm, draft my week-ahead summary.”</em> Keep it in <strong>draft / notify-me</strong> mode.</p>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div style="text-align: center; color: #FF7A5C; font-weight: bold; margin-top: 0.5em;">
-<p>Guardrails first — promote to act-on-its-own only after it earns your trust.</p>
-</div>
-</div>
-</section></section>
-<section>
-<section id="refine" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h1>Refine</h1>
-<p>Quick group critique</p>
-</section>
-<section id="i-like-i-wish-i-wonder" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">I Like / I Wish / I Wonder</h2>
+<section id="the-old-way-vs.-the-new-way" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Old Way vs.&nbsp;The New Way</h2>
 <div class="columns">
-<div class="column" style="width:33%;">
-<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7; text-align: center;">
-<p><strong>I like…</strong></p>
-<p>what your Skill nailed</p>
+<div class="column" style="width:50%;">
+<div class="fragment fade-in">
+<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;">
+<p><strong>Old way</strong></p>
+<p>VLOOKUP, pivot tables, formulas, hours of wrangling.</p>
 </div>
-</div><div class="column" style="width:33%;">
-<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0; text-align: center;">
-<p><strong>I wish…</strong></p>
-<p>a step to tighten</p>
 </div>
-</div><div class="column" style="width:33%;">
-<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C; text-align: center;">
-<p><strong>I wonder…</strong></p>
-<p>what to automate next</p>
+</div><div class="column" style="width:50%;">
+<div class="fragment fade-in">
+<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;">
+<p><strong>New way</strong></p>
+<p>Upload the file. <strong>Ask in plain language.</strong></p>
+</div>
 </div>
 </div></div>
 <div class="fragment">
+<div style="text-align: center; margin-top: 0.5em;">
+<p>You hand the agent the spreadsheet (the desk), then <strong>interview</strong> it.</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="conversational-analysis" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>Conversational Analysis</h1>
+<p>Just ask</p>
+</section>
+<section id="questions-not-formulas" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Questions, Not Formulas</h2>
+<p>Upload <code>expenses_export.csv</code> and ask:</p>
+<ul>
+<li class="fragment"><em>“What is our <strong>fastest-growing</strong> expense category?”</em></li>
+<li class="fragment"><em>“Summarize the spending <strong>trends</strong> for Q3 vs.&nbsp;Q2.”</em></li>
+<li class="fragment"><em>“Which <strong>vendor</strong> did we spend the most with — and on what?”</em></li>
+<li class="fragment"><em>“Flag any expense that looks like a <strong>duplicate</strong> or an outlier.”</em></li>
+</ul>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>The skill is the question</strong></p>
+</div>
+<div class="callout-content">
+<p>A precise question gets a precise answer. Vague in, vague out.</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="extract-enrich" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>Extract &amp; Enrich</h1>
+<p>From a photo to a row</p>
+</section>
+<section id="read-a-receipt-reconcile-it" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Read a Receipt, Reconcile It</h2>
+<div data-id="ocr" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;">
+<p>Hand the agent a <strong>receipt image</strong> → it pulls out vendor, date, amount, VAT (<strong>OCR</strong>) → then <strong>reconciles</strong> it against the expense export.</p>
+</div>
+<div class="fragment">
+<div style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; margin-top: 0.5em;">
+<p><em>“Does this receipt match a row in the file? If not, add it.”</em></p>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Verify the numbers</strong></p>
+</div>
+<div class="callout-content">
+<p>A great moment for <strong>double-check</strong> (Session 3) — totals are expensive to get wrong.</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="what-if-scenarios" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>“What If” Scenarios</h1>
+<p>Model the change, then ask</p>
+</section>
+<section id="plan-on-the-enriched-data" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Plan on the Enriched Data</h2>
+<ul>
+<li class="fragment"><em>“If we <strong>cut Travel by 20%</strong>, what’s the new monthly total?”</em></li>
+<li class="fragment"><em>“What’s the VAT impact if <strong>Meals</strong> doubles next quarter?”</em></li>
+<li class="fragment"><em>“Which <strong>two categories</strong> would I trim to save 10,000 SAR?”</em></li>
+</ul>
+<div class="fragment">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Newspaper Test still applies</strong></p>
+</div>
+<div class="callout-content">
+<p>Real financials? <strong>Sanitize</strong> or use the <strong>sandbox</strong> dataset before uploading.</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="build-interview-the-file" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>Build: Interview the File</h1>
+<p>Hands-on</p>
+</section>
+<section id="run-a-real-interview" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Run a Real Interview</h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Hands-on</strong></p>
+</div>
+<div class="callout-content">
+<p>Open <code>hermes-agent-course/data/expenses_export.csv</code> in the agent and run an <strong>interview</strong>: ask 3 questions, extract one receipt, and model one “what-if”.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
 <div style="text-align: center; font-weight: bold; margin-top: 0.5em;">
-<p>Log the minutes saved × times per week — that’s your number for the <strong>Wrap-up</strong>.</p>
+<p>Log the time <strong>vs.&nbsp;building the formulas by hand</strong>.</p>
 </div>
+</div>
+</section></section>
+<section>
+<section id="micro-check" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>Micro-Check</h1>
+<p>Conversational command structures</p>
+</section>
+<section id="quiz" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Quiz</h2>
+<p>Which question will get the <strong>most useful</strong> answer?</p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment fade-in">
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;">
+<p><strong>A)</strong> “Tell me about the expenses.”</p>
+<p>❌ Too vague — you’ll get a shrug.</p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment fade-in">
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;">
+<p><strong>B)</strong> “Top 3 categories by total spend, with the % each is of the month.”</p>
+<p>✅ Specific metric, grouping, and format.</p>
+</div>
+</div>
+</div></div>
+</div>
+</section>
+<section id="key-takeaways" class="slide level2 sdaia-dark" data-background-color="#1C355E">
+<h2>Key Takeaways</h2>
+<ol type="1">
+<li class="fragment"><strong>Interview, don’t formula</strong> — upload the file and ask in plain language</li>
+<li class="fragment"><strong>Precise questions win</strong> — name the metric, the grouping, the format</li>
+<li class="fragment"><strong>Extract &amp; enrich</strong> — OCR a receipt, then reconcile against the data</li>
+<li class="fragment"><strong>“What if” on the spot</strong> — model budget changes conversationally</li>
+<li class="fragment"><strong>Verify &amp; sanitize</strong> — double-check the numbers; mind the Newspaper Test</li>
+</ol>
 
 
-</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="../../../slides_template/assets/sdaia.svg" class="slide-logo"></p>
+<p><img src="../../slides_template/assets/sdaia.svg" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../../../site_libs/revealjs/dist/reveal.js"></script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="../../../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
