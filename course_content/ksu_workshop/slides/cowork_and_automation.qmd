@@ -335,8 +335,9 @@ distribution — every term.
 . . .
 
 ::: {style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; font-style: italic; font-size: 0.85em; text-align: center; margin-top: 0.6em;"}
-"From `grades.csv`, compute each student's weighted total (midterm 30%, final 40%,
-project 30%), the class average, and a grade distribution. Save it as a new sheet."
+"From `grades.csv`, compute each student's weighted total (midterm 25%, final 35%,
+project 25%, participation 15%), the class average, and a grade distribution. Save it as a
+new sheet."
 :::
 
 ::: {.callout-note}

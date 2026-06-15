@@ -9,8 +9,8 @@ Upload the PDF directly to NotebookLM.
 
 ## Option 2 — Saudi government policy document
 **Title:** Saudi Vision 2030 — Overview Document
-**URL:** https://www.vision2030.gov.sa/media/rc0b5oy1/saudi_vision203.pdf
-This is a public-domain government document. Download and upload the PDF.
+**URL:** https://www.vision2030.gov.sa/
+Open the Vision 2030 site and download the official overview PDF, then upload it to NotebookLM. This is a public-domain government document.
 
 ## Option 3 — Use your own
 Any paper, policy PDF, or book chapter you are already reading for your research or teaching. Remember the **Newspaper Test** — don't upload confidential or unpublished work.

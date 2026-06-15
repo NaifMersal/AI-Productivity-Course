@@ -60,7 +60,7 @@ Build it once, run it forever
 . . .
 
 ::: {.callout-note}
-No idea? Try a *"student feedback note"* Skill using [`sample_essay.md`](../data/sample_essay.md) + [`rubric.md`](../data/rubric.md) as one input and [`feedback_student_1.md`](../data/feedback_student_1.md) as another. All at [`../data/`](../data/).
+No idea? Try a *"student feedback note"* Skill (essay + rubric → feedback note). Run it on [`sample_essay.md`](../data/sample_essay.md), then again on [`sample_essay_2.md`](../data/sample_essay_2.md) — same [`rubric.md`](../data/rubric.md) both times. All at [`../data/`](../data/).
 :::
 
 . . .
