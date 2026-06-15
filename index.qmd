@@ -1,35 +1,24 @@
 ---
-title: "AI at Work — Project Index"
+title: "AI at Work — Workshops"
 subtitle: "Build the Workflows That Win Back Your Week"
 date: today
 format:
   html:
-    toc: true
+    toc: false
     theme: cosmo
 ---
 
-**Course:** *AI at Work: Build the Workflows That Win Back Your Week*
-**Format:** 3-day / 12-session instructor-led workshop
-**Tool:** Hermes desktop agent (concepts portable to ChatGPT, Gemini, Claude, Coworker)
+Hands-on workshops that teach managers, professionals, and faculty to use AI as a
+permanent member of their team — not as a search engine. **No coding.** Concepts stay
+portable across ChatGPT, Gemini, Claude, NotebookLM, and Coworker.
 
-[**Browse all course content →**](course_content/index.html) · [**KSU workshop →**](course_content/ksu_workshop/index.html)
+## Workshops
 
-## Course Sessions
+| Workshop | Audience | Length | Start here |
+|---|---|---|---|
+| **Building Your Own AI Assistant** | KSU faculty | Half-day (≈4 hrs) | [Run of show →](ksu-workshop/index.html) |
 
-| # | Session | File |
-|---|---|---|
-| **Day 1 — Foundations: Think Like an AI-Native** | | |
-| 1 | The AI-Native Mindset & Your Automation Backlog | [session_1_mindset_and_automation_backlog.qmd](course_content/slides/session_1_mindset_and_automation_backlog.html) |
-| 2 | How AI Actually Works — The Two Layers | [session_2_two_layers.qmd](course_content/slides/session_2_two_layers.html) |
-| 3 | Delegating to AI — The RICE Pattern + Advanced Moves | [session_3_delegating_with_rice.qmd](course_content/slides/session_3_delegating_with_rice.html) |
-| 4 | Grounding AI in Truth — The Research Workflow | [session_4_grounding_research_workflow.qmd](course_content/slides/session_4_grounding_research_workflow.html) |
-| **Day 2 — Meet Your Agent: Build Your Hermes Operations Team** | | |
-| 5 | Meet Hermes — Setup & Your First Agent Run | [session_5_meet_hermes.qmd](course_content/slides/session_5_meet_hermes.html) |
-| 6 | Projects & Standing Instructions | [session_6_projects_and_standing_instructions.qmd](course_content/slides/session_6_projects_and_standing_instructions.html) |
-| 7 | Skills — Your Reusable Workflow Library | [session_7_skills.qmd](course_content/slides/session_7_skills.html) |
-| 8 | Memory — Teaching the Agent to Remember You | [session_8_memory.qmd](course_content/slides/session_8_memory.html) |
-| **Day 3 — Agents That Act: Executive Output & ROI** | | |
-| 9 | Cron & Connectors | [session_9_cron_and_connectors.qmd](course_content/slides/session_9_cron_and_connectors.html) |
-| 10 | From Notes to Narrative — The Amazon Method | [session_10_notes_to_narrative.qmd](course_content/slides/session_10_notes_to_narrative.html) |
-| 11 | Interviewing Your Data | [session_11_interviewing_your_data.qmd](course_content/slides/session_11_interviewing_your_data.html) |
-| 12 | The ROI Finale + Your Workflow Library | [session_12_roi_finale.qmd](course_content/slides/session_12_roi_finale.html) |
+_More workshops coming soon._
+
+<!-- Hermes Agent Course (3-day / 12 sessions) is in progress — not yet listed.
+     When ready, add: [Course index →](hermes-agent-course/index.html) -->

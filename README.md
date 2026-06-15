@@ -1,12 +1,14 @@
 # AI at Work: Build the Workflows That Win Back Your Week
 
-This repository contains the course materials and slide decks for **AI at Work** — a 3-day
-workshop that teaches managers and professionals to turn the work they repeat into reusable,
-measurable AI workflows, run by an AI agent that works as a permanent member of their
-operations team.
+This repository hosts the **AI at Work** workshops — hands-on programs that teach managers,
+professionals, and faculty to turn the work they repeat into reusable, measurable AI
+workflows, run by an AI agent that works as a permanent member of their team. Each workshop
+is a self-contained top-level folder; the root [`index.qmd`](index.qmd) is the portal.
 
-> [!NOTE]
-> Please refer to [outline.md](outline.md) for the detailed course outline, schedule, and session descriptions.
+| Workshop | Folder | Outline |
+|---|---|---|
+| Hermes Agent Course (3-day / 12 sessions) | `hermes-agent-course/` | [outline](hermes-agent-course/outline.md) |
+| Building Your Own AI Assistant (KSU, half-day) | `ksu-workshop/` | [outline](ksu-workshop/outline.md) |
 
 ## Rendering Slides
 
@@ -24,15 +26,15 @@ quarto render
 To render or preview a single deck with live reload:
 
 ```bash
-quarto render course_content/slides/session_1_mindset_and_automation_backlog.qmd
-quarto preview course_content/slides/session_1_mindset_and_automation_backlog.qmd
+quarto render hermes-agent-course/slides/session_1_mindset_and_automation_backlog.qmd
+quarto preview hermes-agent-course/slides/session_1_mindset_and_automation_backlog.qmd
 ```
 
 ## Project Structure
 
+- **`index.qmd`**: Root portal page linking the workshops (URLs mirror the folder paths — keep them stable).
 - **`_quarto.yml`** / **`slides_template/assets/`**: Root Quarto config and SDAIA brand assets (theme, logos, fonts) applied globally to every deck.
-- **`course_content/slides/`**: The Quarto (`.qmd`) reveal.js slide decks — one per session.
-- **`course_content/data/`**: Datasets used in the hands-on activities.
+- **`hermes-agent-course/`**: The 3-day / 12-session Hermes course — `index.qmd`, `outline.md`, `slides/`, `data/`, `reference/`.
+- **`ksu-workshop/`**: The standalone KSU half-day workshop — `index.qmd`, `outline.md`, `slides/`, `data/`.
 - **`prompts/`**: Prompt guides and instructor templates.
 - **`notes/`**: Loose planning notes, idea lists, and drafts.
-- **`outline.md`**: The master outline for the course.

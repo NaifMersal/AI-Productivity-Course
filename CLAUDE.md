@@ -2,6 +2,21 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Repository Layout
+
+This repo hosts **multiple SDAIA workshops**, each a self-contained top-level folder with
+its own `index.qmd`, `outline.md`, `slides/`, and `data/`. A root `index.qmd` is the
+**portal** that links the offerings (URLs mirror these folder paths, so keep them stable):
+
+- `hermes-agent-course/` — the 3-day / 12-session Hermes course (the program described below). *Listed under "Project Overview".*
+- `ksu-workshop/` — a standalone half-day workshop for KSU faculty (Claude Cowork; portable concepts).
+- `slides_template/`, `_quarto.yml` — shared SDAIA branding + Quarto config at the repo root, applied globally to every deck.
+- `prompts/`, `notes/` — shared prompt guides/templates and loose planning notes.
+
+> The Hermes course is in progress and currently **hidden** from the root portal `index.qmd`
+> (commented placeholder); KSU is the only listed offering. A shared `foundation/` unit may
+> be added alongside the workshop folders later.
+
 ## Project Overview
 
 **AI at Work: Build the Workflows That Win Back Your Week** — a 3-day, 12-session
@@ -25,21 +40,21 @@ from that backlog, builds a workflow for it, and records before/after time; Sess
 totals it into **hours won back per week** (the ROI capstone). The worksheet lives at
 `prompts/automation_backlog_and_time_log.md`.
 
-> Note: `outline.md` and the concepts reference are the source of truth. The `.qmd` slide
-> decks under `course_content/slides/` have been re-authored to match the 3-day/12-session
-> Hermes program — one deck per session (`session_1`–`session_12`) plus
-> `_course_overview.qmd`. Keep decks aligned with `outline.md` if the outline changes.
+> Note: `hermes-agent-course/outline.md` and the concepts reference are the source of truth.
+> The `.qmd` slide decks under `hermes-agent-course/slides/` have been re-authored to match
+> the 3-day/12-session Hermes program — one deck per session (`session_1`–`session_12`) plus
+> `_course_overview.qmd`. Keep decks aligned with the outline if it changes.
 
-### Key Files
-- `outline.md` — master course outline (12 sessions, schedule, activities). Primary doc.
-- `course_content/reference/mental_model_and_agent_concepts.md` — canonical plain-language
+### Key Files (Hermes course)
+- `hermes-agent-course/outline.md` — master course outline (12 sessions, schedule, activities). Primary doc.
+- `hermes-agent-course/reference/mental_model_and_agent_concepts.md` — canonical plain-language
   definitions (two layers, context, script, Project, `CLAUDE.md`, Skill, Memory, Cron,
   Connector, blast radius). Source of truth for the Session 2 + Day-2 slide decks.
-- `course_content/slides/*.qmd` — the SDAIA-branded Quarto reveal.js slide decks (one per session).
-- `course_content/slides/_course_overview.qmd` — canonical session list / agenda.
+- `hermes-agent-course/slides/*.qmd` — the SDAIA-branded Quarto reveal.js slide decks (one per session).
+- `hermes-agent-course/slides/_course_overview.qmd` — canonical session list / agenda.
 - `_quarto.yml` — Quarto project config at the **repo root** (global SDAIA branding; renders the source tree into repo-root `output/`).
 - `slides_template/assets/` — SDAIA brand assets (`sdaia.scss`, logo/icon SVGs, `splash.lua`, `favicon.html`) referenced globally by `_quarto.yml`.
-- `course_content/data/` — datasets used in hands-on activities (e.g. `expenses_export.csv`).
+- `hermes-agent-course/data/` — datasets used in hands-on activities (e.g. `expenses_export.csv`).
 - `prompts/` — prompt guides and instructor templates.
 - `notes/` — loose planning notes, idea lists, and drafts.
 
@@ -52,14 +67,14 @@ screenshot, and visually verify them with the **`author-verify-slides`** skill �
 branding and Quarto patterns are constant across SDAIA slide projects.
 
 **Run all commands from the repo root** (Quarto finds `_quarto.yml` there and mirrors
-the source path into `output/`, e.g. `course_content/slides/foo.qmd` →
-`output/course_content/slides/foo.html`):
+the source path into `output/`, e.g. `hermes-agent-course/slides/foo.qmd` →
+`output/hermes-agent-course/slides/foo.html`):
 
-- Render one deck: `quarto render course_content/slides/<deck>.qmd`
+- Render one deck: `quarto render hermes-agent-course/slides/<deck>.qmd`
 - Render all decks: `quarto render`
-- Preview with live reload: `quarto preview course_content/slides/<deck>.qmd`
+- Preview with live reload: `quarto preview hermes-agent-course/slides/<deck>.qmd`
 - Render + screenshot + verify branding/overflow:
-  `python .claude/skills/author-verify-slides/driver.py course_content/slides/<deck>.qmd --all --reveal-all`
+  `python .claude/skills/author-verify-slides/driver.py hermes-agent-course/slides/<deck>.qmd --all --reveal-all`
 
 `output/` is gitignored.
 
@@ -71,7 +86,7 @@ you, just predicts the next word, forgets everything when a request ends. The **
 is the "office around the brain": it stores your info in a directory and **re-sends the
 relevant context on every request**. Once learners see this, `CLAUDE.md`, Projects, Memory,
 and Skills stop being magic — they're all the app getting smarter about *what to re-send*.
-Full definitions live in `course_content/reference/mental_model_and_agent_concepts.md`;
+Full definitions live in `hermes-agent-course/reference/mental_model_and_agent_concepts.md`;
 reuse its analogies verbatim across decks.
 
 **Agent-stack vocabulary** (Day 2–3) — taught with the analogy first, the term as a label:

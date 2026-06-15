@@ -8,7 +8,7 @@
 
 **The Primary Stack:** The hands-on tool is the **Hermes desktop agent** (Projects, `CLAUDE.md`/`AGENTS.md`, Skills, Memory, Cron, Connectors). But the **concepts are portable** — every feature is taught as *the general idea → how Hermes does it → what other apps (ChatGPT, Gemini, Claude, Coworker) call it*. Students leave able to operate one coherent agent, not juggle ten tools.
 
-> See `prompts/automation_backlog_and_time_log.md` for the worksheet participants fill in throughout, and `course_content/reference/mental_model_and_agent_concepts.md` for the plain-language definitions behind every concept below.
+> See `prompts/automation_backlog_and_time_log.md` for the worksheet participants fill in throughout, and `hermes-agent-course/reference/mental_model_and_agent_concepts.md` for the plain-language definitions behind every concept below.
 
 ---
 
@@ -137,7 +137,7 @@
     *   "Summarize the spending trends for Q3 vs Q2."
 *   **Extract & Enrich:** Pull structured data from a receipt image (OCR), then reconcile it against the expense export.
 *   **"What If" Scenarios:** Model budget changes on the enriched data.
-*   **Build (from your backlog):** Run a real "interview" on `course_content/data/expenses_export.csv`. Log the time saved vs. building formulas.
+*   **Build (from your backlog):** Run a real "interview" on `hermes-agent-course/data/expenses_export.csv`. Log the time saved vs. building formulas.
 *   **Micro-Check:** Live Quiz on conversational command structures.
 
 #### **Session 12: The ROI Finale + Your Workflow Library (15:15 – 16:30)**

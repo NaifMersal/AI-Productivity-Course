@@ -1,12 +1,16 @@
 ---
-title: "Course Content Index"
-subtitle: "AI at Work — Sessions, Data, Reference"
+title: "Hermes Agent Course"
+subtitle: "AI at Work — 3-Day / 12-Session Track"
 date: today
 format:
   html:
     toc: true
     theme: cosmo
 ---
+
+A 3-day, 12-session instructor-led course. The hands-on tool is the **Hermes desktop
+agent** (Projects, `CLAUDE.md`/`AGENTS.md`, Skills, Memory, Cron, Connectors); concepts
+stay portable to ChatGPT, Gemini, Claude, and Coworker.
 
 ## Slides — 12-Session Track
 
@@ -28,18 +32,8 @@ format:
 | 11 | Interviewing Your Data | [session_11_interviewing_your_data.qmd](slides/session_11_interviewing_your_data.html) |
 | 12 | ROI Finale & Workflow Library | [session_12_roi_finale.qmd](slides/session_12_roi_finale.html) |
 
-## KSU Workshop
+## Reference & Data
 
-Run of show: [index.qmd](ksu_workshop/index.html)
-
-### Slides
-
-| Topic | File |
-|---|---|
-| Workshop overview | [overview.qmd](ksu_workshop/slides/overview.html) |
-| Two Layers + RICE pattern | [how_ai_works_and_rice.qmd](ksu_workshop/slides/how_ai_works_and_rice.html) |
-| NotebookLM, grounding, slide generation | [notebooklm_grounding_and_slides.qmd](ksu_workshop/slides/notebooklm_grounding_and_slides.html) |
-| Coworker.ai & automation | [cowork_and_automation.qmd](ksu_workshop/slides/cowork_and_automation.html) |
-| Foundations practice | [practice_foundations.qmd](ksu_workshop/slides/practice_foundations.html) |
-| Automation practice | [practice_automation.qmd](ksu_workshop/slides/practice_automation.html) |
-| Wrap-up | [wrap_up.qmd](ksu_workshop/slides/wrap_up.html) |
+- Plain-language concept definitions: [`reference/mental_model_and_agent_concepts.md`](reference/mental_model_and_agent_concepts.md)
+- Course outline: [`outline.md`](outline.md)
+- Hands-on datasets: [`data/`](data/)

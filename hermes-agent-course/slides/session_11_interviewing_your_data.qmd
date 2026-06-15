@@ -111,7 +111,7 @@ Hands-on
 
 ::: {.callout-tip}
 ## Hands-on
-Open `course_content/data/expenses_export.csv` in the agent and run an **interview**:
+Open `hermes-agent-course/data/expenses_export.csv` in the agent and run an **interview**:
 ask 3 questions, extract one receipt, and model one "what-if".
 :::
 
