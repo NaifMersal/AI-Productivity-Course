@@ -1,6 +1,6 @@
 ---
 title: "Hermes Agent Course"
-subtitle: "AI at Work — 3-Day / 12-Session Track"
+subtitle: "AI at Work — 3-Day / 11-Session Track"
 date: today
 format:
   html:
@@ -8,32 +8,37 @@ format:
     theme: cosmo
 ---
 
-A 3-day, 12-session instructor-led course. The hands-on tool is the **Hermes desktop
+A 3-day, 11-session instructor-led course. The hands-on tool is the **Hermes desktop
 agent** (Projects, `CLAUDE.md`/`AGENTS.md`, Skills, Memory, Cron, Connectors); concepts
 stay portable to ChatGPT, Gemini, Claude, and Coworker.
 
-## Slides — 12-Session Track
+## Slides — Foundation + Expansion
+
+Day 1 is the **Foundation** block, composed from the shared concept library in
+[`../chunks/`](../chunks/) (single-sourced across every workshop) plus manager-specific
+examples. Days 2–3 are the **Expansion**, each session building on a Foundation artifact.
 
 | # | Session | File |
 |---|---|---|
-| **Day 1 — Foundations** | | |
-| 1 | AI-Native Mindset & Automation Backlog | [session_1_mindset_and_automation_backlog.qmd](slides/session_1_mindset_and_automation_backlog.html) |
-| 2 | How AI Works: The Two Layers | [session_2_two_layers.qmd](slides/session_2_two_layers.html) |
-| 3 | Delegating with RICE + Advanced Moves | [session_3_delegating_with_rice.qmd](slides/session_3_delegating_with_rice.html) |
-| 4 | Grounding AI in Truth / Research Workflow | [session_4_grounding_research_workflow.qmd](slides/session_4_grounding_research_workflow.html) |
-| **Day 2 — Meet Your Agent** | | |
-| 5 | Meet Hermes: Setup & First Agent Run | [session_5_meet_hermes.qmd](slides/session_5_meet_hermes.html) |
-| 6 | Projects & Standing Instructions | [session_6_projects_and_standing_instructions.qmd](slides/session_6_projects_and_standing_instructions.html) |
-| 7 | Skills: Reusable Workflow Library | [session_7_skills.qmd](slides/session_7_skills.html) |
-| 8 | Memory: Teaching the Agent to Remember | [session_8_memory.qmd](slides/session_8_memory.html) |
-| **Day 3 — Agents That Act** | | |
-| 9 | Cron & Connectors | [session_9_cron_and_connectors.qmd](slides/session_9_cron_and_connectors.html) |
-| 10 | From Notes to Narrative (Amazon Method) | [session_10_notes_to_narrative.qmd](slides/session_10_notes_to_narrative.html) |
-| 11 | Interviewing Your Data | [session_11_interviewing_your_data.qmd](slides/session_11_interviewing_your_data.html) |
-| 12 | ROI Finale & Workflow Library | [session_12_roi_finale.qmd](slides/session_12_roi_finale.html) |
+| **Day 1 — Foundation** | | |
+| — | Kickoff: Welcome & Your Automation Backlog | [kickoff](slides/kickoff.html) |
+| 1 | How AI Works: The Two Layers | [two_layers](slides/two_layers.html) |
+| 2 | Delegating with RICE + Advanced Moves | [delegating_rice](slides/delegating_rice.html) |
+| 3 | Grounding AI in Truth / Research Workflow | [grounding](slides/grounding.html) |
+| **Day 2 — Expansion: Meet Your Agent** | | |
+| 4 | Meet the Agent: Setup & First Run | [meet_the_agent](slides/meet_the_agent.html) |
+| 5 | Projects & Standing Instructions *(← context pack)* | [projects_and_standing_instructions](slides/projects_and_standing_instructions.html) |
+| 6 | Skills: Reusable Workflow Library *(← RICE)* | [skills](slides/skills.html) |
+| 7 | Memory: Teaching the Agent to Remember | [memory](slides/memory.html) |
+| **Day 3 — Expansion: Agents That Act** | | |
+| 8 | Cron & Connectors | [cron_and_connectors](slides/cron_and_connectors.html) |
+| 9 | From Notes to Narrative (Amazon Method) | [notes_to_narrative](slides/notes_to_narrative.html) |
+| 10 | Interviewing Your Data | [interviewing_your_data](slides/interviewing_your_data.html) |
+| 11 | ROI Finale & Workflow Library | [roi_finale](slides/roi_finale.html) |
 
 ## Reference & Data
 
-- Plain-language concept definitions: [`reference/mental_model_and_agent_concepts.md`](reference/mental_model_and_agent_concepts.md)
+- Plain-language concept definitions (shared): [`../chunks/reference/mental_model_and_agent_concepts.md`](../chunks/reference/mental_model_and_agent_concepts.md)
+- Shared concept chunks: [`../chunks/`](../chunks/)
 - Course outline: [`outline.md`](outline.md)
 - Hands-on datasets: [`data/`](data/)

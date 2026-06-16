@@ -17,6 +17,7 @@ portable across ChatGPT, Gemini, Claude, NotebookLM, and Coworker.
 | Workshop | Audience | Length | Start here |
 |---|---|---|---|
 | **Building Your Own AI Assistant** | KSU faculty | Half-day (≈4 hrs) | [Run of show →](ksu-workshop/index.html) |
+| **AI Productivity at Work** | Employees (any office role) | 3 days | [Run of show →](employee-ai-workshop/index.html) |
 
 _More workshops coming soon._
 

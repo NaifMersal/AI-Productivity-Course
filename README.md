@@ -34,7 +34,7 @@ quarto preview hermes-agent-course/slides/session_1_mindset_and_automation_backl
 
 - **`index.qmd`**: Root portal page linking the workshops (URLs mirror the folder paths — keep them stable).
 - **`_quarto.yml`** / **`slides_template/assets/`**: Root Quarto config and SDAIA brand assets (theme, logos, fonts) applied globally to every deck.
-- **`hermes-agent-course/`**: The 3-day / 12-session Hermes course — `index.qmd`, `outline.md`, `slides/`, `data/`, `reference/`.
+- **`hermes-agent-course/`**: The 3-day / 11-session Hermes course — `index.qmd`, `outline.md`, `slides/`, `data/`, `reference/`.
 - **`ksu-workshop/`**: The standalone KSU half-day workshop — `index.qmd`, `outline.md`, `slides/`, `data/`.
 - **`prompts/`**: Prompt guides and instructor templates.
 - **`notes/`**: Loose planning notes, idea lists, and drafts.
