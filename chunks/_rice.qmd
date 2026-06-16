@@ -1,0 +1,116 @@
+<!--
+Shared concept chunk: Delegation + the RICE pattern (4 pillars + formula).
+Concept-only — pillar DEFINITIONS, no worked examples. Add your own role
+list, sample prompt, and live demo as workshop slides after the include.
+Include with: include ../../chunks/_rice.qmd
+-->
+
+# Stop Asking. Start Delegating. {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Brief the AI like a direct report
+
+## The Paradigm Shift {auto-animate=true}
+
+::: {data-id="shift" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+Stop **chatting**. Start **delegating**.
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 1em;"}
+You don't need a "chat bot". You need a **direct report** — someone you brief properly,
+then trust to deliver.
+:::
+
+# RICE {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The 4 pillars of delegation
+
+## The Framework {auto-animate=true}
+
+::: {data-id="rice" style="font-size: 1.1em;"}
+
+::: {.fragment .fade-in}
+**R — Role:** Who should the AI be?
+:::
+::: {.fragment .fade-in}
+**I — Instructions:** What exactly should it do? (format, length, tone)
+:::
+::: {.fragment .fade-in}
+**C — Context:** What information does it need?
+:::
+::: {.fragment .fade-in}
+**E — Examples:** Show it what "good" looks like.
+:::
+
+:::
+
+## R — Role {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**Who** should the AI be?
+:::
+
+. . .
+
+Name the expert you'd hire for this job. The role shapes the AI's **vocabulary,
+perspective, and priorities** before it writes a single word.
+
+## I — Instructions {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**What** exactly should it do?
+:::
+
+. . .
+
+Be specific — bundle the task **with** its format, length, and tone.
+
+. . .
+
+::: {.callout-tip}
+## Pro move
+Add: "If anything is unclear, **ask me before you write**."
+:::
+
+## C — Context {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**What** information does it need?
+:::
+
+. . .
+
+The "brain dump" — paste your notes, upload your docs, give it the raw material.
+
+. . .
+
+::: {.callout-note}
+## This is the *same* context from the two layers
+You are loading the pages onto the brain's desk. **No context = the brain guesses.**
+:::
+
+## E — Examples {auto-animate=true}
+
+::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**Show** it what "good" looks like.
+:::
+
+. . .
+
+Don't just *describe* the output you want — **paste one sample**. The AI copies its
+structure, tone, and length.
+
+. . .
+
+::: {.callout-tip}
+## One example beats a paragraph
+A single sample teaches more than ten lines of rules.
+:::
+
+## The Formula {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #625D9C)"}
+
+::: {style="background: rgba(255,255,255,0.12); padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.05em;"}
+"Act as a **[Role]**. Your job is to **[Instructions]**. Here is the **[Context]**.
+Match this **[Example]**."
+:::

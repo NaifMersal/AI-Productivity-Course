@@ -1,0 +1,53 @@
+<!--
+Shared concept chunk: Grounding AI in truth (context-first, trust layer,
+golden rule). Concept-only — tool comparisons and worked activities are
+workshop-specific, add them after the include.
+Include with: include ../../chunks/_grounding.qmd
+-->
+
+# Grounding AI in Truth {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+When you control the context, you control the answer
+
+## The "Context First" Rule {auto-animate=true}
+
+::: {data-id="workflow" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
+The wrong way: Open AI → type a question → hope for the best.
+:::
+
+. . .
+
+::: {data-id="workflow" style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.1em; margin-top: 0.8em;"}
+The right way: **Upload source → instruct → grounded result.**
+:::
+
+. . .
+
+::: {.callout-important}
+## The rule
+No upload = no trust. **Context comes before content.**
+:::
+
+## The Trust Layer {auto-animate=true}
+
+::: {data-id="trust" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+Hallucinations happen when AI **doesn't know** the answer but **tries to please you**
+by guessing.
+:::
+
+. . .
+
+The **Trust Layer** forces the AI to answer from *your sources* as its only truth —
+*"Based **only** on this document, summarize… and cite every point."*
+
+## The Golden Rule {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**If it doesn't have a citation, it didn't happen.**
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 0.8em;"}
+Demand page references. Then click them and check the source text.
+:::

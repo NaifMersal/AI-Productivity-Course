@@ -1,0 +1,34 @@
+<!--
+Shared concept chunk: What "context" really is (the desk) + the big reframe.
+Concept-only. Include with: include ../../chunks/_context.qmd
+-->
+
+# What "Context" Really Is {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The pages on the brain's desk
+
+## Context = the Desk {auto-animate=true}
+
+::: {data-id="context" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+**Context** is everything the office stacks on the brain's desk before it starts —
+your request **plus** the background pages it needs to do the job well.
+:::
+
+. . .
+
+Your instructions, pasted documents, standing rules, relevant memory — the model's
+**entire world** for that one request.
+
+## The Big Reframe {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+Output quality is mostly a **context problem**, not a **smartness problem**.
+:::
+
+. . .
+
+::: {.callout-important}
+## What this means for you
+A weak answer usually means weak **context**, not a weak model.
+**"Give it context" is the whole skill.**
+:::

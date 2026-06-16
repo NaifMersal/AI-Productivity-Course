@@ -1,0 +1,166 @@
+<!--
+Shared concept chunk: The Two Layers (keystone mental model).
+Concept-only — no workshop-specific examples. Include with:
+  include ../../chunks/_two_layers.qmd
+then follow with your own example slides. See chunks/reference/.
+-->
+
+# The One Big Idea {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+When you "talk to AI", you talk to **two things**
+
+## Two Layers, Stacked {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center;"}
+**The Model Layer**
+
+"The brain in a jar"
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center;"}
+**The App Layer**
+
+"The office around the brain"
+:::
+:::
+:::
+::::
+
+. . .
+
+::: {style="text-align: center; margin-top: 1em;"}
+Tell these apart and every "memory", "Projects", and "Skills" feature stops being magic.
+:::
+
+# The Model Layer {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The brain in a jar
+
+## A Brilliant Brain — With Amnesia {auto-animate=true}
+
+::: {data-id="brain" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+A brilliant graduate's brain floating in a **jar**. It has read most of the internet,
+so it's clever — but it has **total amnesia**.
+:::
+
+. . .
+
+::: {.incremental}
+- Knows nothing about *you*, your work, or what you said five minutes ago
+- The instant it finishes answering, it **forgets everything**
+- All it does is **predict the next word** from the text it was just handed
+:::
+
+## It Just Predicts the Next Word {auto-animate=true}
+
+Under the hood it does **one** thing: guess the **next word** based on probability.
+
+::: {data-id="predict" style="background: #f7f9fc; padding: 0.7em 1em; border-radius: 12px; border-left: 4px solid #9B8EC0; margin: 0.5em 0;"}
+*"The capital of Saudi Arabia is…"*
+:::
+
+::: {style="font-size: 0.95em;"}
+::: {.fragment .fade-in-then-semi-out}
+- **Riyadh** (99.8%) ✅
+:::
+::: {.fragment .fade-in-then-semi-out}
+- Jeddah (0.1%) · Paris (0.00001%)
+:::
+:::
+
+. . .
+
+It doesn't *"know"* geography — it knows **"Riyadh" almost always follows that sentence.**
+
+## When It Guesses Wrong (Hallucinations) {auto-animate=true}
+
+::: {style="font-size: 1.1em; margin-bottom: 1em;"}
+What happens when it doesn't know the answer? **It guesses.**
+:::
+
+*"According to Article 214 of the new Investment Law: …"*
+
+. . .
+
+::: {.fragment .fade-in}
+- **The** (45%) · **Foreign** (30%) · **Capital** (15%)
+:::
+
+. . .
+
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin-top: 1em;"}
+It constructs a sentence that *sounds* right, but it has never read the actual document.
+That confident, made-up answer is a **hallucination**.
+:::
+
+## The Limit That Explains Everything {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.15em;"}
+The model is **stateless**. It does not "remember" and it does not "look things up".
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+Anything you want it to "know", you must **hand it every single time**.
+:::
+
+# The App Layer {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+The office around the brain
+
+## We Build an Office {auto-animate=true}
+
+::: {data-id="office" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+The brain in a jar can't open files or remember your name. So we build an **office**
+around it: filing cabinets, a notebook, a standing to-do list.
+:::
+
+. . .
+
+Every time you ask for something, the office **gathers the relevant pages and hands
+them to the brain** along with your request — then files the answer back.
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+The brain still has amnesia. The *office* is what makes it feel like it remembers.
+:::
+
+## What It Really Is {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
+The **app** (ChatGPT, Gemini, Claude, an agent…) is the software wrapped around the model.
+:::
+
+. . .
+
+It **stores your information in files / a directory** and **re-sends the relevant parts
+on every request**.
+
+. . .
+
+::: {.callout-tip}
+## The features you've seen
+"Memory", "Projects", "Custom Instructions" are all just the **app** doing this
+gathering-and-resending for you.
+:::
+
+## The Sentence to Remember {auto-animate=true}
+
+::: {style="background: #00C9A7; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
+The model **knows nothing and forgets everything**;
+the app **re-sends what matters on every request.**
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 1em;"}
+Every "smart" feature is just the app getting smarter about **what to re-send.**
+:::
