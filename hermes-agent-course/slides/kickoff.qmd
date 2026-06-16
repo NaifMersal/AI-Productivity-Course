@@ -1,190 +1,29 @@
 ---
-title: "The AI-Native Mindset & Your Automation Backlog"
-subtitle: "Session 1"
+title: "Welcome & Your Automation Backlog"
+subtitle: "Foundation — Course Kickoff"
 date: today
 format: revealjs
 ---
 
 {{< include _course_overview.qmd >}}
 
-# The Paradigm Shift {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+# Win Back Your Week {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
-From "Search" to "Partner"
+The work we automate is *your* work
 
-## How Most People Use AI {auto-animate=true}
+## The Running Spine {auto-animate=true}
 
-::: {data-id="mindset" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
-Ask a question → Get an answer
+::: {data-id="spine" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.15em; color: #1C355E;"}
+Today you list the tasks that eat your week. Every build session, we automate one.
 :::
 
 . . .
 
-This is the **Search Mindset** — and it wastes 90% of AI's value.
-
-## The Partner Mindset {auto-animate=true}
-
-::: {data-id="mindset" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
-Give context → Iterate together → Get real results
+::: {.incremental}
+- Each build session pulls **one task** from your list and turns it into a workflow
+- You log the **before/after time** each time
+- In the finale we total it → **hours won back per week**
 :::
-
-. . .
-
-> Treat the AI like a smart intern who needs **context**, **instruction**, and **feedback**.
-
-
-## Example: Client Delay Email {auto-animate=true}
-
-::: {data-id="prompt" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
-**Search Mindset:**
-
-"Write an email to a client about a delay."
-:::
-
-::: {.fragment .fade-in}
-**Result:** Generic, robotic, sounds fake.
-:::
-
-## Example: Client Delay Email {auto-animate=true}
-
-::: {data-id="prompt" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-**Partner Mindset:**
-
-"I need to email Client X about a 3-day delay — we're waiting for final internal approval. Tone: respectful but confident. Here is the project context..."
-:::
-
-::: {.fragment .fade-in}
-**Result:** Tailored, professional — sounds like **you**.
-:::
-
-# The 3 Traps {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
-
-What limits new users
-
-## Trap 1: Generally treating it like Search {auto-animate=true}
-
-::: {data-id="trap1"}
-**The Input Mistake**
-
-Asking short questions like a Google search.
-:::
-
-. . .
-
-::: {.callout-tip}
-## The Fix: Better Inputs
-Shift from **Querying** to **Conversing**. Give context.
-:::
-
-## Trap 2: Treating It Like a Person {auto-animate=true}
-
-::: {data-id="trap2"}
-**The Interaction Mistake**
-
-> "Please," "Thank you," "I'm sorry to bother you..."
-:::
-
-. . .
-
-::: {.callout-tip}
-## The Fix: Direct Commands
-Be **direct**. Clear commands > polite requests. Validate output, don't compliment it.
-:::
-
-## Trap 3: Over-trusting {auto-animate=true}
-
-::: {data-id="trap3"}
-**The Output Mistake**
-
-Assuming AI contains **facts** like a database.
-:::
-
-. . .
-
-::: {.fragment .fade-in}
-**Reality:** AI is a [Prediction Engine]{.accent} — it guesses the next word. It does not "know" facts.
-:::
-
-## How It Actually Works {auto-animate=true}
-
-::: {style="font-size: 1.3em; margin-bottom: 1em;"}
-The AI predicts the **next word** based on probability.
-:::
-
-"The capital of Saudi Arabia is..."
-
-. . .
-
-::: {.fragment .fade-in-then-semi-out}
-- **Riyadh** (99.8%) ✅
-:::
-::: {.fragment .fade-in-then-semi-out}
-- Jeddah (0.1%)
-:::
-::: {.fragment .fade-in-then-semi-out}
-- Paris (0.00001%)
-:::
-
-. . .
-
-It doesn't "know" geography. It knows that "Riyadh" almost always follows that sentence.
-
-. . .
-
-::: {.callout-note}
-## Hold that thought
-*Why* it predicts instead of knows — and what that means for everything you build —
-is the **keystone of Session 2**.
-:::
-
-## When It Guesses Wrong (Hallucinations) {auto-animate=true}
-
-::: {style="font-size: 1.1em; margin-bottom: 1em;"}
-What happens when it doesn't know the answer? **It guesses.**
-:::
-
-"According to Article 214 of the new Saudi Investment Law: ..."
-
-. . .
-
-::: {.fragment .fade-in}
-- **The** (45%)
-- **Foreign** (30%)
-- **Capital** (15%)
-:::
-
-. . .
-
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin-top: 1em;"}
-The AI constructs a sentence that *sounds* legal, but it has never read the actual document.
-:::
-
-## Trust but Verify
-
-::: {.callout-important}
-## The Rule
-AI is a **drafting** tool, not a **fact-checking** tool.
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-::: {.fragment .fade-in}
-**Trust AI for:**
-
-- Logic & structure
-- Drafting & writing
-- Brainstorming
-:::
-:::
-::: {.column width="50%"}
-::: {.fragment .fade-in}
-**Verify AI on:**
-
-- Facts & dates
-- Math & calculations
-- Legal citations
-:::
-:::
-::::
 
 # Where AI Pays Off {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
@@ -217,72 +56,10 @@ Hand a task to AI when it is:
 :::
 ::::
 
-# Safety First {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
-
-The "Newspaper Test"
-
-## The Newspaper Test {auto-animate=true}
-
-::: {data-id="test"}
-Before pasting *anything* into AI, ask:
-:::
-
 . . .
 
-::: {data-id="question" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 0.95em;"}
-**"If this appeared on the front page of the New York Times, would I be fired or sued?"**
-:::
-
-. . .
-
-::: {style="text-align: center; font-size: 1.2em;"}
-Yes or Maybe → **DO NOT PASTE IT.**
-:::
-
-## High-Risk Data
-
-::: {.callout-warning}
-## Never share with AI
-:::
-
-::: {.incremental}
-- **PII** — Names, National IDs (Iqama/Saudi ID), phone numbers
-- **Financial secrets** — Unreleased earnings, bank accounts, salary data
-- **Trade secrets** — Proprietary code, formulas, unreleased strategy docs
-:::
-
-# Data Hygiene {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
-
-The Art of Sanitization
-
-## Sanitization: 3 Steps
-
-Remove the specifics, **keep the structure**.
-
-::: {.incremental}
-1. **Anonymize** — "Mohammed Al-Salem" → "[Employee A]"
-2. **Generalize** — "5,000,000 SAR" → "5M+ SAR"
-3. **Strip identifiers** — Remove company names, project codes, addresses
-:::
-
-## Before: Unsafe {auto-animate=true}
-
-::: {data-id="review" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
-"**Layla Al-Harbi** missed her **Q3 sales target of 1.5M SAR** by 15%. She blamed the delay in the **Riyadh Season Campaign** launch."
-:::
-
-::: {style="text-align: center; color: #FF7A5C; font-weight: bold;"}
-Names, amounts, projects — all exposed.
-:::
-
-## After: Sanitized {auto-animate=true}
-
-::: {data-id="review" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-"**[Employee]** missed their quarterly sales target by 15%. They cited delays in **[Key Project]** launch as the primary reason."
-:::
-
-::: {.fragment .fade-in}
-Now you can safely ask: *"Draft constructive feedback for [Employee] based on this..."*
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+The "Good fit" column is exactly what belongs on your backlog.
 :::
 
 # Build: Your Automation Backlog {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
@@ -299,7 +76,7 @@ Write down **3–5 recurring tasks** that pass the Bottleneck Test.
 - For each, note **how often** (per week) and **minutes each time**
 - That's your **Time Log** — current cost, *before* AI
 - Every build session, you'll pull one task from this list and automate it
-- In Session 12 we total the minutes saved → **hours won back per week**
+- In the finale we total the minutes saved → **hours won back per week**
 :::
 
 ::: {.fragment .fade-in}
@@ -309,67 +86,11 @@ Use `prompts/automation_backlog_and_time_log.md`. Keep it open all course.
 :::
 :::
 
-# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
-
-Safe or Risky?
-
-## Quiz — Round 1
-
-**1.** "Summarize the key risks in these meeting notes: *[internal minutes about unannounced merger targets]*"
-
-::: {.fragment .fade-in}
-::: {.callout-warning}
-## RISKY — Material Non-Public Information (MNPI)
-:::
-:::
-
-. . .
-
-**2.** "I have a budget of 375,000 SAR for a National Day campaign. Suggest a media mix."
-
-::: {.fragment .fade-in}
-::: {.callout-tip}
-## SAFE — General numbers, no sensitive context
-:::
-:::
-
-## Quiz — Round 2
-
-**3.** "Summarize this PDF: *[Q3 Investor Presentation from STC — publicly released]*"
-
-::: {.fragment .fade-in}
-::: {.callout-tip}
-## SAFE — Publicly available information
-:::
-:::
-
-. . .
-
-**4.** "Draft a termination letter for Employee #4421 who missed targets. No name used."
-
-::: {.fragment .fade-in}
-::: {.callout-tip}
-## SAFE — PII removed, only behavior described
-:::
-:::
-
-## Quiz — Round 3
-
-**5.** "Analyze 5,000 customer records (Names, IBANs, Transaction IDs) to find spending patterns."
-
-. . .
-
-::: {.callout-warning}
-## RISKY — Massive PII leak. Never upload raw customer databases.
-:::
-
 ## Key Takeaways {.sdaia-dark background-color="#1C355E"}
 
 ::: {.incremental}
-1. **Partner, not search engine** — give context, iterate
-2. **Avoid the 3 traps** — Search, Person, Over-Trust
-3. **Automate the right work** — repetitive, data-heavy, drafting, predictable
-4. **Trust but verify** — draft with AI, fact-check yourself
-5. **Newspaper Test & sanitize** — if in doubt, don't paste it
-6. **Your backlog is the target** — we automate it over the next three days
+1. **AI is a teammate, not a search engine** — we automate work, not look things up
+2. **Automate the right work** — repetitive, data-heavy, drafting, predictable
+3. **Your backlog is the target** — we automate it over the next three days
+4. **Everything is measured** — the Time Log becomes your ROI in the finale
 :::

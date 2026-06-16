@@ -1,6 +1,6 @@
 ---
 title: "Skills"
-subtitle: "Session 7 — Your Reusable Workflow Library"
+subtitle: "Expansion — Your Reusable Workflow Library"
 date: today
 format: revealjs
 ---
@@ -12,7 +12,7 @@ Build it once. Run it forever.
 ## Remember the RICE Prompt? {auto-animate=true}
 
 ::: {data-id="recall" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-In Session 3 you wrote a great delegation — but you typed it out **by hand**.
+Earlier, with RICE, you wrote a great delegation — but you typed it out **by hand**.
 :::
 
 . . .
@@ -66,7 +66,7 @@ The test: *always-on* vs *invoked on demand*
 :::: {.columns}
 ::: {.column width="50%"}
 ::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
-**Standing Instruction** — *Session 6*
+**Standing Instruction**
 
 A tone, format, or rule you want applied to **every** request.
 **Pinned to the Project wall** (`CLAUDE.md`) — always on, you never ask for it.
@@ -74,7 +74,7 @@ A tone, format, or rule you want applied to **every** request.
 :::
 ::: {.column width="50%"}
 ::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-**Skill** — *Session 7*
+**Skill** *(this session)*
 
 A procedure you **invoke** for a specific job — often producing an **artifact**.
 You call it by name / trigger when you need it.
@@ -160,10 +160,10 @@ A titled, on-brand deck — exportable to **`.pptx`**:
 . . .
 
 ::: {.callout-note}
-## Coming in Session 10
+## Coming Later: the Design Engine
 Making that deck genuinely **board-ready** — the narrative (Amazon Method) and the
-Design Engine — is Session 10. Here the point is simply: a Skill can **produce an
-artifact on command**.
+Design Engine — comes later in the course. Here the point is simply: a Skill can
+**produce an artifact on command**.
 :::
 
 # Build: From Your Backlog {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
@@ -199,7 +199,7 @@ Each one is a **trigger → book** the agent pulls on command:
 | "make a deck" | **Build-a-Deck** → on-brand `.pptx` |
 | "/summarize these notes" | **Briefer** → BLUF decision memo |
 | "meeting → actions" | **Minutes → Actions** → owners + deadlines |
-| "draft the weekly report" | **Weekly Status** → leadership update *(automate in Session 9)* |
+| "draft the weekly report" | **Weekly Status** → leadership update *(automate with Cron)* |
 | "summarize this contract" | **Document Summary** → key changes + risks |
 :::
 
@@ -266,7 +266,7 @@ You need a quick email to a vendor you'll **never speak to again**. Build a Skil
 ## Key Takeaways {.sdaia-dark background-color="#1C355E"}
 
 ::: {.incremental}
-1. **Skill = a book in your library you open by a trigger** (vs an always-on Standing Instruction — Session 6)
+1. **Skill = a book in your library you open by a trigger** (vs an always-on Standing Instruction)
 2. **Anatomy** — a name, a **trigger** (when-to-use), the steps (plain language, no code)
 3. **Skills produce artifacts** — a deck/`.pptx`, a memo, a report — on command
 4. **Write once, invoke forever** — prove it generalizes by running the trigger on a new input

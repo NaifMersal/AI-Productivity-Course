@@ -1,155 +1,40 @@
 ---
 title: "Delegating to AI"
-subtitle: "Session 3 — The RICE Pattern + Advanced Moves"
+subtitle: "Foundation — The RICE Pattern + Advanced Moves"
 date: today
 format: revealjs
 ---
 
-# Stop Asking. Start Delegating. {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+<!--
+Foundation session. RICE and the advanced moves are single-sourced in /chunks/.
+The live demo, build, and quizzes below are manager-specific examples.
+-->
 
-Brief the AI like a direct report
+# From Mental Model to Action {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
-## From Mental Model to Action {auto-animate=true}
-
-::: {data-id="approach" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
-Session 2: How AI actually works — the two layers
+::: {data-id="approach" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em; color: #1C355E;"}
+Last session: how AI actually works — the two layers.
 :::
 
 . . .
 
-::: {data-id="approach" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
-Session 3: Putting the right context on the desk — on purpose
+::: {data-id="approach" style="background: rgba(255,255,255,0.12); padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em; margin-top: 0.8em;"}
+This session: putting the right context on the desk — **on purpose**.
 :::
 
-## The Paradigm Shift {auto-animate=true}
+{{< include ../../chunks/_rice.qmd >}}
 
-::: {data-id="shift"}
-Stop **Chatting**. Start **Delegating**.
+## Don't Ask — Delegate {auto-animate=true}
+
+::: {data-id="example" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**Don't ask:** "Write an email about the meeting."
 :::
-
-. . .
-
-::: {style="margin-top: 1em;"}
-You don't need a "chat bot". You need a **Direct Report**.
-:::
-
-. . .
-
-::: {data-id="example" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; margin-top: 1em;"}
-**Don't Ask:** "Write an email about the meeting."
-
-**Delegate:** "Act as a Project Manager. Draft a recap email using these notes. Highlight action items."
-:::
-
-# RICE {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
-
-The 4 Pillars of Delegation
-
-## The Framework {auto-animate=true}
-
-::: {data-id="rice" style="font-size: 1.1em;"}
 
 ::: {.fragment .fade-in}
-**R — Role:** Who is the AI?
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; margin-top: 0.6em;"}
+**Delegate:** "Act as my Project Manager. Draft a recap email from these notes.
+Highlight action items with owners and deadlines."
 :::
-::: {.fragment .fade-in}
-**I — Instructions:** What exactly should it do?
-:::
-::: {.fragment .fade-in}
-**C — Context:** What does it know?
-:::
-::: {.fragment .fade-in}
-**E — Examples:** Show it what "good" looks like.
-:::
-
-:::
-
-## R — Role {auto-animate=true}
-
-::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
-**Who** should the AI be?
-:::
-
-. . .
-
-::: {.incremental}
-- A Senior Consultant
-- A Python Expert
-- An Angry Customer
-- A Legal Compliance Officer
-:::
-
-. . .
-
-The role shapes the AI's vocabulary, perspective, and priorities.
-
-## I — Instructions {auto-animate=true}
-
-::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
-**What** exactly should it do?
-:::
-
-. . .
-
-Be specific — bundle the task **with** its format, length, and tone:
-
-::: {.fragment .fade-in}
-::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-"Draft a **200-word** executive summary email to the Director. Professional but warm. Use bold headers."
-:::
-:::
-
-. . .
-
-::: {.callout-tip}
-## Pro move
-Add: "If anything is unclear, ask me before you write."
-:::
-
-## C — Context {auto-animate=true}
-
-::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
-**What** does it know?
-:::
-
-. . .
-
-The "brain dump" — paste your notes, upload your docs, give it the raw material.
-
-. . .
-
-::: {.callout-note}
-## This is the *same* context from Session 2
-You are loading the pages onto the brain's desk. **No context = the brain guesses.**
-:::
-
-## E — Examples {auto-animate=true}
-
-::: {data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
-**Show** it what "good" looks like.
-:::
-
-. . .
-
-Don't just *describe* the output you want — **paste one sample**. The AI copies its structure, tone, and length.
-
-::: {.fragment .fade-in}
-::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-"Match this style: *'Hi [Name], great speaking Tuesday. Here's where we landed: …'*"
-:::
-:::
-
-. . .
-
-::: {.callout-tip}
-## One example beats a paragraph
-A single sample teaches more than ten lines of rules.
-:::
-
-## The Formula
-
-::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.05em;"}
-"Act as a **[Role]**. Your job is to **[Instructions]**. Here is the **[Context]**. Match this **[Example]**."
 :::
 
 # Live Demo {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
@@ -203,95 +88,57 @@ This is what I actually had:
 - **Example** → matched the warm opening, so it caught the human touch (graduation card)
 :::
 
-# When AI Fumbles a Smart Question {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+. . .
 
-3 advanced moves
+::: {.callout-warning}
+## But first — what did we just paste?
+Those notes named a real client and a real deal. **Context is the most powerful
+part of RICE — and the most dangerous to paste raw.**
+:::
 
-## Fast vs. Right {auto-animate=true}
+{{< include ../../chunks/_newspaper_test.qmd >}}
 
-::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
-By default, AI answers **fast and shallow** — and fast is sloppy on hard problems.
+## Micro-Check — Safe or Risky? {auto-animate=true}
+
+**1.** "Summarize the key risks in these meeting notes: *[internal minutes about unannounced merger targets]*"
+
+::: {.fragment .fade-in}
+::: {.callout-warning}
+## RISKY — unannounced merger details, not yet public
+:::
 :::
 
 . . .
 
-::: {.callout-important}
-## The Rule
-Complex tasks need the **slow** answer. These 3 moves force the AI to slow down — **or, use a thinking model that does it automatically.**
-:::
+**2.** "I have a budget of 375,000 SAR for a National Day campaign. Suggest a media mix."
 
-## Move 1 — Think Step by Step {auto-animate=true}
-
-::: {data-id="m1" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-Add **"think step by step"** — make the AI show its reasoning *before* the answer.
-:::
-
-::: {style="text-align: center; color: #666; font-size: 0.9em;"}
-*Industry term: **Chain of Thought (CoT)**. Best for logic, math, scheduling.*
-:::
-
-. . .
-
-::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.85em;"}
-*"I have a 2-hour meeting from 11:00, with a 30-min lunch at 12:00. When does it end?
-**Think step by step.**"* → It blocks each segment and lands on **1:30 PM**, not 1:00.
-:::
-
-. . .
-
+::: {.fragment .fade-in}
 ::: {.callout-tip}
-## 2025 update — thinking models do this automatically
-**Thinking models** (o3, Gemini 2.0 Flash Thinking, Claude 3.7 Sonnet…) run CoT internally before every reply. You don't need to say it — but you *do* need to **choose the right model** for hard problems.
+## SAFE — general numbers, no sensitive context
+:::
 :::
 
-## Move 2 — Debate It Out {auto-animate=true}
+## Micro-Check — Safe or Risky? {auto-animate=true}
 
-::: {data-id="m2" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
-Make the AI **argue from several expert viewpoints**, then synthesize.
+**3.** "Draft a termination letter for Employee #4421 who missed targets. No name used."
+
+::: {.fragment .fade-in}
+::: {.callout-tip}
+## SAFE — PII removed, only behavior described
 :::
-
-::: {style="text-align: center; color: #666; font-size: 0.9em;"}
-*Industry term: **Tree of Thoughts (ToT)**. Best for strategy and judgment calls.*
-:::
-
-. . .
-
-::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.85em;"}
-*"Three experts debate the reply to an angry client — Empathetic Lead, Pragmatic PM,
-Legal Advisor. Have them argue, then synthesize one balanced response."*
-:::
-
-## Move 3 — Double-Check {auto-animate=true}
-
-::: {data-id="m3" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
-Have the AI solve the **same problem 3 times independently** — match = trust, mismatch = flag.
-:::
-
-::: {style="text-align: center; color: #666; font-size: 0.9em;"}
-*Industry term: **Self-Consistency**. Best for numbers and data extraction.*
 :::
 
 . . .
 
-::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; font-size: 0.85em;"}
-*"Sum these invoice line items 3 separate times. If all three match, output 'Verified';
-if not, 'Manual Review Needed'."*
+**4.** "Analyze 5,000 customer records (Names, IBANs, Transaction IDs) to find spending patterns."
+
+::: {.fragment .fade-in}
+::: {.callout-warning}
+## RISKY — massive PII leak. Never upload raw customer databases.
+:::
 :::
 
-## Which Move, When?
-
-| Problem Type | Move | Why |
-| :--- | :--- | :--- |
-| Logic / Math / Scheduling | **Think step by step** *(CoT)* | Forces careful, ordered reasoning |
-| Strategy / Judgment calls | **Debate it out** *(ToT)* | Explores multiple perspectives |
-| Data Extraction / Numbers | **Double-check** *(Self-Consistency)* | Catches errors through repetition |
-
-. . .
-
-::: {.callout-note}
-## You can combine them
-*Double-check* a *step-by-step* result. *Think step by step* inside a *debate*.
-:::
+{{< include ../../chunks/_advanced_moves.qmd >}}
 
 # Build: From Your Backlog {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
@@ -319,7 +166,6 @@ Test Your Understanding
 ## Quiz — Question 1 {auto-animate=true}
 
 You prompt: *"Write a marketing post about our new coffee shop in Riyadh."*
-
 Which RICE elements are **missing**?
 
 . . .
@@ -359,8 +205,7 @@ No sample of the voice you want
 
 ## Quiz — Question 2 {auto-animate=true}
 
-A ministry asks you to **verify budget figures** extracted from a scanned Arabic PDF.
-
+You need to **verify budget figures** extracted from a scanned PDF.
 Which advanced move?
 
 . . .
@@ -378,7 +223,7 @@ Right now, you type RICE **manually** every time.
 . . .
 
 ::: {style="font-size: 1.2em; text-align: center;"}
-On **Day 2 (Session 7)**, we turn a delegation like this into a permanent **Skill** —
+On **Day 2**, we turn a delegation like this into a permanent **Skill** —
 write it once, run it forever.
 :::
 

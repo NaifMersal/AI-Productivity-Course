@@ -1,6 +1,6 @@
 ---
 title: "Memory"
-subtitle: "Session 8 — Teaching the Agent to Remember You"
+subtitle: "Expansion — Teaching the Agent to Remember You"
 date: today
 format: revealjs
 ---
@@ -112,7 +112,7 @@ Then prove it carries over
 . . .
 
 ::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
-That carry-over **is** the office re-sending the right pages (Session 2).
+That carry-over **is** the office re-sending the right pages (the two layers).
 :::
 
 # Safety Beat {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}

@@ -1,6 +1,6 @@
 ---
 title: "Cron & Connectors"
-subtitle: "Session 9 — The Agent That Acts on Its Own"
+subtitle: "Expansion — The Agent That Acts on Its Own"
 date: today
 format: revealjs
 ---

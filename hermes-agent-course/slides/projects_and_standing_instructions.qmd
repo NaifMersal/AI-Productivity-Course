@@ -1,6 +1,6 @@
 ---
 title: "Projects & Standing Instructions"
-subtitle: "Session 6 — `CLAUDE.md` / `AGENTS.md`"
+subtitle: "Expansion — `CLAUDE.md` / `AGENTS.md`"
 date: today
 format: revealjs
 ---
@@ -12,7 +12,7 @@ Stop repeating yourself
 ## Yesterday You Wrote a Perfect Delegation {auto-animate=true}
 
 ::: {data-id="problem" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-Your RICE prompt (Session 3) nailed the tone, the format, the rules.
+Your RICE prompt (RICE) nailed the tone, the format, the rules.
 
 **It worked great.**
 :::
@@ -20,7 +20,7 @@ Your RICE prompt (Session 3) nailed the tone, the format, the rules.
 ## Next Week… {auto-animate=true}
 
 ::: {data-id="problem" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
-New task. You open a fresh session. The agent has **amnesia** (Session 2).
+New task. You open a fresh session. The agent has **amnesia** (the two layers).
 :::
 
 . . .
@@ -122,7 +122,7 @@ From context pack to wall note
 ::: {.callout-tip}
 ## Hands-on
 1. Create a **Project** for one backlog area.
-2. Write its **`CLAUDE.md`** from the **context pack** you drafted in Session 2.
+2. Write its **`CLAUDE.md`** from the **context pack** you drafted in the two-layers session.
 :::
 
 . . .

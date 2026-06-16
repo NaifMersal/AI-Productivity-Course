@@ -1,0 +1,116 @@
+---
+title: "How AI Actually Works"
+subtitle: "Foundation — The Two Layers"
+date: today
+format: revealjs
+---
+
+<!--
+Foundation session. The mental model is single-sourced in /chunks/ and shared
+with every workshop; the example slides and the build below are manager-specific.
+-->
+
+# How Does It Remember You? {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Here's the puzzle at the heart of everything: AI just **predicts the next word** — it has
+no memory of you. So how does it ever feel like it **remembers**?
+
+::: {.callout-important}
+## Today's keystone
+Everything else in this course hangs off one insight: you're really talking to
+**two layers stacked together**.
+:::
+
+{{< include ../../chunks/_two_layers.qmd >}}
+
+{{< include ../../chunks/_context.qmd >}}
+
+{{< include ../../chunks/_context_window.qmd >}}
+
+# It All Clicks {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The payoff for your week
+
+## The Office Getting Smarter {auto-animate=true}
+
+Once you see the two layers, the whole Day-2 toolkit is just **the app deciding what
+to re-send**:
+
+::: {.incremental}
+- **`CLAUDE.md`** — standing instructions, re-sent every time
+- **Project** — pulls *the right folder's* pages onto the desk
+- **Memory** — facts about you, re-sent when relevant
+- **Skill** — a book in the library the app opens on command
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+None of it is magic. It's all **context management**.
+:::
+
+# Build: Your Context Pack {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Raw material for Day 2
+
+## Write the Pages the Brain Needs {auto-animate=true}
+
+Pick one task from your **Automation Backlog** (from the kickoff). Write its **context pack** —
+the standing facts the AI would need **every single time** to do it well:
+
+::: {.incremental}
+- Who you are and your role
+- The tone and format you always want
+- The rules that never change (audience, do's and don'ts)
+- The background facts the task always assumes
+:::
+
+. . .
+
+::: {.callout-tip}
+## Keep it
+On Day 2 this becomes your first **`CLAUDE.md`** — paste it once, never re-type it again.
+:::
+
+# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Which layer do you fix?
+
+## Quiz — Question 1 {auto-animate=true}
+
+The AI gets the **tone wrong every single time** — too casual for your board.
+Which layer?
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: white; padding: 1em; border-radius: 12px; text-align: center;"}
+**The App Layer** — fix your **standing instructions**. It's a re-send problem,
+not the brain.
+:::
+:::
+
+## Quiz — Question 2 {auto-animate=true}
+
+The AI cites **"Article 214"** of a regulation — and the article doesn't exist.
+Which layer?
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #9B8EC0; color: white; padding: 1em; border-radius: 12px; text-align: center;"}
+**The Model Layer** — the brain **guessed**. Ground it in a real source and
+**verify** (next session).
+:::
+:::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **Two layers** — the model (brain) and the app (office) stacked together
+2. **The brain has amnesia** — stateless, predicts the next word, forgets everything
+3. **The office re-sends context** — that's what makes AI feel like it remembers
+4. **Quality is a context problem** — give it the right pages, get the right answer
+5. **The desk is finite** — saved instructions beat re-pasting
+6. **Day 2 = the office getting smarter** about what to re-send
+:::

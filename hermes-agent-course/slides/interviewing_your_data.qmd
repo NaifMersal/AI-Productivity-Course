@@ -1,6 +1,6 @@
 ---
 title: "Interviewing Your Data"
-subtitle: "Session 11 — Conversational Analysis"
+subtitle: "Expansion — Conversational Analysis"
 date: today
 format: revealjs
 ---
@@ -81,7 +81,7 @@ then **reconciles** it against the expense export.
 
 ::: {.callout-note}
 ## Verify the numbers
-A great moment for **double-check** (Session 3) — totals are expensive to get wrong.
+A great moment for **double-check** (the advanced moves) — totals are expensive to get wrong.
 :::
 
 # "What If" Scenarios {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}

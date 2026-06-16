@@ -1,95 +1,31 @@
 ---
 title: "Grounding AI in Truth"
-subtitle: "Session 4 — The Research Workflow"
+subtitle: "Foundation — The Research Workflow"
 date: today
 format: revealjs
 ---
 
-# The Cleanest Proof of Session 2 {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+<!--
+Foundation session. The grounding concept (context-first, trust layer, golden
+rule) is single-sourced in /chunks/. The toolkit, scenarios, and activity below
+are manager-specific.
+-->
 
-When you control the context, you control the answer
+# The Cleanest Proof of the Two Layers {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
 
-## Why Context Matters {auto-animate=true}
-
-::: {data-id="intro" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
-**Session 2:** The model has amnesia — it only knows what's on the desk.
+::: {data-id="intro" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em; color: #1C355E;"}
+The model has amnesia — it only knows what's on the desk.
 :::
 
 . . .
 
-::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em; margin-top: 1em;"}
-**Session 4:** So put the **right facts** on the desk — and make it answer from those only.
+::: {style="background: rgba(255,255,255,0.12); padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em; margin-top: 0.8em;"}
+So put the **right facts** on the desk — and make it answer from those **only**.
 :::
 
-. . .
+{{< include ../../chunks/_grounding.qmd >}}
 
-::: {.callout-note}
-## The Goal
-Without **grounding** in real sources, even the smartest brain will **guess**.
-:::
-
-# Context Before Content {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
-
-Stop asking. Start interrogating.
-
-## The Wrong Way {auto-animate=true}
-
-::: {data-id="workflow" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
-Open AI → Type question → Hope for the best
-:::
-
-. . .
-
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
-"Write a report on the Saudi Fintech market."
-
-→ Generic, Wikipedia-style summary from 2021.
-:::
-
-## The Right Way {auto-animate=true}
-
-::: {data-id="workflow" style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
-Upload source → Give instructions → Get grounded results
-:::
-
-. . .
-
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
-**Upload** the [SAMA Financial Sector Report](https://www.sama.gov.sa/en-US/Documents/Financial_Sector_Development_Program_Annual_Report-2023-EN.pdf) → "Based *only* on this report, summarize..."
-
-→ Specific, citation-backed analysis an expert would trust.
-:::
-
-## The "Context First" Rule
-
-::: {.incremental}
-1. **Don't ask** — "What are the trends in tourism?"
-2. **Upload** — *[Ministry of Tourism - Hospitality Investor Report](https://cdn.mt.gov.sa/files/Hospitality-Investor.pdf)*
-3. **Instruct** — "Based *only* on the uploaded report, summarize visitor adoption rates for Red Sea vs. AlUla."
-:::
-
-. . .
-
-::: {.callout-important}
-## The Rule
-No upload = no trust. Context comes **before** content.
-:::
-
-# The Trust Layer {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
-
-The antidote to hallucinations
-
-## Why You Need a Trust Layer {auto-animate=true}
-
-::: {data-id="trust"}
-Hallucinations happen when AI **doesn't know** the answer but **tries to please you** by guessing.
-:::
-
-. . .
-
-The **Trust Layer** forces AI to use *your sources* as its only truth.
-
-## Why This Matters for Saudi Professionals
+## Why This Matters at Work {auto-animate=true}
 
 :::: {.columns}
 ::: {.column width="33%"}
@@ -121,12 +57,6 @@ Market numbers must match Tadawul disclosures, not internet estimates.
 :::
 ::::
 
-## The Golden Rule
-
-::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
-**If it doesn't have a citation, it didn't happen.**
-:::
-
 # Your Research Toolkit {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
 
 Hermes first — portable alternatives second
@@ -143,14 +73,6 @@ Hermes first — portable alternatives second
 one place. **Drop in the document → "Based only on this, summarize and cite."**
 :::
 
-. . .
-
-::: {.callout-note}
-## The idea is portable
-The *general move* — ground the answer in your sources — works in any tool. Below are the
-alternatives when you're not in Hermes.
-:::
-
 ## Alternative A: NotebookLM (Google) {auto-animate=true}
 
 ::: {data-id="tool-a" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
@@ -159,18 +81,10 @@ alternatives when you're not in Hermes.
 **Superpower:** Creates a "Source Guide" solely from *your* documents — no internet hallucinations.
 :::
 
-## NotebookLM — Saudi Scenario {auto-animate=true}
-
-::: {data-id="tool-a" style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7; font-size: 0.85em;"}
-**Best for:** Deep reading of massive documents (50+ pages)
-:::
-
-**Scenario:** Petrochemicals sustainability benchmarking
-
-::: {.incremental}
-- **Upload** 5 competitor sustainability reports (Dow, BASF, etc.)
-- **Prompt:** "Compare Scope 3 Emission targets across all 5 companies vs. our draft policy. Create a gap table."
-- **Bonus:** Generate an Audio Overview to listen on the drive to KAFD
+::: {.fragment .fade-in}
+**Scenario:** Upload 5 competitor sustainability reports → *"Compare Scope 3 emission
+targets across all 5 vs. our draft policy. Create a gap table."* Bonus: an Audio Overview
+for the drive home.
 :::
 
 ## Alternative B: Deep Research {auto-animate=true}
@@ -182,28 +96,8 @@ alternatives when you're not in Hermes.
 :::
 
 ::: {style="font-size: 0.8em; color: #666;"}
-Perplexity / ChatGPT Pro / Google Gemini
+Perplexity / ChatGPT / Google Gemini
 :::
-
-## Deep Research — Saudi Scenario {auto-animate=true}
-
-::: {data-id="tool-b" style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #9B8EC0; font-size: 0.85em;"}
-**Best for:** Real-time synthesis of the live web
-:::
-
-**Scenario:** Tourism & Hospitality intelligence
-
-::: {.fragment .fade-in}
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px;"}
-**Prompt:** "Find the top 5 complaints in tourist reviews for 5-star Riyadh hotels during Riyadh Season 2024. Group by category. Cite specific review sources."
-:::
-:::
-
-::: {.fragment .fade-in}
-**Result:** "30% cited 'Valet Parking Delays' (Source: Booking.com, Review #42)" — *actionable intel, not fluff.*
-:::
-
-
 
 ## Choosing the Right Tool
 
@@ -212,7 +106,6 @@ Perplexity / ChatGPT Pro / Google Gemini
 | Your day-to-day, your files | **Hermes** | One agent, your sources + rules, cites |
 | Analyze a 100-page PDF | **NotebookLM** | Grounded in your docs only |
 | Live market intelligence | **Deep Research** | Real-time web with citations |
-
 
 # Activity {.sdaia-dark background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)"}
 
@@ -247,13 +140,7 @@ Upload → Instruct → Verify
 
 ## Step 1: Upload {auto-animate=true}
 
-::: {data-id="steps"}
-Open **Hermes** (or NotebookLM / Claude / ChatGPT with file upload)
-:::
-
-Drag and drop the PDF.
-
-. . .
+Open **Hermes** (or NotebookLM / Claude / ChatGPT with file upload) and drag in the PDF.
 
 ::: {.callout-note}
 ## Use the [IEA Global Hydrogen Review 2024](https://www.iea.org/reports/global-hydrogen-review-2024)
@@ -262,27 +149,17 @@ Drag and drop the PDF.
 
 ## Step 2: Interrogate {auto-animate=true}
 
-::: {data-id="steps"}
-Give the AI a precise, constrained prompt:
-:::
-
-::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; font-size: 0.85em;"}
-"Act as a Strategy Consultant for a Saudi Energy company.
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; font-size: 0.82em;"}
+"Act as a Strategy Consultant for a Saudi energy company.
 
 Based *strictly* on this report, outline the 3 biggest opportunities and 3 biggest risks for our market.
 
-If the information is not in the report, state 'Not found in source.' DO NOT hallucinate.
+If the information is not in the report, state 'Not found in source.' Do not hallucinate.
 
-Include page references for every point.
-
-Conclude with a 'Recommended Stance' for the board meeting."
+Include page references for every point. Conclude with a 'Recommended Stance' for the board."
 :::
 
 ## Step 3: Verify & Deliver {auto-animate=true}
-
-::: {data-id="steps"}
-Polish and share your output:
-:::
 
 ::: {.incremental}
 1. **Verify citations** — click the page references, check the source text
@@ -290,18 +167,16 @@ Polish and share your output:
 3. **Optional flex** — generate an Audio Overview and send the link
 :::
 
-## Step 4: The Action (Closing the Loop) {auto-animate=true}
+## Step 4: Close the Loop {auto-animate=true}
 
-::: {data-id="steps"}
-Now that you have the facts, **Delegation** kicks in.
-:::
+Now that you have the facts, **delegation** kicks in:
 
 ::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.85em;"}
-"Based on this summary, draft a high-priority email to my Director, Dr. Ahmed.
+"Based on this summary, draft a high-priority email to my Director.
 
-- **Context:** He is heading into a ministry meeting.
-- **Task:** Warn him about the 'Euro-Deal' risks we found.
-- **Constraint:** Use 'Saudi Executive' tone. Bullet points only."
+- **Context:** he's heading into a ministry meeting
+- **Task:** warn him about the 'Euro-Deal' risks we found
+- **Constraint:** 'Saudi Executive' tone, bullet points only."
 :::
 
 ## Now: Your Backlog
@@ -337,8 +212,6 @@ Pick the Right Tool
 Live web access. NotebookLM can't do this — it only reads your docs.
 :::
 :::
-
-
 
 ## Key Takeaways {.sdaia-dark background-color="#1C355E"}
 

@@ -1,8 +1,8 @@
 # Your Automation Backlog & Time Log
 
-This is the worksheet you carry through the whole 3-day workshop. You start it in
-**Session 1** and you total it in **Session 12** to prove how many hours per week you've
-won back.
+This is the worksheet you carry through the whole 3-day workshop. You start it in the
+**Day-1 kickoff** and you total it in the **finale (Session 11)** to prove how many hours
+per week you've won back.
 
 Keep it somewhere you can edit live — a Notion page, a spreadsheet, or just this file.
 
@@ -53,7 +53,7 @@ a saved **Skill**, a scheduled **Cron** job. Record the new cost each time:
 
 > Weekly minutes saved = (*old minutes each time* − *new minutes each time*) × *How often per week*.
 
-## Step 4 — Total your ROI (Session 12)
+## Step 4 — Total your ROI (Session 11, the finale)
 
 ```
 Hours won back per week  =  (sum of weekly minutes saved) ÷ 60

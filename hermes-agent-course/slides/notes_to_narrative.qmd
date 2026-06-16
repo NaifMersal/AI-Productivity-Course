@@ -1,6 +1,6 @@
 ---
 title: "From Notes to Narrative"
-subtitle: "Session 10 — The Amazon Method + Design Engine"
+subtitle: "Expansion — The Amazon Method + Design Engine"
 date: today
 format: revealjs
 ---
@@ -53,7 +53,7 @@ Ask the AI to "think step by step" or "show your work" before giving the answer.
 
 ::: {.callout-tip}
 ## Why?
-It drastically reduces hallucinations and improves logic. *(Session 3's first advanced
+It drastically reduces hallucinations and improves logic. *(the first advanced
 move — now applied to a story.)*
 :::
 

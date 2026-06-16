@@ -1,6 +1,6 @@
 ---
 title: "The ROI Finale"
-subtitle: "Session 12 — Your Workflow Library"
+subtitle: "Expansion — Your Workflow Library"
 date: today
 format: revealjs
 ---

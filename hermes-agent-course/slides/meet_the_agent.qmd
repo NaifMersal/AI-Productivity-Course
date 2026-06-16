@@ -1,6 +1,6 @@
 ---
 title: "Meet Hermes"
-subtitle: "Session 5 — Setup & Your First Agent Run"
+subtitle: "Expansion — Setup & Your First Agent Run"
 date: today
 format: revealjs
 ---
@@ -54,6 +54,8 @@ Everything Day 1 was on a chat tab. Today it lives in a **folder on your compute
 Same brain in the jar. A much more capable **office** around it.
 :::
 
+{{< include ../../chunks/_script.qmd >}}
+
 # Setup {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
 
 Install Hermes — hands on
@@ -68,7 +70,7 @@ When Hermes opens, it points at one **folder on your computer** — its
 . . .
 
 ::: {style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.1em; margin-top: 1em;"}
-*"So **that's** the 'directory' Session 2 said the app saves everything in."*
+*"So **that's** the 'directory' the two-layers session said the app saves everything in."*
 :::
 
 . . .
@@ -83,9 +85,9 @@ A quick, non-scary tour
 
 ::: {.incremental}
 - **Your files** — the documents and data for the work
-- **Your standing instructions** — `CLAUDE.md` (the wall note — Session 6)
-- **Your saved Skills** — books in your library (Session 7)
-- **Your Memory** — the agent's notebook about you (Session 8)
+- **Your standing instructions** — `CLAUDE.md` (the wall note — up next)
+- **Your saved Skills** — books in your library (Skills, soon)
+- **Your Memory** — the agent's notebook about you (Memory, soon)
 :::
 
 . . .
