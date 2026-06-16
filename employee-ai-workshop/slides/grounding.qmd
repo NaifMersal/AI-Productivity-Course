@@ -1,0 +1,165 @@
+---
+title: "Grounding AI in Truth"
+subtitle: "The Research Workflow — Answers You Can Defend"
+date: today
+format: revealjs
+---
+
+<!--
+The grounding concept is single-sourced in the repo-root /chunks/ library. Below, the chunk
+carries the concept; the NotebookLM walkthrough, the tool-choice table, and the employee
+build are this workshop's own.
+-->
+
+# Control the Context, Control the Answer {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+The cleanest proof of the two layers
+
+{{< include ../../chunks/_grounding.qmd >}}
+
+## The Golden Rule {auto-animate=true}
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.3em;"}
+**If it doesn't have a citation, it didn't happen.**
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 0.6em;"}
+For a contract, a policy, a report you'll forward — demand the page reference.
+:::
+
+# Meet NotebookLM {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+A research assistant grounded in *your* documents
+
+## What It's Best At {auto-animate=true}
+
+::: {data-id="nlm" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+**Deep reading of big documents** (50+ pages). It builds a guide **solely from your uploaded
+sources** — no internet guessing — and every answer links back to the source.
+:::
+
+. . .
+
+::: {.incremental}
+- Upload a contract, a policy, a vendor proposal, a stack of reports
+- Ask questions; get answers **with citations** to the exact passage
+- Generate an **Audio Overview** to listen to on your commute
+:::
+
+## It Also Builds Slides {auto-animate=true}
+
+::: {data-id="slides" style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.1em;"}
+Turn your sources into a **presentation** — grounded in the same documents.
+:::
+
+. . .
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Detailed Deck**
+
+Text-rich, stands on its own. Good for a handout.
+:::
+:::
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #9B8EC0;"}
+**Presenter Slides**
+
+Clean and visual — supports you while you talk.
+:::
+:::
+::::
+
+. . .
+
+::: {.callout-note}
+## One requirement
+You need **at least one source uploaded** before it can build anything — grounding first, always.
+:::
+
+# Right Tool, Right Job {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Cowork, NotebookLM, Deep Research
+
+## Choosing the Tool {auto-animate=true}
+
+| Need | Tool | Why |
+| :--- | :--- | :--- |
+| Your day-to-day, your files | **Cowork** | One assistant, your folder + rules |
+| Read a 100-page PDF, build a deck | **NotebookLM** | Grounded in your docs only |
+| Live web with citations | **Deep Research** | Real-time, footnoted |
+
+. . .
+
+::: {style="text-align: center; color: #666; font-size: 0.9em; margin-top: 0.4em;"}
+*Deep Research = Perplexity / ChatGPT / Gemini. NotebookLM only reads your uploads — that's the point.*
+:::
+
+# Build: 10-Hour Read in 10 Minutes {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+Source → grounded summary → deck
+
+## Your Mission {auto-animate=true}
+
+::: {data-id="mission" style="background: #f7f9fc; padding: 0.8em 1.2em; border-radius: 12px;"}
+Take a **long (safe) document** — a policy, a contract, a vendor proposal. Produce a
+**1-page grounded summary** in 10 minutes.
+:::
+
+. . .
+
+::: {.incremental}
+1. **Upload** the source to NotebookLM
+2. **Interrogate:** *"Based only on this, give 5 key points with page references. If it's not
+   in the source, say 'Not found.'"*
+3. **Verify** the citations — click through to the passage
+4. **Generate** a summary or presenter deck
+:::
+
+. . .
+
+::: {.callout-tip}
+## Log it
+10 minutes vs. the hours it used to take. That's a number for your **Time Log**.
+:::
+
+# Micro-Check {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+Pick the right move
+
+## Quiz {auto-animate=true}
+
+**1.** You need to summarize a **confidential, unsigned** contract you're reviewing.
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**Newspaper Test first.** Confidential — check the rules before uploading anywhere.
+:::
+:::
+
+. . .
+
+**2.** You need **today's** market figures from the web.
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Deep Research** — live web with citations. NotebookLM only reads your uploads.
+:::
+:::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **Context before content** — never start from a blank prompt
+2. **Grounding builds trust** — upload sources, constrain to "only these"
+3. **No citation = didn't happen** — demand page references
+4. **NotebookLM** — deep reading **and** decks (Detailed vs. Presenter)
+5. **Right tool, right job** — Cowork / NotebookLM / Deep Research
+:::

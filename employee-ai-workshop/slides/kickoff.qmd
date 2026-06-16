@@ -1,0 +1,158 @@
+---
+title: "Welcome & Your Automation Backlog"
+subtitle: "Foundation — Course Kickoff"
+date: today
+format: revealjs
+---
+
+{{< include _course_overview.qmd >}}
+
+# Win Back Your Week {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+The work we automate is *your* work
+
+## The Running Spine {auto-animate=true}
+
+::: {data-id="spine" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.15em; color: #1C355E;"}
+Today you list the tasks that eat your week. Every build session, we automate one.
+:::
+
+. . .
+
+::: {.incremental}
+- Each build session pulls **one task** from your list and turns it into a workflow
+- You log the **before/after time** each time
+- In the finale we total it → **hours won back per week**
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.4em;"}
+By Friday, you'll have proof: the number of hours you got back.
+:::
+
+# This Is Not a Search Engine {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The shift in mindset
+
+## From "Look It Up" to "Hand It Off" {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**The old way**
+
+You do the work. AI answers a question now and then.
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**This week**
+
+AI does the repeatable work. You review, decide, and move on.
+:::
+:::
+:::
+::::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+A teammate you delegate to — not a box you query.
+:::
+
+# Where AI Pays Off {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Pick the right work to hand over
+
+## The Bottleneck Test
+
+Hand a task to AI when it is:
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+**✅ Good fit**
+
+- **Repetitive & mundane** — status reports, routine emails
+- **Data-intensive** — summarizing, finding patterns
+- **Drafting & brainstorming** — beating the blank page
+- **Predictable** — clear, logical steps
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+**⚠️ Keep a human in the loop**
+
+- **High-stakes** — money, safety, big consequences
+- **Deeply human** — empathy, hard conversations
+- **Confidential** — sensitive or personal data
+- **Originality is the point** — a truly unique take
+:::
+:::
+::::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+The "Good fit" column is exactly what belongs on your backlog.
+:::
+
+# Build: Your Automation Backlog {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+The list we'll work from all week
+
+## List the Work That Eats Your Week
+
+::: {style="font-size: 1.1em; margin-bottom: 0.8em;"}
+Write down **3–5 recurring tasks** that pass the Bottleneck Test.
+:::
+
+::: {.incremental}
+- For each, note **how often** (per week) and **minutes each time**
+- That's your **Time Log** — current cost, *before* AI
+- Every build session, you'll pull one task from this list and automate it
+- In the finale we total the minutes saved → **hours won back per week**
+:::
+
+::: {.fragment .fade-in}
+::: {.callout-tip}
+## Worksheet
+Use `prompts/automation_backlog_and_time_log.md`. Keep it open all week.
+:::
+:::
+
+## Two Rules We Never Break {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #1C355E;"}
+**Newspaper Test**
+
+Guards what you *paste **in***. Sanitize confidential or personal data first.
+:::
+:::
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**Blast Radius**
+
+Guards what the agent ***does***. Start in draft / notify-me mode.
+:::
+:::
+::::
+
+. . .
+
+::: {style="text-align: center; color: #666; font-size: 0.9em; margin-top: 0.5em;"}
+We'll meet rule 1 today and rule 2 on Day 2 — and all hands-on work runs in a **sandbox**.
+:::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **AI is a teammate, not a search engine** — we automate work, not look things up
+2. **Automate the right work** — repetitive, data-heavy, drafting, predictable
+3. **Your backlog is the target** — we automate it over the next three days
+4. **Everything is measured** — the Time Log becomes your ROI in the finale
+:::

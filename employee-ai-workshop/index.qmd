@@ -1,0 +1,63 @@
+---
+title: "AI Productivity at Work"
+subtitle: "Win Back Your Week — A 3-Day Hands-On Workshop for Employees"
+date: today
+format:
+  html:
+    toc: false
+    theme: cosmo
+---
+
+Three days. You walk out with a working **AI assistant you set up yourself**, **3–5
+automations** running on your own everyday work, and one number: the **hours you win back
+each week**. Not a search engine — a teammate that drafts, summarizes, and calculates.
+
+**Hands-on tool:** Claude Cowork. **No coding** — you describe steps in plain language.
+Every concept is portable: the same idea shows up in Antigravity, Hermes, ChatGPT, Gemini,
+and NotebookLM. We show one tool; the workflow transfers.
+
+## Run of Show
+
+This page is the canonical order — open each deck in turn.
+
+### Day 1 — Foundations: Think Like an AI-Native
+
+| # | Block | Deck | Mins |
+|---|---|---|---|
+| 0 | Welcome & Your Automation Backlog | [Kickoff](slides/kickoff.html) | 30 |
+| 1 | How AI actually works — the two layers | [The Two Layers](slides/two_layers.html) | 75 |
+| 2 | Delegating with RICE + advanced moves + peer Refine | [Delegating to AI](slides/delegating_rice.html) | 120 |
+| 3 | Grounding AI in truth | [Grounding](slides/grounding.html) | 75 |
+
+### Day 2 — Meet Your Agent: Build Your Cowork Team
+
+| # | Block | Deck | Mins |
+|---|---|---|---|
+| 4 | Setup & your first agent run | [Meet Cowork](slides/meet_cowork.html) | 90 |
+| 5 | Standing instructions | [Projects & Standing Instructions](slides/projects_and_standing_instructions.html) | 90 |
+| 6 | Your reusable workflow library | [Skills](slides/skills.html) | 90 |
+| 7 | Teaching the agent to remember you | [Memory](slides/memory.html) | 75 |
+
+### Day 3 — Agents That Act: Output, Toolkit & ROI
+
+| # | Block | Deck | Mins |
+|---|---|---|---|
+| 8 | The agent that acts on its own | [Schedule & Connectors](slides/schedule_and_connectors.html) | 90 |
+| 9 | Notes → board-ready output | [From Notes to Narrative](slides/notes_to_narrative.html) | 75 |
+| 10 | Talk to your spreadsheets | [Interviewing Your Data](slides/interviewing_your_data.html) | 75 |
+| 11 | Pick your AI + the wider toolkit (brief + try one tool) | [Pick Your AI & Expand Your Toolkit](slides/tools_landscape.html) | 30 |
+| 12 | Total the hours won back | [The ROI Finale](slides/roi_finale.html) | 60 |
+
+## The Delivery Loop
+
+**Show** (instructor demo) → **Build** (you apply it to a real task from your backlog) →
+**Refine** (quick group critique: "I like / I wish / I wonder"). Aim for ~70% hands-on.
+
+## Two Rules We Never Break
+
+- **Newspaper Test** — guards what you *paste in*. Sanitize confidential or personal data
+  before it goes anywhere.
+- **Blast Radius / Human-in-the-Loop** — guards what the agent *does*. Start every Skill,
+  schedule, and connector in **draft / notify-me** mode before letting it act on its own.
+
+All hands-on agent work runs in a **sandbox folder with dummy data**.

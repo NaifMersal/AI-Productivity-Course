@@ -1,0 +1,242 @@
+---
+title: "Meet Cowork"
+subtitle: "Setup & Your First Agent Run"
+date: today
+format: revealjs
+---
+
+# From Chat Box to Teammate {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+So far you *talked* to AI. Now you put it to work.
+
+## Why Cowork? {auto-animate=true}
+
+::: {data-id="why" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.15em;"}
+**Claude Cowork** is the fastest way to turn AI into a teammate that works on your **actual
+files** — not just a chat tab.
+:::
+
+. . .
+
+::: {.callout-note}
+## Portable idea
+Antigravity and Hermes have their own version of this. We use Cowork because the setup is
+simplest — the concepts move with you.
+:::
+
+## Chat vs. Agent {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**A Chat Box**
+
+- You paste, it replies
+- One message at a time
+- Closes → forgets
+:::
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;"}
+**Cowork (an Agent)**
+
+- Opens your **files**
+- Runs **steps** in order
+- Can **act**, not just talk
+:::
+:::
+:::
+::::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.5em;"}
+Same brain in the jar. A much more capable **office** around it.
+:::
+
+# Setup {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+A few clicks — hands on
+
+## Three Steps to Running {auto-animate=true}
+
+::: {.incremental}
+1. **Install** the Claude desktop app and sign in
+2. **Open Cowork** and point it at a **folder** on your computer
+3. **Type a task** in plain language — and approve what it proposes
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 0.5em;"}
+That's it. No setup files, no code, no configuration.
+:::
+
+## Meet the Working Directory {auto-animate=true}
+
+::: {data-id="dir" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+When Cowork opens, it points at one **folder on your computer** — its **working directory.**
+:::
+
+. . .
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.1em; margin-top: 1em;"}
+*"So **that's** the office the two layers talked about."*
+:::
+
+. . .
+
+This folder **is** the office. Your context lives here as real, openable files.
+
+## What Cowork Can Do {auto-animate=true}
+
+::: {style="font-size: 0.9em;"}
+| Feature | In plain language |
+|---|---|
+| **Read / edit / create files** | Works on your real documents |
+| **Skills** | A library of playbooks it opens when needed *(Session 7)* |
+| **Schedule** | A standing appointment to run a task *(Day 3)* |
+| **Connectors** | Keys to your email / calendar / drive *(Day 3)* |
+| **Memory** | A notebook of facts about you *(Session 8)* |
+:::
+
+. . .
+
+::: {style="text-align: center; color: #00C9A7; font-weight: bold; margin-top: 0.5em;"}
+Today: get it running and do one real task end-to-end.
+:::
+
+# Agent-Era Safety {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+The second rule
+
+## One Rule Was Enough — Until Now {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #1C355E;"}
+**Rule 1 — Newspaper Test**
+
+Guards what you *paste **in***.
+
+*(sanitize first)*
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;"}
+**Rule 2 — Blast Radius**
+
+Guards what the agent ***does***.
+
+*(can you undo it?)*
+:::
+:::
+:::
+::::
+
+. . .
+
+::: {style="text-align: center; margin-top: 0.5em;"}
+An agent that can *act* needs a second rule.
+:::
+
+## The Undo Test & Human-in-the-Loop {auto-animate=true}
+
+::: {data-id="blast" style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.05em;"}
+Before letting it act, ask:
+*"What's the worst it could do if it's wrong — can I undo it, and who'd notice in time?"*
+:::
+
+::: {style="text-align: center; color: #666; font-size: 0.85em;"}
+*(industry term: **blast radius**)*
+:::
+
+. . .
+
+::: {.callout-important}
+## Always start in draft / notify-me mode
+Cowork **proposes, you approve**. Promote to **act-on-its-own** only after it has proven
+itself.
+:::
+
+## Our Workshop Rule {auto-animate=true}
+
+::: {style="background: #00C9A7; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;"}
+All hands-on work runs in a **sandbox folder** with **dummy data**.
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 0.5em;"}
+A mistake can't touch a real report or a real inbox while you're learning.
+:::
+
+## Micro-Check — Act Now or Propose & Wait? {auto-animate=true}
+
+**1.** "Reformat these notes into a clean summary in a new file."
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #00C9A7; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
+**Act now** — low blast radius, easy to undo.
+:::
+:::
+
+. . .
+
+**2.** "Email this draft to the whole department."
+
+. . .
+
+::: {.fragment .fade-in}
+::: {style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;"}
+**Propose & wait** — hard to undo, high blast radius. Review first.
+:::
+:::
+
+# Build: Your First Run {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+Read three files → one summary
+
+## Hands-On {auto-animate=true}
+
+::: {.callout-tip}
+## Steps
+1. Point Cowork at the **sandbox folder**.
+2. Type: *"Read the three `status_update_*.md` files and write one combined weekly summary —
+   wins, risks, and what needs a decision."*
+3. Watch it open each file, then draft the summary. **Approve** the result.
+:::
+
+::: {.callout-note}
+Sample data: [`status_update_sales.md`](../data/status_update_sales.md),
+[`status_update_support.md`](../data/status_update_support.md),
+[`status_update_ops.md`](../data/status_update_ops.md)
+:::
+
+. . .
+
+::: {style="text-align: center; font-weight: bold; margin-top: 0.4em;"}
+It worked across **files**, not just a chat box. That's the leap.
+:::
+
+. . .
+
+::: {style="text-align: center; font-style: italic; margin-top: 0.3em;"}
+**Refine:** swap with a neighbor — *I like / I wish / I wonder.*
+:::
+
+## Key Takeaways {.sdaia-dark background-color="#1C355E"}
+
+::: {.incremental}
+1. **Cowork ≠ chat** — it opens files, runs steps, and can act
+2. **Setup is three clicks** — install, point at a folder, type a task
+3. **The working directory *is* the office** — your context as real files
+4. **Second safety rule** — the undo test / human-in-the-loop (*blast radius*)
+5. **Sandbox + dummy data** — mistakes can't touch anything real
+:::

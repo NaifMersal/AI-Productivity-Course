@@ -1,0 +1,35 @@
+# Course Overview {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+AI Productivity at Work — Win Back Your Week
+
+# The Journey {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+From One-Off Prompts to an Agent on Your Team
+
+## Day 1 — Foundations: Think Like an AI-Native
+
+*The portable core — how AI actually works.*
+
+- *Kickoff* — Welcome & Your Automation Backlog
+- How AI Actually Works — The Two Layers
+- Delegating to AI — The RICE Pattern + Advanced Moves
+- Grounding AI in Truth — The Research Workflow
+
+## Day 2 — Meet Your Agent: Build Your Cowork Team
+
+*Give the foundation a permanent home.*
+
+- Meet Cowork — Setup & Your First Agent Run
+- Projects & Standing Instructions — `AGENTS.md` / `CLAUDE.md` *(← your context pack)*
+- Skills — Your Reusable Workflow Library *(← your RICE delegations)*
+- Memory — Teaching the Agent to Remember You
+
+## Day 3 — Agents That Act: Output, Toolkit & ROI
+
+*Autonomy, board-ready output, the wider toolkit, and hours won back.*
+
+- Schedule & Connectors — The Agent That Acts on Its Own
+- From Notes to Narrative — The Amazon Method + Design Engine
+- Interviewing Your Data
+- **Pick Your AI & Expand Your Toolkit** *(brief + try one tool)*
+- The ROI Finale + Your Workflow Library
