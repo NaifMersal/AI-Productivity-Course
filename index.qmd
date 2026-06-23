@@ -8,18 +8,15 @@ format:
     theme: cosmo
 ---
 
-Hands-on workshops that teach managers, professionals, and faculty to use AI as a
-permanent member of their team — not as a search engine. **No coding.** Concepts stay
-portable across ChatGPT, Gemini, Claude, NotebookLM, and Coworker.
+Hands-on workshops that teach professionals and faculty to use AI as a permanent member
+of their team — not as a search engine. **No coding.** Concepts stay portable across
+ChatGPT, Gemini, Claude, and NotebookLM.
 
 ## Workshops
 
 | Workshop | Audience | Length | Start here |
 |---|---|---|---|
 | **Building Your Own AI Assistant** | KSU faculty | Half-day (≈4 hrs) | [Run of show →](ksu-workshop/index.html) |
-| **AI Productivity at Work** | Employees (any office role) | 3 days | [Run of show →](employee-ai-workshop/index.html) |
 
-_More workshops coming soon._
-
-<!-- Hermes Agent Course (3-day / 12 sessions) is in progress — not yet listed.
-     When ready, add: [Course index →](hermes-agent-course/index.html) -->
+_More workshops are generated from the shared `templates/` + a `config/workshops.json`
+entry — add a row here when you add one._

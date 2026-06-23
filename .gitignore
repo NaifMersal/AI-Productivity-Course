@@ -4,6 +4,9 @@
 /_freeze/
 /output/
 
+# Generated workshops (built from templates/ + examples/ by build.py — run it before rendering)
+/ksu-workshop/
+
 # Python/Environment
 __pycache__/
 .env

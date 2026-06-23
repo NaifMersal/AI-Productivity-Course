@@ -97,6 +97,26 @@ For each term: the **analogy**, **what it really is**, and **why a manager cares
   *"do these exact steps, in this order, every time."* That's the foundation of every
   workflow you'll build, and why numbers it produces are trustworthy.
 
+### Template — "the layout the script fills"
+
+- **Analogy:** A **pre-made, on-brand layout** — a slide deck or a spreadsheet — waiting to
+  be filled in. The script does the work; the template gives that work a consistent *shape*.
+- **What it really is:** A reusable output format (your branding, headings, structure) that
+  a script **populates** with the computed result, so every run looks the same.
+- **Why a manager cares:** It's how outputs stay **consistent and on-brand** without
+  reformatting each time. Build the look once; every future result inherits it.
+
+### Composition — "a Skill bundles a script + a template"
+
+- **The idea:** A Skill is not *just* steps. It can **call a script** to compute and **fill
+  a template** to look right — all behind one trigger phrase. Skill = the named workflow;
+  script = the deterministic worker it calls; template = the layout that worker fills.
+  **Schedule and Connectors don't add a new kind of thing — they just run a Skill** (on a
+  clock, or with keys to your real tools).
+- **Why a manager cares:** This is why one phrase ("turn these notes into a lecture deck")
+  can produce a *finished, on-brand* result instead of raw text. It also keeps the mental
+  model simple: everything hangs off the **Skill**.
+
 ### Project
 
 - **Analogy:** A **dedicated office (or folder)** for one body of work, with its own filing
