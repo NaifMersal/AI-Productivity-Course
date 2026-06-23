@@ -9,7 +9,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="dcterms.date" content="2026-06-15">
+  <meta name="dcterms.date" content="2026-06-23">
   <title>AI at Work – How AI Works &amp; Writing Great Prompts</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -138,23 +138,19 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">2026-06-15</p>
+  <p class="date">2026-06-23</p>
 </section>
+<section id="why-start-here" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>Why Start Here?</h1>
+<div data-id="why" style="background: rgba(255,255,255,0.12); padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;">
+<p>Understand <em>how</em> it works and you’ll know <strong>what to trust</strong>, <strong>what to check</strong>, and <strong>how to get better answers</strong>.</p>
+</div>
+</section>
+
 <section>
 <section id="the-one-big-idea" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
 <h1>The One Big Idea</h1>
-<p>When you “talk to AI,” you talk to <strong>two things</strong></p>
-</section>
-<section id="why-start-here" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Why Start Here?</h2>
-<div data-id="why" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;">
-<p>Understand <em>how</em> it works and you’ll know <strong>what to trust</strong>, <strong>what to check</strong>, and <strong>how to get better answers</strong>.</p>
-</div>
-<div class="fragment">
-<div style="text-align: center; margin-top: 1em;">
-<p>Everything else today hangs off one insight: you’re talking to <strong>two layers stacked together</strong>.</p>
-</div>
-</div>
+<p>When you “talk to AI”, you talk to <strong>two things</strong></p>
 </section>
 <section id="two-layers-stacked" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Two Layers, Stacked</h2>
@@ -176,52 +172,77 @@
 </div></div>
 <div class="fragment">
 <div style="text-align: center; margin-top: 1em;">
-<p>Tell these apart and Cowork, Skills, and Memory stop being magic.</p>
+<p>Tell these apart and every “memory”, “Projects”, and “Skills” feature stops being magic.</p>
 </div>
 </div>
 </section></section>
 <section>
-<section id="the-model-layer" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
+<section id="the-model-layer" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
 <h1>The Model Layer</h1>
 <p>The brain in a jar</p>
 </section>
 <section id="a-brilliant-brain-with-amnesia" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">A Brilliant Brain — With Amnesia</h2>
-<div data-id="brain" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;">
-<p>A brilliant graduate’s brain floating in a <strong>jar</strong>. It has read most of the internet, so it’s clever — but it has <strong>total amnesia</strong>.</p>
+<div data-id="brain" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;">
+<p>A brilliant graduate’s brain floating in a <strong>jar</strong>. It has read most of the internet, so it <strong>keeps</strong> that knowledge — but it has amnesia about <strong>new information</strong>, so it will not know you.</p>
 </div>
 <div class="fragment">
 <ul>
-<li class="fragment">Knows nothing about <em>you</em>, your department, or what you said five minutes ago</li>
-<li class="fragment">The instant it finishes answering, it <strong>forgets everything</strong></li>
-<li class="fragment">All it does is <strong>predict the next word</strong> from the text it was just handed</li>
+<li class="fragment"><strong>Keeps its training:</strong> language, facts, math, reasoning — it stays genuinely smart</li>
+<li class="fragment"><strong>Has no memory of you:</strong> your work, your name, what you said five minutes ago</li>
+<li class="fragment">The instant it finishes answering, it <strong>forgets this conversation</strong> — <em>not</em> its skills</li>
 </ul>
+</div>
+<div class="fragment">
+<div style="text-align: center; font-size: 0.9em; color: #666; margin-top: 0.4em;">
+<p>Two different things: the <strong>knowledge stays</strong>, the <strong>memory of you resets</strong>.</p>
+</div>
 </div>
 </section>
-<section id="it-just-predicts-the-next-word" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">It Just Predicts the Next Word</h2>
-<p>Under the hood it does <strong>one</strong> thing: guess the <strong>next word</strong> based on probability.</p>
-<div data-id="predict" style="background: #f7f9fc; padding: 0.7em 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin: 0.5em 0;">
-<p><em>“The capital of Saudi Arabia is…”</em></p>
+<section id="it-predicts-the-next-word-on-repeat" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">It Predicts the Next Word — On Repeat</h2>
+<p>Under the hood it does <strong>one</strong> thing, over and over: pick the <strong>next word</strong>, append it, ask again. At each step, it’s choosing from a <strong>vocabulary of 256,000+</strong> words and symbols.</p>
+<div class="r-stack" style="font-size: 1.1em; margin-top: 1.2em; min-height: 4em;">
+<div class="fragment fade-in-then-out">
+<p><em>“The capital of Saudi Arabia ___”</em></p>
+<ol type="1">
+<li><strong>is</strong> (97%)</li>
+<li>was (2%)</li>
+<li>remains (0.6%)</li>
+<li>all other words … (0.2%)</li>
+</ol>
 </div>
-<div style="font-size: 0.95em;">
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li><strong>Riyadh</strong> (99.8%) ✅</li>
-</ul>
+<div class="fragment fade-in-then-out">
+<p><em>“The capital of Saudi Arabia is ___”</em></p>
+<ol type="1">
+<li><strong>Riyadh</strong> (99%)</li>
+<li>Jeddah (0.4%)</li>
+<li>Mecca (0.3%)</li>
+<li>all other words … (0.2%)</li>
+</ol>
 </div>
-<div class="fragment fade-in-then-semi-out">
-<ul>
-<li>Jeddah (0.1%) · Paris (0.00001%)</li>
-</ul>
+<div class="fragment fade-in-then-out">
+<p><em>“The capital of Saudi Arabia is Riyadh ___”</em></p>
+<ol type="1">
+<li><strong>,</strong> (52%)</li>
+<li><strong>.</strong> (41%)</li>
+<li>: (4%)</li>
+<li>all other words … (2%)</li>
+</ol>
+</div>
+<div class="fragment fade-in">
+<p><em>“The capital of Saudi Arabia is Riyadh, a ___”</em></p>
+<ol type="1">
+<li><strong>city</strong> (61%)</li>
+<li>large (12%)</li>
+<li>major (8%)</li>
+<li>all other words … (6%)</li>
+</ol>
 </div>
 </div>
 <div class="fragment">
-<p>It doesn’t <em>“know”</em> geography — it knows <strong>“Riyadh” almost always follows that sentence.</strong></p>
-</div>
-<div class="fragment">
-<div style="text-align: center; font-weight: bold; margin-top: 0.3em;">
-<p>It does this <em>even when it has no idea</em> — the next slide.</p>
+<div style="text-align: center; margin-top: 0.5em;">
+<p>It doesn’t <em>“know”</em> geography — at each step it knows <strong>which word usually comes next</strong>, picks it, and repeats.</p>
 </div>
 </div>
 </section>
@@ -230,56 +251,39 @@
 <div style="font-size: 1.1em; margin-bottom: 1em;">
 <p>What happens when it doesn’t know the answer? <strong>It guesses.</strong></p>
 </div>
-<p>“According to Article 214 of the new Saudi Investment Law: …”</p>
+<p><em>“According to Article 214 of the new Investment Law: …”</em></p>
 <div class="fragment">
 <div class="fragment fade-in">
 <ul>
-<li><strong>The</strong> (45%)</li>
-<li><strong>Foreign</strong> (30%)</li>
-<li><strong>Capital</strong> (15%)</li>
+<li><strong>The</strong> (45%) · <strong>Foreign</strong> (30%) · <strong>Capital</strong> (15%)</li>
 </ul>
 </div>
 </div>
 <div class="fragment">
 <div style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin-top: 1em;">
-<p>The AI constructs a sentence that <em>sounds</em> legal, but it has never read the actual document.</p>
+<p>It constructs a sentence that <em>sounds</em> right, but it has never read the actual document. That confident, made-up answer is a <strong>hallucination</strong>.</p>
 </div>
 </div>
 </section>
 <section id="the-limit-that-explains-everything" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">The Limit That Explains Everything</h2>
 <div style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.15em;">
-<p>The model is <strong>stateless</strong>. It does not “remember” and it does not “look things up.”</p>
-</div>
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>This is why it “hallucinates”</strong></p>
-</div>
-<div class="callout-content">
-<p>When it doesn’t know, it predicts a <strong>plausible-sounding</strong> answer anyway — a confident, made-up citation, a journal that doesn’t exist, a wrong date.</p>
-</div>
-</div>
-</div>
+<p>The model is <strong>stateless</strong>. It does not “remember” and it does not “look things up”.</p>
 </div>
 <div class="fragment">
 <div style="text-align: center; font-weight: bold; margin-top: 0.5em;">
-<p>Anything you want it to “know,” you must <strong>hand it every single time</strong>.</p>
+<p>Anything you want it to “know”, you must <strong>hand it every single time</strong>.</p>
 </div>
 </div>
 </section></section>
 <section>
-<section id="the-app-layer" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<section id="the-app-layer" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
 <h1>The App Layer</h1>
 <p>The office around the brain</p>
 </section>
 <section id="we-build-an-office" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">We Build an Office</h2>
-<div data-id="office" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;">
+<div data-id="office" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;">
 <p>The brain in a jar can’t open files or remember your name. So we build an <strong>office</strong> around it: filing cabinets, a notebook, a standing to-do list.</p>
 </div>
 <div class="fragment">
@@ -291,10 +295,13 @@
 </div>
 </div>
 </section>
-<section id="the-sentence-to-remember" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">The Sentence to Remember</h2>
-<div style="background: #00C9A7; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;">
-<p>The model <strong>knows nothing and forgets everything</strong>; the app <strong>re-sends what matters on every request.</strong></p>
+<section id="what-it-really-is" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">What It Really Is</h2>
+<div style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.1em;">
+<p>The <strong>app</strong> (ChatGPT, Gemini, Claude, an agent…) is the software wrapped around the model.</p>
+</div>
+<div class="fragment">
+<p>It <strong>stores your information in files / a directory</strong> and <strong>re-sends the relevant parts on every request</strong>.</p>
 </div>
 <div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -306,46 +313,93 @@
 <p><strong>The features you’ve seen</strong></p>
 </div>
 <div class="callout-content">
-<p>“Memory,” “Projects,” “Custom Instructions” are all just the <strong>app</strong> gathering and re-sending context for you. Cowork (later today) is a very capable office.</p>
+<p>“Memory”, “Projects”, “Custom Instructions” are all just the <strong>app</strong> doing this gathering-and-resending for you.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="the-sentence-to-remember" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Sentence to Remember</h2>
+<div style="background: #00C9A7; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.1em;">
+<p>The model stays smart but <strong>remembers nothing about you</strong>; the app <strong>re-sends what matters on every request.</strong></p>
+</div>
+<div class="fragment">
+<div style="text-align: center; margin-top: 1em;">
+<p>Every “smart” feature is just the app getting smarter about <strong>what to re-send.</strong></p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="what-context-really-is" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>What “Context” Really Is</h1>
+<p>The pages on the brain’s desk</p>
+</section>
+<section id="context-the-desk" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Context = the Desk</h2>
+<div data-id="context" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;">
+<p><strong>Context</strong> is everything the office stacks on the brain’s desk before it starts — your request <strong>plus</strong> the background pages it needs to do the job well.</p>
+</div>
+<div class="fragment">
+<p>Your instructions, pasted documents, standing rules, relevant memory — the model’s <strong>entire world</strong> for that one request.</p>
+</div>
+</section>
+<section id="the-big-reframe" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Big Reframe</h2>
+<div style="background: #1C355E; color: #ffffff; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;">
+<p>Output quality is mostly a <strong>context problem</strong>, not a <strong>smartness problem</strong>.</p>
+</div>
+<div class="fragment">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>What this means for you</strong></p>
+</div>
+<div class="callout-content">
+<p>A weak answer usually means weak <strong>context</strong>, not a weak model. <strong>“Give it context” is the whole skill.</strong></p>
 </div>
 </div>
 </div>
 </div>
 </section></section>
 <section>
-<section id="what-context-really-is" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h1>What “Context” Really Is</h1>
-<p>The pages on the brain’s desk</p>
+<section id="the-desk-has-limits" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)">
+<h1>The Desk Has Limits</h1>
+<p>The context window</p>
 </section>
-<section id="context-the-desk" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Context = the Desk</h2>
-<div data-id="context" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;">
-<p><strong>Context</strong> is everything stacked on the brain’s desk before it starts — your request <strong>plus</strong> the background pages it needs: your instructions, the paper you pasted, your rules.</p>
+<section id="why-long-chats-forget" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Why Long Chats “Forget”</h2>
+<div data-id="window" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C;">
+<p>The brain’s desk has a <strong>fixed size</strong>. You can only fit so many pages on it at once. Pile on too much and <strong>older pages fall off the edge</strong>.</p>
 </div>
 <div class="fragment">
-<div style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em; margin-top: 1em;">
-<p>Output quality is mostly a <strong>context problem</strong>, not a <strong>smartness problem.</strong></p>
+<div style="text-align: center; margin-top: 0.5em;">
+<p>That’s the <strong>context window</strong> — and it’s why a long conversation starts losing the thread from the beginning.</p>
 </div>
 </div>
 </section>
-<section id="the-desk-has-limits" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">The Desk Has Limits</h2>
-<div data-id="window" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;">
-<p>The desk has a <strong>fixed size</strong>. Pile on too much and <strong>older pages fall off the edge</strong> — that’s why a long chat starts forgetting how it began.</p>
-</div>
-<div class="fragment">
+<section id="saved-beats-re-pasted" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Saved Beats Re-Pasted</h2>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>The fix</strong></p>
+<p><strong>The rule</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Saved instructions beat re-pasting.</strong> The office puts the important pages back on the desk for you every time — the foundation of the assistant you’ll build today.</p>
+<p><strong>Saved instructions beat re-pasting.</strong></p>
 </div>
 </div>
+</div>
+<p>The app puts the important pages back on the desk for you <strong>every time</strong>, so they never fall off the edge.</p>
+<div class="fragment">
+<div style="text-align: center; font-style: italic; margin-top: 0.5em;">
+<p>This is the whole reason standing instructions, projects, and memory exist.</p>
 </div>
 </div>
 </section></section>
@@ -369,13 +423,13 @@
 </div>
 </div>
 </section>
-<section id="micro-check" class="slide level2 sdaia-dark" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h2>Micro-Check</h2>
+<section id="micro-check" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Micro-Check</h2>
 <p>The AI cites a journal article that <strong>doesn’t exist</strong>. Which layer failed?</p>
 <div class="fragment">
 <div class="fragment fade-in">
 <div style="background: #9B8EC0; color: white; padding: 1em; border-radius: 12px; text-align: center;">
-<p><strong>The Model Layer</strong> — the brain <strong>guessed</strong>. Ground it in a real source and <strong>verify</strong> (later, with NotebookLM).</p>
+<p><strong>Both — and that’s the point.</strong> The brain <strong>guessed</strong> (model layer) <em>because</em> no real source was on its desk (context). Fix it the context way: <strong>ground</strong> it in a real source, then <strong>verify</strong> (later, with NotebookLM).</p>
 </div>
 </div>
 </div>
@@ -383,95 +437,39 @@
 <section>
 <section id="stop-asking.-start-delegating." class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
 <h1>Stop Asking. Start Delegating.</h1>
-<p>Now put the two layers to work — brief the AI like a teaching assistant</p>
+<p>Brief the AI like a direct report</p>
 </section>
-<section id="the-shift" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">The Shift</h2>
+<section id="the-paradigm-shift" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Paradigm Shift</h2>
 <div data-id="shift" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.2em;">
-<p>You don’t need a “chat bot.” You need a <strong>capable assistant</strong> you can delegate to.</p>
+<p>Stop <strong>chatting</strong>. Start <strong>delegating</strong>.</p>
 </div>
 <div class="fragment">
-<div data-id="example" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; margin-top: 1em;">
-<p><strong>Don’t ask:</strong> “Write an email about the meeting.”</p>
-<p><strong>Delegate:</strong> “Act as a thesis advisor. Draft a recap email to my student from these notes. Highlight the revisions due before the next committee.”</p>
+<div style="text-align: center; margin-top: 1em;">
+<p>You don’t need a “chat bot”. You need a <strong>direct report</strong> — someone you brief properly, then trust to deliver.</p>
 </div>
 </div>
 </section></section>
 <section>
-<section id="rice" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
+<section id="rice" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
 <h1>RICE</h1>
-<p>The 4 pillars of a good prompt</p>
+<p>The 4 pillars of delegation</p>
 </section>
 <section id="the-framework" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">The Framework</h2>
-<div data-id="rice" style="font-size: 1.1em;">
+<div data-id="rice" style="font-size: 1.0em;">
 <div class="fragment fade-in">
-<p><strong>R — Role:</strong> Who should the AI be?</p>
-</div>
-<div class="fragment fade-in">
-<p><strong>I — Instructions:</strong> What exactly should it do? (format, length, tone)</p>
+<p><strong>R — Role:</strong> name the expert you’d hire — it shapes the AI’s vocabulary and priorities.</p>
 </div>
 <div class="fragment fade-in">
-<p><strong>C — Context:</strong> What information does it need?</p>
+<p><strong>I — Instructions:</strong> what to do, bundled <strong>with</strong> its format, length, and tone.</p>
 </div>
 <div class="fragment fade-in">
-<p><strong>E — Examples:</strong> Show it what “good” looks like.</p>
+<p><strong>C — Context:</strong> the raw material — paste your notes, upload your docs.</p>
 </div>
-</div>
-</section>
-<section id="r-role" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">R — Role</h2>
-<div data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;">
-<p><strong>Who</strong> should the AI be?</p>
-</div>
-<div class="fragment">
-<ul>
-<li class="fragment">A patient teaching assistant</li>
-<li class="fragment">A peer reviewer for a journal</li>
-<li class="fragment">A curriculum committee chair</li>
-<li class="fragment">A grant-proposal editor</li>
-</ul>
-</div>
-<div class="fragment">
-<p>The role shapes the AI’s vocabulary, perspective, and priorities.</p>
-</div>
-</section>
-<section id="i-instructions" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">I — Instructions</h2>
-<div data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;">
-<p><strong>What</strong> exactly should it do?</p>
-</div>
-<div class="fragment">
-<p>Bundle the task <strong>with</strong> its format, length, and tone:</p>
 <div class="fragment fade-in">
-<div style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7;">
-<p>“Draft a <strong>150-word</strong> feedback note to the student. Encouraging but specific. Use a bulleted ‘What to fix next’ list.”</p>
+<p><strong>E — Examples:</strong> paste one sample of “good”; the AI copies its shape.</p>
 </div>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Pro move</strong></p>
-</div>
-<div class="callout-content">
-<p>Add: “If anything is unclear, <strong>ask me before you write</strong>.”</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="c-context" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">C — Context</h2>
-<div data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;">
-<p><strong>What</strong> information does it need?</p>
-</div>
-<div class="fragment">
-<p>The “brain dump” — paste your notes, the rubric, the draft, the syllabus.</p>
 </div>
 <div class="fragment">
 <div class="callout callout-note callout-titled callout-style-default">
@@ -480,39 +478,10 @@
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>This is the <em>same</em> context from the two layers</strong></p>
+<p><strong>C is the <em>same</em> context from the two layers</strong></p>
 </div>
 <div class="callout-content">
 <p>You’re loading the pages onto the brain’s desk. <strong>No context = the brain guesses.</strong></p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="e-examples" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">E — Examples</h2>
-<div data-id="pillar" style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.3em;">
-<p><strong>Show</strong> it what “good” looks like.</p>
-</div>
-<div class="fragment">
-<p>Don’t just <em>describe</em> the output — <strong>paste one sample</strong>. The AI copies its structure, tone, and length.</p>
-<div class="fragment fade-in">
-<div style="background: #f7f9fc; padding: 0.8em; border-radius: 12px; border-left: 4px solid #00C9A7;">
-<p>“Match this style: <em>‘Dear Sara, strong progress this week. Three things to tighten before we meet: …’</em>”</p>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>One example beats a paragraph</strong></p>
-</div>
-<div class="callout-content">
-<p>A single sample teaches more than ten lines of rules.</p>
 </div>
 </div>
 </div>
@@ -522,6 +491,22 @@
 <h2>The Formula</h2>
 <div style="background: rgba(255,255,255,0.12); padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.05em;">
 <p>“Act as a <strong>[Role]</strong>. Your job is to <strong>[Instructions]</strong>. Here is the <strong>[Context]</strong>. Match this <strong>[Example]</strong>.”</p>
+</div>
+<div class="fragment">
+<div style="text-align: center; margin-top: 1em; font-size: 0.95em;">
+<p><strong>Examples are the secret weapon</strong> — one good sample teaches more than ten lines of rules.</p>
+</div>
+</div>
+</section>
+<section id="dont-ask-delegate" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Don’t Ask — Delegate</h2>
+<div data-id="example" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;">
+<p><strong>Don’t ask:</strong> “Write an email about the meeting.”</p>
+</div>
+<div class="fragment fade-in">
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7; margin-top: 0.6em;">
+<p><strong>Delegate:</strong> “Act as a thesis advisor. Draft a recap email to my student from these notes. Highlight the revisions due before the next committee.”</p>
+</div>
 </div>
 </section></section>
 <section>
@@ -559,24 +544,50 @@
 <section>
 <section id="when-ai-fumbles-a-hard-question" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
 <h1>When AI Fumbles a Hard Question</h1>
-<p>One move to trust the numbers</p>
+<p>Three nudges that slow it down where it matters</p>
 </section>
-<section id="slow-it-down-especially-on-numbers" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Slow It Down — Especially on Numbers</h2>
-<div style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; font-size: 1.05em;">
-<p>By default AI answers <strong>fast and shallow</strong> — risky on grades, totals, and data.</p>
+<section id="think-step-by-step" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Think Step by Step</h2>
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #00C9A7;">
+<p>Add <strong>“think step by step”</strong> so the AI reasons <em>before</em> it answers — best for <strong>logic, planning, and scheduling</strong>.</p>
+</div>
+<div style="font-size: 0.82em; margin-top: 0.5em;">
+<p><em>“8 chapters, 10 teaching weeks, midterm in week 6, chapters 5–6 must come before it — lay out a week-by-week plan. <strong>Think step by step.</strong>”</em> → it sequences instead of guessing.</p>
 </div>
 <div class="fragment">
-<div data-id="dc" style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; margin-top: 0.6em;">
-<p><strong>Double-check:</strong> have it solve the <strong>same task 2–3 times</strong> — match = trust, mismatch = flag.</p>
-<div style="font-size: 0.82em; margin-top: 0.4em;">
-<p><em>“Total these 40 exam scores three times. If all three match, output ‘Verified’; if not, ‘Manual Review Needed’.”</em> — <em>industry term: <strong>Self-Consistency</strong>.</em></p>
+<div style="text-align: center; color: #666; font-size: 0.85em; margin-top: 0.5em;">
+<p><em>Chain of Thought.</em> <strong>Often automatic now</strong> — reasoning models do this internally — but still worth asking simpler models, or when you want the steps shown.</p>
 </div>
 </div>
+</section>
+<section id="debate-it-out" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Debate It Out</h2>
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #9B8EC0;">
+<p>Make the AI <strong>argue from several expert viewpoints, then synthesize</strong> — best for <strong>judgment calls</strong>.</p>
+</div>
+<div style="font-size: 0.82em; margin-top: 0.5em;">
+<p><em>“A borderline thesis — one reviewer says pass, one says revise. Argue it as a strict methodologist, a supportive mentor, and an external examiner, then recommend one call.”</em></p>
 </div>
 <div class="fragment">
-<div style="text-align: center; color: #666; font-size: 0.9em; margin-top: 0.5em;">
-<p>Two more nudges for harder calls: <strong>“think step by step”</strong> <em>(Chain of Thought — logic)</em> · <strong>“debate it out”</strong> <em>(Tree of Thoughts — judgment)</em>.</p>
+<div style="text-align: center; color: #666; font-size: 0.85em; margin-top: 0.5em;">
+<p><em>Tree of Thoughts.</em></p>
+</div>
+</div>
+</section>
+<section id="double-check" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Double-Check</h2>
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; border-left: 4px solid #FF7A5C;">
+<p>Run the <strong>same prompt a few times</strong> and go with the answer that <strong>keeps coming up</strong> — best for <strong>judgment calls you can’t easily verify</strong>.</p>
+</div>
+<div style="font-size: 0.82em; margin-top: 0.5em;">
+<p><em>“Judge whether this paragraph’s argument is original or derivative — 3 separate times. Go with the verdict that repeats.”</em></p>
+</div>
+<div class="fragment">
+<div style="background: #fff4f1; padding: 0.7em 1em; border-radius: 12px; border-left: 4px solid #FF7A5C; font-size: 0.82em; margin-top: 0.5em;">
+<p><strong>Not for exact numbers.</strong> To total a column of scores, re-rolling still <em>guesses</em> — a <strong>script</strong> computes it exactly, every time. <em>(That’s Session 2.)</em></p>
+</div>
+<div style="text-align: center; color: #666; font-size: 0.85em; margin-top: 0.3em;">
+<p><em>Self-Consistency.</em></p>
 </div>
 </div>
 </section></section>
@@ -619,10 +630,10 @@
 <h2>Key Takeaways</h2>
 <ol type="1">
 <li class="fragment"><strong>Two layers</strong> — the model (brain) and the app (office) stacked together</li>
-<li class="fragment"><strong>The brain has amnesia</strong> — stateless, predicts the next word, can hallucinate</li>
+<li class="fragment"><strong>The brain keeps its training but forgets <em>you</em></strong> — stateless, predicts the next word, can hallucinate</li>
 <li class="fragment"><strong>Quality is a context problem</strong> — the right pages on the desk → the right answer</li>
 <li class="fragment"><strong>Delegate, don’t ask</strong> — brief the AI with <strong>RICE</strong> (Role, Instructions, Context, Examples)</li>
-<li class="fragment"><strong>Examples are the secret weapon</strong>; slow it down on hard problems — step by step, debate it out, double-check</li>
+<li class="fragment"><strong>Examples are the secret weapon</strong>; slow it down on hard calls — step by step, debate it out, double-check (and use a <strong>script</strong> for exact numbers)</li>
 </ol>
 
 

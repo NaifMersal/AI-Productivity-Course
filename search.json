@@ -25,7 +25,7 @@
     "href": "ksu-workshop/slides/wrap_up.html#never-break-these-two",
     "title": "Your AI Assistant",
     "section": "Never Break These Two",
-    "text": "Never Break These Two\n\n\n\nNewspaper Test\nWatch what you paste in. Sanitize student & unpublished data.\n\n\n\nThe Undo Test (blast radius)\nWatch what it does. Draft / notify-me before act-on-its-own."
+    "text": "Never Break These Two\n\n\n\nNewspaper Test\nWatch what you paste in. Sanitize student data and unpublished work.\n\n\n\nThe Undo Test (blast radius)\nWatch what it does. Draft / notify-me before act-on-its-own."
   },
   {
     "objectID": "ksu-workshop/slides/wrap_up.html#this-week",
@@ -49,18 +49,60 @@
     "text": "Thank You\n\nNow go win back your week."
   },
   {
+    "objectID": "ksu-workshop/slides/schedule.html#a-standing-appointment",
+    "href": "ksu-workshop/slides/schedule.html#a-standing-appointment",
+    "title": "Schedule: Run It Without You",
+    "section": "A Standing Appointment",
+    "text": "A Standing Appointment\n\nType /schedule in any Cowork task. “Every Sunday at 5pm, draft my week-ahead teaching summary.” It just happens — you didn’t have to ask.\n\n\n\nThe leap from a tool you operate to a teammate that acts on its own."
+  },
+  {
+    "objectID": "ksu-workshop/slides/schedule.html#demo-3-weekly-digest-notify-me",
+    "href": "ksu-workshop/slides/schedule.html#demo-3-weekly-digest-notify-me",
+    "title": "Schedule: Run It Without You",
+    "section": "Demo 3 — Weekly Digest (Notify-Me)",
+    "text": "Demo 3 — Weekly Digest (Notify-Me)\n\n/schedule: Every Sunday 5pm — scan the course folder and draft a summary of what’s due, ungraded, and upcoming. Notify me; don’t send anything.\n\n\n\n\n\n\n\n\nGuardrails first\n\n\nEvery scheduled job starts in draft / notify-me mode. Promote to act-on-its-own only after you’ve watched it get it right."
+  },
+  {
+    "objectID": "ksu-workshop/slides/schedule.html#a-schedule-just-runs-a-skill",
+    "href": "ksu-workshop/slides/schedule.html#a-schedule-just-runs-a-skill",
+    "title": "Schedule: Run It Without You",
+    "section": "A Schedule Just Runs a Skill",
+    "text": "A Schedule Just Runs a Skill\n\nNothing new to learn. A schedule opens the same book from your library — just on a timer instead of you typing the trigger.\n\n\n\nSkill = what to do. Schedule = when to do it, without you."
+  },
+  {
+    "objectID": "ksu-workshop/slides/schedule.html#guardrails-first-1",
+    "href": "ksu-workshop/slides/schedule.html#guardrails-first-1",
+    "title": "Schedule: Run It Without You",
+    "section": "Guardrails First",
+    "text": "Guardrails First\n\n\n\n\n\n\nEvery scheduled job starts in draft / notify-me\n\n\nIt proposes, you approve. Promote to act-on-its-own only after you’ve watched it get it right.\n\n\n\n\n\nA schedule runs while you’re not watching — so the undo test matters most."
+  },
+  {
+    "objectID": "ksu-workshop/slides/schedule.html#a-starter-library",
+    "href": "ksu-workshop/slides/schedule.html#a-starter-library",
+    "title": "Schedule: Run It Without You",
+    "section": "A Starter Library",
+    "text": "A Starter Library\n\n\n\n\n\n\n\n\nYou say…\nThe Skill it pulls\n\n\n\n\n“make a lecture deck”\nLecture Deck → on-brand revealjs slides\n\n\n“summarize this paper”\nPaper Briefer → 1-page summary + key findings\n\n\n“notes → feedback”\nFeedback Writer → student-ready comments\n\n\n“draft my week-ahead”\nWeekly Digest → teaching summary (schedule it!)\n\n\n“grade summary”\nGrade Cruncher → weighted totals + distribution\n\n\n\n\n\n\nYour library grows one book at a time."
+  },
+  {
+    "objectID": "ksu-workshop/slides/schedule.html#which-job-shouldnt-auto-run",
+    "href": "ksu-workshop/slides/schedule.html#which-job-shouldnt-auto-run",
+    "title": "Schedule: Run It Without You",
+    "section": "Which Job Shouldn’t Auto-Run?",
+    "text": "Which Job Shouldn’t Auto-Run?\nWhich scheduled job should never run in act-on-its-own mode on day one?\n\n\n\n\nA) Every morning, summarize new course-forum posts into a note.\n\n\n\nB) Every morning, auto-reply to all student emails.\n\n\n\n\n\n\n\n\n✅ Read-only. Easy to undo (low blast radius).\n\n\n\n❌ This one. Hard to undo (high blast radius). Draft-only."
+  },
+  {
     "objectID": "ksu-workshop/slides/practice_automation.html#ground-rules",
     "href": "ksu-workshop/slides/practice_automation.html#ground-rules",
     "title": "Practice — Build Your First Workflows",
     "section": "Ground Rules",
-    "text": "Ground Rules\n\nEverything runs in the sandbox folder with dummy data — start in propose mode.\n\n\n\nA mistake here can’t touch a real grade sheet or a real inbox."
+    "text": "Ground Rules\n\nEverything runs on copies in a staging folder — start in propose mode.\n\n\n\nA mistake here can’t touch your originals or a real grade sheet or a real inbox."
   },
   {
     "objectID": "ksu-workshop/slides/practice_automation.html#give-it-a-real-sandboxed-task",
     "href": "ksu-workshop/slides/practice_automation.html#give-it-a-real-sandboxed-task",
     "title": "Practice — Build Your First Workflows",
     "section": "Give It a Real (Sandboxed) Task",
-    "text": "Give It a Real (Sandboxed) Task\n\n\n\n\n\n\nBuild\n\n\nPoint Cowork at the sandbox folder, then give it one end-to-end task — e.g. “Read these three student feedback files and produce one summary note.”\nSample files: feedback_student_1.md, feedback_student_2.md, feedback_student_3.md\n\n\n\n\n\nWatch it open files, not just chat\nWatch it run steps in order\nIt proposes the result — you stay in the loop and approve"
+    "text": "Give It a Real (Sandboxed) Task\n\n\n\n\n\n\nBuild\n\n\nPoint Cowork at your staging folder (with copies of files), then give it one end-to-end task — e.g. “Read these three student feedback files and produce one summary note.”\nSample files: feedback_student_1.md, feedback_student_2.md, feedback_student_3.md\n\n\n\n\n\nWatch it open files, not just chat\nWatch it run steps in order\nIt proposes the result — you stay in the loop and approve"
   },
   {
     "objectID": "ksu-workshop/slides/practice_automation.html#make-one-skill",
@@ -74,7 +116,7 @@
     "href": "ksu-workshop/slides/practice_automation.html#stretch-schedule-it-notify-me",
     "title": "Practice — Build Your First Workflows",
     "section": "Stretch — Schedule It (Notify-Me)",
-    "text": "Stretch — Schedule It (Notify-Me)\n\n\n\n\n\n\nOptional\n\n\nTurn your Skill into a standing appointment with /schedule — “Every Sunday 5pm, draft my week-ahead summary.” Keep it in draft / notify-me mode.\n\n\n\n\n\nGuardrails first — promote to act-on-its-own only after it earns your trust."
+    "text": "Stretch — Schedule It (Notify-Me)\n\n\n\n\n\n\nOptional\n\n\nTurn your Skill into a standing appointment with /schedule — “Every Sunday at 5pm, draft my week-ahead teaching summary.” Keep it in draft / notify-me mode.\n\n\n\n\n\nGuardrails first — promote to act-on-its-own only after it earns your trust."
   },
   {
     "objectID": "ksu-workshop/slides/practice_automation.html#i-like-i-wish-i-wonder",
@@ -154,1313 +196,88 @@
     "text": "Key Takeaways\n\nContext before content — never start from a blank prompt\nGrounding builds trust — upload sources, constrain to “only these”\nNo citation = didn’t happen — demand page references\nNotebookLM — deep reading and decks (Detailed vs. Presenter, .pptx)\nRight tool, right job — Cowork / NotebookLM / Deep Research"
   },
   {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#why-cowork",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#why-cowork",
-    "title": "Meet Claude Cowork & Automating Your Work",
+    "objectID": "ksu-workshop/slides/cowork_intro.html#why-cowork",
+    "href": "ksu-workshop/slides/cowork_intro.html#why-cowork",
+    "title": "From Chat to Cowork",
     "section": "Why Cowork?",
     "text": "Why Cowork?\n\nClaude Cowork is the fastest way to turn AI into an assistant that works on your actual files — not just a chat tab.\n\n\n\n\n\n\n\n\nPortable idea\n\n\nOther tools have their own version of this. We use Cowork because the setup is the simplest — the concepts move with you."
   },
   {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#chat-vs.-assistant",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#chat-vs.-assistant",
-    "title": "Meet Claude Cowork & Automating Your Work",
+    "objectID": "ksu-workshop/slides/cowork_intro.html#chat-vs.-assistant",
+    "href": "ksu-workshop/slides/cowork_intro.html#chat-vs.-assistant",
+    "title": "From Chat to Cowork",
     "section": "Chat vs. Assistant",
     "text": "Chat vs. Assistant\n\n\n\n\nA Chat Box\n\nYou paste, it replies\nOne message at a time\nCloses → forgets\n\n\n\n\n\n\nCowork (an Agent)\n\nOpens your files\nRuns steps in order\nCan act, not just talk\n\n\n\n\n\n\nSame brain in the jar. A much more capable office around it."
   },
   {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#three-steps-to-running",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#three-steps-to-running",
-    "title": "Meet Claude Cowork & Automating Your Work",
+    "objectID": "ksu-workshop/slides/cowork_intro.html#three-steps-to-running",
+    "href": "ksu-workshop/slides/cowork_intro.html#three-steps-to-running",
+    "title": "From Chat to Cowork",
     "section": "Three Steps to Running",
     "text": "Three Steps to Running\n\nInstall the Claude desktop app and sign in\nOpen Cowork and point it at a folder on your computer\nType a task in plain language — and approve what it proposes\n\n\n\nThat’s it. No setup files, no code, no configuration."
   },
   {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#meet-the-working-directory",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#meet-the-working-directory",
-    "title": "Meet Claude Cowork & Automating Your Work",
+    "objectID": "ksu-workshop/slides/cowork_intro.html#meet-the-working-directory",
+    "href": "ksu-workshop/slides/cowork_intro.html#meet-the-working-directory",
+    "title": "From Chat to Cowork",
     "section": "Meet the Working Directory",
     "text": "Meet the Working Directory\n\nWhen Cowork opens, it points at one folder on your computer — its working directory.\n\n\n\n“So that’s the office the two layers talked about.”\n\n\n\nThis folder is the office. Your context lives here as real, openable files."
   },
   {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#what-cowork-can-do",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#what-cowork-can-do",
-    "title": "Meet Claude Cowork & Automating Your Work",
+    "objectID": "ksu-workshop/slides/cowork_intro.html#what-cowork-can-do",
+    "href": "ksu-workshop/slides/cowork_intro.html#what-cowork-can-do",
+    "title": "From Chat to Cowork",
     "section": "What Cowork Can Do",
-    "text": "What Cowork Can Do\n\n\n\n\nFeature\nIn plain language\n\n\n\n\nRead / edit / create files\nWorks on your real documents\n\n\nSkills\nA library of playbooks it opens when needed (next)\n\n\n/schedule\nA standing appointment to run a task (next)\n\n\nPlugins\nBundles of skills + connections for a role\n\n\nDispatch\nClicks around apps when there’s no shortcut\n\n\n\n\n\n\nToday we focus on files, Skills, and Schedule."
+    "text": "What Cowork Can Do\n\n\n\n\n\n\n\n\nFeature\nIn plain language\n\n\n\n\nRead / edit / create files\nWorks on your real documents\n\n\nSkills\nA library of playbooks it opens when needed (next deck)\n\n\n/schedule\nA standing appointment to run a task (next deck)\n\n\nConnectors\nKeys to your inbox / calendar / drive (next deck)\n\n\nDispatch\nClicks around apps when there’s no shortcut\n\n\n\n\n\n\nToday we focus on files, Skills, Schedule, and Connectors."
   },
   {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#one-rule-was-enough-until-now",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#one-rule-was-enough-until-now",
-    "title": "Meet Claude Cowork & Automating Your Work",
+    "objectID": "ksu-workshop/slides/cowork_intro.html#one-rule-was-enough-until-now",
+    "href": "ksu-workshop/slides/cowork_intro.html#one-rule-was-enough-until-now",
+    "title": "From Chat to Cowork",
     "section": "One Rule Was Enough — Until Now",
-    "text": "One Rule Was Enough — Until Now\n\n\n\nRule 1 — Newspaper Test\nGuards what you paste in.\n(sanitize student data first)\n\n\n\n\nRule 2 — The Undo Test\nGuards what the agent does.\n(industry term: blast radius)\n\n\n\n\n\nAn agent that can act needs a second rule."
+    "text": "One Rule Was Enough — Until Now\n\n\n\nRule 1 — Newspaper Test\nGuards what you paste in.\n(sanitize student data and unpublished work first)\n\n\n\n\nRule 2 — The Undo Test\nGuards what the agent does.\n(industry term: blast radius)\n\n\n\n\n\nAn agent that can act needs a second rule."
   },
   {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#the-undo-test-human-in-the-loop",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#the-undo-test-human-in-the-loop",
-    "title": "Meet Claude Cowork & Automating Your Work",
+    "objectID": "ksu-workshop/slides/cowork_intro.html#the-undo-test-human-in-the-loop",
+    "href": "ksu-workshop/slides/cowork_intro.html#the-undo-test-human-in-the-loop",
+    "title": "From Chat to Cowork",
     "section": "The Undo Test & Human-in-the-Loop",
     "text": "The Undo Test & Human-in-the-Loop\n\nBefore letting it act, ask: “What’s the worst it could do if it’s wrong — can I undo it, and who’d notice in time?”\n\n\n(industry term: blast radius)\n\n\n\n\n\n\n\n\nAlways start in draft / notify-me mode\n\n\nCowork proposes, you approve. Promote to act-on-its-own only after it has proven itself."
   },
   {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#our-workshop-rule",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#our-workshop-rule",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "Our Workshop Rule",
-    "text": "Our Workshop Rule\n\nAll hands-on work runs in a sandbox folder with dummy data.\n\n\n\nA mistake can’t touch a real grade sheet or a real inbox while you’re learning."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#micro-check-act-now-or-propose-wait",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#micro-check-act-now-or-propose-wait",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "Micro-Check — Act Now or Propose & Wait?",
-    "text": "Micro-Check — Act Now or Propose & Wait?\n1. “Reformat these notes into a clean summary in a new file.”\n\n\n\nAct now — low blast radius, easy to undo.\n\n\n\n\n2. “Email the revised grades to all 60 students.”\n\n\n\n\nPropose & wait — irreversible, high blast radius. Review first."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#the-three-tools",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#the-three-tools",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "The Three Tools",
-    "text": "The Three Tools\n\n\n\n\nSkill\nA book in your library, opened by name\n\n\n\n\n\nSchedule\nA standing appointment that runs on its own\n\n\n\n\n\nScript\nCode it writes & runs to compute exactly\n\n\n\n\n\nAll three turn a one-time effort into a permanent capability."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#what-a-skill-is",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#what-a-skill-is",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "What a Skill Is",
-    "text": "What a Skill Is\n\nYour Skills are a library. Each Skill is a book — a written playbook for one recurring task.\n\n\n\nCowork keeps the whole shelf, but only opens the book your task calls for — not every book, every time. (just like the office puts only the relevant page on the desk)\n\n\n\n\nThe title on the spine — the trigger that tells Cowork which book to pull\nWhat’s written inside — the steps, in plain language"
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#demo-1-lecture-deck-revealjs",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#demo-1-lecture-deck-revealjs",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "Demo 1 — “Lecture Deck” (revealjs)",
-    "text": "Demo 1 — “Lecture Deck” (revealjs)\n\nLecture notes → an on-brand revealjs slide deck you open in your browser.\n\n\n\nName: Lecture Deck  •  Trigger: “turn these notes into a revealjs deck”\nSteps: 1) outline the storyline · 2) one idea per slide · 3) apply my course style · 4) generate a revealjs file with a Quarto front-matter"
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#invoke-it-on-fresh-input",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#invoke-it-on-fresh-input",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "Invoke It on Fresh Input",
-    "text": "Invoke It on Fresh Input\n\nSkill saved — now just type the trigger on any new lecture:\n\n\n“Turn this into a lecture deck: photosynthesis — light reactions, Calvin cycle, limiting factors, today’s lab.”\n\n\n\nOne phrase → a browser-ready deck. No re-explaining."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#what-a-script-is",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#what-a-script-is",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "What a Script Is",
-    "text": "What a Script Is\n\nA little program Cowork writes and runs when the job is exact, repeatable calculation — math and data done the same way every single time.\n\n\n\nThe brain in a jar estimates — and can slip on arithmetic. A computer computes the same way every time. So Cowork doesn’t do the math in its head — it writes a script.\n\n\n\n\n\n\n\n\n\nYou still never touch code\n\n\nThis is Session 2’s “repeatable steps, every time” — now done as real code. You never write or even see it: you describe what you want, Cowork writes and runs the script, you get the result."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#demo-2-grade-summaries",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#demo-2-grade-summaries",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "Demo 2 — Grade Summaries",
-    "text": "Demo 2 — Grade Summaries\n\nYou have a spreadsheet of raw scores. You want weighted finals, the class average, and a distribution — every term.\n\n\n\n“From grades.csv, compute each student’s weighted total (midterm 25%, final 35%, project 25%, participation 15%), the class average, and a grade distribution. Save it as a new sheet.”\n\n\n\n\n\n\n\nNote\n\n\nSample data: grades.csv"
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#why-a-script-here",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#why-a-script-here",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "Why a Script Here",
-    "text": "Why a Script Here\n\nExact, every row — the script computes, it doesn’t estimate\nReproducible next term — same script, same method; no formula errors, no copy-paste\nYou get the result, not the code — describe it once, Cowork writes and runs it\n\n\n\n\n\n\n\n\nPair it with “double-check”\n\n\nFor anything graded, ask it to compute twice and compare before you trust the numbers."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#a-standing-appointment",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#a-standing-appointment",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "A Standing Appointment",
-    "text": "A Standing Appointment\n\nType /schedule in any Cowork task. “Every Sunday at 5pm, draft my week-ahead teaching summary.” It just happens — you didn’t have to ask.\n\n\n\nThe leap from a tool you operate to a teammate that acts on its own."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#demo-3-weekly-digest-notify-me",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#demo-3-weekly-digest-notify-me",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "Demo 3 — Weekly Digest (Notify-Me)",
-    "text": "Demo 3 — Weekly Digest (Notify-Me)\n\n/schedule: Every Sunday 5pm — scan the course folder and draft a summary of what’s due, ungraded, and upcoming. Notify me; don’t send anything.\n\n\n\n\n\n\n\n\nGuardrails first\n\n\nEvery scheduled job starts in draft / notify-me mode. Promote to act-on-its-own only after you’ve watched it get it right."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#a-starter-library",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#a-starter-library",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "A Starter Library",
-    "text": "A Starter Library\n\n\n\n\n\n\n\n\nYou say…\nThe Skill it pulls\n\n\n\n\n“make a lecture deck”\nLecture Deck → on-brand revealjs slides\n\n\n“summarize this paper”\nPaper Briefer → 1-page summary + key findings\n\n\n“notes → feedback”\nFeedback Writer → student-ready comments\n\n\n“draft my week-ahead”\nWeekly Digest → teaching summary (schedule it!)\n\n\n“grade summary”\nGrade Cruncher → weighted totals + distribution\n\n\n\n\n\n\nYour library grows one book at a time."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#quiz",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#quiz",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "Quiz",
-    "text": "Quiz\nWhich scheduled job should never run in act-on-its-own mode on day one?\n\n\n\n\nA) Every morning, summarize new course-forum posts into a note.\n\n\n\nB) Every morning, auto-reply to all student emails.\n\n\n\n\n\n\n\n\n✅ Read-only. Easy to undo (low blast radius).\n\n\n\n❌ This one. Hard to undo (high blast radius). Draft-only."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_and_automation.html#key-takeaways",
-    "href": "ksu-workshop/slides/cowork_and_automation.html#key-takeaways",
-    "title": "Meet Claude Cowork & Automating Your Work",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nCowork ≠ chat — it opens files, runs steps, and can act\nSetup is three clicks — install, point at a folder, type a task; the working directory is the office\nSecond safety rule — the undo test / human-in-the-loop (blast radius); sandbox + dummy data\nSkill — a book in your library Cowork opens by its trigger; Script — code Cowork writes & runs to compute exactly\nSchedule (/schedule) — a standing appointment; guardrails first: every job starts in draft / notify-me"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "AI at Work — Workshops",
-    "section": "",
-    "text": "Hands-on workshops that teach managers, professionals, and faculty to use AI as a permanent member of their team — not as a search engine. No coding. Concepts stay portable across ChatGPT, Gemini, Claude, NotebookLM, and Coworker."
-  },
-  {
-    "objectID": "index.html#workshops",
-    "href": "index.html#workshops",
-    "title": "AI at Work — Workshops",
-    "section": "Workshops",
-    "text": "Workshops\n\n\n\nWorkshop\nAudience\nLength\nStart here\n\n\n\n\nBuilding Your Own AI Assistant\nKSU faculty\nHalf-day (≈4 hrs)\nRun of show →\n\n\n\nMore workshops coming soon."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_8_memory.html#stop-re-introducing-yourself",
-    "href": "hermes-agent-course/slides/session_8_memory.html#stop-re-introducing-yourself",
-    "title": "Memory",
-    "section": "Stop Re-Introducing Yourself",
-    "text": "Stop Re-Introducing Yourself\n\nA notebook where the office jots down lasting facts about you — your role, your preferences, your recurring projects — and flips back to it on future visits.\n\n\n\nPersistent facts, stored across sessions and re-sent when relevant — so you don’t restate them each time."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_8_memory.html#the-difference-it-makes",
-    "href": "hermes-agent-course/slides/session_8_memory.html#the-difference-it-makes",
-    "title": "Memory",
-    "section": "The Difference It Makes",
-    "text": "The Difference It Makes\n\nThe agent stops feeling like a stranger every morning.\n\n\n\nThe difference between a temp and an assistant who’s worked with you for a year."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_8_memory.html#rules-you-set-vs.-facts-it-keeps",
-    "href": "hermes-agent-course/slides/session_8_memory.html#rules-you-set-vs.-facts-it-keeps",
-    "title": "Memory",
-    "section": "Rules You Set vs. Facts It Keeps",
-    "text": "Rules You Set vs. Facts It Keeps\n\n\n\n\nCLAUDE.md — the wall note\nRules you set on purpose.\nPer Project.\n\n\n\n\n\nMemory — the notebook\nFacts the agent accumulates about you.\nAcross Projects.\n\n\n\n\n\n\n\n\n\n\nRule of thumb\n\n\nA standing rule for one project → CLAUDE.md. A fact about you that’s true everywhere → Memory."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_8_memory.html#set-it-once",
-    "href": "hermes-agent-course/slides/session_8_memory.html#set-it-once",
-    "title": "Memory",
-    "section": "Set It Once",
-    "text": "Set It Once\nSeed Memory with your defaults so the agent always sounds like you, not a robot — across every Project:\n\nRole — who you are and what you do\nTone — how you write (concise, warm, direct…)\nFormat — your go-to structure (BLUF, bullets, headers)\n\n\n\n\n\n\n\n\nThe payoff\n\n\nA new Project still starts in your voice — no setup, no reminding."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_8_memory.html#hands-on",
-    "href": "hermes-agent-course/slides/session_8_memory.html#hands-on",
-    "title": "Memory",
-    "section": "Hands-On",
-    "text": "Hands-On\n\n\n\n\n\n\nSteps\n\n\n\nSeed Memory with your working style + a few standing facts.\nStart a fresh session.\nAsk for something — confirm it carries your style over with zero reminders.\n\n\n\n\n\n\nThat carry-over is the office re-sending the right pages (Session 2)."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_8_memory.html#keep-the-notebook-clean",
-    "href": "hermes-agent-course/slides/session_8_memory.html#keep-the-notebook-clean",
-    "title": "Memory",
-    "section": "Keep the Notebook Clean",
-    "text": "Keep the Notebook Clean\n\nMemory gets re-sent to the brain. So the Newspaper Test applies here too.\n\n\n\n\n\n\n\n\nNothing in the notebook…\n\n\n…that you wouldn’t want re-sent. Keep it sanitized — no secrets, no raw PII."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_8_memory.html#quiz",
-    "href": "hermes-agent-course/slides/session_8_memory.html#quiz",
-    "title": "Memory",
-    "section": "Quiz",
-    "text": "Quiz\n1. “I’m a Procurement Director; I always want bullet points.”\n\n\n\nMemory — a lasting fact about you, true across every Project.\n\n\n\n\n2. “In this Board project, always cite the FY24 plan.”\n\n\n\n\nCLAUDE.md — a standing rule for one Project.\n\n\n\n\n3. “Use 38,500 SAR for this one calculation.”\n\n\n\n\nNeither — a one-off detail. Just say it in the message."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_8_memory.html#key-takeaways",
-    "href": "hermes-agent-course/slides/session_8_memory.html#key-takeaways",
-    "title": "Memory",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nMemory = the notebook — persistent facts about you, across sessions\nCLAUDE.md vs Memory — rules you set (per project) vs facts it keeps (everywhere)\nDefault persona — set Role, Tone, Format once; sound like you everywhere\nIt’s still context — keep Memory sanitized; nothing you wouldn’t want re-sent\nOne-off details — belong in the message, not the notebook"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#yesterday-you-wrote-a-perfect-delegation",
-    "href": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#yesterday-you-wrote-a-perfect-delegation",
-    "title": "Projects & Standing Instructions",
-    "section": "Yesterday You Wrote a Perfect Delegation",
-    "text": "Yesterday You Wrote a Perfect Delegation\n\nYour RICE prompt (Session 3) nailed the tone, the format, the rules.\nIt worked great."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#next-week",
-    "href": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#next-week",
-    "title": "Projects & Standing Instructions",
-    "section": "Next Week…",
-    "text": "Next Week…\n\nNew task. You open a fresh session. The agent has amnesia (Session 2).\n\n\n\nIt doesn’t know your role\nIt doesn’t know your tone or format rules\nYou type the Role and Context all over again\n\n\n\n\nProductivity comes from reuse, not re-typing."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#the-office-per-project",
-    "href": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#the-office-per-project",
-    "title": "Projects & Standing Instructions",
-    "section": "The Office, Per Project",
-    "text": "The Office, Per Project\n\nA dedicated office (or folder) for one body of work, with its own filing cabinet of relevant documents — separate from your other work.\n\n\nThe app pulls that project’s pages onto the desk — and not everything else."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#why-it-matters",
-    "href": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#why-it-matters",
-    "title": "Projects & Standing Instructions",
-    "section": "Why It Matters",
-    "text": "Why It Matters\n\n\n\n\n“Q3 Board Report”\nIts own files & rules\n\n\n\n\n\n“Vendor Contracts”\nIts own files & rules\n\n\n\n\n\nEach gets the right background without you re-explaining — and they don’t bleed together."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#standing-instructions",
-    "href": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#standing-instructions",
-    "title": "Projects & Standing Instructions",
-    "section": "Standing Instructions",
-    "text": "Standing Instructions\n\nThe note pinned to the office wall that the brain reads at the start of every job: who you are, your tone, your rules, your formats.\n\n\n\n\n\n\n\n\nTwo filenames, one idea\n\n\nCLAUDE.md and AGENTS.md are the same idea. Other apps call it custom instructions or a system prompt."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#the-single-biggest-lever",
-    "href": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#the-single-biggest-lever",
-    "title": "Projects & Standing Instructions",
-    "section": "The Single Biggest Lever",
-    "text": "The Single Biggest Lever\n\nFix the tone, format, or a recurring rule here once — and it’s fixed for every future request.\n\n\n\nNo re-typing. No reminding. This is the highest-return five minutes in the course."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#create-a-project-pin-the-note",
-    "href": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#create-a-project-pin-the-note",
-    "title": "Projects & Standing Instructions",
-    "section": "Create a Project, Pin the Note",
-    "text": "Create a Project, Pin the Note\n\n\n\n\n\n\nHands-on\n\n\n\nCreate a Project for one backlog area.\nWrite its CLAUDE.md from the context pack you drafted in Session 2.\n\n\n\n\n\n\nProve it: ask for something with zero restated context — and watch it land in your voice."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#the-roi",
-    "href": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#the-roi",
-    "title": "Projects & Standing Instructions",
-    "section": "The ROI",
-    "text": "The ROI\n\n\n\nSetup\n~5 minutes, once\n\n\n\nPayoff\nMinutes saved on every future run\n\n\n\n\n\n\n\n\n\nLog it\n\n\nRecord the recurring saving against your backlog item in the Time Log."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#quiz-question-1",
-    "href": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#quiz-question-1",
-    "title": "Projects & Standing Instructions",
-    "section": "Quiz — Question 1",
-    "text": "Quiz — Question 1\nThe agent keeps using American spelling (“Color”) when you want UK (“Colour”). Where do you fix it?\n\n\n\n\n\nRe-correct it in every chat\n❌\n\n\n\nAdd the rule to CLAUDE.md\n✅ Fix once → fixed forever"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#quiz-question-2",
-    "href": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#quiz-question-2",
-    "title": "Projects & Standing Instructions",
-    "section": "Quiz — Question 2",
-    "text": "Quiz — Question 2\n“Use last quarter’s figures for this one report.” → CLAUDE.md or one-off message?\n\n\n\nOne-off message — it’s a single-task detail, not a standing rule.\n\n\n\n\n\nCLAUDE.md is for what’s true every time."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#key-takeaways",
-    "href": "hermes-agent-course/slides/session_6_projects_and_standing_instructions.html#key-takeaways",
-    "title": "Projects & Standing Instructions",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nGroundhog Day — a one-off delegation dies when the session closes\nProject = a dedicated office — the right files & rules, kept separate\nCLAUDE.md / AGENTS.md — the wall note read at the start of every job\nThe single biggest lever — fix it once here, fixed forever\nStanding rules → CLAUDE.md; single-task details → one-off message"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#why-context-matters",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#why-context-matters",
-    "title": "Grounding AI in Truth",
-    "section": "Why Context Matters",
-    "text": "Why Context Matters\n\nSession 2: The model has amnesia — it only knows what’s on the desk.\n\n\n\nSession 4: So put the right facts on the desk — and make it answer from those only.\n\n\n\n\n\n\n\n\n\nThe Goal\n\n\nWithout grounding in real sources, even the smartest brain will guess."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#the-wrong-way",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#the-wrong-way",
-    "title": "Grounding AI in Truth",
-    "section": "The Wrong Way",
-    "text": "The Wrong Way\n\nOpen AI → Type question → Hope for the best\n\n\n\n“Write a report on the Saudi Fintech market.”\n→ Generic, Wikipedia-style summary from 2021."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#the-right-way",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#the-right-way",
-    "title": "Grounding AI in Truth",
-    "section": "The Right Way",
-    "text": "The Right Way\n\nUpload source → Give instructions → Get grounded results\n\n\n\nUpload the SAMA Financial Sector Report → “Based only on this report, summarize…”\n→ Specific, citation-backed analysis an expert would trust."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#the-context-first-rule",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#the-context-first-rule",
-    "title": "Grounding AI in Truth",
-    "section": "The “Context First” Rule",
-    "text": "The “Context First” Rule\n\nDon’t ask — “What are the trends in tourism?”\nUpload — Ministry of Tourism - Hospitality Investor Report\nInstruct — “Based only on the uploaded report, summarize visitor adoption rates for Red Sea vs. AlUla.”\n\n\n\n\n\n\n\n\nThe Rule\n\n\nNo upload = no trust. Context comes before content."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#why-you-need-a-trust-layer",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#why-you-need-a-trust-layer",
-    "title": "Grounding AI in Truth",
-    "section": "Why You Need a Trust Layer",
-    "text": "Why You Need a Trust Layer\n\nHallucinations happen when AI doesn’t know the answer but tries to please you by guessing.\n\n\nThe Trust Layer forces AI to use your sources as its only truth."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#why-this-matters-for-saudi-professionals",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#why-this-matters-for-saudi-professionals",
-    "title": "Grounding AI in Truth",
-    "section": "Why This Matters for Saudi Professionals",
-    "text": "Why This Matters for Saudi Professionals\n\n\n\n\nGovernment\nYou cannot quote a “Vision 2030 target” that doesn’t exist.\n\n\n\n\n\nLegal\nCitations must point to actual articles in the Labor Law.\n\n\n\n\n\nCorporate\nMarket numbers must match Tadawul disclosures, not internet estimates."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#the-golden-rule",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#the-golden-rule",
-    "title": "Grounding AI in Truth",
-    "section": "The Golden Rule",
-    "text": "The Golden Rule\n\nIf it doesn’t have a citation, it didn’t happen."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#primary-hermes",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#primary-hermes",
-    "title": "Grounding AI in Truth",
-    "section": "Primary: Hermes",
-    "text": "Primary: Hermes\n\nBest for: Your everyday workflow — upload your files and have the agent answer only from them, with citations.\n\n\nSuperpower: It’s the same agent you’ll build on Day 2 — your sources, your rules, in one place. Drop in the document → “Based only on this, summarize and cite.”\n\n\n\n\n\n\n\n\nThe idea is portable\n\n\nThe general move — ground the answer in your sources — works in any tool. Below are the alternatives when you’re not in Hermes."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#alternative-a-notebooklm-google",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#alternative-a-notebooklm-google",
-    "title": "Grounding AI in Truth",
-    "section": "Alternative A: NotebookLM (Google)",
-    "text": "Alternative A: NotebookLM (Google)\n\nBest for: Deep reading of massive documents (50+ pages)\nSuperpower: Creates a “Source Guide” solely from your documents — no internet hallucinations."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#notebooklm-saudi-scenario",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#notebooklm-saudi-scenario",
-    "title": "Grounding AI in Truth",
-    "section": "NotebookLM — Saudi Scenario",
-    "text": "NotebookLM — Saudi Scenario\n\nBest for: Deep reading of massive documents (50+ pages)\n\nScenario: Petrochemicals sustainability benchmarking\n\nUpload 5 competitor sustainability reports (Dow, BASF, etc.)\nPrompt: “Compare Scope 3 Emission targets across all 5 companies vs. our draft policy. Create a gap table.”\nBonus: Generate an Audio Overview to listen on the drive to KAFD"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#alternative-b-deep-research",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#alternative-b-deep-research",
-    "title": "Grounding AI in Truth",
-    "section": "Alternative B: Deep Research",
-    "text": "Alternative B: Deep Research\n\nBest for: Real-time synthesis of the live web\nSuperpower: Reads 20–30 websites in seconds and footnotes every sentence.\n\n\nPerplexity / ChatGPT Pro / Google Gemini"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#deep-research-saudi-scenario",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#deep-research-saudi-scenario",
-    "title": "Grounding AI in Truth",
-    "section": "Deep Research — Saudi Scenario",
-    "text": "Deep Research — Saudi Scenario\n\nBest for: Real-time synthesis of the live web\n\nScenario: Tourism & Hospitality intelligence\n\n\nPrompt: “Find the top 5 complaints in tourist reviews for 5-star Riyadh hotels during Riyadh Season 2024. Group by category. Cite specific review sources.”\n\n\n\nResult: “30% cited ‘Valet Parking Delays’ (Source: Booking.com, Review #42)” — actionable intel, not fluff."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#choosing-the-right-tool",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#choosing-the-right-tool",
-    "title": "Grounding AI in Truth",
-    "section": "Choosing the Right Tool",
-    "text": "Choosing the Right Tool\n\n\n\n\n\n\n\n\nNeed\nTool\nWhy\n\n\n\n\nYour day-to-day, your files\nHermes\nOne agent, your sources + rules, cites\n\n\nAnalyze a 100-page PDF\nNotebookLM\nGrounded in your docs only\n\n\nLive market intelligence\nDeep Research\nReal-time web with citations"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#the-scenario",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#the-scenario",
-    "title": "Grounding AI in Truth",
-    "section": "The Scenario",
-    "text": "The Scenario\n\nIt’s 10:00 AM. Your Department Head sends a 40-page PDF — “Global Trends in Green Hydrogen 2025”.\nBoard meeting at 11:00 AM. They need a 1-page Executive Summary.\n\n\n\n\n\nOld way: 2+ hours\nRead → Highlight → Panic-type\n\n\n\nYour way: 10 minutes\nUpload → Instruct → Verify"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#step-1-upload",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#step-1-upload",
-    "title": "Grounding AI in Truth",
-    "section": "Step 1: Upload",
-    "text": "Step 1: Upload\n\nOpen Hermes (or NotebookLM / Claude / ChatGPT with file upload)\n\nDrag and drop the PDF.\n\n\n\n\n\n\n\nUse the IEA Global Hydrogen Review 2024\n\n\n100+ pages — perfect for demonstrating the power of grounded research."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#step-2-interrogate",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#step-2-interrogate",
-    "title": "Grounding AI in Truth",
-    "section": "Step 2: Interrogate",
-    "text": "Step 2: Interrogate\n\nGive the AI a precise, constrained prompt:\n\n\n“Act as a Strategy Consultant for a Saudi Energy company.\nBased strictly on this report, outline the 3 biggest opportunities and 3 biggest risks for our market.\nIf the information is not in the report, state ‘Not found in source.’ DO NOT hallucinate.\nInclude page references for every point.\nConclude with a ‘Recommended Stance’ for the board meeting.”"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#step-3-verify-deliver",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#step-3-verify-deliver",
-    "title": "Grounding AI in Truth",
-    "section": "Step 3: Verify & Deliver",
-    "text": "Step 3: Verify & Deliver\n\nPolish and share your output:\n\n\nVerify citations — click the page references, check the source text\nEdit for tone — match your company’s board style\nOptional flex — generate an Audio Overview and send the link"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#step-4-the-action-closing-the-loop",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#step-4-the-action-closing-the-loop",
-    "title": "Grounding AI in Truth",
-    "section": "Step 4: The Action (Closing the Loop)",
-    "text": "Step 4: The Action (Closing the Loop)\n\nNow that you have the facts, Delegation kicks in.\n\n\n“Based on this summary, draft a high-priority email to my Director, Dr. Ahmed.\n\nContext: He is heading into a ministry meeting.\nTask: Warn him about the ‘Euro-Deal’ risks we found.\nConstraint: Use ‘Saudi Executive’ tone. Bullet points only.”"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#now-your-backlog",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#now-your-backlog",
-    "title": "Grounding AI in Truth",
-    "section": "Now: Your Backlog",
-    "text": "Now: Your Backlog\n\n\n\n\n\n\nApply it to real work\n\n\nGot a “read a long document and summarize it” task on your Automation Backlog? Run this research workflow on a real (safe) document and log the time: 10 minutes vs. the hours it used to take."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#quiz-which-tool",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#quiz-which-tool",
-    "title": "Grounding AI in Truth",
-    "section": "Quiz — Which Tool?",
-    "text": "Quiz — Which Tool?\n1. You need to summarize a confidential internal HR investigation report.\n\n\nBe careful! Is it safe to upload to any AI tool? Apply the Newspaper Test first.\n\n\n\n2. You need the stock price of Aramco right now.\n\n\n\n\n\n\n\nDeep Research (Perplexity / Gemini)\n\n\nLive web access. NotebookLM can’t do this — it only reads your docs."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#key-takeaways",
-    "href": "hermes-agent-course/slides/session_4_grounding_research_workflow.html#key-takeaways",
-    "title": "Grounding AI in Truth",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nContext before content — never start with a blank prompt\nBuild a Trust Layer — upload your sources, constrain the AI\nNo citation = didn’t happen — demand page references\nRight tool, right job — Hermes first; NotebookLM / Deep Research as alternatives\n10 minutes, not 10 hours — upload, interrogate, verify"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#session-1-left-a-question",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#session-1-left-a-question",
-    "title": "How AI Actually Works",
-    "section": "Session 1 Left a Question",
-    "text": "Session 1 Left a Question\n\nAI predicts the next word. It doesn’t “know” facts.\n\n\n\nSo how does it ever feel like it remembers you?\n\n\n\n\n\n\n\n\n\nToday’s keystone\n\n\nEverything else in this course hangs off one insight: you’re really talking to two layers stacked together."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#two-layers-stacked",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#two-layers-stacked",
-    "title": "How AI Actually Works",
-    "section": "Two Layers, Stacked",
-    "text": "Two Layers, Stacked\n\n\n\n\nThe Model Layer\n“The brain in a jar”\n\n\n\n\n\nThe App Layer\n“The office around the brain”\n\n\n\n\n\nTell these apart and CLAUDE.md, Projects, Memory, and Skills stop being magic."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#a-brilliant-brain-with-amnesia",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#a-brilliant-brain-with-amnesia",
-    "title": "How AI Actually Works",
-    "section": "A Brilliant Brain — With Amnesia",
-    "text": "A Brilliant Brain — With Amnesia\n\nA brilliant graduate’s brain floating in a jar. It has read most of the internet, so it’s clever — but it has total amnesia.\n\n\n\nKnows nothing about you, your company, or what you said five minutes ago\nThe instant it finishes answering, it forgets everything\nAll it does is predict the next word from the text it was just handed"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#what-it-really-is",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#what-it-really-is",
-    "title": "How AI Actually Works",
-    "section": "What It Really Is",
-    "text": "What It Really Is\n\nThe model is stateless. It does not “remember” and it does not “look things up”.\n\n\n\n\n\n\n\n\nThe same prediction engine from Session 1\n\n\nWhen it doesn’t know, it predicts a plausible-sounding word anyway — that’s a hallucination.\n\n\n\n\n\n\nAnything you want it to “know”, you must hand it every single time."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#we-build-an-office",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#we-build-an-office",
-    "title": "How AI Actually Works",
-    "section": "We Build an Office",
-    "text": "We Build an Office\n\nThe brain in a jar can’t open files or remember your name. So we build an office around it: filing cabinets, a notebook, a standing to-do list.\n\n\nEvery time you ask for something, the office gathers the relevant pages and hands them to the brain along with your request — then files the answer back.\n\n\n\nThe brain still has amnesia. The office is what makes it feel like it remembers."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#what-it-really-is-1",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#what-it-really-is-1",
-    "title": "How AI Actually Works",
-    "section": "What It Really Is",
-    "text": "What It Really Is\n\nThe app (ChatGPT, Gemini, Claude, the Hermes agent…) is the software wrapped around the model.\n\n\nIt stores your information in files / a directory and re-sends the relevant parts on every request.\n\n\n\n\n\n\n\n\nThe features you’ve seen\n\n\n“Memory”, “Projects”, “Custom Instructions” are all just the app doing this gathering-and-resending for you."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#the-sentence-to-remember",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#the-sentence-to-remember",
-    "title": "How AI Actually Works",
-    "section": "The Sentence to Remember",
-    "text": "The Sentence to Remember\n\nThe model knows nothing and forgets everything; the app re-sends what matters on every request.\n\n\n\nEvery feature in this course is just the app getting smarter about what to re-send."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#context-the-desk",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#context-the-desk",
-    "title": "How AI Actually Works",
-    "section": "Context = the Desk",
-    "text": "Context = the Desk\n\nContext is everything the office stacks on the brain’s desk before it starts — your request plus the background pages it needs to do the job well.\n\n\nYour instructions, pasted documents, standing rules, relevant memory — the model’s entire world for that one request."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#the-big-reframe",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#the-big-reframe",
-    "title": "How AI Actually Works",
-    "section": "The Big Reframe",
-    "text": "The Big Reframe\n\nOutput quality is mostly a context problem, not a smartness problem.\n\n\n\n\n\n\n\n\nWhat this means for you\n\n\nA weak answer usually means weak context, not a weak model. “Give it context” is the whole skill."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#why-long-chats-forget",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#why-long-chats-forget",
-    "title": "How AI Actually Works",
-    "section": "Why Long Chats “Forget”",
-    "text": "Why Long Chats “Forget”\n\nThe brain’s desk has a fixed size. You can only fit so many pages on it at once. Pile on too much and older pages fall off the edge.\n\n\n\nThat’s the context window — and it’s why a long conversation starts losing the thread from the beginning."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#the-payoff-saved-beats-re-pasted",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#the-payoff-saved-beats-re-pasted",
-    "title": "How AI Actually Works",
-    "section": "The Payoff: Saved Beats Re-Pasted",
-    "text": "The Payoff: Saved Beats Re-Pasted\n\n\n\n\n\n\nThe rule\n\n\nSaved instructions beat re-pasting.\n\n\n\nThe app puts the important pages back on the desk for you every time, so they never fall off the edge.\n\n\nThis is the entire reason CLAUDE.md, Projects, and Memory exist — coming on Day 2."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#a-script-is-saved-repeatable-steps",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#a-script-is-saved-repeatable-steps",
-    "title": "How AI Actually Works",
-    "section": "A Script Is Saved, Repeatable Steps",
-    "text": "A Script Is Saved, Repeatable Steps\n\nSaved steps, written down once, so the job runs the same way every time — exact, down to the last row.\n\n\n\n\n\n\n\n\nNot a programmer thing\n\n\nA “script” is just “do these exact steps, in this order, every time.” For precise work, the agent writes and runs it as real code — you never write, or even see, code in this course. You describe what you want; you get the result."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#the-office-getting-smarter",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#the-office-getting-smarter",
-    "title": "How AI Actually Works",
-    "section": "The Office Getting Smarter",
-    "text": "The Office Getting Smarter\nOnce you see the two layers, the whole Day-2 toolkit is just the app deciding what to re-send:\n\nCLAUDE.md — standing instructions, re-sent every time\nProject — pulls the right folder’s pages onto the desk\nMemory — facts about you, re-sent when relevant\nSkill — a book in the library the app opens on command\n\n\n\nNone of it is magic. It’s all context management."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#write-the-pages-the-brain-needs",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#write-the-pages-the-brain-needs",
-    "title": "How AI Actually Works",
-    "section": "Write the Pages the Brain Needs",
-    "text": "Write the Pages the Brain Needs\nPick one task from your Automation Backlog (Session 1). Write its context pack — the standing facts the AI would need every single time to do it well:\n\nWho you are and your role\nThe tone and format you always want\nThe rules that never change (audience, do’s and don’ts)\nThe background facts the task always assumes\n\n\n\n\n\n\n\n\nKeep it\n\n\nOn Day 2 this becomes your first CLAUDE.md — paste it once, never re-type it again."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#quiz-question-1",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#quiz-question-1",
-    "title": "How AI Actually Works",
-    "section": "Quiz — Question 1",
-    "text": "Quiz — Question 1\nThe AI gets the tone wrong every single time — too casual for your board.\nWhich layer?\n\n\n\nThe App Layer — fix your standing instructions. It’s a re-send problem, not the brain."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#quiz-question-2",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#quiz-question-2",
-    "title": "How AI Actually Works",
-    "section": "Quiz — Question 2",
-    "text": "Quiz — Question 2\nThe AI cites “Article 214” of a law — and the article doesn’t exist.\nWhich layer?\n\n\n\nThe Model Layer — the brain guessed. Ground it in a real source and verify (Session 4)."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_2_two_layers.html#key-takeaways",
-    "href": "hermes-agent-course/slides/session_2_two_layers.html#key-takeaways",
-    "title": "How AI Actually Works",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nTwo layers — the model (brain) and the app (office) stacked together\nThe brain has amnesia — stateless, predicts the next word, forgets everything\nThe office re-sends context — that’s what makes AI feel like it remembers\nQuality is a context problem — give it the right pages, get the right answer\nThe desk is finite — saved instructions beat re-pasting\nDay 2 = the office getting smarter about what to re-send"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_12_roi_finale.html#the-stack-end-to-end",
-    "href": "hermes-agent-course/slides/session_12_roi_finale.html#the-stack-end-to-end",
-    "title": "The ROI Finale",
-    "section": "The Stack, End to End",
-    "text": "The Stack, End to End\n\n\nResearch → ground answers in your sources (S4)\nDelegate → RICE + advanced moves (S3)\nProject + CLAUDE.md → standing instructions (S6)\nSkills → books in your library (S7)\nMemory → the agent knows you (S8)\nCron + Connectors → it acts on its own (S9)\n\n\n\n\nThe full pipeline you now operate — all of it just context management (S2)."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_12_roi_finale.html#package-your-best-work",
-    "href": "hermes-agent-course/slides/session_12_roi_finale.html#package-your-best-work",
-    "title": "The ROI Finale",
-    "section": "Package Your Best Work",
-    "text": "Package Your Best Work\n\nBundle your best Skills so a teammate could run them tomorrow — your own library of books.\n\n\n\n\n\n\n\n\nThe real habit\n\n\nReach for the library at each bottleneck — instead of solving the same task from scratch, again."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_12_roi_finale.html#total-your-time-log",
-    "href": "hermes-agent-course/slides/session_12_roi_finale.html#total-your-time-log",
-    "title": "The ROI Finale",
-    "section": "Total Your Time Log",
-    "text": "Total Your Time Log\n\nTask Frequency × Duration × % AI Efficiency = hours per week won back\n\n\n\nExample: A report you do 5×/week, 40 min each, now 75% faster → 5 × 40 × 0.75 = 150 minutes = 2.5 hours/week won back — from one workflow."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_12_roi_finale.html#add-up-every-backlog-item",
-    "href": "hermes-agent-course/slides/session_12_roi_finale.html#add-up-every-backlog-item",
-    "title": "The ROI Finale",
-    "section": "Add Up Every Backlog Item",
-    "text": "Add Up Every Backlog Item\n\nGo down your Automation Backlog row by row\nFor each automated task, run the formula\nSum the weekly hours across all of them\n\n\n\nThat total is your return — in hours, every single week."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_12_roi_finale.html#the-one-process-ill-never-do-manually-again",
-    "href": "hermes-agent-course/slides/session_12_roi_finale.html#the-one-process-ill-never-do-manually-again",
-    "title": "The ROI Finale",
-    "section": "“The One Process I’ll Never Do Manually Again”",
-    "text": "“The One Process I’ll Never Do Manually Again”\n\n\n\n\n\n\nYour 3-minute presentation\n\n\n\nThe bottleneck you picked\nThe workflow you built (which parts of the stack)\nThe hours/week it wins back\n\n\n\n\n\n\nI like / I wish / I wonder — group feedback after each."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_12_roi_finale.html#quiz",
-    "href": "hermes-agent-course/slides/session_12_roi_finale.html#quiz",
-    "title": "The ROI Finale",
-    "section": "Quiz",
-    "text": "Quiz\n1. The AI gets your tone wrong every time. Which layer?\n\n\n\nApp layer — fix the standing instructions.\n\n\n\n\n2. A standing rule for one project lives in…?\n\n\n\n\nCLAUDE.md — the wall note.\n\n\n\n\n3. A new scheduled job should start in which mode?\n\n\n\n\nDraft / notify-me — mind the blast radius."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_12_roi_finale.html#key-takeaways",
-    "href": "hermes-agent-course/slides/session_12_roi_finale.html#key-takeaways",
-    "title": "The ROI Finale",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nOne mental model — two layers; everything is context management\nOne coherent stack — Research → Delegate → Project → Skills → Memory → Cron\nYour library — packaged Skills you reach for at every bottleneck\nYour ROI — Frequency × Duration × % Efficiency = hours won back per week\nThe habit — never do the repeatable work manually again"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_10_notes_to_narrative.html#the-problem",
-    "href": "hermes-agent-course/slides/session_10_notes_to_narrative.html#the-problem",
-    "title": "From Notes to Narrative",
-    "section": "The Problem",
-    "text": "The Problem\n\nIt’s not the design. It’s the story.\n\n\n\nToo much text\nNo clear argument\n“Frankenstein” decks (pasted from 5 different files)"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_10_notes_to_narrative.html#the-amazon-method",
-    "href": "hermes-agent-course/slides/session_10_notes_to_narrative.html#the-amazon-method",
-    "title": "From Notes to Narrative",
-    "section": "The Amazon Method",
-    "text": "The Amazon Method\n\nAmazon banned PowerPoint in meetings.\n\n\n\nNarrative First. Design Second.\n\n\n\nWriting the memo forces you to think. Slides let you hide."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_10_notes_to_narrative.html#the-move",
-    "href": "hermes-agent-course/slides/session_10_notes_to_narrative.html#the-move",
-    "title": "From Notes to Narrative",
-    "section": "The Move",
-    "text": "The Move\n\nAsk the AI to “think step by step” or “show your work” before giving the answer.\n\n\n\n\n\n\n\n\nWhy?\n\n\nIt drastically reduces hallucinations and improves logic. (Session 3’s first advanced move — now applied to a story.)"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_10_notes_to_narrative.html#the-narrative-workflow",
-    "href": "hermes-agent-course/slides/session_10_notes_to_narrative.html#the-narrative-workflow",
-    "title": "From Notes to Narrative",
-    "section": "The Narrative Workflow",
-    "text": "The Narrative Workflow\n\n1. The Brain Dump\n\nPaste raw context (notes, goals).\n\n\n2. The Narrative (The Pitch)\n\nAI writes a 1-page memo.\n\n\n\n3. The Roast (The Stress Test)\n\nAI acts as a skeptical CFO and finds holes in the logic.\n\n\n\n4. The Blueprint\n\nConvert the refined memo into a slide outline."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_10_notes_to_narrative.html#step-1-the-narrative-prompt",
-    "href": "hermes-agent-course/slides/session_10_notes_to_narrative.html#step-1-the-narrative-prompt",
-    "title": "From Notes to Narrative",
-    "section": "Step 1: The Narrative Prompt",
-    "text": "Step 1: The Narrative Prompt\n\nRole: You represent the Project Lead.\nInstructions: Write a 1-page “Amazon Style” narrative memo pitching [Project X].\nContext: - Goal: Get $50k budget approved - Problem: Current system is too slow - Solution: Implement Tool Z\nConstraint: Be concise, brutal, and data-driven. No fluff."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_10_notes_to_narrative.html#step-2-the-roast",
-    "href": "hermes-agent-course/slides/session_10_notes_to_narrative.html#step-2-the-roast",
-    "title": "From Notes to Narrative",
-    "section": "Step 2: The Roast",
-    "text": "Step 2: The Roast\n\nCrucial Step\n\n\n\nRole: You are the skeptical CFO.\nInstructions: Roast this memo. Find the holes in the logic. Where is the ROI unclear? What risks are missing? Be harsh."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_10_notes_to_narrative.html#step-3-the-blueprint",
-    "href": "hermes-agent-course/slides/session_10_notes_to_narrative.html#step-3-the-blueprint",
-    "title": "From Notes to Narrative",
-    "section": "Step 3: The Blueprint",
-    "text": "Step 3: The Blueprint\nOnce the logic is solid, turn text into visuals.\n\nTask: Convert the narrative into a 5-slide outline.\nFormat: - Slide Title: (action-oriented) - The Hook: (one-sentence summary) - Visual: (describe the EXACT chart — e.g. “Bar chart showing 20% growth”, NOT “a picture of growth”) - Speaker Notes: (bullet points)"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_10_notes_to_narrative.html#two-routes",
-    "href": "hermes-agent-course/slides/session_10_notes_to_narrative.html#two-routes",
-    "title": "From Notes to Narrative",
-    "section": "Two Routes",
-    "text": "Two Routes\n\n\n\n\nMethod A — One-Click\nGamma: paste the outline → generate a full deck.\nFast, modern, great for internal use.\n\n\n\n\n\nMethod B — Corporate-Safe\nWord / Markdown → PowerPoint: outline into your official template.\nZero manual formatting, on-brand.\n\n\n\n\n\n\n\n\n\n\nSame blueprint, either engine\n\n\nYour “Visual” descriptors from Step 3 are the fuel — they tell the engine exactly what each slide shows."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_10_notes_to_narrative.html#your-mission",
-    "href": "hermes-agent-course/slides/session_10_notes_to_narrative.html#your-mission",
-    "title": "From Notes to Narrative",
-    "section": "Your Mission",
-    "text": "Your Mission\n\nFrom raw crisis notes, produce a roasted narrative and a 5-slide on-brand deck — before the meeting starts.\n\n\n\nDraft — AI writes the 1-page argument\nRoast — AI tears it apart; you fix the logic\nBlueprint — 5-slide outline with visual descriptors\nDesign Engine — outline → finished deck (Gamma or template)\n\n\n\n\n\n\n\n\n\nLog it\n\n\nRecord the time vs. building the deck by hand. Have a real pitch you owe someone? Run that."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_10_notes_to_narrative.html#quiz",
-    "href": "hermes-agent-course/slides/session_10_notes_to_narrative.html#quiz",
-    "title": "From Notes to Narrative",
-    "section": "Quiz",
-    "text": "Quiz\nQuestion: Why do we write the narrative before we open the design engine?\n\n\n1. Because AI likes memos.\n\n\n\n\n2. Because the story is the hard part — and a roasted argument makes every later slide stronger.\n\n\n\n\n\n3. Design is cheap once the logic is solid — the engine just dresses a sound argument."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_10_notes_to_narrative.html#key-takeaways",
-    "href": "hermes-agent-course/slides/session_10_notes_to_narrative.html#key-takeaways",
-    "title": "From Notes to Narrative",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nStory before slides — never open the design tool first\nThink step by step — use AI to think, not just write\nThe Roast — let the AI be your harshest critic\nThe Blueprint — visual descriptors are the fuel for the engine\nThe Design Engine — Gamma (one-click) or template (corporate-safe) finishes the deck"
-  },
-  {
-    "objectID": "hermes-agent-course/index.html",
-    "href": "hermes-agent-course/index.html",
-    "title": "Hermes Agent Course",
-    "section": "",
-    "text": "A 3-day, 12-session instructor-led course. The hands-on tool is the Hermes desktop agent (Projects, CLAUDE.md/AGENTS.md, Skills, Memory, Cron, Connectors); concepts stay portable to ChatGPT, Gemini, Claude, and Coworker."
-  },
-  {
-    "objectID": "hermes-agent-course/index.html#slides-12-session-track",
-    "href": "hermes-agent-course/index.html#slides-12-session-track",
-    "title": "Hermes Agent Course",
-    "section": "Slides — 12-Session Track",
-    "text": "Slides — 12-Session Track\n\n\n\n#\nSession\nFile\n\n\n\n\nDay 1 — Foundations\n\n\n\n\n1\nAI-Native Mindset & Automation Backlog\nsession_1_mindset_and_automation_backlog.qmd\n\n\n2\nHow AI Works: The Two Layers\nsession_2_two_layers.qmd\n\n\n3\nDelegating with RICE + Advanced Moves\nsession_3_delegating_with_rice.qmd\n\n\n4\nGrounding AI in Truth / Research Workflow\nsession_4_grounding_research_workflow.qmd\n\n\nDay 2 — Meet Your Agent\n\n\n\n\n5\nMeet Hermes: Setup & First Agent Run\nsession_5_meet_hermes.qmd\n\n\n6\nProjects & Standing Instructions\nsession_6_projects_and_standing_instructions.qmd\n\n\n7\nSkills: Reusable Workflow Library\nsession_7_skills.qmd\n\n\n8\nMemory: Teaching the Agent to Remember\nsession_8_memory.qmd\n\n\nDay 3 — Agents That Act\n\n\n\n\n9\nCron & Connectors\nsession_9_cron_and_connectors.qmd\n\n\n10\nFrom Notes to Narrative (Amazon Method)\nsession_10_notes_to_narrative.qmd\n\n\n11\nInterviewing Your Data\nsession_11_interviewing_your_data.qmd\n\n\n12\nROI Finale & Workflow Library\nsession_12_roi_finale.qmd"
-  },
-  {
-    "objectID": "hermes-agent-course/index.html#reference-data",
-    "href": "hermes-agent-course/index.html#reference-data",
-    "title": "Hermes Agent Course",
-    "section": "Reference & Data",
-    "text": "Reference & Data\n\nPlain-language concept definitions: reference/mental_model_and_agent_concepts.md\nCourse outline: outline.md\nHands-on datasets: data/"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_11_interviewing_your_data.html#the-old-way-vs.-the-new-way",
-    "href": "hermes-agent-course/slides/session_11_interviewing_your_data.html#the-old-way-vs.-the-new-way",
-    "title": "Interviewing Your Data",
-    "section": "The Old Way vs. The New Way",
-    "text": "The Old Way vs. The New Way\n\n\n\n\nOld way\nVLOOKUP, pivot tables, formulas, hours of wrangling.\n\n\n\n\n\nNew way\nUpload the file. Ask in plain language.\n\n\n\n\n\nYou hand the agent the spreadsheet (the desk), then interview it."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_11_interviewing_your_data.html#questions-not-formulas",
-    "href": "hermes-agent-course/slides/session_11_interviewing_your_data.html#questions-not-formulas",
-    "title": "Interviewing Your Data",
-    "section": "Questions, Not Formulas",
-    "text": "Questions, Not Formulas\nUpload expenses_export.csv and ask:\n\n“What is our fastest-growing expense category?”\n“Summarize the spending trends for Q3 vs. Q2.”\n“Which vendor did we spend the most with — and on what?”\n“Flag any expense that looks like a duplicate or an outlier.”\n\n\n\n\n\n\n\n\nThe skill is the question\n\n\nA precise question gets a precise answer. Vague in, vague out."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_11_interviewing_your_data.html#read-a-receipt-reconcile-it",
-    "href": "hermes-agent-course/slides/session_11_interviewing_your_data.html#read-a-receipt-reconcile-it",
-    "title": "Interviewing Your Data",
-    "section": "Read a Receipt, Reconcile It",
-    "text": "Read a Receipt, Reconcile It\n\nHand the agent a receipt image → it pulls out vendor, date, amount, VAT (OCR) → then reconciles it against the expense export.\n\n\n\n“Does this receipt match a row in the file? If not, add it.”\n\n\n\n\n\n\n\n\n\nVerify the numbers\n\n\nA great moment for double-check (Session 3) — totals are expensive to get wrong."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_11_interviewing_your_data.html#plan-on-the-enriched-data",
-    "href": "hermes-agent-course/slides/session_11_interviewing_your_data.html#plan-on-the-enriched-data",
-    "title": "Interviewing Your Data",
-    "section": "Plan on the Enriched Data",
-    "text": "Plan on the Enriched Data\n\n“If we cut Travel by 20%, what’s the new monthly total?”\n“What’s the VAT impact if Meals doubles next quarter?”\n“Which two categories would I trim to save 10,000 SAR?”\n\n\n\n\n\n\n\n\nNewspaper Test still applies\n\n\nReal financials? Sanitize or use the sandbox dataset before uploading."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_11_interviewing_your_data.html#run-a-real-interview",
-    "href": "hermes-agent-course/slides/session_11_interviewing_your_data.html#run-a-real-interview",
-    "title": "Interviewing Your Data",
-    "section": "Run a Real Interview",
-    "text": "Run a Real Interview\n\n\n\n\n\n\nHands-on\n\n\nOpen hermes-agent-course/data/expenses_export.csv in the agent and run an interview: ask 3 questions, extract one receipt, and model one “what-if”.\n\n\n\n\n\nLog the time vs. building the formulas by hand."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_11_interviewing_your_data.html#quiz",
-    "href": "hermes-agent-course/slides/session_11_interviewing_your_data.html#quiz",
-    "title": "Interviewing Your Data",
-    "section": "Quiz",
-    "text": "Quiz\nWhich question will get the most useful answer?\n\n\n\n\n\nA) “Tell me about the expenses.”\n❌ Too vague — you’ll get a shrug.\n\n\n\n\n\nB) “Top 3 categories by total spend, with the % each is of the month.”\n✅ Specific metric, grouping, and format."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_11_interviewing_your_data.html#key-takeaways",
-    "href": "hermes-agent-course/slides/session_11_interviewing_your_data.html#key-takeaways",
-    "title": "Interviewing Your Data",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nInterview, don’t formula — upload the file and ask in plain language\nPrecise questions win — name the metric, the grouping, the format\nExtract & enrich — OCR a receipt, then reconcile against the data\n“What if” on the spot — model budget changes conversationally\nVerify & sanitize — double-check the numbers; mind the Newspaper Test"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#day-1-foundations-think-like-an-ai-native",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#day-1-foundations-think-like-an-ai-native",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Day 1 — Foundations: Think Like an AI-Native",
-    "text": "Day 1 — Foundations: Think Like an AI-Native\n\nSession 1: The AI-Native Mindset & Your Automation Backlog\nSession 2: How AI Actually Works — The Two Layers\nSession 3: Delegating to AI — The RICE Pattern + Advanced Moves\nSession 4: Grounding AI in Truth — The Research Workflow"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#day-2-meet-your-agent-build-your-hermes-operations-team",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#day-2-meet-your-agent-build-your-hermes-operations-team",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Day 2 — Meet Your Agent: Build Your Hermes Operations Team",
-    "text": "Day 2 — Meet Your Agent: Build Your Hermes Operations Team\n\nSession 5: Meet Hermes — Setup & Your First Agent Run\nSession 6: Projects & Standing Instructions — CLAUDE.md / AGENTS.md\nSession 7: Skills — Your Reusable Workflow Library\nSession 8: Memory — Teaching the Agent to Remember You"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#day-3-agents-that-act-executive-output-roi",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#day-3-agents-that-act-executive-output-roi",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Day 3 — Agents That Act: Executive Output & ROI",
-    "text": "Day 3 — Agents That Act: Executive Output & ROI\n\nSession 9: Cron & Connectors — The Agent That Acts on Its Own\nSession 10: From Notes to Narrative — The Amazon Method + Design Engine\nSession 11: Interviewing Your Data\nSession 12: The ROI Finale + Your Workflow Library"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#how-most-people-use-ai",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#how-most-people-use-ai",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "How Most People Use AI",
-    "text": "How Most People Use AI\n\nAsk a question → Get an answer\n\n\nThis is the Search Mindset — and it wastes 90% of AI’s value."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#the-partner-mindset",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#the-partner-mindset",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "The Partner Mindset",
-    "text": "The Partner Mindset\n\nGive context → Iterate together → Get real results\n\n\n\nTreat the AI like a smart intern who needs context, instruction, and feedback."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#example-client-delay-email",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#example-client-delay-email",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Example: Client Delay Email",
-    "text": "Example: Client Delay Email\n\nSearch Mindset:\n“Write an email to a client about a delay.”\n\n\nResult: Generic, robotic, sounds fake."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#example-client-delay-email-1",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#example-client-delay-email-1",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Example: Client Delay Email",
-    "text": "Example: Client Delay Email\n\nPartner Mindset:\n“I need to email Client X about a 3-day delay — we’re waiting for final internal approval. Tone: respectful but confident. Here is the project context…”\n\n\nResult: Tailored, professional — sounds like you."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#trap-1-generally-treating-it-like-search",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#trap-1-generally-treating-it-like-search",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Trap 1: Generally treating it like Search",
-    "text": "Trap 1: Generally treating it like Search\n\nThe Input Mistake\nAsking short questions like a Google search.\n\n\n\n\n\n\n\n\nThe Fix: Better Inputs\n\n\nShift from Querying to Conversing. Give context."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#trap-2-treating-it-like-a-person",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#trap-2-treating-it-like-a-person",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Trap 2: Treating It Like a Person",
-    "text": "Trap 2: Treating It Like a Person\n\nThe Interaction Mistake\n\n“Please,” “Thank you,” “I’m sorry to bother you…”\n\n\n\n\n\n\n\n\n\nThe Fix: Direct Commands\n\n\nBe direct. Clear commands &gt; polite requests. Validate output, don’t compliment it."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#trap-3-over-trusting",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#trap-3-over-trusting",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Trap 3: Over-trusting",
-    "text": "Trap 3: Over-trusting\n\nThe Output Mistake\nAssuming AI contains facts like a database.\n\n\n\nReality: AI is a Prediction Engine — it guesses the next word. It does not “know” facts."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#how-it-actually-works",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#how-it-actually-works",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "How It Actually Works",
-    "text": "How It Actually Works\n\nThe AI predicts the next word based on probability.\n\n“The capital of Saudi Arabia is…”\n\n\n\nRiyadh (99.8%) ✅\n\n\n\n\nJeddah (0.1%)\n\n\n\n\nParis (0.00001%)\n\n\n\n\nIt doesn’t “know” geography. It knows that “Riyadh” almost always follows that sentence.\n\n\n\n\n\n\n\n\nHold that thought\n\n\nWhy it predicts instead of knows — and what that means for everything you build — is the keystone of Session 2."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#when-it-guesses-wrong-hallucinations",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#when-it-guesses-wrong-hallucinations",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "When It Guesses Wrong (Hallucinations)",
-    "text": "When It Guesses Wrong (Hallucinations)\n\nWhat happens when it doesn’t know the answer? It guesses.\n\n“According to Article 214 of the new Saudi Investment Law: …”\n\n\n\nThe (45%)\nForeign (30%)\nCapital (15%)\n\n\n\n\n\nThe AI constructs a sentence that sounds legal, but it has never read the actual document."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#trust-but-verify",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#trust-but-verify",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Trust but Verify",
-    "text": "Trust but Verify\n\n\n\n\n\n\nThe Rule\n\n\nAI is a drafting tool, not a fact-checking tool.\n\n\n\n\n\n\nTrust AI for:\n\nLogic & structure\nDrafting & writing\nBrainstorming\n\n\n\n\nVerify AI on:\n\nFacts & dates\nMath & calculations\nLegal citations"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#the-bottleneck-test",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#the-bottleneck-test",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "The Bottleneck Test",
-    "text": "The Bottleneck Test\nHand a task to AI when it is:\n\n\n\n✅ Good fit\n\nRepetitive & mundane — routine emails, status updates\nData-intensive — summarizing, finding patterns\nDrafting & brainstorming — beating the blank page\nPredictable — clear, logical steps\n\n\n\n\n⚠️ Keep a human in the loop\n\nHigh-stakes — ethics, safety, big consequences\nDeeply human — empathy, relationships\nConfidential — sensitive or proprietary data\nOriginality is the point — a truly unique take"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#the-newspaper-test",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#the-newspaper-test",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "The Newspaper Test",
-    "text": "The Newspaper Test\n\nBefore pasting anything into AI, ask:\n\n\n\n“If this appeared on the front page of the New York Times, would I be fired or sued?”\n\n\n\n\nYes or Maybe → DO NOT PASTE IT."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#high-risk-data",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#high-risk-data",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "High-Risk Data",
-    "text": "High-Risk Data\n\n\n\n\n\n\nNever share with AI\n\n\n\n\n\n\n\nPII — Names, National IDs (Iqama/Saudi ID), phone numbers\nFinancial secrets — Unreleased earnings, bank accounts, salary data\nTrade secrets — Proprietary code, formulas, unreleased strategy docs"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#sanitization-3-steps",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#sanitization-3-steps",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Sanitization: 3 Steps",
-    "text": "Sanitization: 3 Steps\nRemove the specifics, keep the structure.\n\nAnonymize — “Mohammed Al-Salem” → “[Employee A]”\nGeneralize — “5,000,000 SAR” → “5M+ SAR”\nStrip identifiers — Remove company names, project codes, addresses"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#before-unsafe",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#before-unsafe",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Before: Unsafe",
-    "text": "Before: Unsafe\n\n“Layla Al-Harbi missed her Q3 sales target of 1.5M SAR by 15%. She blamed the delay in the Riyadh Season Campaign launch.”\n\n\nNames, amounts, projects — all exposed."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#after-sanitized",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#after-sanitized",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "After: Sanitized",
-    "text": "After: Sanitized\n\n“[Employee] missed their quarterly sales target by 15%. They cited delays in [Key Project] launch as the primary reason.”\n\n\nNow you can safely ask: “Draft constructive feedback for [Employee] based on this…”"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#list-the-work-that-eats-your-week",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#list-the-work-that-eats-your-week",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "List the Work That Eats Your Week",
-    "text": "List the Work That Eats Your Week\n\nWrite down 3–5 recurring tasks that pass the Bottleneck Test.\n\n\nFor each, note how often (per week) and minutes each time\nThat’s your Time Log — current cost, before AI\nEvery build session, you’ll pull one task from this list and automate it\nIn Session 12 we total the minutes saved → hours won back per week\n\n\n\n\n\n\n\n\nWorksheet\n\n\nUse prompts/automation_backlog_and_time_log.md. Keep it open all course."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#quiz-round-1",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#quiz-round-1",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Quiz — Round 1",
-    "text": "Quiz — Round 1\n1. “Summarize the key risks in these meeting notes: [internal minutes about unannounced merger targets]”\n\n\n\n\n\n\n\nRISKY — Material Non-Public Information (MNPI)\n\n\n\n\n\n\n\n\n2. “I have a budget of 375,000 SAR for a National Day campaign. Suggest a media mix.”\n\n\n\n\n\n\n\nSAFE — General numbers, no sensitive context"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#quiz-round-2",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#quiz-round-2",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Quiz — Round 2",
-    "text": "Quiz — Round 2\n3. “Summarize this PDF: [Q3 Investor Presentation from STC — publicly released]”\n\n\n\n\n\n\n\nSAFE — Publicly available information\n\n\n\n\n\n\n\n\n4. “Draft a termination letter for Employee #4421 who missed targets. No name used.”\n\n\n\n\n\n\n\nSAFE — PII removed, only behavior described"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#quiz-round-3",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#quiz-round-3",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Quiz — Round 3",
-    "text": "Quiz — Round 3\n5. “Analyze 5,000 customer records (Names, IBANs, Transaction IDs) to find spending patterns.”\n\n\n\n\n\n\n\nRISKY — Massive PII leak. Never upload raw customer databases."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#key-takeaways",
-    "href": "hermes-agent-course/slides/session_1_mindset_and_automation_backlog.html#key-takeaways",
-    "title": "The AI-Native Mindset & Your Automation Backlog",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nPartner, not search engine — give context, iterate\nAvoid the 3 traps — Search, Person, Over-Trust\nAutomate the right work — repetitive, data-heavy, drafting, predictable\nTrust but verify — draft with AI, fact-check yourself\nNewspaper Test & sanitize — if in doubt, don’t paste it\nYour backlog is the target — we automate it over the next three days"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#from-mental-model-to-action",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#from-mental-model-to-action",
-    "title": "Delegating to AI",
-    "section": "From Mental Model to Action",
-    "text": "From Mental Model to Action\n\nSession 2: How AI actually works — the two layers\n\n\n\nSession 3: Putting the right context on the desk — on purpose"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#the-paradigm-shift",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#the-paradigm-shift",
-    "title": "Delegating to AI",
-    "section": "The Paradigm Shift",
-    "text": "The Paradigm Shift\n\nStop Chatting. Start Delegating.\n\n\n\nYou don’t need a “chat bot”. You need a Direct Report.\n\n\n\n\nDon’t Ask: “Write an email about the meeting.”\nDelegate: “Act as a Project Manager. Draft a recap email using these notes. Highlight action items.”"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#the-framework",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#the-framework",
-    "title": "Delegating to AI",
-    "section": "The Framework",
-    "text": "The Framework\n\n\nR — Role: Who is the AI?\n\n\nI — Instructions: What exactly should it do?\n\n\nC — Context: What does it know?\n\n\nE — Examples: Show it what “good” looks like."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#r-role",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#r-role",
-    "title": "Delegating to AI",
-    "section": "R — Role",
-    "text": "R — Role\n\nWho should the AI be?\n\n\n\nA Senior Consultant\nA Python Expert\nAn Angry Customer\nA Legal Compliance Officer\n\n\n\nThe role shapes the AI’s vocabulary, perspective, and priorities."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#i-instructions",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#i-instructions",
-    "title": "Delegating to AI",
-    "section": "I — Instructions",
-    "text": "I — Instructions\n\nWhat exactly should it do?\n\n\nBe specific — bundle the task with its format, length, and tone:\n\n\n“Draft a 200-word executive summary email to the Director. Professional but warm. Use bold headers.”\n\n\n\n\n\n\n\n\n\n\nPro move\n\n\nAdd: “If anything is unclear, ask me before you write.”"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#c-context",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#c-context",
-    "title": "Delegating to AI",
-    "section": "C — Context",
-    "text": "C — Context\n\nWhat does it know?\n\n\nThe “brain dump” — paste your notes, upload your docs, give it the raw material.\n\n\n\n\n\n\n\n\nThis is the same context from Session 2\n\n\nYou are loading the pages onto the brain’s desk. No context = the brain guesses."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#e-examples",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#e-examples",
-    "title": "Delegating to AI",
-    "section": "E — Examples",
-    "text": "E — Examples\n\nShow it what “good” looks like.\n\n\nDon’t just describe the output you want — paste one sample. The AI copies its structure, tone, and length.\n\n\n“Match this style: ‘Hi [Name], great speaking Tuesday. Here’s where we landed: …’”\n\n\n\n\n\n\n\n\n\n\nOne example beats a paragraph\n\n\nA single sample teaches more than ten lines of rules."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#the-formula",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#the-formula",
-    "title": "Delegating to AI",
-    "section": "The Formula",
-    "text": "The Formula\n\n“Act as a [Role]. Your job is to [Instructions]. Here is the [Context]. Match this [Example].”"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#the-story",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#the-story",
-    "title": "Delegating to AI",
-    "section": "The Story",
-    "text": "The Story\n\nI nearly lost an $18,000 deal because of seven words in a notebook:\n\n\n\n“Follow up on the pricing stuff soon.”\n\n\n\n3 days later — the client asked if I had forgotten her."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#the-messy-notes",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#the-messy-notes",
-    "title": "Delegating to AI",
-    "section": "The Messy Notes",
-    "text": "The Messy Notes\n\nThis is what I actually had:\n\n\n“Meeting with Lisa from Acme Retail. Tuesday. She’s worried about lead times. Wants to know if we can ship by Q3. Pricing: she needs a 10% discount if they buy bulk. Mentioned her kid’s graduation is next week (send a card?). Action: send updated proposal by Friday.”"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#the-rice-prompt",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#the-rice-prompt",
-    "title": "Delegating to AI",
-    "section": "The RICE Prompt",
-    "text": "The RICE Prompt\n\nRole: Act as my Senior Client Relationship Manager.\nInstructions: Draft a warm-but-professional follow-up email summarizing our conversation and confirming next steps. Use headers — Summary, Decisions, Next Steps. Highlight deadlines in bold. If details are missing, add a “Clarifications Needed” section.\nContext: I just had a call with a VIP client, Lisa. We are negotiating a large contract. Here are my raw notes: [paste notes]\nExample: Match this opening style — “Hi Lisa, great speaking with you on Tuesday. Here’s where we landed: …”"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#what-made-it-work",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#what-made-it-work",
-    "title": "Delegating to AI",
-    "section": "What Made It Work",
-    "text": "What Made It Work\n\nRole → knew to write as a relationship manager, not a robot\nInstructions → specific deliverable + format, tone, and the “Clarifications” rule\nContext → messy notes were enough — AI extracted the structure\nExample → matched the warm opening, so it caught the human touch (graduation card)"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#fast-vs.-right",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#fast-vs.-right",
-    "title": "Delegating to AI",
-    "section": "Fast vs. Right",
-    "text": "Fast vs. Right\n\nBy default, AI answers fast and shallow — and fast is sloppy on hard problems.\n\n\n\n\n\n\n\n\nThe Rule\n\n\nComplex tasks need the slow answer. These 3 moves force the AI to slow down — or, use a thinking model that does it automatically."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#move-1-think-step-by-step",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#move-1-think-step-by-step",
-    "title": "Delegating to AI",
-    "section": "Move 1 — Think Step by Step",
-    "text": "Move 1 — Think Step by Step\n\nAdd “think step by step” — make the AI show its reasoning before the answer.\n\n\nIndustry term: Chain of Thought (CoT). Best for logic, math, scheduling.\n\n\n\n“I have a 2-hour meeting from 11:00, with a 30-min lunch at 12:00. When does it end? Think step by step.” → It blocks each segment and lands on 1:30 PM, not 1:00.\n\n\n\n\n\n\n\n\n\n2025 update — thinking models do this automatically\n\n\nThinking models (o3, Gemini 2.0 Flash Thinking, Claude 3.7 Sonnet…) run CoT internally before every reply. You don’t need to say it — but you do need to choose the right model for hard problems."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#move-2-debate-it-out",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#move-2-debate-it-out",
-    "title": "Delegating to AI",
-    "section": "Move 2 — Debate It Out",
-    "text": "Move 2 — Debate It Out\n\nMake the AI argue from several expert viewpoints, then synthesize.\n\n\nIndustry term: Tree of Thoughts (ToT). Best for strategy and judgment calls.\n\n\n\n“Three experts debate the reply to an angry client — Empathetic Lead, Pragmatic PM, Legal Advisor. Have them argue, then synthesize one balanced response.”"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#move-3-double-check",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#move-3-double-check",
-    "title": "Delegating to AI",
-    "section": "Move 3 — Double-Check",
-    "text": "Move 3 — Double-Check\n\nHave the AI solve the same problem 3 times independently — match = trust, mismatch = flag.\n\n\nIndustry term: Self-Consistency. Best for numbers and data extraction.\n\n\n\n“Sum these invoice line items 3 separate times. If all three match, output ‘Verified’; if not, ‘Manual Review Needed’.”"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#which-move-when",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#which-move-when",
-    "title": "Delegating to AI",
-    "section": "Which Move, When?",
-    "text": "Which Move, When?\n\n\n\n\n\n\n\n\nProblem Type\nMove\nWhy\n\n\n\n\nLogic / Math / Scheduling\nThink step by step (CoT)\nForces careful, ordered reasoning\n\n\nStrategy / Judgment calls\nDebate it out (ToT)\nExplores multiple perspectives\n\n\nData Extraction / Numbers\nDouble-check (Self-Consistency)\nCatches errors through repetition\n\n\n\n\n\n\n\n\n\n\nYou can combine them\n\n\nDouble-check a step-by-step result. Think step by step inside a debate."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#apply-it-to-real-work",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#apply-it-to-real-work",
-    "title": "Delegating to AI",
-    "section": "Apply It to Real Work",
-    "text": "Apply It to Real Work\n\n\n\n\n\n\nTwo-part build\n\n\n\nPick a “messy input → clean output” task from your Automation Backlog and write a full RICE delegation for it.\nPick a decision or calculation task and add the matching advanced move.\n\n\n\n\n\n\nRun it. Refine it. Log the time saved in your Time Log."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#quiz-question-1",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#quiz-question-1",
-    "title": "Delegating to AI",
-    "section": "Quiz — Question 1",
-    "text": "Quiz — Question 1\nYou prompt: “Write a marketing post about our new coffee shop in Riyadh.”\nWhich RICE elements are missing?\n\n\n\n\n\nR — Role\nWho is writing?\n\n\n\nI — Instructions\nPartial — platform? length? tone?\n\n\n\nC — Context\nWhat’s special about the shop?\n\n\n\nE — Example\nNo sample of the voice you want"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#quiz-question-2",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#quiz-question-2",
-    "title": "Delegating to AI",
-    "section": "Quiz — Question 2",
-    "text": "Quiz — Question 2\nA ministry asks you to verify budget figures extracted from a scanned Arabic PDF.\nWhich advanced move?\n\n\n\nDouble-check (Self-Consistency) — extract 3 times, compare, flag mismatches."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#coming-up",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#coming-up",
-    "title": "Delegating to AI",
-    "section": "Coming Up",
-    "text": "Coming Up\nRight now, you type RICE manually every time.\n\n\nOn Day 2 (Session 7), we turn a delegation like this into a permanent Skill — write it once, run it forever."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_3_delegating_with_rice.html#key-takeaways",
-    "href": "hermes-agent-course/slides/session_3_delegating_with_rice.html#key-takeaways",
-    "title": "Delegating to AI",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nDelegate, don’t ask — brief the AI like a direct report\nRICE — Role, Instructions, Context, Examples\nExamples are the secret weapon — one good sample beats a paragraph of rules\nSlow it down on hard problems — step by step, debate it out, double-check\nMatch the move to the problem — logic / strategy / numbers"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_5_meet_hermes.html#welcome-to-day-2",
-    "href": "hermes-agent-course/slides/session_5_meet_hermes.html#welcome-to-day-2",
-    "title": "Meet Hermes",
-    "section": "Welcome to Day 2",
-    "text": "Welcome to Day 2\n\nYou understand the two layers. Now we make the office real.\n\n\n\nEverything Day 1 was on a chat tab. Today it lives in a folder on your computer."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_5_meet_hermes.html#chat-vs.-agent",
-    "href": "hermes-agent-course/slides/session_5_meet_hermes.html#chat-vs.-agent",
-    "title": "Meet Hermes",
-    "section": "Chat vs. Agent",
-    "text": "Chat vs. Agent\n\n\n\n\nA Chat Box\n\nYou paste, it replies\nOne message at a time\nCloses → forgets\n\n\n\n\n\n\nAn Agent\n\nOpens your files\nRuns steps in order\nCan act, not just talk\n\n\n\n\n\n\nSame brain in the jar. A much more capable office around it."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_5_meet_hermes.html#meet-the-working-directory",
-    "href": "hermes-agent-course/slides/session_5_meet_hermes.html#meet-the-working-directory",
-    "title": "Meet Hermes",
-    "section": "Meet the Working Directory",
-    "text": "Meet the Working Directory\n\nWhen Hermes opens, it points at one folder on your computer — its working directory.\n\n\n\n“So that’s the ‘directory’ Session 2 said the app saves everything in.”\n\n\n\nThis folder is the office. Your context lives here as real, openable files."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_5_meet_hermes.html#its-all-just-files-in-a-folder",
-    "href": "hermes-agent-course/slides/session_5_meet_hermes.html#its-all-just-files-in-a-folder",
-    "title": "Meet Hermes",
-    "section": "It’s All Just Files in a Folder",
-    "text": "It’s All Just Files in a Folder\n\nYour files — the documents and data for the work\nYour standing instructions — CLAUDE.md (the wall note — Session 6)\nYour saved Skills — books in your library (Session 7)\nYour Memory — the agent’s notebook about you (Session 8)\n\n\n\n\n\n\n\n\nNothing is magic\n\n\nEvery “feature” you’ll learn this week is just a file in this folder that the app re-sends to the brain. That’s the whole trick."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_5_meet_hermes.html#one-rule-was-enough-until-now",
-    "href": "hermes-agent-course/slides/session_5_meet_hermes.html#one-rule-was-enough-until-now",
-    "title": "Meet Hermes",
-    "section": "One Rule Was Enough — Until Now",
-    "text": "One Rule Was Enough — Until Now\n\n\n\nRule 1 — Newspaper Test\nGuards what you paste in.\n(Day 1)\n\n\n\n\nRule 2 — Blast Radius\nGuards what the agent does.\n(today)\n\n\n\n\n\nThe Newspaper Test never saw this coming — nothing got pasted; the agent acted."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_5_meet_hermes.html#blast-radius-human-in-the-loop",
-    "href": "hermes-agent-course/slides/session_5_meet_hermes.html#blast-radius-human-in-the-loop",
-    "title": "Meet Hermes",
-    "section": "Blast Radius & Human-in-the-Loop",
-    "text": "Blast Radius & Human-in-the-Loop\n\nBefore letting an agent act, ask: “What’s the worst it could do if it’s wrong — and who’d notice in time?”\n\n\n\n\n\n\n\n\nAlways start in draft / notify-me mode\n\n\nThe agent proposes, you approve. Promote to act-on-its-own only after it has proven itself."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_5_meet_hermes.html#our-course-rule",
-    "href": "hermes-agent-course/slides/session_5_meet_hermes.html#our-course-rule",
-    "title": "Meet Hermes",
-    "section": "Our Course Rule",
-    "text": "Our Course Rule\n\nAll hands-on agent work runs in a sandbox folder with dummy data.\n\n\n\nA mistake can’t touch real work while you’re learning."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_5_meet_hermes.html#give-it-a-real-sandboxed-task",
-    "href": "hermes-agent-course/slides/session_5_meet_hermes.html#give-it-a-real-sandboxed-task",
-    "title": "Meet Hermes",
-    "section": "Give It a Real (Sandboxed) Task",
-    "text": "Give It a Real (Sandboxed) Task\n\n\n\n\n\n\nHands-on\n\n\nPoint Hermes at the sandbox folder, then give it one end-to-end task — e.g. “Read these three files and produce one summary.”\n\n\n\n\nWatch it open files, not just chat\nWatch it run steps in order\nIt proposes the result — you stay in the loop"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_5_meet_hermes.html#quiz-act-now-or-propose-wait",
-    "href": "hermes-agent-course/slides/session_5_meet_hermes.html#quiz-act-now-or-propose-wait",
-    "title": "Meet Hermes",
-    "section": "Quiz — Act Now or Propose & Wait?",
-    "text": "Quiz — Act Now or Propose & Wait?\n1. “Reformat these notes into a clean summary in a new file.”\n\n\n\nAct now — low blast radius, easy to undo.\n\n\n\n\n2. “Send the follow-up emails to the client list.”\n\n\n\n\nPropose & wait — irreversible, high blast radius. Review first."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_5_meet_hermes.html#key-takeaways",
-    "href": "hermes-agent-course/slides/session_5_meet_hermes.html#key-takeaways",
-    "title": "Meet Hermes",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nAgent ≠ chat — it opens files, runs steps, and can act\nThe working directory is the office — your context as real files in a folder\nIt’s all just files — CLAUDE.md, Skills, Memory live there; nothing is magic\nSecond safety rule — blast radius / human-in-the-loop guards what it does\nDraft first — propose-and-wait before act-on-its-own; sandbox + dummy data"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#remember-the-rice-prompt",
-    "href": "hermes-agent-course/slides/session_7_skills.html#remember-the-rice-prompt",
-    "title": "Skills",
-    "section": "Remember the RICE Prompt?",
-    "text": "Remember the RICE Prompt?\n\nIn Session 3 you wrote a great delegation — but you typed it out by hand.\n\n\n\nA Skill turns that one-time delegation into a permanent capability you invoke on command — by name or a trigger phrase, never re-typed.\n\n\n\n\nThe agent-era successor to a “Gem” (Gemini) / “GPT” (ChatGPT) / saved prompt."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#a-book-in-your-library",
-    "href": "hermes-agent-course/slides/session_7_skills.html#a-book-in-your-library",
-    "title": "Skills",
-    "section": "A Book in Your Library",
-    "text": "A Book in Your Library\n\nA book on the office shelf. You say “make the quarterly summary” and the agent pulls that book and follows it — and only that one, not the whole shelf. You don’t re-explain the steps.\n\n\nA Skill is just three things:\n\nA name — what you call it\nThe title on the spine (the trigger) — the phrase that tells the agent which book to pull (e.g. “turn this into a deck”)\nWhat’s written inside — the steps, in plain language\n\n\n\n\n\n\n\n\n\nNo code\n\n\nYou describe the steps in plain language. The agent does the rest — you never write any."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#two-homes-for-a-rule",
-    "href": "hermes-agent-course/slides/session_7_skills.html#two-homes-for-a-rule",
-    "title": "Skills",
-    "section": "Two Homes for a Rule",
-    "text": "Two Homes for a Rule\n\n\n\nStanding Instruction — Session 6\nA tone, format, or rule you want applied to every request. Pinned to the Project wall (CLAUDE.md) — always on, you never ask for it.\n\n\n\nSkill — Session 7\nA procedure you invoke for a specific job — often producing an artifact. You call it by name / trigger when you need it.\n\n\n\n\n“Always write memos in our house voice” → standing instruction. “Turn these notes into a memo, now” → Skill you invoke.\n\n\nSame capability — the test is whether it’s always-on or invoked on demand."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#what-were-building",
-    "href": "hermes-agent-course/slides/session_7_skills.html#what-were-building",
-    "title": "Skills",
-    "section": "What We’re Building",
-    "text": "What We’re Building\n\n“Build-a-Deck”\n\n\nPaste raw, messy notes → get an on-brand slide deck you can export to .pptx. Save it once as a Skill — then invoke it on any future update."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#step-1-the-playbook",
-    "href": "hermes-agent-course/slides/session_7_skills.html#step-1-the-playbook",
-    "title": "Skills",
-    "section": "Step 1: The Playbook",
-    "text": "Step 1: The Playbook\n\nName: Build-a-Deck\nWhen to use (the trigger): When I say “turn these notes / this update into a deck.”\nSteps:\n\nOutline first — draft the storyline before any slide\nOne idea per slide — a clear title + a few supporting points\nApply our house style — colors, fonts, logo\nExport — hand back a downloadable .pptx"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#step-2-invoke-it",
-    "href": "hermes-agent-course/slides/session_7_skills.html#step-2-invoke-it",
-    "title": "Skills",
-    "section": "Step 2: Invoke It",
-    "text": "Step 2: Invoke It\n\nSkill saved — now type the trigger on a fresh input to prove it pulls the book:\n\n\n“Turn this into a 5-slide deck: Q3 hit target, two regions lagging, new hire starts Monday, asking the board for budget.”"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#the-output",
-    "href": "hermes-agent-course/slides/session_7_skills.html#the-output",
-    "title": "Skills",
-    "section": "The Output",
-    "text": "The Output\n\nA titled, on-brand deck — exportable to .pptx:\n\nQ3 Results — target met, momentum strong\nWhere We’re Lagging — two regions below plan\nThe Plan — new hire starts Monday\nThe Ask — budget for next quarter\nNext Steps — owners + dates\n\n\n\n↓ Download as .pptx"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#what-just-happened",
-    "href": "hermes-agent-course/slides/session_7_skills.html#what-just-happened",
-    "title": "Skills",
-    "section": "What Just Happened",
-    "text": "What Just Happened\n\nWe typed one trigger phrase — no Role, no format, no re-explaining the steps\nThe Skill pulled the saved book and built the deck\nA downloadable artifact in seconds\n\n\n\n\n\n\n\n\nComing in Session 10\n\n\nMaking that deck genuinely board-ready — the narrative (Amazon Method) and the Design Engine — is Session 10. Here the point is simply: a Skill can produce an artifact on command."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#make-one-skill",
-    "href": "hermes-agent-course/slides/session_7_skills.html#make-one-skill",
-    "title": "Skills",
-    "section": "Make One Skill",
-    "text": "Make One Skill\n\n\n\n\n\n\nHands-on\n\n\n\nPick one recurring task from your Automation Backlog.\nPackage it as a Skill (name, trigger, steps).\nInvoke the same trigger twice — on two different inputs — to prove it generalizes.\n\n\n\n\n\n\nLog the recurring weekly saving — this one repeats every week."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#skills-managers-actually-use",
-    "href": "hermes-agent-course/slides/session_7_skills.html#skills-managers-actually-use",
-    "title": "Skills",
-    "section": "Skills Managers Actually Use",
-    "text": "Skills Managers Actually Use\nEach one is a trigger → book the agent pulls on command:\n\n\n\n\n\n\n\n\nYou say…\nThe Skill it pulls\n\n\n\n\n“make a deck”\nBuild-a-Deck → on-brand .pptx\n\n\n“/summarize these notes”\nBriefer → BLUF decision memo\n\n\n“meeting → actions”\nMinutes → Actions → owners + deadlines\n\n\n“draft the weekly report”\nWeekly Status → leadership update (automate in Session 9)\n\n\n“summarize this contract”\nDocument Summary → key changes + risks\n\n\n\n\n\n\nYour library grows one book at a time — build the ones you repeat."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#the-right-tool",
-    "href": "hermes-agent-course/slides/session_7_skills.html#the-right-tool",
-    "title": "Skills",
-    "section": "The Right Tool",
-    "text": "The Right Tool\n\n\n\nBuild a Skill\nRecurring tasks you do again and again\n\n\n\nUse plain chat\nTrue one-offs you’ll never repeat"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#quiz",
-    "href": "hermes-agent-course/slides/session_7_skills.html#quiz",
-    "title": "Skills",
-    "section": "Quiz",
-    "text": "Quiz\nYou need a quick email to a vendor you’ll never speak to again. Build a Skill?\n\n\n\n\n\nA) Yes, always build a Skill\n❌ Over-engineering.\n\n\n\n\n\nB) No, use plain chat\n✅ Skills = recurring. Chat = one-off."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_7_skills.html#key-takeaways",
-    "href": "hermes-agent-course/slides/session_7_skills.html#key-takeaways",
-    "title": "Skills",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nSkill = a book in your library you open by a trigger (vs an always-on Standing Instruction — Session 6)\nAnatomy — a name, a trigger (when-to-use), the steps (plain language, no code)\nSkills produce artifacts — a deck/.pptx, a memo, a report — on command\nWrite once, invoke forever — prove it generalizes by running the trigger on a new input\nDon’t over-engineer — Skills for recurring tasks, chat for true one-offs"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_9_cron_and_connectors.html#welcome-to-day-3",
-    "href": "hermes-agent-course/slides/session_9_cron_and_connectors.html#welcome-to-day-3",
-    "title": "Cron & Connectors",
-    "section": "Welcome to Day 3",
-    "text": "Welcome to Day 3\n\nSo far, you start every task.\n\n\n\nToday: the agent acts on a schedule and on your real tools.\n\n\n\n\nThis is the leap from a tool you operate to a teammate that acts on its own — and it’s exactly why the safety rules get stricter."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_9_cron_and_connectors.html#a-standing-appointment",
-    "href": "hermes-agent-course/slides/session_9_cron_and_connectors.html#a-standing-appointment",
-    "title": "Cron & Connectors",
-    "section": "A Standing Appointment",
-    "text": "A Standing Appointment\n\nA standing appointment on the agent’s calendar. “Every Friday at 4pm, draft the weekly status.” It just happens — you didn’t have to ask.\n\n\n\nA schedule that triggers the agent automatically — with no human in the chat at that moment."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_9_cron_and_connectors.html#giving-the-agent-keys",
-    "href": "hermes-agent-course/slides/session_9_cron_and_connectors.html#giving-the-agent-keys",
-    "title": "Cron & Connectors",
-    "section": "Giving the Agent Keys",
-    "text": "Giving the Agent Keys\n\nHanding the agent the keys to your inbox, calendar, and drive so it can actually fetch and do things — not just talk about them.\n\n\n\n\n\nGmail\n\n\n\nGoogle Calendar\n\n\n\nGoogle Drive\n\n\n\n\n\n(MCP is the technical standard — the acronym is optional.)"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_9_cron_and_connectors.html#where-ai-stops-being-a-chat-box",
-    "href": "hermes-agent-course/slides/session_9_cron_and_connectors.html#where-ai-stops-being-a-chat-box",
-    "title": "Cron & Connectors",
-    "section": "Where AI Stops Being a Chat Box",
-    "text": "Where AI Stops Being a Chat Box\n\nThis is where the agent starts touching your real work.\n\n\n\nPowerful — and exactly the reason blast radius matters."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_9_cron_and_connectors.html#draft-notify-me-before-act",
-    "href": "hermes-agent-course/slides/session_9_cron_and_connectors.html#draft-notify-me-before-act",
-    "title": "Cron & Connectors",
-    "section": "Draft / Notify-Me Before Act",
-    "text": "Draft / Notify-Me Before Act\n\nEvery Cron and Connector starts in draft / notify-me mode — it proposes, you approve.\n\n\n\n\n\n\n\n\nPromote only after it proves itself\n\n\nMove to act-on-its-own only once you’ve watched it get it right. Always ask: “What’s the worst it could do — and who’d catch it in time?”\n\n\n\n\n\n\nAll hands-on work today stays sandboxed, on read-only or draft-only access."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_9_cron_and_connectors.html#stand-one-up",
-    "href": "hermes-agent-course/slides/session_9_cron_and_connectors.html#stand-one-up",
-    "title": "Cron & Connectors",
-    "section": "Stand One Up",
-    "text": "Stand One Up\n\n\n\n\n\n\nHands-on (sandboxed)\n\n\n\nSchedule one job in notify-me mode — e.g. a daily inbox triage that drafts replies (never sends).\nConnect one read-only data source.\n\n\n\n\n\n\nLog the recurring time it will save — then leave it in draft mode until you trust it."
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_9_cron_and_connectors.html#quiz",
-    "href": "hermes-agent-course/slides/session_9_cron_and_connectors.html#quiz",
-    "title": "Cron & Connectors",
-    "section": "Quiz",
-    "text": "Quiz\nWhich scheduled job should never run in act-on-its-own mode on Day 1?\n\n\n\n\n\nA) Every morning, summarize my unread email into a note.\n✅ Read-only. Low blast radius.\n\n\n\n\n\nB) Every morning, auto-reply to all unread email.\n❌ Irreversible, high blast radius. Draft-only.\n\n\n\n\n\n\nAsk: what could it do if it’s wrong, and who’d catch it?"
-  },
-  {
-    "objectID": "hermes-agent-course/slides/session_9_cron_and_connectors.html#key-takeaways",
-    "href": "hermes-agent-course/slides/session_9_cron_and_connectors.html#key-takeaways",
-    "title": "Cron & Connectors",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nThe autonomous leap — from a tool you operate to a teammate that acts\nCron = a standing appointment — the agent runs on a schedule, unattended\nConnectors = the keys — Gmail / Calendar / Drive (MCP under the hood)\nGuardrails first — always start in draft / notify-me mode\nMind the blast radius — promote to act-on-its-own only after it proves itself"
+    "objectID": "ksu-workshop/slides/cowork_intro.html#the-staging-rule",
+    "href": "ksu-workshop/slides/cowork_intro.html#the-staging-rule",
+    "title": "From Chat to Cowork",
+    "section": "The Staging Rule",
+    "text": "The Staging Rule\n\nAlways work on copies of your files in a staging folder.\n\n\n\nA mistake can’t touch your originals or a real grade sheet or a real inbox while you’re learning."
+  },
+  {
+    "objectID": "ksu-workshop/slides/cowork_intro.html#act-now-or-propose-wait",
+    "href": "ksu-workshop/slides/cowork_intro.html#act-now-or-propose-wait",
+    "title": "From Chat to Cowork",
+    "section": "Act Now or Propose & Wait?",
+    "text": "Act Now or Propose & Wait?\n1. “Reformat these notes into a clean summary in a new file.”\n\n\n\nAct now — low blast radius, easy to undo.\n\n\n\n\n2. “Email the revised grades to all 60 students.”\n\n\n\n\nPropose & wait — irreversible, high blast radius. Review first."
+  },
+  {
+    "objectID": "ksu-workshop/slides/cowork_intro.html#and-one-definition",
+    "href": "ksu-workshop/slides/cowork_intro.html#and-one-definition",
+    "title": "From Chat to Cowork",
+    "section": "And One Definition",
+    "text": "And One Definition\n\nWhat is the working directory?\n\n\n\n\nYour office — your context as real, openable files on your computer. Not a chat history."
   },
   {
     "objectID": "ksu-workshop/index.html",
     "href": "ksu-workshop/index.html",
     "title": "Building Your Own AI Assistant",
     "section": "",
-    "text": "Four hours. You walk out with a working AI assistant you set up yourself — plus 2–3 automations running on your own academic work. Not a search engine; a member of your team that drafts, summarizes, and calculates.\nHands-on tool: Claude Cowork. No coding — you describe steps in plain language. Concepts stay portable to ChatGPT, Gemini, Claude, and NotebookLM."
+    "text": "About four and a half hours. You walk out with a working AI assistant you set up yourself — plus 2–3 automations running on your own academic work. Not a search engine; a member of your team that drafts, summarizes, and calculates.\nHands-on tool: Claude Cowork. No coding — you describe steps in plain language. Concepts stay portable to ChatGPT, Gemini, Claude, and NotebookLM."
   },
   {
     "objectID": "ksu-workshop/index.html#run-of-show",
     "href": "ksu-workshop/index.html#run-of-show",
     "title": "Building Your Own AI Assistant",
     "section": "Run of Show",
-    "text": "Run of Show\nThis page is the canonical order — open each deck in turn.\n\n\n\n#\nBlock\nDeck\nMins\n\n\n\n\n1\nWelcome + agenda\nOverview\n10\n\n\n2\nHow AI works + RICE prompting\nHow AI Works & Writing Great Prompts\n45\n\n\n3\nPractice + break\nPractice — Delegate a Real Task\n25 + 10\n\n\n4\nMeet Cowork + automation\nMeet Claude Cowork & Automating Your Work\n50\n\n\n5\nPractice\nPractice — Build Your First Workflows\n30\n\n\n6\nGrounding + slides\nGrounding & Creating with NotebookLM\n40\n\n\n7\nWrap-up + ROI\nYour AI Assistant\n30\n\n\n\nTotal ≈ 240 minutes, including a 10-minute break after the first practice block."
+    "text": "Run of Show\nThis page is the canonical order — open each deck in turn.\n\n\n\n#\nBlock\nDeck\nMins\n\n\n\n\n1\nWelcome + agenda\nOverview\n10\n\n\n2\nHow AI works + RICE prompting\nHow AI Works & Writing Great Prompts\n45\n\n\n3\nPractice + break\nPractice — Delegate a Real Task\n25 + 10\n\n\n4\nMeet Cowork + the working directory\nFrom Chat to Cowork\n20\n\n\n5\nBuild reusable workflows\nBuild It Once: Skills, Scripts & Templates\n30\n\n\n6\nAutomate on a clock\nSchedule: Run It Without You\n15\n\n\n7\nReach into your real tools\nConnectors: Reaching Into Other Buildings\n15\n\n\n8\nPractice\nPractice — Build Your First Workflows\n30\n\n\n9\nGrounding + slides\nGrounding & Creating with NotebookLM\n40\n\n\n10\nWrap-up + ROI\nYour AI Assistant\n30\n\n\n\nTotal ≈ 270 minutes, including a 10-minute break after the first practice block."
   },
   {
     "objectID": "ksu-workshop/index.html#the-delivery-loop",
@@ -1474,49 +291,105 @@
     "href": "ksu-workshop/index.html#two-rules-we-never-break",
     "title": "Building Your Own AI Assistant",
     "section": "Two Rules We Never Break",
-    "text": "Two Rules We Never Break\n\nNewspaper Test — guards what you paste in. Sanitize student data, unpublished research, and exam content before it goes anywhere.\nThe Undo Test (blast radius) — guards what the agent does. Start every Skill and scheduled job in draft / notify-me mode before letting it act on its own.\n\nAll hands-on agent work runs in a sandbox folder with dummy data."
+    "text": "Two Rules We Never Break\n\nNewspaper Test — guards what you paste in. Sanitize student data and unpublished work before it goes anywhere.\nThe Undo Test (blast radius) — guards what the agent does. Start every Skill and scheduled job in draft / notify-me mode before letting it act on its own.\n\nAll hands-on work runs on copies in a staging folder."
   },
   {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#why-start-here",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#why-start-here",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Why Start Here?",
-    "text": "Why Start Here?\n\nUnderstand how it works and you’ll know what to trust, what to check, and how to get better answers.\n\n\n\nEverything else today hangs off one insight: you’re talking to two layers stacked together."
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI at Work — Workshops",
+    "section": "",
+    "text": "Hands-on workshops that teach professionals and faculty to use AI as a permanent member of their team — not as a search engine. No coding. Concepts stay portable across ChatGPT, Gemini, Claude, and NotebookLM."
+  },
+  {
+    "objectID": "index.html#workshops",
+    "href": "index.html#workshops",
+    "title": "AI at Work — Workshops",
+    "section": "Workshops",
+    "text": "Workshops\n\n\n\nWorkshop\nAudience\nLength\nStart here\n\n\n\n\nBuilding Your Own AI Assistant\nKSU faculty\nHalf-day (≈4 hrs)\nRun of show →\n\n\n\nMore workshops are generated from the shared templates/ + a config/workshops.json entry — add a row here when you add one."
+  },
+  {
+    "objectID": "ksu-workshop/slides/connectors.html#hand-it-the-keys",
+    "href": "ksu-workshop/slides/connectors.html#hand-it-the-keys",
+    "title": "Connectors: Reaching Into Other Buildings",
+    "section": "Hand It the Keys",
+    "text": "Hand It the Keys\n\nSo far the office gathers pages from your folder. But some pages you need live elsewhere — your inbox, calendar, or drive. A connector hands the agent the keys to those, so it can fetch and act, not just talk.\n\n\n\nThis is where AI stops being a chat box and starts touching your real work."
+  },
+  {
+    "objectID": "ksu-workshop/slides/connectors.html#what-changes",
+    "href": "ksu-workshop/slides/connectors.html#what-changes",
+    "title": "Connectors: Reaching Into Other Buildings",
+    "section": "What Changes",
+    "text": "What Changes\n\nCowork can now pull live information — today’s emails, this week’s calendar — and re-send it to the brain.\n\n\n\nSame office loop. Wider reach.\n\n\n\n\n(MCP is the technical “doorway standard” so any tool can offer a door the office knows how to open — the acronym is optional. Plugins bundle skills + connectors for a role.)"
+  },
+  {
+    "objectID": "ksu-workshop/slides/connectors.html#a-faculty-example",
+    "href": "ksu-workshop/slides/connectors.html#a-faculty-example",
+    "title": "Connectors: Reaching Into Other Buildings",
+    "section": "A Faculty Example",
+    "text": "A Faculty Example\n\nConnect your Drive and Calendar, then ask: “Read this week’s committee files from Drive and my calendar, and draft a week-ahead teaching summary.”\n\n\n\nNow it pulls real documents and real dates — instead of you copy-pasting them in.\n\n\n\n\n\n\n\n\n\nKeys earn trust slowly\n\n\nStart read-only / draft-only: let it fetch and propose, never send or delete, until it has earned act-on-its-own."
+  },
+  {
+    "objectID": "ksu-workshop/slides/connectors.html#keys-mean-a-bigger-blast-radius",
+    "href": "ksu-workshop/slides/connectors.html#keys-mean-a-bigger-blast-radius",
+    "title": "Connectors: Reaching Into Other Buildings",
+    "section": "Keys Mean a Bigger Blast Radius",
+    "text": "Keys Mean a Bigger Blast Radius\n\n\n\n\n\n\nStart in draft / notify-me mode\n\n\nThe moment the agent can reach a real inbox or drive, it can act outside your staging folder, in your real work. The undo test now has teeth — give it read-only or propose-only access first; promote to act-on-its-own only after it has earned your trust."
+  },
+  {
+    "objectID": "ksu-workshop/slides/connectors.html#putting-it-all-together",
+    "href": "ksu-workshop/slides/connectors.html#putting-it-all-together",
+    "title": "Connectors: Reaching Into Other Buildings",
+    "section": "Putting It All Together",
+    "text": "Putting It All Together\n\nConnector + Skill + Schedule, in draft mode:\n\n\n\n“Every Monday, read my inbox (connector), summarize action items (skill), save to my folder, and notify me (schedule, draft mode).”\n\n\n\n\nThe whole toolkit, working as one teammate."
+  },
+  {
+    "objectID": "ksu-workshop/slides/connectors.html#adding-a-connector-changes",
+    "href": "ksu-workshop/slides/connectors.html#adding-a-connector-changes",
+    "title": "Connectors: Reaching Into Other Buildings",
+    "section": "Adding a Connector Changes…",
+    "text": "Adding a Connector Changes…\n\nWhat does adding an email connector change most?\n\n\n\n\nThe blast radius — what Cowork can now reach and act on. That’s exactly why it stays in draft / notify-me until it earns trust."
+  },
+  {
+    "objectID": "ksu-workshop/slides/connectors.html#key-takeaways",
+    "href": "ksu-workshop/slides/connectors.html#key-takeaways",
+    "title": "Connectors: Reaching Into Other Buildings",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nCowork ≠ chat — it opens files, runs steps, and can act; the working directory is the office\nSecond safety rule — the undo test / human-in-the-loop (blast radius); work on staging copies\nSkill — a book Cowork opens by its trigger; it can bundle a script + a template\nScript — code it writes & runs to compute exactly; Template — the on-brand layout the script fills\nSchedule runs a skill on a clock; Connectors give it keys to your real tools — guardrails first: every job starts in draft / notify-me"
   },
   {
     "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#two-layers-stacked",
     "href": "ksu-workshop/slides/how_ai_works_and_rice.html#two-layers-stacked",
     "title": "How AI Works & Writing Great Prompts",
     "section": "Two Layers, Stacked",
-    "text": "Two Layers, Stacked\n\n\n\n\nThe Model Layer\n“The brain in a jar”\n\n\n\n\n\nThe App Layer\n“The office around the brain”\n\n\n\n\n\nTell these apart and Cowork, Skills, and Memory stop being magic."
+    "text": "Two Layers, Stacked\n\n\n\n\nThe Model Layer\n“The brain in a jar”\n\n\n\n\n\nThe App Layer\n“The office around the brain”\n\n\n\n\n\nTell these apart and every “memory”, “Projects”, and “Skills” feature stops being magic."
   },
   {
     "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#a-brilliant-brain-with-amnesia",
     "href": "ksu-workshop/slides/how_ai_works_and_rice.html#a-brilliant-brain-with-amnesia",
     "title": "How AI Works & Writing Great Prompts",
     "section": "A Brilliant Brain — With Amnesia",
-    "text": "A Brilliant Brain — With Amnesia\n\nA brilliant graduate’s brain floating in a jar. It has read most of the internet, so it’s clever — but it has total amnesia.\n\n\n\nKnows nothing about you, your department, or what you said five minutes ago\nThe instant it finishes answering, it forgets everything\nAll it does is predict the next word from the text it was just handed"
+    "text": "A Brilliant Brain — With Amnesia\n\nA brilliant graduate’s brain floating in a jar. It has read most of the internet, so it keeps that knowledge — but it has amnesia about new information, so it will not know you.\n\n\n\nKeeps its training: language, facts, math, reasoning — it stays genuinely smart\nHas no memory of you: your work, your name, what you said five minutes ago\nThe instant it finishes answering, it forgets this conversation — not its skills\n\n\n\n\nTwo different things: the knowledge stays, the memory of you resets."
   },
   {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#it-just-predicts-the-next-word",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#it-just-predicts-the-next-word",
+    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#it-predicts-the-next-word-on-repeat",
+    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#it-predicts-the-next-word-on-repeat",
     "title": "How AI Works & Writing Great Prompts",
-    "section": "It Just Predicts the Next Word",
-    "text": "It Just Predicts the Next Word\nUnder the hood it does one thing: guess the next word based on probability.\n\n“The capital of Saudi Arabia is…”\n\n\n\n\nRiyadh (99.8%) ✅\n\n\n\n\nJeddah (0.1%) · Paris (0.00001%)\n\n\n\n\nIt doesn’t “know” geography — it knows “Riyadh” almost always follows that sentence.\n\n\n\nIt does this even when it has no idea — the next slide."
+    "section": "It Predicts the Next Word — On Repeat",
+    "text": "It Predicts the Next Word — On Repeat\nUnder the hood it does one thing, over and over: pick the next word, append it, ask again. At each step, it’s choosing from a vocabulary of 256,000+ words and symbols.\n\n\n“The capital of Saudi Arabia ___”\n\nis (97%)\nwas (2%)\nremains (0.6%)\nall other words … (0.2%)\n\n\n\n“The capital of Saudi Arabia is ___”\n\nRiyadh (99%)\nJeddah (0.4%)\nMecca (0.3%)\nall other words … (0.2%)\n\n\n\n“The capital of Saudi Arabia is Riyadh ___”\n\n, (52%)\n. (41%)\n: (4%)\nall other words … (2%)\n\n\n\n“The capital of Saudi Arabia is Riyadh, a ___”\n\ncity (61%)\nlarge (12%)\nmajor (8%)\nall other words … (6%)\n\n\n\n\n\nIt doesn’t “know” geography — at each step it knows which word usually comes next, picks it, and repeats."
   },
   {
     "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#when-it-guesses-wrong-hallucinations",
     "href": "ksu-workshop/slides/how_ai_works_and_rice.html#when-it-guesses-wrong-hallucinations",
     "title": "How AI Works & Writing Great Prompts",
     "section": "When It Guesses Wrong (Hallucinations)",
-    "text": "When It Guesses Wrong (Hallucinations)\n\nWhat happens when it doesn’t know the answer? It guesses.\n\n“According to Article 214 of the new Saudi Investment Law: …”\n\n\n\nThe (45%)\nForeign (30%)\nCapital (15%)\n\n\n\n\n\nThe AI constructs a sentence that sounds legal, but it has never read the actual document."
+    "text": "When It Guesses Wrong (Hallucinations)\n\nWhat happens when it doesn’t know the answer? It guesses.\n\n“According to Article 214 of the new Investment Law: …”\n\n\n\nThe (45%) · Foreign (30%) · Capital (15%)\n\n\n\n\n\nIt constructs a sentence that sounds right, but it has never read the actual document. That confident, made-up answer is a hallucination."
   },
   {
     "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-limit-that-explains-everything",
     "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-limit-that-explains-everything",
     "title": "How AI Works & Writing Great Prompts",
     "section": "The Limit That Explains Everything",
-    "text": "The Limit That Explains Everything\n\nThe model is stateless. It does not “remember” and it does not “look things up.”\n\n\n\n\n\n\n\n\nThis is why it “hallucinates”\n\n\nWhen it doesn’t know, it predicts a plausible-sounding answer anyway — a confident, made-up citation, a journal that doesn’t exist, a wrong date.\n\n\n\n\n\n\nAnything you want it to “know,” you must hand it every single time."
+    "text": "The Limit That Explains Everything\n\nThe model is stateless. It does not “remember” and it does not “look things up”.\n\n\n\nAnything you want it to “know”, you must hand it every single time."
   },
   {
     "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#we-build-an-office",
@@ -1526,25 +399,46 @@
     "text": "We Build an Office\n\nThe brain in a jar can’t open files or remember your name. So we build an office around it: filing cabinets, a notebook, a standing to-do list.\n\n\nEvery time you ask for something, the office gathers the relevant pages and hands them to the brain along with your request — then files the answer back.\n\n\n\nThe brain still has amnesia. The office is what makes it feel like it remembers."
   },
   {
+    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#what-it-really-is",
+    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#what-it-really-is",
+    "title": "How AI Works & Writing Great Prompts",
+    "section": "What It Really Is",
+    "text": "What It Really Is\n\nThe app (ChatGPT, Gemini, Claude, an agent…) is the software wrapped around the model.\n\n\nIt stores your information in files / a directory and re-sends the relevant parts on every request.\n\n\n\n\n\n\n\n\nThe features you’ve seen\n\n\n“Memory”, “Projects”, “Custom Instructions” are all just the app doing this gathering-and-resending for you."
+  },
+  {
     "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-sentence-to-remember",
     "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-sentence-to-remember",
     "title": "How AI Works & Writing Great Prompts",
     "section": "The Sentence to Remember",
-    "text": "The Sentence to Remember\n\nThe model knows nothing and forgets everything; the app re-sends what matters on every request.\n\n\n\n\n\n\n\n\nThe features you’ve seen\n\n\n“Memory,” “Projects,” “Custom Instructions” are all just the app gathering and re-sending context for you. Cowork (later today) is a very capable office."
+    "text": "The Sentence to Remember\n\nThe model stays smart but remembers nothing about you; the app re-sends what matters on every request.\n\n\n\nEvery “smart” feature is just the app getting smarter about what to re-send."
   },
   {
     "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#context-the-desk",
     "href": "ksu-workshop/slides/how_ai_works_and_rice.html#context-the-desk",
     "title": "How AI Works & Writing Great Prompts",
     "section": "Context = the Desk",
-    "text": "Context = the Desk\n\nContext is everything stacked on the brain’s desk before it starts — your request plus the background pages it needs: your instructions, the paper you pasted, your rules.\n\n\n\nOutput quality is mostly a context problem, not a smartness problem."
+    "text": "Context = the Desk\n\nContext is everything the office stacks on the brain’s desk before it starts — your request plus the background pages it needs to do the job well.\n\n\nYour instructions, pasted documents, standing rules, relevant memory — the model’s entire world for that one request."
   },
   {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-desk-has-limits",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-desk-has-limits",
+    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-big-reframe",
+    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-big-reframe",
     "title": "How AI Works & Writing Great Prompts",
-    "section": "The Desk Has Limits",
-    "text": "The Desk Has Limits\n\nThe desk has a fixed size. Pile on too much and older pages fall off the edge — that’s why a long chat starts forgetting how it began.\n\n\n\n\n\n\n\n\nThe fix\n\n\nSaved instructions beat re-pasting. The office puts the important pages back on the desk for you every time — the foundation of the assistant you’ll build today."
+    "section": "The Big Reframe",
+    "text": "The Big Reframe\n\nOutput quality is mostly a context problem, not a smartness problem.\n\n\n\n\n\n\n\n\nWhat this means for you\n\n\nA weak answer usually means weak context, not a weak model. “Give it context” is the whole skill."
+  },
+  {
+    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#why-long-chats-forget",
+    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#why-long-chats-forget",
+    "title": "How AI Works & Writing Great Prompts",
+    "section": "Why Long Chats “Forget”",
+    "text": "Why Long Chats “Forget”\n\nThe brain’s desk has a fixed size. You can only fit so many pages on it at once. Pile on too much and older pages fall off the edge.\n\n\n\nThat’s the context window — and it’s why a long conversation starts losing the thread from the beginning."
+  },
+  {
+    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#saved-beats-re-pasted",
+    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#saved-beats-re-pasted",
+    "title": "How AI Works & Writing Great Prompts",
+    "section": "Saved Beats Re-Pasted",
+    "text": "Saved Beats Re-Pasted\n\n\n\n\n\n\nThe rule\n\n\nSaved instructions beat re-pasting.\n\n\n\nThe app puts the important pages back on the desk for you every time, so they never fall off the edge.\n\n\nThis is the whole reason standing instructions, projects, and memory exist."
   },
   {
     "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-office-getting-smarter",
@@ -1558,56 +452,35 @@
     "href": "ksu-workshop/slides/how_ai_works_and_rice.html#micro-check",
     "title": "How AI Works & Writing Great Prompts",
     "section": "Micro-Check",
-    "text": "Micro-Check\nThe AI cites a journal article that doesn’t exist. Which layer failed?\n\n\n\nThe Model Layer — the brain guessed. Ground it in a real source and verify (later, with NotebookLM)."
+    "text": "Micro-Check\nThe AI cites a journal article that doesn’t exist. Which layer failed?\n\n\n\nBoth — and that’s the point. The brain guessed (model layer) because no real source was on its desk (context). Fix it the context way: ground it in a real source, then verify (later, with NotebookLM)."
   },
   {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-shift",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-shift",
+    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-paradigm-shift",
+    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-paradigm-shift",
     "title": "How AI Works & Writing Great Prompts",
-    "section": "The Shift",
-    "text": "The Shift\n\nYou don’t need a “chat bot.” You need a capable assistant you can delegate to.\n\n\n\nDon’t ask: “Write an email about the meeting.”\nDelegate: “Act as a thesis advisor. Draft a recap email to my student from these notes. Highlight the revisions due before the next committee.”"
+    "section": "The Paradigm Shift",
+    "text": "The Paradigm Shift\n\nStop chatting. Start delegating.\n\n\n\nYou don’t need a “chat bot”. You need a direct report — someone you brief properly, then trust to deliver."
   },
   {
     "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-framework",
     "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-framework",
     "title": "How AI Works & Writing Great Prompts",
     "section": "The Framework",
-    "text": "The Framework\n\n\nR — Role: Who should the AI be?\n\n\nI — Instructions: What exactly should it do? (format, length, tone)\n\n\nC — Context: What information does it need?\n\n\nE — Examples: Show it what “good” looks like."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#r-role",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#r-role",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "R — Role",
-    "text": "R — Role\n\nWho should the AI be?\n\n\n\nA patient teaching assistant\nA peer reviewer for a journal\nA curriculum committee chair\nA grant-proposal editor\n\n\n\nThe role shapes the AI’s vocabulary, perspective, and priorities."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#i-instructions",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#i-instructions",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "I — Instructions",
-    "text": "I — Instructions\n\nWhat exactly should it do?\n\n\nBundle the task with its format, length, and tone:\n\n\n“Draft a 150-word feedback note to the student. Encouraging but specific. Use a bulleted ‘What to fix next’ list.”\n\n\n\n\n\n\n\n\n\n\nPro move\n\n\nAdd: “If anything is unclear, ask me before you write.”"
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#c-context",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#c-context",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "C — Context",
-    "text": "C — Context\n\nWhat information does it need?\n\n\nThe “brain dump” — paste your notes, the rubric, the draft, the syllabus.\n\n\n\n\n\n\n\n\nThis is the same context from the two layers\n\n\nYou’re loading the pages onto the brain’s desk. No context = the brain guesses."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#e-examples",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#e-examples",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "E — Examples",
-    "text": "E — Examples\n\nShow it what “good” looks like.\n\n\nDon’t just describe the output — paste one sample. The AI copies its structure, tone, and length.\n\n\n“Match this style: ‘Dear Sara, strong progress this week. Three things to tighten before we meet: …’”\n\n\n\n\n\n\n\n\n\n\nOne example beats a paragraph\n\n\nA single sample teaches more than ten lines of rules."
+    "text": "The Framework\n\n\nR — Role: name the expert you’d hire — it shapes the AI’s vocabulary and priorities.\n\n\nI — Instructions: what to do, bundled with its format, length, and tone.\n\n\nC — Context: the raw material — paste your notes, upload your docs.\n\n\nE — Examples: paste one sample of “good”; the AI copies its shape.\n\n\n\n\n\n\n\n\n\nC is the same context from the two layers\n\n\nYou’re loading the pages onto the brain’s desk. No context = the brain guesses."
   },
   {
     "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-formula",
     "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-formula",
     "title": "How AI Works & Writing Great Prompts",
     "section": "The Formula",
-    "text": "The Formula\n\n“Act as a [Role]. Your job is to [Instructions]. Here is the [Context]. Match this [Example].”"
+    "text": "The Formula\n\n“Act as a [Role]. Your job is to [Instructions]. Here is the [Context]. Match this [Example].”\n\n\n\nExamples are the secret weapon — one good sample teaches more than ten lines of rules."
+  },
+  {
+    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#dont-ask-delegate",
+    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#dont-ask-delegate",
+    "title": "How AI Works & Writing Great Prompts",
+    "section": "Don’t Ask — Delegate",
+    "text": "Don’t Ask — Delegate\n\nDon’t ask: “Write an email about the meeting.”\n\n\n\nDelegate: “Act as a thesis advisor. Draft a recap email to my student from these notes. Highlight the revisions due before the next committee.”"
   },
   {
     "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-messy-notes",
@@ -1631,11 +504,25 @@
     "text": "What Made It Work\n\nRole → wrote as a mentor, not a robot\nInstructions → clear sections + tone + the “Questions for me” rule\nContext → messy notes were enough — the AI extracted the structure\nExample → matched the warm, personal opening"
   },
   {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#slow-it-down-especially-on-numbers",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#slow-it-down-especially-on-numbers",
+    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#think-step-by-step",
+    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#think-step-by-step",
     "title": "How AI Works & Writing Great Prompts",
-    "section": "Slow It Down — Especially on Numbers",
-    "text": "Slow It Down — Especially on Numbers\n\nBy default AI answers fast and shallow — risky on grades, totals, and data.\n\n\n\nDouble-check: have it solve the same task 2–3 times — match = trust, mismatch = flag.\n\n“Total these 40 exam scores three times. If all three match, output ‘Verified’; if not, ‘Manual Review Needed’.” — industry term: Self-Consistency.\n\n\n\n\n\nTwo more nudges for harder calls: “think step by step” (Chain of Thought — logic) · “debate it out” (Tree of Thoughts — judgment)."
+    "section": "Think Step by Step",
+    "text": "Think Step by Step\n\nAdd “think step by step” so the AI reasons before it answers — best for logic, planning, and scheduling.\n\n\n“8 chapters, 10 teaching weeks, midterm in week 6, chapters 5–6 must come before it — lay out a week-by-week plan. Think step by step.” → it sequences instead of guessing.\n\n\n\nChain of Thought. Often automatic now — reasoning models do this internally — but still worth asking simpler models, or when you want the steps shown."
+  },
+  {
+    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#debate-it-out",
+    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#debate-it-out",
+    "title": "How AI Works & Writing Great Prompts",
+    "section": "Debate It Out",
+    "text": "Debate It Out\n\nMake the AI argue from several expert viewpoints, then synthesize — best for judgment calls.\n\n\n“A borderline thesis — one reviewer says pass, one says revise. Argue it as a strict methodologist, a supportive mentor, and an external examiner, then recommend one call.”\n\n\n\nTree of Thoughts."
+  },
+  {
+    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#double-check",
+    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#double-check",
+    "title": "How AI Works & Writing Great Prompts",
+    "section": "Double-Check",
+    "text": "Double-Check\n\nRun the same prompt a few times and go with the answer that keeps coming up — best for judgment calls you can’t easily verify.\n\n\n“Judge whether this paragraph’s argument is original or derivative — 3 separate times. Go with the verdict that repeats.”\n\n\n\nNot for exact numbers. To total a column of scores, re-rolling still guesses — a script computes it exactly, every time. (That’s Session 2.)\n\n\nSelf-Consistency."
   },
   {
     "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#quiz",
@@ -1649,7 +536,7 @@
     "href": "ksu-workshop/slides/how_ai_works_and_rice.html#key-takeaways",
     "title": "How AI Works & Writing Great Prompts",
     "section": "Key Takeaways",
-    "text": "Key Takeaways\n\nTwo layers — the model (brain) and the app (office) stacked together\nThe brain has amnesia — stateless, predicts the next word, can hallucinate\nQuality is a context problem — the right pages on the desk → the right answer\nDelegate, don’t ask — brief the AI with RICE (Role, Instructions, Context, Examples)\nExamples are the secret weapon; slow it down on hard problems — step by step, debate it out, double-check"
+    "text": "Key Takeaways\n\nTwo layers — the model (brain) and the app (office) stacked together\nThe brain keeps its training but forgets you — stateless, predicts the next word, can hallucinate\nQuality is a context problem — the right pages on the desk → the right answer\nDelegate, don’t ask — brief the AI with RICE (Role, Instructions, Context, Examples)\nExamples are the secret weapon; slow it down on hard calls — step by step, debate it out, double-check (and use a script for exact numbers)"
   },
   {
     "objectID": "ksu-workshop/slides/overview.html#what-youll-walk-out-with",
@@ -1684,7 +571,7 @@
     "href": "ksu-workshop/slides/overview.html#two-rules-we-never-break",
     "title": "Building Your Own AI Assistant",
     "section": "Two Rules We Never Break",
-    "text": "Two Rules We Never Break\n\n\n\nNewspaper Test\nWatch what you paste in. Sanitize student data and unpublished work first.\n\n\n\nThe Undo Test (blast radius)\nWatch what the agent does. Start in draft / notify-me mode.\n\n\n\n\nAll hands-on work runs in a sandbox folder with dummy data."
+    "text": "Two Rules We Never Break\n\n\n\nNewspaper Test\nWatch what you paste in. Sanitize student data and unpublished work first.\n\n\n\nThe Undo Test (blast radius)\nWatch what the agent does. Start in draft / notify-me mode.\n\n\n\n\nAll hands-on work runs on copies in a staging folder."
   },
   {
     "objectID": "ksu-workshop/slides/overview.html#lets-begin",
@@ -1719,7 +606,7 @@
     "href": "ksu-workshop/slides/practice_foundations.html#add-the-matching-advanced-move",
     "title": "Practice — Delegate a Real Task",
     "section": "Add the Matching Advanced Move",
-    "text": "Add the Matching Advanced Move\n\n\n\n\n\n\nBuild\n\n\nPick a calculation or judgment task and add the move that fits:\n\nNumbers / totals → double-check (solve it 2–3 times; match = trust)\nLogic / multi-step → “think step by step”\nA close judgment call → “debate it out” (argue both sides first)\n\n\n\n\n\n\n“Total these exam scores three times. If all three match, output ‘Verified’; if not, ‘Manual Review Needed’.”\n\n\n\n\n\n\n\n\n\nNote\n\n\nSample grades to practice on: grades.csv"
+    "text": "Add the Matching Advanced Move\n\n\n\n\n\n\nBuild\n\n\nPick a calculation or judgment task and add the move that fits:\n\nNumbers / totals → double-check (solve it 2–3 times; match = trust)\nLogic / multi-step → “think step by step”\nA close judgment call → “debate it out” (argue both sides first)\n\n\n\n\n\n\n“Total these exam scores three times. If all three match, output ‘Verified’; if not, ‘Manual Review Needed’.”\n\n\n\n\n\n\n\n\n\nNote\n\n\nSample data to practice on: grades.csv"
   },
   {
     "objectID": "ksu-workshop/slides/practice_foundations.html#i-like-i-wish-i-wonder",
@@ -1733,6 +620,83 @@
     "href": "ksu-workshop/slides/practice_foundations.html#back-in-10",
     "title": "Practice — Delegate a Real Task",
     "section": "Back in 10",
-    "text": "Back in 10\n\nStretch, refill, and bring your sandbox folder ready.\n\n\n\nNext: we meet Claude Cowork and let the agent do the work."
+    "text": "Back in 10\n\nStretch, refill, and have a staging folder ready with copies of files.\n\n\n\nNext: we meet Claude Cowork and let the agent do the work."
+  },
+  {
+    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#the-problem",
+    "href": "ksu-workshop/slides/skills_scripts_templates.html#the-problem",
+    "title": "Build It Once: Skills, Scripts & Templates",
+    "section": "The Problem",
+    "text": "The Problem\n\nYou retype the same multi-step request every time you need it — re-explaining the steps, the format, the style, from scratch.\n\n\n\nThere’s a better way: name it once, and run it with a single phrase."
+  },
+  {
+    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#what-a-skill-is",
+    "href": "ksu-workshop/slides/skills_scripts_templates.html#what-a-skill-is",
+    "title": "Build It Once: Skills, Scripts & Templates",
+    "section": "What a Skill Is",
+    "text": "What a Skill Is\n\nYour Skills are a library. Each Skill is a book — a written playbook for one recurring task.\n\n\n\nCowork keeps the whole shelf, but only opens the book your task calls for — not every book, every time. (just like the office puts only the relevant page on the desk)\n\n\n\n\nThe title on the spine — the trigger that tells Cowork which book to pull\nWhat’s written inside — the steps, in plain language"
+  },
+  {
+    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#skill-vs.-just-a-prompt",
+    "href": "ksu-workshop/slides/skills_scripts_templates.html#skill-vs.-just-a-prompt",
+    "title": "Build It Once: Skills, Scripts & Templates",
+    "section": "Skill vs. Just a Prompt",
+    "text": "Skill vs. Just a Prompt\n\n\n\nA prompt\nRetyped from scratch every single time you need the task.\n\n\n\n\nA Skill\nThat same prompt — named, saved, and bundled with its steps. One phrase runs it.\n\n\n\n\n\nA Skill is a good prompt that stopped being disposable."
+  },
+  {
+    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#demo-1-lecture-deck-revealjs",
+    "href": "ksu-workshop/slides/skills_scripts_templates.html#demo-1-lecture-deck-revealjs",
+    "title": "Build It Once: Skills, Scripts & Templates",
+    "section": "Demo 1 — “Lecture Deck” (revealjs)",
+    "text": "Demo 1 — “Lecture Deck” (revealjs)\n\nLecture notes → an on-brand revealjs slide deck you open in your browser.\n\n\n\nName: Lecture Deck  •  Trigger: “turn these notes into a revealjs deck”\nSteps: 1) outline the storyline · 2) one idea per slide · 3) apply my course style · 4) generate a revealjs file with a Quarto front-matter"
+  },
+  {
+    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#invoke-it-on-fresh-input",
+    "href": "ksu-workshop/slides/skills_scripts_templates.html#invoke-it-on-fresh-input",
+    "title": "Build It Once: Skills, Scripts & Templates",
+    "section": "Invoke It on Fresh Input",
+    "text": "Invoke It on Fresh Input\n\nSkill saved — now just type the trigger on any new lecture:\n\n\n“Turn this into a lecture deck: photosynthesis — light reactions, Calvin cycle, limiting factors, today’s lab.”\n\n\n\nOne phrase → a browser-ready deck. No re-explaining."
+  },
+  {
+    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#what-a-script-is",
+    "href": "ksu-workshop/slides/skills_scripts_templates.html#what-a-script-is",
+    "title": "Build It Once: Skills, Scripts & Templates",
+    "section": "What a Script Is",
+    "text": "What a Script Is\n\nA little program Cowork writes and runs when the job is exact, repeatable calculation — math and data done the same way every single time.\n\n\n\nThe brain in a jar estimates — and can slip on arithmetic. A computer computes the same way every time. So Cowork doesn’t do the math in its head — it writes a script.\n\n\n\n\n\n\n\n\n\nYou still never touch code\n\n\nA Skill is instructions Cowork reads and follows; a script is code it runs to compute. You never write or even see it: you describe what you want, Cowork writes and runs the script, you get the result."
+  },
+  {
+    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#template-the-layout-the-script-fills",
+    "href": "ksu-workshop/slides/skills_scripts_templates.html#template-the-layout-the-script-fills",
+    "title": "Build It Once: Skills, Scripts & Templates",
+    "section": "Template — the Layout the Script Fills",
+    "text": "Template — the Layout the Script Fills\n\nA template is a pre-made, on-brand layout — a slide deck or a spreadsheet — that the script populates, so every output looks consistent.\n\n\n\nThe script does the work (compute, fill in the numbers)\nThe template gives it a shape (your style, your branding)\nSame template next time → same look, no reformatting"
+  },
+  {
+    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#composition-skills-bundle-scripts-templates",
+    "href": "ksu-workshop/slides/skills_scripts_templates.html#composition-skills-bundle-scripts-templates",
+    "title": "Build It Once: Skills, Scripts & Templates",
+    "section": "Composition — Skills Bundle Scripts + Templates",
+    "text": "Composition — Skills Bundle Scripts + Templates\n\nA Skill isn’t just steps. It can call a script to compute and fill a template to look right — all behind one trigger.\n\n\n\n“turn these notes into a lecture deck” → the Skill outlines the story → a script generates the file → into your deck template → a finished, on-brand deck.\n\n\n\n\nOne phrase in. A polished result out. That’s composition."
+  },
+  {
+    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#demo-2-grade-summaries",
+    "href": "ksu-workshop/slides/skills_scripts_templates.html#demo-2-grade-summaries",
+    "title": "Build It Once: Skills, Scripts & Templates",
+    "section": "Demo 2 — Grade Summaries",
+    "text": "Demo 2 — Grade Summaries\n\nYou have a spreadsheet of raw scores. You want weighted finals, the class average, and a distribution — every term.\n\n\n\n“From grades.csv, compute each student’s weighted total (midterm 25%, final 35%, project 25%, participation 15%), the class average, and a grade distribution. Save it as a new sheet.”\n\n\n\n\n\n\n\nNote\n\n\nSample data: grades.csv"
+  },
+  {
+    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#why-a-script-here",
+    "href": "ksu-workshop/slides/skills_scripts_templates.html#why-a-script-here",
+    "title": "Build It Once: Skills, Scripts & Templates",
+    "section": "Why a Script Here",
+    "text": "Why a Script Here\n\nExact, every row — the script computes, it doesn’t estimate\nReproducible next time — same script, same method; no formula errors, no copy-paste\nYou get the result, not the code — describe it once, Cowork writes and runs it\n\n\n\n\n\n\n\n\nPair it with “double-check”\n\n\nFor anything you report, ask it to compute twice and compare before you trust the numbers."
+  },
+  {
+    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#script-or-just-answer",
+    "href": "ksu-workshop/slides/skills_scripts_templates.html#script-or-just-answer",
+    "title": "Build It Once: Skills, Scripts & Templates",
+    "section": "Script or Just Answer?",
+    "text": "Script or Just Answer?\n\nWhen should Cowork write a script instead of just answering?\n\n\n\n\nWhen the work is exact or repeated calculation — determinism, not guessing. The brain estimates; a script computes the same way every time."
   }
 ]
