@@ -71,8 +71,8 @@ fastest to set up. Concepts stay **portable** (ChatGPT, Gemini, Claude, Notebook
 alternatives). The audience is non-technical: **nobody writes code.**
 
 The delivery loop is **Show** (instructor demo) → **Build** (faculty apply a workflow to a
-real task) → **Refine** (group critique), ~70% hands-on. All hands-on agent work runs in a
-**sandbox folder with dummy data**.
+real task) → **Refine** (group critique), ~70% hands-on. All hands-on agent work runs on
+copies of files in a **staging folder**.
 
 ### Key Files
 - `examples/ksu/outline.md` — the KSU workshop outline (sessions, schedule, activities). Primary doc.
@@ -148,10 +148,10 @@ term kept as a label so learners recognize it: **think step by step** (Chain of 
 **debate it out** (Tree of Thoughts), **double-check** (Self-Consistency). Lead with the
 plain-language move, not the jargon.
 
-**Two safety rules** — **Newspaper Test** (guards what you *paste in*; sanitize first) and,
-once agents can act, **Blast Radius / Human-in-the-Loop** (guards what the agent *does*;
-start every Skill / scheduled job / connector in draft / notify-me mode before
-act-on-its-own). All hands-on agent work runs in a **sandbox folder with dummy data**.
+- **Two safety rules** — **Newspaper Test** (guards what you *paste in*; sanitize first) and,
+  once agents can act, **Blast Radius / Human-in-the-Loop** (guards what the agent *does*;
+  start every Skill / scheduled job / connector in draft / notify-me mode before
+  act-on-its-own). All hands-on agent work runs on **copies in a staging folder**.
 
 ## Content Authoring Guidelines
 
@@ -176,7 +176,7 @@ deck.
 3. **Practice — Delegate a Real Task** (`practice_foundations.qmd`) — RICE on a real task;
    ends with the 10-min break (25 + 10 min)
 4. **From Chat to Cowork** (`cowork_intro.qmd`) — chat vs. agent, working directory =
-   office, the second safety rule (undo test / blast radius) woven inline, sandbox (20 min)
+   office, the second safety rule (undo test / blast radius) woven inline, staging copy (20 min)
 5. **Build It Once: Skills, Scripts & Templates** (`skills_scripts_templates.qmd`) — the
    composition centerpiece: Skill (book) → Script (the worker it calls) → Template (the
    layout it fills) → composition (one phrase → finished on-brand result) (30 min)
