@@ -17,6 +17,5 @@ ChatGPT, Gemini, Claude, and NotebookLM.
 | Workshop | Audience | Length | Start here |
 |---|---|---|---|
 | **Building Your Own AI Assistant** | KSU faculty | Half-day (≈4 hrs) | [Run of show →](ksu-workshop/index.html) |
-
-_More workshops are generated from the shared `templates/` + a `config/workshops.json`
-entry — add a row here when you add one._
+| **Building Your Own AI Assistant** | Office professionals | Short session (≈2.5 hrs) | [Run of show →](office-workshop/index.html) |
+| **بناء مساعدك الذكي الخاص** | موظفو المكاتب (بالعربية · RTL) | جلسة قصيرة (≈2.5 ساعة) | [ترتيب سير اليوم →](office-workshop-ar/index.html) |
