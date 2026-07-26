@@ -19,8 +19,6 @@ paths, so keep them stable).
 - `examples/<id>/` — the per-workshop swappable layer: `fragments/*.qmd` (example slide
   blocks), `data/*` (hands-on sample files), and `outline.md` (instructor outline, copied
   verbatim).
-- `chunks/reference/` — the canonical plain-language concept definitions (the shared source
-  behind the inline concept slides). Documentation only; not rendered.
 - `build.py` — generates each workshop from the above.
 - `slides_template/`, `_quarto.yml` — shared SDAIA branding + Quarto config at the repo
   root, applied globally to every deck.
@@ -49,38 +47,44 @@ portal row in the root `index.qmd`; no deck is forked.
 
 ### Concepts and examples
 
-The foundation concepts (Two Layers, context, context window, script, RICE, advanced moves,
-Newspaper Test, grounding, **Connectors/MCP**) are authored **inline in the template decks**
-under `templates/workshop/slides/`. Since `build.py` renders the same templates for every
-workshop, editing a concept once updates every workshop — keep concept edits in the
-templates, never in a generated `<id>-workshop/` copy. The canonical plain-language wording
-behind these slides lives in `chunks/reference/`; keep the slides consistent with it. The
-**per-workshop** material (worked examples, sample prompts, demos) is the only thing that
-varies, and it lives in `examples/<id>/fragments/` (pulled in via `<!-- EXAMPLE: key -->`)
-plus the `vars` strings in `config/workshops.json`.
+The foundation concepts (Two Layers, context, context window, **Project**, script, RICE,
+advanced moves, Newspaper Test, grounding, **Connectors/MCP**) are authored **inline in the
+template decks** under `templates/workshop/slides/` — those decks are the canonical wording.
+Since `build.py` renders the same templates for every workshop, editing a concept once
+updates every workshop — keep concept edits in the templates, never in a generated
+`<id>-workshop/` copy. The **per-workshop** material (worked examples, sample prompts,
+demos) is the only thing that varies, and it lives in `examples/<id>/fragments/` (pulled in
+via `<!-- EXAMPLE: key -->`) plus the `vars` strings in `config/workshops.json`.
+
+**Arabic:** `templates/workshop-ar/` is a full parallel template tree (selected via the
+`template` key in `config/workshops.json`). Any structural or concept edit to
+`templates/workshop/` must be mirrored there, and any new `{{ var }}` needs an entry in
+**all three** workshop configs.
 
 ## Project Overview
 
 **Building Your Own AI Assistant** — a half-day (~4.5 hr), hands-on workshop teaching **KSU
 faculty** to use AI as a permanent member of their team (not as a search engine). By the
 end each participant has a working **AI assistant they set up themselves** plus 2–3
-automations on their own academic work, framed around **measurable time won back**.
+automations on their own academic work, framed around **the recurring tasks worth handing
+off**. Decks describe what the session does — they never promise hours saved or sell an
+outcome.
 
 **Hands-on tool:** **Claude Cowork** (Anthropic's desktop agent) — chosen because it is the
 fastest to set up. Concepts stay **portable** (ChatGPT, Gemini, Claude, NotebookLM named as
 alternatives). The audience is non-technical: **nobody writes code.**
 
-The delivery loop is **Show** (instructor demo) → **Build** (faculty apply a workflow to a
-real task) → **Refine** (group critique), ~70% hands-on. All hands-on agent work runs on
-copies of files in a **staging folder**.
+The workshop is delivered **online**. The delivery loop is **Show** (instructor runs a real
+task end to end) → **Mirror** (everyone repeats a small piece at the same time, from a
+provided prompt and file) → **Take home** (the same task on their own work, from the
+recipe). All hands-on agent work runs on copies of files in a **staging folder**.
 
 ### Key Files
 - `examples/ksu/outline.md` — the KSU workshop outline (sessions, schedule, activities). Primary doc.
-- `chunks/reference/mental_model_and_agent_concepts.md` — canonical plain-language
-  definitions (two layers, context, script, Skill, Schedule/Cron, Connector/MCP, blast
-  radius). **Shared** source of truth behind the inline concept slides.
 - `templates/workshop/slides/*.qmd` — the structural SDAIA-branded reveal.js decks, with the
-  concept slides authored inline.
+  concept slides authored inline. **Canonical** wording for every concept (two layers,
+  context, Project, script, Skill, Schedule/Cron, Connector/MCP, blast radius).
+- `templates/workshop-ar/slides/*.qmd` — the Arabic parallel tree; mirror all edits here.
 - `config/workshops.json` + `build.py` — the generator (see "The build system").
 - `_quarto.yml` — Quarto project config at the **repo root** (global SDAIA branding; renders
   the source tree into repo-root `output/`).
@@ -120,9 +124,16 @@ you, just predicts the next word, forgets everything when a request ends. The **
 is the "office around the brain": it stores your info in a directory and **re-sends the
 relevant context on every request**. Once learners see this, the working directory, Skills,
 and grounding stop being magic — they're all the app getting smarter about *what to re-send*.
-Full definitions live in `chunks/reference/mental_model_and_agent_concepts.md`; reuse its
-analogies verbatim across decks (the Two Layers concept slides live inline in
-`templates/workshop/slides/how_ai_works_and_rice.qmd`).
+The Two Layers concept slides live inline in
+`templates/workshop/slides/how_ai_works_and_rice.qmd`; reuse their analogies verbatim
+across decks.
+
+**Project** (Session 1, right after the context window) — the concrete, clickable instance
+of the app layer, and the middle rung between a disposable prompt and a Cowork Skill: a
+saved workspace (ChatGPT / Claude / Gemini) holding **standing instructions + uploaded
+files**, re-sent on every chat inside it. It is the one takeaway that needs **no install**,
+so it lands even for learners who never set up Cowork. It also pre-frames two later
+concepts — Project folder → **working directory**, standing instructions → **Skill**.
 
 **Agent-stack vocabulary** (the four-deck Cowork module) — taught with the analogy first, the
 term as a label: **working directory** (the real folder Cowork points at = the office),
@@ -131,11 +142,14 @@ it), **`/schedule`** (a standing appointment; industry term **Cron**), **Connect
 (giving the agent keys to email/calendar/drive). A **script** is "saved, repeatable
 steps" — instructions the *agent* writes and runs as real code for exact, repeatable
 work; you never write (or see) code. A Skill is instructions the agent *reads and
-follows*; a script is code it *runs to compute*. A **Template** is the on-brand layout the
-script *fills*. The keystone framing is **composition**: a Skill bundles a script + a
+follows*; a script is code it *runs to compute*. A **Template** is a real file on the
+learner's machine — their **PowerPoint template** (`.pptx`) or spreadsheet — the on-brand
+layout the script *fills*; the worked example is notes → an editable `.pptx`, never a
+revealjs/Quarto deck (that's authoring jargon this audience never sees). The per-workshop
+deck trigger is the `deck_trigger` var, not hardcoded in the template.
+The keystone framing is **composition**: a Skill bundles a script + a
 template behind one trigger, and **Schedule / Connectors just run a Skill** (on a clock, or
-with keys) — they're not new kinds of thing. Keep these consistent with
-`chunks/reference/mental_model_and_agent_concepts.md` (Script / Template / Composition).
+with keys) — they're not new kinds of thing.
 
 **RICE Pattern** (introduced in Session 1, Delegating to AI) — the delegation pattern:
 - **R**ole: Who should the AI be?
@@ -158,35 +172,92 @@ plain-language move, not the jargon.
 When generating or modifying course content:
 - Use management-friendly analogies; avoid technical jargon without explanation.
 - Follow the "Explain → Demonstrate → Practice → Apply" cycle.
-- Maintain ~70% hands-on building time, ~30% theory.
+- Prefer a mental model plus *when/how to use it* over frameworks, ladders, and matrices.
+- Cut taglines, slogans, imagined-quote bubbles, and any sentence that only restates the
+  box above it. One concept box and one concrete example per slide.
+- Every concept deck ends in a knowledge check; decks 4–6 also end in a follow-along.
 - Use the "I like, I wish, I wonder" feedback framework.
 - Support dual-language (English + Arabic key terms).
 
-## Course Schedule Reference (KSU, ≈270 min)
+### Slide voice and density
+
+These are acceptance criteria for any slide you write or edit, in **both** language trees.
+The Arabic-specific wording contract is `notes/arabic-voice-style-guide.md`, whose §3 now
+carries the same density rules.
+
+**Density**
+1. Max **~40 words of prose per slide**. Quoted prompts, the recipe card, the RICE specimen
+   prompt, and the run-of-show table are *reference artifacts, not prose*: they are exempt
+   and stay verbatim. Cut the explanation wrapped around them instead.
+2. Max **two content blocks** per slide (a card plus one list or one line). Not card +
+   paragraph + list + centered restatement + callout.
+3. Bullets are **fragments, not sentences**: ≤8 words, no semicolons, no gloss clause.
+4. **Delete any centered closer that only restates the card above it.**
+5. **No inline `font-size:` shrink hacks.** A shrink means the slide is too full; cut text
+   until the theme's type scale fits. `_quarto.yml` sets `scrollable: false`, so overflow
+   is clipped silently, never scrolled.
+6. **Cut before splitting.** Split a slide only when the idea needs two beats, and give the
+   new slide the same `data-id` so `auto-animate` still pairs.
+
+**Voice**
+7. **No em-dash (`—`) as a connective, anywhere, in either language**, and never in a slide
+   title. It was this repo's default connective and read as machine-written. Use a full
+   stop, or a colon when the label is real.
+8. Retire the `**Bold term** — gloss` list template. No two lists in a deck share the same
+   grammar.
+9. At most **one antithesis per deck** ("not X, but Y"), only where the contrast is the
+   teaching point. No "Picture an…", no "Think of it as…", no `*(industry term: X)*`
+   parenthetical (name the term once in the body instead).
+10. Slide titles are plain statements in sentence case. No chiasmus, no two-sentence
+    imperatives, no tagline that repeats the title. Section dividers (`#`) keep title case.
+11. **Teach each idea once.** The two safety rules are stated in full in `overview` and
+    `cowork_intro`; everywhere else they are referenced by name, not restated.
+
+Prefer the existing SCSS vocabulary over new inline styles: `.card` + `.accent-teal|purple|
+orange|navy|yellow`, `.card-dark`, `.fill-*`, `.center`, `.tight`, `.muted`, `.pill`,
+`.qbox`. These use `border-inline-start` and mirror correctly under RTL; hardcoded
+`border-left` / `text-align: left` do not.
+
+**Parity:** the two template trees must keep **identical heading counts per file**. Verify
+with `grep -c '^#'` on the matching pair after any structural change.
+
+## Course Schedule Reference (KSU, ≈235 min)
 
 Canonical order lives in `templates/workshop/index.qmd` (run-of-show) and
-`examples/ksu/outline.md`. Deck slugs are descriptive and numberless. The Cowork module is
-**four single-idea decks** (one concept each, each ending in a knowledge check) — not one
-deck.
+`examples/ksu/outline.md`. Deck slugs are descriptive and numberless. The work-mode module
+is **three teaching decks plus the recipe** — one concept each, each of the three ending in
+a knowledge check *and* a follow-along.
 
 1. **Overview** (`overview.qmd`) — welcome + agenda + the two safety rules (10 min)
 2. **How AI Works & Writing Great Prompts** (`how_ai_works_and_rice.qmd`) — Two Layers +
-   context + RICE + advanced moves (think step by step / debate it out / double-check) +
-   Newspaper Test (45 min)
-3. **Practice — Delegate a Real Task** (`practice_foundations.qmd`) — RICE on a real task;
-   ends with the 10-min break (25 + 10 min)
-4. **From Chat to Cowork** (`cowork_intro.qmd`) — chat vs. agent, working directory =
-   office, the second safety rule (undo test / blast radius) woven inline, staging copy (20 min)
-5. **Build It Once: Skills, Scripts & Templates** (`skills_scripts_templates.qmd`) — the
-   composition centerpiece: Skill (book) → Script (the worker it calls) → Template (the
-   layout it fills) → composition (one phrase → finished on-brand result) (30 min)
-6. **Schedule: Run It Without You** (`schedule.qmd`) — `/schedule` runs a Skill on a clock;
-   guardrails first; starter library (15 min)
-7. **Connectors: Reaching Into Other Buildings** (`connectors.qmd`) — keys to inbox /
-   calendar / drive (MCP), wider blast radius, connector + skill + schedule together;
-   ends with the module key takeaways (15 min)
-8. **Practice — Build Your First Workflows** (`practice_automation.qmd`) — first run +
-   package a Skill (30 min)
-9. **Grounding & Creating with NotebookLM** (`notebooklm_grounding_and_slides.qmd`) —
+   context + **Project** + RICE + advanced moves (think step by step / debate it out /
+   double-check) + Newspaper Test (45 min)
+3. **Practice — Delegate a Real Task** (`practice_foundations.qmd`) — RICE on a real task,
+   then save it into a Project; ends with the 10-min break (30 + 10 min)
+4. **From Chat to Work Mode** (`cowork_intro.qmd`) — the keystone of the module: asking
+   *about* the work vs. handing *over* the work; working directory = office; the second
+   safety rule (undo test / blast radius); staging copies; instructor demo + follow-along (25 min)
+5. **Build It Once** (`skills_scripts_templates.qmd`) — Skill (book) → Script (exact
+   numbers) → Template (the layout) → composition. **Demo, not a build block**; ends in a
+   follow-along where learners paste a provided Skill and run it (20 min)
+6. **How Far This Goes** (`how_far_this_goes.qmd`) — Schedule **and** Connectors merged:
+   both just *run a Skill*, on a clock or with keys; wider blast radius; module key
+   takeaways (15 min)
+7. **Your Recipe** (`recipe.qmd`) — the one-page take-home: three prompts they already
+   watched work, to run on their own files; both safety rules; pick which to run first (10 min)
+8. **Grounding & Creating with NotebookLM** (`notebooklm_grounding_and_slides.qmd`) —
    grounding + citations + slide creation (40 min)
-10. **Your AI Assistant** (`wrap_up.qmd`) — recap + tally hours won back + safety (30 min)
+9. **Your AI Assistant** (`wrap_up.qmd`) — recap + name one recurring task to try first +
+   safety (30 min)
+
+### Online delivery: follow-alongs, not practice blocks
+
+The workshop is delivered **online**, where an open practice block is the thing learners
+opt out of. So the doing is dissolved into the flow: decks 4–6 each end in a **3-minute
+follow-along** (`followalong_*` fragments) — a **provided prompt on a provided file**, run
+by everyone at once, with exactly one obvious outcome. The rule: **if it can fail live, it
+isn't a follow-along.** The instructor demo (`handover_demo`) must be *replicable* — the
+exact prompt appears on screen and in the recipe. Real practice happens async from
+`recipe_card`; setup (app install + staging folder) is **pre-work**, not session time.
+
+The delivery loop is therefore **Show → Mirror → Take home**, not Show → Build → Refine.

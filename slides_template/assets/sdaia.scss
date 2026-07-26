@@ -384,6 +384,64 @@ html[dir="rtl"] .reveal pre code,
   text-align: left;
 }
 
+/* =========================================================================
+   Semantic card system
+   Replaces per-slide inline styles across the decks. Two payoffs baked in:
+   1. RTL-safe by construction — uses `border-inline-start`, so the accent bar
+      sits on the start (reading) edge in BOTH LTR and RTL with no override.
+      (The old inline `border-left` did not mirror for Arabic.)
+   2. WCAG-safe fills — bright brand colors carry DARK text, because white on
+      teal/orange/purple fails the 4.5:1 contrast minimum.
+   ========================================================================= */
+
+/* Light concept card with a start-edge accent bar (default: teal). */
+.reveal .card {
+  background: var(--sdaia-code-bg);
+  padding: 1.2em;
+  border-radius: 12px;
+  border-inline-start: 4px solid var(--sdaia-teal);
+  text-align: start;
+}
+
+.reveal .card.tight {
+  padding: 0.8em 1em;
+}
+
+/* Accent-color modifiers for the card's start bar. */
+.reveal .card.accent-navy   { border-inline-start-color: var(--sdaia-navy); }
+.reveal .card.accent-teal   { border-inline-start-color: var(--sdaia-teal); }
+.reveal .card.accent-purple { border-inline-start-color: var(--sdaia-purple); }
+.reveal .card.accent-orange { border-inline-start-color: var(--sdaia-orange); }
+.reveal .card.accent-yellow { border-inline-start-color: var(--sdaia-yellow); }
+
+/* Filled navy card — white text is ~10:1 on navy, so it stays white. */
+.reveal .card-dark {
+  background: var(--sdaia-navy);
+  color: #ffffff;
+  padding: 1.2em;
+  border-radius: 12px;
+}
+.reveal .card-dark strong,
+.reveal .card-dark p,
+.reveal .card-dark li { color: #ffffff; }
+
+/* Filled bright chips — DARK text for contrast (white on these fails WCAG). */
+.reveal .fill-teal,
+.reveal .fill-purple,
+.reveal .fill-orange {
+  color: var(--text);
+  padding: 1.2em;
+  border-radius: 12px;
+  text-align: center;
+}
+.reveal .fill-teal   { background: var(--sdaia-teal); }
+.reveal .fill-purple { background: var(--sdaia-purple); }
+.reveal .fill-orange { background: var(--sdaia-orange); }
+
+/* Centering + spacing utilities to retire one-off inline `text-align`. */
+.reveal .center    { text-align: center; }
+.reveal .stack-top { margin-top: 0.5em; }
+
 /* Printable polish */
 @media print {
   .reveal .slides section::after {
