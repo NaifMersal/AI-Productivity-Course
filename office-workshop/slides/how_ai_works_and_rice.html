@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.38">
 
   <meta name="dcterms.date" content="2026-07-27">
-  <title>AI at Work – Grounding &amp; Creating with Gemini Notebook</title>
+  <title>AI at Work – How AI Works &amp; Writing Great Prompts</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -132,98 +132,240 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="../../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title">Grounding &amp; Creating with Gemini Notebook</h1>
-  <p class="subtitle">Grounded Answers + Slides from Your Sources</p>
+  <h1 class="title">How AI Works &amp; Writing Great Prompts</h1>
+  <p class="subtitle">The Two Layers + The RICE Pattern</p>
 
 <div class="quarto-title-authors">
 </div>
 
   <p class="date">2026-07-27</p>
 </section>
-<section id="put-the-right-sources-on-the-desk" class="title-slide slide level1 center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">Put the right sources on the desk</h1>
-<div data-id="intro" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em;">
-<p><strong>Earlier today:</strong> the brain only knows what’s on the desk.</p>
-</div>
-<div class="fragment">
-<div class="card-dark center" style="font-size: 1.15em; margin-top: 1em;">
-<p>So put the <strong>right sources</strong> there, and make it answer from <strong>those only</strong>. That’s <strong>grounding</strong>. Without it, even the smartest brain guesses.</p>
-</div>
-</div>
-</section>
-
-<section id="wrong-way-right-way" class="title-slide slide level1 center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">Wrong way, right way</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="card accent-orange">
-<p><strong>Wrong</strong></p>
-<p>“Summarize the literature on active learning.”</p>
-<p>→ Generic, maybe fabricated citations.</p>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="card accent-teal">
-<p><strong>Right</strong></p>
-<p>Upload 5 papers → “Based <strong>only</strong> on these, summarize…”</p>
-<p>→ Specific, citable, defensible.</p>
-</div>
-</div></div>
-<div class="fragment">
-<div class="card-dark center" style="font-size: 1.15em; margin-top: 0.6em;">
-<p><strong>No citation? Treat it as unverified.</strong></p>
-</div>
-<div class="center" style="margin-top: 0.4em;">
-<p>For research, teaching materials, and committee work, demand the page reference.</p>
-</div>
-</div>
-</section>
-
 <section>
-<section id="meet-gemini-notebook" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h1>Meet Gemini Notebook</h1>
-<p>Formerly NotebookLM. A research assistant grounded in <em>your</em> documents</p>
+<section id="what-happens-when-you-send-a-prompt" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>What Happens When You Send a Prompt</h1>
+<p>You’re dealing with <strong>two layers</strong>, not one.</p>
 </section>
-<section id="what-its-best-at" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">What it’s best at</h2>
-<div class="card accent-purple" data-id="nlm">
-<p><strong>Deep reading of big documents</strong> (50+ pages). It works <strong>only from your uploaded sources</strong>, and every answer links back to one.</p>
-</div>
-<div class="fragment">
-<ul>
-<li class="fragment">Upload papers, a thesis, a policy, lecture readings</li>
-<li class="fragment">Ask questions; get answers <strong>with citations</strong> to the exact passage</li>
-<li class="fragment">Generate an <strong>Audio Overview</strong> to listen on your commute</li>
-</ul>
-</div>
-</section>
-<section id="it-also-builds-slides" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">It also builds slides</h2>
-<div class="card-dark center" data-id="slides" style="font-size: 1.1em;">
-<p>Turn your sources into a <strong>presentation</strong>, grounded in the same documents.</p>
-</div>
-<div class="fragment">
+<section id="two-layers-stacked" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Two layers, stacked</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="card accent-teal">
-<p><strong>Detailed Deck</strong></p>
-<p>Text-rich, stands on its own. Good for a reading or handout.</p>
+<div class="fragment fade-in">
+<div class="card-dark center">
+<p><strong>The Model Layer</strong></p>
+<p>“The brain.” Knows a lot, knows nothing about you.</p>
+</div>
 </div>
 </div><div class="column" style="width:50%;">
-<div class="card accent-purple">
-<p><strong>Presenter Slides</strong></p>
-<p>Clean and visual. Supports you while you talk.</p>
+<div class="fragment fade-in">
+<div class="fill-teal">
+<p><strong>The App Layer</strong></p>
+<p>“The office.” Keeps your files and re-sends them.</p>
+</div>
 </div>
 </div></div>
+<div class="fragment">
+<div class="center" style="margin-top: 1em;">
+<p>Tell these apart and the “memory” features stop being magic.</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="the-model-layer" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>The Model Layer</h1>
+<p>What the model itself can and can’t do</p>
+</section>
+<section id="a-brain-with-no-memory-of-you" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">A brain with no memory of you</h2>
+<div class="card accent-purple" data-id="brain">
+<p>It has read most of the internet. It has read nothing about you.</p>
+</div>
+<div class="fragment">
+<ul>
+<li class="fragment"><strong>Keeps:</strong> language, facts, math, reasoning</li>
+<li class="fragment"><strong>Forgets:</strong> you, your work, this conversation</li>
+</ul>
+</div>
+<div class="fragment">
+<div class="center" style="margin-top: 0.4em;">
+<p>So anything it should know about you, you <strong>hand it every time</strong>.</p>
+</div>
 </div>
 </section>
-<section id="steering-and-editing-the-deck" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Steering and editing the deck</h2>
+<section id="it-predicts-the-next-word" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">It predicts the next word</h2>
+<p>It does <strong>one</strong> thing, over and over: pick the next word, add it, ask again.</p>
+<div class="r-stack" style="font-size: 1.1em; margin-top: 1.2em; min-height: 4em;">
+<div class="fragment fade-in-then-out">
+<p><em>“The capital of Saudi Arabia ___”</em></p>
+<ol type="1">
+<li><strong>is</strong> (97%)</li>
+<li>was (2%)</li>
+<li>remains (0.6%)</li>
+<li>all other words … (0.2%)</li>
+</ol>
+</div>
+<div class="fragment fade-in-then-out">
+<p><em>“The capital of Saudi Arabia is ___”</em></p>
+<ol type="1">
+<li><strong>Riyadh</strong> (99%)</li>
+<li>Jeddah (0.4%)</li>
+<li>Mecca (0.3%)</li>
+<li>all other words … (0.2%)</li>
+</ol>
+</div>
+<div class="fragment fade-in-then-out">
+<p><em>“The capital of Saudi Arabia is Riyadh ___”</em></p>
+<ol type="1">
+<li><strong>,</strong> (52%)</li>
+<li><strong>.</strong> (41%)</li>
+<li>: (4%)</li>
+<li>all other words … (2%)</li>
+</ol>
+</div>
+<div class="fragment fade-in">
+<p><em>“The capital of Saudi Arabia is Riyadh, a ___”</em></p>
+<ol type="1">
+<li><strong>city</strong> (61%)</li>
+<li>large (12%)</li>
+<li>major (8%)</li>
+<li>all other words … (6%)</li>
+</ol>
+</div>
+</div>
+<div class="fragment">
+<div class="center" style="margin-top: 0.5em;">
+<p>At each step it knows <strong>which word usually comes next</strong>. That is the whole trick.</p>
+<p><span class="muted">Percentages are illustrative.</span></p>
+</div>
+</div>
+</section>
+<section id="when-it-guesses-wrong" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">When it guesses wrong</h2>
+<div style="font-size: 1.1em; margin-bottom: 1em;">
+<p>What happens when it doesn’t know the answer? <strong>It guesses.</strong></p>
+</div>
+<p><em>“According to Article 214 of the new Investment Law: …”</em></p>
+<div class="fragment">
+<div class="fragment fade-in">
 <ul>
-<li class="fragment">Name your audience and themes before it generates</li>
-<li class="fragment">Export to <code>.pptx</code> or PDF</li>
-<li class="fragment">Expect cleanup: parts export as images</li>
-<li class="fragment">Revise any slide with the pencil icon</li>
+<li><strong>The</strong> (45%) · <strong>Foreign</strong> (30%) · <strong>Capital</strong> (15%)</li>
 </ul>
+</div>
+</div>
+<div class="fragment">
+<div class="card accent-orange" style="margin-top: 1em;">
+<p>The sentence sounds right, and it has never read the document. That confident, made-up answer is a <strong>hallucination</strong>.</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="the-app-layer" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>The App Layer</h1>
+<p>The office around the brain</p>
+</section>
+<section id="we-build-an-office-around-it" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">We build an office around it</h2>
+<div class="card accent-teal" data-id="office">
+<p>The brain can’t open files or remember your name. So we build an <strong>office</strong> around it: the <strong>app</strong> you actually use.</p>
+</div>
+<div class="fragment">
+<div class="center" style="margin-top: 0.5em;">
+<p>It keeps your information in files. Every time you ask, it <strong>gathers the relevant pages and hands them to the brain</strong>, then files the answer back.</p>
+</div>
+</div>
+</section>
+<section id="the-features-you-already-use" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The features you already use</h2>
+<div class="card accent-teal" data-id="office">
+<p>“Memory”, “Projects”, “Custom Instructions” are all the <strong>app</strong> doing that gathering and re-sending for you.</p>
+</div>
+<div class="fragment">
+<div class="center" style="font-weight: bold; margin-top: 0.5em;">
+<p>The brain still has amnesia. The office is what makes it feel like it remembers.</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="what-context-really-is" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>What “Context” Really Is</h1>
+<p>The pages on the brain’s desk</p>
+</section>
+<section id="what-goes-in-front-of-the-model" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">What goes in front of the model</h2>
+<div class="card accent-purple" data-id="context">
+<p><strong>Context</strong> is what the office puts on the desk before the brain starts: your request, your instructions, the files you upload, and what came earlier in the chat.</p>
+</div>
+<div class="fragment">
+<div class="card-dark center" style="font-size: 1.1em;">
+<p>What changes the answer most is <strong>what you put in the context</strong>.</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="the-desk-has-limits" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #FF7A5C, #1C355E)">
+<h1>The Desk Has Limits</h1>
+<p>The context window</p>
+</section>
+<section id="why-long-chats-forget" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Why long chats “forget”</h2>
+<div class="card accent-orange" data-id="window">
+<p>Context space is <strong>limited</strong>. As a chat grows, there isn’t room for everything that came before, so the oldest of it drops out.</p>
+</div>
+<div class="fragment">
+<div class="center" style="margin-top: 0.5em;">
+<p>That’s the <strong>context window</strong>: a limit on what the model can take in for one request.</p>
+</div>
+</div>
+</section>
+<section id="a-project-saves-your-instructions-and-files" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">A Project saves your instructions and files</h2>
+<div class="card accent-teal" data-id="project">
+<p>A <strong>Project</strong> in ChatGPT, Claude, or Gemini is a saved workspace. Set it up <strong>once</strong>: name it, write your standing instructions, upload the files it should always see.</p>
+</div>
+<div class="fragment">
+<div class="center" style="margin-top: 0.4em;">
+<p><strong>Every new chat inside it starts with those already loaded.</strong></p>
+</div>
+</div>
+<div class="fragment">
+<div class="card-dark" style="margin-top: 0.5em;">
+<p><strong>A “Weekly Report” Project.</strong> Standing instructions: <em>always lead with decisions, keep it under 200 words, use our house tone.</em> Files uploaded once: the format guide and last month’s reports.</p>
+</div>
+</div>
+</section>
+<section id="micro-check" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Micro-check</h2>
+<p>The AI cites a market report that <strong>doesn’t exist</strong>. Which layer failed?</p>
+<div class="fragment">
+<div class="fragment fade-in">
+<div class="fill-purple">
+<p><strong>Both.</strong> The model guessed because the context held no real source. Give it the source, then check the citations.</p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="rice" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>RICE</h1>
+<p>Four elements that make your prompt clear: Role, Instructions, Context, Examples.</p>
+</section>
+<section id="the-framework" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The framework</h2>
+<p>The harder the task, the more of these are worth adding.</p>
+<div data-id="rice">
+<div class="fragment fade-in">
+<p><strong>R</strong> Role: the expert you’d hire.</p>
+</div>
+<div class="fragment fade-in">
+<p><strong>I</strong> Instructions: the task, plus format, length, tone.</p>
+</div>
+<div class="fragment fade-in">
+<p><strong>C</strong> Context: your notes, your files.</p>
+</div>
+<div class="fragment fade-in">
+<p><strong>E</strong> Examples: one sample of “good”.</p>
+</div>
+</div>
 <div class="fragment">
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -231,129 +373,128 @@
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>One requirement</strong></p>
+<p><strong>C is the <em>same</em> context from the two layers</strong></p>
 </div>
 <div class="callout-content">
-<p>You need <strong>at least one source uploaded</strong> before it can build a deck.</p>
+<p>You’re loading the pages onto the brain’s desk. <strong>No context = the brain guesses.</strong></p>
 </div>
 </div>
-</div>
-</div>
-</section></section>
-<section id="right-tool-right-job" class="title-slide slide level1 center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">Right Tool, Right Job</h1>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Need</th>
-<th style="text-align: left;">Tool</th>
-<th style="text-align: left;">Why</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Your day-to-day files</td>
-<td style="text-align: left;"><strong>Cowork</strong></td>
-<td style="text-align: left;">Your folder, your rules</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">A 100-page PDF</td>
-<td style="text-align: left;"><strong>Gemini Notebook</strong></td>
-<td style="text-align: left;">Grounded in your docs only</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Live web, with citations</td>
-<td style="text-align: left;"><strong>Deep Research</strong></td>
-<td style="text-align: left;">Real-time and footnoted</td>
-</tr>
-</tbody>
-</table>
-<div class="fragment">
-<div class="center muted" style="margin-top: 0.4em;">
-<p><em>Deep Research: Perplexity, ChatGPT, or Gemini.</em></p>
 </div>
 </div>
 </section>
-
-<section>
-<section id="from-source-to-deck" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
-<h1>From source to deck</h1>
-<p>Source → grounded summary → deck</p>
-</section>
-<section id="your-mission" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Your mission</h2>
-<div data-id="mission" style="background: #f7f9fc; padding: 0.8em 1.2em; border-radius: 12px;">
-<p>Take a <strong>real (safe) paper or policy PDF</strong>. Produce a <strong>1-page grounded summary</strong> and a <strong>presenter deck</strong>, in 10 minutes.</p>
+<section id="the-newspaper-test" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The Newspaper Test</h2>
+<div class="card accent-navy" data-id="newspaper">
+<p><strong>C</strong> means real material leaves your desk. Before it does, ask: <em>would I be comfortable seeing this text on the front page of a newspaper?</em></p>
 </div>
 <div class="fragment">
-<ol type="1">
-<li class="fragment">Upload the source to Gemini Notebook</li>
-<li class="fragment">Ask: <em>“Based only on this, give 5 key findings with page references. If it’s not in the source, say ‘Not found.’”</em></li>
-<li class="fragment">Click through the citations to the passage</li>
-<li class="fragment">Generate a Presenter deck, export <code>.pptx</code>, revise one slide</li>
-</ol>
+<div class="center" style="margin-top: 0.5em;">
+<p>If not, strip names, customer data, and unreleased plans first. The answer is just as good without them.</p>
+</div>
+</div>
+<div class="fragment">
+<div class="card-dark center" style="margin-top: 0.5em;">
+<p>This is Rule 1 of two. It guards what you <strong>paste in</strong>.</p>
+</div>
 </div>
 </section>
-<section id="check-it-before-you-use-it" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Check it before you use it</h2>
-<div class="card accent-orange" data-id="mission">
-<p>A source reduces guessing. It does not replace your review. Generated slides can still carry factual and visual errors.</p>
+<section id="the-formula" class="slide level2 sdaia-dark" data-background-gradient="linear-gradient(135deg, #1C355E, #625D9C)">
+<h2>The formula</h2>
+<div style="background: rgba(255,255,255,0.12); padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.05em;">
+<p>“Act as a <strong>[Role]</strong>. Your job is to <strong>[Instructions]</strong>. Here is the <strong>[Context]</strong>. Match this <strong>[Example]</strong>.”</p>
 </div>
-<div class="center muted">
-<p><em>No source? Use one of your own, or open <a href="../data/sample_paper.md"><code>sample_paper.md</code></a> for links to open-access papers and policies.</em></p>
+<div class="fragment">
+<div style="text-align: center; margin-top: 1em;">
+<p>One good sample shows the shape you want faster than several lines of rules.</p>
 </div>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
 </div>
-<p><strong>Log it</strong></p>
+</section>
+<section id="delegate-instead-of-asking" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Delegate instead of asking</h2>
+<div class="card accent-orange" data-id="example">
+<p><strong>Don’t ask:</strong> “Write an email about the meeting.”</p>
 </div>
-<div class="callout-content">
-<p>Does this task recur for you? Then it’s a good candidate to try after the session.</p>
-</div>
+<div class="fragment fade-in">
+<div class="card accent-teal" style="margin-top: 0.6em;">
+<p><strong>Delegate:</strong> “Act as my chief of staff. Draft a recap email to the team from these notes. Highlight the decisions and who owns each action before the next sync.”</p>
 </div>
 </div>
 </section></section>
 <section>
-<section id="micro-check" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<section id="live-demo" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>Live Demo</h1>
+<p>Messy meeting notes → a clean team recap email</p>
+</section>
+<section id="the-messy-notes" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The messy notes</h2>
+<div data-id="story" style="font-size: 0.9em;">
+<p>What you actually scribbled after the planning sync:</p>
+</div>
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.82em; font-style: italic;">
+<p>“Q3 campaign beat target (1,240 leads) but 18% over budget. Huda shifting Q4 to email + webinars, needs Finance actuals first. CRM go-live Nov 15 but migration has no owner, only 2 of 9 reps trained. Omar chasing 2 open invoices. Decision: approve CRM licenses if Finance finds the line.”</p>
+</div>
+</section>
+<section id="the-rice-prompt" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The RICE prompt</h2>
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.75em;">
+<p><strong>Role:</strong> Act as my chief of staff.</p>
+<p><strong>Instructions:</strong> Draft a clear recap email to the team. Use these headers: Summary, Decisions, Action Items (with owners), Deadline. Put the deadline in <strong>bold</strong>. Keep it skimmable. If anything is missing an owner, add a “Needs an owner” section.</p>
+<p><strong>Context:</strong> Notes from today’s Q3 planning sync: <em>[paste notes]</em></p>
+<p><strong>Example:</strong> Match this opening: <em>“Team, quick recap from today’s sync. Here’s where we landed: …”</em></p>
+</div>
+</section>
+<section id="what-made-it-work" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">What made it work</h2>
+<ul>
+<li class="fragment"><strong>Role</strong> → wrote as a chief of staff, not a robot</li>
+<li class="fragment"><strong>Instructions</strong> → the sections, the owners, the “Needs an owner” rule</li>
+<li class="fragment"><strong>Context</strong> → messy notes were enough to extract the structure</li>
+<li class="fragment"><strong>Example</strong> → matched the crisp, professional opening</li>
+</ul>
+</section></section>
+<section>
+<section id="micro-check-1" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
 <h1>Micro-check</h1>
-<p>Pick the right move</p>
+<p>Test your understanding</p>
 </section>
 <section id="quiz" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Quiz</h2>
-<p><strong>1.</strong> You need to summarize a <strong>confidential, unpublished</strong> manuscript you’re reviewing.</p>
+<p>You prompt: <em>“Write feedback on this report draft.”</em> Which RICE elements are <strong>missing</strong>?</p>
 <div class="fragment">
 <div class="fragment fade-in">
-<div class="card accent-orange">
-<p><strong>Newspaper Test first.</strong> This is confidential peer review, so check the rules before uploading it anywhere.</p>
+<div class="columns">
+<div class="column" style="width:25%;">
+<div style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;">
+<p><strong>R</strong> Role</p>
+<p>Who’s giving it?</p>
 </div>
+</div><div class="column" style="width:25%;">
+<div style="background: #00C9A7; color: white; padding: 0.8em; border-radius: 12px; text-align: center;">
+<p><strong>I</strong> Instructions</p>
+<p>Length? tone? checklist?</p>
 </div>
+</div><div class="column" style="width:25%;">
+<div style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;">
+<p><strong>C</strong> Context</p>
+<p>The draft? the checklist?</p>
 </div>
-<div class="fragment">
-<p><strong>2.</strong> You need <strong>today’s</strong> statistics on enrollment trends from the web.</p>
+</div><div class="column" style="width:25%;">
+<div style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;">
+<p><strong>E</strong> Example</p>
+<p>No sample of good feedback</p>
 </div>
-<div class="fragment">
-<div class="fragment fade-in">
-<div class="card accent-teal">
-<p><strong>Deep Research</strong>, for live web with citations. Gemini Notebook only reads your uploads.</p>
-</div>
+</div></div>
 </div>
 </div>
 </section>
 <section id="key-takeaways" class="slide level2 sdaia-dark" data-background-color="#1C355E">
 <h2>Key takeaways</h2>
 <ol type="1">
-<li class="fragment">Upload the sources first, then constrain it to “only these”.</li>
-<li class="fragment">A citation is a pointer. Click through and check the claim.</li>
-<li class="fragment"><strong>Gemini Notebook</strong> does deep reading and decks, exportable as <code>.pptx</code>.</li>
-<li class="fragment">Match the tool to the job: Cowork, Gemini Notebook, or Deep Research.</li>
+<li class="fragment">Two layers: the model is the brain, the app is the office.</li>
+<li class="fragment">The model predicts the next word, and can make things up.</li>
+<li class="fragment">The answer follows the context. A <strong>Project</strong> keeps yours loaded.</li>
+<li class="fragment">Brief it with <strong>RICE</strong>: Role, Instructions, Context, Examples.</li>
+<li class="fragment">Run the <strong>Newspaper Test</strong> before you paste.</li>
 </ol>
 
 

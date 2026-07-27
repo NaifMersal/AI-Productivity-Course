@@ -9,7 +9,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="dcterms.date" content="2026-06-23">
+  <meta name="dcterms.date" content="2026-07-27">
   <title>AI at Work – Building Your Own AI Assistant</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -32,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-5e52468ea78ecf062a33c93e46e8ca0a.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f25e2d88d2f9c8c14c21095ce8dbb441.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -138,48 +138,41 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">2026-06-23</p>
+  <p class="date">2026-07-27</p>
 </section>
 <section>
 <section id="welcome" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
 <h1>Welcome</h1>
-<p>Four hours. One working AI assistant — yours.</p>
+<p>A hands-on session, with no coding.</p>
 </section>
-<section id="what-youll-walk-out-with" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">What You’ll Walk Out With</h2>
-<div data-id="promise" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.2em;">
-<p>An AI assistant <strong>you set up yourself</strong> — plus <strong>2–3 automations</strong> running on your own academic work.</p>
+<section id="what-well-work-on" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">What we’ll work on</h2>
+<div data-id="promise" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.05em;">
+<p>We write prompts with <strong>RICE</strong>, save them in a <strong>Project</strong>, then hand a task to <strong>Claude Cowork</strong> on provided files.</p>
 </div>
 <div class="fragment">
-<div style="text-align: center; margin-top: 1em;">
-<p>Not a search engine. A <strong>member of your team</strong> that drafts, summarizes, and calculates.</p>
+<div class="center" style="margin-top: 1em;">
+<p>You leave with a one-page recipe for repeating it on your own academic work.</p>
 </div>
 </div>
-</section>
-<section id="who-this-is-for" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Who This Is For</h2>
+<div class="fragment">
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>KSU faculty — no coding required</strong></p>
+<p><strong>KSU faculty, no coding required</strong></p>
 </div>
 <div class="callout-content">
-<p>If you can write an email, you can build everything in this workshop. <strong>Nobody writes code</strong> — you describe the steps in plain language.</p>
+<p>You describe what you want in plain language. We use <strong>Claude Cowork</strong> because it sets up fastest, and the same ideas work in ChatGPT, Gemini, and Claude.</p>
 </div>
 </div>
-</div>
-<div class="fragment">
-<div style="text-align: center; margin-top: 0.5em;">
-<p>We use <strong>Claude Cowork</strong> today because it’s the fastest to set up — but every idea works in ChatGPT, Gemini, and Claude too.</p>
 </div>
 </div>
 </section>
-<section id="the-day-in-five-blocks" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">The Day in Five Blocks</h2>
-<div style="font-size: 0.9em;">
+<section id="the-day-in-four-stops" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">The day in four stops</h2>
 <table class="caption-top">
 <colgroup>
 <col style="width: 50%">
@@ -187,91 +180,76 @@
 </colgroup>
 <thead>
 <tr class="header">
-<th>Block</th>
-<th>You’ll…</th>
+<th>Stop</th>
+<th>What we do</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>How AI Works + RICE</strong></td>
-<td>See <em>why</em> it works — and delegate like you brief a TA</td>
+<td>Why it works, and how to set up a <strong>Project</strong></td>
 </tr>
 <tr class="even">
-<td><em>Practice + break</em></td>
-<td>Write a real RICE prompt for your own work</td>
+<td><strong>Work Mode</strong></td>
+<td>Hand a task to an agent: files, Skills, schedules</td>
 </tr>
 <tr class="odd">
-<td><strong>Cowork + Automation</strong></td>
-<td>Set up your agent; build Skills / Schedule / Scripts</td>
-</tr>
-<tr class="even">
-<td><em>Practice</em></td>
-<td>Run a task and package your first Skill</td>
-</tr>
-<tr class="odd">
-<td><strong>NotebookLM</strong></td>
-<td>Turn your sources into grounded summaries and decks</td>
+<td><strong>Your Recipe</strong></td>
+<td>Three ready prompts for your own work</td>
 </tr>
 <tr class="even">
 <td><strong>Wrap-up</strong></td>
-<td>Tally the hours you won back</td>
+<td>Review, and plan what comes next</td>
 </tr>
 </tbody>
 </table>
-</div>
 </section>
 <section id="how-well-work" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">How We’ll Work</h2>
+<h2 data-id="quarto-animate-title">How we’ll work</h2>
 <div class="columns">
 <div class="column" style="width:33%;">
-<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7; text-align: center;">
+<div class="card accent-teal center">
 <p><strong>Show</strong></p>
-<p>I demo it live</p>
+<p>I run a real task live</p>
 </div>
 </div><div class="column" style="width:33%;">
-<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0; text-align: center;">
-<p><strong>Build</strong></p>
-<p>You apply it to <em>your</em> work</p>
+<div class="card accent-purple center">
+<p><strong>Mirror</strong></p>
+<p>We all repeat one piece together</p>
 </div>
 </div><div class="column" style="width:33%;">
-<div style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #FF7A5C; text-align: center;">
-<p><strong>Refine</strong></p>
-<p>Quick group critique</p>
+<div class="card accent-orange center">
+<p><strong>Take home</strong></p>
+<p>The same task, on <em>your</em> work</p>
 </div>
 </div></div>
 <div class="fragment">
-<div style="text-align: center; font-weight: bold; margin-top: 0.5em;">
-<p>~70% hands-on. Bring a real task you’d love to hand off.</p>
+<div class="center" style="font-weight: bold; margin-top: 0.5em;">
+<p>Every follow-along uses a provided prompt on a provided file. Nothing to prepare.</p>
 </div>
 </div>
 </section>
-<section id="two-rules-we-never-break" class="slide level2 sdaia-dark" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
-<h2>Two Rules We Never Break</h2>
+<section id="two-rules-before-we-start" class="slide level2 sdaia-dark" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
+<h2>Two rules before we start</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div style="background: rgba(255,255,255,0.1); padding: 1.2em; border-radius: 12px;">
 <p><strong>Newspaper Test</strong></p>
-<p>Watch what you <em>paste in</em>. Sanitize student data and unpublished work first.</p>
+<p>Before you paste: would you be fine seeing this text published? If not, strip names, student data, and unpublished work first.</p>
 </div>
 </div><div class="column" style="width:50%;">
 <div style="background: rgba(255,255,255,0.1); padding: 1.2em; border-radius: 12px;">
-<p><strong>The Undo Test</strong> <em>(blast radius)</em></p>
-<p>Watch what the agent <em>does</em>. Start in <strong>draft / notify-me</strong> mode.</p>
+<p><strong>The Undo Test</strong></p>
+<p>Before it acts: can you undo what it’s about to do? Have it <strong>propose, you approve</strong>.</p>
 </div>
 </div></div>
 <div class="fragment">
-<div style="text-align: center; margin-top: 0.8em;">
-<p>All hands-on work runs on <strong>copies in a staging folder</strong>.</p>
-</div>
-</div>
-</section>
-<section id="lets-begin" class="slide level2 sdaia-dark" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h2>Let’s Begin</h2>
-<div class="r-fit-text">
-<p>How AI Works →</p>
+<div class="center" style="margin-top: 0.8em;">
+<p>Today’s exercises run on <strong>provided sample files</strong>, with no real data.</p>
 </div>
 
 
+</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

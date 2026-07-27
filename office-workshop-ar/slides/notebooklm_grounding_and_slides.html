@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="ar" dir="rtl"><head>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -9,8 +9,8 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="dcterms.date" content="2026-06-23">
-  <title>AI at Work – Connectors: Reaching Into Other Buildings</title>
+  <meta name="dcterms.date" content="2026-07-27">
+  <title>AI at Work – الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -32,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-5e52468ea78ecf062a33c93e46e8ca0a.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f25e2d88d2f9c8c14c21095ce8dbb441.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -132,130 +132,228 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="../../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title">Connectors: Reaching Into Other Buildings</h1>
-  <p class="subtitle">Giving the Agent Keys — and Widening the Blast Radius</p>
+  <h1 class="title">الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook</h1>
+  <p class="subtitle">إجابات مستندة إلى مصادرك + شرائح منها</p>
 
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">2026-06-23</p>
+  <p class="date">2026-07-27</p>
 </section>
+<section id="ضع-المصادر-الصحيحة-على-المكتب" class="title-slide slide level1 center" data-auto-animate="true">
+<h1 data-id="quarto-animate-title">ضع المصادر الصحيحة على المكتب</h1>
+<div data-id="intro" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em;">
+<p><strong>في وقت سابق اليوم:</strong> الدماغ لا يعرف إلا ما على المكتب.</p>
+</div>
+<div class="fragment">
+<div class="card-dark center" style="font-size: 1.15em; margin-top: 1em;">
+<p>لذا ضع <strong>المصادر الصحيحة</strong> هناك، واجعله يجيب من <strong>تلك فقط</strong>. هذا هو <strong>الاستناد إلى المصادر (grounding)</strong>. وبدونه، حتى أذكى دماغ يخمّن.</p>
+</div>
+</div>
+</section>
+
+<section id="الطريقة-الخطأ-والطريقة-الصحيحة" class="title-slide slide level1 center" data-auto-animate="true">
+<h1 data-id="quarto-animate-title">الطريقة الخطأ والطريقة الصحيحة</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="card accent-orange">
+<p><strong>خطأ</strong></p>
+<p>“لخِّص أحدث اتجاهات السوق.”</p>
+<p>← استشهادات عامّة، وربما مختلَقة.</p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="card accent-teal">
+<p><strong>صحيح</strong></p>
+<p>ارفع ٥ تقارير ← «استنادًا إلى هذه <strong>فقط</strong>، لخِّص…»</p>
+<p>← محدّدة، قابلة للاستشهاد، قابلة للدفاع.</p>
+</div>
+</div></div>
+<div class="fragment">
+<div class="card-dark center" style="font-size: 1.15em; margin-top: 0.6em;">
+<p><strong>لا استشهاد؟ اعتبره غيرَ مُتَحَقَّقٍ منه.</strong></p>
+</div>
+<div class="center" style="margin-top: 0.4em;">
+<p>ولأجل التقارير والعروض وأعمال التخطيط، اطلب مرجع الصفحة.</p>
+</div>
+</div>
+</section>
+
 <section>
-<section id="connectors" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h1>Connectors</h1>
-<p>Where AI stops being a chat box</p>
+<section id="تعرف-على-gemini-notebook" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>تعرّف على Gemini Notebook</h1>
+<p>سابقًا NotebookLM. مساعد بحثي يستند إلى مستنداتك <em>أنت</em></p>
 </section>
-<section id="hand-it-the-keys" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Hand It the Keys</h2>
-<div data-id="keys" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;">
-<p>So far the office gathers pages from <strong>your folder</strong>. But some pages you need live elsewhere — your <strong>inbox, calendar, or drive.</strong> A <strong>connector</strong> hands the agent the <strong>keys</strong> to those, so it can fetch and act, not just talk.</p>
+<section id="فيم-يبرع" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">فيمَ يبرع</h2>
+<div class="card accent-purple" data-id="nlm">
+<p><strong>القراءة العميقة للمستندات الكبيرة</strong> (50+ صفحة). يعمل <strong>من مصادرك المرفوعة فقط</strong>، وكل إجابة تربط بمصدرها.</p>
 </div>
 <div class="fragment">
-<div style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; margin-top: 0.6em;">
-<p>This is where AI stops being a chat box and starts <strong>touching your real work.</strong></p>
-</div>
-</div>
-</section>
-<section id="what-changes" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">What Changes</h2>
-<div data-id="change" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #00C9A7;">
-<p>Cowork can now pull <strong>live information</strong> — today’s emails, this week’s calendar — and re-send it to the brain.</p>
-</div>
-<div class="fragment">
-<div style="text-align: center; font-weight: bold; margin-top: 0.5em;">
-<p>Same office loop. <strong>Wider reach.</strong></p>
-</div>
-</div>
-<div class="fragment">
-<div style="text-align: center; color: #666; font-size: 0.85em; margin-top: 0.4em;">
-<p><em>(MCP is the technical “doorway standard” so any tool can offer a door the office knows how to open — the acronym is optional. <strong>Plugins</strong> bundle skills + connectors for a role.)</em></p>
-</div>
+<ul>
+<li class="fragment">ارفع تقارير، وعرض، وسياسة، ومستندات إحاطة</li>
+<li class="fragment">اطرح الأسئلة؛ واحصل على إجابات <strong>باستشهادات</strong> إلى المقطع الدقيق</li>
+<li class="fragment">ولّد <strong>ملخّصًا صوتيًا (Audio Overview)</strong> لتستمع إليه في طريقك</li>
+</ul>
 </div>
 </section>
-<section id="a-faculty-example" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">A Faculty Example</h2>
-<div data-id="conn" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; border-left: 4px solid #9B8EC0;">
-<p>Connect your <strong>Drive</strong> and <strong>Calendar</strong>, then ask: <em>“Read this week’s committee files from Drive and my calendar, and <strong>draft</strong> a week-ahead teaching summary.”</em></p>
+<section id="ويبني-الشرائح-أيضا" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">ويبني الشرائح أيضًا</h2>
+<div class="card-dark center" data-id="slides" style="font-size: 1.1em;">
+<p>حوّل مصادرك إلى <strong>عرض تقديمي</strong> يستند إلى المستندات نفسها.</p>
 </div>
 <div class="fragment">
-<div style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; text-align: center; margin-top: 0.6em; font-size: 0.95em;">
-<p>Now it pulls real documents and real dates — instead of you copy-pasting them in.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="card accent-teal">
+<p><strong>عرض مفصّل</strong></p>
+<p>غنيّ بالنص، يقف بذاته. جيّد للقراءة أو النشرة.</p>
 </div>
+</div><div class="column" style="width:50%;">
+<div class="card accent-purple">
+<p><strong>شرائح المُقدِّم</strong></p>
+<p>نظيفة وبصرية. تسندك وأنت تتحدّث.</p>
 </div>
+</div></div>
+</div>
+</section>
+<section id="توجيه-العرض-وتحريره" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">توجيه العرض وتحريره</h2>
+<ul>
+<li class="fragment">سمِّ جمهورك ومواضيعك قبل أن يولّد</li>
+<li class="fragment">صدِّر إلى <code>.pptx</code> أو PDF</li>
+<li class="fragment">توقّع تنظيفًا: أجزاء تُصدَّر كصور</li>
+<li class="fragment">راجِع أي شريحة من أيقونة القلم</li>
+</ul>
 <div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Keys earn trust slowly</strong></p>
+<p><strong>شرط واحد</strong></p>
 </div>
 <div class="callout-content">
-<p>Start <strong>read-only / draft-only</strong>: let it <em>fetch and propose</em>, never send or delete, until it has earned act-on-its-own.</p>
+<p>تحتاج إلى <strong>مصدر واحد مرفوع على الأقل</strong> قبل أن يبني عرضًا.</p>
 </div>
 </div>
+</div>
+</div>
+</section></section>
+<section id="الأداة-الصحيحة-للمهمة-الصحيحة" class="title-slide slide level1 center" data-auto-animate="true">
+<h1 data-id="quarto-animate-title">الأداة الصحيحة للمهمة الصحيحة</h1>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">الحاجة</th>
+<th style="text-align: left;">الأداة</th>
+<th style="text-align: left;">لماذا</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ملفات عملك اليومي</td>
+<td style="text-align: left;"><strong>Cowork</strong></td>
+<td style="text-align: left;">مجلدك، وقواعدك</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ملف PDF من 100 صفحة</td>
+<td style="text-align: left;"><strong>Gemini Notebook</strong></td>
+<td style="text-align: left;">يستند إلى مستنداتك فقط</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ويب مباشر مع استشهادات</td>
+<td style="text-align: left;"><strong>البحث العميق (Deep Research)</strong></td>
+<td style="text-align: left;">لحظي وبحواشٍ</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<div class="center muted" style="margin-top: 0.4em;">
+<p><em>البحث العميق: Perplexity أو ChatGPT أو Gemini.</em></p>
 </div>
 </div>
 </section>
-<section id="keys-mean-a-bigger-blast-radius" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Keys Mean a Bigger Blast Radius</h2>
-<div class="callout callout-important callout-titled callout-style-default">
+
+<section>
+<section id="من-المصدر-إلى-العرض" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
+<h1>من المصدر إلى العرض</h1>
+<p>مصدر ← ملخّص مستند إليه ← عرض</p>
+</section>
+<section id="مهمتك" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">مهمّتك</h2>
+<div data-id="mission" style="background: #f7f9fc; padding: 0.8em 1.2em; border-radius: 12px;">
+<p>خذ <strong>ورقة أو سياسة حقيقية (آمنة) بصيغة PDF</strong>. أنتِج <strong>ملخّصًا مستندًا إلى المصدر في صفحة</strong> و<strong>عرض مُقدِّم</strong>، في 10 دقائق.</p>
+</div>
+<div class="fragment">
+<ol type="1">
+<li class="fragment">ارفع المصدر إلى Gemini Notebook</li>
+<li class="fragment">اسأل: <em>«استنادًا إلى هذا فقط، أعطِ 5 نتائج رئيسية مع مراجع الصفحات. وإن لم يكن في المصدر، قل غير موجود.»</em></li>
+<li class="fragment">انقر على الاستشهادات للوصول إلى المقطع</li>
+<li class="fragment">ولّد عرض مُقدِّم، وصدّره <code>.pptx</code>، وراجِع شريحة واحدة</li>
+</ol>
+</div>
+</section>
+<section id="تحقق-منه-قبل-أن-تستخدمه" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">تحقّق منه قبل أن تستخدمه</h2>
+<div class="card accent-orange" data-id="mission">
+<p>المصدر يقلّل التخمين، ولا يغني عن مراجعتك. فقد تحمل الشرائح المولَّدة أخطاءً واقعية وبصرية.</p>
+</div>
+<div class="center muted">
+<p><em>لا مصدر لديك؟ استخدم مصدرًا من عندك، أو افتح <a href="../data/sample_source.md"><code>sample_source.md</code></a> لروابط تقارير وسياسات مفتوحة الوصول.</em></p>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Start in draft / notify-me mode</strong></p>
+<p><strong>دوّنها</strong></p>
 </div>
 <div class="callout-content">
-<p>The moment the agent can reach a real inbox or drive, it can act <strong>outside your staging folder</strong>, in your real work. The <strong>undo test</strong> now has teeth — give it read-only or <strong>propose-only</strong> access first; promote to act-on-its-own only after it has earned your trust.</p>
+<p>هل تتكرّر هذه المهمة عندك؟ إذن هي مرشّحة جيّدة لتجرّبها بعد الجلسة.</p>
 </div>
-</div>
-</div>
-</section>
-<section id="putting-it-all-together" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Putting It All Together</h2>
-<div data-id="together" style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.0em;">
-<p><strong>Connector + Skill + Schedule, in draft mode:</strong></p>
-</div>
-<div class="fragment">
-<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.9em; margin-top: 0.6em; text-align: center;">
-<p><em>“Every Monday, <strong>read my inbox</strong> (connector), <strong>summarize action items</strong> (skill), save to my folder, and <strong>notify me</strong> (schedule, draft mode).”</em></p>
-</div>
-</div>
-<div class="fragment">
-<div style="text-align: center; color: #00C9A7; font-weight: bold; margin-top: 0.5em;">
-<p>The whole toolkit, working as one teammate.</p>
 </div>
 </div>
 </section></section>
 <section>
-<section id="knowledge-check" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h1>Knowledge Check</h1>
-<p>What did the keys really change?</p>
+<section id="تحقق-سريع" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>تحقّق سريع</h1>
+<p>اختر الحركة الصحيحة</p>
 </section>
-<section id="adding-a-connector-changes" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Adding a Connector Changes…</h2>
-<div style="text-align: center; font-size: 1.1em;">
-<p><strong>What does adding an email connector change most?</strong></p>
+<section id="اختبار" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">اختبار</h2>
+<p><strong>١.</strong> تحتاج إلى تلخيص خطة منتج <strong>سرّية غير معلَنة</strong> تراجعها.</p>
+<div class="fragment">
+<div class="fragment fade-in">
+<div class="card accent-orange">
+<p><strong>اختبار الجريدة أولًا.</strong> هذا عمل سرّي غير معلَن، فتحقّق من القواعد قبل رفعه في أي مكان.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><strong>٢.</strong> تحتاج إلى إحصاءات السوق <strong>لليوم</strong> من الويب.</p>
 </div>
 <div class="fragment">
 <div class="fragment fade-in">
-<div style="background: #1C355E; color: #ffffff; padding: 1.2em; border-radius: 12px; text-align: center; margin-top: 1em;">
-<p>The <strong>blast radius</strong> — what Cowork can now <strong>reach and act on.</strong> That’s exactly why it stays in draft / notify-me until it earns trust.</p>
+<div class="card accent-teal">
+<p><strong>البحث العميق (Deep Research)</strong>، للويب المباشر مع استشهادات. Gemini Notebook يقرأ مرفوعاتك فقط.</p>
 </div>
 </div>
 </div>
 </section>
-<section id="key-takeaways" class="slide level2 sdaia-dark" data-background-color="#1C355E">
-<h2>Key Takeaways</h2>
+<section id="أهم-النقاط" class="slide level2 sdaia-dark" data-background-color="#1C355E">
+<h2>أهم النقاط</h2>
 <ol type="1">
-<li class="fragment"><strong>Cowork ≠ chat</strong> — it opens files, runs steps, and can act; the working directory <strong>is</strong> the office</li>
-<li class="fragment"><strong>Second safety rule</strong> — the undo test / human-in-the-loop (<em>blast radius</em>); work on staging copies</li>
-<li class="fragment"><strong>Skill</strong> — a book Cowork opens by its trigger; it can <strong>bundle a script + a template</strong></li>
-<li class="fragment"><strong>Script</strong> — code it writes &amp; runs to compute exactly; <strong>Template</strong> — the on-brand layout the script fills</li>
-<li class="fragment"><strong>Schedule</strong> runs a skill on a clock; <strong>Connectors</strong> give it keys to your real tools — guardrails first: every job starts in draft / notify-me</li>
+<li class="fragment">ارفع المصادر أولًا، ثم قيِّده بـ«هذه فقط».</li>
+<li class="fragment">الاستشهاد مؤشّر. انقر عليه وتأكّد من الادّعاء.</li>
+<li class="fragment"><strong>Gemini Notebook</strong> يقرأ بعمق ويبني عروضًا، وتصدّرها <code>.pptx</code>.</li>
+<li class="fragment">طابِق الأداة مع المهمة: Cowork أو Gemini Notebook أو البحث العميق.</li>
 </ol>
 
 
@@ -355,7 +453,7 @@
         loop: false,
 
         // Change the presentation direction to be RTL
-        rtl: false,
+        rtl: true,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
         navigationMode: 'linear',
