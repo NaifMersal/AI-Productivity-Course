@@ -10,7 +10,7 @@ format:
 
 Hands-on workshops that teach professionals and faculty to use AI as a permanent member
 of their team — not as a search engine. **No coding.** Concepts stay portable across
-ChatGPT, Gemini, Claude, and NotebookLM.
+ChatGPT, Gemini, Claude, and Gemini Notebook.
 
 ## Workshops
 
