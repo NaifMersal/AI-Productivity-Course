@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ar" xml:lang="ar" dir="rtl"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-07-27">
 
-<title>Building Your Own AI Assistant – AI at Work</title>
+<title>بناء مساعدك الذكي الخاص – AI at Work</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,22 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -87,8 +86,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Building Your Own AI Assistant</h1>
-<p class="subtitle lead">A Hands-On Workshop for Office Professionals</p>
+<h1 class="title">بناء مساعدك الذكي الخاص</h1>
+<p class="subtitle lead">ورشة عمل تطبيقية لموظفي المكاتب</p>
 </div>
 
 
@@ -99,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 27, 2026</p>
+      <p class="date">28 يوليو 2026</p>
     </div>
   </div>
   
@@ -111,110 +110,107 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- TEMPLATE — generated per workshop by build.py from config/workshops.json. -->
-<p>Session length: About two and a half hours.</p>
-<p>We write prompts with RICE, save them in a Project, and hand a task to an assistant that executes on provided files. You leave with a one-page recipe for repeating it on your own day-to-day work.</p>
-<p><strong>Hands-on tool:</strong> Claude Cowork. <strong>No coding.</strong> You describe steps in plain language, and the concepts stay portable to ChatGPT, Gemini, Claude, and Gemini Notebook.</p>
-<p><strong>Before the session:</strong> install the Claude desktop app. Every follow-along assumes it is already on your machine, and runs on the provided workshop sample files.</p>
-<section id="run-of-show" class="level2">
-<h2 class="anchored" data-anchor-id="run-of-show">Run of Show</h2>
-<p>This page is the canonical order. Open each deck in turn.</p>
-<p><strong>Before the session:</strong> participants install the Claude desktop app and download the workshop sample files. Every follow-along assumes both are already on their machine. Hold a 10-minute buffer at the start for stragglers only.</p>
+<p>مدة الجلسة: حوالي ساعتين ونصف.</p>
+<p>نكتب أوامر بإطار RICE، ونحفظها في مشروع (Project)، ونُسلّم مهمة إلى مساعد ينفّذ على ملفات جاهزة. وتخرج بوصفة في صفحة واحدة لتكرار ذلك على عملك اليومي.</p>
+<p><strong>الأداة التطبيقية:</strong> Claude Cowork، بلا برمجة. والمفاهيم قابلة للنقل إلى ChatGPT وGemini وGemini Notebook.</p>
+<p><strong>قبل الجلسة:</strong> ثبّت تطبيق Claude لسطح المكتب.</p>
+<section id="ترتيب-سير-اليوم" class="level2">
+<h2 class="anchored" data-anchor-id="ترتيب-سير-اليوم">ترتيب سير اليوم</h2>
+<p><strong>قبل الجلسة:</strong> يثبّت المشاركون تطبيق Claude لسطح المكتب ويحمّلون ملفات الورشة التجريبية. كل تمرين «طبِّقها الآن» يفترض وجودهما على الجهاز مسبقًا. واحتفِظ بهامش ١٠ دقائق في البداية للمتأخّرين فقط.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>#</th>
-<th>Stop</th>
-<th>Deck</th>
-<th>Mins</th>
+<th>المحطة</th>
+<th>العرض</th>
+<th>دقائق</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td>Welcome + agenda</td>
-<td><a href="slides/overview.html">Overview</a></td>
-<td>5</td>
+<td>١</td>
+<td>ترحيب + جدول الأعمال</td>
+<td><a href="slides/overview.html">نظرة عامة</a></td>
+<td>٥</td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td>How AI works + RICE prompting</td>
-<td><a href="slides/how_ai_works_and_rice.html">How AI Works &amp; Writing Great Prompts</a></td>
-<td>30</td>
+<td>٢</td>
+<td>كيف يعمل الذكاء الاصطناعي + أوامر RICE</td>
+<td><a href="slides/how_ai_works_and_rice.html">كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة</a></td>
+<td>٣٠</td>
 </tr>
 <tr class="odd">
-<td>3</td>
-<td>Practice + break</td>
-<td><a href="slides/practice_foundations.html">Practice: Delegate a Real Task</a></td>
-<td>15 + 10</td>
+<td>٣</td>
+<td>تطبيق + استراحة</td>
+<td><a href="slides/practice_foundations.html">تطبيق: فوِّض مهمة حقيقية</a></td>
+<td>١٥ + ١٠</td>
 </tr>
 <tr class="even">
-<td>4</td>
-<td>Ask vs.&nbsp;hand over + the working directory</td>
-<td><a href="slides/cowork_intro.html">From Chat to Work Mode</a></td>
-<td>20</td>
+<td>٤</td>
+<td>أن تسأل أم أن تُسلِّم + مجلد العمل</td>
+<td><a href="slides/cowork_intro.html">من المحادثة إلى وضع العمل</a></td>
+<td>٢٠</td>
 </tr>
 <tr class="odd">
-<td>5</td>
-<td>Skills, scripts &amp; templates</td>
-<td><a href="slides/skills_scripts_templates.html">Build It Once</a></td>
-<td>20</td>
+<td>٥</td>
+<td>المهارات والسكربتات والقوالب</td>
+<td><a href="slides/skills_scripts_templates.html">ابنِها مرة واحدة</a></td>
+<td>٢٠</td>
 </tr>
 <tr class="even">
-<td>6</td>
-<td>Schedule + connectors</td>
-<td><a href="slides/how_far_this_goes.html">How Far This Goes</a></td>
-<td>15</td>
+<td>٦</td>
+<td>الجدولة والموصِّلات</td>
+<td><a href="slides/how_far_this_goes.html">إلى أي مدى يصل هذا</a></td>
+<td>١٥</td>
 </tr>
 <tr class="odd">
-<td>7</td>
-<td>The take-home recipe</td>
-<td><a href="slides/recipe.html">Your Recipe</a></td>
-<td>10</td>
+<td>٧</td>
+<td>الوصفة التي تأخذها معك</td>
+<td><a href="slides/recipe.html">وصفتك</a></td>
+<td>١٠</td>
 </tr>
 <tr class="even">
-<td>8</td>
-<td>Wrap-up + what’s next</td>
-<td><a href="slides/wrap_up.html">Your AI Assistant</a></td>
-<td>10</td>
+<td>٨</td>
+<td>الختام + ما التالي</td>
+<td><a href="slides/wrap_up.html">مساعدك الذكي</a></td>
+<td>١٠</td>
 </tr>
 </tbody>
 </table>
-<p><em>Core ≈ 135 minutes, including a 10-minute break after the first practice stop, leaving buffer to 2.5 hours.</em></p>
-<p>Decks 4–6 each end in a <strong>3-minute follow-along</strong>: a provided prompt on a provided file, run by everyone at the same time. Online, these are the hands-on core, in place of a separate practice block.</p>
-<section id="if-we-have-time-a-bonus-stop" class="level3">
-<h3 class="anchored" data-anchor-id="if-we-have-time-a-bonus-stop">If we have time: a bonus stop</h3>
-<p>Run this only if the core finished ahead of schedule. It’s ordered last so an overrun drops it cleanly instead of derailing the assistant-building payoff.</p>
+<p><em>الجوهر ≈ ١٣٥ دقيقة، بما في ذلك استراحة ١٠ دقائق بعد أول محطة تطبيقية، مع هامش يصل إلى ساعتين ونصف.</em></p>
+<p>تنتهي العروض ٤–٦ بـ<strong>تمرين «طبِّقها الآن» مدّته ٣ دقائق</strong>: أمر جاهز على ملف جاهز، ينفّذه الجميع في الوقت نفسه. وهي جوهر الجانب التطبيقي عبر الإنترنت، بدل محطة تطبيقية منفصلة.</p>
+<section id="إن-توفر-وقت-محطة-إضافية" class="level3">
+<h3 class="anchored" data-anchor-id="إن-توفر-وقت-محطة-إضافية">إن توفّر وقت: محطة إضافية</h3>
+<p>شغِّله فقط إن أنهيت الجوهر قبل الموعد. وهو مرتّب في النهاية كي يسقط أي تجاوز في الوقت بسلاسة بدلًا من تعطيل حصيلة بناء المساعد.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Stop</th>
-<th>Deck</th>
-<th>Mins</th>
+<th>المحطة</th>
+<th>العرض</th>
+<th>دقائق</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Grounding + slides</td>
-<td><a href="slides/notebooklm_grounding_and_slides.html">Grounding &amp; Creating with Gemini Notebook</a></td>
-<td>+40</td>
+<td>الاستناد + العروض</td>
+<td><a href="slides/notebooklm_grounding_and_slides.html">الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook</a></td>
+<td>+٤٠</td>
 </tr>
 </tbody>
 </table>
 </section>
 </section>
-<section id="the-delivery-loop" class="level2">
-<h2 class="anchored" data-anchor-id="the-delivery-loop">The Delivery Loop</h2>
-<p><strong>Show</strong> (instructor runs a real task end to end) → <strong>Mirror</strong> (everyone repeats a small piece of it at the same time, with a provided prompt and file) → <strong>Take home</strong> (the same task, on your own work, from the recipe).</p>
-<p>Built for online delivery: the doing is a <strong>3-minute follow-along at the end of each deck</strong>, on provided inputs only. If it can fail live, it isn’t a follow-along.</p>
+<section id="حلقة-التسليم" class="level2">
+<h2 class="anchored" data-anchor-id="حلقة-التسليم">حلقة التسليم</h2>
+<p><strong>العرض</strong> (ينفّذ المدرِّب مهمة كاملة) ← <strong>المحاكاة</strong> (تمرين «طبِّقها الآن» ٣ دقائق بأمر جاهز وملف جاهز في نهاية كل عرض) ← <strong>الأخذ معك</strong> (المهمة نفسها على عملك، من الوصفة).</p>
 </section>
-<section id="two-rules-before-we-start" class="level2">
-<h2 class="anchored" data-anchor-id="two-rules-before-we-start">Two Rules Before We Start</h2>
+<section id="قاعدتان-قبل-أن-نبدأ" class="level2">
+<h2 class="anchored" data-anchor-id="قاعدتان-قبل-أن-نبدأ">قاعدتان قبل أن نبدأ</h2>
 <ul>
-<li><strong>Newspaper Test.</strong> Before you paste: would you be fine seeing this text published? If not, strip names, customer data, and unreleased plans first.</li>
-<li><strong>The Undo Test.</strong> Before it acts: can you undo what it’s about to do? Start every Skill and scheduled job in <strong>draft / notify-me</strong> mode before letting it act on its own.</li>
+<li><strong>اختبار الجريدة.</strong> قبل أن تلصق: أزِل الأسماء والبيانات الشخصية والخطط غير المعلَنة.</li>
+<li><strong>اختبار التراجع.</strong> قبل أن ينفّذ: ابدأ في وضع <strong>المسودة / أعلِمني</strong>.</li>
 </ul>
-<p>Session exercises run on <strong>provided sample files</strong>, with no real data.</p>
+<p>تمارين الجلسة تجري على <strong>ملفات تجريبية مرفقة</strong>، بلا بيانات حقيقية.</p>
 
 
 </section>

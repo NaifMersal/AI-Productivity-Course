@@ -1,1353 +1,492 @@
 [
   {
-    "objectID": "office-workshop/slides/wrap_up.html#the-toolkit-you-now-have",
-    "href": "office-workshop/slides/wrap_up.html#the-toolkit-you-now-have",
-    "title": "Your AI Assistant",
-    "section": "The toolkit you now have",
-    "text": "The toolkit you now have\n\nRICE, to delegate like you brief a new teammate\nA Project, holding that prompt and its files\nClaude Cowork, working on your real files\nSkills, Schedule, Scripts for the recurring work\nGemini Notebook, for grounded summaries and decks\n\n\n\nAll of it is the office getting smarter about what to re-send."
-  },
-  {
-    "objectID": "office-workshop/slides/wrap_up.html#your-assistant-checklist",
-    "href": "office-workshop/slides/wrap_up.html#your-assistant-checklist",
-    "title": "Your AI Assistant",
-    "section": "Your assistant checklist",
-    "text": "Your assistant checklist\n\n\n\n✓\nI can…\n\n\n\n\n☐\nWrite a RICE prompt for a recurring task\n\n\n☐\nSet up a Project with standing instructions and files\n\n\n☐\nPoint Cowork at a folder and run a task in propose mode\n\n\n☐\nSave and invoke a Skill by its trigger\n\n\n☐\nSchedule a notify-me job\n\n\n☐\nGround a summary in my sources and check citations\n\n\n\n\n\n\n\n\n\n\nThe habit\n\n\nEvery time you do something twice, ask: “Could this be a Skill?”"
-  },
-  {
-    "objectID": "office-workshop/slides/wrap_up.html#what-stays-your-responsibility",
-    "href": "office-workshop/slides/wrap_up.html#what-stays-your-responsibility",
-    "title": "Your AI Assistant",
-    "section": "What stays your responsibility",
-    "text": "What stays your responsibility\n\n\n\nBefore you upload\nYour organization’s policy and data classification decide, not your comfort. Approved tools only.\n\n\n\nBefore you send\nIt goes out under your name. You answer for what’s in it.\n\n\n\n\nBoth rules still stand: the Newspaper Test, then the Undo Test."
-  },
-  {
-    "objectID": "office-workshop/slides/wrap_up.html#feedback-i-like-i-wish-i-wonder",
-    "href": "office-workshop/slides/wrap_up.html#feedback-i-like-i-wish-i-wonder",
-    "title": "Your AI Assistant",
-    "section": "Feedback: I Like / I Wish / I Wonder",
-    "text": "Feedback: I Like / I Wish / I Wonder\n\n\n\nI like…\nwhat worked for you\n\n\n\nI wish…\nwhat you’d change\n\n\n\nI wonder…\nwhat’s next for you"
-  },
-  {
-    "objectID": "office-workshop/slides/wrap_up.html#thank-you",
-    "href": "office-workshop/slides/wrap_up.html#thank-you",
-    "title": "Your AI Assistant",
-    "section": "Thank You",
-    "text": "Thank You\n\nPick one task, and try it this week."
-  },
-  {
-    "objectID": "office-workshop/slides/recipe.html#three-things-to-try-this-week",
-    "href": "office-workshop/slides/recipe.html#three-things-to-try-this-week",
-    "title": "Your Recipe",
-    "section": "Three things to try this week",
-    "text": "Three things to try this week\n\n1 · Hand over one real task (5 min)\nCopy 2–3 files into one folder, strip the personal details, point Cowork at it, and say: “Read these and write me one summary: what moved, what’s blocked, and anything that only appears once.”\n. . .\n2 · Make one Skill for something you repeat (10 min)\n“Save this as a Skill called [name], triggered by ‘[phrase]’. Steps: …” Then run it twice, on two different files, to check it holds up.\n. . .\n3 · Put it on a clock (2 min)\n“/schedule every [day] at [time], run [Skill] on this folder. Notify me; don’t send anything.”\n\n\n\nGood candidates: Status reports, recap notes, briefing decks, data summaries"
-  },
-  {
-    "objectID": "office-workshop/slides/recipe.html#make-it-stick",
-    "href": "office-workshop/slides/recipe.html#make-it-stick",
-    "title": "Your Recipe",
-    "section": "Make it stick",
-    "text": "Make it stick\n\nSave the one that works. Put the prompt into a Project’s standing instructions with the files it always needs. Next time it’s one sentence.\n\n\n\nBoth rules still apply: Newspaper Test before you paste, Undo Test before it acts.\n\n\n\n\nPick which one you’ll run first. We’ll name them at the wrap-up."
-  },
-  {
-    "objectID": "office-workshop/slides/recipe.html#bring-it-back",
-    "href": "office-workshop/slides/recipe.html#bring-it-back",
-    "title": "Your Recipe",
-    "section": "Bring it back",
-    "text": "Bring it back\n\n\n\n\n\n\nFollow-up session\n\n\nBring whatever you ran, including the ones that went wrong. The failures are more useful to work through together than the successes."
-  },
-  {
-    "objectID": "office-workshop/slides/overview.html#what-well-work-on",
-    "href": "office-workshop/slides/overview.html#what-well-work-on",
-    "title": "Building Your Own AI Assistant",
-    "section": "What we’ll work on",
-    "text": "What we’ll work on\n\nWe write prompts with RICE, save them in a Project, then hand a task to Claude Cowork on provided files.\n\n\n\nYou leave with a one-page recipe for repeating it on your own day-to-day work.\n\n\n\n\n\n\n\n\n\noffice professionals, no coding required\n\n\nYou describe what you want in plain language. We use Claude Cowork because it sets up fastest, and the same ideas work in ChatGPT, Gemini, and Claude."
-  },
-  {
-    "objectID": "office-workshop/slides/overview.html#the-day-in-four-stops",
-    "href": "office-workshop/slides/overview.html#the-day-in-four-stops",
-    "title": "Building Your Own AI Assistant",
-    "section": "The day in four stops",
-    "text": "The day in four stops\n\n\n\n\n\n\n\nStop\nWhat we do\n\n\n\n\nHow AI Works + RICE\nWhy it works, and how to set up a Project\n\n\nWork Mode\nHand a task to an agent: files, Skills, schedules\n\n\nYour Recipe\nThree ready prompts for your own work\n\n\nWrap-up\nReview, and plan what comes next"
-  },
-  {
-    "objectID": "office-workshop/slides/overview.html#how-well-work",
-    "href": "office-workshop/slides/overview.html#how-well-work",
-    "title": "Building Your Own AI Assistant",
-    "section": "How we’ll work",
-    "text": "How we’ll work\n\n\n\nShow\nI run a real task live\n\n\n\nMirror\nWe all repeat one piece together\n\n\n\nTake home\nThe same task, on your work\n\n\n\n\nEvery follow-along uses a provided prompt on a provided file. Nothing to prepare."
-  },
-  {
-    "objectID": "office-workshop/slides/overview.html#two-rules-before-we-start",
-    "href": "office-workshop/slides/overview.html#two-rules-before-we-start",
-    "title": "Building Your Own AI Assistant",
-    "section": "Two rules before we start",
-    "text": "Two rules before we start\n\n\n\nNewspaper Test\nBefore you paste: would you be fine seeing this text published? If not, strip names, customer data, and unreleased plans first.\n\n\n\nThe Undo Test\nBefore it acts: can you undo what it’s about to do? Have it propose, you approve.\n\n\n\n\nToday’s exercises run on provided sample files, with no real data."
-  },
-  {
-    "objectID": "office-workshop/slides/how_far_this_goes.html#demo-3-a-weekly-digest",
-    "href": "office-workshop/slides/how_far_this_goes.html#demo-3-a-weekly-digest",
-    "title": "How Far This Goes",
-    "section": "Demo 3: a weekly digest",
-    "text": "Demo 3: a weekly digest\n\n/schedule: Every Friday at 4pm, scan the project folder and draft a summary of what shipped, what’s blocked, and what’s due next week. Notify me; don’t send anything.\n\n\n\n\n\n\n\n\nGuardrails first\n\n\nEvery scheduled job starts in draft / notify-me mode."
-  },
-  {
-    "objectID": "office-workshop/slides/how_far_this_goes.html#an-office-example",
-    "href": "office-workshop/slides/how_far_this_goes.html#an-office-example",
-    "title": "How Far This Goes",
-    "section": "An office example",
-    "text": "An office example\n\nConnect your Drive and Calendar, then ask: “Read this week’s project files from Drive and my calendar, and draft a week-ahead summary for my team.”\n\n\n\nIt pulls the real documents and real dates itself.\n\n\n\n\n\n\n\n\n\nKeys earn trust slowly\n\n\nStart read-only / draft-only: let it fetch and propose, never send or delete."
-  },
-  {
-    "objectID": "office-workshop/slides/how_far_this_goes.html#why-the-risk-is-bigger-here",
-    "href": "office-workshop/slides/how_far_this_goes.html#why-the-risk-is-bigger-here",
-    "title": "How Far This Goes",
-    "section": "Why the risk is bigger here",
-    "text": "Why the risk is bigger here\n\nA schedule runs while you’re not watching\nA connector acts outside your folder, in your real tools\nAccess to work tools goes through IT, not through you alone"
-  },
-  {
-    "objectID": "office-workshop/slides/how_far_this_goes.html#which-job-shouldnt-auto-run",
-    "href": "office-workshop/slides/how_far_this_goes.html#which-job-shouldnt-auto-run",
-    "title": "How Far This Goes",
-    "section": "Which job shouldn’t auto-run",
-    "text": "Which job shouldn’t auto-run\n\n\n\nA) Every morning, summarize new team-channel posts into a note.\n\n\n\nB) Every morning, auto-reply to all customer emails.\n\n\n\n\n\n\n\n✅ Read-only. Easy to undo.\n\n\n\n❌ This one. Hard to undo. Draft-only."
-  },
-  {
-    "objectID": "office-workshop/slides/how_far_this_goes.html#do-this-now-2-minutes",
-    "href": "office-workshop/slides/how_far_this_goes.html#do-this-now-2-minutes",
-    "title": "How Far This Goes",
-    "section": "Do this now: 2 minutes",
-    "text": "Do this now: 2 minutes\n\nSchedule the Skill you just made. Notify-me mode.\n\n\n“/schedule every Friday at 4pm, run Report Review on any new reports in this folder. Notify me; don’t send anything.”\n\n\n\nYou can delete it right after. The point is seeing that when is just a setting."
-  },
-  {
-    "objectID": "office-workshop/slides/how_far_this_goes.html#key-takeaways",
-    "href": "office-workshop/slides/how_far_this_goes.html#key-takeaways",
-    "title": "How Far This Goes",
-    "section": "Key takeaways",
-    "text": "Key takeaways\n\nHand the work over. The working directory is where it happens.\nApply the undo test, and start in draft / notify-me.\nA Skill is a book Cowork opens by its trigger.\nIt can bundle a script for numbers and a template for the layout.\nSchedule and Connectors both just run that Skill."
-  },
-  {
-    "objectID": "office-workshop/slides/cowork_intro.html#which-one-you-need",
-    "href": "office-workshop/slides/cowork_intro.html#which-one-you-need",
-    "title": "From Chat to Work Mode",
-    "section": "Which one you need",
-    "text": "Which one you need\n\nOne-off. “How do I write a good status report?” Ask it in a chat.\nEvery week. “Draft this week’s status report from these three files.” Set up a Project.\n\n\n\nA Project is standing instructions plus files, re-sent every time."
-  },
-  {
-    "objectID": "office-workshop/slides/cowork_intro.html#same-idea-elsewhere",
-    "href": "office-workshop/slides/cowork_intro.html#same-idea-elsewhere",
-    "title": "From Chat to Work Mode",
-    "section": "Same idea elsewhere",
-    "text": "Same idea elsewhere\n\nChatGPT and Antigravity can point at your own files too. We use Cowork today because it sets up fastest."
-  },
-  {
-    "objectID": "office-workshop/slides/cowork_intro.html#the-second-safety-rule",
-    "href": "office-workshop/slides/cowork_intro.html#the-second-safety-rule",
-    "title": "From Chat to Work Mode",
-    "section": "The second safety rule",
-    "text": "The second safety rule\n\n\n\nRule 1: Newspaper Test\nGuards what you paste in. You already have this one.\n\n\n\n\nRule 2: The Undo Test\nGuards what the agent does. Its blast radius."
-  },
-  {
-    "objectID": "office-workshop/slides/cowork_intro.html#the-undo-test",
-    "href": "office-workshop/slides/cowork_intro.html#the-undo-test",
-    "title": "From Chat to Work Mode",
-    "section": "The undo test",
-    "text": "The undo test\n\nBefore letting it act, ask: “If it gets this wrong, can I undo it? Would I notice in time?”\n\n\n\n\n\n\n\n\nStart in draft / notify-me mode\n\n\nCowork proposes, you approve. Let it act on its own only once it has proven itself.\n\n\n\n\n\n\nToday we work on provided sample files. No real data, no real names."
-  },
-  {
-    "objectID": "office-workshop/slides/cowork_intro.html#demo-three-files-in-one-summary-out",
-    "href": "office-workshop/slides/cowork_intro.html#demo-three-files-in-one-summary-out",
-    "title": "From Chat to Work Mode",
-    "section": "Demo: three files in, one summary out",
-    "text": "Demo: three files in, one summary out\n\nCowork is pointed at the workshop files folder, holding three status updates.\n\n\n“Read the three status updates in this folder and write me one weekly summary: what moved, what’s blocked, and anything only one team flagged.”\n\n\nstatus_update_1.md · status_update_2.md · status_update_3.md"
-  },
-  {
-    "objectID": "office-workshop/slides/cowork_intro.html#what-to-watch-for",
-    "href": "office-workshop/slides/cowork_intro.html#what-to-watch-for",
-    "title": "From Chat to Work Mode",
-    "section": "What to watch for",
-    "text": "What to watch for\n\nIt opens the files itself. Nothing gets pasted.\nIt reads, compares, and writes, in that order.\nIt proposes the result. You approve."
-  },
-  {
-    "objectID": "office-workshop/slides/cowork_intro.html#do-this-now-3-minutes",
-    "href": "office-workshop/slides/cowork_intro.html#do-this-now-3-minutes",
-    "title": "From Chat to Work Mode",
-    "section": "Do this now: 3 minutes",
-    "text": "Do this now: 3 minutes\n\nEveryone together. Cowork open, pointed at your workshop files folder.\n\n\nOpen Cowork and point it at your workshop files folder\nPaste the prompt below\nWatch it open the file before it answers\n\n\n“Read meeting_notes.md in this folder and list every action item with who owns it and when it’s due.”\n\n\nFile: meeting_notes.md, already in your workshop files folder"
-  },
-  {
-    "objectID": "office-workshop-ar/slides/wrap_up.html#مجموعة-الأدوات-التي-بحوزتك-الآن",
-    "href": "office-workshop-ar/slides/wrap_up.html#مجموعة-الأدوات-التي-بحوزتك-الآن",
+    "objectID": "slides/wrap_up.html#مجموعة-الأدوات-التي-بحوزتك-الآن",
+    "href": "slides/wrap_up.html#مجموعة-الأدوات-التي-بحوزتك-الآن",
     "title": "مساعدك الذكي",
     "section": "مجموعة الأدوات التي بحوزتك الآن",
     "text": "مجموعة الأدوات التي بحوزتك الآن\n\nRICE، لتفوِّض كما تُوجِّه زميلًا جديدًا\nمشروع (Project) يحمل ذلك الأمر وملفاته\nClaude Cowork يعمل على ملفاتك الحقيقية\nالمهارات والجدولة والسكربتات للعمل المتكرّر\nGemini Notebook للملخّصات والعروض المستندة إلى مصادرك\n\n\n\nكل هذا هو المكتب وقد صار أذكى في اختيار ما يعيده إليك."
   },
   {
-    "objectID": "office-workshop-ar/slides/wrap_up.html#قائمة-تحقق-مساعدك",
-    "href": "office-workshop-ar/slides/wrap_up.html#قائمة-تحقق-مساعدك",
+    "objectID": "slides/wrap_up.html#قائمة-تحقق-مساعدك",
+    "href": "slides/wrap_up.html#قائمة-تحقق-مساعدك",
     "title": "مساعدك الذكي",
     "section": "قائمة تحقّق مساعدك",
     "text": "قائمة تحقّق مساعدك\n\n\n\n✓\nأستطيع أن…\n\n\n\n\n☐\nأكتب أمر RICE لمهمة متكرّرة\n\n\n☐\nأُعِدّ مشروعًا (Project) بتعليمات دائمة وملفات\n\n\n☐\nأوجّه Cowork إلى مجلد وأشغّل مهمة في وضع الاقتراح\n\n\n☐\nأحفظ مهارة وأستدعيها بمُشغّلها\n\n\n☐\nأجدوِل مهمة «أعلِمني»\n\n\n☐\nأبني ملخّصًا يستند إلى مصادري وأتحقّق من الاستشهادات\n\n\n\n\n\n\n\n\n\n\nالعادة\n\n\nفي كل مرة تفعل فيها شيئًا مرتين، اسأل: «هل يمكن أن يكون هذا مهارة؟»"
   },
   {
-    "objectID": "office-workshop-ar/slides/wrap_up.html#ما-يبقى-على-مسؤوليتك",
-    "href": "office-workshop-ar/slides/wrap_up.html#ما-يبقى-على-مسؤوليتك",
+    "objectID": "slides/wrap_up.html#ما-يبقى-على-مسؤوليتك",
+    "href": "slides/wrap_up.html#ما-يبقى-على-مسؤوليتك",
     "title": "مساعدك الذكي",
     "section": "ما يبقى على مسؤوليتك",
     "text": "ما يبقى على مسؤوليتك\n\n\n\nقبل أن ترفع\nالفيصل سياسة جهتك وتصنيف البيانات، لا شعورك بالارتياح. وإلى أداة معتمدة فقط.\n\n\n\nقبل أن ترسل\nيخرج العمل باسمك. وأنت المسؤول عمّا فيه.\n\n\n\n\nوالقاعدتان قائمتان: اختبار الجريدة، ثم اختبار التراجع."
   },
   {
-    "objectID": "office-workshop-ar/slides/wrap_up.html#التغذية-الراجعة-يعجبني-أتمنى-أتساءل",
-    "href": "office-workshop-ar/slides/wrap_up.html#التغذية-الراجعة-يعجبني-أتمنى-أتساءل",
+    "objectID": "slides/wrap_up.html#التغذية-الراجعة-يعجبني-أتمنى-أتساءل",
+    "href": "slides/wrap_up.html#التغذية-الراجعة-يعجبني-أتمنى-أتساءل",
     "title": "مساعدك الذكي",
     "section": "التغذية الراجعة: يعجبني / أتمنّى / أتساءل",
     "text": "التغذية الراجعة: يعجبني / أتمنّى / أتساءل\n\n\n\nيعجبني…\nما الذي نجح معك\n\n\n\nأتمنّى…\nما الذي كنت ستغيّره\n\n\n\nأتساءل…\nما هو التالي بالنسبة لك"
   },
   {
-    "objectID": "office-workshop-ar/slides/wrap_up.html#شكرا-لكم",
-    "href": "office-workshop-ar/slides/wrap_up.html#شكرا-لكم",
+    "objectID": "slides/wrap_up.html#شكرا-لكم",
+    "href": "slides/wrap_up.html#شكرا-لكم",
     "title": "مساعدك الذكي",
     "section": "شكرًا لكم",
     "text": "شكرًا لكم\n\nاختر مهمة واحدة، وجرّبها هذا الأسبوع."
   },
   {
-    "objectID": "office-workshop-ar/slides/recipe.html#ثلاثة-أشياء-جربها-هذا-الأسبوع",
-    "href": "office-workshop-ar/slides/recipe.html#ثلاثة-أشياء-جربها-هذا-الأسبوع",
+    "objectID": "slides/recipe.html#ثلاثة-أشياء-جربها-هذا-الأسبوع",
+    "href": "slides/recipe.html#ثلاثة-أشياء-جربها-هذا-الأسبوع",
     "title": "وصفتك",
     "section": "ثلاثة أشياء جرّبها هذا الأسبوع",
-    "text": "ثلاثة أشياء جرّبها هذا الأسبوع\n\n١ · فوِّض مهمة حقيقية واحدة (٥ دقائق)\nانسخ خطتك ومحضر آخر اجتماع إلى مجلد واحد، وأزِل البيانات الشخصية، ووجّه Cowork إليه، ثم قل: «حدِّث الخطة بما تقرّر في هذا المحضر. علِّم أي قرار سابق نُقِض، ولا تُثبِت ما لم يُحسَم. أرِني ما تغيّر قبل الحفظ.»\n. . .\n٢ · اصنع مهارة واحدة لشيء تكرّره (١٠ دقائق)\n«احفظ هذه بوصفها مهارة اسمها [الاسم]، تُستدعى بعبارة «[العبارة]». الخطوات: …» ثم شغّلها مرتين على ملفين مختلفين للتأكّد من ثباتها.\n. . .\n٣ · ضَعها على مدار الساعة (دقيقتان)\n«‏/schedule كل [يوم] الساعة [وقت]، شغّل [المهارة] على هذا المجلد. أبلِغني ولا ترسل شيئًا.»\n\n\n\nمرشّحات جيدة: تقارير الحالة، مذكّرات تلخيصية، عروض إحاطة، ملخّصات بيانات"
+    "text": "ثلاثة أشياء جرّبها هذا الأسبوع\n\n١ · فوِّض مهمة حقيقية واحدة (٥ دقائق)\nانسخ خطتك ومحضر آخر اجتماع إلى مجلد واحد، وأزِل البيانات الشخصية، ووجّه Cowork إليه، ثم قل: «حدِّث الخطة بما تقرّر في هذا المحضر. علِّم أي قرار سابق نُقِض، ولا تُثبِت ما لم يُحسَم. أرِني ما تغيّر قبل الحفظ.»\n. . .\n٢ · اصنع مهارة واحدة لشيء تكرّره (١٠ دقائق)\nنفِّذ المهمة مرة في محادثة، وحين ترضى عن النتيجة قل: «احفظ ما فعلتَه مهارةً اسمها [الاسم].» ثم شغّلها على ملف آخر، وصحِّح ما نقص.\n. . .\n٣ · ضَعها على مدار الساعة (دقيقتان)\n«‏/schedule كل [يوم] الساعة [وقت]، شغّل [المهارة] على هذا المجلد. أبلِغني ولا ترسل شيئًا.»\n\n\n\nمرشّحات جيدة: تقارير الحالة، مذكّرات تلخيصية، عروض إحاطة، ملخّصات بيانات"
   },
   {
-    "objectID": "office-workshop-ar/slides/recipe.html#اجعلها-تدوم",
-    "href": "office-workshop-ar/slides/recipe.html#اجعلها-تدوم",
+    "objectID": "slides/recipe.html#اجعلها-تدوم",
+    "href": "slides/recipe.html#اجعلها-تدوم",
     "title": "وصفتك",
     "section": "اجعلها تدوم",
     "text": "اجعلها تدوم\n\nاحفظ ما ينجح. ضَع الأمر في التعليمات الدائمة لـمشروع (Project) مع الملفات التي يحتاجها دائمًا. وفي المرة القادمة يصير جملة واحدة.\n\n\n\nالقاعدتان ما زالتا ساريتين: اختبار الجريدة قبل أن تلصق، واختبار التراجع قبل أن يتصرّف.\n\n\n\n\nاختر أيّها ستشغّل أولًا. وسنسمّيها في الختام."
   },
   {
-    "objectID": "office-workshop-ar/slides/recipe.html#أعدها-إلينا",
-    "href": "office-workshop-ar/slides/recipe.html#أعدها-إلينا",
+    "objectID": "slides/recipe.html#أعدها-إلينا",
+    "href": "slides/recipe.html#أعدها-إلينا",
     "title": "وصفتك",
     "section": "أعِدها إلينا",
     "text": "أعِدها إلينا\n\n\n\n\n\n\nجلسة المتابعة\n\n\nأحضِر ما شغّلته، بما في ذلك ما أخفق. الإخفاقات أنفع في المعالجة المشتركة من النجاحات."
   },
   {
-    "objectID": "office-workshop-ar/slides/overview.html#ما-الذي-سنعمل-عليه",
-    "href": "office-workshop-ar/slides/overview.html#ما-الذي-سنعمل-عليه",
+    "objectID": "slides/overview.html#ما-الذي-سنعمل-عليه",
+    "href": "slides/overview.html#ما-الذي-سنعمل-عليه",
     "title": "بناء مساعدك الذكي الخاص",
     "section": "ما الذي سنعمل عليه",
-    "text": "ما الذي سنعمل عليه\n\nنكتب أوامر بإطار RICE، ونحفظها في مشروع (Project)، ثم نُسلّم مهمة إلى Claude Cowork على ملفات جاهزة.\n\n\n\nوتخرج بوصفة في صفحة واحدة لتكرار ذلك على عملك اليومي.\n\n\n\n\n\n\n\n\n\nموظفو المكاتب، بلا برمجة\n\n\nأنت تصف ما تريد بلغة بسيطة. نستخدم Claude Cowork لأنه الأسرع في الإعداد، والمفاهيم نفسها تعمل في ChatGPT وGemini وClaude."
+    "text": "ما الذي سنعمل عليه\n\nنكتب أوامر بإطار RICE، ونحفظها في مشروع (Project)، ثم نُسلّم مهمة إلى Claude Cowork على ملفات جاهزة.\n\n\n\nوتخرج بوصفة في صفحة واحدة لتكرار ذلك على عملك اليومي."
   },
   {
-    "objectID": "office-workshop-ar/slides/overview.html#محطات-اليوم",
-    "href": "office-workshop-ar/slides/overview.html#محطات-اليوم",
+    "objectID": "slides/overview.html#محطات-اليوم",
+    "href": "slides/overview.html#محطات-اليوم",
     "title": "بناء مساعدك الذكي الخاص",
     "section": "محطات اليوم",
     "text": "محطات اليوم\n\n\n\n\n\n\n\nالمحطة\nماذا نفعل فيها\n\n\n\n\nكيف يعمل الذكاء الاصطناعي + RICE\nلماذا يعمل، وكيف تُعِدّ مشروعًا (Project)\n\n\nوضع العمل\nتسلّم مهمة لوكيل: ملفات، ومهارات، وجدولة\n\n\nوصفتك\nثلاثة أوامر جاهزة لعملك أنت\n\n\nالختام\nمراجعة، وتخطيط لما بعد الجلسة"
   },
   {
-    "objectID": "office-workshop-ar/slides/overview.html#كيف-سنعمل",
-    "href": "office-workshop-ar/slides/overview.html#كيف-سنعمل",
+    "objectID": "slides/overview.html#كيف-سنعمل",
+    "href": "slides/overview.html#كيف-سنعمل",
     "title": "بناء مساعدك الذكي الخاص",
     "section": "كيف سنعمل",
     "text": "كيف سنعمل\n\n\n\nالعرض\nأُنفِّذ مهمة حقيقية مباشرةً\n\n\n\nالمحاكاة\nنكرّر جزءًا واحدًا معًا\n\n\n\nخُذها معك\nالمهمة نفسها على عملك أنت\n\n\n\n\nكل تطبيق مشترك يستخدم أمرًا جاهزًا على ملف جاهز. لا شيء تحضّره مسبقًا."
   },
   {
-    "objectID": "office-workshop-ar/slides/overview.html#قاعدتان-قبل-أن-نبدأ",
-    "href": "office-workshop-ar/slides/overview.html#قاعدتان-قبل-أن-نبدأ",
+    "objectID": "slides/overview.html#قاعدتان-قبل-أن-نبدأ",
+    "href": "slides/overview.html#قاعدتان-قبل-أن-نبدأ",
     "title": "بناء مساعدك الذكي الخاص",
     "section": "قاعدتان قبل أن نبدأ",
-    "text": "قاعدتان قبل أن نبدأ\n\n\n\nاختبار الجريدة\nقبل أن تلصق: هل تقبل أن يُنشَر هذا النص؟ إن كان الجواب لا، فأزِل الأسماء وبيانات العملاء والخطط غير المعلَنة أولًا.\n\n\n\nاختبار التراجع\nقبل أن ينفّذ: هل أستطيع التراجع عمّا سيفعله؟ اجعله يقترح وأنت توافق.\n\n\n\n\nتمارين اليوم على ملفات تجريبية مرفقة، بلا بيانات حقيقية."
+    "text": "قاعدتان قبل أن نبدأ\n\n\n\nاختبار الجريدة\nقبل أن تلصق: هل تقبل أن يُنشَر هذا النص؟ إن كان الجواب لا، فأزِل الأسماء والبيانات الشخصية والخطط غير المعلَنة أولًا.\n\n\n\nاختبار التراجع\nقبل أن ينفّذ: هل أستطيع التراجع عمّا سيفعله؟ اجعله يقترح وأنت توافق.\n\n\n\n\nتمارين اليوم على ملفات تجريبية مرفقة، بلا بيانات حقيقية."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_far_this_goes.html#العرض-٣-الملخص-الأسبوعي",
-    "href": "office-workshop-ar/slides/how_far_this_goes.html#العرض-٣-الملخص-الأسبوعي",
+    "objectID": "slides/how_far_this_goes.html#العرض-٣-الملخص-الأسبوعي",
+    "href": "slides/how_far_this_goes.html#العرض-٣-الملخص-الأسبوعي",
     "title": "إلى أي مدى يصل هذا",
     "section": "العرض ٣: الملخّص الأسبوعي",
     "text": "العرض ٣: الملخّص الأسبوعي\n\n/schedule: كل جمعة الساعة ٤ عصرًا، امسح مجلد المشروع واكتب مسودة ملخّص لما أُنجِز، وما هو معطّل، وما يستحقّ الأسبوع القادم. أعلِمني؛ لا ترسل شيئًا.\n\n\n\n\n\n\n\n\nالضوابط أولًا\n\n\nكل مهمة مجدولة تبدأ في وضع المسودة / أعلِمني."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_far_this_goes.html#مثال-مكتبي",
-    "href": "office-workshop-ar/slides/how_far_this_goes.html#مثال-مكتبي",
+    "objectID": "slides/how_far_this_goes.html#مثال-مكتبي",
+    "href": "slides/how_far_this_goes.html#مثال-مكتبي",
     "title": "إلى أي مدى يصل هذا",
     "section": "مثال مكتبي",
     "text": "مثال مكتبي\n\nاربط مساحة تخزينك السحابية (Drive) وتقويمك (Calendar)، ثم اطلب: «اقرأ ملفات مشروع هذا الأسبوع من Drive وتقويمي، واكتب مسودة ملخّص الأسبوع القادم لفريقي.»\n\n\n\nيسحب المستندات الحقيقية والتواريخ الحقيقية بنفسه.\n\n\n\n\n\n\n\n\n\nالمفاتيح تكسب الثقة ببطء\n\n\nابدأ بـالقراءة فقط / المسودة فقط: دعه يجلب ويقترح، ولا يرسل أو يحذف أبدًا."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_far_this_goes.html#لماذا-الخطر-أكبر-هنا",
-    "href": "office-workshop-ar/slides/how_far_this_goes.html#لماذا-الخطر-أكبر-هنا",
+    "objectID": "slides/how_far_this_goes.html#لماذا-الخطر-أكبر-هنا",
+    "href": "slides/how_far_this_goes.html#لماذا-الخطر-أكبر-هنا",
     "title": "إلى أي مدى يصل هذا",
     "section": "لماذا الخطر أكبر هنا",
     "text": "لماذا الخطر أكبر هنا\n\nالجدولة تعمل وأنت لا تراقب\nوالموصِّل يتصرّف خارج مجلدك، في أدواتك الحقيقية\nوالصلاحيات على أدوات العمل تمرّ عبر تقنية المعلومات، لا عبرك وحدك"
   },
   {
-    "objectID": "office-workshop-ar/slides/how_far_this_goes.html#أي-مهمة-لا-ينبغي-أن-تعمل-تلقائيا",
-    "href": "office-workshop-ar/slides/how_far_this_goes.html#أي-مهمة-لا-ينبغي-أن-تعمل-تلقائيا",
+    "objectID": "slides/how_far_this_goes.html#أي-مهمة-لا-ينبغي-أن-تعمل-تلقائيا",
+    "href": "slides/how_far_this_goes.html#أي-مهمة-لا-ينبغي-أن-تعمل-تلقائيا",
     "title": "إلى أي مدى يصل هذا",
     "section": "أي مهمة لا ينبغي أن تعمل تلقائيًا",
-    "text": "أي مهمة لا ينبغي أن تعمل تلقائيًا\n\n\n\nأ) كل صباح، لخِّص منشورات قناة الفريق الجديدة في مذكّرة.\n\n\n\nب) كل صباح، رُدّ تلقائيًا على جميع رسائل العملاء.\n\n\n\n\n\n\n\n✅ قراءة فقط. سهل التراجع.\n\n\n\n❌ هذه. يصعب التراجع عنها. مسودة فقط."
+    "text": "أي مهمة لا ينبغي أن تعمل تلقائيًا\n\n\n\nأ) كل صباح، لخِّص منشورات قناة الفريق الجديدة في مذكّرة.\n\n\n\nب) كل صباح، رُدّ تلقائيًا على جميع الرسائل الواردة.\n\n\n\n\n\n\n\n✅ قراءة فقط. سهل التراجع.\n\n\n\n❌ هذه. يصعب التراجع عنها. مسودة فقط."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_far_this_goes.html#طبقها-الآن-دقيقتان",
-    "href": "office-workshop-ar/slides/how_far_this_goes.html#طبقها-الآن-دقيقتان",
+    "objectID": "slides/how_far_this_goes.html#طبقها-الآن-دقيقتان",
+    "href": "slides/how_far_this_goes.html#طبقها-الآن-دقيقتان",
     "title": "إلى أي مدى يصل هذا",
     "section": "طبِّقها الآن: دقيقتان",
     "text": "طبِّقها الآن: دقيقتان\n\nجدوِل المهارة التي أنشأتها للتو. في وضع «أبلِغني».\n\n\n«‏/schedule كل جمعة الساعة ٤ عصرًا، شغِّل مراجعة تقرير على أي تقارير جديدة في هذا المجلد. أبلِغني ولا ترسل شيئًا.»\n\n\n\nيمكنك حذفها بعدها مباشرة. المقصود أن ترى أن «متى» مجرّد إعداد."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_far_this_goes.html#أهم-النقاط",
-    "href": "office-workshop-ar/slides/how_far_this_goes.html#أهم-النقاط",
+    "objectID": "slides/how_far_this_goes.html#أهم-النقاط",
+    "href": "slides/how_far_this_goes.html#أهم-النقاط",
     "title": "إلى أي مدى يصل هذا",
     "section": "أهم النقاط",
     "text": "أهم النقاط\n\nسلِّم العمل. ومجلد العمل هو المكان الذي يحدث فيه ذلك.\nطبِّق اختبار التراجع، وابدأ في وضع المسودة / أعلِمني.\nالمهارة كتاب يفتحه Cowork بعبارة استدعائه.\nوقد تحزم سكربتًا للأرقام وقالبًا للشكل.\nوالجدولة والموصِّلات كلتاهما تشغّلان تلك المهارة."
   },
   {
-    "objectID": "office-workshop-ar/slides/cowork_intro.html#أيهما-تحتاج",
-    "href": "office-workshop-ar/slides/cowork_intro.html#أيهما-تحتاج",
+    "objectID": "slides/cowork_intro.html#أيهما-تحتاج",
+    "href": "slides/cowork_intro.html#أيهما-تحتاج",
     "title": "من المحادثة إلى وضع العمل",
     "section": "أيّهما تحتاج",
     "text": "أيّهما تحتاج\n\nسؤال عابر. «كيف أنظّم ملتقى داخليًا؟» اسأله في محادثة.\nكل أسبوع. «حدِّث خطة الملتقى بقرارات اجتماع هذا الأسبوع.» أنشئ مشروعًا.\n\n\n\nالمشروع تعليمات ثابتة وملفات، تُرسَل مع كل طلب."
   },
   {
-    "objectID": "office-workshop-ar/slides/cowork_intro.html#الفكرة-نفسها-في-غيره",
-    "href": "office-workshop-ar/slides/cowork_intro.html#الفكرة-نفسها-في-غيره",
+    "objectID": "slides/cowork_intro.html#الفكرة-نفسها-في-غيره",
+    "href": "slides/cowork_intro.html#الفكرة-نفسها-في-غيره",
     "title": "من المحادثة إلى وضع العمل",
     "section": "الفكرة نفسها في غيره",
     "text": "الفكرة نفسها في غيره\n\nيستطيع ChatGPT وAntigravity توجيه النظر إلى ملفاتك أيضًا. نستخدم Cowork اليوم لأن إعداده الأسرع."
   },
   {
-    "objectID": "office-workshop-ar/slides/cowork_intro.html#قاعدة-الأمان-الثانية",
-    "href": "office-workshop-ar/slides/cowork_intro.html#قاعدة-الأمان-الثانية",
+    "objectID": "slides/cowork_intro.html#قاعدة-الأمان-الثانية",
+    "href": "slides/cowork_intro.html#قاعدة-الأمان-الثانية",
     "title": "من المحادثة إلى وضع العمل",
     "section": "قاعدة الأمان الثانية",
     "text": "قاعدة الأمان الثانية\n\n\n\nالقاعدة 1: اختبار الجريدة\nتحرس ما تُدخِله أنت. وهي معك سلفًا.\n\n\n\n\nالقاعدة 2: اختبار التراجع\nتحرس ما يفعله الوكيل. أي نطاق تأثيره."
   },
   {
-    "objectID": "office-workshop-ar/slides/cowork_intro.html#اختبار-التراجع",
-    "href": "office-workshop-ar/slides/cowork_intro.html#اختبار-التراجع",
+    "objectID": "slides/cowork_intro.html#اختبار-التراجع",
+    "href": "slides/cowork_intro.html#اختبار-التراجع",
     "title": "من المحادثة إلى وضع العمل",
     "section": "اختبار التراجع",
     "text": "اختبار التراجع\n\nقبل أن تدعه يتصرّف، اسأل: «إن أخطأ في هذا، هل أستطيع التراجع عنه؟ وهل سألاحظ في الوقت المناسب؟»\n\n\n\n\n\n\n\n\nابدأ في وضع المسودة / أعلِمني\n\n\nCowork يقترح، وأنت توافق. ودعه يتصرّف من تلقاء نفسه بعد أن يثبت جدارته.\n\n\n\n\n\n\nاليوم نعمل على ملفات تجريبية. لا بيانات حقيقية ولا أسماء."
   },
   {
-    "objectID": "office-workshop-ar/slides/cowork_intro.html#عرض-محضر-واحد-يدخل-ثلاثة-ملفات-تتغير",
-    "href": "office-workshop-ar/slides/cowork_intro.html#عرض-محضر-واحد-يدخل-ثلاثة-ملفات-تتغير",
+    "objectID": "slides/cowork_intro.html#عرض-محضر-واحد-يدخل-ثلاثة-ملفات-تتغير",
+    "href": "slides/cowork_intro.html#عرض-محضر-واحد-يدخل-ثلاثة-ملفات-تتغير",
     "title": "من المحادثة إلى وضع العمل",
     "section": "عرض: محضر واحد يدخل، ثلاثة ملفات تتغيّر",
     "text": "عرض: محضر واحد يدخل، ثلاثة ملفات تتغيّر\n\nتنظّم ملتقى الإدارة بعد ستة أسابيع. الخطة وسجل القرارات وجدول المهام في مجلد واحد، واجتماع هذا الأسبوع قلَب بعضها.\n\n\n«اقرأ محضر هذا الأسبوع، وحدِّث الخطة وسجل القرارات وجدول المهام. علِّم أي قرار سابق نُقِض، ولا تُثبِت ما لم يُحسَم. أرِني ما تغيّر قبل الحفظ.»\n\n\nevent_meeting.md ← event_plan.md · decisions_log.md · tasks.md"
   },
   {
-    "objectID": "office-workshop-ar/slides/cowork_intro.html#ما-الذي-تراقبه",
-    "href": "office-workshop-ar/slides/cowork_intro.html#ما-الذي-تراقبه",
+    "objectID": "slides/cowork_intro.html#ما-الذي-تراقبه",
+    "href": "slides/cowork_intro.html#ما-الذي-تراقبه",
     "title": "من المحادثة إلى وضع العمل",
     "section": "ما الذي تراقبه",
     "text": "ما الذي تراقبه\n\nيفتح الملفات بنفسه، بلا لصق\nيقرأ، ثم يقارن، ثم يكتب، بهذا الترتيب\nيقترح النتيجة، وأنت توافق"
   },
   {
-    "objectID": "office-workshop-ar/slides/cowork_intro.html#طبقها-الآن-٣-دقائق",
-    "href": "office-workshop-ar/slides/cowork_intro.html#طبقها-الآن-٣-دقائق",
+    "objectID": "slides/cowork_intro.html#طبقها-الآن-٣-دقائق",
+    "href": "slides/cowork_intro.html#طبقها-الآن-٣-دقائق",
     "title": "من المحادثة إلى وضع العمل",
     "section": "طبِّقها الآن: ٣ دقائق",
     "text": "طبِّقها الآن: ٣ دقائق\n\nجميعًا معًا. افتح Cowork ووجّهه إلى مجلد ملفات الورشة.\n\n\nافتح Cowork ووجّهه إلى مجلد ملفات الورشة\nالصِق الأمر أدناه\nراقِبه وهو يفتح الملفين قبل أن يجيب\n\n\n«اقرأ event_meeting.md وevent_plan.md، واذكر ما الذي لم يعد صحيحًا في الخطة بعد هذا الاجتماع. لا تعدّل شيئًا.»\n\n\nالملفان: event_meeting.md · event_plan.md، وهما في مجلد ملفات الورشة"
   },
   {
-    "objectID": "ksu-workshop/slides/wrap_up.html#the-toolkit-you-now-have",
-    "href": "ksu-workshop/slides/wrap_up.html#the-toolkit-you-now-have",
-    "title": "Your AI Assistant",
-    "section": "The toolkit you now have",
-    "text": "The toolkit you now have\n\nRICE, to delegate like you brief a TA\nA Project, holding that prompt and its files\nClaude Cowork, working on your real files\nSkills, Schedule, Scripts for the recurring work\nGemini Notebook, for grounded summaries and decks\n\n\n\nAll of it is the office getting smarter about what to re-send."
+    "objectID": "ksu.html",
+    "href": "ksu.html",
+    "title": "بناء مساعدك الذكي الخاص",
+    "section": "",
+    "text": "مدة الجلسة: حوالي ساعتين ونصف.\nنكتب أوامر بإطار RICE، ونحفظها في مشروع (Project)، ونُسلّم مهمة إلى مساعد ينفّذ على ملفات جاهزة. وتخرج بوصفة في صفحة واحدة لتكرار ذلك على عملك اليومي.\nالأداة التطبيقية: Claude Cowork، بلا برمجة. والمفاهيم قابلة للنقل إلى ChatGPT وGemini وGemini Notebook.\nقبل الجلسة: ثبّت تطبيق Claude لسطح المكتب."
   },
   {
-    "objectID": "ksu-workshop/slides/wrap_up.html#your-assistant-checklist",
-    "href": "ksu-workshop/slides/wrap_up.html#your-assistant-checklist",
-    "title": "Your AI Assistant",
-    "section": "Your assistant checklist",
-    "text": "Your assistant checklist\n\n\n\n✓\nI can…\n\n\n\n\n☐\nWrite a RICE prompt for a recurring task\n\n\n☐\nSet up a Project with standing instructions and files\n\n\n☐\nPoint Cowork at a folder and run a task in propose mode\n\n\n☐\nSave and invoke a Skill by its trigger\n\n\n☐\nSchedule a notify-me job\n\n\n☐\nGround a summary in my sources and check citations\n\n\n\n\n\n\n\n\n\n\nThe habit\n\n\nEvery time you do something twice, ask: “Could this be a Skill?”"
+    "objectID": "ksu.html#ترتيب-سير-اليوم",
+    "href": "ksu.html#ترتيب-سير-اليوم",
+    "title": "بناء مساعدك الذكي الخاص",
+    "section": "ترتيب سير اليوم",
+    "text": "ترتيب سير اليوم\nقبل الجلسة: يثبّت المشاركون تطبيق Claude لسطح المكتب ويحمّلون ملفات الورشة التجريبية. كل تمرين «طبِّقها الآن» يفترض وجودهما على الجهاز مسبقًا. واحتفِظ بهامش ١٠ دقائق في البداية للمتأخّرين فقط.\n\n\n\n#\nالمحطة\nالعرض\nدقائق\n\n\n\n\n١\nترحيب + جدول الأعمال\nنظرة عامة\n٥\n\n\n٢\nكيف يعمل الذكاء الاصطناعي + أوامر RICE\nكيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة\n٣٠\n\n\n٣\nتطبيق + استراحة\nتطبيق: فوِّض مهمة حقيقية\n١٥ + ١٠\n\n\n٤\nأن تسأل أم أن تُسلِّم + مجلد العمل\nمن المحادثة إلى وضع العمل\n٢٠\n\n\n٥\nالمهارات والسكربتات والقوالب\nابنِها مرة واحدة\n٢٠\n\n\n٦\nالجدولة والموصِّلات\nإلى أي مدى يصل هذا\n١٥\n\n\n٧\nالوصفة التي تأخذها معك\nوصفتك\n١٠\n\n\n٨\nالختام + ما التالي\nمساعدك الذكي\n١٠\n\n\n\nالجوهر ≈ ١٣٥ دقيقة، بما في ذلك استراحة ١٠ دقائق بعد أول محطة تطبيقية، مع هامش يصل إلى ساعتين ونصف.\nتنتهي العروض ٤–٦ بـتمرين «طبِّقها الآن» مدّته ٣ دقائق: أمر جاهز على ملف جاهز، ينفّذه الجميع في الوقت نفسه. وهي جوهر الجانب التطبيقي عبر الإنترنت، بدل محطة تطبيقية منفصلة.\n\nإن توفّر وقت: محطة إضافية\nشغِّله فقط إن أنهيت الجوهر قبل الموعد. وهو مرتّب في النهاية كي يسقط أي تجاوز في الوقت بسلاسة بدلًا من تعطيل حصيلة بناء المساعد.\n\n\n\nالمحطة\nالعرض\nدقائق\n\n\n\n\nالاستناد + العروض\nالاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook\n+٤٠"
   },
   {
-    "objectID": "ksu-workshop/slides/wrap_up.html#what-stays-your-responsibility",
-    "href": "ksu-workshop/slides/wrap_up.html#what-stays-your-responsibility",
-    "title": "Your AI Assistant",
-    "section": "What stays your responsibility",
-    "text": "What stays your responsibility\n\n\n\nBefore you upload\nYour organization’s policy and data classification decide, not your comfort. Approved tools only.\n\n\n\nBefore you send\nIt goes out under your name. You answer for what’s in it.\n\n\n\n\nBoth rules still stand: the Newspaper Test, then the Undo Test."
+    "objectID": "ksu.html#حلقة-التسليم",
+    "href": "ksu.html#حلقة-التسليم",
+    "title": "بناء مساعدك الذكي الخاص",
+    "section": "حلقة التسليم",
+    "text": "حلقة التسليم\nالعرض (ينفّذ المدرِّب مهمة كاملة) ← المحاكاة (تمرين «طبِّقها الآن» ٣ دقائق بأمر جاهز وملف جاهز في نهاية كل عرض) ← الأخذ معك (المهمة نفسها على عملك، من الوصفة)."
   },
   {
-    "objectID": "ksu-workshop/slides/wrap_up.html#feedback-i-like-i-wish-i-wonder",
-    "href": "ksu-workshop/slides/wrap_up.html#feedback-i-like-i-wish-i-wonder",
-    "title": "Your AI Assistant",
-    "section": "Feedback: I Like / I Wish / I Wonder",
-    "text": "Feedback: I Like / I Wish / I Wonder\n\n\n\nI like…\nwhat worked for you\n\n\n\nI wish…\nwhat you’d change\n\n\n\nI wonder…\nwhat’s next for you"
-  },
-  {
-    "objectID": "ksu-workshop/slides/wrap_up.html#thank-you",
-    "href": "ksu-workshop/slides/wrap_up.html#thank-you",
-    "title": "Your AI Assistant",
-    "section": "Thank You",
-    "text": "Thank You\n\nPick one task, and try it this week."
-  },
-  {
-    "objectID": "ksu-workshop/slides/recipe.html#three-things-to-try-this-week",
-    "href": "ksu-workshop/slides/recipe.html#three-things-to-try-this-week",
-    "title": "Your Recipe",
-    "section": "Three things to try this week",
-    "text": "Three things to try this week\n\n1 · Hand over one real task (5 min)\nCopy 2–3 files into one folder, strip the personal details, point Cowork at it, and say: “Read these and write me one summary note: the common themes, and anything that only appears once.”\n. . .\n2 · Make one Skill for something you repeat (10 min)\n“Save this as a Skill called [name], triggered by ‘[phrase]’. Steps: …” Then run it twice, on two different files, to check it holds up.\n. . .\n3 · Put it on a clock (2 min)\n“/schedule every [day] at [time], run [Skill] on this folder. Notify me; don’t send anything.”\n\n\n\nGood candidates: Grade summaries, feedback notes, lecture decks, paper briefs"
-  },
-  {
-    "objectID": "ksu-workshop/slides/recipe.html#make-it-stick",
-    "href": "ksu-workshop/slides/recipe.html#make-it-stick",
-    "title": "Your Recipe",
-    "section": "Make it stick",
-    "text": "Make it stick\n\nSave the one that works. Put the prompt into a Project’s standing instructions with the files it always needs. Next time it’s one sentence.\n\n\n\nBoth rules still apply: Newspaper Test before you paste, Undo Test before it acts.\n\n\n\n\nPick which one you’ll run first. We’ll name them at the wrap-up."
-  },
-  {
-    "objectID": "ksu-workshop/slides/recipe.html#bring-it-back",
-    "href": "ksu-workshop/slides/recipe.html#bring-it-back",
-    "title": "Your Recipe",
-    "section": "Bring it back",
-    "text": "Bring it back\n\n\n\n\n\n\nFollow-up session\n\n\nBring whatever you ran, including the ones that went wrong. The failures are more useful to work through together than the successes."
-  },
-  {
-    "objectID": "ksu-workshop/slides/overview.html#what-well-work-on",
-    "href": "ksu-workshop/slides/overview.html#what-well-work-on",
-    "title": "Building Your Own AI Assistant",
-    "section": "What we’ll work on",
-    "text": "What we’ll work on\n\nWe write prompts with RICE, save them in a Project, then hand a task to Claude Cowork on provided files.\n\n\n\nYou leave with a one-page recipe for repeating it on your own academic work.\n\n\n\n\n\n\n\n\n\nKSU faculty, no coding required\n\n\nYou describe what you want in plain language. We use Claude Cowork because it sets up fastest, and the same ideas work in ChatGPT, Gemini, and Claude."
-  },
-  {
-    "objectID": "ksu-workshop/slides/overview.html#the-day-in-four-stops",
-    "href": "ksu-workshop/slides/overview.html#the-day-in-four-stops",
-    "title": "Building Your Own AI Assistant",
-    "section": "The day in four stops",
-    "text": "The day in four stops\n\n\n\n\n\n\n\nStop\nWhat we do\n\n\n\n\nHow AI Works + RICE\nWhy it works, and how to set up a Project\n\n\nWork Mode\nHand a task to an agent: files, Skills, schedules\n\n\nYour Recipe\nThree ready prompts for your own work\n\n\nWrap-up\nReview, and plan what comes next"
-  },
-  {
-    "objectID": "ksu-workshop/slides/overview.html#how-well-work",
-    "href": "ksu-workshop/slides/overview.html#how-well-work",
-    "title": "Building Your Own AI Assistant",
-    "section": "How we’ll work",
-    "text": "How we’ll work\n\n\n\nShow\nI run a real task live\n\n\n\nMirror\nWe all repeat one piece together\n\n\n\nTake home\nThe same task, on your work\n\n\n\n\nEvery follow-along uses a provided prompt on a provided file. Nothing to prepare."
-  },
-  {
-    "objectID": "ksu-workshop/slides/overview.html#two-rules-before-we-start",
-    "href": "ksu-workshop/slides/overview.html#two-rules-before-we-start",
-    "title": "Building Your Own AI Assistant",
-    "section": "Two rules before we start",
-    "text": "Two rules before we start\n\n\n\nNewspaper Test\nBefore you paste: would you be fine seeing this text published? If not, strip names, student data, and unpublished work first.\n\n\n\nThe Undo Test\nBefore it acts: can you undo what it’s about to do? Have it propose, you approve.\n\n\n\n\nToday’s exercises run on provided sample files, with no real data."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_far_this_goes.html#demo-3-a-weekly-digest",
-    "href": "ksu-workshop/slides/how_far_this_goes.html#demo-3-a-weekly-digest",
-    "title": "How Far This Goes",
-    "section": "Demo 3: a weekly digest",
-    "text": "Demo 3: a weekly digest\n\n/schedule: Every Sunday at 5pm, scan the course folder and draft a summary of what’s due, ungraded, and upcoming. Notify me; don’t send anything.\n\n\n\n\n\n\n\n\nGuardrails first\n\n\nEvery scheduled job starts in draft / notify-me mode."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_far_this_goes.html#a-faculty-example",
-    "href": "ksu-workshop/slides/how_far_this_goes.html#a-faculty-example",
-    "title": "How Far This Goes",
-    "section": "A faculty example",
-    "text": "A faculty example\n\nConnect your Drive and Calendar, then ask: “Read this week’s committee files from Drive and my calendar, and draft a week-ahead teaching summary.”\n\n\n\nIt pulls the real documents and real dates itself.\n\n\n\n\n\n\n\n\n\nKeys earn trust slowly\n\n\nStart read-only / draft-only: let it fetch and propose, never send or delete."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_far_this_goes.html#why-the-risk-is-bigger-here",
-    "href": "ksu-workshop/slides/how_far_this_goes.html#why-the-risk-is-bigger-here",
-    "title": "How Far This Goes",
-    "section": "Why the risk is bigger here",
-    "text": "Why the risk is bigger here\n\nA schedule runs while you’re not watching\nA connector acts outside your folder, in your real tools\nAccess to work tools goes through IT, not through you alone"
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_far_this_goes.html#which-job-shouldnt-auto-run",
-    "href": "ksu-workshop/slides/how_far_this_goes.html#which-job-shouldnt-auto-run",
-    "title": "How Far This Goes",
-    "section": "Which job shouldn’t auto-run",
-    "text": "Which job shouldn’t auto-run\n\n\n\nA) Every morning, summarize new course-forum posts into a note.\n\n\n\nB) Every morning, auto-reply to all student emails.\n\n\n\n\n\n\n\n✅ Read-only. Easy to undo.\n\n\n\n❌ This one. Hard to undo. Draft-only."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_far_this_goes.html#do-this-now-2-minutes",
-    "href": "ksu-workshop/slides/how_far_this_goes.html#do-this-now-2-minutes",
-    "title": "How Far This Goes",
-    "section": "Do this now: 2 minutes",
-    "text": "Do this now: 2 minutes\n\nSchedule the Skill you just made. Notify-me mode.\n\n\n“/schedule every Sunday at 5pm, run Feedback Note on any new essays in this folder. Notify me; don’t send anything.”\n\n\n\nYou can delete it right after. The point is seeing that when is just a setting."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_far_this_goes.html#key-takeaways",
-    "href": "ksu-workshop/slides/how_far_this_goes.html#key-takeaways",
-    "title": "How Far This Goes",
-    "section": "Key takeaways",
-    "text": "Key takeaways\n\nHand the work over. The working directory is where it happens.\nApply the undo test, and start in draft / notify-me.\nA Skill is a book Cowork opens by its trigger.\nIt can bundle a script for numbers and a template for the layout.\nSchedule and Connectors both just run that Skill."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_intro.html#which-one-you-need",
-    "href": "ksu-workshop/slides/cowork_intro.html#which-one-you-need",
-    "title": "From Chat to Work Mode",
-    "section": "Which one you need",
-    "text": "Which one you need\n\nOne-off. “How do I write a good syllabus?” Ask it in a chat.\nEvery week. “Draft next term’s syllabus from these three files.” Set up a Project.\n\n\n\nA Project is standing instructions plus files, re-sent every time."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_intro.html#same-idea-elsewhere",
-    "href": "ksu-workshop/slides/cowork_intro.html#same-idea-elsewhere",
-    "title": "From Chat to Work Mode",
-    "section": "Same idea elsewhere",
-    "text": "Same idea elsewhere\n\nChatGPT and Antigravity can point at your own files too. We use Cowork today because it sets up fastest."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_intro.html#the-second-safety-rule",
-    "href": "ksu-workshop/slides/cowork_intro.html#the-second-safety-rule",
-    "title": "From Chat to Work Mode",
-    "section": "The second safety rule",
-    "text": "The second safety rule\n\n\n\nRule 1: Newspaper Test\nGuards what you paste in. You already have this one.\n\n\n\n\nRule 2: The Undo Test\nGuards what the agent does. Its blast radius."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_intro.html#the-undo-test",
-    "href": "ksu-workshop/slides/cowork_intro.html#the-undo-test",
-    "title": "From Chat to Work Mode",
-    "section": "The undo test",
-    "text": "The undo test\n\nBefore letting it act, ask: “If it gets this wrong, can I undo it? Would I notice in time?”\n\n\n\n\n\n\n\n\nStart in draft / notify-me mode\n\n\nCowork proposes, you approve. Let it act on its own only once it has proven itself.\n\n\n\n\n\n\nToday we work on provided sample files. No real data, no real names."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_intro.html#demo-three-files-in-one-note-out",
-    "href": "ksu-workshop/slides/cowork_intro.html#demo-three-files-in-one-note-out",
-    "title": "From Chat to Work Mode",
-    "section": "Demo: three files in, one note out",
-    "text": "Demo: three files in, one note out\n\nCowork is pointed at the workshop files folder, holding three student feedback files.\n\n\n“Read the three feedback files in this folder and write me one summary note: the common themes, and anything only one student raised.”\n\n\nfeedback_student_1.md · feedback_student_2.md · feedback_student_3.md"
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_intro.html#what-to-watch-for",
-    "href": "ksu-workshop/slides/cowork_intro.html#what-to-watch-for",
-    "title": "From Chat to Work Mode",
-    "section": "What to watch for",
-    "text": "What to watch for\n\nIt opens the files itself. Nothing gets pasted.\nIt reads, compares, and writes, in that order.\nIt proposes the result. You approve."
-  },
-  {
-    "objectID": "ksu-workshop/slides/cowork_intro.html#do-this-now-3-minutes",
-    "href": "ksu-workshop/slides/cowork_intro.html#do-this-now-3-minutes",
-    "title": "From Chat to Work Mode",
-    "section": "Do this now: 3 minutes",
-    "text": "Do this now: 3 minutes\n\nEveryone together. Cowork open, pointed at your workshop files folder.\n\n\nOpen Cowork and point it at your workshop files folder\nPaste the prompt below\nWatch it open the file before it answers\n\n\n“Read committee_notes.md in this folder and list every action item with who owns it and when it’s due.”\n\n\nFile: committee_notes.md, already in your workshop files folder"
+    "objectID": "ksu.html#قاعدتان-قبل-أن-نبدأ",
+    "href": "ksu.html#قاعدتان-قبل-أن-نبدأ",
+    "title": "بناء مساعدك الذكي الخاص",
+    "section": "قاعدتان قبل أن نبدأ",
+    "text": "قاعدتان قبل أن نبدأ\n\nاختبار الجريدة. قبل أن تلصق: أزِل الأسماء والبيانات الشخصية والخطط غير المعلَنة.\nاختبار التراجع. قبل أن ينفّذ: ابدأ في وضع المسودة / أعلِمني.\n\nتمارين الجلسة تجري على ملفات تجريبية مرفقة، بلا بيانات حقيقية."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "AI at Work — Workshops",
     "section": "",
-    "text": "Hands-on workshops that teach professionals and faculty to use AI as a permanent member of their team — not as a search engine. No coding. Concepts stay portable across ChatGPT, Gemini, Claude, and Gemini Notebook."
+    "text": "ورش تطبيقية تُعلّم استخدام الذكاء الاصطناعي بوصفه عضوًا دائمًا في فريقك، لا محرّك بحث. بلا برمجة. والمفاهيم قابلة للنقل بين ChatGPT وGemini وClaude وGemini Notebook."
   },
   {
-    "objectID": "index.html#workshops",
-    "href": "index.html#workshops",
+    "objectID": "index.html#الورش",
+    "href": "index.html#الورش",
     "title": "AI at Work — Workshops",
-    "section": "Workshops",
-    "text": "Workshops\n\n\n\nWorkshop\nAudience\nLength\nStart here\n\n\n\n\nBuilding Your Own AI Assistant\nKSU faculty\nHalf-day (≈4 hrs)\nRun of show →\n\n\nBuilding Your Own AI Assistant\nOffice professionals\nShort session (≈2.5 hrs)\nRun of show →\n\n\nبناء مساعدك الذكي الخاص\nموظفو المكاتب (بالعربية · RTL)\nجلسة قصيرة (≈2.5 ساعة)\nترتيب سير اليوم →"
+    "section": "الورش",
+    "text": "الورش\n\n\n\nالورشة\nالجمهور\nالمدة\nابدأ من هنا\n\n\n\n\nبناء مساعدك الذكي الخاص\nموظفو المكاتب\n≈ساعتان ونصف\nترتيب سير اليوم →\n\n\nبناء مساعدك الذكي الخاص\nأعضاء هيئة التدريس\n≈ساعتان ونصف\nترتيب سير اليوم →\n\n\n\nالنسختان تشتركان في العروض نفسها والملفات التجريبية نفسها. ما يتغيّر هو صفحة الورشة وحدها."
   },
   {
-    "objectID": "ksu-workshop/index.html",
-    "href": "ksu-workshop/index.html",
-    "title": "Building Your Own AI Assistant",
-    "section": "",
-    "text": "Session length: About four and a half hours.\nWe write prompts with RICE, save them in a Project, and hand a task to an assistant that executes on provided files. You leave with a one-page recipe for repeating it on your own academic work.\nHands-on tool: Claude Cowork. No coding. You describe steps in plain language, and the concepts stay portable to ChatGPT, Gemini, Claude, and Gemini Notebook.\nBefore the session: install the Claude desktop app. Every follow-along assumes it is already on your machine, and runs on the provided workshop sample files."
+    "objectID": "index.html#العروض",
+    "href": "index.html#العروض",
+    "title": "AI at Work — Workshops",
+    "section": "العروض",
+    "text": "العروض\n\n\n\nالعرض\nالموضوع\n\n\n\n\nنظرة عامة\nترحيب، وجدول الأعمال، وقاعدتا الأمان\n\n\nكيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة\nالطبقتان، والسياق، والمشروع، وRICE\n\n\nتطبيق: فوِّض مهمة حقيقية\nأمر RICE كامل على مهمة حقيقية\n\n\nمن المحادثة إلى وضع العمل\nمجلد العمل، ونطاق التأثير\n\n\nابنِها مرة واحدة\nالمهارة، والسكربت، والقالب\n\n\nإلى أي مدى يصل هذا\nالجدولة والموصِّلات\n\n\nوصفتك\nالوصفة في صفحة واحدة\n\n\nالاستناد إلى المصادر والإنشاء\nGemini Notebook (محطة إضافية)\n\n\nمساعدك الذكي\nالختام وما التالي"
   },
   {
-    "objectID": "ksu-workshop/index.html#run-of-show",
-    "href": "ksu-workshop/index.html#run-of-show",
-    "title": "Building Your Own AI Assistant",
-    "section": "Run of Show",
-    "text": "Run of Show\nThis page is the canonical order. Open each deck in turn.\nBefore the session: participants install the Claude desktop app and download the workshop sample files. Every follow-along assumes both are already on their machine. Hold a 10-minute buffer at the start for stragglers only.\n\n\n\n#\nStop\nDeck\nMins\n\n\n\n\n1\nWelcome + agenda\nOverview\n10\n\n\n2\nHow AI works + RICE prompting\nHow AI Works & Writing Great Prompts\n45\n\n\n3\nPractice + break\nPractice: Delegate a Real Task\n25 + 10\n\n\n4\nAsk vs. hand over + the working directory\nFrom Chat to Work Mode\n25\n\n\n5\nSkills, scripts & templates\nBuild It Once\n20\n\n\n6\nSchedule + connectors\nHow Far This Goes\n15\n\n\n7\nThe take-home recipe\nYour Recipe\n10\n\n\n8\nGrounding + slides\nGrounding & Creating with Gemini Notebook\n40\n\n\n9\nWrap-up + what’s next\nYour AI Assistant\n30\n\n\n\nTotal ≈ 230 minutes, including a 10-minute break after the first practice stop, finishing comfortably inside four hours.\nDecks 4–6 each end in a 3-minute follow-along: a provided prompt on a provided file, run by everyone at the same time. Online, these are the hands-on core, in place of a separate practice block."
-  },
-  {
-    "objectID": "ksu-workshop/index.html#the-delivery-loop",
-    "href": "ksu-workshop/index.html#the-delivery-loop",
-    "title": "Building Your Own AI Assistant",
-    "section": "The Delivery Loop",
-    "text": "The Delivery Loop\nShow (instructor runs a real task end to end) → Mirror (everyone repeats a small piece of it at the same time, with a provided prompt and file) → Take home (the same task, on your own work, from the recipe).\nBuilt for online delivery: the doing is a 3-minute follow-along at the end of each deck, on provided inputs only. If it can fail live, it isn’t a follow-along."
-  },
-  {
-    "objectID": "ksu-workshop/index.html#two-rules-before-we-start",
-    "href": "ksu-workshop/index.html#two-rules-before-we-start",
-    "title": "Building Your Own AI Assistant",
-    "section": "Two Rules Before We Start",
-    "text": "Two Rules Before We Start\n\nNewspaper Test. Before you paste: would you be fine seeing this text published? If not, strip names, student data, and unpublished work first.\nThe Undo Test. Before it acts: can you undo what it’s about to do? Start every Skill and scheduled job in draft / notify-me mode before letting it act on its own.\n\nSession exercises run on provided sample files, with no real data."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#two-layers-stacked",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#two-layers-stacked",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Two layers, stacked",
-    "text": "Two layers, stacked\n\n\n\n\nThe Model Layer\n“The brain.” Knows a lot, knows nothing about you.\n\n\n\n\n\nThe App Layer\n“The office.” Keeps your files and re-sends them.\n\n\n\n\n\nTell these apart and the “memory” features stop being magic."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#a-brain-with-no-memory-of-you",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#a-brain-with-no-memory-of-you",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "A brain with no memory of you",
-    "text": "A brain with no memory of you\n\nIt has read most of the internet. It has read nothing about you.\n\n\n\nKeeps: language, facts, math, reasoning\nForgets: you, your work, this conversation\n\n\n\n\nSo anything it should know about you, you hand it every time."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#it-predicts-the-next-word",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#it-predicts-the-next-word",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "It predicts the next word",
-    "text": "It predicts the next word\nIt does one thing, over and over: pick the next word, add it, ask again.\n\n\n“The capital of Saudi Arabia ___”\n\nis (97%)\nwas (2%)\nremains (0.6%)\nall other words … (0.2%)\n\n\n\n“The capital of Saudi Arabia is ___”\n\nRiyadh (99%)\nJeddah (0.4%)\nMecca (0.3%)\nall other words … (0.2%)\n\n\n\n“The capital of Saudi Arabia is Riyadh ___”\n\n, (52%)\n. (41%)\n: (4%)\nall other words … (2%)\n\n\n\n“The capital of Saudi Arabia is Riyadh, a ___”\n\ncity (61%)\nlarge (12%)\nmajor (8%)\nall other words … (6%)\n\n\n\n\n\nAt each step it knows which word usually comes next. That is the whole trick.\nPercentages are illustrative."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#when-it-guesses-wrong",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#when-it-guesses-wrong",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "When it guesses wrong",
-    "text": "When it guesses wrong\n\nWhat happens when it doesn’t know the answer? It guesses.\n\n“According to Article 214 of the new Investment Law: …”\n\n\n\nThe (45%) · Foreign (30%) · Capital (15%)\n\n\n\n\n\nThe sentence sounds right, and it has never read the document. That confident, made-up answer is a hallucination."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#we-build-an-office-around-it",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#we-build-an-office-around-it",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "We build an office around it",
-    "text": "We build an office around it\n\nThe brain can’t open files or remember your name. So we build an office around it: the app you actually use.\n\n\n\nIt keeps your information in files. Every time you ask, it gathers the relevant pages and hands them to the brain, then files the answer back."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-features-you-already-use",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-features-you-already-use",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "The features you already use",
-    "text": "The features you already use\n\n“Memory”, “Projects”, “Custom Instructions” are all the app doing that gathering and re-sending for you.\n\n\n\nThe brain still has amnesia. The office is what makes it feel like it remembers."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#what-goes-in-front-of-the-model",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#what-goes-in-front-of-the-model",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "What goes in front of the model",
-    "text": "What goes in front of the model\n\nContext is what the office puts on the desk before the brain starts: your request, your instructions, the files you upload, and what came earlier in the chat.\n\n\n\nWhat changes the answer most is what you put in the context."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#why-long-chats-forget",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#why-long-chats-forget",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Why long chats “forget”",
-    "text": "Why long chats “forget”\n\nContext space is limited. As a chat grows, there isn’t room for everything that came before, so the oldest of it drops out.\n\n\n\nThat’s the context window: a limit on what the model can take in for one request."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#a-project-saves-your-instructions-and-files",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#a-project-saves-your-instructions-and-files",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "A Project saves your instructions and files",
-    "text": "A Project saves your instructions and files\n\nA Project in ChatGPT, Claude, or Gemini is a saved workspace. Set it up once: name it, write your standing instructions, upload the files it should always see.\n\n\n\nEvery new chat inside it starts with those already loaded.\n\n\n\n\nA “Course” Project. Standing instructions: always cite the syllabus, keep feedback constructive, use my rubric’s wording. Files uploaded once: the syllabus, the rubric, the reading list."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#micro-check",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#micro-check",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Micro-check",
-    "text": "Micro-check\nThe AI cites a journal article that doesn’t exist. Which layer failed?\n\n\n\nBoth. The model guessed because the context held no real source. Give it the source, then check the citations."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-framework",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-framework",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "The framework",
-    "text": "The framework\nThe harder the task, the more of these are worth adding.\n\n\nR Role: the expert you’d hire.\n\n\nI Instructions: the task, plus format, length, tone.\n\n\nC Context: your notes, your files.\n\n\nE Examples: one sample of “good”.\n\n\n\n\n\n\n\n\n\nC is the same context from the two layers\n\n\nYou’re loading the pages onto the brain’s desk. No context = the brain guesses."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-newspaper-test",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-newspaper-test",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "The Newspaper Test",
-    "text": "The Newspaper Test\n\nC means real material leaves your desk. Before it does, ask: would I be comfortable seeing this text on the front page of a newspaper?\n\n\n\nIf not, strip names, student data, and unpublished work first. The answer is just as good without them.\n\n\n\n\nThis is Rule 1 of two. It guards what you paste in."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-formula",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-formula",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "The formula",
-    "text": "The formula\n\n“Act as a [Role]. Your job is to [Instructions]. Here is the [Context]. Match this [Example].”\n\n\n\nOne good sample shows the shape you want faster than several lines of rules."
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#delegate-instead-of-asking",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#delegate-instead-of-asking",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Delegate instead of asking",
-    "text": "Delegate instead of asking\n\nDon’t ask: “Write an email about the meeting.”\n\n\n\nDelegate: “Act as a thesis advisor. Draft a recap email to my student from these notes. Highlight the revisions due before the next committee.”"
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-messy-notes",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-messy-notes",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "The messy notes",
-    "text": "The messy notes\n\nWhat you actually scribbled after the committee meeting:\n\n\n“Met Sara re: thesis ch.3. Stats section weak, needs effect sizes, not just p-values. Lit review missing 2 key papers (ask her to add). Committee wants revised draft in 3 weeks. She’s nervous about the defense, reassure. Reminder: ethics form still not submitted.”"
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#the-rice-prompt",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#the-rice-prompt",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "The RICE prompt",
-    "text": "The RICE prompt\n\nRole: Act as a supportive thesis advisor.\nInstructions: Draft a warm, clear follow-up email to my student. Use these headers: Summary, Required Revisions, Deadline, Admin. Put the deadline in bold. End on an encouraging note. If anything is missing, add a “Questions for me” section.\nContext: Notes from today’s committee meeting on Chapter 3: [paste notes]\nExample: Match this opening: “Dear Sara, good progress this week. Here’s where we landed: …”"
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#what-made-it-work",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#what-made-it-work",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "What made it work",
-    "text": "What made it work\n\nRole → wrote as a mentor, not a robot\nInstructions → the sections, the tone, the “Questions for me” rule\nContext → messy notes were enough to extract the structure\nExample → matched the warm, personal opening"
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#quiz",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#quiz",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Quiz",
-    "text": "Quiz\nYou prompt: “Write feedback on this essay.” Which RICE elements are missing?\n\n\n\n\n\nR Role\nWho’s giving it?\n\n\n\nI Instructions\nLength? tone? rubric?\n\n\n\nC Context\nThe essay? the rubric?\n\n\n\nE Example\nNo sample of good feedback"
-  },
-  {
-    "objectID": "ksu-workshop/slides/how_ai_works_and_rice.html#key-takeaways",
-    "href": "ksu-workshop/slides/how_ai_works_and_rice.html#key-takeaways",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Key takeaways",
-    "text": "Key takeaways\n\nTwo layers: the model is the brain, the app is the office.\nThe model predicts the next word, and can make things up.\nThe answer follows the context. A Project keeps yours loaded.\nBrief it with RICE: Role, Instructions, Context, Examples.\nRun the Newspaper Test before you paste."
-  },
-  {
-    "objectID": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#what-its-best-at",
-    "href": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#what-its-best-at",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "What it’s best at",
-    "text": "What it’s best at\n\nDeep reading of big documents (50+ pages). It works only from your uploaded sources, and every answer links back to one.\n\n\n\nUpload papers, a thesis, a policy, lecture readings\nAsk questions; get answers with citations to the exact passage\nGenerate an Audio Overview to listen on your commute"
-  },
-  {
-    "objectID": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#it-also-builds-slides",
-    "href": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#it-also-builds-slides",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "It also builds slides",
-    "text": "It also builds slides\n\nTurn your sources into a presentation, grounded in the same documents.\n\n\n\n\n\nDetailed Deck\nText-rich, stands on its own. Good for a reading or handout.\n\n\n\nPresenter Slides\nClean and visual. Supports you while you talk."
-  },
-  {
-    "objectID": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#steering-and-editing-the-deck",
-    "href": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#steering-and-editing-the-deck",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "Steering and editing the deck",
-    "text": "Steering and editing the deck\n\nName your audience and themes before it generates\nExport to .pptx or PDF\nExpect cleanup: parts export as images\nRevise any slide with the pencil icon\n\n\n\n\n\n\n\n\nOne requirement\n\n\nYou need at least one source uploaded before it can build a deck."
-  },
-  {
-    "objectID": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#your-mission",
-    "href": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#your-mission",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "Your mission",
-    "text": "Your mission\n\nTake a real (safe) paper or policy PDF. Produce a 1-page grounded summary and a presenter deck, in 10 minutes.\n\n\n\nUpload the source to Gemini Notebook\nAsk: “Based only on this, give 5 key findings with page references. If it’s not in the source, say ‘Not found.’”\nClick through the citations to the passage\nGenerate a Presenter deck, export .pptx, revise one slide"
-  },
-  {
-    "objectID": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#check-it-before-you-use-it",
-    "href": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#check-it-before-you-use-it",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "Check it before you use it",
-    "text": "Check it before you use it\n\nA source reduces guessing. It does not replace your review. Generated slides can still carry factual and visual errors.\n\n\nNo source? Use one of your own, or open sample_paper.md for links to open-access papers and policies.\n\n\n\n\n\n\n\nLog it\n\n\nDoes this task recur for you? Then it’s a good candidate to try after the session."
-  },
-  {
-    "objectID": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#quiz",
-    "href": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#quiz",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "Quiz",
-    "text": "Quiz\n1. You need to summarize a confidential, unpublished manuscript you’re reviewing.\n\n\n\nNewspaper Test first. This is confidential peer review, so check the rules before uploading it anywhere.\n\n\n\n\n2. You need today’s statistics on enrollment trends from the web.\n\n\n\n\nDeep Research, for live web with citations. Gemini Notebook only reads your uploads."
-  },
-  {
-    "objectID": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#key-takeaways",
-    "href": "ksu-workshop/slides/notebooklm_grounding_and_slides.html#key-takeaways",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "Key takeaways",
-    "text": "Key takeaways\n\nUpload the sources first, then constrain it to “only these”.\nA citation is a pointer. Click through and check the claim.\nGemini Notebook does deep reading and decks, exportable as .pptx.\nMatch the tool to the job: Cowork, Gemini Notebook, or Deep Research."
-  },
-  {
-    "objectID": "ksu-workshop/slides/practice_foundations.html#run-it-then-tighten-it",
-    "href": "ksu-workshop/slides/practice_foundations.html#run-it-then-tighten-it",
-    "title": "Practice: Delegate a Real Task",
-    "section": "Run it, then tighten it",
-    "text": "Run it, then tighten it\n\nRun it. Does the output match your Example?\nAdd the weakest RICE element and run it again\nAdd: “If anything is unclear, ask me before you write.”\n\n\n\n\n\n\n\n\nNote\n\n\nUsing a real file? Run the Newspaper Test on it first."
-  },
-  {
-    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#what-a-skill-is",
-    "href": "ksu-workshop/slides/skills_scripts_templates.html#what-a-skill-is",
-    "title": "Build It Once",
-    "section": "What a Skill is",
-    "text": "What a Skill is\n\nYour Skills are a library. Each Skill is a book: a written playbook for one recurring task.\n\n\n\nThe title on the spine is the trigger\nWhat’s written inside is the steps, in plain language\n\n\n\n\nCowork keeps the whole shelf and opens only the book your task calls for."
-  },
-  {
-    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#demo-1-lecture-deck",
-    "href": "ksu-workshop/slides/skills_scripts_templates.html#demo-1-lecture-deck",
-    "title": "Build It Once",
-    "section": "Demo 1: “Lecture Deck”",
-    "text": "Demo 1: “Lecture Deck”\n\nLecture notes → an on-brand PowerPoint deck you open and edit like any other.\n\n\n\nName: Lecture Deck  •  Trigger: “turn these notes into a lecture deck”\nSteps: 1) outline the storyline · 2) one idea per slide · 3) apply my course style · 4) fill my PowerPoint template and save it as .pptx"
-  },
-  {
-    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#invoke-it-on-fresh-input",
-    "href": "ksu-workshop/slides/skills_scripts_templates.html#invoke-it-on-fresh-input",
-    "title": "Build It Once",
-    "section": "Invoke it on fresh input",
-    "text": "Invoke it on fresh input\n\nThe Skill is saved. Now just type the trigger on any new lecture.\n\n\n“Turn this into a lecture deck: photosynthesis, light reactions, Calvin cycle, limiting factors, today’s lab.”\n\n\n\nOne phrase → an editable, on-brand deck.\n\n\nNo template of your own? Say “clean and simple” and it builds one."
-  },
-  {
-    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#a-script-for-exact-numbers",
-    "href": "ksu-workshop/slides/skills_scripts_templates.html#a-script-for-exact-numbers",
-    "title": "Build It Once",
-    "section": "A script, for exact numbers",
-    "text": "A script, for exact numbers\n\nA little program Cowork writes and runs when the job is exact, repeatable calculation.\n\n\n\n\n\n\n\n\nYou never touch code\n\n\nA Skill is instructions Cowork reads and follows. A script is code it runs to compute. You describe what you want, and Cowork does both."
-  },
-  {
-    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#a-template-the-layout-it-fills",
-    "href": "ksu-workshop/slides/skills_scripts_templates.html#a-template-the-layout-it-fills",
-    "title": "Build It Once",
-    "section": "A template, the layout it fills",
-    "text": "A template, the layout it fills\n\nA template is a real file on your machine: your PowerPoint template or your spreadsheet. It’s the on-brand layout the script fills.\n\n\n\nSame template next time, same look, no reformatting."
-  },
-  {
-    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#composition",
-    "href": "ksu-workshop/slides/skills_scripts_templates.html#composition",
-    "title": "Build It Once",
-    "section": "Composition",
-    "text": "Composition\n\nOne trigger. A Skill can call a script to compute and fill a template to look right.\n\n\n\n“turn these notes into a lecture deck” → the Skill outlines the story → a script fills your PowerPoint template → a finished, on-brand .pptx."
-  },
-  {
-    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#demo-2-grade-summaries",
-    "href": "ksu-workshop/slides/skills_scripts_templates.html#demo-2-grade-summaries",
-    "title": "Build It Once",
-    "section": "Demo 2: grade summaries",
-    "text": "Demo 2: grade summaries\n\nYou have a spreadsheet of raw scores. Every term you want weighted finals, the class average, and a distribution.\n\n\n\n“From grades.csv, compute each student’s weighted total (midterm 25%, final 35%, project 25%, participation 15%), the class average, and a grade distribution. Save it as a new sheet.”\n\n\n\n\n\n\n\nNote\n\n\nSample data: grades.csv"
-  },
-  {
-    "objectID": "ksu-workshop/slides/skills_scripts_templates.html#do-this-now-3-minutes",
-    "href": "ksu-workshop/slides/skills_scripts_templates.html#do-this-now-3-minutes",
-    "title": "Build It Once",
-    "section": "Do this now: 3 minutes",
-    "text": "Do this now: 3 minutes\n\nYou won’t design a Skill. You’ll paste one and run it.\n\n1. Paste this to create the Skill:\n\n“Save this as a Skill called Feedback Note, triggered by ‘write a feedback note’. Steps: read the essay and the rubric, score each rubric criterion, then write a short note to the student with two strengths, two fixes, and one next step.”\n\n2. Then type the trigger:\n\n“Write a feedback note for sample_essay.md using rubric.md.”\n\n\nFiles: sample_essay.md · rubric.md"
-  },
-  {
-    "objectID": "office-workshop-ar/index.html",
-    "href": "office-workshop-ar/index.html",
+    "objectID": "office.html",
+    "href": "office.html",
     "title": "بناء مساعدك الذكي الخاص",
     "section": "",
     "text": "مدة الجلسة: حوالي ساعتين ونصف.\nنكتب أوامر بإطار RICE، ونحفظها في مشروع (Project)، ونُسلّم مهمة إلى مساعد ينفّذ على ملفات جاهزة. وتخرج بوصفة في صفحة واحدة لتكرار ذلك على عملك اليومي.\nالأداة التطبيقية: Claude Cowork، بلا برمجة. والمفاهيم قابلة للنقل إلى ChatGPT وGemini وGemini Notebook.\nقبل الجلسة: ثبّت تطبيق Claude لسطح المكتب."
   },
   {
-    "objectID": "office-workshop-ar/index.html#ترتيب-سير-اليوم",
-    "href": "office-workshop-ar/index.html#ترتيب-سير-اليوم",
+    "objectID": "office.html#ترتيب-سير-اليوم",
+    "href": "office.html#ترتيب-سير-اليوم",
     "title": "بناء مساعدك الذكي الخاص",
     "section": "ترتيب سير اليوم",
     "text": "ترتيب سير اليوم\nقبل الجلسة: يثبّت المشاركون تطبيق Claude لسطح المكتب ويحمّلون ملفات الورشة التجريبية. كل تمرين «طبِّقها الآن» يفترض وجودهما على الجهاز مسبقًا. واحتفِظ بهامش ١٠ دقائق في البداية للمتأخّرين فقط.\n\n\n\n#\nالمحطة\nالعرض\nدقائق\n\n\n\n\n١\nترحيب + جدول الأعمال\nنظرة عامة\n٥\n\n\n٢\nكيف يعمل الذكاء الاصطناعي + أوامر RICE\nكيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة\n٣٠\n\n\n٣\nتطبيق + استراحة\nتطبيق: فوِّض مهمة حقيقية\n١٥ + ١٠\n\n\n٤\nأن تسأل أم أن تُسلِّم + مجلد العمل\nمن المحادثة إلى وضع العمل\n٢٠\n\n\n٥\nالمهارات والسكربتات والقوالب\nابنِها مرة واحدة\n٢٠\n\n\n٦\nالجدولة والموصِّلات\nإلى أي مدى يصل هذا\n١٥\n\n\n٧\nالوصفة التي تأخذها معك\nوصفتك\n١٠\n\n\n٨\nالختام + ما التالي\nمساعدك الذكي\n١٠\n\n\n\nالجوهر ≈ ١٣٥ دقيقة، بما في ذلك استراحة ١٠ دقائق بعد أول محطة تطبيقية، مع هامش يصل إلى ساعتين ونصف.\nتنتهي العروض ٤–٦ بـتمرين «طبِّقها الآن» مدّته ٣ دقائق: أمر جاهز على ملف جاهز، ينفّذه الجميع في الوقت نفسه. وهي جوهر الجانب التطبيقي عبر الإنترنت، بدل محطة تطبيقية منفصلة.\n\nإن توفّر وقت: محطة إضافية\nشغِّله فقط إن أنهيت الجوهر قبل الموعد. وهو مرتّب في النهاية كي يسقط أي تجاوز في الوقت بسلاسة بدلًا من تعطيل حصيلة بناء المساعد.\n\n\n\nالمحطة\nالعرض\nدقائق\n\n\n\n\nالاستناد + العروض\nالاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook\n+٤٠"
   },
   {
-    "objectID": "office-workshop-ar/index.html#حلقة-التسليم",
-    "href": "office-workshop-ar/index.html#حلقة-التسليم",
+    "objectID": "office.html#حلقة-التسليم",
+    "href": "office.html#حلقة-التسليم",
     "title": "بناء مساعدك الذكي الخاص",
     "section": "حلقة التسليم",
     "text": "حلقة التسليم\nالعرض (ينفّذ المدرِّب مهمة كاملة) ← المحاكاة (تمرين «طبِّقها الآن» ٣ دقائق بأمر جاهز وملف جاهز في نهاية كل عرض) ← الأخذ معك (المهمة نفسها على عملك، من الوصفة)."
   },
   {
-    "objectID": "office-workshop-ar/index.html#قاعدتان-قبل-أن-نبدأ",
-    "href": "office-workshop-ar/index.html#قاعدتان-قبل-أن-نبدأ",
+    "objectID": "office.html#قاعدتان-قبل-أن-نبدأ",
+    "href": "office.html#قاعدتان-قبل-أن-نبدأ",
     "title": "بناء مساعدك الذكي الخاص",
     "section": "قاعدتان قبل أن نبدأ",
-    "text": "قاعدتان قبل أن نبدأ\n\nاختبار الجريدة. قبل أن تلصق: أزِل الأسماء وبيانات العملاء والخطط غير المعلَنة.\nاختبار التراجع. قبل أن ينفّذ: ابدأ في وضع المسودة / أعلِمني.\n\nتمارين الجلسة تجري على ملفات تجريبية مرفقة، بلا بيانات حقيقية."
+    "text": "قاعدتان قبل أن نبدأ\n\nاختبار الجريدة. قبل أن تلصق: أزِل الأسماء والبيانات الشخصية والخطط غير المعلَنة.\nاختبار التراجع. قبل أن ينفّذ: ابدأ في وضع المسودة / أعلِمني.\n\nتمارين الجلسة تجري على ملفات تجريبية مرفقة، بلا بيانات حقيقية."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#طبقتان-واحدة-فوق-الأخرى",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#طبقتان-واحدة-فوق-الأخرى",
+    "objectID": "slides/how_ai_works_and_rice.html#طبقتان-واحدة-فوق-الأخرى",
+    "href": "slides/how_ai_works_and_rice.html#طبقتان-واحدة-فوق-الأخرى",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "طبقتان، واحدة فوق الأخرى",
     "text": "طبقتان، واحدة فوق الأخرى\n\n\n\n\nطبقة النموذج\n«الدماغ». يعرف الكثير، ولا يعرفك.\n\n\n\n\n\nطبقة التطبيق\n«المكتب». يدير سياقك، وملفاتك."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#دماغ-بلا-ذاكرة-عنك",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#دماغ-بلا-ذاكرة-عنك",
+    "objectID": "slides/how_ai_works_and_rice.html#دماغ-بلا-ذاكرة-عنك",
+    "href": "slides/how_ai_works_and_rice.html#دماغ-بلا-ذاكرة-عنك",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "دماغ بلا ذاكرة عنك",
     "text": "دماغ بلا ذاكرة عنك\n\nقرأ معظم الإنترنت. ولم يقرأ عنك شيئًا.\n\n\n\nيحتفظ بـ: اللغة، والحقائق، والرياضيات، والاستدلال\nينسى: شخصَك، وعمَلَك، وهذه المحادثة\n\n\n\n\nفأي شيء يجب أن يعرفه عنك، تسلّمه إياه في كل مرة."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#يتنبأ-بالكلمة-التالية",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#يتنبأ-بالكلمة-التالية",
+    "objectID": "slides/how_ai_works_and_rice.html#يتنبأ-بالكلمة-التالية",
+    "href": "slides/how_ai_works_and_rice.html#يتنبأ-بالكلمة-التالية",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "يتنبّأ بالكلمة التالية",
     "text": "يتنبّأ بالكلمة التالية\nيفعل شيئًا واحدًا مرارًا: يختار الكلمة التالية، ويضيفها، ثم يسأل من جديد.\n\n\n«عاصمة المملكة العربية السعودية ___»\n\nهي (97%)\nكانت (2%)\nتظل (0.6%)\nبقية الكلمات … (0.2%)\n\n\n\n«عاصمة المملكة العربية السعودية هي ___»\n\nالرياض (99%)\nجدة (0.4%)\nمكة (0.3%)\nبقية الكلمات … (0.2%)\n\n\n\n«عاصمة المملكة العربية السعودية هي الرياض ___»\n\n، (52%)\n. (41%)\n: (4%)\nبقية الكلمات … (2%)\n\n\n\n«عاصمة المملكة العربية السعودية هي الرياض، ___»\n\nمدينة (61%)\nكبيرة (12%)\nرئيسية (8%)\nبقية الكلمات … (6%)\n\n\n\n\n\nفي كل خطوة يعرف أي كلمة تأتي عادةً بعد الأخرى. وهذه هي الحيلة كلّها.\nالنِّسب توضيحية."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#حين-يخمن-خطأ",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#حين-يخمن-خطأ",
+    "objectID": "slides/how_ai_works_and_rice.html#حين-يخمن-خطأ",
+    "href": "slides/how_ai_works_and_rice.html#حين-يخمن-خطأ",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "حين يخمّن خطأً",
     "text": "حين يخمّن خطأً\n\nماذا يحدث حين لا يعرف الإجابة؟ يخمّن.\n\n\n«وفقًا للمادة 214 من نظام الاستثمار الجديد: …»\n\n(علمًا أن نظام الاستثمار يتكون من ١٦ مادة فقط!)\n\n\n\n\n\nيحق (45%) · للمستثمر (30%) · الأجنبي (15%)\n\n\n\n\n\nالجملة تبدو صحيحة، وهو لم يقرأ المستند قطّ. تلك الإجابة الواثقة المُختلَقة هي هلوسة."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#نبني-مكتبا-حوله",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#نبني-مكتبا-حوله",
+    "objectID": "slides/how_ai_works_and_rice.html#نبني-مكتبا-حوله",
+    "href": "slides/how_ai_works_and_rice.html#نبني-مكتبا-حوله",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "نبني مكتبًا حوله",
     "text": "نبني مكتبًا حوله\n\nالدماغ لا يستطيع فتح الملفات ولا تذكّر اسمك. لذا نبني مكتبًا حوله: هو التطبيق الذي تستخدمه فعلًا.\n\n\n\nيحفظ معلوماتك في ملفات. وكلّما طلبت شيئًا جمع الصفحات ذات الصلة وسلّمها للدماغ، ثم حفظ الإجابة."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#الميزات-التي-تستخدمها-اليوم",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#الميزات-التي-تستخدمها-اليوم",
+    "objectID": "slides/how_ai_works_and_rice.html#الميزات-التي-تستخدمها-اليوم",
+    "href": "slides/how_ai_works_and_rice.html#الميزات-التي-تستخدمها-اليوم",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "الميزات التي تستخدمها اليوم",
     "text": "الميزات التي تستخدمها اليوم\n\n«الذاكرة» و«التعليمات المخصّصة» و«المشاريع»: كلها التطبيق يجمع ويعيد الإرسال نيابةً عنك. الدماغ لا يزال فاقدًا للذاكرة، والمكتب يجعله يبدو متذكّرًا.\n\n\n\nالذاكرة: يحفظ ما قلته في محادثات سابقة\nالتعليمات المخصّصة: تفضيلات ثابتة تُرسل كل مرة\nالمشاريع: مساحة محفوظة، نعود إليها بعد قليل"
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#ما-الذي-يوضع-أمام-النموذج",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#ما-الذي-يوضع-أمام-النموذج",
+    "objectID": "slides/how_ai_works_and_rice.html#ما-الذي-يوضع-أمام-النموذج",
+    "href": "slides/how_ai_works_and_rice.html#ما-الذي-يوضع-أمام-النموذج",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "ما الذي يوضع أمام النموذج",
     "text": "ما الذي يوضع أمام النموذج\n\nالسياق هو ما يضعه المكتب على الطاولة قبل أن يبدأ الدماغ: طلبك، وتعليماتك، والملفات التي ترفعها، وما سبق في المحادثة.\n\n\n\nأكثر ما يغيّر الإجابة هو ما تضعه في السياق."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#لماذا-تنسى-المحادثات-الطويلة",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#لماذا-تنسى-المحادثات-الطويلة",
+    "objectID": "slides/how_ai_works_and_rice.html#لماذا-تنسى-المحادثات-الطويلة",
+    "href": "slides/how_ai_works_and_rice.html#لماذا-تنسى-المحادثات-الطويلة",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "لماذا «تنسى» المحادثات الطويلة",
     "text": "لماذا «تنسى» المحادثات الطويلة\n\nمساحة السياق محدودة. حين تطول المحادثة لا يتّسع المكان لكل ما سبق، فيسقط أقدمه.\n\n\n\nهذه هي نافذة السياق: حدّ لما يستطيع النموذج أخذه في الطلب الواحد."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#تحقق-سريع",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#تحقق-سريع",
+    "objectID": "slides/how_ai_works_and_rice.html#تحقق-سريع",
+    "href": "slides/how_ai_works_and_rice.html#تحقق-سريع",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "تحقّق سريع",
     "text": "تحقّق سريع\nيستشهد الذكاء الاصطناعي بـتقرير سوق غير موجود. أي طبقة أخفقت؟\n\n\n\nالطبقتان معًا. خمّن النموذج لأن السياق لم يحتوِ على مصدر حقيقي. أعطِه المصدر، ثم تحقّق من الاستشهادات."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#الإطار",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#الإطار",
+    "objectID": "slides/how_ai_works_and_rice.html#الإطار",
+    "href": "slides/how_ai_works_and_rice.html#الإطار",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "الإطار",
     "text": "الإطار\nكلّما كانت المهمة أعقد، زاد ما يستحقّ إضافته.\n\n\nR الدور (Role): الخبير الذي كنت ستوظّفه.\n\n\nI التعليمات (Instructions): المهمة، وصيغتها وطولها ونبرتها.\n\n\nC السياق (Context): ملاحظاتك وملفاتك.\n\n\nE الأمثلة (Examples): عيّنة واحدة من «الجيّد».\n\n\n\n\n\n\n\n\n\nالـ C هو نفس السياق من الطبقتين\n\n\nأنت تُحمِّل الصفحات على مكتب الدماغ. لا سياق = الدماغ يخمّن."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#اختبار-الجريدة",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#اختبار-الجريدة",
+    "objectID": "slides/how_ai_works_and_rice.html#اختبار-الجريدة",
+    "href": "slides/how_ai_works_and_rice.html#اختبار-الجريدة",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "اختبار الجريدة",
-    "text": "اختبار الجريدة\n\nالـ C يعني أن مادة حقيقية ستغادر مكتبك. قبل أن تفعل، اسأل: هل سيريحني أن أرى هذا النص على الصفحة الأولى من الجريدة؟\n\n\n\nإن كان الجواب لا، فنظِّف الأسماء وبيانات العملاء والخطط غير المعلَنة أولًا. الإجابة تبقى جيّدة بدونها.\n\n\n\n\nهذه القاعدة الأولى من اثنتين. تحمي ما تلصقه أنت."
+    "text": "اختبار الجريدة\n\nالـ C يعني أن مادة حقيقية ستغادر مكتبك. قبل أن تفعل، اسأل: هل سيريحني أن أرى هذا النص على الصفحة الأولى من الجريدة؟\n\n\n\nإن كان الجواب لا، فنظِّف الأسماء والبيانات الشخصية والخطط غير المعلَنة أولًا. الإجابة تبقى جيّدة بدونها.\n\n\n\n\nهذه القاعدة الأولى من اثنتين. تحمي ما تلصقه أنت."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#سؤال-عام-مقابل-مهمة-محددة",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#سؤال-عام-مقابل-مهمة-محددة",
+    "objectID": "slides/how_ai_works_and_rice.html#سؤال-عام-مقابل-مهمة-محددة",
+    "href": "slides/how_ai_works_and_rice.html#سؤال-عام-مقابل-مهمة-محددة",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "سؤال عام مقابل مهمة محدّدة",
-    "text": "سؤال عام مقابل مهمة محدّدة\n\nلا تسأل: “اكتب بريدًا عن الاجتماع.”\n\n\n\nاجعله ينجز: “تصرَّف بصفتك رئيس مكتبي. اكتب مسودة بريد تلخيصي للفريق من هذه الملاحظات. أبرِز القرارات ومَن يتولّى كل إجراء قبل الاجتماع القادم.”"
+    "text": "سؤال عام مقابل مهمة محدّدة\n\nلا تسأل: “اكتب بريدًا عن الاجتماع.”\n\n\n\nاجعله ينجز: “تصرَّف بصفتك مقرّر الاجتماع. اكتب مسودة بريد تلخيصي للفريق من هذه الملاحظات. أبرِز القرارات ومَن يتولّى كل إجراء قبل الاجتماع القادم.”"
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#الملاحظات-الفوضوية",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#الملاحظات-الفوضوية",
+    "objectID": "slides/how_ai_works_and_rice.html#الملاحظات-الفوضوية",
+    "href": "slides/how_ai_works_and_rice.html#الملاحظات-الفوضوية",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "الملاحظات الفوضوية",
-    "text": "الملاحظات الفوضوية\n\nما خربشته فعلًا بعد اجتماع التخطيط:\n\n\n“حملة الربع الثالث تجاوزت الهدف (١٬٢٤٠ عميلًا محتملًا) لكن بتجاوز ١٨٪ للميزانية. هدى تنقل الربع الرابع إلى البريد + الندوات، وتحتاج أرقام المالية الفعلية أولًا. إطلاق نظام CRM في ١٥ نوفمبر لكن لا مالك لعملية الترحيل، ودُرّب ٢ من ٩ مندوبين فقط. عمر يتابع فاتورتين معلّقتين. القرار: اعتماد تراخيص CRM إن وجدت المالية البند.”"
+    "text": "الملاحظات الفوضوية\n\nما خربشته فعلًا بعد اجتماع التخطيط:\n\n\n“الملتقى تجاوز هدف الحضور (١٬٢٤٠ مقابل ١٬٠٠٠) لكن بتجاوز ١٨٪ للميزانية. هدى تنقل الفصل القادم إلى الجلسات المصغّرة، وتحتاج أرقام المالية الفعلية أولًا. إطلاق نظام الطلبات في ١٥ نوفمبر لكن لا مالك لعملية الترحيل، ودُرّب ٢ من ٩ منسّقين فقط. عمر يتابع فاتورتين معلّقتين. القرار: اعتماد التراخيص إن وجدت المالية البند.”"
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#أمر-rice",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#أمر-rice",
+    "objectID": "slides/how_ai_works_and_rice.html#أمر-rice",
+    "href": "slides/how_ai_works_and_rice.html#أمر-rice",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "أمر RICE",
-    "text": "أمر RICE\n\nالدور: تصرّف بصفتك رئيس مكتبي.\nالتعليمات: اكتب مسودة بريد تلخيصي واضح للفريق. استخدم هذه العناوين: ملخّص، القرارات، بنود العمل (مع المالكين)، الموعد النهائي. ضع الموعد النهائي بخط عريض. اجعله سهل التصفّح. وإن كان أي بند بلا مالك، أضِف قسم «يحتاج مالكًا».\nالسياق: ملاحظات من اجتماع تخطيط الربع الثالث اليوم: [ألصِق الملاحظات]\nالمثال: حاكِ هذه الافتتاحية: «يا فريق، تلخيص سريع لاجتماع اليوم. إليكم ما استقرّينا عليه: …»"
+    "text": "أمر RICE\n\nالدور: تصرّف بصفتك مقرّر الاجتماع.\nالتعليمات: اكتب مسودة بريد تلخيصي واضح للفريق. استخدم هذه العناوين: ملخّص، القرارات، بنود العمل (مع المالكين)، الموعد النهائي. ضع الموعد النهائي بخط عريض. اجعله سهل التصفّح. وإن كان أي بند بلا مالك، أضِف قسم «يحتاج مالكًا».\nالسياق: ملاحظات اجتماع التخطيط الفصلي اليوم: [ألصِق الملاحظات]\nالمثال: حاكِ هذه الافتتاحية: «يا فريق، تلخيص سريع لاجتماع اليوم. إليكم ما استقرّينا عليه: …»"
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#ما-الذي-جعله-ينجح",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#ما-الذي-جعله-ينجح",
+    "objectID": "slides/how_ai_works_and_rice.html#ما-الذي-جعله-ينجح",
+    "href": "slides/how_ai_works_and_rice.html#ما-الذي-جعله-ينجح",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "ما الذي جعله ينجح",
-    "text": "ما الذي جعله ينجح\n\nالدور ← كتب كرئيس مكتب، لا كروبوت\nالتعليمات ← الأقسام، والمالكون، وقاعدة «يحتاج مالكًا»\nالسياق ← الملاحظات الفوضوية كانت كافية لاستخراج البنية\nالمثال ← حاكى الافتتاحية المهنية المُوجزة"
+    "text": "ما الذي جعله ينجح\n\nالدور ← كتب كمقرّر اجتماع، لا كروبوت\nالتعليمات ← الأقسام، والمالكون، وقاعدة «يحتاج مالكًا»\nالسياق ← الملاحظات الفوضوية كانت كافية لاستخراج البنية\nالمثال ← حاكى الافتتاحية المهنية المُوجزة"
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#احفظ-ذلك-الأمر-في-مشروع",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#احفظ-ذلك-الأمر-في-مشروع",
+    "objectID": "slides/how_ai_works_and_rice.html#احفظ-ذلك-الأمر-في-مشروع",
+    "href": "slides/how_ai_works_and_rice.html#احفظ-ذلك-الأمر-في-مشروع",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "احفظ ذلك الأمر في مشروع",
     "text": "احفظ ذلك الأمر في مشروع\n\nالمشروع (Project) مساحة عمل محفوظة في ChatGPT أو Claude أو Gemini. احفظ فيه الدور والتعليمات التي رأيتها للتوّ مرة واحدة، وارفع ملفاتك، لتبدأ كل محادثة جديدة داخله وهي مُحمَّلة بها.\n\n\nمشروع «ملتقى الإدارة». ملفات تُرفَع مرة واحدة: خطة الملتقى، وسجل القرارات، والقيود المعتمدة. تعليمات ثابتة: قِس أي مقترح على الموعد والميزانية والقاعة، ولا تنقض قرارًا سابقًا دون أن تشير إليه."
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#اختبار",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#اختبار",
+    "objectID": "slides/how_ai_works_and_rice.html#اختبار",
+    "href": "slides/how_ai_works_and_rice.html#اختبار",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "اختبار",
     "text": "اختبار\nأنت تكتب: «اكتب ملاحظات على مسودة هذا التقرير.» أي عناصر RICE ناقصة؟\n\n\n\n\n\nR الدور\nمَن يقدّمها؟\n\n\n\nI التعليمات\nالطول؟ النبرة؟ قائمة التحقق؟\n\n\n\nC السياق\nالمسودة؟ قائمة التحقق؟\n\n\n\nE المثال\nلا عيّنة لملاحظات جيّدة"
   },
   {
-    "objectID": "office-workshop-ar/slides/how_ai_works_and_rice.html#أهم-النقاط",
-    "href": "office-workshop-ar/slides/how_ai_works_and_rice.html#أهم-النقاط",
+    "objectID": "slides/how_ai_works_and_rice.html#أهم-النقاط",
+    "href": "slides/how_ai_works_and_rice.html#أهم-النقاط",
     "title": "كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة",
     "section": "أهم النقاط",
     "text": "أهم النقاط\n\nطبقتان: النموذج هو الدماغ، والتطبيق هو المكتب.\nالنموذج يتنبّأ بالكلمة التالية، وقد يختلق ما لا مصدر له.\nالإجابة تتبع السياق. والمشروع يبقي سياقك محمَّلًا.\nوجِّهه بـRICE: الدور، والتعليمات، والسياق، والأمثلة.\nطبِّق اختبار الجريدة قبل أن تلصق.\nمخرجاته مسودة. المراجعة عليك."
   },
   {
-    "objectID": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#فيم-يبرع",
-    "href": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#فيم-يبرع",
+    "objectID": "slides/notebooklm_grounding_and_slides.html#فيم-يبرع",
+    "href": "slides/notebooklm_grounding_and_slides.html#فيم-يبرع",
     "title": "الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook",
     "section": "فيمَ يبرع",
     "text": "فيمَ يبرع\n\nالقراءة العميقة للمستندات الكبيرة (50+ صفحة). يعمل من مصادرك المرفوعة فقط، وكل إجابة تربط بمصدرها.\n\n\n\nارفع تقارير، وعرض، وسياسة، ومستندات إحاطة\nاطرح الأسئلة؛ واحصل على إجابات باستشهادات إلى المقطع الدقيق\nولّد ملخّصًا صوتيًا (Audio Overview) لتستمع إليه في طريقك"
   },
   {
-    "objectID": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#ويبني-الشرائح-أيضا",
-    "href": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#ويبني-الشرائح-أيضا",
+    "objectID": "slides/notebooklm_grounding_and_slides.html#ويبني-الشرائح-أيضا",
+    "href": "slides/notebooklm_grounding_and_slides.html#ويبني-الشرائح-أيضا",
     "title": "الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook",
     "section": "ويبني الشرائح أيضًا",
     "text": "ويبني الشرائح أيضًا\n\nحوّل مصادرك إلى عرض تقديمي يستند إلى المستندات نفسها.\n\n\n\n\n\nعرض مفصّل\nغنيّ بالنص، يقف بذاته. جيّد للقراءة أو النشرة.\n\n\n\nشرائح المُقدِّم\nنظيفة وبصرية. تسندك وأنت تتحدّث."
   },
   {
-    "objectID": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#توجيه-العرض-وتحريره",
-    "href": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#توجيه-العرض-وتحريره",
+    "objectID": "slides/notebooklm_grounding_and_slides.html#توجيه-العرض-وتحريره",
+    "href": "slides/notebooklm_grounding_and_slides.html#توجيه-العرض-وتحريره",
     "title": "الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook",
     "section": "توجيه العرض وتحريره",
     "text": "توجيه العرض وتحريره\n\nسمِّ جمهورك ومواضيعك قبل أن يولّد\nصدِّر إلى .pptx أو PDF\nتوقّع تنظيفًا: أجزاء تُصدَّر كصور\nراجِع أي شريحة من أيقونة القلم\n\n\n\n\n\n\n\n\nشرط واحد\n\n\nتحتاج إلى مصدر واحد مرفوع على الأقل قبل أن يبني عرضًا."
   },
   {
-    "objectID": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#مهمتك",
-    "href": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#مهمتك",
+    "objectID": "slides/notebooklm_grounding_and_slides.html#مهمتك",
+    "href": "slides/notebooklm_grounding_and_slides.html#مهمتك",
     "title": "الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook",
     "section": "مهمّتك",
     "text": "مهمّتك\n\nخذ ورقة أو سياسة حقيقية (آمنة) بصيغة PDF. أنتِج ملخّصًا مستندًا إلى المصدر في صفحة وعرض مُقدِّم، في 10 دقائق.\n\n\n\nارفع المصدر إلى Gemini Notebook\nاسأل: «استنادًا إلى هذا فقط، أعطِ 5 نتائج رئيسية مع مراجع الصفحات. وإن لم يكن في المصدر، قل غير موجود.»\nانقر على الاستشهادات للوصول إلى المقطع\nولّد عرض مُقدِّم، وصدّره .pptx، وراجِع شريحة واحدة"
   },
   {
-    "objectID": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#تحقق-منه-قبل-أن-تستخدمه",
-    "href": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#تحقق-منه-قبل-أن-تستخدمه",
+    "objectID": "slides/notebooklm_grounding_and_slides.html#تحقق-منه-قبل-أن-تستخدمه",
+    "href": "slides/notebooklm_grounding_and_slides.html#تحقق-منه-قبل-أن-تستخدمه",
     "title": "الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook",
     "section": "تحقّق منه قبل أن تستخدمه",
     "text": "تحقّق منه قبل أن تستخدمه\n\nالمصدر يقلّل التخمين، ولا يغني عن مراجعتك. فقد تحمل الشرائح المولَّدة أخطاءً واقعية وبصرية.\n\n\nلا مصدر لديك؟ استخدم مصدرًا من عندك، أو افتح sample_source.md لروابط تقارير وسياسات مفتوحة الوصول.\n\n\n\n\n\n\n\nدوّنها\n\n\nهل تتكرّر هذه المهمة عندك؟ إذن هي مرشّحة جيّدة لتجرّبها بعد الجلسة."
   },
   {
-    "objectID": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#اختبار",
-    "href": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#اختبار",
+    "objectID": "slides/notebooklm_grounding_and_slides.html#اختبار",
+    "href": "slides/notebooklm_grounding_and_slides.html#اختبار",
     "title": "الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook",
     "section": "اختبار",
     "text": "اختبار\n١. تحتاج إلى تلخيص خطة منتج سرّية غير معلَنة تراجعها.\n\n\n\nاختبار الجريدة أولًا. هذا عمل سرّي غير معلَن، فتحقّق من القواعد قبل رفعه في أي مكان.\n\n\n\n\n٢. تحتاج إلى إحصاءات السوق لليوم من الويب.\n\n\n\n\nالبحث العميق (Deep Research)، للويب المباشر مع استشهادات. Gemini Notebook يقرأ مرفوعاتك فقط."
   },
   {
-    "objectID": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#أهم-النقاط",
-    "href": "office-workshop-ar/slides/notebooklm_grounding_and_slides.html#أهم-النقاط",
+    "objectID": "slides/notebooklm_grounding_and_slides.html#أهم-النقاط",
+    "href": "slides/notebooklm_grounding_and_slides.html#أهم-النقاط",
     "title": "الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook",
     "section": "أهم النقاط",
     "text": "أهم النقاط\n\nارفع المصادر أولًا، ثم قيِّده بـ«هذه فقط».\nالاستشهاد مؤشّر. انقر عليه وتأكّد من الادّعاء.\nGemini Notebook يقرأ بعمق ويبني عروضًا، وتصدّرها .pptx.\nطابِق الأداة مع المهمة: Cowork أو Gemini Notebook أو البحث العميق."
   },
   {
-    "objectID": "office-workshop-ar/slides/practice_foundations.html#شغله-ثم-أحكمه",
-    "href": "office-workshop-ar/slides/practice_foundations.html#شغله-ثم-أحكمه",
+    "objectID": "slides/practice_foundations.html#شغله-ثم-أحكمه",
+    "href": "slides/practice_foundations.html#شغله-ثم-أحكمه",
     "title": "تطبيق: فوِّض مهمة حقيقية",
     "section": "شغّله، ثم أحكِمه",
     "text": "شغّله، ثم أحكِمه\n\nشغّله. هل يطابق المُخرَج مثالك؟\nأضِف عنصر RICE الأضعف وأعِد التشغيل\nأضِف: «إن كان أي شيء غير واضح، اسألني قبل أن تكتب.»\n\n\n\n\n\n\n\n\nNote\n\n\nتستخدم ملفًا حقيقيًا؟ طبِّق عليه اختبار الجريدة أولًا."
   },
   {
-    "objectID": "office-workshop-ar/slides/skills_scripts_templates.html#ما-هي-المهارة-skill",
-    "href": "office-workshop-ar/slides/skills_scripts_templates.html#ما-هي-المهارة-skill",
+    "objectID": "slides/skills_scripts_templates.html#ما-هي-المهارة-skill",
+    "href": "slides/skills_scripts_templates.html#ما-هي-المهارة-skill",
     "title": "ابنِها مرة واحدة",
     "section": "ما هي المهارة (Skill)",
-    "text": "ما هي المهارة (Skill)\n\nمهاراتك مكتبة. وكل مهارة كتاب: دليل عمل مكتوب لمهمة متكرّرة واحدة.\n\n\n\nالعنوان على كعب الكتاب هو عبارة الاستدعاء\nوما في داخله هو الخطوات، بلغة بسيطة\n\n\n\n\nيحتفظ Cowork بالرفّ كاملًا، ولا يفتح إلا الكتاب الذي تستدعيه مهمتك."
+    "text": "ما هي المهارة (Skill)\n\nمهاراتك مكتبة منظمّة، وكل مهارة كتاب: دليل عملي مكتوب لمهمة واحدة تتكرر.\n\n\n\nعلى الغلاف: عبارة الاستدعاء (Trigger)\nفي الداخل: خطوات التنفيذ بلغة مبسطة\nولا يُفتح إلا الكتاب الذي تحتاجه في لحظته"
   },
   {
-    "objectID": "office-workshop-ar/slides/skills_scripts_templates.html#العرض-١-عرض-إحاطة",
-    "href": "office-workshop-ar/slides/skills_scripts_templates.html#العرض-١-عرض-إحاطة",
+    "objectID": "slides/skills_scripts_templates.html#الأمر-جملة-واحدة",
+    "href": "slides/skills_scripts_templates.html#الأمر-جملة-واحدة",
     "title": "ابنِها مرة واحدة",
-    "section": "العرض ١: «عرض إحاطة»",
-    "text": "العرض ١: «عرض إحاطة»\n\nملاحظات اجتماع ← عرض بوربوينت على هويّتك تفتحه وتحرّره كأي عرض آخر.\n\n\n\nالاسم: عرض إحاطة  •  المُشغّل: «حوّل هذه الملاحظات إلى عرض إحاطة»\nالخطوات: ١) ضع هيكل القصة · ٢) فكرة واحدة لكل شريحة · ٣) طبّق أسلوب فريقنا · ٤) املأ قالب البوربوينت لدينا واحفظه بصيغة .pptx"
+    "section": "الأمر: جملة واحدة",
+    "text": "الأمر: جملة واحدة"
   },
   {
-    "objectID": "office-workshop-ar/slides/skills_scripts_templates.html#استدعه-على-مدخل-جديد",
-    "href": "office-workshop-ar/slides/skills_scripts_templates.html#استدعه-على-مدخل-جديد",
+    "objectID": "slides/skills_scripts_templates.html#النتيجة",
+    "href": "slides/skills_scripts_templates.html#النتيجة",
     "title": "ابنِها مرة واحدة",
-    "section": "استدعِه على مُدخَل جديد",
-    "text": "استدعِه على مُدخَل جديد\n\nحُفظت المهارة. الآن فقط اكتب المُشغّل على أي ملاحظات جديدة.\n\n\n«حوّل هذا إلى عرض إحاطة: خطة الربع الرابع، مزيج القنوات، طلب الميزانية، إطلاق CRM، المخاطر الثلاثة المفتوحة.»\n\n\n\nعبارة واحدة ← عرض جاهز للتحرير وعلى هويّتك.\n\n\nلا قالب لديك؟ قل «بسيط ونظيف» وسيصنع لك واحدًا."
+    "section": "النتيجة",
+    "text": "النتيجة\n\n\nشريحة عربية على هويتك البصرية، وملف جاهز للتعديل."
   },
   {
-    "objectID": "office-workshop-ar/slides/skills_scripts_templates.html#السكربت-للأرقام-الدقيقة",
-    "href": "office-workshop-ar/slides/skills_scripts_templates.html#السكربت-للأرقام-الدقيقة",
+    "objectID": "slides/skills_scripts_templates.html#المهارة-كمجلد-منظم",
+    "href": "slides/skills_scripts_templates.html#المهارة-كمجلد-منظم",
     "title": "ابنِها مرة واحدة",
-    "section": "السكربت، للأرقام الدقيقة",
-    "text": "السكربت، للأرقام الدقيقة\n\nبرنامج صغير يكتبه Cowork ويشغّله حين يكون العمل حسابًا دقيقًا ومتكرّرًا.\n\n\n\n\n\n\n\n\nأنت لا تلمس الشيفرة\n\n\nالمهارة تعليمات يقرأها Cowork ويتبعها. والسكربت شيفرة يشغّلها ليحسب. أنت تصف ما تريد، وهو يتولّى الاثنين."
+    "section": "المهارة كمجلد منظم",
+    "text": "المهارة كمجلد منظم\n\nمجلد المهارة يتضمن الخطوات وجميع الملحقات المطلوبة.\n\n\n\n\n\n\nSKILL.md: خطوات التنفيذ بلغة واضحة\nscripts/: النصوص البرمجية للحساب والحزم\nassets/: القالب المعتمد لهويتك\nreferences/: دليل الأسلوب والأمثلة\n\n\n\nبعض المهارات ثلاث جمل، وبعضها مجلد كامل كهذا."
   },
   {
-    "objectID": "office-workshop-ar/slides/skills_scripts_templates.html#القالب-الشكل-الذي-يملؤه",
-    "href": "office-workshop-ar/slides/skills_scripts_templates.html#القالب-الشكل-الذي-يملؤه",
+    "objectID": "slides/skills_scripts_templates.html#كيف-تبنى-المهارة",
+    "href": "slides/skills_scripts_templates.html#كيف-تبنى-المهارة",
     "title": "ابنِها مرة واحدة",
-    "section": "القالب، الشكل الذي يملؤه",
-    "text": "القالب، الشكل الذي يملؤه\n\nالقالب ملف حقيقي على جهازك: قالب البوربوينت لديك أو جدول بياناتك. وهو التخطيط المطابق لهويّتك الذي يملؤه السكربت.\n\n\n\nالقالب نفسه في المرة القادمة، والمظهر نفسه، بلا إعادة تنسيق."
+    "section": "كيف تُبنى المهارة",
+    "text": "كيف تُبنى المهارة\n\nلا تكتبها بنفسك. أنجِز المهمة مرة في محادثة عادية، وحين ترضى عن النتيجة، اطلب حفظها مهارةً.\n\n\n\nالمرة الأولى تأخذ وقتها\nثم تستدعيها باسمها\nوتصحّحها بعد كل استخدام"
   },
   {
-    "objectID": "office-workshop-ar/slides/skills_scripts_templates.html#التركيب",
-    "href": "office-workshop-ar/slides/skills_scripts_templates.html#التركيب",
+    "objectID": "slides/skills_scripts_templates.html#يكتب-الشيفرة-ويشغلها-بنفسه",
+    "href": "slides/skills_scripts_templates.html#يكتب-الشيفرة-ويشغلها-بنفسه",
     "title": "ابنِها مرة واحدة",
-    "section": "التركيب",
-    "text": "التركيب\n\nعبارة استدعاء واحدة. تستطيع المهارة أن تستدعي سكربتًا ليحسب، وأن تملأ قالبًا ليظهر بالشكل الصحيح.\n\n\n\n«حوّل هذه الملاحظات إلى عرض إحاطة» ← المهارة ترسم الحبكة ← سكربت يملأ قالب البوربوينت لديك ← ملف .pptx نهائي على هويّتك."
+    "section": "يكتب الشيفرة ويشغّلها بنفسه",
+    "text": "يكتب الشيفرة ويشغّلها بنفسه\n\nفي الأرقام والخطوات المتكررة، يكتب Cowork نصًا برمجيًا وينفّذه: أسرع، وأقل تكلفة، ويعطي الرقم نفسه في كل مرة.\n\n\n\nأنت لا ترى الشيفرة ولا تكتبها."
   },
   {
-    "objectID": "office-workshop-ar/slides/skills_scripts_templates.html#العرض-٢-ملخصات-المصروفات",
-    "href": "office-workshop-ar/slides/skills_scripts_templates.html#العرض-٢-ملخصات-المصروفات",
+    "objectID": "slides/skills_scripts_templates.html#تجربة-لاحقة-ملخص-المصروفات",
+    "href": "slides/skills_scripts_templates.html#تجربة-لاحقة-ملخص-المصروفات",
     "title": "ابنِها مرة واحدة",
-    "section": "العرض ٢: ملخّصات المصروفات",
-    "text": "العرض ٢: ملخّصات المصروفات\n\nلديك جدول بيانات لمعاملات خام. وكل شهر تريد إجمالي الإنفاق حسب الفئة، والإجمالي الشهري، وتوزيعًا حسب القسم.\n\n\n\n«من expenses.csv، اجمع الإنفاق حسب الفئة، واحسب الإجمالي الكلّي للشهر، واعرض توزيعًا حسب القسم (مع حصّة كل قسم كنسبة مئوية). احفظه كورقة جديدة.»\n\n\n\n\n\n\n\nNote\n\n\nبيانات تجريبية: expenses.csv"
+    "section": "تجربة لاحقة: ملخص المصروفات",
+    "text": "تجربة لاحقة: ملخص المصروفات\n\nجدول معاملات مالية خام، وتريد منه أرقامًا محددة كل شهر.\n\n\n«من expenses.csv، احسب الإنفاق لكل فئة، والإجمالي الشهري، ونسبة كل قسم. احفظ النتيجة في ورقة جديدة.»\n\n\nالبيانات التجريبية: expenses.csv"
   },
   {
-    "objectID": "office-workshop-ar/slides/skills_scripts_templates.html#طبقها-الآن-٣-دقائق",
-    "href": "office-workshop-ar/slides/skills_scripts_templates.html#طبقها-الآن-٣-دقائق",
+    "objectID": "slides/skills_scripts_templates.html#طبقها-الآن-٣-دقائق",
+    "href": "slides/skills_scripts_templates.html#طبقها-الآن-٣-دقائق",
     "title": "ابنِها مرة واحدة",
     "section": "طبِّقها الآن: ٣ دقائق",
-    "text": "طبِّقها الآن: ٣ دقائق\n\nلن تصمّم مهارة. ستلصق واحدة جاهزة وتشغّلها.\n\n١. الصِق هذا لإنشاء المهارة:\n\n«احفظ هذه بوصفها مهارة (Skill) اسمها مراجعة تقرير، تُستدعى بعبارة «راجِع هذا التقرير». الخطوات: اقرأ التقرير وقائمة التحقق، وافحصه أمام كل بند فيها، ثم اكتب مذكّرة مراجعة قصيرة فيها نقطتا قوة، وإصلاحان، وخطوة تالية واحدة.»\n\n٢. ثم اكتب عبارة الاستدعاء:\n\n«راجِع هذا التقرير: sample_report.md، باستخدام review_checklist.md.»\n\n\nالملفات: sample_report.md · review_checklist.md"
-  },
-  {
-    "objectID": "office-workshop/index.html",
-    "href": "office-workshop/index.html",
-    "title": "Building Your Own AI Assistant",
-    "section": "",
-    "text": "Session length: About two and a half hours.\nWe write prompts with RICE, save them in a Project, and hand a task to an assistant that executes on provided files. You leave with a one-page recipe for repeating it on your own day-to-day work.\nHands-on tool: Claude Cowork. No coding. You describe steps in plain language, and the concepts stay portable to ChatGPT, Gemini, Claude, and Gemini Notebook.\nBefore the session: install the Claude desktop app. Every follow-along assumes it is already on your machine, and runs on the provided workshop sample files."
-  },
-  {
-    "objectID": "office-workshop/index.html#run-of-show",
-    "href": "office-workshop/index.html#run-of-show",
-    "title": "Building Your Own AI Assistant",
-    "section": "Run of Show",
-    "text": "Run of Show\nThis page is the canonical order. Open each deck in turn.\nBefore the session: participants install the Claude desktop app and download the workshop sample files. Every follow-along assumes both are already on their machine. Hold a 10-minute buffer at the start for stragglers only.\n\n\n\n#\nStop\nDeck\nMins\n\n\n\n\n1\nWelcome + agenda\nOverview\n5\n\n\n2\nHow AI works + RICE prompting\nHow AI Works & Writing Great Prompts\n30\n\n\n3\nPractice + break\nPractice: Delegate a Real Task\n15 + 10\n\n\n4\nAsk vs. hand over + the working directory\nFrom Chat to Work Mode\n20\n\n\n5\nSkills, scripts & templates\nBuild It Once\n20\n\n\n6\nSchedule + connectors\nHow Far This Goes\n15\n\n\n7\nThe take-home recipe\nYour Recipe\n10\n\n\n8\nWrap-up + what’s next\nYour AI Assistant\n10\n\n\n\nCore ≈ 135 minutes, including a 10-minute break after the first practice stop, leaving buffer to 2.5 hours.\nDecks 4–6 each end in a 3-minute follow-along: a provided prompt on a provided file, run by everyone at the same time. Online, these are the hands-on core, in place of a separate practice block.\n\nIf we have time: a bonus stop\nRun this only if the core finished ahead of schedule. It’s ordered last so an overrun drops it cleanly instead of derailing the assistant-building payoff.\n\n\n\nStop\nDeck\nMins\n\n\n\n\nGrounding + slides\nGrounding & Creating with Gemini Notebook\n+40"
-  },
-  {
-    "objectID": "office-workshop/index.html#the-delivery-loop",
-    "href": "office-workshop/index.html#the-delivery-loop",
-    "title": "Building Your Own AI Assistant",
-    "section": "The Delivery Loop",
-    "text": "The Delivery Loop\nShow (instructor runs a real task end to end) → Mirror (everyone repeats a small piece of it at the same time, with a provided prompt and file) → Take home (the same task, on your own work, from the recipe).\nBuilt for online delivery: the doing is a 3-minute follow-along at the end of each deck, on provided inputs only. If it can fail live, it isn’t a follow-along."
-  },
-  {
-    "objectID": "office-workshop/index.html#two-rules-before-we-start",
-    "href": "office-workshop/index.html#two-rules-before-we-start",
-    "title": "Building Your Own AI Assistant",
-    "section": "Two Rules Before We Start",
-    "text": "Two Rules Before We Start\n\nNewspaper Test. Before you paste: would you be fine seeing this text published? If not, strip names, customer data, and unreleased plans first.\nThe Undo Test. Before it acts: can you undo what it’s about to do? Start every Skill and scheduled job in draft / notify-me mode before letting it act on its own.\n\nSession exercises run on provided sample files, with no real data."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#two-layers-stacked",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#two-layers-stacked",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Two layers, stacked",
-    "text": "Two layers, stacked\n\n\n\n\nThe Model Layer\n“The brain.” Knows a lot, knows nothing about you.\n\n\n\n\n\nThe App Layer\n“The office.” Keeps your files and re-sends them.\n\n\n\n\n\nTell these apart and the “memory” features stop being magic."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#a-brain-with-no-memory-of-you",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#a-brain-with-no-memory-of-you",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "A brain with no memory of you",
-    "text": "A brain with no memory of you\n\nIt has read most of the internet. It has read nothing about you.\n\n\n\nKeeps: language, facts, math, reasoning\nForgets: you, your work, this conversation\n\n\n\n\nSo anything it should know about you, you hand it every time."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#it-predicts-the-next-word",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#it-predicts-the-next-word",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "It predicts the next word",
-    "text": "It predicts the next word\nIt does one thing, over and over: pick the next word, add it, ask again.\n\n\n“The capital of Saudi Arabia ___”\n\nis (97%)\nwas (2%)\nremains (0.6%)\nall other words … (0.2%)\n\n\n\n“The capital of Saudi Arabia is ___”\n\nRiyadh (99%)\nJeddah (0.4%)\nMecca (0.3%)\nall other words … (0.2%)\n\n\n\n“The capital of Saudi Arabia is Riyadh ___”\n\n, (52%)\n. (41%)\n: (4%)\nall other words … (2%)\n\n\n\n“The capital of Saudi Arabia is Riyadh, a ___”\n\ncity (61%)\nlarge (12%)\nmajor (8%)\nall other words … (6%)\n\n\n\n\n\nAt each step it knows which word usually comes next. That is the whole trick.\nPercentages are illustrative."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#when-it-guesses-wrong",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#when-it-guesses-wrong",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "When it guesses wrong",
-    "text": "When it guesses wrong\n\nWhat happens when it doesn’t know the answer? It guesses.\n\n“According to Article 214 of the new Investment Law: …”\n\n\n\nThe (45%) · Foreign (30%) · Capital (15%)\n\n\n\n\n\nThe sentence sounds right, and it has never read the document. That confident, made-up answer is a hallucination."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#we-build-an-office-around-it",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#we-build-an-office-around-it",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "We build an office around it",
-    "text": "We build an office around it\n\nThe brain can’t open files or remember your name. So we build an office around it: the app you actually use.\n\n\n\nIt keeps your information in files. Every time you ask, it gathers the relevant pages and hands them to the brain, then files the answer back."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#the-features-you-already-use",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#the-features-you-already-use",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "The features you already use",
-    "text": "The features you already use\n\n“Memory”, “Projects”, “Custom Instructions” are all the app doing that gathering and re-sending for you.\n\n\n\nThe brain still has amnesia. The office is what makes it feel like it remembers."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#what-goes-in-front-of-the-model",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#what-goes-in-front-of-the-model",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "What goes in front of the model",
-    "text": "What goes in front of the model\n\nContext is what the office puts on the desk before the brain starts: your request, your instructions, the files you upload, and what came earlier in the chat.\n\n\n\nWhat changes the answer most is what you put in the context."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#why-long-chats-forget",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#why-long-chats-forget",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Why long chats “forget”",
-    "text": "Why long chats “forget”\n\nContext space is limited. As a chat grows, there isn’t room for everything that came before, so the oldest of it drops out.\n\n\n\nThat’s the context window: a limit on what the model can take in for one request."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#a-project-saves-your-instructions-and-files",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#a-project-saves-your-instructions-and-files",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "A Project saves your instructions and files",
-    "text": "A Project saves your instructions and files\n\nA Project in ChatGPT, Claude, or Gemini is a saved workspace. Set it up once: name it, write your standing instructions, upload the files it should always see.\n\n\n\nEvery new chat inside it starts with those already loaded.\n\n\n\n\nA “Weekly Report” Project. Standing instructions: always lead with decisions, keep it under 200 words, use our house tone. Files uploaded once: the format guide and last month’s reports."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#micro-check",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#micro-check",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Micro-check",
-    "text": "Micro-check\nThe AI cites a market report that doesn’t exist. Which layer failed?\n\n\n\nBoth. The model guessed because the context held no real source. Give it the source, then check the citations."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#the-framework",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#the-framework",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "The framework",
-    "text": "The framework\nThe harder the task, the more of these are worth adding.\n\n\nR Role: the expert you’d hire.\n\n\nI Instructions: the task, plus format, length, tone.\n\n\nC Context: your notes, your files.\n\n\nE Examples: one sample of “good”.\n\n\n\n\n\n\n\n\n\nC is the same context from the two layers\n\n\nYou’re loading the pages onto the brain’s desk. No context = the brain guesses."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#the-newspaper-test",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#the-newspaper-test",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "The Newspaper Test",
-    "text": "The Newspaper Test\n\nC means real material leaves your desk. Before it does, ask: would I be comfortable seeing this text on the front page of a newspaper?\n\n\n\nIf not, strip names, customer data, and unreleased plans first. The answer is just as good without them.\n\n\n\n\nThis is Rule 1 of two. It guards what you paste in."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#the-formula",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#the-formula",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "The formula",
-    "text": "The formula\n\n“Act as a [Role]. Your job is to [Instructions]. Here is the [Context]. Match this [Example].”\n\n\n\nOne good sample shows the shape you want faster than several lines of rules."
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#delegate-instead-of-asking",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#delegate-instead-of-asking",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Delegate instead of asking",
-    "text": "Delegate instead of asking\n\nDon’t ask: “Write an email about the meeting.”\n\n\n\nDelegate: “Act as my chief of staff. Draft a recap email to the team from these notes. Highlight the decisions and who owns each action before the next sync.”"
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#the-messy-notes",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#the-messy-notes",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "The messy notes",
-    "text": "The messy notes\n\nWhat you actually scribbled after the planning sync:\n\n\n“Q3 campaign beat target (1,240 leads) but 18% over budget. Huda shifting Q4 to email + webinars, needs Finance actuals first. CRM go-live Nov 15 but migration has no owner, only 2 of 9 reps trained. Omar chasing 2 open invoices. Decision: approve CRM licenses if Finance finds the line.”"
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#the-rice-prompt",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#the-rice-prompt",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "The RICE prompt",
-    "text": "The RICE prompt\n\nRole: Act as my chief of staff.\nInstructions: Draft a clear recap email to the team. Use these headers: Summary, Decisions, Action Items (with owners), Deadline. Put the deadline in bold. Keep it skimmable. If anything is missing an owner, add a “Needs an owner” section.\nContext: Notes from today’s Q3 planning sync: [paste notes]\nExample: Match this opening: “Team, quick recap from today’s sync. Here’s where we landed: …”"
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#what-made-it-work",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#what-made-it-work",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "What made it work",
-    "text": "What made it work\n\nRole → wrote as a chief of staff, not a robot\nInstructions → the sections, the owners, the “Needs an owner” rule\nContext → messy notes were enough to extract the structure\nExample → matched the crisp, professional opening"
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#quiz",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#quiz",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Quiz",
-    "text": "Quiz\nYou prompt: “Write feedback on this report draft.” Which RICE elements are missing?\n\n\n\n\n\nR Role\nWho’s giving it?\n\n\n\nI Instructions\nLength? tone? checklist?\n\n\n\nC Context\nThe draft? the checklist?\n\n\n\nE Example\nNo sample of good feedback"
-  },
-  {
-    "objectID": "office-workshop/slides/how_ai_works_and_rice.html#key-takeaways",
-    "href": "office-workshop/slides/how_ai_works_and_rice.html#key-takeaways",
-    "title": "How AI Works & Writing Great Prompts",
-    "section": "Key takeaways",
-    "text": "Key takeaways\n\nTwo layers: the model is the brain, the app is the office.\nThe model predicts the next word, and can make things up.\nThe answer follows the context. A Project keeps yours loaded.\nBrief it with RICE: Role, Instructions, Context, Examples.\nRun the Newspaper Test before you paste."
-  },
-  {
-    "objectID": "office-workshop/slides/notebooklm_grounding_and_slides.html#what-its-best-at",
-    "href": "office-workshop/slides/notebooklm_grounding_and_slides.html#what-its-best-at",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "What it’s best at",
-    "text": "What it’s best at\n\nDeep reading of big documents (50+ pages). It works only from your uploaded sources, and every answer links back to one.\n\n\n\nUpload reports, a proposal, a policy, briefing docs\nAsk questions; get answers with citations to the exact passage\nGenerate an Audio Overview to listen on your commute"
-  },
-  {
-    "objectID": "office-workshop/slides/notebooklm_grounding_and_slides.html#it-also-builds-slides",
-    "href": "office-workshop/slides/notebooklm_grounding_and_slides.html#it-also-builds-slides",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "It also builds slides",
-    "text": "It also builds slides\n\nTurn your sources into a presentation, grounded in the same documents.\n\n\n\n\n\nDetailed Deck\nText-rich, stands on its own. Good for a reading or handout.\n\n\n\nPresenter Slides\nClean and visual. Supports you while you talk."
-  },
-  {
-    "objectID": "office-workshop/slides/notebooklm_grounding_and_slides.html#steering-and-editing-the-deck",
-    "href": "office-workshop/slides/notebooklm_grounding_and_slides.html#steering-and-editing-the-deck",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "Steering and editing the deck",
-    "text": "Steering and editing the deck\n\nName your audience and themes before it generates\nExport to .pptx or PDF\nExpect cleanup: parts export as images\nRevise any slide with the pencil icon\n\n\n\n\n\n\n\n\nOne requirement\n\n\nYou need at least one source uploaded before it can build a deck."
-  },
-  {
-    "objectID": "office-workshop/slides/notebooklm_grounding_and_slides.html#your-mission",
-    "href": "office-workshop/slides/notebooklm_grounding_and_slides.html#your-mission",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "Your mission",
-    "text": "Your mission\n\nTake a real (safe) paper or policy PDF. Produce a 1-page grounded summary and a presenter deck, in 10 minutes.\n\n\n\nUpload the source to Gemini Notebook\nAsk: “Based only on this, give 5 key findings with page references. If it’s not in the source, say ‘Not found.’”\nClick through the citations to the passage\nGenerate a Presenter deck, export .pptx, revise one slide"
-  },
-  {
-    "objectID": "office-workshop/slides/notebooklm_grounding_and_slides.html#check-it-before-you-use-it",
-    "href": "office-workshop/slides/notebooklm_grounding_and_slides.html#check-it-before-you-use-it",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "Check it before you use it",
-    "text": "Check it before you use it\n\nA source reduces guessing. It does not replace your review. Generated slides can still carry factual and visual errors.\n\n\nNo source? Use one of your own, or open sample_source.md for links to open-access reports and policies.\n\n\n\n\n\n\n\nLog it\n\n\nDoes this task recur for you? Then it’s a good candidate to try after the session."
-  },
-  {
-    "objectID": "office-workshop/slides/notebooklm_grounding_and_slides.html#quiz",
-    "href": "office-workshop/slides/notebooklm_grounding_and_slides.html#quiz",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "Quiz",
-    "text": "Quiz\n1. You need to summarize a confidential, unreleased product plan you’re reviewing.\n\n\n\nNewspaper Test first. This is confidential, unreleased work, so check the rules before uploading it anywhere.\n\n\n\n\n2. You need today’s market statistics from the web.\n\n\n\n\nDeep Research, for live web with citations. Gemini Notebook only reads your uploads."
-  },
-  {
-    "objectID": "office-workshop/slides/notebooklm_grounding_and_slides.html#key-takeaways",
-    "href": "office-workshop/slides/notebooklm_grounding_and_slides.html#key-takeaways",
-    "title": "Grounding & Creating with Gemini Notebook",
-    "section": "Key takeaways",
-    "text": "Key takeaways\n\nUpload the sources first, then constrain it to “only these”.\nA citation is a pointer. Click through and check the claim.\nGemini Notebook does deep reading and decks, exportable as .pptx.\nMatch the tool to the job: Cowork, Gemini Notebook, or Deep Research."
-  },
-  {
-    "objectID": "office-workshop/slides/practice_foundations.html#run-it-then-tighten-it",
-    "href": "office-workshop/slides/practice_foundations.html#run-it-then-tighten-it",
-    "title": "Practice: Delegate a Real Task",
-    "section": "Run it, then tighten it",
-    "text": "Run it, then tighten it\n\nRun it. Does the output match your Example?\nAdd the weakest RICE element and run it again\nAdd: “If anything is unclear, ask me before you write.”\n\n\n\n\n\n\n\n\nNote\n\n\nUsing a real file? Run the Newspaper Test on it first."
-  },
-  {
-    "objectID": "office-workshop/slides/skills_scripts_templates.html#what-a-skill-is",
-    "href": "office-workshop/slides/skills_scripts_templates.html#what-a-skill-is",
-    "title": "Build It Once",
-    "section": "What a Skill is",
-    "text": "What a Skill is\n\nYour Skills are a library. Each Skill is a book: a written playbook for one recurring task.\n\n\n\nThe title on the spine is the trigger\nWhat’s written inside is the steps, in plain language\n\n\n\n\nCowork keeps the whole shelf and opens only the book your task calls for."
-  },
-  {
-    "objectID": "office-workshop/slides/skills_scripts_templates.html#demo-1-briefing-deck",
-    "href": "office-workshop/slides/skills_scripts_templates.html#demo-1-briefing-deck",
-    "title": "Build It Once",
-    "section": "Demo 1: “Briefing Deck”",
-    "text": "Demo 1: “Briefing Deck”\n\nMeeting notes → an on-brand PowerPoint deck you open and edit like any other.\n\n\n\nName: Briefing Deck  •  Trigger: “turn these notes into a briefing deck”\nSteps: 1) outline the storyline · 2) one idea per slide · 3) apply our team style · 4) fill our PowerPoint template and save it as .pptx"
-  },
-  {
-    "objectID": "office-workshop/slides/skills_scripts_templates.html#invoke-it-on-fresh-input",
-    "href": "office-workshop/slides/skills_scripts_templates.html#invoke-it-on-fresh-input",
-    "title": "Build It Once",
-    "section": "Invoke it on fresh input",
-    "text": "Invoke it on fresh input\n\nThe Skill is saved. Now just type the trigger on any new notes.\n\n\n“Turn this into a briefing deck: Q4 plan, channel mix, budget ask, CRM go-live, the three open risks.”\n\n\n\nOne phrase → an editable, on-brand deck.\n\n\nNo template of your own? Say “clean and simple” and it builds one."
-  },
-  {
-    "objectID": "office-workshop/slides/skills_scripts_templates.html#a-script-for-exact-numbers",
-    "href": "office-workshop/slides/skills_scripts_templates.html#a-script-for-exact-numbers",
-    "title": "Build It Once",
-    "section": "A script, for exact numbers",
-    "text": "A script, for exact numbers\n\nA little program Cowork writes and runs when the job is exact, repeatable calculation.\n\n\n\n\n\n\n\n\nYou never touch code\n\n\nA Skill is instructions Cowork reads and follows. A script is code it runs to compute. You describe what you want, and Cowork does both."
-  },
-  {
-    "objectID": "office-workshop/slides/skills_scripts_templates.html#a-template-the-layout-it-fills",
-    "href": "office-workshop/slides/skills_scripts_templates.html#a-template-the-layout-it-fills",
-    "title": "Build It Once",
-    "section": "A template, the layout it fills",
-    "text": "A template, the layout it fills\n\nA template is a real file on your machine: your PowerPoint template or your spreadsheet. It’s the on-brand layout the script fills.\n\n\n\nSame template next time, same look, no reformatting."
-  },
-  {
-    "objectID": "office-workshop/slides/skills_scripts_templates.html#composition",
-    "href": "office-workshop/slides/skills_scripts_templates.html#composition",
-    "title": "Build It Once",
-    "section": "Composition",
-    "text": "Composition\n\nOne trigger. A Skill can call a script to compute and fill a template to look right.\n\n\n\n“turn these notes into a briefing deck” → the Skill outlines the story → a script fills your PowerPoint template → a finished, on-brand .pptx."
-  },
-  {
-    "objectID": "office-workshop/slides/skills_scripts_templates.html#demo-2-expense-summaries",
-    "href": "office-workshop/slides/skills_scripts_templates.html#demo-2-expense-summaries",
-    "title": "Build It Once",
-    "section": "Demo 2: expense summaries",
-    "text": "Demo 2: expense summaries\n\nYou have a spreadsheet of raw transactions. Every month you want total spend by category, the monthly total, and a breakdown by department.\n\n\n\n“From expenses.csv, total the spend by category, compute the month’s grand total, and show a breakdown by department (with each department’s share as a %). Save it as a new sheet.”\n\n\n\n\n\n\n\nNote\n\n\nSample data: expenses.csv"
-  },
-  {
-    "objectID": "office-workshop/slides/skills_scripts_templates.html#do-this-now-3-minutes",
-    "href": "office-workshop/slides/skills_scripts_templates.html#do-this-now-3-minutes",
-    "title": "Build It Once",
-    "section": "Do this now: 3 minutes",
-    "text": "Do this now: 3 minutes\n\nYou won’t design a Skill. You’ll paste one and run it.\n\n1. Paste this to create the Skill:\n\n“Save this as a Skill called Report Review, triggered by ‘review this report’. Steps: read the report and the checklist, check it against every checklist item, then write a short review note with two strengths, two fixes, and one next step.”\n\n2. Then type the trigger:\n\n“Review this report: sample_report.md, using review_checklist.md.”\n\n\nFiles: sample_report.md · review_checklist.md"
+    "text": "طبِّقها الآن: ٣ دقائق\n\nجميعًا معًا. أمر واحد ينفّذ المراجعة، ثم يحفظها مهارة.\n\n\n«راجِع sample_report.md مقابل review_checklist.md، واكتب مذكرة موجزة: نقطتا قوة، واقتراحان للتحسين، وخطوة تالية واحدة. ثم احفظ ما فعلتَه مهارةً باسم مراجعة تقرير.»\n\n\nالملفات: sample_report.md · review_checklist.md"
   }
 ]

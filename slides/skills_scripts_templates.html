@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-html/tabby.min.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<html lang="ar" dir="rtl"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="dcterms.date" content="2026-07-27">
-  <title>AI at Work – Grounding &amp; Creating with Gemini Notebook</title>
+  <meta name="dcterms.date" content="2026-07-28">
+  <title>AI at Work – ابنِها مرة واحدة</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,11 +32,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f25e2d88d2f9c8c14c21095ce8dbb441.css">
-  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-f25e2d88d2f9c8c14c21095ce8dbb441.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -131,255 +131,167 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="../../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title">Grounding &amp; Creating with Gemini Notebook</h1>
-  <p class="subtitle">Grounded Answers + Slides from Your Sources</p>
+<section id="title-slide" data-background-image="../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title">ابنِها مرة واحدة</h1>
+  <p class="subtitle">المهارات، النصوص البرمجية، والقوالب</p>
 
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">2026-07-27</p>
+  <p class="date">2026-07-28</p>
 </section>
-<section id="put-the-right-sources-on-the-desk" class="title-slide slide level1 center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">Put the right sources on the desk</h1>
-<div data-id="intro" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em;">
-<p><strong>Earlier today:</strong> the brain only knows what’s on the desk.</p>
-</div>
-<div class="fragment">
-<div class="card-dark center" style="font-size: 1.15em; margin-top: 1em;">
-<p>So put the <strong>right sources</strong> there, and make it answer from <strong>those only</strong>. That’s <strong>grounding</strong>. Without it, even the smartest brain guesses.</p>
-</div>
-</div>
-</section>
-
-<section id="wrong-way-right-way" class="title-slide slide level1 center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">Wrong way, right way</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="card accent-orange">
-<p><strong>Wrong</strong></p>
-<p>“Summarize the latest market trends.”</p>
-<p>→ Generic, maybe fabricated citations.</p>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="card accent-teal">
-<p><strong>Right</strong></p>
-<p>Upload 5 reports → “Based <strong>only</strong> on these, summarize…”</p>
-<p>→ Specific, citable, defensible.</p>
-</div>
-</div></div>
-<div class="fragment">
-<div class="card-dark center" style="font-size: 1.15em; margin-top: 0.6em;">
-<p><strong>No citation? Treat it as unverified.</strong></p>
-</div>
-<div class="center" style="margin-top: 0.4em;">
-<p>For reports, proposals, and planning work, demand the page reference.</p>
-</div>
-</div>
-</section>
-
 <section>
-<section id="meet-gemini-notebook" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h1>Meet Gemini Notebook</h1>
-<p>Formerly NotebookLM. A research assistant grounded in <em>your</em> documents</p>
+<section id="المهارات" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
+<h1>المهارات</h1>
+<p>لتستغني عن تكرار شرح المهمة ذاتها</p>
 </section>
-<section id="what-its-best-at" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">What it’s best at</h2>
-<div class="card accent-purple" data-id="nlm">
-<p><strong>Deep reading of big documents</strong> (50+ pages). It works <strong>only from your uploaded sources</strong>, and every answer links back to one.</p>
+<section id="ما-هي-المهارة-skill" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">ما هي المهارة (Skill)</h2>
+<div class="card accent-orange" data-id="anatomy">
+<p>مهاراتك <strong>مكتبة منظمّة</strong>، وكل مهارة <strong>كتاب</strong>: دليل عملي مكتوب لمهمة واحدة تتكرر.</p>
 </div>
 <div class="fragment">
 <ul>
-<li class="fragment">Upload reports, a proposal, a policy, briefing docs</li>
-<li class="fragment">Ask questions; get answers <strong>with citations</strong> to the exact passage</li>
-<li class="fragment">Generate an <strong>Audio Overview</strong> to listen on your commute</li>
+<li class="fragment">على الغلاف: <strong>عبارة الاستدعاء (Trigger)</strong></li>
+<li class="fragment">في الداخل: <strong>خطوات التنفيذ</strong> بلغة مبسطة</li>
+<li class="fragment">ولا يُفتح إلا الكتاب الذي تحتاجه في لحظته</li>
 </ul>
 </div>
 </section>
-<section id="it-also-builds-slides" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">It also builds slides</h2>
-<div class="card-dark center" data-id="slides" style="font-size: 1.1em;">
-<p>Turn your sources into a <strong>presentation</strong>, grounded in the same documents.</p>
+<section id="الأمر-جملة-واحدة" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">الأمر: جملة واحدة</h2>
+
+<img data-src="../data/skill_trigger.png" class="r-stretch"></section>
+<section id="النتيجة" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">النتيجة</h2>
+
+<img data-src="../data/skill_output_slide.png" class="r-stretch"><div class="center" style="margin-top: 0.4em;">
+<p>شريحة عربية على هويتك البصرية، وملف جاهز للتعديل.</p>
+</div>
+</section></section>
+<section>
+<section id="ماذا-يوجد-داخل-الكتاب" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>ماذا يوجد داخل الكتاب</h1>
+<p>مكونات المهارة</p>
+</section>
+<section id="المهارة-كمجلد-منظم" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">المهارة كمجلد منظم</h2>
+<div class="card accent-teal" data-id="inside">
+<p>مجلد المهارة يتضمن الخطوات وجميع الملحقات المطلوبة.</p>
+</div>
+<div class="columns">
+<div class="column" style="width:44%;">
+<p><img data-src="../data/skill_folder.png"></p>
+</div><div class="column" style="width:56%;">
+<ul>
+<li class="fragment"><code>SKILL.md</code>: خطوات التنفيذ بلغة واضحة</li>
+<li class="fragment"><code>scripts/</code>: النصوص البرمجية للحساب والحزم</li>
+<li class="fragment"><code>assets/</code>: القالب المعتمد لهويتك</li>
+<li class="fragment"><code>references/</code>: دليل الأسلوب والأمثلة</li>
+</ul>
+</div></div>
+<div class="center muted" style="margin-top: 0.3em;">
+<p>بعض المهارات ثلاث جمل، وبعضها مجلد كامل كهذا.</p>
+</div>
+</section>
+<section id="كيف-تبنى-المهارة" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">كيف تُبنى المهارة</h2>
+<div class="card accent-orange" data-id="build">
+<p>لا تكتبها بنفسك. أنجِز المهمة مرة في محادثة عادية، وحين ترضى عن النتيجة، اطلب حفظها مهارةً.</p>
 </div>
 <div class="fragment">
+<ul>
+<li class="fragment">المرة الأولى تأخذ وقتها</li>
+<li class="fragment">ثم تستدعيها باسمها</li>
+<li class="fragment">وتصحّحها بعد كل استخدام</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="النصوص-البرمجية" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>النصوص البرمجية</h1>
+<p>حين يحتاج العمل إلى حساب</p>
+</section>
+<section id="يكتب-الشيفرة-ويشغلها-بنفسه" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">يكتب الشيفرة ويشغّلها بنفسه</h2>
+<div class="card accent-purple" data-id="script">
+<p>في الأرقام والخطوات المتكررة، يكتب Cowork <strong>نصًا برمجيًا</strong> وينفّذه: أسرع، وأقل تكلفة، ويعطي الرقم نفسه في كل مرة.</p>
+</div>
+<div class="fragment">
+<div class="center muted" style="margin-top: 0.5em;">
+<p>أنت لا ترى الشيفرة ولا تكتبها.</p>
+</div>
+</div>
+</section>
+<section id="تجربة-لاحقة-ملخص-المصروفات" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">تجربة لاحقة: ملخص المصروفات</h2>
+<div class="card accent-purple" data-id="calc">
+<p>جدول معاملات مالية خام، وتريد منه أرقامًا محددة كل شهر.</p>
+</div>
+<div class="card-dark center" style="margin-top: 0.6em;">
+<p>«من <code>expenses.csv</code>، احسب الإنفاق لكل فئة، والإجمالي الشهري، ونسبة كل قسم. احفظ النتيجة في ورقة جديدة.»</p>
+</div>
+<div class="center muted" style="margin-top: 0.3em;">
+<p>البيانات التجريبية: <a href="../data/expenses.csv"><code>expenses.csv</code></a></p>
+</div>
+</section></section>
+<section>
+<section id="أيهما-يستحق-أن-يصير-مهارة" class="title-slide slide level1 center" data-auto-animate="true">
+<h1 data-id="quarto-animate-title">أيّهما يستحق أن يصير مهارة</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="card accent-teal">
-<p><strong>Detailed Deck</strong></p>
-<p>Text-rich, stands on its own. Good for a reading or handout.</p>
+<p><strong>أ)</strong> مراجعة تقرير مقابل قائمة التحقق نفسها، كل أسبوع.</p>
 </div>
 </div><div class="column" style="width:50%;">
-<div class="card accent-purple">
-<p><strong>Presenter Slides</strong></p>
-<p>Clean and visual. Supports you while you talk.</p>
+<div class="card accent-orange">
+<p><strong>ب)</strong> صياغة رد على رسالة وردتك اليوم.</p>
 </div>
 </div></div>
-</div>
-</section>
-<section id="steering-and-editing-the-deck" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Steering and editing the deck</h2>
-<ul>
-<li class="fragment">Name your audience and themes before it generates</li>
-<li class="fragment">Export to <code>.pptx</code> or PDF</li>
-<li class="fragment">Expect cleanup: parts export as images</li>
-<li class="fragment">Revise any slide with the pencil icon</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>One requirement</strong></p>
-</div>
-<div class="callout-content">
-<p>You need <strong>at least one source uploaded</strong> before it can build a deck.</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section id="right-tool-right-job" class="title-slide slide level1 center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">Right Tool, Right Job</h1>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Need</th>
-<th style="text-align: left;">Tool</th>
-<th style="text-align: left;">Why</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Your day-to-day files</td>
-<td style="text-align: left;"><strong>Cowork</strong></td>
-<td style="text-align: left;">Your folder, your rules</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">A 100-page PDF</td>
-<td style="text-align: left;"><strong>Gemini Notebook</strong></td>
-<td style="text-align: left;">Grounded in your docs only</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Live web, with citations</td>
-<td style="text-align: left;"><strong>Deep Research</strong></td>
-<td style="text-align: left;">Real-time and footnoted</td>
-</tr>
-</tbody>
-</table>
-<div class="fragment">
-<div class="center muted" style="margin-top: 0.4em;">
-<p><em>Deep Research: Perplexity, ChatGPT, or Gemini.</em></p>
-</div>
-</div>
-</section>
-
-<section>
-<section id="from-source-to-deck" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
-<h1>From source to deck</h1>
-<p>Source → grounded summary → deck</p>
-</section>
-<section id="your-mission" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Your mission</h2>
-<div data-id="mission" style="background: #f7f9fc; padding: 0.8em 1.2em; border-radius: 12px;">
-<p>Take a <strong>real (safe) paper or policy PDF</strong>. Produce a <strong>1-page grounded summary</strong> and a <strong>presenter deck</strong>, in 10 minutes.</p>
-</div>
-<div class="fragment">
-<ol type="1">
-<li class="fragment">Upload the source to Gemini Notebook</li>
-<li class="fragment">Ask: <em>“Based only on this, give 5 key findings with page references. If it’s not in the source, say ‘Not found.’”</em></li>
-<li class="fragment">Click through the citations to the passage</li>
-<li class="fragment">Generate a Presenter deck, export <code>.pptx</code>, revise one slide</li>
-</ol>
-</div>
-</section>
-<section id="check-it-before-you-use-it" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Check it before you use it</h2>
-<div class="card accent-orange" data-id="mission">
-<p>A source reduces guessing. It does not replace your review. Generated slides can still carry factual and visual errors.</p>
-</div>
-<div class="center muted">
-<p><em>No source? Use one of your own, or open <a href="../data/sample_source.md"><code>sample_source.md</code></a> for links to open-access reports and policies.</em></p>
-</div>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Log it</strong></p>
-</div>
-<div class="callout-content">
-<p>Does this task recur for you? Then it’s a good candidate to try after the session.</p>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="micro-check" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h1>Micro-check</h1>
-<p>Pick the right move</p>
-</section>
-<section id="quiz" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Quiz</h2>
-<p><strong>1.</strong> You need to summarize a <strong>confidential, unreleased</strong> product plan you’re reviewing.</p>
 <div class="fragment">
 <div class="fragment fade-in">
-<div class="card accent-orange">
-<p><strong>Newspaper Test first.</strong> This is confidential, unreleased work, so check the rules before uploading it anywhere.</p>
-</div>
-</div>
-</div>
-<div class="fragment">
-<p><strong>2.</strong> You need <strong>today’s</strong> market statistics from the web.</p>
-</div>
-<div class="fragment">
-<div class="fragment fade-in">
-<div class="card accent-teal">
-<p><strong>Deep Research</strong>, for live web with citations. Gemini Notebook only reads your uploads.</p>
+<div class="fill-teal center">
+<p><strong>أ.</strong> الخطوات ذاتها تتكرر. أما <strong>ب</strong> فمحادثة تكفي.</p>
 </div>
 </div>
 </div>
 </section>
-<section id="key-takeaways" class="slide level2 sdaia-dark" data-background-color="#1C355E">
-<h2>Key takeaways</h2>
-<ol type="1">
-<li class="fragment">Upload the sources first, then constrain it to “only these”.</li>
-<li class="fragment">A citation is a pointer. Click through and check the claim.</li>
-<li class="fragment"><strong>Gemini Notebook</strong> does deep reading and decks, exportable as <code>.pptx</code>.</li>
-<li class="fragment">Match the tool to the job: Cowork, Gemini Notebook, or Deep Research.</li>
-</ol>
+<section id="طبقها-الآن-٣-دقائق" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">طبِّقها الآن: ٣ دقائق</h2>
+<div class="fill-teal center">
+<p>جميعًا معًا. أمر واحد ينفّذ المراجعة، ثم يحفظها مهارة.</p>
+</div>
+<div class="card-dark center" style="margin-top: 0.6em;">
+<p>«راجِع <code>sample_report.md</code> مقابل <code>review_checklist.md</code>، واكتب مذكرة موجزة: نقطتا قوة، واقتراحان للتحسين، وخطوة تالية واحدة. ثم احفظ ما فعلتَه مهارةً باسم <strong>مراجعة تقرير</strong>.»</p>
+</div>
+<div class="center muted" style="margin-top: 0.3em;">
+<p>الملفات: <a href="../data/sample_report.md"><code>sample_report.md</code></a> · <a href="../data/review_checklist.md"><code>review_checklist.md</code></a></p>
+</div>
 
 
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="../../slides_template/assets/sdaia.svg" class="slide-logo"></p>
+<p><img src="../slides_template/assets/sdaia.svg" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -453,7 +365,7 @@
         loop: false,
 
         // Change the presentation direction to be RTL
-        rtl: false,
+        rtl: true,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
         navigationMode: 'linear',

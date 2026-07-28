@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-html/tabby.min.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<html lang="ar" dir="rtl"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="dcterms.date" content="2026-07-27">
-  <title>AI at Work – Building Your Own AI Assistant</title>
+  <meta name="dcterms.date" content="2026-07-28">
+  <title>AI at Work – بناء مساعدك الذكي الخاص</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,11 +32,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f25e2d88d2f9c8c14c21095ce8dbb441.css">
-  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-f25e2d88d2f9c8c14c21095ce8dbb441.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -131,48 +131,33 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="../../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title">Building Your Own AI Assistant</h1>
-  <p class="subtitle">A Hands-On Workshop for Office Professionals</p>
+<section id="title-slide" data-background-image="../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title">بناء مساعدك الذكي الخاص</h1>
+  <p class="subtitle">ورشة عمل تطبيقية</p>
 
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">2026-07-27</p>
+  <p class="date">2026-07-28</p>
 </section>
 <section>
-<section id="welcome" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h1>Welcome</h1>
-<p>A hands-on session, with no coding.</p>
+<section id="أهلا-بك" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>أهلًا بك</h1>
+<p>ورشة تطبيقية، بلا برمجة.</p>
 </section>
-<section id="what-well-work-on" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">What we’ll work on</h2>
+<section id="ما-الذي-سنعمل-عليه" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">ما الذي سنعمل عليه</h2>
 <div data-id="promise" style="background: #f7f9fc; padding: 1.5em; border-radius: 12px; text-align: center; font-size: 1.05em;">
-<p>We write prompts with <strong>RICE</strong>, save them in a <strong>Project</strong>, then hand a task to <strong>Claude Cowork</strong> on provided files.</p>
+<p>نكتب أوامر بإطار <strong>RICE</strong>، ونحفظها في <strong>مشروع (Project)</strong>، ثم نُسلّم مهمة إلى <strong>Claude Cowork</strong> على ملفات جاهزة.</p>
 </div>
 <div class="fragment">
 <div class="center" style="margin-top: 1em;">
-<p>You leave with a one-page recipe for repeating it on your own day-to-day work.</p>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>office professionals, no coding required</strong></p>
-</div>
-<div class="callout-content">
-<p>You describe what you want in plain language. We use <strong>Claude Cowork</strong> because it sets up fastest, and the same ideas work in ChatGPT, Gemini, and Claude.</p>
-</div>
-</div>
+<p>وتخرج بوصفة في صفحة واحدة لتكرار ذلك على عملك اليومي.</p>
 </div>
 </div>
 </section>
-<section id="the-day-in-four-stops" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">The day in four stops</h2>
+<section id="محطات-اليوم" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">محطات اليوم</h2>
 <table class="caption-top">
 <colgroup>
 <col style="width: 50%">
@@ -180,72 +165,72 @@
 </colgroup>
 <thead>
 <tr class="header">
-<th>Stop</th>
-<th>What we do</th>
+<th>المحطة</th>
+<th>ماذا نفعل فيها</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>How AI Works + RICE</strong></td>
-<td>Why it works, and how to set up a <strong>Project</strong></td>
+<td><strong>كيف يعمل الذكاء الاصطناعي + RICE</strong></td>
+<td>لماذا يعمل، وكيف تُعِدّ <strong>مشروعًا (Project)</strong></td>
 </tr>
 <tr class="even">
-<td><strong>Work Mode</strong></td>
-<td>Hand a task to an agent: files, Skills, schedules</td>
+<td><strong>وضع العمل</strong></td>
+<td>تسلّم مهمة لوكيل: ملفات، ومهارات، وجدولة</td>
 </tr>
 <tr class="odd">
-<td><strong>Your Recipe</strong></td>
-<td>Three ready prompts for your own work</td>
+<td><strong>وصفتك</strong></td>
+<td>ثلاثة أوامر جاهزة لعملك أنت</td>
 </tr>
 <tr class="even">
-<td><strong>Wrap-up</strong></td>
-<td>Review, and plan what comes next</td>
+<td><strong>الختام</strong></td>
+<td>مراجعة، وتخطيط لما بعد الجلسة</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="how-well-work" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">How we’ll work</h2>
+<section id="كيف-سنعمل" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">كيف سنعمل</h2>
 <div class="columns">
 <div class="column" style="width:33%;">
 <div class="card accent-teal center">
-<p><strong>Show</strong></p>
-<p>I run a real task live</p>
+<p><strong>العرض</strong></p>
+<p>أُنفِّذ مهمة حقيقية مباشرةً</p>
 </div>
 </div><div class="column" style="width:33%;">
 <div class="card accent-purple center">
-<p><strong>Mirror</strong></p>
-<p>We all repeat one piece together</p>
+<p><strong>المحاكاة</strong></p>
+<p>نكرّر جزءًا واحدًا معًا</p>
 </div>
 </div><div class="column" style="width:33%;">
 <div class="card accent-orange center">
-<p><strong>Take home</strong></p>
-<p>The same task, on <em>your</em> work</p>
+<p><strong>خُذها معك</strong></p>
+<p>المهمة نفسها على عملك <em>أنت</em></p>
 </div>
 </div></div>
 <div class="fragment">
 <div class="center" style="font-weight: bold; margin-top: 0.5em;">
-<p>Every follow-along uses a provided prompt on a provided file. Nothing to prepare.</p>
+<p>كل تطبيق مشترك يستخدم أمرًا جاهزًا على ملف جاهز. لا شيء تحضّره مسبقًا.</p>
 </div>
 </div>
 </section>
-<section id="two-rules-before-we-start" class="slide level2 sdaia-dark" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
-<h2>Two rules before we start</h2>
+<section id="قاعدتان-قبل-أن-نبدأ" class="slide level2 sdaia-dark" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
+<h2>قاعدتان قبل أن نبدأ</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div style="background: rgba(255,255,255,0.1); padding: 1.2em; border-radius: 12px;">
-<p><strong>Newspaper Test</strong></p>
-<p>Before you paste: would you be fine seeing this text published? If not, strip names, customer data, and unreleased plans first.</p>
+<p><strong>اختبار الجريدة</strong></p>
+<p>قبل أن تلصق: هل تقبل أن يُنشَر هذا النص؟ إن كان الجواب لا، فأزِل الأسماء والبيانات الشخصية والخطط غير المعلَنة أولًا.</p>
 </div>
 </div><div class="column" style="width:50%;">
 <div style="background: rgba(255,255,255,0.1); padding: 1.2em; border-radius: 12px;">
-<p><strong>The Undo Test</strong></p>
-<p>Before it acts: can you undo what it’s about to do? Have it <strong>propose, you approve</strong>.</p>
+<p><strong>اختبار التراجع</strong></p>
+<p>قبل أن ينفّذ: هل أستطيع التراجع عمّا سيفعله؟ اجعله <strong>يقترح وأنت توافق</strong>.</p>
 </div>
 </div></div>
 <div class="fragment">
 <div class="center" style="margin-top: 0.8em;">
-<p>Today’s exercises run on <strong>provided sample files</strong>, with no real data.</p>
+<p>تمارين اليوم على <strong>ملفات تجريبية مرفقة</strong>، بلا بيانات حقيقية.</p>
 </div>
 
 
@@ -253,26 +238,26 @@
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="../../slides_template/assets/sdaia.svg" class="slide-logo"></p>
+<p><img src="../slides_template/assets/sdaia.svg" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -346,7 +331,7 @@
         loop: false,
 
         // Change the presentation direction to be RTL
-        rtl: false,
+        rtl: true,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
         navigationMode: 'linear',
