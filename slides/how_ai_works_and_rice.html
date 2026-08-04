@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="dcterms.date" content="2026-07-28">
+  <meta name="dcterms.date" content="2026-08-04">
   <title>AI at Work – كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -32,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-f25e2d88d2f9c8c14c21095ce8dbb441.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-47c3dfb1d4459b32c6b1cde5836d595a.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -138,31 +138,35 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">2026-07-28</p>
+  <p class="date">2026-08-04</p>
 </section>
 <section>
 <section id="ما-الذي-يحدث-حين-ترسل-أمرا" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
 <h1>ما الذي يحدث حين ترسل أمرًا؟</h1>
 <p>أنت تتعامل مع <strong>طبقتين</strong>، لا مع طبقة واحدة.</p>
 </section>
-<section id="طبقتان-واحدة-فوق-الأخرى" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">طبقتان، واحدة فوق الأخرى</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="fragment fade-in">
-<div class="card-dark center">
+<section id="طبقتان-واحدة-داخل-الأخرى" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">طبقتان، واحدة داخل الأخرى</h2>
+<div class="nest-row">
+<div class="actor fragment fade-in">
+<p>أنت</p>
+</div>
+<div class="flow-arrow fragment fade-in">
+<p>←</p>
+</div>
+<div class="nest">
+<div class="nest-label">
+<p>طبقة التطبيق · «المكتب»</p>
+</div>
+<div class="nest-inner">
 <p><strong>طبقة النموذج</strong></p>
 <p>«الدماغ». يعرف الكثير، ولا يعرفك.</p>
 </div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="fragment fade-in">
-<div class="fill-teal">
-<p><strong>طبقة التطبيق</strong></p>
-<p>«المكتب». يدير سياقك، وملفاتك.</p>
+<div class="nest-note fragment fade-in">
+<p>يحفظ ملفاتك، ويسلّم للدماغ ما يخصّ طلبك.</p>
 </div>
 </div>
-</div></div>
+</div>
 </section></section>
 <section>
 <section id="طبقة-النموذج" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
@@ -263,10 +267,10 @@
 <h1>طبقة التطبيق</h1>
 <p>المكتب المحيط بالدماغ</p>
 </section>
-<section id="نبني-مكتبا-حوله" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">نبني مكتبًا حوله</h2>
+<section id="المكتب-هو-التطبيق" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">المكتب هو التطبيق</h2>
 <div class="card accent-teal" data-id="office">
-<p>الدماغ لا يستطيع فتح الملفات ولا تذكّر اسمك. لذا نبني <strong>مكتبًا</strong> حوله: هو <strong>التطبيق</strong> الذي تستخدمه فعلًا.</p>
+<p>المكتب الذي رأيته حول الدماغ هو <strong>التطبيق</strong> الذي تستخدمه فعلًا.</p>
 </div>
 <div class="fragment">
 <div class="center" style="margin-top: 0.5em;">
