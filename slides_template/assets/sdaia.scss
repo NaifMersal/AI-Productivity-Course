@@ -442,6 +442,258 @@ html[dir="rtl"] .reveal pre code,
 .reveal .center    { text-align: center; }
 .reveal .stack-top { margin-top: 0.5em; }
 
+/* `.center` and the filled chips set `text-align: center` on the WRAPPER, but
+   Pandoc puts the actual text in a child `<p>`, and the RTL block above targets
+   `html[dir="rtl"] .reveal .slides section p` at specificity (0,4,2) — which
+   outranks them. Every "centered" closer in an Arabic deck was really flush
+   right. Re-assert it at matching specificity. */
+html[dir="rtl"] .reveal .slides section .center p,
+html[dir="rtl"] .reveal .slides section .fill-teal p,
+html[dir="rtl"] .reveal .slides section .fill-purple p,
+html[dir="rtl"] .reveal .slides section .fill-orange p,
+.reveal[dir="rtl"] .slides section .center p,
+.reveal[dir="rtl"] .slides section .fill-teal p,
+.reveal[dir="rtl"] .slides section .fill-purple p,
+.reveal[dir="rtl"] .slides section .fill-orange p { text-align: center; }
+
+/* =========================================================================
+   Diagram vocabulary
+   HTML/CSS rather than Graphviz/mermaid, because those don't survive Arabic:
+   Graphviz does no Arabic shaping or bidi (labels come out as disconnected,
+   reversed letterforms) and mermaid gives up RTL layout + brand control. CSS
+   gets browser-native shaping, reveal fragments to build a diagram up live,
+   and free RTL mirroring — same reason `.card` exists instead of border-left.
+
+   Three components: `.nest` (containment), `.flow` (linear ladder),
+   `.cycle` (loop). All lay out with flex/grid under the inherited `dir`, so
+   SOURCE ORDER IS READING ORDER in both directions.
+   ========================================================================= */
+
+/* --- Containment: a labelled frame that visibly holds an inner box. ------ */
+.reveal .nest {
+  border: 3px solid var(--sdaia-teal);
+  border-radius: 16px;
+  padding: 1.6em 1.4em 1.3em;
+  position: relative;
+  background: var(--sdaia-code-bg);
+}
+
+/* Keep the held box off the frame's walls so containment reads at a glance. */
+.reveal .nest > .nest-inner {
+  max-width: 68%;
+  margin-inline: auto;
+}
+
+/* Label notched into the top border; --bg breaks the stroke behind it. */
+.reveal .nest-label {
+  position: absolute;
+  top: -0.72em;
+  inset-inline-start: 1.1em;
+  background: var(--bg);
+  padding: 0 0.5em;
+  color: var(--sdaia-teal);
+  font-weight: 700;
+  font-size: 0.72em;
+  white-space: nowrap;
+}
+
+/* Filled navy inner box — white text is ~10:1 on navy, as in `.card-dark`. */
+.reveal .nest-inner {
+  background: var(--sdaia-navy);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 1em 0.9em;
+  text-align: center;
+}
+.reveal .nest-inner strong,
+.reveal .nest-inner p { color: #ffffff; }
+
+.reveal .nest-note {
+  margin-top: 0.7em;
+  margin-bottom: 0;
+  font-size: 0.72em;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Row that puts an actor beside a `.nest` — [you] ← [the office [the brain]]. */
+.reveal .nest-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  margin-top: 1.2em;
+}
+.reveal .nest-row > .nest { flex: 1 1 auto; }
+
+.reveal .actor {
+  background: var(--sdaia-code-bg);
+  border: 2px solid var(--sdaia-navy);
+  border-radius: 12px;
+  padding: 0.7em 0.8em;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+/* --- Linear ladder: steps read right-to-left under dir="rtl". ----------- */
+.reveal .flow {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.35em;
+  margin-top: 1.2em;
+}
+
+.reveal .flow-step,
+.reveal .cycle-step {
+  background: var(--sdaia-code-bg);
+  border-radius: 12px;
+  border-block-start: 5px solid var(--sdaia-teal);
+  padding: 1.1em 0.7em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3em;
+}
+.reveal .flow-step { flex: 1 1 0; }
+
+/* A fork in one lane: two alternative routes stacked where a single step
+   would sit, so "either of these, then onward" stays one row. */
+.reveal .flow-branch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4em;
+  flex: 1 1 0;
+}
+
+/* Accent modifiers mirror the `.card` names so the palette stays one vocab. */
+.reveal .flow-step.accent-navy,   .reveal .cycle-step.accent-navy   { border-block-start-color: var(--sdaia-navy); }
+.reveal .flow-step.accent-teal,   .reveal .cycle-step.accent-teal   { border-block-start-color: var(--sdaia-teal); }
+.reveal .flow-step.accent-purple, .reveal .cycle-step.accent-purple { border-block-start-color: var(--sdaia-purple); }
+.reveal .flow-step.accent-orange, .reveal .cycle-step.accent-orange { border-block-start-color: var(--sdaia-orange); }
+.reveal .flow-step.accent-yellow, .reveal .cycle-step.accent-yellow { border-block-start-color: var(--sdaia-yellow); }
+
+/* Ascending variant: each step stands taller than the one before it, so
+   "more capability as you go" is carried by the shape and not just a caption.
+   Heights go by source position (steps are children 1, 3, 5 — the arrows sit
+   between them), which is reading order in both directions. */
+.reveal .flow.ascend { align-items: flex-end; }
+.reveal .flow.ascend > .flow-step:nth-child(1) { min-height: 5em; }
+.reveal .flow.ascend > .flow-step:nth-child(3) { min-height: 6.2em; }
+.reveal .flow.ascend > .flow-step:nth-child(5) { min-height: 7.4em; }
+.reveal .flow.ascend > .flow-step:nth-child(7) { min-height: 8.6em; }
+
+/* Axis caption under a `.flow`: a bar whose gradient replays the steps' own
+   accent colors, so it reads as the same figure rather than a second block. */
+.reveal .flow-axis {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin-top: 0.6em;
+  font-size: 0.66em;
+  color: var(--muted);
+}
+.reveal .flow-axis p { margin: 0; white-space: nowrap; }
+.reveal .flow-axis::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 5px;
+  border-radius: 3px;
+  /* LTR default; the RTL override below flips it so the gradient always runs
+     in the reading direction, same trick as the section brand bar above. */
+  background: linear-gradient(to right, var(--sdaia-purple), var(--sdaia-teal), var(--sdaia-orange));
+}
+html[dir="rtl"] .reveal .flow-axis::after,
+.reveal[dir="rtl"] .flow-axis::after {
+  background: linear-gradient(to left, var(--sdaia-purple), var(--sdaia-teal), var(--sdaia-orange));
+}
+
+/* `.t` title line, `.s` sub-line — inside steps only. */
+.reveal .flow-step .t,
+.reveal .cycle-step .t { font-weight: 700; display: block; line-height: 1.2; font-size: 0.9em; }
+.reveal .flow-step .s,
+.reveal .cycle-step .s { font-size: 0.68em; color: var(--muted); display: block; line-height: 1.3; }
+
+/* Arrow glyphs are authored literally (← ↓ → ↑) per the AR style guide §1.6.
+   `unicode-bidi: isolate` keeps bidi from reordering them beside numerals. */
+.reveal .flow-arrow,
+.reveal .cycle-arrow {
+  align-self: center;
+  justify-self: center;
+  color: var(--sdaia-navy);
+  font-size: 1.5em;
+  line-height: 1;
+  direction: ltr;
+  unicode-bidi: isolate;
+  flex: 0 0 auto;
+}
+
+/* --- Loop: 3x3 grid, not a circle. --------------------------------------
+   A real circle can't hold Arabic labels at the 32px root without an inline
+   font-size shrink, which the deck rules forbid. Named grid areas mirror
+   under RTL on their own (area column 1 = inline-start = the right side),
+   so this template is authored in reading order and needs no RTL variant. */
+.reveal .cycle {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "s1 a12 s2"
+    "a41 .  a23"
+    "s4 a34 s3";
+  gap: 0.6em 0.6em;
+  align-items: stretch;
+  margin-top: 1em;
+}
+/* Placement is by source position: author the eight children in loop order —
+   step, arrow, step, arrow, step, arrow, step, arrow — and they land in the
+   right cells. (`nth-of-type` would count by element name, not class, and
+   misassign every cell once steps and arrows are both divs.) */
+.reveal .cycle > *:nth-child(1) { grid-area: s1; }
+.reveal .cycle > *:nth-child(2) { grid-area: a12; }
+.reveal .cycle > *:nth-child(3) { grid-area: s2; }
+.reveal .cycle > *:nth-child(4) { grid-area: a23; }
+.reveal .cycle > *:nth-child(5) { grid-area: s3; }
+.reveal .cycle > *:nth-child(6) { grid-area: a34; }
+.reveal .cycle > *:nth-child(7) { grid-area: s4; }
+.reveal .cycle > *:nth-child(8) { grid-area: a41; }
+
+/* Pandoc wraps block content in `<p>`, so every diagram child is a paragraph.
+   Strip the inherited margins or the flex `gap` doubles up and the grid rows
+   grow past the frame. */
+.reveal .flow-step p,
+.reveal .cycle-step p,
+.reveal .flow-arrow p,
+.reveal .cycle-arrow p,
+.reveal .nest-label p,
+.reveal .nest-inner p,
+.reveal .nest-note p,
+.reveal .actor p { margin: 0; }
+
+/* Those same paragraphs must stay centered. The RTL block above sets
+   `html[dir="rtl"] .reveal .slides section p { text-align: right }` at
+   specificity (0,4,2), which outguns a plain `.flow-step { text-align:center }`
+   and left every diagram label hugging the start edge. Match the prefix to
+   win, and repeat unprefixed so LTR decks get the same treatment. */
+html[dir="rtl"] .reveal .slides section .flow-step p,
+html[dir="rtl"] .reveal .slides section .cycle-step p,
+html[dir="rtl"] .reveal .slides section .flow-arrow p,
+html[dir="rtl"] .reveal .slides section .cycle-arrow p,
+html[dir="rtl"] .reveal .slides section .nest-inner p,
+html[dir="rtl"] .reveal .slides section .nest-note p,
+html[dir="rtl"] .reveal .slides section .actor p,
+.reveal .flow-step p,
+.reveal .cycle-step p,
+.reveal .flow-arrow p,
+.reveal .cycle-arrow p,
+.reveal .nest-inner p,
+.reveal .nest-note p,
+.reveal .actor p { text-align: center; }
+
 /* Printable polish */
 @media print {
   .reveal .slides section::after {

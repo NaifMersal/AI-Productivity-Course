@@ -12,9 +12,9 @@ project:
   render:
     - "**/*.qmd"
     - "!slides_template/*.qmd"
-    # Build sources, not decks — generated into <id>-workshop/ by build.py. Render those.
-    - "!templates/**/*.qmd"
-    - "!examples/**/*.qmd"
+    - "!notes/**/*.qmd"
+  # keeps pre-restructure URLs (office-workshop-ar/, ksu-workshop/) working
+  post-render: python scripts/make_redirects.py
 
 execute:
   echo: false

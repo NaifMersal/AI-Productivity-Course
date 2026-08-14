@@ -1,0 +1,195 @@
+---
+title: "من المحادثة إلى وضع العمل"
+subtitle: "من سؤال عابر إلى إعداد ثابت"
+date: today
+lang: ar
+dir: rtl
+format:
+  revealjs:
+    rtl: true
+---
+
+# محادثة واحدة، أم كل أسبوع {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+## ثلاثة أوضاع في التطبيق نفسه {auto-animate=true}
+
+::: {.flow .ascend}
+::: {.flow-step .accent-purple}
+[المحادثة (Chat)]{.t}
+[تسأل، وتحصل على جواب.]{.s}
+:::
+::: {.flow-arrow}
+←
+:::
+::: {.flow-step .accent-teal}
+[وضع العمل (Work)]{.t}
+[يشتغل على ملفاتك مباشرة.]{.s}
+[هنا اليوم]{.pill}
+:::
+::: {.flow-arrow}
+←
+:::
+::: {.flow-step .accent-orange}
+[البرمجة (Code)]{.t}
+[للمطوّرين. أوسع تخصيصًا.]{.s}
+:::
+:::
+
+::: {.flow-axis}
+كلّما تقدّمت: قدرات أكثر، وتخصيص أوسع.
+:::
+
+. . .
+
+::: {.center style="font-weight: bold; margin-top: 0.7em;"}
+بنيت مشروعك في المحادثة. واليوم ننتقل خطوة.
+:::
+
+# المشروع نفسه، لكن على جهازك {auto-animate=true}
+
+::: {.card .accent-orange data-id="dir"}
+يوجّه Cowork نظره إلى **مجلد حقيقي على حاسوبك**: هو **مجلد العمل**. الإعداد الثابت نفسه،
+غير أن الملفات ملفاتك، وهو يعدّلها في مكانها.
+:::
+
+. . .
+
+::: {.center style="margin-top: 0.5em;"}
+المشروع يحتفظ بنُسخ رفعتها. أما هذا فالمجلد نفسه.
+:::
+
+## الفكرة نفسها في غيره {auto-animate=true}
+
+::: {.card .accent-purple}
+يستطيع ChatGPT وAntigravity توجيه النظر إلى ملفاتك أيضًا. نستخدم Cowork اليوم لأن إعداده
+الأسرع.
+:::
+
+# قبل أن يتصرّف {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+قاعدة الأمان الثانية
+
+## لا يملك شيئًا حتى تعطيه {auto-animate=true}
+
+::: {.incremental}
+- لا يصل إلى جهازك من تلقاء نفسه
+- لا يقرأ إلا المجلد الذي فتحته له
+- لا يملك بريدك ولا تقويمك
+:::
+
+::: {.center .muted}
+كل صلاحية عنده أنت أعطيتها. ولهذا تُقاس قبل أن تُعطى.
+:::
+
+## قاعدة الأمان الثانية {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.card .accent-navy}
+**القاعدة 1: اختبار الجريدة**
+
+تحرس ما *تُدخِله* ***أنت***. وهي معك سلفًا.
+:::
+:::
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+::: {.card .accent-orange}
+**القاعدة 2: اختبار التراجع**
+
+تحرس ما ***يفعله*** الوكيل. أي نطاق تأثيره.
+:::
+:::
+:::
+::::
+
+## اختبار التراجع {auto-animate=true}
+
+::: {.card-dark .center data-id="blast" style="font-size: 1.05em;"}
+قبل أن تدعه يتصرّف، اسأل:
+*«إن أخطأ في هذا، هل أستطيع التراجع عنه؟ وهل سألاحظ في الوقت المناسب؟»*
+:::
+
+. . .
+
+::: {.callout-important}
+## ابدأ في وضع المسودة / أعلِمني
+Cowork **يقترح، وأنت توافق**. ودعه يتصرّف من تلقاء نفسه بعد أن يثبت جدارته.
+:::
+
+. . .
+
+::: {.center style="margin-top: 0.5em;"}
+اليوم نعمل على **ملفات تجريبية**. لا بيانات حقيقية ولا أسماء.
+:::
+
+# شاهِده يعمل {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+مهمة واحدة، من البداية للنهاية
+
+## عرض: محضر واحد يدخل، ثلاثة ملفات تتغيّر {auto-animate=true}
+
+::: {.card .accent-teal data-id="handover"}
+تنظّم ملتقى الإدارة بعد ستة أسابيع. الخطة وسجل القرارات وجدول المهام في مجلد واحد،
+واجتماع هذا الأسبوع قلَب بعضها.
+:::
+
+::: {style="background: #1C355E; color: #ffffff; padding: 1em; border-radius: 12px; font-style: italic; text-align: center; margin-top: 0.6em;"}
+«اقرأ محضر هذا الأسبوع، وحدِّث الخطة وسجل القرارات وجدول المهام. علِّم أي قرار سابق نُقِض،
+ولا تُثبِت ما لم يُحسَم. أرِني ما تغيّر قبل الحفظ.»
+:::
+
+::: {.center .muted style="margin-top: 0.4em;"}
+[`event_meeting.md`](../data/event_meeting.md) ← [`event_plan.md`](../data/event_plan.md) · [`decisions_log.md`](../data/decisions_log.md) · [`tasks.md`](../data/tasks.md)
+:::
+
+## ما الذي تراقبه {auto-animate=true}
+
+::: {.incremental}
+- يفتح الملفات بنفسه، بلا لصق
+- يقرأ، ثم يقارن، ثم يكتب، بهذا الترتيب
+- يقترح النتيجة، وأنت توافق
+:::
+
+## طبِّقها الآن: ٣ دقائق {auto-animate=true}
+
+::: {style="background: #00C9A7; color: #ffffff; padding: 0.8em; border-radius: 12px; text-align: center; font-weight: bold;"}
+جميعًا معًا. افتح Cowork ووجّهه إلى مجلد ملفات الورشة.
+:::
+
+::: {.incremental}
+1. افتح Cowork ووجّهه إلى **مجلد ملفات الورشة**
+2. الصِق الأمر أدناه
+3. راقِبه وهو **يفتح الملفين** قبل أن يجيب
+:::
+
+::: {style="background: #1C355E; color: #ffffff; padding: 0.9em; border-radius: 12px; font-style: italic; text-align: center; margin-top: 0.6em; font-size: 0.9em;"}
+«اقرأ `event_meeting.md` و`event_plan.md`، واذكر ما الذي لم يعد صحيحًا في الخطة بعد هذا الاجتماع. لا تعدّل شيئًا.»
+:::
+
+::: {.center .muted style="margin-top: 0.4em;"}
+الملفان: [`event_meeting.md`](../data/event_meeting.md) · [`event_plan.md`](../data/event_plan.md)، وهما في مجلد ملفات الورشة
+:::
+
+# تصرّف الآن، أم اقترِح وانتظِر {auto-animate=true}
+
+**1.** «أعِد تنسيق هذه الملاحظات في ملخّص نظيف داخل ملف جديد.»
+
+. . .
+
+::: {.fragment .fade-in}
+::: {.fill-teal}
+**تصرّف الآن.** سهل التراجع.
+:::
+:::
+
+. . .
+
+**2.** «أرسِل الأرقام المحدَّثة بالبريد إلى جميع أصحاب المصلحة الستين.»
+
+. . .
+
+::: {.fragment .fade-in}
+::: {.fill-orange}
+**اقترِح وانتظِر.** غير قابل للعكس، فراجِع أولًا.
+:::
+:::

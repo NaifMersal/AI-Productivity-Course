@@ -1,21 +1,71 @@
 ---
 title: "AI at Work — Workshops"
-subtitle: "Build the Workflows That Win Back Your Week"
+subtitle: "بناء مساعدك الذكي الخاص"
 date: today
+lang: ar
+dir: rtl
 format:
   html:
     toc: false
     theme: cosmo
 ---
 
-Hands-on workshops that teach professionals and faculty to use AI as a permanent member
-of their team — not as a search engine. **No coding.** Concepts stay portable across
-ChatGPT, Gemini, Claude, and Gemini Notebook.
+ورش تطبيقية تُعلّم استخدام الذكاء الاصطناعي بوصفه عضوًا دائمًا في فريقك، لا محرّك بحث.
+**بلا برمجة.** والمفاهيم قابلة للنقل بين ChatGPT وGemini وClaude وGemini Notebook.
 
-## Workshops
+## الورش
 
-| Workshop | Audience | Length | Start here |
+| الورشة | الجمهور | المدة | ابدأ من هنا |
 |---|---|---|---|
-| **Building Your Own AI Assistant** | KSU faculty | Half-day (≈4 hrs) | [Run of show →](ksu-workshop/index.html) |
-| **Building Your Own AI Assistant** | Office professionals | Short session (≈2.5 hrs) | [Run of show →](office-workshop/index.html) |
-| **بناء مساعدك الذكي الخاص** | موظفو المكاتب (بالعربية · RTL) | جلسة قصيرة (≈2.5 ساعة) | [ترتيب سير اليوم →](office-workshop-ar/index.html) |
+| **بناء مساعدك الذكي الخاص** | موظفو المكاتب | ≈ساعتان ونصف | [ترتيب سير اليوم →](office.html) |
+| **بناء مساعدك الذكي الخاص** | أعضاء هيئة التدريس | ≈ساعتان ونصف | [ترتيب سير اليوم →](ksu.html) |
+| **بناء مساعدك الذكي الخاص** | موظفو الجهات الحكومية | ٥ أيام، حضوريًا | [ترتيب سير الأسبوع →](gov5.html) |
+| **رفع الإنتاجية والابتكار الأكاديمي** | أعضاء هيئة التدريس | ٥ أيام، حضوريًا | [ترتيب سير الأسبوع →](edu5.html) |
+
+مكتبة العروض واحدة، وكل ورشة تختار منها ما يناسبها وترتّبه كما يناسبها. ما يتغيّر بين ورشة
+وأخرى شيئان فقط: **صفحة الورشة**، و**عرض المقدمة** الذي يفتح بها.
+
+## عروض المقدمة
+
+لكل ورشة عرض مقدمة واحد تفتح به. لا يشرح مفهومًا، بل يضع قوس اليوم أو الأسبوع.
+
+| العرض | الورشة |
+|---|---|
+| [نظرة عامة](slides/overview.html) | المكاتب، وهيئة التدريس (ساعتان ونصف) |
+| [الافتتاح](slides/intro_gov5.html) | الجهات الحكومية (خمسة أيام) |
+| [مقدمة البرنامج](slides/intro_edu5.html) | هيئة التدريس (خمسة أيام) |
+
+## مكتبة العروض
+
+| العرض | الموضوع |
+|---|---|
+| [كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة](slides/how_ai_works_and_rice.html) | الطبقتان، والسياق، والمشروع، وRICE |
+| [تطبيق: فوِّض مهمة حقيقية](slides/practice_foundations.html) | أمر RICE كامل على مهمة حقيقية |
+| [مختبر صياغة الأوامر](slides/prompting_lab.html) | ما بعد RICE، تدريبًا لا تسمية |
+| [اختيار الأداة](slides/choosing_your_tool.html) | معايير الاختيار، والهلوسة العلمية |
+| [ما بعد صندوق المحادثة](slides/beyond_the_chat_box.html) | الذاكرة، والمشروع، والموصِّلات |
+| [من الأهداف إلى المادة](slides/from_objectives_to_materials.html) | البنية أولًا، والإخراج ثانيًا |
+| [تصميم التعلّم النشط](slides/active_learning_design.html) | أنشطة، ولعب أدوار، وحالات |
+| [الصوت والوسائط في التدريس](slides/teaching_media.html) | متى يكسب الصوت، وقاعدة الاستنساخ |
+| [المساعد التدريسي](slides/course_ta_project.html) | مشروع مستند، وسُلّم التفويض |
+| [السياق والرموز](slides/context_and_tokens.html) | اختر، وجزّئ، واستند |
+| [المبادئ الوطنية لأخلاقيات الذكاء الاصطناعي](slides/sdaia_ethics_principles.html) | المبادئ السبعة، ومستويات المخاطر |
+| [النزاهة والتقييم](slides/academic_integrity_assessment.html) | الأثر × قابلية الرجوع |
+| [نظام حماية البيانات الشخصية](slides/personal_data_law.html) | قراءة تعليمية في النظام |
+| [الطلبة والذكاء الاصطناعي](slides/students_and_ai.html) | ما تقوله لهم، وسجلّ الاستخدام |
+| [من المحادثة إلى وضع العمل](slides/cowork_intro.html) | مجلد العمل، ونطاق التأثير |
+| [ابنِها مرة واحدة](slides/skills_scripts_templates.html) | المهارة، والسكربت، والقالب |
+| [مختبر بناء المهارة](slides/build_a_skill_lab.html) | مهارة كاملة، بيد المشارك |
+| [إلى أي مدى يصل هذا](slides/how_far_this_goes.html) | الجدولة والموصِّلات |
+| [الاستناد إلى المصادر والإنشاء](slides/notebooklm_grounding_and_slides.html) | مصادرك، والاستشهادات، والملخّص الصوتي |
+| [ما تعطيه وما تصدّقه](slides/data_and_trust.html) | تصنيف البيانات، والتحقّق من المخرجات |
+| [أين تذهب بياناتك](slides/where_your_data_goes.html) | السحابة العامة، وسحابة الجهة، والجهاز |
+| [مختبر النموذج المحلي](slides/local_models_lab.html) | Ollama، والشبكة مفصولة |
+| [مختبر Hermes](slides/hermes_desktop_lab.html) | واجهة وكيل تعمل على نموذج محلي |
+| [البرمجة بالوصف: على الويب](slides/vibe_coding_web.html) | أداة تعمل، بلا تثبيت |
+| [البرمجة بالوصف: على جهازك](slides/vibe_coding_local.html) | سكربت حقيقي على ملفاتك |
+| [ماذا تؤتمت](slides/what_to_automate.html) | قاعدة الاختيار، والخانات الست |
+| [مشروع الختام](slides/capstone_brief.html) | التكليف ومعيار القبول |
+| [خطة التبنّي](slides/team_adoption_plan.html) | من الفرد إلى القسم |
+| [وصفتك](slides/recipe.html) | الوصفة في صفحة واحدة |
+| [مساعدك الذكي](slides/wrap_up.html) | الختام وما التالي |

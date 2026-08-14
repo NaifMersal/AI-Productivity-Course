@@ -1,0 +1,260 @@
+---
+title: "مختبر Hermes"
+subtitle: "المفاهيم نفسها، بواجهة أخرى ومن جهة أخرى"
+date: today
+lang: ar
+dir: rtl
+format:
+  revealjs:
+    rtl: true
+---
+
+# الجلسة ٣: على جهازك {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+مجلد العمل والمهارات والجدولة، تقودها بيدك في منتج آخر. المفاهيم هي المنتج، لا الأداة.
+
+## ويندوز مدعوم أصلًا {auto-animate=true}
+
+::: {.card .accent-teal data-id="platform"}
+ويندوز 10 و11 في المستوى الأول من الدعم، وتشغيلًا أصليًا. ولا يُشترط WSL2.
+:::
+
+. . .
+
+::: {.center .muted style="margin-top: 0.5em;"}
+تدور شائعة بعكس ذلك على المدوّنات. صفحة دعم المنصّات الرسمية تنفيها.
+:::
+
+<!-- §1.1: Windows 10/11 هو Tier 1 وأصلي؛ WSL2 مُدخَل منفصل، لا شرط. المعماريات x86_64 و aarch64. -->
+
+## بطاقة المختبر: التثبيت {auto-animate=true}
+
+::: {.card .accent-teal .tight data-id="install"}
+مثبِّت Hermes Desktop، أو سطر واحد في PowerShell.
+:::
+
+```{.powershell code-line-numbers="false"}
+iex (irm https://hermes-agent.nousresearch.com/install.ps1)
+```
+
+::: {.center .muted style="margin-top: 0.4em;"}
+المثبِّت يجلب Python 3.11 وNode.js v22 وripgrep وffmpeg. وGit وحده يجب أن يكون متوفّرًا.
+:::
+
+<!-- §1.2 أمر التثبيت · §1.3 ما يجلبه المثبِّت وشرط Git · §3.1 واجهة سطح المكتب -->
+
+<!-- OPEN: pack §1.6 — التوثيق لا يذكر اشتراط صلاحية المسؤول. هذا السؤال يقرّر إن كان
+     اليوم الثالث عمليًا على أجهزتهم. يُحسم مع تقنية المعلومات قبل أسبوعين.
+     نُقِل إلى قائمة ما قبل التقديم في outline-gov5.md — ليس محتوى للمشارك. -->
+<!-- OPEN: pack §1.5 — «بعض الميزات غير متاحة» على ويندوز، ومصفوفة الميزات لم تُنقَل إلى
+     حزمة المصادر. تُحسم قبل تحديد ما يعرضه هذا المختبر.
+     نُقِل إلى قائمة ما قبل التقديم في outline-gov5.md — ليس محتوى للمشارك. -->
+
+## بطاقة المختبر: أول تشغيل {auto-animate=true}
+
+::: {.card .accent-teal .tight data-id="firstrun"}
+اختر النموذج تفاعليًا، ثم افتح محادثة، ثم انتقل إلى الواجهة الرسومية.
+:::
+
+```{.bash code-line-numbers="false"}
+hermes model
+hermes --tui
+hermes desktop
+```
+
+<!-- §2.1 hermes model · §2.3 hermes و hermes --tui · §3.1 hermes desktop -->
+
+## قاعدة المختبر {auto-animate=true}
+
+::: {.card-dark .center data-id="labrule"}
+«إن لم يستطع Hermes إتمام محادثة عادية، فلا تضِف مزيدًا من الميزات بعد. اجعل محادثة واحدة
+نظيفة تعمل أولًا.»
+:::
+
+::: {.center .muted style="margin-top: 0.5em;"}
+من توثيق المنتج نفسه. طبّقها حرفيًا اليوم.
+:::
+
+<!-- §2.6 نصّ التوثيق: "if Hermes cannot complete a normal chat, do not add more features
+     yet. Get one clean conversation working first" — منقول إلى العربية كما هو. -->
+
+# ثلاثة تعرفها {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+بواجهة أخرى
+
+## افتح الواجهة وابحث عنها {auto-animate=true}
+
+:::: {.columns}
+::: {.column width="33%"}
+::: {.card .accent-teal .center}
+**متصفّح الملفات**
+
+مجلد العمل
+:::
+:::
+::: {.column width="33%"}
+::: {.card .accent-purple .center}
+**مدير المهارات**
+
+المهارات
+:::
+:::
+::: {.column width="33%"}
+::: {.card .accent-orange .center}
+**مجدوِل cron**
+
+الجدولة
+:::
+:::
+::::
+
+::: {.incremental}
+- وسحب الملفات وإفلاتها في المحادثة
+- وطرفية بألسنة، وتكامل مع git
+- وإعدادات بواجهة بدل تحرير YAML
+:::
+
+<!-- §3.2 مزايا الواجهة: متصفّح ملفات فوق مجلدات العمل، إدارة مهارات، مجدوِل cron، وبقية المزايا -->
+
+## أين تعيش المهارات {auto-animate=true}
+
+::: {.card .accent-teal data-id="skillpath"}
+كل المهارات في `~/.hermes/skills/`. ولكل مهارة مجلد فيه `SKILL.md`، ومعه `references/`
+و`templates/` و`scripts/`. وكل مهارة مثبَّتة تصير أمرًا مائلًا.
+:::
+
+::: {.card .accent-orange data-id="selfskill"}
+وهو يكتب مهاراته بنفسه: بعد مهمة معقّدة نجحت، يحفظ الخطوات مهارةً من تلقائه.
+:::
+
+<!-- §4.2 المسار وبنية المجلد · §4.3 الأوامر المائلة والتكديس · §4.4 إنشاء المهارات ذاتيًا
+     عبر skill_manage بعد 5+ استدعاءات ناجحة. §4.1 (progressive disclosure) حُذِف من هنا:
+     المهارة كوثيقة تُفتَح عند الحاجة تُدرَّس في skills_scripts_templates يوم الاثنين. -->
+
+# نطاق التأثير، كإعداد {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+اختبار التراجع، مكتوبًا في الإعدادات
+
+## مَن يوافق على الأوامر {auto-animate=true}
+
+::: {.card .accent-navy data-id="approval"}
+الوضع الافتراضي `smart`: نموذج مساعد يقدّر خطر كل أمر، ويوافق تلقائيًا على المنخفض منه
+لمرة واحدة.
+:::
+
+::: {.incremental}
+- `manual` يسألك في كل مرة
+- لا ردّ خلال ٣٠٠ ثانية يعني الرفض
+- وقائمة حظر صارمة لا تُعطَّل بإعداد
+:::
+
+<!-- §5.1 أوضاع الموافقة · §5.2 مهلة 300 ثانية والرفض التلقائي · §5.4 القائمة الصارمة -->
+
+## احصر الكتابة في مجلد واحد {auto-animate=true}
+
+::: {.card .accent-teal data-id="saferoot"}
+اضبط `HERMES_WRITE_SAFE_ROOT` على مجلد الورشة قبل أن تبدأ. عندها لا تصل الكتابة إلى شيء
+خارجه.
+:::
+
+. . .
+
+::: {.center .muted style="margin-top: 0.5em;"}
+ومسارات كـ`~/.ssh/` و`~/.aws/` و`/etc/` محميّة دائمًا، بإعداد أو بغيره.
+:::
+
+<!-- §5.5 المسارات المحميّة دائمًا ومتغيّر HERMES_WRITE_SAFE_ROOT -->
+
+## ابنِ الآن: شغّل مهمة أمس هنا {auto-animate=true}
+
+::: {.fill-teal .center}
+وجِّه Hermes إلى مجلد الورشة. المزوّد سحابي، فطبّق **اختبار الجريدة** كالمعتاد.
+:::
+
+::: {.card-dark .center style="margin-top: 0.6em;"}
+«راجِع `sample_report.md` مقابل `review_checklist.md`، واكتب مذكّرة موجزة: نقطتا قوة،
+واقتراحان للتحسين، وخطوة تالية واحدة.»
+:::
+
+::: {.center .muted}
+الملفان: [`sample_report.md`](../data/sample_report.md) · [`review_checklist.md`](../data/review_checklist.md)
+:::
+
+# الجلسة ٤: عرض المدرِّب {.sdaia-dark background-gradient="linear-gradient(135deg, #9B8EC0, #1C355E)"}
+
+وكيل يعمل بالكامل على جهازك. أغلِق جهازك وشاهِد: العرض على جهاز ببطاقة رسومات كبيرة.
+
+## لماذا لا تعمل على جهاز المكتب {auto-animate=true}
+
+::: {.card .accent-navy data-id="hw"}
+Hermes يشترط نافذة سياق لا تقلّ عن ٦٤ ألف رمز للعمل بالأدوات. والتوثيق يسمّيه شرطًا.
+:::
+
+::: {.incremental}
+- `gemma4`: نحو ١٦ جيجابايت من ذاكرة الرسومات
+- `qwen3.6`: نحو ٢٤ جيجابايت
+- الجلستان ٢ و٣ ممكنتان. وجمعهما يحتاج عتادًا
+:::
+
+<!-- §6.1 شرط 64,000 رمز · §6.6 نماذج Ollama الموصى بها لـHermes وذاكرتها · §6.9 النتيجة -->
+
+## الفخّ: نافذة السياق الافتراضية {auto-animate=true}
+
+::: {.card .accent-orange data-id="ctx"}
+Ollama يبدأ بنافذة قد تنزل إلى ٤٠٩٦ رمزًا. ارفعها صراحةً قبل أن توصله بـHermes.
+:::
+
+. . .
+
+::: {.center .muted style="margin-top: 0.5em;"}
+وتأكّد من عمود CONTEXT في `ollama ps`. البديل: `PARAMETER num_ctx 64000` في Modelfile.
+:::
+
+<!-- §6.2 الافتراضي 4096، ورفعه، والتحقق عبر ollama ps وعمود CONTEXT، وبديل Modelfile -->
+
+## العرض: Hermes يعمل على Ollama {auto-animate=true}
+
+::: {.card .accent-teal .tight data-id="launch"}
+`ollama launch hermes` هو أقصر طريق: يثبّت Hermes، ويترك لك اختيار النموذج، ويهيّئ المزوّد
+المحلي على `http://127.0.0.1:11434/v1`.
+:::
+
+```{.powershell code-line-numbers="false"}
+$env:OLLAMA_CONTEXT_LENGTH = 64000
+ollama serve
+ollama launch hermes
+ollama ps
+```
+
+::: {.center .muted style="margin-top: 0.4em;"}
+على macOS أو لينكس: `OLLAMA_CONTEXT_LENGTH=64000 ollama serve`
+:::
+
+<!-- §6.5 ollama launch hermes وما يفعله · §6.2 متغيّر السياق و ollama ps · §6.3 المنفذ -->
+<!-- §6.2 يعطي صيغة POSIX فقط (بادئة المتغيّر قبل الأمر)، وهي لا تعمل في PowerShell.
+     صيغة $env: أعلاه صيغة PowerShell قياسية، لا ادّعاء عن المنتج. شغّل السطرين معًا على
+     جهاز العرض قبل التقديم، وسجّل النتيجة في الحزمة (§6.10). -->
+
+## المقارنة الصادقة {auto-animate=true}
+
+| | مزوّد سحابي | محلي بالكامل |
+|---|---|---|
+| السرعة | أسرع | أبطأ |
+| العربية | أقوى | أضعف |
+| التكلفة | اشتراك متكرّر | مجاني بعد العتاد |
+| الخصوصية | نصّك عند المزوّد | لا شيء يغادر |
+| العتاد | أي جهاز مكتبي | بطاقة رسومات كبيرة |
+
+::: {.center .muted style="margin-top: 0.4em;"}
+هذه ملاحظات تشغيل من القاعة. قِس السرعة وجودة العربية على مستنداتك أنت.
+:::
+
+<!-- OPEN: pack §7.2 — جودة العربية لم تُقَس على نماذجنا ولا على مستنداتنا. صفّا «السرعة»
+     و«العربية» ملاحظتان تشغيليتان، لا قياس منشور. قِسهما وسجّلهما في الحزمة. -->
+
+## حدود ما عُرِض {auto-animate=true}
+
+::: {.card .accent-navy data-id="limits"}
+أسماء الأدوات هنا أمثلة للتوضيح، لا توصية ولا اعتماد. والقدرات والواجهات والأسعار تتغيّر.
+والمرجع في الاستخدام الفعلي سياسة جهتك، وتصنيف بياناتها، وبيئتها التقنية المعتمدة.
+:::

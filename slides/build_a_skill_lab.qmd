@@ -1,0 +1,70 @@
+---
+title: "مختبر بناء المهارة"
+subtitle: "ساعة، ومهارة واحدة تعمل"
+date: today
+lang: ar
+dir: rtl
+format:
+  revealjs:
+    rtl: true
+---
+
+# على قالب إدارتك {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+مهمتك أنت، وقالبك أنت
+
+## اختر مهمتك {auto-animate=true}
+
+::: {.card .accent-purple data-id="pick"}
+مهمة تكرّرها بالخطوات نفسها، ولها مخرَج ثابت: مراجعة تقرير، أو ملخّص أسبوعي.
+:::
+
+::: {.center .muted}
+وإن لم تحضرك مهمة، فملفان جاهزان: [`sample_report.md`](../data/sample_report.md) و[`sample_report_2.md`](../data/sample_report_2.md).
+:::
+
+## اربطها بقالبك {auto-animate=true}
+
+::: {.card .accent-orange data-id="tmpl"}
+افتح قالب إدارتك الحقيقي، بوربوينت أو جدولًا، واطلب من المهارة أن تملأه بدل أن تكتب نصًّا
+حرًّا.
+:::
+
+::: {.center .muted}
+هنا تصير المهارة صالحة للاستخدام يوم الاثنين.
+:::
+
+# ثم أحكِمها {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+خطوتان بعد أول حفظ
+
+## جرّبها على مُدخَل آخر {auto-animate=true}
+
+::: {.fill-teal .center}
+شغّلها على مُدخَل ثانٍ من النوع نفسه. هل صمدت؟
+:::
+
+::: {.incremental}
+- هل أشارت إلى الملف الأول بالخطأ؟
+- هل بقي شكل المخرَج ثابتًا؟
+- ما البند الذي أهملته؟
+:::
+
+## صحّح، ثم احفظ من جديد {auto-animate=true}
+
+::: {.card .accent-teal data-id="resave"}
+صحّح ما اعوجّ بجملة واحدة، ثم اطلب حفظ المهارة من جديد. النسخة الثانية هي التي ستستعملها
+فعلًا.
+:::
+
+::: {.center .muted}
+بالاسم نفسه، لا باسم جديد. وإلا صار عندك مهارتان متشابهتان.
+:::
+
+## ثلاثة أعطال شائعة {auto-animate=true}
+
+::: {.incremental}
+- محفوظة على ملف بعينه، فتنكسر
+- بلا مثال للمخرَج، فيتغيّر شكلها
+- اسمها غامض، فلا تُستدعى
+:::
