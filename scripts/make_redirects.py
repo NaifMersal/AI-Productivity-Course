@@ -6,10 +6,10 @@ Before the restructure the site published one folder per workshop:
     office-workshop-ar/index.html          ksu-workshop/index.html
     office-workshop-ar/slides/<deck>.html  ksu-workshop/slides/<deck>.html
 
-Now there is one shared concept library, one lab library, and one page per
+Now there is one shared concept library, one exercise library, and one page per
 workshop:
 
-    office.html  ksu.html  gov5.html  edu5.html  slides/<deck>.html  labs/<deck>.html
+    office.html  ksu.html  gov5.html  edu5.html  slides/<deck>.html  exercises/<deck>.html
 
 GitHub Pages has no server-side redirects, so this script writes a small
 meta-refresh stub at each old path. Every old URL of a workshop, its index and
@@ -61,8 +61,8 @@ LEGACY_DECKS = (
 # workshop page, which links the whole library. Keep the legacy slug on the
 # left even after a rename, because that is the URL on the printed QR codes.
 CURRENT_PATH = {
-    # concept/lab split: the RICE practice block became a lab
-    "practice_foundations.html": "labs/rice_practice.html",
+    # concept/exercise split: the RICE practice block became an exercise
+    "practice_foundations.html": "exercises/rice_practice.html",
 }
 
 STUB = """<!DOCTYPE html>

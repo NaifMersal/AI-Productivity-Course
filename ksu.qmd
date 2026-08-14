@@ -30,10 +30,10 @@ format:
 |---|---|---|---|---|
 | ١ | ترحيب + جدول الأعمال | [نظرة عامة](slides/overview.html) | — | ٥ |
 | ٢ | كيف يعمل الذكاء الاصطناعي + أوامر RICE | [كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة](slides/how_ai_works_and_rice.html) | — | ٣٠ |
-| ٣ | تطبيق + استراحة | — | [فوِّض مهمة حقيقية](labs/rice_practice.html) | ١٥ + ١٠ |
-| ٤ | أن تسأل أم أن تُسلِّم + مجلد العمل | [من المحادثة إلى وضع العمل](slides/cowork_intro.html) | [أول تسليم](labs/handover.html) | ٢٠ |
-| ٥ | المهارات والسكربتات والقوالب | [ابنِها مرة واحدة](slides/skills_scripts_templates.html) | [شغِّل مهارة واحفظها](labs/run_a_skill.html) | ٢٠ |
-| ٦ | الجدولة والموصِّلات | [إلى أي مدى يصل هذا](slides/how_far_this_goes.html) | [جدوِل مهارتك](labs/schedule_it.html) | ١٥ |
+| ٣ | تطبيق + استراحة | — | [فوِّض مهمة حقيقية](exercises/rice_practice.html) | ١٥ + ١٠ |
+| ٤ | أن تسأل أم أن تُسلِّم + مجلد العمل | [من المحادثة إلى وضع العمل](slides/cowork_intro.html) | [أول تسليم](exercises/handover.html) | ٢٠ |
+| ٥ | المهارات والسكربتات والقوالب | [ابنِها مرة واحدة](slides/skills_scripts_templates.html) | [شغِّل مهارة واحفظها](exercises/run_a_skill.html) | ٢٠ |
+| ٦ | الجدولة والموصِّلات | [إلى أي مدى يصل هذا](slides/how_far_this_goes.html) | [جدوِل مهارتك](exercises/schedule_it.html) | ١٥ |
 | ٧ | الوصفة التي تأخذها معك | [وصفتك](slides/recipe.html) | — | ١٠ |
 | ٨ | الختام + ما التالي | [مساعدك الذكي](slides/wrap_up.html) | — | ١٠ |
 
@@ -51,7 +51,7 @@ _الجوهر ≈ ١٣٥ دقيقة، بما في ذلك استراحة ١٠ د�
 
 | المحطة | العرض | المختبر | دقائق |
 |---|---|---|---|
-| الاستناد + العروض | [الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook](slides/notebooklm_grounding_and_slides.html) | [من المصدر إلى العرض](labs/grounding.html) | +٤٠ |
+| الاستناد + العروض | [الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook](slides/notebooklm_grounding_and_slides.html) | [من المصدر إلى العرض](exercises/grounding.html) | +٤٠ |
 
 ## حلقة التسليم
 
