@@ -58,7 +58,7 @@
 | الجلسة | العرض |
 |---|---|
 | ١ | `intro_edu5` + `how_ai_works_and_rice` |
-| ٢ | `practice_foundations` + `prompting_lab` |
+| ٢ | `labs/rice_practice` + `labs/prompting` |
 | ٣ | `choosing_your_tool` + `beyond_the_chat_box` |
 
 الجلسة ٢ تأخذ RICE إلى تدريب حقيقي: يكتب المشارك أمرًا، يشغّله، يجد **العنصر الأضعف**
@@ -104,7 +104,7 @@
 | الجلسة | العرض |
 |---|---|
 | ١ | `cowork_intro` |
-| ٢ | `what_to_automate` + `vibe_coding_web` |
+| ٢ | `what_to_automate` + `labs/vibe_coding_web` |
 | ٣ | `course_ta_project` + `context_and_tokens` |
 
 **اختبار التراجع يُشرَح كاملًا في الجلسة ١**، قبل أن ينفّذ أي وكيل شيئًا. هذا مقصود: يضع
@@ -171,7 +171,7 @@
 | الجلسة | العرض |
 |---|---|
 | ١ | `students_and_ai` |
-| ٢ | `capstone_brief` + إحكام |
+| ٢ | `labs/capstone` + إحكام |
 | ٣ | العروض |
 | إغلاق | `team_adoption_plan` + `recipe` + `wrap_up` |
 

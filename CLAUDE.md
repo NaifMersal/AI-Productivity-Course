@@ -4,32 +4,40 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Layout
 
-This repo holds **one shared library of Arabic (RTL) slide decks** plus **one small page per
-workshop**. There is no build step and no template/generated split: every `.qmd` you open is
-the real thing, and you edit it directly.
+This repo holds **one shared library of Arabic (RTL) concept decks**, **one library of lab
+decks**, and **one small page per workshop**. There is no build step and no
+template/generated split: every `.qmd` you open is the real thing, and you edit it directly.
 
 ```
-slides/          the deck library. FLAT. every deck, shared by every workshop.
-data/            sample files for the follow-alongs. root is neutral and shared.
+slides/          the CONCEPT library. FLAT. explains an idea, shows a worked example.
+labs/            the LAB library. FLAT. the exercises. this is where workshops differ.
+data/            sample files for the labs. root is neutral and shared.
 data/gov/        the government track's sample files.
 data/edu/        the academic track's sample files.
-handouts/        printable participant material for the in-person tracks.
-assets/          instructor extras (the .skill bundle, screenshots). not rendered.
+assets/          instructor extras (the .skill bundle, deck screenshots). not a deck source.
 office.qmd       a workshop: title, duration, station table.  guide: outline.md
 ksu.qmd          a workshop: same.                            guide: outline.md
 gov5.qmd         five days, in person, government employees.  guide: outline-gov5.md
 edu5.qmd         five days, in person, faculty.               guide: outline-edu5.md
-index.qmd        the portal linking every workshop and every deck.
+index.qmd        the portal linking every workshop, every concept deck, every lab.
 slides_template/ SDAIA brand assets, applied globally by _quarto.yml.
-notes/           planning notes and the Arabic voice style guide.
-notes/grounding/ fetched source packs behind every tool claim that reaches a slide.
-notes/reference/ vendored reference material. sdaia-dictionary.md is grep-only, never read whole.
 scripts/         helper scripts. make_redirects.py keeps pre-restructure URLs alive.
+notes/           GITIGNORED. the author's private working material; see below.
 ```
 
-There are no per-audience deck subfolders. A subfolder is a licence to duplicate: the same
-idea ends up taught twice under two flavours with neither copy maintained. `slides/` was
-split once, into `slides/gov/`, and it produced exactly that. It stays flat.
+**Both libraries are flat.** There are no per-audience subfolders inside either one. A
+subfolder is a licence to duplicate: the same idea ends up taught twice under two flavours
+with neither copy maintained. `slides/` was split once, into `slides/gov/`, and it produced
+exactly that. The concept/lab split is not an audience split — it is the opposite. It exists
+so that a per-audience *exercise* never requires a per-audience *concept deck*.
+
+**`notes/` is gitignored and local to the author's machine.** It holds the planning notes,
+`arabic-voice-style-guide.md` (the Arabic wording contract), `grounding/` (the fetched source
+packs behind every tool claim that reaches a slide) and `reference/sdaia-dictionary.md`
+(grep-only, 7,600 lines, never read whole). All four are still authoritative when present, and
+this file references them throughout — but they will **not** exist in a fresh clone. If
+`notes/` is missing, say so rather than inventing what it would have said, and do not write a
+sourced-sounding claim onto a slide without the pack in front of you.
 
 **Old URLs are kept alive at render time.** The site used to publish one folder per
 workshop (`office-workshop-ar/…`, `ksu-workshop/…`). `scripts/make_redirects.py` runs as a
@@ -37,48 +45,74 @@ Quarto `post-render` step and writes a meta-refresh stub at each old page path, 
 the new page. Nothing from the old tree is republished. The deck list in that script is
 **pinned, not globbed** (`LEGACY_DECKS`): only the nine slugs that genuinely published under
 the old tree get stubs, because a glob over today's flat library would mint stubs at URLs
-that never existed. Renaming one of those nine kills its old URL, and the script warns you at
-render time. Don't delete the `post-render` line in `_quarto.yml`, and don't add a slug to
-`LEGACY_DECKS` that never shipped under the old tree. Old QR codes point at those paths.
+that never existed. Every stub points at the *workshop page*, not at a deck, so a deck that
+merely moves does not break a stub — but the script also checks each pinned slug still renders
+somewhere, and that check reads `CURRENT_PATH`. When you move or rename a pinned deck, add its
+legacy slug there (`practice_foundations.html` → `labs/rice_practice.html` is the worked
+example) and keep the legacy slug on the left, because that is the URL on the printed QR
+codes. Don't delete the `post-render` line in `_quarto.yml`, and don't add a slug to
+`LEGACY_DECKS` that never shipped under the old tree.
 
 **A workshop is an index page.** `office.qmd`, `ksu.qmd`, `gov5.qmd` and `edu5.qmd` differ
-only in title, subtitle, duration, audience framing, and which decks they list, in what order,
-for how long. To add a workshop: copy a workshop page, write its intro deck, change the day
-tables, add a portal row to `index.qmd`.
+only in title, subtitle, duration, audience framing, and which decks and labs they list, in
+what order, for how long. Each day table has an **العرض** column and a **المختبر** column, so
+the concept and the exercise that follows it sit on one row. To add a workshop: copy a
+workshop page, write its intro deck, pick or write its labs, change the day tables, add a
+portal row to `index.qmd`.
 
 **Each workshop owns exactly one intro deck**, named `intro_<workshop>.qmd`. It carries the
 day or week arc, the room rules and the promised outcome, and it **names** the two safety
 rules. It teaches no concept. Grandfathered exception: `overview.qmd` is the short track's
 intro and keeps its filename, because `make_redirects.py` protects `overview.html`.
 
-## One flat library, neutral by default
+## Concepts are neutral. Labs are where workshops differ.
 
-**What varies between workshops is exactly two things:** the workshop page, and the intro
-deck it opens with. Everything else in `slides/` is written so an office employee, a
-government employee and a faculty member all recognize the example: meeting notes → recap
-email, a departmental event with a plan and a decisions log and a task list, a report reviewed
-against a checklist, an expense sheet summarized by category. Do **not** reintroduce
-audience-specific flavour (sales, CRM, campaigns, leads, grading, syllabi, classification
-tiers) into a neutral deck. If an example only lands for one audience, it belongs in a
-workshop page, an intro deck, or a registered deck below.
+**What varies between workshops is three things:** the workshop page, the intro deck it opens
+with, and **the labs it runs**. That third one is the load-bearing rule, and it is why `labs/`
+exists. Before the split, an exercise lived at the bottom of the concept deck that taught it —
+so giving a government employee a different drill than a faculty member meant flavouring the
+whole concept deck, and the register below grew to thirteen rows. Now the concept deck ends on
+its knowledge check, and the exercise is its own file.
+
+**A concept deck teaches the idea and shows it working.** It keeps its instructor demo («عرض
+حيّ», «شاهِده يعمل») and its closing knowledge check («اختبار المعرفة», «تحقّق سريع») — those
+are the worked example, which is the point of a concept deck. What it does not keep is the
+«طبِّقها الآن» / «التمرين» block where the room does the work.
+
+Concept decks stay written so an office employee, a government employee and a faculty member
+all recognize the example: meeting notes → recap email, a departmental event with a plan and a
+decisions log and a task list, a report reviewed against a checklist, an expense sheet
+summarized by category. Do **not** reintroduce audience-specific flavour (sales, CRM,
+campaigns, leads, grading, syllabi, classification tiers) into a neutral concept deck. If an
+example only lands for one audience, it belongs in a lab, a workshop page, an intro deck, or a
+registered deck below.
 
 **Concepts are single-sourced by construction.** Every workshop renders the same `slides/`, so
 editing a concept once updates every workshop. There is no parity rule to maintain.
 
+### Writing a lab
+
+- One file per exercise: `labs/<topic>.qmd` when every track runs the same drill,
+  `labs/<topic>_<track>.qmd` when a track needs its own. Both can exist side by side; the
+  workshop page picks which one it lists.
+- **Labs are allowed to be flavoured.** That is what they are for, and they need no register
+  entry. A lab may name `data/gov/` or `data/edu/` freely.
+- **A concept deck never links a specific lab.** A shared deck that names
+  `labs/handover_gov5.html` has just become flavoured again. The workshop page is what pairs
+  them, in the **المختبر** column of its day table.
+- Quoted prompts stay **verbatim**: they are reference artifacts, exempt from the density
+  rules, and the learner copies them character for character.
+- Not every lab is a deck. `labs/capstone_worksheet.qmd`, `labs/adoption_plan.qmd` and
+  `labs/gov5_worksheet.qmd` are `format: html` printables, because a fill-in sheet is not
+  something you project.
+
 ### The flavour register
 
-A non-intro deck may carry audience flavour **only if it is listed here**, with a front-matter
-comment naming the track it is exclusive to. An unregistered deck that drifts flavoured is a
-defect. This register is the only guard the flat library has: read it before editing a shared
-deck, and re-read it before each delivery.
+A **concept deck** may carry audience flavour only if it is listed here. An unregistered
+concept deck that drifts flavoured is a defect. Labs are exempt: flavour is their job.
 
-| Deck | Exclusive to | Why the flavour is load-bearing |
+| Concept deck | Exclusive to | Why the flavour is load-bearing |
 |---|---|---|
-| `local_models_lab.qmd` | gov5 | The offline drill only lands on a genuinely restricted document. |
-| `hermes_desktop_lab.qmd` | gov5 | Same: an agent on a disconnected machine is a government premise. |
-| `team_adoption_plan.qmd` | gov5, edu5 | The department is the unit of adoption; the neutral version is empty. |
-| `data_and_trust.qmd` | gov5 | Its payoff slide promises the restricted file returns on the local-AI day. Only gov5 has one. |
-| `where_your_data_goes.qmd` | gov5 | Same: its residency ladder ends at «الجلسة القادمة», which is `local_models_lab`. |
 | `from_objectives_to_materials.qmd` | edu5 | Learning outcomes are the subject, not decoration. |
 | `active_learning_design.qmd` | edu5 | Class activities and role-play only exist for a teacher. |
 | `teaching_media.qmd` | edu5 | «متى يستحقّ الصوت مكانه في مقرّر» is the whole question. |
@@ -88,25 +122,34 @@ deck, and re-read it before each delivery.
 | `choosing_your_tool.qmd` | edu5 | Registered for one reason: the hallucination specimen is a fabricated **academic citation**. The criteria half is neutral and this deck is the best candidate to split and de-flavour. |
 | `beyond_the_chat_box.qmd` | edu5 | Only its Project example (syllabus, lectures, rubric) is flavoured. Cheap to neutralise when a second track wants it. |
 
+Six of these eight are edu5 decks whose *subject* is teaching; that flavour is not going
+anywhere. The last two are marked as de-flavouring candidates precisely so the register does
+not become a place where flavour goes to be forgiven.
+
 `context_and_tokens.qmd` and `personal_data_law.qmd` are deliberately **not** registered: both
 are written neutral and both are wanted by gov5. Keep them that way. PDPL in particular is a
 national law, not audience flavour, and every article it quotes is grounded in
 `notes/grounding/pdpl.md`.
 
-**A registered deck's flavour is rarely just vocabulary. It is usually a promise about the
-week.** `data_and_trust` and `where_your_data_goes` read audience-neutral sentence by sentence,
-and were caught only because each ends by promising a session that exists in one track. When
-checking a deck against this register, read its **last** slide first: that is where a deck
-tells you which workshop it thinks it is in.
+**Left the register in the split, and why.** `local_models_lab`, `hermes_desktop_lab`,
+`build_a_skill_lab` and `capstone_brief` left because they are now labs. `team_adoption_plan`
+left because its fill-in half became `labs/adoption_plan.qmd`; what remains is neutral.
+`data_and_trust` and `where_your_data_goes` left because their gov5-only promise was deleted:
+`where_your_data_goes` carried «الجلسة القادمة» twice — a `.pill` on the residency ladder's
+last rung and a closing clause on its knowledge check — and the week's arc belongs to
+`gov5.qmd` / `intro_gov5.qmd`, not to a shared deck.
 
-Eleven registered decks against nine neutral ones is a lot, and it is the honest state rather
-than a target. The last two rows are marked as de-flavouring candidates precisely so the
-register does not become a place where flavour goes to be forgiven.
+**A deck's flavour is rarely just vocabulary. It is usually a promise about the week.** When
+checking a deck against this register, read its **last** slide first: that is where a deck
+tells you which workshop it thinks it is in. Known outstanding case:
+`sdaia_ethics_principles.qmd` promises «الجلسة القادمة» twice. It is unregistered and only
+edu5 lists it, so the promise is accurate today — but a second track wanting the deck has to
+cut those two clauses first.
 
 **`data/` mirrors this.** The root is neutral and shared. `data/gov/` and `data/edu/` carry
-flavour, and may only be named by a workshop page or a registered deck. A neutral deck never
-hard-links a track folder: it says «الملف الذي وزّعه المدرِّب» and lets the workshop page name
-the file.
+flavour, and may be named by a lab, a workshop page, or a registered concept deck. A neutral
+concept deck never hard-links a track folder: it says «الملف الذي وزّعه المدرِّب» and lets the
+workshop page name the file.
 
 ## In-person tracks (gov5, edu5)
 
@@ -170,7 +213,7 @@ Run Quarto from the repo root; it finds `_quarto.yml` there and mirrors the sour
 gitignored.
 
 - Render everything: `quarto render`
-- Render one deck: `quarto render slides/<deck>.qmd`
+- Render one deck: `quarto render slides/<deck>.qmd` (or `labs/<deck>.qmd`)
 - Preview with live reload: `quarto preview slides/<deck>.qmd`
 - Render + screenshot + verify branding/overflow:
   `python .claude/skills/author-verify-slides/driver.py slides/<deck>.qmd --all --reveal-all`
@@ -233,10 +276,11 @@ When generating or modifying course content:
 - Prefer a mental model plus *when/how to use it* over frameworks, ladders, and matrices.
 - Cut taglines, slogans, imagined-quote bubbles, and any sentence that only restates the box
   above it. One concept box and one concrete example per slide.
-- Every concept deck ends in a knowledge check; the three work-mode decks also end in a
-  follow-along.
+- Every concept deck ends in a knowledge check. The exercise goes in a lab, not at the bottom
+  of the deck.
 - Use the "I like, I wish, I wonder" feedback framework.
-- Keep examples audience-neutral unless the deck is in the flavour register above.
+- Keep concept-deck examples audience-neutral unless the deck is in the flavour register
+  above. Labs are exempt.
 
 ### Slide voice and density
 
@@ -293,39 +337,40 @@ These use `border-inline-start` and mirror correctly under RTL; hardcoded `borde
 
 Canonical order lives in the workshop pages (`office.qmd`, `ksu.qmd`) and `outline.md`. Deck
 slugs are descriptive and numberless. The work-mode module is **three teaching decks plus the
-recipe**, one concept each, each of the three ending in a knowledge check *and* a
-follow-along.
+recipe**, one concept each, each of the three ending in a knowledge check and **paired with a
+lab** in the workshop page's المختبر column.
 
 1. **Overview** (`overview.qmd`) — welcome + agenda + the two safety rules (5 min)
 2. **How AI Works & Writing Great Prompts** (`how_ai_works_and_rice.qmd`) — Two Layers +
    context + **Project** + RICE + advanced moves + Newspaper Test (30 min)
-3. **Practice — Delegate a Real Task** (`practice_foundations.qmd`) — RICE on a real task,
+3. **Practice — Delegate a Real Task** (`labs/rice_practice.qmd`) — RICE on a real task,
    then save it into a Project; ends with the 10-min break (15 + 10 min)
 4. **From Chat to Work Mode** (`cowork_intro.qmd`) — the keystone of the module: asking
    *about* the work vs. handing *over* the work; working directory = office; the second safety
-   rule (undo test / blast radius); instructor demo + follow-along (20 min)
+   rule (undo test / blast radius); instructor demo, then `labs/handover.qmd` (20 min)
 5. **Build It Once** (`skills_scripts_templates.qmd`) — Skill (book) → Script (exact numbers)
-   → Template (the layout) → composition. **Demo, not a build block**; ends in a follow-along
-   where learners paste a provided Skill and run it (20 min)
+   → Template (the layout) → composition. **Demo, not a build block**; then
+   `labs/run_a_skill.qmd`, where learners run the skill and save it (20 min)
 6. **How Far This Goes** (`how_far_this_goes.qmd`) — Schedule **and** Connectors merged: both
-   just *run a Skill*, on a clock or with keys; wider blast radius; module key takeaways
-   (15 min)
+   just *run a Skill*, on a clock or with keys; wider blast radius; module key takeaways;
+   then `labs/schedule_it.qmd` (15 min)
 7. **Your Recipe** (`recipe.qmd`) — the one-page take-home: three prompts they already watched
    work, to run on their own files; both safety rules; pick which to run first (10 min)
 8. **Your AI Assistant** (`wrap_up.qmd`) — recap + name one recurring task to try first +
    safety (10 min)
 
 **Optional station, listed last:** **Grounding & Creating with Gemini Notebook**
-(`notebooklm_grounding_and_slides.qmd`) — grounding + citations + slide creation (+40 min).
+(`notebooklm_grounding_and_slides.qmd`, with `labs/grounding.qmd`) — grounding + citations +
+slide creation (+40 min).
 Run it only if the core finishes early. It sits at the end so any overrun lands there instead
 of cutting the assistant-building payoff.
 
 ### Online delivery: follow-alongs, not practice blocks
 
 The workshop is delivered **online**, where an open practice block is the thing learners opt
-out of. So the doing is dissolved into the flow: decks 4–6 each end in a **3-minute
-follow-along**, a **provided prompt on a provided file**, run by everyone at once, with
-exactly one obvious outcome. The rule: **if it can fail live, it isn't a follow-along.** The
+out of. So the doing is dissolved into the flow: decks 4–6 are each followed by a **3-minute
+lab**, a **provided prompt on a provided file**, run by everyone at once, with exactly one
+obvious outcome. The rule: **if it can fail live, it isn't a follow-along.** The
 instructor demo must be *replicable* — the exact prompt appears on screen and again in the
 recipe. Real practice happens async from the recipe card; setup (app install + sample files)
 is **pre-work**, not session time.

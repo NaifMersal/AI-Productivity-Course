@@ -16,26 +16,34 @@ step. The root [`index.qmd`](index.qmd) is the portal.
 Every `.qmd` is the real thing. Open it and edit it — there is no generator and no
 template/generated split.
 
-- **`slides/`** — one **flat** deck library, shared by every workshop. No per-audience
-  subfolders: a subfolder is a licence to duplicate, and the same idea ends up taught twice
-  under two flavours with neither one maintained. Editing a concept here updates every
-  workshop.
-- **`data/`** — sample files for the follow-alongs. The root is neutral and shared;
-  `data/gov/` and `data/edu/` carry track-specific material.
-- **the workshop pages** — a workshop is an index page: title, duration, and which decks it
-  lists, in what order, for how long.
+- **`slides/`** — the **concept** library, flat and shared by every workshop. A concept deck
+  explains one idea and shows it working: the instructor demo and the closing knowledge check
+  stay here. Editing a concept once updates every workshop.
+- **`labs/`** — the **exercise** library, also flat. This is where workshops differ. A lab is
+  one file per drill: `labs/handover.qmd` when every track runs the same one,
+  `labs/handover_gov5.qmd` when a track needs its own.
+- **`data/`** — sample files for the labs. The root is neutral and shared; `data/gov/` and
+  `data/edu/` carry track-specific material.
+- **the workshop pages** — a workshop is an index page: title, duration, and which concepts
+  and labs it lists, in what order, for how long. Each day table pairs them: an **العرض**
+  column and a **المختبر** column.
 - **the outlines** — one instructor guide per delivery format.
 
-**What varies between workshops is exactly two things:** the workshop page, and the **intro
-deck** it opens with (`overview.qmd`, `intro_gov5.qmd`, `intro_edu5.qmd`). The intro deck
-carries the arc, the room rules and the promised outcome, and names the two safety rules — it
-teaches no concept. Everything else in `slides/` is written so an office employee, a
-government employee and a faculty member all recognize the example. A deck that must carry
-audience flavour has to be listed in the **flavour register** in
-[`CLAUDE.md`](CLAUDE.md); an unregistered deck that drifts flavoured is a defect.
+Neither library has per-audience subfolders. A subfolder is a licence to duplicate, and the
+same idea ends up taught twice under two flavours with neither one maintained. The
+concept/lab split is not an audience split; it is what makes one *not* necessary.
 
-Adding a workshop: copy a workshop page, write its intro deck, change the day tables, add a
-row to `index.qmd`.
+**What varies between workshops is three things:** the workshop page, the **intro deck** it
+opens with (`overview.qmd`, `intro_gov5.qmd`, `intro_edu5.qmd`), and **the labs it runs**. The
+intro deck carries the arc, the room rules and the promised outcome, and names the two safety
+rules — it teaches no concept. Everything in `slides/` is written so an office employee, a
+government employee and a faculty member all recognize the example. A **concept** deck that
+must carry audience flavour has to be listed in the **flavour register** in
+[`CLAUDE.md`](CLAUDE.md); an unregistered one that drifts flavoured is a defect. Labs are
+exempt — flavour is their job.
+
+Adding a workshop: copy a workshop page, write its intro deck, pick or write its labs, change
+the day tables, add a row to `index.qmd`.
 
 ## Rendering slides
 
@@ -56,21 +64,23 @@ python .claude/skills/author-verify-slides/driver.py slides/<deck>.qmd --all --r
 
 ## Project structure
 
-- **`index.qmd`** — portal linking every workshop and every deck.
-- **`slides/`** — the flat deck library, including the three intro decks.
+- **`index.qmd`** — portal linking every workshop, every concept deck and every lab.
+- **`slides/`** — the flat concept library, including the three intro decks.
+- **`labs/`** — the flat lab library. Mostly revealjs decks; the three printables
+  (`capstone_worksheet`, `adoption_plan`, `gov5_worksheet`) are `format: html`.
 - **`data/`** — sample files. Root is neutral; `data/gov/` and `data/edu/` are track-specific.
-- **`handouts/`** — printable participant material for the in-person tracks.
-- **`assets/`** — instructor extras (the `.skill` bundle, screenshots). Not rendered.
+- **`assets/`** — instructor extras (the `.skill` bundle, deck screenshots). Not a deck source.
 - **`office.qmd`**, **`ksu.qmd`**, **`gov5.qmd`**, **`edu5.qmd`** — the workshop pages.
 - **`outline.md`**, **`outline-gov5.md`**, **`outline-edu5.md`** — instructor guides.
 - **`_quarto.yml`** / **`slides_template/assets/`** — root Quarto config and SDAIA brand assets.
-- **`notes/`** — planning notes and the Arabic voice style guide. `notes/grounding/` holds the
-  source packs behind every tool, law and product claim that reaches a slide: `tool-roster.md`,
-  `pdpl.md`, `hermes-and-local-ai.md`, and `sdaia-ai-ethics.md` (deliberately empty, see it).
-  `notes/samai2-comparison.md` and `notes/prompt-engineering-comparison.md` record what was
-  borrowed from the two sibling SDAIA programs, and which differences are deliberate.
+- **`notes/`** — **gitignored**, and not in this repository. It is the author's private
+  working material: the planning notes, the Arabic voice style guide, the grounding packs
+  behind every tool/law/product claim that reaches a slide, and the SDAIA dictionary. Several
+  rules in [`CLAUDE.md`](CLAUDE.md) cite it. On a fresh clone those files are absent — ask the
+  author for them rather than guessing what they said.
 - **`scripts/make_redirects.py`** — runs automatically after every render (`post-render` in
   `_quarto.yml`) and writes redirect stubs so links to the old
   `office-workshop-ar/…` and `ksu-workshop/…` URLs land on the new pages. Its deck list is
   **pinned**, not globbed: only the nine decks that actually published under those old paths
-  get stubs. Renaming one of those nine breaks its old URL, and the script warns you.
+  get stubs. When one of those nine moves, record where it went in the script's `CURRENT_PATH`
+  map; otherwise it warns at render time.

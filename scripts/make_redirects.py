@@ -6,9 +6,10 @@ Before the restructure the site published one folder per workshop:
     office-workshop-ar/index.html          ksu-workshop/index.html
     office-workshop-ar/slides/<deck>.html  ksu-workshop/slides/<deck>.html
 
-Now there is one shared deck library and one page per workshop:
+Now there is one shared concept library, one lab library, and one page per
+workshop:
 
-    office.html   ksu.html   gov5.html   edu5.html   slides/<deck>.html
+    office.html  ksu.html  gov5.html  edu5.html  slides/<deck>.html  labs/<deck>.html
 
 GitHub Pages has no server-side redirects, so this script writes a small
 meta-refresh stub at each old path. Every old URL of a workshop, its index and
@@ -54,6 +55,16 @@ LEGACY_DECKS = (
     "wrap_up.html",
 )
 
+# Where a legacy slug lives *today*, relative to the output dir. Only slugs
+# that moved need an entry; the rest default to slides/<slug>. This map exists
+# for the liveness check below, not for the stubs: a stub always points at the
+# workshop page, which links the whole library. Keep the legacy slug on the
+# left even after a rename, because that is the URL on the printed QR codes.
+CURRENT_PATH = {
+    # concept/lab split: the RICE practice block became a lab
+    "practice_foundations.html": "labs/rice_practice.html",
+}
+
 STUB = """<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -83,10 +94,15 @@ def main() -> int:
         print(f"make_redirects: no output dir at {out}", file=sys.stderr)
         return 1
 
-    # A pinned deck that no longer renders means a rename just killed a live
-    # URL. Warn rather than fail: the stub itself is still worth writing, and
-    # a broken build helps nobody at render time.
-    missing = [d for d in LEGACY_DECKS if not (out / "slides" / d).is_file()]
+    # A pinned deck that no longer renders anywhere means a rename just killed
+    # a live URL. Warn rather than fail: the stub itself is still worth
+    # writing, and a broken build helps nobody at render time. A deck that
+    # merely moved is fine as long as CURRENT_PATH says where it went.
+    missing = [
+        d
+        for d in LEGACY_DECKS
+        if not (out / CURRENT_PATH.get(d, f"slides/{d}")).is_file()
+    ]
     if missing:
         print(
             "make_redirects: WARNING pinned legacy deck(s) no longer render: "

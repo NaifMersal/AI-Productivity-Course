@@ -1,0 +1,35 @@
+---
+title: "التمرين: سجِّل مهامك وصِف واحدة"
+subtitle: "الجرد، ثم الخانات الست"
+date: today
+lang: ar
+dir: rtl
+format:
+  revealjs:
+    rtl: true
+---
+
+# سجِّل مهامك {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)"}
+
+## التمرين: عشر دقائق {auto-animate=true}
+
+::: {.fill-teal .center}
+اكتب خمس مهام تكرّرها، وأعطِ كل واحدة درجة من ٣ في الأسئلة الأربعة. ثم اختر واحدة: أعلى
+مجموع في الثلاثة الأولى، وأقل نطاق تأثير.
+:::
+
+::: {.center .muted}
+هذه مهمة مشروع الختام. وإن لم تحضرك مهامك، فاعمل على الملف الذي وزّعه المدرِّب.
+:::
+
+# صِف التي اخترت {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)"}
+
+## التمرين: صِف مهمتك {auto-animate=true}
+
+::: {.fill-teal .center}
+اكتب الخانات الست لمهمتك. جملة واحدة لكل خانة.
+:::
+
+::: {.center .muted}
+هذه الورقة هي معيار القبول في مشروع الختام.
+:::

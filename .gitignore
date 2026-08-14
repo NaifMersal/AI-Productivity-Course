@@ -19,6 +19,11 @@ Thumbs.db
 # Claude Code
 .claude/
 
+# Instructor's private working material: planning notes, the Arabic voice
+# style guide, the fetched grounding packs, the SDAIA dictionary. Local to the
+# author's machine and deliberately not published. Keep a backup outside the repo.
+/notes/
+
 # Quarto preview assets
 *_files/
 

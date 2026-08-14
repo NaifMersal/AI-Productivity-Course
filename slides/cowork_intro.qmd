@@ -150,26 +150,6 @@ Cowork **يقترح، وأنت توافق**. ودعه يتصرّف من تلقا
 - يقترح النتيجة، وأنت توافق
 :::
 
-## طبِّقها الآن: ٣ دقائق {auto-animate=true}
-
-::: {style="background: #00C9A7; color: #ffffff; padding: 0.8em; border-radius: 12px; text-align: center; font-weight: bold;"}
-جميعًا معًا. افتح Cowork ووجّهه إلى مجلد ملفات الورشة.
-:::
-
-::: {.incremental}
-1. افتح Cowork ووجّهه إلى **مجلد ملفات الورشة**
-2. الصِق الأمر أدناه
-3. راقِبه وهو **يفتح الملفين** قبل أن يجيب
-:::
-
-::: {style="background: #1C355E; color: #ffffff; padding: 0.9em; border-radius: 12px; font-style: italic; text-align: center; margin-top: 0.6em; font-size: 0.9em;"}
-«اقرأ `event_meeting.md` و`event_plan.md`، واذكر ما الذي لم يعد صحيحًا في الخطة بعد هذا الاجتماع. لا تعدّل شيئًا.»
-:::
-
-::: {.center .muted style="margin-top: 0.4em;"}
-الملفان: [`event_meeting.md`](../data/event_meeting.md) · [`event_plan.md`](../data/event_plan.md)، وهما في مجلد ملفات الورشة
-:::
-
 # تصرّف الآن، أم اقترِح وانتظِر {auto-animate=true}
 
 **1.** «أعِد تنسيق هذه الملاحظات في ملخّص نظيف داخل ملف جديد.»

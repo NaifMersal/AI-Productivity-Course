@@ -1,0 +1,29 @@
+---
+title: "طبِّقها: شغِّل مهارة واحفظها"
+subtitle: "ثلاث دقائق على ملفات الورشة"
+date: today
+lang: ar
+dir: rtl
+format:
+  revealjs:
+    rtl: true
+---
+
+# ثلاث دقائق، جميعًا معًا {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+أمر واحد ينفّذ المراجعة، ثم يحفظها
+
+## طبِّقها الآن: ٣ دقائق {auto-animate=true}
+
+::: {.fill-teal .center}
+جميعًا معًا. أمر واحد ينفّذ المراجعة، ثم يحفظها مهارة.
+:::
+
+::: {.card-dark .center style="margin-top: 0.6em;"}
+«راجِع `sample_report.md` مقابل `review_checklist.md`، واكتب مذكرة موجزة: نقطتا قوة،
+واقتراحان للتحسين، وخطوة تالية واحدة. ثم احفظ ما فعلتَه مهارةً باسم **مراجعة تقرير**.»
+:::
+
+::: {.center .muted style="margin-top: 0.3em;"}
+الملفات: [`sample_report.md`](../data/sample_report.md) · [`review_checklist.md`](../data/review_checklist.md)
+:::

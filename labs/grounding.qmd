@@ -1,0 +1,42 @@
+---
+title: "التمرين: من المصدر إلى العرض"
+subtitle: "عشر دقائق في Gemini Notebook"
+date: today
+lang: ar
+dir: rtl
+format:
+  revealjs:
+    rtl: true
+---
+
+# من المصدر إلى العرض {.sdaia-dark background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)"}
+
+مصدر ← ملخّص مستند إليه ← عرض
+
+## مهمّتك {auto-animate=true}
+
+::: {data-id="mission" style="background: #f7f9fc; padding: 0.8em 1.2em; border-radius: 12px;"}
+خذ **ورقة أو سياسة حقيقية (آمنة) بصيغة PDF**. أنتِج **ملخّصًا مستندًا إلى المصدر في
+صفحة** و**عرض مُقدِّم**، في 10 دقائق.
+:::
+
+. . .
+
+::: {.incremental}
+1. ارفع المصدر إلى Gemini Notebook
+2. اسأل: *«استنادًا إلى هذا فقط، أعطِ 5 نتائج رئيسية مع مراجع الصفحات. وإن لم يكن في
+   المصدر، قل غير موجود.»*
+3. انقر على الاستشهادات للوصول إلى المقطع
+4. ولّد عرض مُقدِّم، وصدّره `.pptx`، وراجِع شريحة واحدة
+:::
+
+## تحقّق منه قبل أن تستخدمه {auto-animate=true}
+
+::: {.card .accent-orange data-id="mission"}
+المصدر يقلّل التخمين، ولا يغني عن مراجعتك. فقد تحمل الشرائح المولَّدة أخطاءً واقعية
+وبصرية.
+:::
+
+::: {.center .muted}
+*لا مصدر لديك؟ استخدم مصدرًا من عندك، أو افتح [`sample_source.md`](../data/sample_source.md) لروابط تقارير وسياسات مفتوحة الوصول.*
+:::

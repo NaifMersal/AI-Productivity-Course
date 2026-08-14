@@ -141,23 +141,6 @@ format:
 ::::
 :::
 
-## طبِّقها الآن: دقيقتان {auto-animate=true}
-
-::: {style="background: #00C9A7; color: #ffffff; padding: 0.8em; border-radius: 12px; text-align: center; font-weight: bold;"}
-جدوِل المهارة التي أنشأتها للتو. في وضع «أبلِغني».
-:::
-
-::: {style="background: #1C355E; color: #ffffff; padding: 0.9em; border-radius: 12px; font-style: italic; text-align: center; margin-top: 0.6em; font-size: 0.9em;"}
-«‏/schedule كل جمعة الساعة ٤ عصرًا، شغِّل **مراجعة تقرير** على أي تقارير جديدة في هذا
-المجلد. **أبلِغني ولا ترسل شيئًا.**»
-:::
-
-. . .
-
-::: {.center style="margin-top: 0.5em;"}
-يمكنك حذفها بعدها مباشرة. المقصود أن ترى أن **«متى»** مجرّد إعداد.
-:::
-
 ## أهم النقاط {.sdaia-dark background-color="#1C355E"}
 
 ::: {.incremental}
