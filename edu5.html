@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ar" xml:lang="ar" dir="rtl"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>رفع الإنتاجية والابتكار الأكاديمي بالذكاء الاصطناعي – AI at Work</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">رفع الإنتاجية والابتكار الأكاديمي بالذكاء الاصطناعي</h1>
+<p class="subtitle lead">ورشة حضورية لأعضاء هيئة التدريس. خمسة أيام</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">17 أغسطس 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>خمسة أيام، ست ساعات في اليوم، حضوريًا. من الأحد ١٦ إلى الخميس ٢٠ أغسطس ٢٠٢٦.</p>
+<p>الأسبوع سُلَّم واحد: <strong>المحادثة ← وضع العمل ← وضع البرمجة</strong>. تصعد فيه درجةً كل يوم، وتخرج في الخميس بشيء <strong>يعمل فعلًا</strong> على مقرّرك: أداة صغيرة، أو شرائح منشورة يفتحها طلبتك برابط، أو مهارة تختصر عملًا إداريًا متكرّرًا.</p>
+<p><strong>لن تكتب سطر برمجة.</strong> لكنك سترى الكود على الشاشة في جلسات البناء، وستقرؤه وتقول ما الذي تريده مختلفًا. والمفاهيم قابلة للنقل بين ChatGPT وClaude وGemini.</p>
+<section id="قبل-الورشة" class="level2">
+<h2 class="anchored" data-anchor-id="قبل-الورشة">قبل الورشة</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>ما يُجهَّز</th>
+<th>مَن</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>١</td>
+<td>حاسب محمول وشاحن. الأجهزة اللوحية والهواتف لا تكفي</td>
+<td>كل مشارك</td>
+</tr>
+<tr class="even">
+<td>٢</td>
+<td>حسابات مجانية أو تجريبية على الأدوات المذكورة في قائمة التهيئة</td>
+<td>كل مشارك</td>
+</tr>
+<tr class="odd">
+<td>٣</td>
+<td><strong>تطبيق المساعد لسطح المكتب، مثبَّتًا ومجرَّبًا مرة واحدة</strong></td>
+<td>كل مشارك</td>
+</tr>
+<tr class="even">
+<td>٤</td>
+<td><strong>صلاحية تثبيت البرامج على الجهاز، أو أجهزة معارة بديلة</strong></td>
+<td>تقنية المعلومات</td>
+</tr>
+<tr class="odd">
+<td>٥</td>
+<td><strong>حساب على GitHub، مفتوح ومُفعَّل بالبريد</strong></td>
+<td>كل مشارك</td>
+</tr>
+<tr class="even">
+<td>٦</td>
+<td>ملف من مقرّرك: عرض محاضرة، أو خطة مقرّر، أو ورقة علمية</td>
+<td>كل مشارك</td>
+</tr>
+<tr class="odd">
+<td>٧</td>
+<td>ملفات الورشة التجريبية</td>
+<td>المدرِّب</td>
+</tr>
+</tbody>
+</table>
+<p><strong>البندان ٣ و٤ يقرّران اليوم الأول، لا الثالث.</strong> الجلسة ٤ تبدأ بتوجيه المساعد إلى مجلد على الجهاز، ومن لم يستطع التثبيت لا يشارك فيها. احسم الصلاحية قبل أسبوع.</p>
+<p>والبند ٦ هو المادة التي تبني عليها طوال الأسبوع. ومن يحضر بلا ملف يعمل على ملف تجريبي مرفق، لكنه يخرج بشيء أقلّ فائدة له.</p>
+</section>
+<section id="الجلسات" class="level2">
+<h2 class="anchored" data-anchor-id="الجلسات">الجلسات</h2>
+<p>خمسة أيام × أربع جلسات من ستين دقيقة. الجدول أدناه هو ترتيب الجلسات، لا ترتيب الساعات: جلستان قصيرتان قد تجتمعان في بلوك واحد، والجلسة الطويلة قد تأخذ بلوكًا كاملًا.</p>
+<p>الجلسات المعلَّمة بـ <strong>◇</strong> هي أول ما يُختصَر إن تأخّر اليوم.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>#</th>
+<th>الجلسة</th>
+<th>العرض</th>
+<th>التمرين</th>
+<th>~د</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>١</td>
+<td>الافتتاح، وقوس الأسبوع، وما تخرج به</td>
+<td><a href="slides/intro_edu5.html">مقدمة البرنامج</a></td>
+<td>—</td>
+<td>٢٠</td>
+</tr>
+<tr class="even">
+<td>٢</td>
+<td>الطبقتان، والسياق، والمشروع، وRICE، وأن تجعله يكتب الأمر</td>
+<td><a href="slides/how_ai_works_and_rice.html">كيف يعمل الذكاء الاصطناعي</a></td>
+<td>—</td>
+<td>٥٥</td>
+</tr>
+<tr class="odd">
+<td>٣</td>
+<td>اكتب ← شغّل ← جد الأضعف ← أحكِمه. ثم عيّنة المرجع المُختلَق</td>
+<td>—</td>
+<td><a href="exercises/rice_practice_edu.html">فوِّض مهمة حقيقية</a></td>
+<td>٤٥</td>
+</tr>
+<tr class="even">
+<td>٤</td>
+<td>لماذا تتشابه المساعدات، والأوضاع الثلاثة، ثم مجلد العمل ونطاق التأثير</td>
+<td><a href="slides/cowork_intro.html">من المحادثة إلى وضع العمل</a></td>
+<td><a href="exercises/handover_edu.html">أول تسليم</a></td>
+<td>٧٠</td>
+</tr>
+<tr class="odd">
+<td>٥</td>
+<td>الاستناد إلى مصادرك أنت: الاستشهادات، والملخّص الصوتي</td>
+<td><a href="slides/notebooklm_grounding_and_slides.html">الاستناد إلى المصادر والإنشاء</a></td>
+<td><a href="exercises/grounding.html">من المصدر إلى العرض</a></td>
+<td>٥٥</td>
+</tr>
+<tr class="even">
+<td>٦</td>
+<td>البنية أولًا والإخراج ثانيًا: من مخرجات التعلّم إلى المادة</td>
+<td><a href="slides/from_objectives_to_materials.html">من الأهداف إلى المادة</a></td>
+<td><a href="exercises/course_materials_edu.html">من المخرَج إلى المادة</a></td>
+<td>٥٥</td>
+</tr>
+<tr class="odd">
+<td>٧</td>
+<td>المهارة ← السكربت ← القالب ← التركيب</td>
+<td><a href="slides/skills_scripts_templates.html">ابنِها مرة واحدة</a></td>
+<td><a href="exercises/run_a_skill.html">شغِّل مهارة واحفظها</a></td>
+<td>٤٠</td>
+</tr>
+<tr class="even">
+<td>٨ ◇</td>
+<td>الجدولة والموصِّلات: كلتاهما تشغّل مهارة</td>
+<td><a href="slides/how_far_this_goes.html">إلى أي مدى يصل هذا</a></td>
+<td><a href="exercises/schedule_it.html">جدوِل مهارتك</a></td>
+<td>٣٠</td>
+</tr>
+<tr class="odd">
+<td>٩</td>
+<td>ماذا تؤتمت: القاعدة، ثم الخانات الست بوصفها مواصفة</td>
+<td><a href="slides/what_to_automate.html">ماذا تؤتمت</a></td>
+<td><a href="exercises/task_inventory_edu.html">سجِّل مهامك</a></td>
+<td>٤٥</td>
+</tr>
+<tr class="even">
+<td>١٠</td>
+<td>ما الذي تبنيه فعلًا: الواجهة، والمنطق، والتخزين، والأداة المتكاملة</td>
+<td><a href="slides/what_is_an_app.html">ما هي الأداة التي تبنيها</a></td>
+<td>—</td>
+<td>٤٠</td>
+</tr>
+<tr class="odd">
+<td>١١</td>
+<td>البرمجة بالوصف ١: لوحة درجات تعمل</td>
+<td>—</td>
+<td><a href="exercises/vibe_coding_edu.html">أداة لمقرّرك</a></td>
+<td>٦٠</td>
+</tr>
+<tr class="even">
+<td>١٢</td>
+<td>البرمجة بالوصف ٢: أداتك أنت، ومعها التخزين</td>
+<td>—</td>
+<td><a href="exercises/vibe_coding_edu.html">أداة لمقرّرك</a> · الجلسة الثانية</td>
+<td>٦٠</td>
+</tr>
+<tr class="odd">
+<td>١٣</td>
+<td>شرائح تعمل في المتصفّح، بهوية جامعتك</td>
+<td><a href="slides/html_slides_edu.html">شرائح في المتصفّح</a></td>
+<td>العرض نفسه، الشريحة الأخيرة</td>
+<td>٥٠</td>
+</tr>
+<tr class="even">
+<td>١٤</td>
+<td>أين تنشرها: داخل المحادثة أم على عنوان ويب</td>
+<td><a href="slides/publishing_with_github.html">أين تنشرها</a></td>
+<td><a href="exercises/publish_slides_edu.html">انشر شرائحك</a></td>
+<td>٤٥</td>
+</tr>
+<tr class="odd">
+<td>١٥</td>
+<td>توليد الوسائط: أربعة عروض حيّة، ولكل واحد حالته</td>
+<td><a href="slides/media_generation.html">توليد الوسائط</a></td>
+<td>—</td>
+<td>٥٠</td>
+</tr>
+<tr class="even">
+<td>١٦ ◇</td>
+<td>متى يستحقّ الصوت مكانه، وقاعدة الاستنساخ</td>
+<td><a href="slides/teaching_media.html">الصوت والوسائط</a></td>
+<td>—</td>
+<td>٢٥</td>
+</tr>
+<tr class="odd">
+<td>١٧</td>
+<td>المبادئ الوطنية، والنظام، والأثر × قابلية الرجوع، وتصميم تقييم لا يُختصَر</td>
+<td><a href="slides/responsible_use_edu.html">الاستخدام المسؤول</a></td>
+<td><a href="exercises/responsible_use_check.html">طهِّر، ثم تحقّق</a></td>
+<td>٧٥</td>
+</tr>
+<tr class="even">
+<td>١٨</td>
+<td>ماذا تقول لطلبتك، وماذا تعطيهم</td>
+<td><a href="slides/students_and_ai.html">الطلبة والذكاء الاصطناعي</a></td>
+<td>—</td>
+<td>٣٥</td>
+</tr>
+<tr class="odd">
+<td>١٩ ◇</td>
+<td>من مشروع عندك إلى ممارسة في قسمك</td>
+<td><a href="slides/team_adoption_plan_edu.html">خطة التبنّي</a></td>
+<td><a href="exercises/adoption_plan_edu.html">ورقة خطة التبنّي</a></td>
+<td>٣٥</td>
+</tr>
+<tr class="even">
+<td>٢٠</td>
+<td>إحكام المشروع، ومراجعة زميل من تخصّص آخر</td>
+<td>—</td>
+<td><a href="exercises/capstone_edu5.html">مشروع الختام</a> · <a href="exercises/capstone_worksheet_edu5.html">ورقة التكليف</a></td>
+<td>٦٠</td>
+</tr>
+<tr class="odd">
+<td>٢١</td>
+<td>العروض: ثلاث مجموعات متوازية، خمس دقائق لكل مشارك</td>
+<td>—</td>
+<td><a href="exercises/capstone_edu5.html">مشروع الختام</a></td>
+<td>٦٠</td>
+</tr>
+<tr class="even">
+<td>٢٢</td>
+<td>الوصفة، والختام</td>
+<td><a href="slides/recipe_edu5.html">وصفتك</a> · <a href="slides/wrap_up_edu5.html">مساعدك الذكي</a></td>
+<td>—</td>
+<td>٣٠</td>
+</tr>
+</tbody>
+</table>
+<p><strong>مجموع الجلسات ١٠٤٠ دقيقة، والمتاح ١٢٠٠.</strong> الفارق هامش، لا فراغ.</p>
+</section>
+<section id="ترتيبان-مقصودان-في-الجدول" class="level2">
+<h2 class="anchored" data-anchor-id="ترتيبان-مقصودان-في-الجدول">ترتيبان مقصودان في الجدول</h2>
+<p><strong>الجلسة ٦ قبل الجلسة ٧.</strong> القالب في «ابنِها مرة واحدة» ملفٌّ يملؤه السكربت. ومن لم يكتب مخرَج التعلّم ومخطّطه أولًا يستعمل القالب حيلةَ تنسيق، لا خطوةً في عمل. ولهذا الجلسة ٦ ليست من الجلسات التي تُختصَر.</p>
+<p><strong>الجلسة ١٠ قبل الجلسة ١٤.</strong> الجلسة ١٠ تسأل «هل ثمّة أرشيف أصلًا»، والجلسة ١٤ هي جوابها: ما يظهر داخل المحادثة يزول بإغلاقها، وما يُرفَع إلى عنوان ويب يبقى.</p>
+</section>
+<section id="ملفات-الجلسات" class="level2">
+<h2 class="anchored" data-anchor-id="ملفات-الجلسات">ملفات الجلسات</h2>
+<ul>
+<li><strong>٣:</strong> <a href="data/edu/sample_essay.md"><code>sample_essay.md</code></a> مع <a href="data/edu/rubric.md"><code>rubric.md</code></a>. ومراجع المقالة الثلاثة <strong>لا وجود لها</strong>، وهذا هو مقصد نصفها الثاني.</li>
+<li><strong>٤:</strong> ملفات الورشة المشتركة أولًا، ثم مجلد يجهّزه كل مشارك من مواد مقرّره.</li>
+<li><strong>٥ و٦:</strong> <a href="data/edu/sample_paper.md"><code>sample_paper.md</code></a> لمن لا مادة جاهزة لديه.</li>
+<li><strong>١١ و١٢:</strong> <a href="data/edu/grades.csv"><code>grades.csv</code></a>، وهو ملف مُختلَق.</li>
+<li><strong>١٧:</strong> <a href="data/edu/committee_notes.md"><code>committee_notes.md</code></a>، ثم <a href="data/edu/sample_essay.md"><code>sample_essay.md</code></a> و<a href="data/edu/sample_essay_2.md"><code>sample_essay_2.md</code></a> لاختبار ثبات المعيار على مُدخَلين.</li>
+</ul>
+<p><strong>عن الحرف E في RICE.</strong> نقرؤه <strong>التوقّع</strong>: شكل الجواب المقبول، وطوله ونبرته. ووثيقة البرنامج تسمّيه <strong>المخرَج</strong>، والمعنى واحد. أما <strong>المثال</strong> فطريقة داخل التوقّع، تُستعمل حين يصعب وصف المطلوب وصفًا.</p>
+<p><strong>واستنساخ الصوت في الجلسة ١٦ يقتصر على صوت المدرِّب</strong>، وشرط المزوّد نفسه هو الذي يقرّر ذلك، لا اجتهادنا. ولا تُستخدم أصوات الطلبة في أي تمرين.</p>
+<p><strong>والجلسة ١٧</strong> تجمع وثيقتين: <strong>المبادئ الوطنية لأخلاقيات الذكاء الاصطناعي</strong> (SDAIA, 2025)، و<strong>نظام حماية البيانات الشخصية</strong> الصادر بالمرسوم الملكي رقم (م/١٩). الأولى تُرشد الحكم ولا تنصّ على عقوبات، والثاني يفرض واجبات. وتقف الجلسة عند <strong>المادة ٢٧</strong> تحديدًا: ثلاث حالات محدّدة لجمع البيانات لأغراض بحثية بلا موافقة، لا إعفاء عامّ للبحث. وهي قراءة تعليمية في وثيقتين عامّتين، <strong>لا استشارة نظامية</strong>.</p>
+</section>
+<section id="العروض-في-الجلسة-٢١" class="level2">
+<h2 class="anchored" data-anchor-id="العروض-في-الجلسة-٢١">العروض في الجلسة ٢١</h2>
+<p>يقول كل عرض أربعة أشياء: ما الذي يحلّه ما بنيتَه، وعلى أي تصنيف بيانات يعمل، وتشغيله أمام القاعة، وما الذي أخفق قبل أن ينجح. والمجموعات تُركَّب من تخصّصات مختلفة عمدًا، <strong>ولكل مجموعة قاعة ومُيسِّر</strong>.</p>
+</section>
+<section id="حلقة-التسليم" class="level2">
+<h2 class="anchored" data-anchor-id="حلقة-التسليم">حلقة التسليم</h2>
+<p>حضوريًا، تسقط القيود التي فرضها التقديم عبر الإنترنت. الحلقة هنا:</p>
+<p><strong>العرض</strong> (ينفّذ المدرِّب مهمة كاملة) ← <strong>البناء</strong> (يبني كل مشارك النسخة الخاصة به، والمدرِّب يمرّ بينهم) ← <strong>الإحكام</strong> (مراجعة زميل، ثم تحسين).</p>
+<p>الهدف <strong>٧٠٪ ممارسة</strong>. كل جلسة تبدأ بمفهوم قصير ثم تبني.</p>
+</section>
+<section id="قاعدتان-طوال-الأسبوع" class="level2">
+<h2 class="anchored" data-anchor-id="قاعدتان-طوال-الأسبوع">قاعدتان طوال الأسبوع</h2>
+<ul>
+<li><strong>اختبار الجريدة.</strong> قبل أن تلصق: أزِل أسماء الطلبة وأرقامهم، والدرجات، والبيانات الشخصية، والبحث غير المنشور. ومن الجلسة ١٤ فصاعدًا تتّسع القاعدة: ما يُنشَر على عنوان عامّ يُقرَأ كاملًا قبل رفعه.</li>
+<li><strong>اختبار التراجع.</strong> قبل أن ينفّذ: ابدأ في وضع <strong>المسودة / أعلِمني</strong>.</li>
+</ul>
+<p>تمارين الأسبوع تجري على <strong>ملفات تجريبية مرفقة</strong>، لا على بيانات طلبة حقيقية. وأنت مَن يقرّر ويعتمد: الأداة تصوغ وتقترح وتلخّص.</p>
+</section>
+<section id="حدود-البرنامج" class="level2">
+<h2 class="anchored" data-anchor-id="حدود-البرنامج">حدود البرنامج</h2>
+<p>أسماء الأدوات والنماذج في هذه الورشة <strong>أمثلة للتوضيح، لا توصية ولا اعتماد رسمي</strong>. والقدرات والواجهات والتوافر والأسعار تتغيّر باستمرار. ويبقى المرجع في الاستخدام الفعلي <strong>سياسة جامعتك، وتصنيف بياناتها، وبيئتها التقنية المعتمدة</strong>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/NaifMersal\.github\.io\/AI-Productivity-Course\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

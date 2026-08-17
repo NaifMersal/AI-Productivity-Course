@@ -9,8 +9,8 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="dcterms.date" content="2026-08-04">
-  <title>AI at Work – تطبيق: فوِّض مهمة حقيقية</title>
+  <meta name="dcterms.date" content="2026-08-17">
+  <title>AI at Work – مختبر Hermes</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -31,8 +31,74 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-47c3dfb1d4459b32c6b1cde5836d595a.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-84547a33d66f15e920aec59a21b11c2f.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -132,111 +198,226 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title">تطبيق: فوِّض مهمة حقيقية</h1>
-  <p class="subtitle">طبّق RICE على عملك، ثم استراحة</p>
+  <h1 class="title">مختبر Hermes</h1>
+  <p class="subtitle">المفاهيم نفسها، بواجهة أخرى ومن جهة أخرى</p>
 
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">2026-08-04</p>
+  <p class="date">2026-08-17</p>
 </section>
-<section id="دورك-الآن" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h1>دورك الآن</h1>
-<p>رأيت الطبقتين وRICE. الآن استخدمهما على مهمة <strong>حقيقية</strong> متكرّرة، شيء تودّ تفويضه.</p>
-</section>
-
 <section>
-<section id="اكتب-أمر-rice-كاملا" class="title-slide slide level1 center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">اكتب أمر RICE كاملًا</h1>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>البناء</strong></p>
-</div>
-<div class="callout-content">
-<p>اختر مهمة متكرّرة <strong>«مُدخَل فوضوي ← مُخرَج نظيف»</strong>.</p>
-<ol type="1">
-<li><strong>R</strong> الدور: مَن ينبغي أن يكون الذكاء الاصطناعي؟ <em>(مقرّر اجتماع، أو محرِّر لغوي…)</em></li>
-<li><strong>I</strong> التعليمات: المهمة، وصيغتها وطولها ونبرتها</li>
-<li><strong>C</strong> السياق: ألصِق الملاحظات أو المعيار أو المسودة</li>
-<li><strong>E</strong> المثال: عيّنة واحدة من المُخرَج الذي تريده</li>
-</ol>
-</div>
-</div>
+<section id="الجلسة-٣-على-جهازك" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>الجلسة ٣: على جهازك</h1>
+<p>مجلد العمل والمهارات والجدولة، تقودها بيدك في منتج آخر. المفاهيم هي المنتج، لا الأداة.</p>
+</section>
+<section id="ويندوز-مدعوم-أصلا" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">ويندوز مدعوم أصلًا</h2>
+<div class="card accent-teal" data-id="platform">
+<p>ويندوز 10 و11 في المستوى الأول من الدعم، وتشغيلًا أصليًا. ولا يُشترط WSL2.</p>
 </div>
 <div class="fragment">
-<div class="muted">
-<p><strong>أفكار للبدء:</strong> ملاحظات اجتماع ← بريد تلخيصي · أرقام خام ← ملخّص · تقرير ← موجز في صفحة · قائمة تحقق + مسودة ← ملاحظات</p>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>عالق بلا مهمة؟ جرّب واحدة من هذه</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li><a href="../data/meeting_notes.md"><code>meeting_notes.md</code></a> ← اكتب مسودة بريد تلخيصي للفريق</li>
-<li><a href="../data/sample_report.md"><code>sample_report.md</code></a> + <a href="../data/review_checklist.md"><code>review_checklist.md</code></a> ← اكتب مذكّرة ملاحظات</li>
-</ul>
-</div>
-</div>
+<div class="center muted" style="margin-top: 0.5em;">
+<p>تدور شائعة بعكس ذلك على المدوّنات. صفحة دعم المنصّات الرسمية تنفيها.</p>
 </div>
 </div>
 </section>
-<section id="شغله-ثم-أحكمه" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">شغّله، ثم أحكِمه</h2>
-<ul>
-<li class="fragment">شغّله. هل يطابق المُخرَج <strong>مثالك</strong>؟</li>
-<li class="fragment">أضِف عنصر RICE الأضعف وأعِد التشغيل</li>
-<li class="fragment">أضِف: <em>«إن كان أي شيء غير واضح، <strong>اسألني قبل أن تكتب</strong>.»</em></li>
-</ul>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="بطاقة-المختبر-التثبيت" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">بطاقة المختبر: التثبيت</h2>
+<div class="card accent-teal tight" data-id="install">
+<p>مثبِّت Hermes Desktop، أو سطر واحد في PowerShell.</p>
 </div>
-<p><strong>Note</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy" data-id="quarto-animate-code"><code class="sourceCode powershell hljs"><span id="cb1-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="fu">iex</span> <span class="op">(</span><span class="fu">irm</span> https<span class="op">://</span>hermes-agent<span class="op">.</span><span class="fu">nousresearch</span><span class="op">.</span><span class="fu">com</span><span class="op">/</span>install<span class="op">.</span><span class="fu">ps1</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="center muted" style="margin-top: 0.4em;">
+<p>المثبِّت يجلب Python 3.11 وNode.js v22 وripgrep وffmpeg. وGit وحده يجب أن يكون متوفّرًا.</p>
 </div>
-<div class="callout-content">
-<p>تستخدم ملفًا حقيقيًا؟ طبِّق عليه اختبار الجريدة أولًا.</p>
+</section>
+<section id="بطاقة-المختبر-أول-تشغيل" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">بطاقة المختبر: أول تشغيل</h2>
+<div class="card accent-teal tight" data-id="firstrun">
+<p>اختر النموذج تفاعليًا، ثم افتح محادثة، ثم انتقل إلى الواجهة الرسومية.</p>
 </div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb2-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="ex">hermes</span> model</span>
+<span id="cb2-2" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="ex">hermes</span> <span class="at">--tui</span></span>
+<span id="cb2-3" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="ex">hermes</span> desktop</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="قاعدة-المختبر" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">قاعدة المختبر</h2>
+<div class="card-dark center" data-id="labrule">
+<p>«إن لم يستطع Hermes إتمام محادثة عادية، فلا تضِف مزيدًا من الميزات بعد. اجعل محادثة واحدة نظيفة تعمل أولًا.»</p>
 </div>
-</div>
+<div class="center muted" style="margin-top: 0.5em;">
+<p>من توثيق المنتج نفسه. طبّقها حرفيًا اليوم.</p>
 </div>
 </section></section>
-<section id="ضعه-في-مشروع-project" class="title-slide slide level1 center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">ضعه في مشروع (Project)</h1>
-<div class="card accent-teal">
-<p>الأمر الذي نجح للتوّ يستحقّ <strong>الاحتفاظ به</strong>. أنشئ <strong>مشروعًا (Project)</strong> لهذا النوع من المهام، وألصِق الأمر في تعليماته الدائمة، وارفع الملفات التي يحتاجها دائمًا.</p>
+<section>
+<section id="ثلاثة-تعرفها" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>ثلاثة تعرفها</h1>
+<p>بواجهة أخرى</p>
+</section>
+<section id="افتح-الواجهة-وابحث-عنها" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">افتح الواجهة وابحث عنها</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<div class="card accent-teal center">
+<p><strong>متصفّح الملفات</strong></p>
+<p>مجلد العمل</p>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="card accent-purple center">
+<p><strong>مدير المهارات</strong></p>
+<p>المهارات</p>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="card accent-orange center">
+<p><strong>مجدوِل cron</strong></p>
+<p>الجدولة</p>
+</div>
+</div></div>
+<ul>
+<li class="fragment">وسحب الملفات وإفلاتها في المحادثة</li>
+<li class="fragment">وطرفية بألسنة، وتكامل مع git</li>
+<li class="fragment">وإعدادات بواجهة بدل تحرير YAML</li>
+</ul>
+</section>
+<section id="أين-تعيش-المهارات" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">أين تعيش المهارات</h2>
+<div class="card accent-teal" data-id="skillpath">
+<p>كل المهارات في <code>~/.hermes/skills/</code>. ولكل مهارة مجلد فيه <code>SKILL.md</code>، ومعه <code>references/</code> و<code>templates/</code> و<code>scripts/</code>. وكل مهارة مثبَّتة تصير أمرًا مائلًا.</p>
+</div>
+<div class="card accent-orange" data-id="selfskill">
+<p>وهو يكتب مهاراته بنفسه: بعد مهمة معقّدة نجحت، يحفظ الخطوات مهارةً من تلقائه.</p>
+</div>
+</section></section>
+<section>
+<section id="نطاق-التأثير-كإعداد" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
+<h1>نطاق التأثير، كإعداد</h1>
+<p>اختبار التراجع، مكتوبًا في الإعدادات</p>
+</section>
+<section id="من-يوافق-على-الأوامر" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">مَن يوافق على الأوامر</h2>
+<div class="card accent-navy" data-id="approval">
+<p>الوضع الافتراضي <code>smart</code>: نموذج مساعد يقدّر خطر كل أمر، ويوافق تلقائيًا على المنخفض منه لمرة واحدة.</p>
+</div>
+<ul>
+<li class="fragment"><code>manual</code> يسألك في كل مرة</li>
+<li class="fragment">لا ردّ خلال ٣٠٠ ثانية يعني الرفض</li>
+<li class="fragment">وقائمة حظر صارمة لا تُعطَّل بإعداد</li>
+</ul>
+</section>
+<section id="احصر-الكتابة-في-مجلد-واحد" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">احصر الكتابة في مجلد واحد</h2>
+<div class="card accent-teal" data-id="saferoot">
+<p>اضبط <code>HERMES_WRITE_SAFE_ROOT</code> على مجلد الورشة قبل أن تبدأ. عندها لا تصل الكتابة إلى شيء خارجه.</p>
 </div>
 <div class="fragment">
-<div class="center" style="font-weight: bold; margin-top: 0.6em;">
-<p>في المرة القادمة تبدأ من مكتب مُحمَّل، لا من صندوق فارغ.</p>
+<div class="center muted" style="margin-top: 0.5em;">
+<p>ومسارات كـ<code>~/.ssh/</code> و<code>~/.aws/</code> و<code>/etc/</code> محميّة دائمًا، بإعداد أو بغيره.</p>
 </div>
 </div>
 </section>
-
-<section id="استراحة-10-دقائق" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h1>استراحة: 10 دقائق ☕</h1>
-<div style="background: rgba(255,255,255,0.12); padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.1em;">
-<p>استرح، واملأ كوبك.</p>
+<section id="ابن-الآن-شغل-مهمة-أمس-هنا" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">ابنِ الآن: شغّل مهمة أمس هنا</h2>
+<div class="fill-teal center">
+<p>وجِّه Hermes إلى مجلد الورشة. المزوّد سحابي، فطبّق <strong>اختبار الجريدة</strong> كالمعتاد.</p>
 </div>
-<div class="center" style="font-weight: bold; margin-top: 0.8em;">
-<p>بعد الاستراحة نفتح <strong>Claude Cowork</strong> على ملفات الورشة وندع الوكيل يعمل.</p>
+<div class="card-dark center" style="margin-top: 0.6em;">
+<p>«راجِع <code>sample_report.md</code> مقابل <code>review_checklist.md</code>، واكتب مذكّرة موجزة: نقطتا قوة، واقتراحان للتحسين، وخطوة تالية واحدة.»</p>
 </div>
-
-
+<div class="center muted">
+<p>الملفان: <a href="../data/sample_report.md"><code>sample_report.md</code></a> · <a href="../data/review_checklist.md"><code>review_checklist.md</code></a></p>
+</div>
+</section></section>
+<section>
+<section id="الجلسة-٤-عرض-المدرب" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #9B8EC0, #1C355E)">
+<h1>الجلسة ٤: عرض المدرِّب</h1>
+<p>وكيل يعمل بالكامل على جهازك. أغلِق جهازك وشاهِد: العرض على جهاز ببطاقة رسومات كبيرة.</p>
 </section>
+<section id="لماذا-لا-تعمل-على-جهاز-المكتب" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">لماذا لا تعمل على جهاز المكتب</h2>
+<div class="card accent-navy" data-id="hw">
+<p>Hermes يشترط نافذة سياق لا تقلّ عن ٦٤ ألف رمز للعمل بالأدوات. والتوثيق يسمّيه شرطًا.</p>
+</div>
+<ul>
+<li class="fragment"><code>gemma4</code>: نحو ١٦ جيجابايت من ذاكرة الرسومات</li>
+<li class="fragment"><code>qwen3.6</code>: نحو ٢٤ جيجابايت</li>
+<li class="fragment">الجلستان ٢ و٣ ممكنتان. وجمعهما يحتاج عتادًا</li>
+</ul>
+</section>
+<section id="الفخ-نافذة-السياق-الافتراضية" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">الفخّ: نافذة السياق الافتراضية</h2>
+<div class="card accent-orange" data-id="ctx">
+<p>Ollama يبدأ بنافذة قد تنزل إلى ٤٠٩٦ رمزًا. ارفعها صراحةً قبل أن توصله بـHermes.</p>
+</div>
+<div class="fragment">
+<div class="center muted" style="margin-top: 0.5em;">
+<p>وتأكّد من عمود CONTEXT في <code>ollama ps</code>. البديل: <code>PARAMETER num_ctx 64000</code> في Modelfile.</p>
+</div>
+</div>
+</section>
+<section id="العرض-hermes-يعمل-على-ollama" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">العرض: Hermes يعمل على Ollama</h2>
+<div class="card accent-teal tight" data-id="launch">
+<p><code>ollama launch hermes</code> هو أقصر طريق: يثبّت Hermes، ويترك لك اختيار النموذج، ويهيّئ المزوّد المحلي على <code>http://127.0.0.1:11434/v1</code>.</p>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode powershell code-with-copy" data-id="quarto-animate-code"><code class="sourceCode powershell hljs"><span id="cb3-1" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="va">$env</span><span class="op">:</span><span class="va">OLLAMA_CONTEXT_LENGTH</span> <span class="op">=</span> <span class="dv">64000</span></span>
+<span id="cb3-2" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a><span class="dt">ollama</span> serve</span>
+<span id="cb3-3" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a>ollama launch hermes</span>
+<span id="cb3-4" class="hljs-ln-code"><a aria-hidden="true" tabindex="-1"></a>ollama <span class="fu">ps</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="center muted" style="margin-top: 0.4em;">
+<p>على macOS أو لينكس: <code>OLLAMA_CONTEXT_LENGTH=64000 ollama serve</code></p>
+</div>
+</section>
+<section id="المقارنة-الصادقة" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">المقارنة الصادقة</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th>مزوّد سحابي</th>
+<th>محلي بالكامل</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>السرعة</td>
+<td>أسرع</td>
+<td>أبطأ</td>
+</tr>
+<tr class="even">
+<td>العربية</td>
+<td>أقوى</td>
+<td>أضعف</td>
+</tr>
+<tr class="odd">
+<td>التكلفة</td>
+<td>اشتراك متكرّر</td>
+<td>مجاني بعد العتاد</td>
+</tr>
+<tr class="even">
+<td>الخصوصية</td>
+<td>نصّك عند المزوّد</td>
+<td>لا شيء يغادر</td>
+</tr>
+<tr class="odd">
+<td>العتاد</td>
+<td>أي جهاز مكتبي</td>
+<td>بطاقة رسومات كبيرة</td>
+</tr>
+</tbody>
+</table>
+<div class="center muted" style="margin-top: 0.4em;">
+<p>هذه ملاحظات تشغيل من القاعة. قِس السرعة وجودة العربية على مستنداتك أنت.</p>
+</div>
+</section>
+<section id="حدود-ما-عرض" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">حدود ما عُرِض</h2>
+<div class="card accent-navy" data-id="limits">
+<p>أسماء الأدوات هنا أمثلة للتوضيح، لا توصية ولا اعتماد. والقدرات والواجهات والأسعار تتغيّر. والمرجع في الاستخدام الفعلي سياسة جهتك، وتصنيف بياناتها، وبيئتها التقنية المعتمدة.</p>
+</div>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../slides_template/assets/sdaia.svg" class="slide-logo"></p>

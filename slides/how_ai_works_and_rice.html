@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="dcterms.date" content="2026-08-04">
+  <meta name="dcterms.date" content="2026-08-17">
   <title>AI at Work – كيف يعمل الذكاء الاصطناعي وكتابة أوامر فعّالة</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -32,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-47c3dfb1d4459b32c6b1cde5836d595a.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-84547a33d66f15e920aec59a21b11c2f.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -138,7 +138,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">2026-08-04</p>
+  <p class="date">2026-08-17</p>
 </section>
 <section>
 <section id="ما-الذي-يحدث-حين-ترسل-أمرا" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
@@ -337,7 +337,7 @@
 <section>
 <section id="rice" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
 <h1>RICE</h1>
-<p>أربعة عناصر تجعل أمرك واضحًا: الدور، والتعليمات، والسياق، والمثال.</p>
+<p>أربعة عناصر تجعل أمرك واضحًا: الدور، والتعليمات، والسياق، والتوقّع.</p>
 </section>
 <section id="الإطار" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">الإطار</h2>
@@ -347,29 +347,39 @@
 <p><strong>R</strong> الدور (Role): الخبير الذي كنت ستوظّفه.</p>
 </div>
 <div class="fragment fade-in">
-<p><strong>I</strong> التعليمات (Instructions): المهمة، وصيغتها وطولها ونبرتها.</p>
+<p><strong>I</strong> التعليمات (Instructions): المهمة نفسها. ماذا يفعل بها؟</p>
 </div>
 <div class="fragment fade-in">
 <p><strong>C</strong> السياق (Context): ملاحظاتك وملفاتك.</p>
 </div>
 <div class="fragment fade-in">
-<p><strong>E</strong> الأمثلة (Examples): عيّنة واحدة من «الجيّد».</p>
+<p><strong>E</strong> التوقّع (Expectation): شكل الجواب المقبول. كم بندًا؟ وبأي نبرة؟</p>
 </div>
 </div>
 <div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>الـ C هو <em>نفس</em> السياق من الطبقتين</strong></p>
-</div>
-<div class="callout-content">
-<p>أنت تُحمِّل الصفحات على مكتب الدماغ. <strong>لا سياق = الدماغ يخمّن.</strong></p>
+<div class="center" style="margin-top: 0.4em;">
+<p><strong>I</strong> تقول له ماذا يفعل. و<strong>E</strong> تقول له متى يكون قد أحسن.</p>
 </div>
 </div>
+</section>
+<section id="حين-يصعب-وصف-التوقع" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">حين يصعب وصف التوقّع</h2>
+<div class="card accent-purple" data-id="rice">
+<p>بعض التوقّعات يسهل وصفها: جدول من أربعة أعمدة. وبعضها لا: نبرة خطاب رسمي.</p>
 </div>
+<div class="fragment">
+<div class="center" style="margin-top: 0.5em;">
+<p>فما عجزتَ عن وصفه، <strong>أرِه مثالًا أو أكثر</strong>. عيّنة أو اثنتان من «الجيّد» تُغنيان عن فقرة تصف الأسلوب.</p>
+</div>
+</div>
+</section>
+<section id="الـ-c-هو-السياق-نفسه" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">الـ C هو السياق نفسه</h2>
+<div class="card accent-purple">
+<p>الـ <strong>C</strong> هو نفسه السياق من الطبقتين. أنت تُحمِّل الصفحات على مكتب الدماغ.</p>
+</div>
+<div class="center muted">
+<p>لا سياق، فالدماغ يخمّن.</p>
 </div>
 </section>
 <section id="اختبار-الجريدة" class="slide level2" data-auto-animate="true">
@@ -398,6 +408,24 @@
 <p><strong>اجعله ينجز:</strong> “تصرَّف بصفتك مقرّر الاجتماع. اكتب مسودة بريد تلخيصي للفريق من هذه الملاحظات. أبرِز القرارات ومَن يتولّى كل إجراء قبل الاجتماع القادم.”</p>
 </div>
 </div>
+</section>
+<section id="اجعله-يكتب-الأمر" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">اجعله يكتب الأمر</h2>
+<div class="card accent-teal" data-id="meta">
+<p>لست مضطرًا إلى كتابة الأمر من الصفر. صِف المهمة بلغتك، واطلب منه أن يصوغ أمر RICE لها.</p>
+</div>
+<div class="card-dark center">
+<p>«مهمتي: <em>[صِف مهمتك في سطر]</em>. اكتب لي أمر RICE لها: الدور، والتعليمات، والسياق، والتوقّع. واسألني عمّا ينقصك قبل أن تكتب.»</p>
+</div>
+</section>
+<section id="والحكم-يبقى-لك" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">والحكم يبقى لك</h2>
+<div class="card accent-orange" data-id="metajudge">
+<p>هو أقدر منك على الصياغة. وأنت وحدك تعرف أي سياق يصحّ، وأي جواب يُقبل.</p>
+</div>
+<div class="center muted">
+<p>اقرأ ما كتبه سطرًا سطرًا قبل أن تشغّله. الأمر الذي لم تراجعه ليس أمرك.</p>
+</div>
 </section></section>
 <section>
 <section id="عرض-حي" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
@@ -409,26 +437,26 @@
 <div data-id="story" style="font-size: 0.9em;">
 <p>ما خربشته فعلًا بعد اجتماع التخطيط:</p>
 </div>
-<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.82em; font-style: italic;">
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-style: italic;">
 <p>“الملتقى تجاوز هدف الحضور (١٬٢٤٠ مقابل ١٬٠٠٠) لكن بتجاوز ١٨٪ للميزانية. هدى تنقل الفصل القادم إلى الجلسات المصغّرة، وتحتاج أرقام المالية الفعلية أولًا. إطلاق نظام الطلبات في ١٥ نوفمبر لكن لا مالك لعملية الترحيل، ودُرّب ٢ من ٩ منسّقين فقط. عمر يتابع فاتورتين معلّقتين. القرار: اعتماد التراخيص إن وجدت المالية البند.”</p>
 </div>
 </section>
 <section id="أمر-rice" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">أمر RICE</h2>
-<div style="background: #f7f9fc; padding: 1em; border-radius: 12px; font-size: 0.75em;">
+<div style="background: #f7f9fc; padding: 1em; border-radius: 12px;">
 <p><strong>الدور:</strong> تصرّف بصفتك مقرّر الاجتماع.</p>
-<p><strong>التعليمات:</strong> اكتب مسودة بريد تلخيصي واضح للفريق. استخدم هذه العناوين: ملخّص، القرارات، بنود العمل (مع المالكين)، الموعد النهائي. ضع الموعد النهائي بخط <strong>عريض</strong>. اجعله سهل التصفّح. وإن كان أي بند بلا مالك، أضِف قسم «يحتاج مالكًا».</p>
-<p><strong>السياق:</strong> ملاحظات اجتماع التخطيط الفصلي اليوم: <em>[ألصِق الملاحظات]</em></p>
-<p><strong>المثال:</strong> حاكِ هذه الافتتاحية: <em>«يا فريق، تلخيص سريع لاجتماع اليوم. إليكم ما استقرّينا عليه: …»</em></p>
+<p><strong>التعليمات:</strong> اكتب مسودة بريد تلخيصي للفريق، وأضِف قسم «يحتاج مالكًا» للبند بلا مالك.</p>
+<p><strong>السياق:</strong> ملاحظات اجتماع التخطيط اليوم: <em>[ألصِق الملاحظات]</em></p>
+<p><strong>التوقّع:</strong> أقسام: ملخّص، قرارات، بنود العمل بالمواعيد. لا تتجاوز ستة بنود.</p>
 </div>
 </section>
 <section id="ما-الذي-جعله-ينجح" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">ما الذي جعله ينجح</h2>
 <ul>
 <li class="fragment"><strong>الدور</strong> ← كتب كمقرّر اجتماع، لا كروبوت</li>
-<li class="fragment"><strong>التعليمات</strong> ← الأقسام، والمالكون، وقاعدة «يحتاج مالكًا»</li>
-<li class="fragment"><strong>السياق</strong> ← الملاحظات الفوضوية كانت كافية لاستخراج البنية</li>
-<li class="fragment"><strong>المثال</strong> ← حاكى الافتتاحية المهنية المُوجزة</li>
+<li class="fragment"><strong>التعليمات</strong> ← المهمة، وقاعدة البند بلا مالك</li>
+<li class="fragment"><strong>السياق</strong> ← الملاحظات الفوضوية كفت لاستخراج البنية</li>
+<li class="fragment"><strong>التوقّع</strong> ← الأقسام، وحدّ الستة بنود، والافتتاحية المُحاكاة</li>
 </ul>
 </section>
 <section id="احفظ-ذلك-الأمر-في-مشروع" class="slide level2" data-auto-animate="true">
@@ -459,7 +487,7 @@
 </div><div class="column" style="width:25%;">
 <div style="background: #00C9A7; color: white; padding: 0.8em; border-radius: 12px; text-align: center;">
 <p><strong>I</strong> التعليمات</p>
-<p>الطول؟ النبرة؟ قائمة التحقق؟</p>
+<p>المهمة واضحة وحدها</p>
 </div>
 </div><div class="column" style="width:25%;">
 <div style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;">
@@ -468,8 +496,8 @@
 </div>
 </div><div class="column" style="width:25%;">
 <div style="background: #FF7A5C; color: white; padding: 0.8em; border-radius: 12px; text-align: center;">
-<p><strong>E</strong> المثال</p>
-<p>لا عيّنة لملاحظات جيّدة</p>
+<p><strong>E</strong> التوقّع</p>
+<p>كم ملاحظة؟ وبأي نبرة؟</p>
 </div>
 </div></div>
 </div>
@@ -481,7 +509,7 @@
 <li class="fragment">طبقتان: النموذج هو الدماغ، والتطبيق هو المكتب.</li>
 <li class="fragment">النموذج يتنبّأ بالكلمة التالية، وقد يختلق ما لا مصدر له.</li>
 <li class="fragment">الإجابة تتبع السياق. و<strong>المشروع</strong> يبقي سياقك محمَّلًا.</li>
-<li class="fragment">وجِّهه بـ<strong>RICE</strong>: الدور، والتعليمات، والسياق، والأمثلة.</li>
+<li class="fragment">وجِّهه بـ<strong>RICE</strong>، أو اجعله يكتبه ثم راجِعه.</li>
 <li class="fragment">طبِّق <strong>اختبار الجريدة</strong> قبل أن تلصق.</li>
 <li class="fragment">مخرجاته <strong>مسودة</strong>. المراجعة عليك.</li>
 </ol>

@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="dcterms.date" content="2026-08-04">
+  <meta name="dcterms.date" content="2026-08-17">
   <title>AI at Work – الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -32,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-47c3dfb1d4459b32c6b1cde5836d595a.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-84547a33d66f15e920aec59a21b11c2f.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -138,7 +138,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">2026-08-04</p>
+  <p class="date">2026-08-17</p>
 </section>
 <section id="ضع-المصادر-الصحيحة-على-المكتب" class="title-slide slide level1 center" data-auto-animate="true">
 <h1 data-id="quarto-animate-title">ضع المصادر الصحيحة على المكتب</h1>
@@ -182,6 +182,9 @@
 <section id="تعرف-على-gemini-notebook" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
 <h1>تعرّف على Gemini Notebook</h1>
 <p>سابقًا NotebookLM. مساعد بحثي يستند إلى مستنداتك <em>أنت</em></p>
+<div class="spot">
+<p><img data-src="../assets/logos/gemini-notebook.svg"></p>
+</div>
 </section>
 <section id="فيم-يبرع" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">فيمَ يبرع</h2>
@@ -194,6 +197,15 @@
 <li class="fragment">اطرح الأسئلة؛ واحصل على إجابات <strong>باستشهادات</strong> إلى المقطع الدقيق</li>
 <li class="fragment">ولّد <strong>ملخّصًا صوتيًا (Audio Overview)</strong> لتستمع إليه في طريقك</li>
 </ul>
+</div>
+</section>
+<section id="الملخص-الصوتي-مادة-تعليمية" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">الملخّص الصوتي مادّة تعليمية</h2>
+<div class="card accent-teal" data-id="audio">
+<p>حوارٌ صوتي بين متحدّثين يشرح مصادرك. يصلح مراجعةً قبل المحاضرة، أو مادة إسناد لمن يتعلّم بالسمع.</p>
+</div>
+<div class="center muted">
+<p>ولا يصلح بديلًا عن المحاضرة. المتحدّثان يُبسّطان، وقد يسقط منهما ما هو دقيق في ورقتك.</p>
 </div>
 </section>
 <section id="ويبني-الشرائح-أيضا" class="slide level2" data-auto-animate="true">
@@ -281,47 +293,6 @@
 </section>
 
 <section>
-<section id="من-المصدر-إلى-العرض" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
-<h1>من المصدر إلى العرض</h1>
-<p>مصدر ← ملخّص مستند إليه ← عرض</p>
-</section>
-<section id="مهمتك" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">مهمّتك</h2>
-<div data-id="mission" style="background: #f7f9fc; padding: 0.8em 1.2em; border-radius: 12px;">
-<p>خذ <strong>ورقة أو سياسة حقيقية (آمنة) بصيغة PDF</strong>. أنتِج <strong>ملخّصًا مستندًا إلى المصدر في صفحة</strong> و<strong>عرض مُقدِّم</strong>، في 10 دقائق.</p>
-</div>
-<div class="fragment">
-<ol type="1">
-<li class="fragment">ارفع المصدر إلى Gemini Notebook</li>
-<li class="fragment">اسأل: <em>«استنادًا إلى هذا فقط، أعطِ 5 نتائج رئيسية مع مراجع الصفحات. وإن لم يكن في المصدر، قل غير موجود.»</em></li>
-<li class="fragment">انقر على الاستشهادات للوصول إلى المقطع</li>
-<li class="fragment">ولّد عرض مُقدِّم، وصدّره <code>.pptx</code>، وراجِع شريحة واحدة</li>
-</ol>
-</div>
-</section>
-<section id="تحقق-منه-قبل-أن-تستخدمه" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">تحقّق منه قبل أن تستخدمه</h2>
-<div class="card accent-orange" data-id="mission">
-<p>المصدر يقلّل التخمين، ولا يغني عن مراجعتك. فقد تحمل الشرائح المولَّدة أخطاءً واقعية وبصرية.</p>
-</div>
-<div class="center muted">
-<p><em>لا مصدر لديك؟ استخدم مصدرًا من عندك، أو افتح <a href="../data/sample_source.md"><code>sample_source.md</code></a> لروابط تقارير وسياسات مفتوحة الوصول.</em></p>
-</div>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>دوّنها</strong></p>
-</div>
-<div class="callout-content">
-<p>هل تتكرّر هذه المهمة عندك؟ إذن هي مرشّحة جيّدة لتجرّبها بعد الجلسة.</p>
-</div>
-</div>
-</div>
-</section></section>
-<section>
 <section id="تحقق-سريع" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
 <h1>تحقّق سريع</h1>
 <p>اختر الحركة الصحيحة</p>
@@ -342,7 +313,7 @@
 <div class="fragment">
 <div class="fragment fade-in">
 <div class="card accent-teal">
-<p><strong>البحث العميق (Deep Research)</strong>، للويب المباشر مع استشهادات. Gemini Notebook يقرأ مرفوعاتك فقط.</p>
+<p><strong>البحث العميق</strong>، للويب المباشر مع استشهادات. Gemini Notebook يقرأ مرفوعاتك فقط.</p>
 </div>
 </div>
 </div>
