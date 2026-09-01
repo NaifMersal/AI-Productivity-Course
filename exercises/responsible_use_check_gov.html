@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>مشروع الختام – AI at Work</title>
+<title>لعبة التطهير – AI at Work</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -86,8 +86,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">مشروع الختام</h1>
-<p class="subtitle lead">ورقة التكليف ومعيار القبول</p>
+<h1 class="title">لعبة التطهير</h1>
+<p class="subtitle lead">مذكّرة مقيَّدة على الشاشة. اطمس ما لا يخرج من الجهة</p>
 </div>
 
 
@@ -110,168 +110,543 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>اطبع هذه الورقة وضعها أمامك أثناء البناء.</p>
-<section id="التكليف" class="level2">
-<h2 class="anchored" data-anchor-id="التكليف">التكليف</h2>
-<p>أحكِم ما بنيتَه هذا الأسبوع، بحيث <strong>يعمل أمام زميلك</strong> في نهاية الجلسة، على مواد تجريبية أو مواد طهّرتها بنفسك.</p>
-<p><strong>ما بنيتُه:</strong> ☐ أداة على مجلدي ☐ مهارة على قالبي ☐ غير ذلك: ……………………….</p>
-<p><strong>المقرّر:</strong> ……………………………………………………….</p>
-<p><strong>مَن يستخدمه:</strong> ☐ أنا ☐ طلبتي ☐ زملائي في القسم</p>
-<p><strong>المخرَج المطلوب:</strong> ……………………………………………………..</p>
-</section>
-<section id="صف-العملية-في-ست-خانات" class="level2">
-<h2 class="anchored" data-anchor-id="صف-العملية-في-ست-خانات">صِف العملية في ست خانات</h2>
-<p>املأ الخانات الست قبل أن تفتح الأداة. الخانة التي تتركها فارغة هي العطل الذي ستقضي بقية الجلسة تبحث عنه.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
+<p>انقر كل مقطع لا يجوز أن يخرج من الجهة ليختفي تحت الطمس، ثم اكشف النتيجة. المقاطع القابلة للنقر تحتها خطّ خفيف، وبعضها سليم يغريك بحذفه.</p>
+<div class="tathir-rules">
+<p><span>فرق من ثلاثة</span> <span>ثماني دقائق</span> <span>بلا أداة ذكاء اصطناعي</span> <span class="plus">بند خطر طمستَه: نقطة</span> <span class="minus">بند سليم طمستَه: خصم</span> <span class="zero">اسم بقي ظاهرًا: الجولة كلها</span></p>
+</div>
+<div class="tathir-bar">
+<p><button type="button" id="tathir-reveal" class="tathir-btn primary">اكشف النتيجة</button> <button type="button" id="tathir-reset" class="tathir-btn">أعِد الجولة</button> <button type="button" id="tathir-copy" class="tathir-btn">انسخ النص المطهَّر</button> <span id="tathir-count" class="tathir-count">لم تطمس شيئًا بعد</span></p>
+</div>
+<div id="tathir-doc" class="tathir-doc">
+<p class="doc-head">
+مذكّرة ADM-2026-0471 · <span class="t keep">١٢ فبراير ٢٠٢٦</span> · تصنيف: مقيَّد
+</p>
+<p>
+<span class="t keep"><strong>إلى:</strong> وكيل الجهة للشؤون الإدارية · <strong>من:</strong> مدير إدارة الموارد البشرية</span>
+</p>
+<p>
+<strong>الموضوع:</strong> <span class="t keep">مقترح إعادة هيكلة إدارة خدمات المستفيدين</span> <span class="t cut">(غير معلَن)</span>
+</p>
+<h3 class="anchored">
+١ · الخلفية
+</h3>
+<p>
+بناءً على توجيه الوكالة في <span class="t keep">٣ يناير ٢٠٢٦</span>، أُعدّ مقترح لإعادة <span class="t keep">توزيع مهام الإدارة على وحدتين بدلًا من أربع</span>. <span class="t cut">لم يُعلَن هذا المقترح للموظفين المعنيين</span>، ولا يجوز تداوله قبل اعتماد الوكيل.
+</p>
+<h3 class="anchored">
+٢ · الوضع الحالي للوحدات
+</h3>
+<table class="doc-table">
 <thead>
-<tr class="header">
-<th>الخانة</th>
-<th>السؤال</th>
-<th>مشروعي</th>
-<th>العطل إن تركتها فارغة</th>
+<tr>
+<th>
+الوحدة
+</th>
+<th>
+عدد الشاغلين
+</th>
+<th>
+معدّل الإنجاز
+</th>
+<th>
+التوصية
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>المُشغِّل</td>
-<td>ما الذي يبدأه؟</td>
-<td>…………</td>
-<td>لا أحد يعرف متى يستعمله</td>
+<tr>
+<td>
+<span class="t keep">استقبال الطلبات</span>
+</td>
+<td>
+<span class="t keep">٧</span>
+</td>
+<td>
+٨٤٪
+</td>
+<td>
+تُدمَج
+</td>
 </tr>
-<tr class="even">
-<td>المصادر</td>
-<td>ما المواد المرفوعة؟</td>
-<td>…………</td>
-<td>يجيب من معرفته العامة</td>
+<tr>
+<td>
+<span class="t keep">المتابعة الهاتفية</span>
+</td>
+<td>
+<span class="t keep">٥</span>
+</td>
+<td>
+٦١٪
+</td>
+<td>
+تُلغى
+</td>
 </tr>
-<tr class="odd">
-<td>الخطوات</td>
-<td>ما العملية؟</td>
-<td>…………</td>
-<td>إجابة مختلفة الشكل كل مرة</td>
-</tr>
-<tr class="even">
-<td>المخرَج</td>
-<td>ما شكله وما حدّه؟</td>
-<td>…………</td>
-<td>ثلاث صفحات لا يقرؤها طالب</td>
-</tr>
-<tr class="odd">
-<td>الوجهة</td>
-<td>مَن يفتحه وأين؟</td>
-<td>…………</td>
-<td>يبقى عندك وحدك</td>
-</tr>
-<tr class="even">
-<td>نقطة الاعتماد</td>
-<td>ما الذي يقف؟</td>
-<td>…………</td>
-<td><strong>يصل الطالب قبل أن تراه</strong></td>
+<tr>
+<td>
+<span class="t keep">الجودة والمراجعة</span>
+</td>
+<td>
+<span class="t keep">٤</span>
+</td>
+<td>
+٩٢٪
+</td>
+<td>
+تبقى
+</td>
 </tr>
 </tbody>
 </table>
-<blockquote class="blockquote">
-<p>الخانة السادسة هي <strong>اختبار التراجع</strong> مكتوبًا. لا تتركها للنهاية.</p>
-</blockquote>
-</section>
-<section id="الطريق" class="level2">
-<h2 class="anchored" data-anchor-id="الطريق">الطريق</h2>
-<table class="caption-top table">
+<h3 class="anchored">
+٣ · الموظفون المتأثّرون مباشرة
+</h3>
+<table class="doc-table">
 <thead>
-<tr class="header">
-<th>#</th>
-<th>الخطوة</th>
-<th>تمّت</th>
+<tr>
+<th>
+الاسم
+</th>
+<th>
+رقم الهوية
+</th>
+<th>
+المرتبة والوحدة
+</th>
+<th>
+الإجراء المقترح
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>١</td>
-<td>كتبت أمر RICE وشغّلته حتى نجح مرة</td>
-<td>☐</td>
+<tr>
+<td>
+<span class="t cut fatal">فهد عبدالله القحطاني</span>
+</td>
+<td>
+<span class="t cut">1098234571</span>
+</td>
+<td>
+<span class="t cut">السادسة · المتابعة الهاتفية</span>
+</td>
+<td>
+<span class="t keep">نقل إلى استقبال الطلبات</span>
+</td>
 </tr>
-<tr class="even">
-<td>٢</td>
-<td>أنشأت مشروعًا، ورفعت مواد المقرّر إليه</td>
-<td>☐</td>
+<tr>
+<td>
+<span class="t cut fatal">نورة سعد الدوسري</span>
+</td>
+<td>
+<span class="t cut">1076452319</span>
+</td>
+<td>
+<span class="t cut">السابعة · المتابعة الهاتفية</span>
+</td>
+<td>
+<span class="t keep">نقل إلى الجودة والمراجعة</span>
+</td>
 </tr>
-<tr class="odd">
-<td>٣</td>
-<td>كتبت التعليمات الدائمة، وفيها «قل غير موجود»</td>
-<td>☐</td>
+<tr>
+<td>
+<span class="t cut fatal">ماجد إبراهيم العتيبي</span>
+</td>
+<td>
+<span class="t cut">2054871903</span>
+</td>
+<td>
+<span class="t cut">الخامسة · الأرشفة</span>
+</td>
+<td>
+<span class="t cut">إنهاء التعاقد عند انتهاء المدة</span>
+</td>
 </tr>
-<tr class="even">
-<td>٤</td>
-<td>اختبرت الحدّ بثلاثة أسئلة، وشدّدت التعليمة</td>
-<td>☐</td>
-</tr>
-<tr class="odd">
-<td>٥</td>
-<td>جرّبته بسؤال ثانٍ مختلف</td>
-<td>☐</td>
+<tr>
+<td>
+<span class="t cut fatal">سلطان ناصر الشمري</span>
+</td>
+<td>
+<span class="t cut">1063948217</span>
+</td>
+<td>
+<span class="t cut">الثامنة · استقبال الطلبات</span>
+</td>
+<td>
+<span class="t cut">يُرشَّح لرئاسة الوحدة المدمجة</span>
+</td>
 </tr>
 </tbody>
 </table>
-<p><strong>ما قاله حين تجاوز حدّه، حرفيًا:</strong> ………………………………………..</p>
-<p>…………………………………………………………….</p>
-<blockquote class="blockquote">
-<p>هذا السطر هو ما تعرضه يوم الخميس. لا تحذفه بعد أن تصلحه.</p>
-</blockquote>
-</section>
-<section id="معيار-القبول" class="level2">
-<h2 class="anchored" data-anchor-id="معيار-القبول">معيار القبول</h2>
-<p>يُقبَل المشروع إذا تحقّقت البنود الستة:</p>
-<ol type="1">
-<li><label><input type="checkbox">التعليمات الدائمة مكتوبة، وفيها «قل غير موجود في مواد المقرّر»</label></li>
-<li><label><input type="checkbox">يعمل على سؤالين مختلفين، لا على واحد</label></li>
-<li><label><input type="checkbox">المخرَج بالشكل الذي تريده</label></li>
-<li><label><input type="checkbox">لا بيانات طلبة حقيقية غير مطهَّرة في أي خطوة</label></li>
-<li><label><input type="checkbox">لا يعطي درجة، ولا يقدّر أداء طالب</label></li>
-<li><label><input type="checkbox">تشرحه لزميلك في دقيقة واحدة</label></li>
-</ol>
-<blockquote class="blockquote">
-<p>البند الأخير هو الأصعب. إن عجزت عن شرحه في دقيقة، احذف منه حتى يُشرَح.</p>
-</blockquote>
-</section>
-<section id="مراجعة-الزميل-منتصف-الوقت-اثنتا-عشرة-دقيقة" class="level2">
-<h2 class="anchored" data-anchor-id="مراجعة-الزميل-منتصف-الوقت-اثنتا-عشرة-دقيقة">مراجعة الزميل (منتصف الوقت، اثنتا عشرة دقيقة)</h2>
-<p>اسأل زميلك، واكتب جوابه:</p>
-<p><strong>١. ماذا يفعل هذا المشروع؟</strong> اطلب الشرح بلا شاشة.</p>
-<p>…………………………………………………………….</p>
-<p><strong>٢. ما الذي جرّبته وأخفق؟</strong></p>
-<p>…………………………………………………………….</p>
-<p><strong>٣. ماذا يحدث لو سألتُه سؤالًا خارج موادّك؟</strong> اسأله أنت وجرّب.</p>
-<p>…………………………………………………………….</p>
-<p>ردّ عليه بـ <strong>يعجبني / أتمنّى / أتساءل</strong>.</p>
-</section>
-<section id="العرض-خمس-دقائق" class="level2">
-<h2 class="anchored" data-anchor-id="العرض-خمس-دقائق">العرض (خمس دقائق)</h2>
-<ol type="1">
-<li>ما الذي يحلّه المشروع، ولمن</li>
-<li>على أي تصنيف بيانات يعمل</li>
-<li>شغّله أمامنا</li>
-<li><strong>ما الذي أخفق في الطريق</strong></li>
-</ol>
-<blockquote class="blockquote">
-<p>اعرض إخفاقك بلا اعتذار. ما أخفق عندك سيخفق عند غيرك، وهو أنفع دقيقة في العرض.</p>
-</blockquote>
-</section>
-<section id="قبل-أن-تعرض-اسأل-نفسك" class="level2">
-<h2 class="anchored" data-anchor-id="قبل-أن-تعرض-اسأل-نفسك">قبل أن تعرض، اسأل نفسك</h2>
+<h3 class="anchored">
+٤ · ملاحظات على الأداء (سرّية)
+</h3>
 <ul>
-<li>هل جرّبته بسؤالين، أم بواحد وأعجبني؟</li>
-<li>هل بقي فيه اسم طالب أو رقم جامعي أو درجة؟</li>
-<li>هل يعمل الفصل القادم لو لم أكن موجودًا؟</li>
+<li>
+<span class="t cut fatal">سلطان ناصر الشمري:</span> <span class="t cut">تقييم متميّز لثلاث سنوات متتالية، وتلقّى عرضًا خارجيًا في نوفمبر الماضي، ويُخشى فقده إن تأخّر القرار</span>.
+</li>
+<li>
+<span class="t cut fatal">ماجد إبراهيم العتيبي:</span> <span class="t cut">لفت نظر مكتوب بشأن تكرار التأخّر، ولديه ظرف صحّي في العائلة أُبلغت به الإدارة شفهيًا ولم يُوثَّق</span>.
+</li>
+<li>
+<span class="t cut fatal">نورة سعد الدوسري:</span> <span class="t cut">قدّمت شكوى إدارية ضدّ رئيسها المباشر، ولا تزال قيد النظر لدى لجنة التظلّمات</span>.
+</li>
 </ul>
+<h3 class="anchored">
+٥ · الأثر المالي
+</h3>
+<table class="doc-table">
+<thead>
+<tr>
+<th>
+البند
+</th>
+<th>
+المبلغ السنوي (ريال)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<span class="t keep">وفر من إلغاء وحدة المتابعة الهاتفية</span>
+</td>
+<td>
+<span class="t keep">٨٤٠٬٠٠٠</span>
+</td>
+</tr>
+<tr>
+<td>
+<span class="t keep">بدلات نقل الموظفين المنقولين</span>
+</td>
+<td>
+<span class="t keep">١٢٦٬٠٠٠</span>
+</td>
+</tr>
+<tr>
+<td>
+<strong>صافي الوفر المتوقّع</strong>
+</td>
+<td>
+<span class="t keep">٦٤٢٬٠٠٠</span>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 class="anchored">
+٦ · التوقيت
+</h3>
+<p>
+الإعلان الداخلي بعد اعتماد الوكيل <span class="t keep">بأسبوعين</span>، على أن يسبقه <span class="t keep">لقاء فردي مع كل موظف متأثّر</span>. <span class="t cut">وتسرّب المقترح قبل اللقاءات الفردية يُتوقّع أن يرفع معدّل الاستقالات في الوحدتين المدمجتين</span>.
+</p>
+<h3 class="anchored">
+٧ · جهات الاتصال
+</h3>
+<ul>
+<li>
+منسّق المشروع: <span class="t cut fatal">بدر عبدالعزيز الحربي</span>، <span class="t cut">جوال 0555-018-472، بريد b.alharbi@example.gov.sa</span>
+</li>
+<li>
+ممثّل الشؤون القانونية: <span class="t cut fatal">أمل تركي المطيري</span>، تحويلة <span class="t cut">4417</span>
+</li>
+</ul>
+<p>
+<span class="t keep"><strong>قائمة التوزيع:</strong> وكيل الجهة للشؤون الإدارية · مدير الموارد البشرية · مدير الشؤون القانونية. لا يُصوَّر ولا يُعاد إرساله.</span>
+</p>
+</div>
+<p class="tathir-source">
+الملف نفسه على قرصك: <a href="../data/gov/restricted_sample.md"><code>restricted_sample.md</code></a>
+</p>
+<div id="tathir-result" class="tathir-result" hidden="">
+
+</div>
+<div id="tathir-copybox" class="tathir-copybox" hidden="">
+<p class="copy-note">
+النص المطهَّر جاهز. الصقه في الأداة مع هذا الأمر:
+</p>
+<blockquote class="blockquote">
+«هذه مذكّرة مطهَّرة من الأسماء. استخرج التوصيات على الوحدات، والأثر المالي، وما يحتاج قرارًا من الوكيل. لا تضف ما ليس في النص.»
+</blockquote>
+<textarea id="tathir-copytext" rows="10" readonly=""></textarea>
+</div>
+<style>
+#title-block-header.quarto-title-block.default .quarto-title-meta { display: none; }
+
+.tathir-rules {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-block: 1.1rem 0.6rem;
+  font-size: 0.88rem;
+}
+.tathir-rules span {
+  white-space: nowrap;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid #d9e0e7;
+  border-radius: 999px;
+  background: #f6f8fa;
+  color: #55606b;
+}
+.tathir-rules .plus { border-color: #00C9A7; color: #0b6b5b; background: #eafaf6; }
+.tathir-rules .minus { border-color: #d99e21; color: #7a5200; background: #fdf1d6; }
+.tathir-rules .zero { border-color: #d64545; color: #7a1020; background: #fde5e5; }
+
+.tathir-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block-end: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #d9e0e7;
+  border-radius: 0.6rem;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.tathir-btn {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid #1C355E;
+  border-radius: 0.45rem;
+  background: #fff;
+  color: #1C355E;
+  cursor: pointer;
+}
+.tathir-btn:hover { background: #eef2f7; }
+.tathir-btn.primary { background: #1C355E; color: #fff; }
+.tathir-btn.primary:hover { background: #16294a; }
+.tathir-btn[disabled] { opacity: 0.45; cursor: default; }
+.tathir-count { font-size: 0.9rem; color: #55606b; margin-inline-start: auto; }
+
+.tathir-doc {
+  border: 1px solid #d9e0e7;
+  border-radius: 0.7rem;
+  background: #fff;
+  padding: 1.1rem 1.3rem;
+  line-height: 2;
+}
+.tathir-doc .doc-head { font-weight: 700; font-size: 1.1rem; margin-block-end: 0.9rem; }
+.tathir-doc h3 { font-size: 1.05rem; margin-block: 1.2rem 0.5rem; color: #1C355E; }
+.tathir-doc ul { margin-block: 0.4rem; }
+.tathir-doc li { margin-block: 0.5rem; }
+.doc-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.doc-table th, .doc-table td {
+  border: 1px solid #e2e8ee;
+  padding: 0.35rem 0.55rem;
+  text-align: start;
+}
+.doc-table th { background: #f6f8fa; }
+.tathir-source { font-size: 0.85rem; color: #55606b; margin-block: 0.5rem 0; }
+
+.tathir-doc .t {
+  cursor: pointer;
+  border-block-end: 1px dashed #b9c3ce;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.tathir-doc .t:hover { background: #eef2f7; }
+.tathir-doc .t:focus-visible { outline: 2px solid #00C9A7; outline-offset: 2px; }
+.tathir-doc .t.hidden-t {
+  background: #12263f;
+  color: transparent;
+  border-block-end-color: transparent;
+  user-select: none;
+}
+
+.tathir-doc.revealed .t { cursor: default; border-block-end-color: transparent; }
+.tathir-doc.revealed .t:hover { background: none; }
+.tathir-doc.revealed .t.hidden-t.ok {
+  background: #12263f;
+  color: transparent;
+  box-shadow: inset 0 0 0 2px #00C9A7;
+}
+.tathir-doc.revealed .t.miss {
+  background: #fde5e5;
+  color: #7a1020;
+  box-shadow: inset 0 0 0 2px #d64545;
+}
+.tathir-doc.revealed .t.hidden-t.over {
+  background: #fdf1d6;
+  color: #7a5200;
+  text-decoration: line-through;
+  box-shadow: inset 0 0 0 2px #d99e21;
+  user-select: text;
+}
+
+.tathir-result {
+  margin-block: 1rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid #d9e0e7;
+  border-inline-start: 5px solid #1C355E;
+  border-radius: 0.6rem;
+  background: #fff;
+}
+.tathir-result .score { font-size: 1.15rem; font-weight: 700; color: #1C355E; margin-block-end: 0.3rem; }
+.tathir-result .fatal-note {
+  margin-block: 0.6rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.4rem;
+  background: #fde5e5;
+  color: #7a1020;
+  font-weight: 700;
+}
+.tathir-result .cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-block: 0.8rem;
+}
+.tathir-result .cols > div { flex: 1 1 15rem; }
+.tathir-result h4 { font-size: 0.95rem; margin-block: 0 0.3rem; color: #1C355E; }
+.tathir-result ul { margin: 0; padding-inline-start: 1.1rem; font-size: 0.92rem; }
+.tathir-result .after { font-size: 0.92rem; color: #55606b; margin-block-end: 0; }
+
+.tathir-copybox { margin-block: 1rem; }
+.tathir-copybox textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  padding: 0.7rem;
+  border: 1px solid #d9e0e7;
+  border-radius: 0.5rem;
+}
+.tathir-copybox .copy-note { color: #55606b; font-size: 0.9rem; margin-block-end: 0.35rem; }
+.tathir-copybox blockquote { font-size: 0.92rem; margin-block: 0.4rem 0.6rem; }
+</style>
+<script>
+(function () {
+  var doc = document.getElementById('tathir-doc');
+  if (!doc) return;
+  var spans = Array.prototype.slice.call(doc.querySelectorAll('.t'));
+  var countEl = document.getElementById('tathir-count');
+  var resultEl = document.getElementById('tathir-result');
+  var copyBox = document.getElementById('tathir-copybox');
+  var copyText = document.getElementById('tathir-copytext');
+  var revealBtn = document.getElementById('tathir-reveal');
+  var resetBtn = document.getElementById('tathir-reset');
+  var copyBtn = document.getElementById('tathir-copy');
+  var revealed = false;
+
+  function ar(n) {
+    return String(n).replace(/[0-9]/g, function (d) { return '٠١٢٣٤٥٦٧٨٩'[d]; });
+  }
+
+  function updateCount() {
+    var n = spans.filter(function (s) { return s.classList.contains('hidden-t'); }).length;
+    countEl.textContent = n === 0 ? 'لم تطمس شيئًا بعد' : 'المطموس: ' + ar(n);
+  }
+
+  function toggle(s) {
+    if (revealed) return;
+    s.classList.toggle('hidden-t');
+    updateCount();
+  }
+
+  spans.forEach(function (s) {
+    s.setAttribute('role', 'button');
+    s.setAttribute('tabindex', '0');
+    s.addEventListener('click', function () { toggle(s); });
+    s.addEventListener('keydown', function (e) {
+      if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(s); }
+    });
+  });
+
+  revealBtn.addEventListener('click', function () {
+    if (revealed) return;
+    revealed = true;
+    var got = 0, missed = 0, over = 0, fatal = 0;
+    spans.forEach(function (s) {
+      var isCut = s.classList.contains('cut');
+      var isHidden = s.classList.contains('hidden-t');
+      if (isCut && isHidden) { s.classList.add('ok'); got++; }
+      else if (isCut && !isHidden) {
+        s.classList.add('miss');
+        missed++;
+        if (s.classList.contains('fatal')) fatal++;
+      } else if (!isCut && isHidden) { s.classList.add('over'); over++; }
+    });
+    doc.classList.add('revealed');
+    revealBtn.disabled = true;
+
+    var total = spans.filter(function (s) { return s.classList.contains('cut'); }).length;
+    var html = '<p class="score">النتيجة: ' + ar(got - over) + ' من ' + ar(total) + '</p>';
+    html += '<p>خطر طمستَه: ' + ar(got) + ' من ' + ar(total) +
+            ' · خطر فاتك: ' + ar(missed) +
+            ' · سليم طمستَه: ' + ar(over) + '</p>';
+    if (fatal > 0) {
+      html += '<p class="fatal-note">بقي في المذكّرة من يُدلّ عليه باسمه. الجولة كلها.</p>';
+    }
+    html += '<div class="cols">' +
+      '<div><h4>ما كان يجب أن يخرج</h4><ul>' +
+      '<li>الأسماء وأرقام الهوية وأرقام الاتصال</li>' +
+      '<li>ملاحظات الأداء، وكل ما يدلّ على صاحبها</li>' +
+      '<li>القرار غير المعلَن، وما يترتّب على تسرّبه</li></ul></div>' +
+      '<div><h4>وما كان يجب أن يبقى</h4><ul>' +
+      '<li>أسماء الوحدات ومعدّلات إنجازها</li>' +
+      '<li>أرقام الوفر والتكلفة والتوصيات</li>' +
+      '<li>التواريخ وقائمة التوزيع</li></ul></div></div>';
+    html += '<p class="after">احذف الاسم من صفّ ثم اقرأ بقيته: إن ظلّت المرتبة والوحدة ' +
+            'والإجراء تدلّ على صاحبه فأنت لم تطهّره. وأسرع موضع يعيد الاسم بعد حذفه هو ' +
+            'ملاحظات الأداء، فكل ملاحظة فيها تخصّ شخصًا واحدًا بعينه.</p>';
+    resultEl.innerHTML = html;
+    resultEl.hidden = false;
+    resultEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+
+  resetBtn.addEventListener('click', function () {
+    revealed = false;
+    doc.classList.remove('revealed');
+    spans.forEach(function (s) {
+      s.classList.remove('hidden-t', 'ok', 'miss', 'over');
+    });
+    resultEl.hidden = true;
+    resultEl.innerHTML = '';
+    copyBox.hidden = true;
+    revealBtn.disabled = false;
+    updateCount();
+  });
+
+  function sanitizedText() {
+    var clone = doc.cloneNode(true);
+    clone.classList.remove('revealed');
+    clone.removeAttribute('id');
+    clone.style.position = 'absolute';
+    clone.style.insetInlineStart = '-9999px';
+    clone.style.top = '0';
+    Array.prototype.forEach.call(clone.querySelectorAll('.t'), function (s) {
+      if (s.classList.contains('hidden-t') || s.classList.contains('ok')) {
+        s.textContent = '[محذوف]';
+      }
+      s.classList.remove('hidden-t', 'ok', 'miss', 'over');
+    });
+    document.body.appendChild(clone);
+    var text = clone.innerText;
+    document.body.removeChild(clone);
+    return text.replace(/\n{3,}/g, '\n\n').trim();
+  }
+
+  copyBtn.addEventListener('click', function () {
+    var text = sanitizedText();
+    copyText.value = text;
+    copyBox.hidden = false;
+    copyText.focus();
+    copyText.select();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        copyBtn.textContent = 'نُسخ النص المطهَّر';
+        setTimeout(function () { copyBtn.textContent = 'انسخ النص المطهَّر'; }, 2500);
+      }, function () {});
+    }
+  });
+
+  updateCount();
+})();
+</script>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

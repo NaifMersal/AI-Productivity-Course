@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -106,6 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
+<link rel="stylesheet" href="../rtl-code.css">
 </head>
 
 <body class="quarto-light">
@@ -120,26 +86,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#اليوم-الأول-كيف-تطلب-وبماذا-تثق" id="toc-اليوم-الأول-كيف-تطلب-وبماذا-تثق" class="nav-link active" data-scroll-target="#اليوم-الأول-كيف-تطلب-وبماذا-تثق">اليوم الأول: كيف تطلب، وبماذا تثق</a>
+  <li><a href="#اليوم-الأول-من-المحادثة-إلى-وضع-العمل" id="toc-اليوم-الأول-من-المحادثة-إلى-وضع-العمل" class="nav-link active" data-scroll-target="#اليوم-الأول-من-المحادثة-إلى-وضع-العمل">اليوم الأول: من المحادثة إلى وضع العمل</a>
   <ul class="collapse">
-  <li><a href="#مختبر-صياغة-الأوامر" id="toc-مختبر-صياغة-الأوامر" class="nav-link" data-scroll-target="#مختبر-صياغة-الأوامر">مختبر صياغة الأوامر</a></li>
-  <li><a href="#ما-تعطيه-وما-تصدقه" id="toc-ما-تعطيه-وما-تصدقه" class="nav-link" data-scroll-target="#ما-تعطيه-وما-تصدقه">ما تعطيه وما تصدّقه</a></li>
+  <li><a href="#دورة-الإحكام" id="toc-دورة-الإحكام" class="nav-link" data-scroll-target="#دورة-الإحكام">دورة الإحكام</a></li>
+  <li><a href="#أول-تسليم" id="toc-أول-تسليم" class="nav-link" data-scroll-target="#أول-تسليم">أول تسليم</a></li>
+  <li><a href="#معمل-اليوم-الأول-على-ملفك-أنت" id="toc-معمل-اليوم-الأول-على-ملفك-أنت" class="nav-link" data-scroll-target="#معمل-اليوم-الأول-على-ملفك-أنت">معمل اليوم الأول: على ملفك أنت</a></li>
   </ul></li>
-  <li><a href="#اليوم-الثاني-وضع-العمل" id="toc-اليوم-الثاني-وضع-العمل" class="nav-link" data-scroll-target="#اليوم-الثاني-وضع-العمل">اليوم الثاني: وضع العمل</a>
+  <li><a href="#اليوم-الثاني-الثقة-والاستناد-والمهارة" id="toc-اليوم-الثاني-الثقة-والاستناد-والمهارة" class="nav-link" data-scroll-target="#اليوم-الثاني-الثقة-والاستناد-والمهارة">اليوم الثاني: الثقة والاستناد والمهارة</a>
   <ul class="collapse">
-  <li><a href="#مختبر-بناء-المهارة" id="toc-مختبر-بناء-المهارة" class="nav-link" data-scroll-target="#مختبر-بناء-المهارة">مختبر بناء المهارة</a></li>
+  <li><a href="#ما-تعطيه" id="toc-ما-تعطيه" class="nav-link" data-scroll-target="#ما-تعطيه">ما تعطيه</a></li>
+  <li><a href="#ما-تصدقه" id="toc-ما-تصدقه" class="nav-link" data-scroll-target="#ما-تصدقه">ما تصدّقه</a></li>
+  <li><a href="#الاستناد-إلى-مصادرك" id="toc-الاستناد-إلى-مصادرك" class="nav-link" data-scroll-target="#الاستناد-إلى-مصادرك">الاستناد إلى مصادرك</a></li>
+  <li><a href="#شغل-مهارة-واحفظها" id="toc-شغل-مهارة-واحفظها" class="nav-link" data-scroll-target="#شغل-مهارة-واحفظها">شغِّل مهارة واحفظها</a></li>
+  <li><a href="#جدولها" id="toc-جدولها" class="nav-link" data-scroll-target="#جدولها">جدوِلها</a></li>
+  <li><a href="#معمل-اليوم-الثاني-مهارتك-على-قالبك" id="toc-معمل-اليوم-الثاني-مهارتك-على-قالبك" class="nav-link" data-scroll-target="#معمل-اليوم-الثاني-مهارتك-على-قالبك">معمل اليوم الثاني: مهارتك على قالبك</a></li>
   </ul></li>
-  <li><a href="#اليوم-الثالث-الذكاء-المحلي" id="toc-اليوم-الثالث-الذكاء-المحلي" class="nav-link" data-scroll-target="#اليوم-الثالث-الذكاء-المحلي">اليوم الثالث: الذكاء المحلي</a>
+  <li><a href="#اليوم-الثالث-ماذا-تؤتمت-ثم-وضع-البرمجة" id="toc-اليوم-الثالث-ماذا-تؤتمت-ثم-وضع-البرمجة" class="nav-link" data-scroll-target="#اليوم-الثالث-ماذا-تؤتمت-ثم-وضع-البرمجة">اليوم الثالث: ماذا تؤتمت، ثم وضع البرمجة</a>
   <ul class="collapse">
-  <li><a href="#مختبر-النموذج-المحلي" id="toc-مختبر-النموذج-المحلي" class="nav-link" data-scroll-target="#مختبر-النموذج-المحلي">مختبر النموذج المحلي</a></li>
-  <li><a href="#مختبر-hermes" id="toc-مختبر-hermes" class="nav-link" data-scroll-target="#مختبر-hermes">مختبر Hermes</a></li>
+  <li><a href="#قاعدة-الاختيار" id="toc-قاعدة-الاختيار" class="nav-link" data-scroll-target="#قاعدة-الاختيار">قاعدة الاختيار</a></li>
+  <li><a href="#وضع-البرمجة-الحركة-الأولى" id="toc-وضع-البرمجة-الحركة-الأولى" class="nav-link" data-scroll-target="#وضع-البرمجة-الحركة-الأولى">وضع البرمجة: الحركة الأولى</a></li>
+  <li><a href="#وضع-البرمجة-الحركة-الثانية" id="toc-وضع-البرمجة-الحركة-الثانية" class="nav-link" data-scroll-target="#وضع-البرمجة-الحركة-الثانية">وضع البرمجة: الحركة الثانية</a></li>
+  <li><a href="#معمل-المشروع" id="toc-معمل-المشروع" class="nav-link" data-scroll-target="#معمل-المشروع">معمل المشروع</a></li>
   </ul></li>
-  <li><a href="#اليوم-الرابع-البرمجة-بالوصف" id="toc-اليوم-الرابع-البرمجة-بالوصف" class="nav-link" data-scroll-target="#اليوم-الرابع-البرمجة-بالوصف">اليوم الرابع: البرمجة بالوصف</a>
-  <ul class="collapse">
-  <li><a href="#على-الويب" id="toc-على-الويب" class="nav-link" data-scroll-target="#على-الويب">على الويب</a></li>
-  <li><a href="#على-جهازك" id="toc-على-جهازك" class="nav-link" data-scroll-target="#على-جهازك">على جهازك</a></li>
-  </ul></li>
-  <li><a href="#اليوم-الخامس-مشروع-الختام" id="toc-اليوم-الخامس-مشروع-الختام" class="nav-link" data-scroll-target="#اليوم-الخامس-مشروع-الختام">اليوم الخامس: مشروع الختام</a></li>
   </ul>
 </nav>
     </div>
@@ -160,7 +128,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">17 أغسطس 2026</p>
+      <p class="date">1 سبتمبر 2026</p>
     </div>
   </div>
   
@@ -174,14 +142,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>كل أمر يظهر على الشاشة موجود هنا. لا تكتبه من الشاشة، انسخه من هنا.</p>
 <hr>
-<section id="اليوم-الأول-كيف-تطلب-وبماذا-تثق" class="level1">
-<h1>اليوم الأول: كيف تطلب، وبماذا تثق</h1>
-<section id="مختبر-صياغة-الأوامر" class="level2">
-<h2 class="anchored" data-anchor-id="مختبر-صياغة-الأوامر">مختبر صياغة الأوامر</h2>
-<p><strong>فكّر خطوة بخطوة.</strong> أضِفها إلى أي مهمة فيها ترتيب أو حساب:</p>
-<blockquote class="blockquote">
-<p>«اعرض خطواتك أولًا، ثم أعطِ النتيجة في السطر الأخير.»</p>
-</blockquote>
+<section id="اليوم-الأول-من-المحادثة-إلى-وضع-العمل" class="level1">
+<h1>اليوم الأول: من المحادثة إلى وضع العمل</h1>
+<section id="دورة-الإحكام" class="level2">
+<h2 class="anchored" data-anchor-id="دورة-الإحكام">دورة الإحكام</h2>
+<p>حين يخيب المخرَج، لا تبدأ من الصفر. حدّد العنصر الأضعف في أمرك (الدور، أو التعليمات، أو السياق، أو التوقّع) وأصلِح <strong>واحدًا فقط</strong>، ثم أعِد التشغيل.</p>
 <p><strong>ناقِش الخيارين.</strong> للقرارات المفتوحة:</p>
 <blockquote class="blockquote">
 <p>«اعرض حجّتين لكل خيار، ثم رجّح واحدًا واذكر سبب الترجيح.»</p>
@@ -191,107 +156,118 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>«احسبها مرة أخرى بطريقة مختلفة، ثم قارِن النتيجتين وأخبرني إن اختلفتا.»</p>
 </blockquote>
 <p>جرّبها على <code>expenses.csv</code>: اطلب مجموع كل فئة، ثم اطلب إعادة الحساب بطريق آخر.</p>
-<p><strong>دورة الإحكام.</strong> حين يخيب المخرَج، لا تبدأ من الصفر. حدّد العنصر الأضعف في أمرك (الدور، أو التعليمات، أو السياق، أو التوقّع) وأصلِح <strong>واحدًا فقط</strong>، ثم أعِد التشغيل.</p>
+<p><strong>واجعله يكتب الأمر عنك.</strong> صِف المهمة بكلماتك، ثم:</p>
+<blockquote class="blockquote">
+<p>«اكتب لي أمرًا بإطار RICE لهذه المهمة، ثم اسألني عمّا ينقصك قبل أن تنفّذه.»</p>
+</blockquote>
+<p>والحكم على الدور والتعليمات والسياق والتوقّع يبقى لك. أمر لم تقرأه ليس أمرك.</p>
 </section>
-<section id="ما-تعطيه-وما-تصدقه" class="level2">
-<h2 class="anchored" data-anchor-id="ما-تعطيه-وما-تصدقه">ما تعطيه وما تصدّقه</h2>
+<section id="أول-تسليم" class="level2">
+<h2 class="anchored" data-anchor-id="أول-تسليم">أول تسليم</h2>
+<p>وجِّه المساعد إلى <strong>مجلد ملفات الورشة</strong>، ثم:</p>
+<blockquote class="blockquote">
+<p>«اقرأ <code>event_meeting.md</code> و<code>event_plan.md</code>، واذكر ما الذي لم يعد صحيحًا في الخطة بعد هذا الاجتماع. لا تعدّل شيئًا.»</p>
+</blockquote>
+<p>راقِبه وهو <strong>يفتح الملفين</strong> قبل أن يجيب. وهذا هو الفرق بين أن تسأل عن العمل وأن تسلّمه.</p>
+</section>
+<section id="معمل-اليوم-الأول-على-ملفك-أنت" class="level2">
+<h2 class="anchored" data-anchor-id="معمل-اليوم-الأول-على-ملفك-أنت">معمل اليوم الأول: على ملفك أنت</h2>
+<p>أعِد الحركتين على ملف أحضرته من إدارتك، بعد تطهيره:</p>
+<ol type="1">
+<li>اكتب أمر RICE، شغّله، حدّد عنصره الأضعف، أصلِحه، أعِد التشغيل.</li>
+<li>ضَع ملفين في مجلد، ووجِّه المساعد إليه، واطلب المقارنة بينهما.</li>
+</ol>
+<p><strong>المخرَج:</strong> أمر واحد نجح، محفوظ في مشروع بتعليماته الدائمة.</p>
+<hr>
+</section>
+</section>
+<section id="اليوم-الثاني-الثقة-والاستناد-والمهارة" class="level1">
+<h1>اليوم الثاني: الثقة والاستناد والمهارة</h1>
+<section id="ما-تعطيه" class="level2">
+<h2 class="anchored" data-anchor-id="ما-تعطيه">ما تعطيه</h2>
 <p><strong>السلّم:</strong> عام ← داخلي ← مقيَّد.</p>
-<p><strong>تمرين التطهير:</strong> افتح <code>data/gov/restricted_sample.md</code> وضع خطًّا تحت كل ما يجب حذفه قبل اللصق. ابحث عن: الأسماء وأرقام الهوية والجوّالات، وملاحظات الأداء، والقرار غير المعلَن، والأرقام المالية التي تخصّ أفرادًا.</p>
+<p><strong>لعبة التطهير:</strong> المستند على الشاشة، وفريقك يطمس بالنقر. ابحث عن: الأسماء وأرقام الهوية والجوّالات، وملاحظات الأداء، والقرار غير المعلَن، وكل ما يدلّ على شخص بعد حذف اسمه.</p>
+<p><strong>حين لا يكفي الحذف: افصل، ثم اربط عندك.</strong> استبدل كل اسم برمز (<code>م-١</code>، <code>م-٢</code>)، وأرسل الرموز وحدها، وأعِد الأسماء على جهازك بالبحث والاستبدال. وجدول الربط لا يغادر جهازك.</p>
+<p><strong>والقاعدة التي تُقال مرة:</strong> حذف الاسم لا يغيّر تصنيف المستند. التصنيف يتغيّر بقرار مكتوب من الجهة.</p>
+</section>
+<section id="ما-تصدقه" class="level2">
+<h2 class="anchored" data-anchor-id="ما-تصدقه">ما تصدّقه</h2>
 <p><strong>اطلب الاقتباس قبل الخلاصة:</strong></p>
 <blockquote class="blockquote">
 <p>«لكل نقطة تذكرها، انقل السطر الذي أخذتها منه حرفيًا. وإن لم تجد سطرًا، فاكتب: غير موجود.»</p>
 </blockquote>
 <p><strong>أربعة تُراجَع دائمًا:</strong> الأرقام والمجاميع · الأسماء والصفات الوظيفية · التواريخ والمواعيد · أي إشارة إلى نظام أو لائحة.</p>
-<hr>
 </section>
-</section>
-<section id="اليوم-الثاني-وضع-العمل" class="level1">
-<h1>اليوم الثاني: وضع العمل</h1>
-<section id="مختبر-بناء-المهارة" class="level2">
-<h2 class="anchored" data-anchor-id="مختبر-بناء-المهارة">مختبر بناء المهارة</h2>
-<p><strong>١. شغّل المهمة مرة حتى تنجح:</strong></p>
+<section id="الاستناد-إلى-مصادرك" class="level2">
+<h2 class="anchored" data-anchor-id="الاستناد-إلى-مصادرك">الاستناد إلى مصادرك</h2>
+<p>ارفع سياسة أو لائحة بصيغة PDF، ثم:</p>
 <blockquote class="blockquote">
-<p>«راجِع <code>sample_report.md</code> مقابل <code>review_checklist.md</code>. أعطِني لكل بند: مستوفى أو ناقص، مع السطر الذي يدلّ على ذلك. ثم قائمة بما يجب إصلاحه مرتّبة بالأهمية.»</p>
+<p>«استنادًا إلى هذا فقط، أعطِ ٥ نتائج رئيسية مع مراجع الصفحات. وإن لم يكن في المصدر، قل غير موجود.»</p>
 </blockquote>
+<p>ثم <strong>انقر على استشهادين</strong> وافتح المقطع الذي أُخِذا منه. المصدر يقلّل التخمين ولا يغني عن مراجعتك.</p>
+</section>
+<section id="شغل-مهارة-واحفظها" class="level2">
+<h2 class="anchored" data-anchor-id="شغل-مهارة-واحفظها">شغِّل مهارة واحفظها</h2>
+<blockquote class="blockquote">
+<p>«راجِع <code>sample_report.md</code> مقابل <code>review_checklist.md</code>، واكتب مذكرة موجزة: نقطتا قوة، واقتراحان للتحسين، وخطوة تالية واحدة. ثم احفظ ما فعلتَه مهارةً باسم <strong>مراجعة تقرير</strong>.»</p>
+</blockquote>
+</section>
+<section id="جدولها" class="level2">
+<h2 class="anchored" data-anchor-id="جدولها">جدوِلها</h2>
+<blockquote class="blockquote">
+<p>«‏/schedule كل جمعة الساعة ٤ عصرًا، شغِّل <strong>مراجعة تقرير</strong> على أي تقارير جديدة في هذا المجلد. <strong>أبلِغني ولا ترسل شيئًا.</strong>»</p>
+</blockquote>
+<p>احذفها بعدها مباشرة. المقصود أن ترى أن <strong>«متى»</strong> مجرّد إعداد.</p>
+</section>
+<section id="معمل-اليوم-الثاني-مهارتك-على-قالبك" class="level2">
+<h2 class="anchored" data-anchor-id="معمل-اليوم-الثاني-مهارتك-على-قالبك">معمل اليوم الثاني: مهارتك على قالبك</h2>
+<p><strong>١. شغّل المهمة مرة حتى تنجح</strong> على قالب إدارتك الحقيقي.</p>
 <p><strong>٢. ثم اطلب الحفظ:</strong></p>
 <blockquote class="blockquote">
-<p>«احفظ ما فعلناه للتوّ مهارةً باسم: مراجعة تقرير. اجعلها تعمل على أي تقرير وأي قائمة تحقّق، لا على هذين الملفين وحدهما.»</p>
+<p>«احفظ ما فعلناه للتوّ مهارةً باسم: [الاسم]. اجعلها تعمل على أي ملف وأي قالب، لا على هذين الملفين وحدهما.»</p>
 </blockquote>
 <p>الجملة الأخيرة هي التي تحوّل المثال إلى قاعدة.</p>
 <p><strong>٣. جرّبها على مُدخَل آخر:</strong> شغّلها على <code>sample_report_2.md</code>. هل أشارت إلى الملف الأول بالخطأ؟ هل بقي شكل المخرَج ثابتًا؟</p>
 <p><strong>٤. صحّح، ثم احفظ من جديد.</strong></p>
+<p><strong>المخرَج:</strong> مهارة تعمل على قالبك، جرّبها زميل على ملف لم ترَه.</p>
 <hr>
 </section>
 </section>
-<section id="اليوم-الثالث-الذكاء-المحلي" class="level1">
-<h1>اليوم الثالث: الذكاء المحلي</h1>
-<section id="مختبر-النموذج-المحلي" class="level2">
-<h2 class="anchored" data-anchor-id="مختبر-النموذج-المحلي">مختبر النموذج المحلي</h2>
-<p>ثبّت من ذاكرة USB التي وزّعها المدرِّب. <strong>لا تنزّل من شبكة القاعة.</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ollama</span> serve</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ollama</span> run «النموذج المختار»</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">ollama</span> ps</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<blockquote class="blockquote">
-<p>اسم النموذج يحدّده المدرِّب قبل الجلسة.</p>
-</blockquote>
-<p><strong>ثم افصل الشبكة:</strong> أغلِق الواي فاي من شريط المهام، وانزع الكابل إن كان موصولًا، وتأكّد أن المتصفّح لم يعد يفتح صفحة.</p>
-<p><strong>وشغّله على المستند المقيَّد كما هو، بلا تطهير:</strong></p>
-<blockquote class="blockquote">
-<p>«لخّص هذا المستند في خمس نقاط. ثم استخرج كل اسم ورقم هوية في جدول من عمودين.»</p>
-</blockquote>
-<p><strong>احكم على النتيجة:</strong> هل العربية سليمة؟ هل فاته اسم أو رقم؟ أين تثق به، وأين لا؟</p>
+<section id="اليوم-الثالث-ماذا-تؤتمت-ثم-وضع-البرمجة" class="level1">
+<h1>اليوم الثالث: ماذا تؤتمت، ثم وضع البرمجة</h1>
+<section id="قاعدة-الاختيار" class="level2">
+<h2 class="anchored" data-anchor-id="قاعدة-الاختيار">قاعدة الاختيار</h2>
+<p><strong>التكرار × الوقت × وضوح الخطوات</strong>، ثم اطرح <strong>نطاق التأثير</strong>.</p>
+<p>اكتب خمس مهام تكرّرها، وأعطِ كل واحدة درجة من ٣ في الأسئلة الأربعة، ثم اختر واحدة: أعلى مجموع في الثلاثة الأولى، وأقلّ نطاق تأثير. <strong>ابدأ بأصغر مهامك لا بأهمّها</strong>، فأهمّها أكثرها استثناءات.</p>
+<p>ثم صِفها في <strong>الخانات الست</strong> قبل أن تفتح المساعد: المُشغِّل، والمصادر، والخطوات، والمخرَج، والوجهة، ونقطة الاعتماد. والسادسة أخطرها: غيابها يُخرِج ردودًا باسمك قبل أن تراها.</p>
 </section>
-<section id="مختبر-hermes" class="level2">
-<h2 class="anchored" data-anchor-id="مختبر-hermes">مختبر Hermes</h2>
-<p><strong>التثبيت</strong> (مثبِّت سطح المكتب، أو سطر واحد في PowerShell):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">iex</span> <span class="op">(</span><span class="fu">irm</span> https<span class="op">://</span>hermes-agent<span class="op">.</span><span class="fu">nousresearch</span><span class="op">.</span><span class="fu">com</span><span class="op">/</span>install<span class="op">.</span><span class="fu">ps1</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>المثبِّت يجلب Python 3.11 وNode.js v22 وripgrep وffmpeg. وGit وحده يجب أن يكون متوفّرًا.</p>
-<p><strong>أول تشغيل:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">hermes</span> model</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">hermes</span> <span class="at">--tui</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">hermes</span> desktop</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>قاعدة المختبر، من توثيق المنتج:</strong> «إن لم يستطع Hermes إتمام محادثة عادية، فلا تضِف مزيدًا من الميزات بعد. اجعل محادثة واحدة نظيفة تعمل أولًا.»</p>
-<p><strong>ثلاثة تعرفها من أمس، بواجهة أخرى:</strong> متصفّح الملفات (مجلد العمل) · مدير المهارات (المهارات) · مجدوِل cron (الجدولة).</p>
-<p><strong>أين تعيش المهارات:</strong> <code>~/.hermes/skills/</code>، ولكل مهارة مجلد فيه <code>SKILL.md</code>.</p>
-<p><strong>نطاق التأثير كإعداد:</strong> اضبط <code>HERMES_WRITE_SAFE_ROOT</code> على مجلد الورشة قبل أن تبدأ.</p>
-<p><strong>شغّل مهمة أمس هنا</strong> (المزوّد سحابي، فطبّق اختبار الجريدة):</p>
+<section id="وضع-البرمجة-الحركة-الأولى" class="level2">
+<h2 class="anchored" data-anchor-id="وضع-البرمجة-الحركة-الأولى">وضع البرمجة: الحركة الأولى</h2>
+<p>أنشئ مجلدًا جديدًا، وانسخ إليه تحديثات الحالة الثلاثة، ثم:</p>
 <blockquote class="blockquote">
-<p>«راجِع <code>sample_report.md</code> مقابل <code>review_checklist.md</code>، واكتب مذكّرة موجزة: نقطتا قوة، واقتراحان للتحسين، وخطوة تالية واحدة.»</p>
+<p>«افتح هذا المجلد. اقرأ كل تحديث فيه، واستخرج لكل واحد: المشروع، وعدد المعوّقات، وأي معوّق ينتظر إدارة أخرى. اجمعها في جدول واحد واحفظه في <code>متابعة.csv</code>. أرِني الجدول قبل أن تحفظ.»</p>
 </blockquote>
-<hr>
-</section>
-</section>
-<section id="اليوم-الرابع-البرمجة-بالوصف" class="level1">
-<h1>اليوم الرابع: البرمجة بالوصف</h1>
-<section id="على-الويب" class="level2">
-<h2 class="anchored" data-anchor-id="على-الويب">على الويب</h2>
-<p>ابدأ بما لا يحتاج حسابًا ولا تثبيتًا. الملف: <code>data/gov/service_requests.csv</code></p>
+<p><strong>ثم اطلب المنطق:</strong></p>
 <blockquote class="blockquote">
-<p>«ابنِ لي صفحة واحدة تقرأ هذا الملف وتعرض: عدد الطلبات لكل إدارة، ومتوسّط أيام المعالجة، وقائمة بما تجاوز عشرة أيام. اجعل المتأخّر باللون البرتقالي.»</p>
+<p>«أرِني كيف عرفت أن معوّقًا ينتظر إدارة أخرى، بالعربية، في خمسة أسطر.»</p>
 </blockquote>
-<p><strong>ثم أصلِح بالوصف، ثلاث جولات:</strong> «الأعمدة مزدحمة، وزّعها.» · «أضِف فلترًا حسب الأولوية.» · «اجعل الخط أكبر.»</p>
-<p><strong>أداتك أنت:</strong> اختر شيئًا تعبّئه أو تحسبه يدويًا. صِفه في ثلاث جمل: ماذا يدخل، وماذا يخرج، ومَن يستخدمه.</p>
-<p>انقل إلى منصّة تستضيفها <strong>فقط</strong> إن احتاجت الأداة أن تحفظ بيانات بين الجلسات.</p>
+<p>ثم افتح ملفًا واحدًا وعُدَّها بنفسك. إن اختلف العدّ، فالخلل في المنطق.</p>
+<p><strong>ثم أعِد التشغيل:</strong> انسخ تحديثًا وغيّر معوّقاته، وشغّل الأداة نفسها <strong>بلا تعديل</strong>. هذه هي القدرة التي خرجت بها: مخرَج يُشغَّل من جديد على مُدخَل جديد.</p>
 </section>
-<section id="على-جهازك" class="level2">
-<h2 class="anchored" data-anchor-id="على-جهازك">على جهازك</h2>
-<blockquote class="blockquote">
-<p>«اكتب سكربتًا يمرّ على كل ملفات هذا المجلد، ويستخرج من كل ملف: التاريخ والجهة والموضوع، ويجمعها في جدول واحد. شغّله وأرِني النتيجة قبل الحفظ.»</p>
-</blockquote>
-<p><strong>ثم اجعله يعمل بلا إنترنت:</strong></p>
-<blockquote class="blockquote">
-<p>«عدّل السكربت ليرسل كل ملف إلى النموذج المحلي على <code>http://localhost:11434/v1</code> بدل الخدمة السحابية، ثم شغّله والشبكة مفصولة.»</p>
-</blockquote>
-<hr>
+<section id="وضع-البرمجة-الحركة-الثانية" class="level2">
+<h2 class="anchored" data-anchor-id="وضع-البرمجة-الحركة-الثانية">وضع البرمجة: الحركة الثانية</h2>
+<p>خذ سطرًا من سجلّ مهامك، وصِفه في ثلاث جمل قبل أن تفتح الأداة: ما الملفات التي يقرؤها، وما الذي يستخرجه منها، وما شكل ما يخرج.</p>
+<p>ثم ابنِ، وصحّح بالوصف <strong>خللًا واحدًا في المرة</strong>، ثم شغّلها على المجلد كلّه.</p>
+<p><strong>قبل أن تخرج:</strong> احفظ الأداة في المجلد، واكتب في أعلاها سطرًا واحدًا: ماذا تفعل، وعلى أي ملفات، ومن يملكها.</p>
 </section>
-</section>
-<section id="اليوم-الخامس-مشروع-الختام" class="level1">
-<h1>اليوم الخامس: مشروع الختام</h1>
-<p>القاعدة: <strong>التكرار × الوقت × وضوح الخطوات</strong>، ثم اطرح <strong>نطاق التأثير</strong>.</p>
-<p>اكتب خمس مهام تكرّرها، وأعطِ كل واحدة درجة من ٣ في الأسئلة الأربعة، ثم اختر واحدة.</p>
-<p>بقية اليوم في ورقتين منفصلتين: <strong>مشروع الختام</strong> و<strong>خطة التبنّي</strong>.</p>
+<section id="معمل-المشروع" class="level2">
+<h2 class="anchored" data-anchor-id="معمل-المشروع">معمل المشروع</h2>
+<p><strong>المجلد واحد لا يتغيّر.</strong> الذي فتحته في الحركة الأولى هو الذي تعرض منه.</p>
+<p>معيار القبول في <strong>ورقة التكليف</strong>، وخطة التبنّي في <strong>ورقة الخطة</strong>. وفي العرض، اذكر ما أخفق أيضًا.</p>
+<p><strong>واكتب الرقمين قبل أن تغادر:</strong> الوقت الذي تأخذه المهمة اليوم، وعدد التصحيحات التي احتاجها آخر ناتج سلّمته. الثاني أهمّ، لأن الوقت وحده يُخفي أتمتة سريعة تُنتج عملًا رديئًا.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

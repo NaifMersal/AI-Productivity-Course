@@ -9,8 +9,8 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="dcterms.date" content="2026-08-17">
-  <title>AI at Work – البرمجة بالوصف: على جهازك</title>
+  <meta name="dcterms.date" content="2026-09-01">
+  <title>AI at Work – وضع البرمجة</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -32,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-84547a33d66f15e920aec59a21b11c2f.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-a71a698c82205917c0b6130ef67c5945.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -132,114 +132,295 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title">البرمجة بالوصف: على جهازك</h1>
-  <p class="subtitle">أداة تعمل على ملفاتك، وبلا إنترنت إن شئت</p>
+  <h1 class="title">وضع البرمجة</h1>
+  <p class="subtitle">الدرجة الثالثة: أن يبني لك أداة تعمل</p>
 
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">2026-08-17</p>
+  <p class="date">2026-09-01</p>
 </section>
 <section>
-<section id="من-صفحة-في-المتصفح-إلى-ملفاتك" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h1>من صفحة في المتصفّح إلى ملفاتك</h1>
-<p>الجلسة الثالثة</p>
+<section id="الدرجة-الثالثة" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>الدرجة الثالثة</h1>
+<p>فتحنا المحادثة، ثم وضع العمل. وهذه الثالثة</p>
 </section>
-<section id="الفرق-الذي-يهم" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">الفرق الذي يهمّ</h2>
-<div class="card accent-teal" data-id="shift">
-<p>أداة المتصفّح تنتظر أن ترفع إليها شيئًا. أما هنا فالوكيل يكتب <strong>سكربتًا</strong> يعمل على مجلدك، على كل الملفات، وفي كل مرة تشغّله.</p>
+<section id="الوضعان-يفتحان-المجلد-نفسه" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">الوضعان يفتحان المجلد نفسه</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="card accent-teal tight">
+<p><strong>وضع العمل</strong></p>
+<p>يفتح مجلدك، ويعدّل ملفاتك. تخرج بملفّ محدَّث.</p>
 </div>
-<div class="card accent-purple" data-id="script">
-<p>والسكربت برنامج صغير يكتبه الوكيل ويشغّله. جديد اليوم: أنت من يطلب بناءه.</p>
+</div><div class="column" style="width:50%;">
+<div class="card accent-orange tight">
+<p><strong>وضع البرمجة</strong></p>
+<p>يفتح المجلد نفسه، ويكتب فيه أداة. تخرج بشيء يُشغَّل.</p>
+</div>
+</div></div>
+</section>
+<section id="المخرج-ملف-يبقى-في-مجلدك" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">المخرَج ملفّ يبقى في مجلدك</h2>
+<div class="card accent-purple" data-id="out">
+<p>في المحادثة تأخذ جوابًا تنسخه. وهنا تأخذ ملفًا يبقى في مجلدك، تفتحه غدًا وتشغّله من جديد.</p>
 </div>
 </section>
-<section id="بم-تبنيه" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">بمَ تبنيه</h2>
-<ul>
-<li class="fragment">Claude Code أو Codex في الطرفية</li>
-<li class="fragment">Hermes، وقد ثبّتّه أمس</li>
-<li class="fragment">Cowork نفسه، إن كفى الطلب</li>
-</ul>
+<section id="البرمجة-بالوصف" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">البرمجة بالوصف</h2>
+<div class="card accent-teal" data-id="vibe">
+<p><strong>البرمجة بالوصف (vibe coding)</strong>: تصف ما تريده بلغتك، فيكتب الوكيل الشفرة ويشغّلها ويصلحها.</p>
+</div>
 <div class="center muted">
-<p>ثلاثتها تفعل الشيء ذاته هنا: تكتب، ثم تشغّل، ثم تُصلِح.</p>
+<p>لن تكتب سطرًا. سترى ما كُتب، وتقول ما الذي تريده مختلفًا.</p>
 </div>
 </section></section>
 <section>
-<section id="عرض-مجلد-فوضوي-يصير-جدولا" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h1>عرض: مجلد فوضوي يصير جدولًا</h1>
-
+<section id="ثلاث-قدرات-يضيفها-وضع-البرمجة" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>ثلاث قدرات يضيفها وضع البرمجة</h1>
+<p>وكلاء، وتكرار، وإعداد يخصّك</p>
 </section>
-<section id="الطلب-جدول-من-مجلد-كامل" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">الطلب: جدول من مجلد كامل</h2>
-<div class="card-dark center">
-<p>«اكتب سكربتًا يمرّ على كل ملفات هذا المجلد، ويستخرج من كل ملف: التاريخ والجهة والموضوع، ويجمعها في جدول واحد. شغّله وأرِني النتيجة قبل الحفظ.»</p>
+<section id="وكيل-فرعي-لمهمة-جانبية" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">وكيل فرعي لمهمة جانبية</h2>
+<div class="card accent-teal" data-id="agents">
+<p>تكلّف <strong>وكيلًا فرعيًا</strong> بمهمة جانبية. له نافذته وأدواته وصلاحياته، ويعيد إليك الخلاصة وحدها.</p>
 </div>
 <ul>
+<li class="fragment">يقرأ أربعين ملفًا، ويعيد صفحة</li>
+<li class="fragment">تكلّف عدّة وكلاء في وقت واحد</li>
+<li class="fragment">كل وكيل تعرّفه مرة، ويبقى</li>
+</ul>
+</section>
+<section id="التكرار-على-شرط-أو-على-ساعة" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">التكرار على شرط أو على ساعة</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="card accent-purple tight">
+<p><strong>حتى يتحقّق شرط</strong> · <code>/goal</code></p>
+<p>«اعمل حتى تمرّ كل الاختبارات.» يصدر الحكم فاحص مستقلّ بعد كل جولة.</p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="card accent-orange tight">
+<p><strong>كل مدة</strong> · <code>/loop</code></p>
+<p>«افحص كل خمس دقائق.» للمتابعة، لا للإنجاز.</p>
+</div>
+</div></div>
+<div class="center muted">
+<p>الاثنان يحتاجان جلسة مفتوحة أمامك.</p>
+</div>
+</section>
+<section id="إعداد-يبقى-في-المجلد" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">إعداد يبقى في المجلد</h2>
+<div class="card accent-navy" data-id="conf">
+<p>المجلد يحمل إعداده معه: قواعدك، ومهاراتك، ووكلاؤك. يفتحه المساعد فيقرأها قبل أن يبدأ.</p>
+</div>
+<div class="center muted">
+<p>زميلك يفتح المجلد نفسه، فتُقرأ عليه القواعد نفسها.</p>
+</div>
+</section></section>
+<section>
+<section id="ما-داخل-المجلد" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>ما داخل المجلد</h1>
+<p>ملفّ واحد، ومجلد مخفيّ</p>
+</section>
+<section id="ملف-claude.md-في-جذر-مجلدك" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">ملفّ <code>CLAUDE.md</code> في جذر مجلدك</h2>
+<div class="card accent-teal" data-id="claudemd">
+<p><code>CLAUDE.md</code> في جذر مجلدك. تكتب فيه قواعد المشروع بلغتك، فتُقرأ في بداية كل جلسة، بلا أن تعيد شرحها.</p>
+</div>
+<div class="center muted">
+<p>أبقِه تحت مئتَي سطر.</p>
+</div>
+</section>
+<section id="إن-كان-عندك-ملف-agents.md" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">إن كان عندك ملفّ <code>AGENTS.md</code></h2>
+<div class="card accent-orange" data-id="agentsmd">
+<p>المساعد يقرأ <code>CLAUDE.md</code> وحده ولا يقرأ <code>AGENTS.md</code>. فإن كان مجلدك يحمل <code>AGENTS.md</code> لأداة أخرى، فاستورِده داخل <code>CLAUDE.md</code> بسطر واحد.</p>
+</div>
+<div class="center muted">
+<p>السطر هو <code>@AGENTS.md</code>، فتقرأ الأداتان النصّ نفسه.</p>
+</div>
+</section>
+<section id="مجلد-.claude-يحمل-الباقي" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">مجلد <code>.claude/</code> يحمل الباقي</h2>
+<div class="tree">
+<p><span class="p"><code>CLAUDE.md</code></span><span class="g">قواعد المشروع، تُقرأ في كل جلسة</span> <span class="p"><code>.claude/</code></span><span class="g">إعداد المجلد وامتداداته</span> <span class="p sub"><code>settings.json</code></span><span class="g">ما يُسمح به وما يُمنع</span> <span class="p sub"><code>rules/</code></span><span class="g">قواعد تُقرأ عند ملفات بعينها</span> <span class="p sub"><code>skills/</code></span><span class="g">المهارات التي عرفتها أمس، ملفًّا ملفًّا</span> <span class="p sub"><code>agents/</code></span><span class="g">الوكلاء المتخصّصون</span> <span class="p sub"><code>workflows/</code></span><span class="g">التكرار المحفوظ، يُستدعى باسمه</span></p>
+</div>
+<div class="center muted">
+<p>الأسماء نفسها تحت <code>~/.claude/</code> تسري على مشاريعك كلها.</p>
+</div>
+</section>
+<section id="الإضافة-تحمل-كل-ذلك-في-حزمة" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">الإضافة تحمل كل ذلك في حزمة</h2>
+<div class="card accent-purple" data-id="plugin">
+<p><strong>الإضافة (plugin)</strong> حزمة جاهزة فيها مهارات ووكلاء وإعداد. تركّبها بأمر واحد، فتصير جزءًا من مجلدك.</p>
+</div>
+<div class="center muted">
+<p>قائمة الإضافات تتغيّر باستمرار، فاقرأها من الشاشة وقت الاستخدام.</p>
+</div>
+<aside class="notes">
+<p>افتح قائمة الإضافات على الشاشة الآن، ولا تعتمد على قائمة مكتوبة.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="إضافة-تحرر-الفيديو-على-جهازك" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">إضافة تحرّر الفيديو على جهازك</h2>
+<div class="card accent-navy" data-id="videouse">
+<p>إضافة مفتوحة اسمها <code>video-use</code> تحرّر الفيديو. تعطيها مجلد لقطات، فتحذف الصمت والحشو، وتحرق الترجمة، وتخرج ملفًا واحدًا.</p>
+</div>
+<div class="center muted">
+<p>تعمل لأنها تشغّل برنامج ترميز مثبَّتًا على جهازك.</p>
+</div>
+</section></section>
+<section>
+<section id="الحلقة" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>الحلقة</h1>
+<p>ثلاث خطوات تتكرّر حتى تعمل</p>
+</section>
+<section id="صف-ثم-شغل-ثم-صحح" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">صِف، ثم شغِّل، ثم صحِّح</h2>
+<div class="flow">
+<div class="flow-step accent-teal">
+<p><span class="t">صِف</span> <span class="s">ما يُدخَل، وما يُحسَب، وما يظهر.</span></p>
+</div>
+<div class="flow-arrow">
+<p>←</p>
+</div>
+<div class="flow-step accent-purple">
+<p><span class="t">شغِّل</span> <span class="s">على ملف حقيقي، أمامك.</span></p>
+</div>
+<div class="flow-arrow">
+<p>←</p>
+</div>
+<div class="flow-step accent-orange">
+<p><span class="t">صحِّح</span> <span class="s">بالوصف، خللًا واحدًا في المرة.</span></p>
+</div>
+</div>
+<div class="center muted">
+<p>النسخة الأولى ناقصة دائمًا، فخطّط لعدّة دورات.</p>
+</div>
+</section>
+<section id="اقرأ-المنطق-لا-الشكل" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">اقرأ المنطق، لا الشكل</h2>
+<div class="card-dark center" data-id="logic">
+<p>«أرِني المنطق الذي استعملته، بالعربية، في خمسة أسطر.»</p>
+</div>
+<ul>
+<li class="fragment">المنطق يخرج خطأً قبل الشكل</li>
+<li class="fragment">ثم الحالة الفارغة أو الناقصة</li>
+<li class="fragment">ثم ما لم تذكره أصلًا</li>
+</ul>
+</section></section>
+<section>
+<section id="شاهده-يعمل" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>شاهِده يعمل</h1>
+<p>مجلد فيه اثنتا عشرة ورقة، وجدول واحد يخرج</p>
+</section>
+<section id="مجلد-يصير-جدولا" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">مجلد يصير جدولًا</h2>
+<div class="card-dark center">
+<p>«افتح هذا المجلد. اقرأ كل ورقة فيه، واستخرج لكل واحدة: عنوانها، وعدد مراجعها، وأي مرجع بلا رابط. اجمعها في جدول واحد. أرِني النتيجة قبل الحفظ.»</p>
+</div>
+<div class="center muted">
+<p>ثم نعيد تشغيله على مجلد آخر، بلا تعديل حرف.</p>
+</div>
+</section>
+<section id="ما-تراقبه-وهو-يبني" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">ما تراقبه وهو يبني</h2>
+<ul>
+<li class="fragment">يفتح الملفات بنفسه، بلا لصق</li>
 <li class="fragment">يعطي النتيجة ذاتها في كل تشغيل</li>
-<li class="fragment">لا يتعب ولا ينسى ملفًا</li>
 <li class="fragment">يعمل على ألف ملف بالكلفة نفسها</li>
 </ul>
 </section>
-<section id="على-جهازي-لا-تعني-لم-يغادر-شيء" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">«على جهازي» لا تعني «لم يغادر شيء»</h2>
-<div class="card accent-orange" data-id="notlocal">
-<p>السكربت على جهازك. أما الوكيل الذي كتبه فيفكّر بنموذج عند مزوّد خارجي، وما أرسلتَه إليه قد غادر فعلًا.</p>
-</div>
-<div class="center muted">
-<p>افحص المزوّد والشبكة وسياسة جهتك قبل أن تصف بيئة بأنها مغلقة.</p>
-</div>
-</section></section>
-<section>
-<section id="اجعلها-تعمل-بلا-إنترنت" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
-<h1>اجعلها تعمل بلا إنترنت</h1>
-<p>الجلسة الرابعة</p>
-</section>
-<section id="اربط-السكربت-بنموذج-الأمس" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">اربط السكربت بنموذج الأمس</h2>
-<div class="card accent-teal" data-id="offline">
-<p>النموذج الذي ثبّتّه أمس يستقبل الطلبات على عنوان محلي. يستطيع السكربت أن يسأله بدل أن يسأل السحابة. عندها تعمل الأداة كلها على جهازك.</p>
-</div>
-<div class="center muted">
-<p>العنوان: <code>http://localhost:11434/v1</code></p>
-</div>
-</section>
-<section id="الطلب-وصله-بالنموذج-المحلي" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">الطلب: وصِله بالنموذج المحلي</h2>
-<div class="card-dark center">
-<p>«عدّل السكربت ليرسل كل ملف إلى النموذج المحلي على <code>http://localhost:11434/v1</code> بدل الخدمة السحابية، ثم شغّله والشبكة مفصولة.»</p>
-</div>
-<div class="center muted">
-<p>هذا هو الجمع الذي انتظرناه: أداة تعمل، ومستند لا يغادر الجهاز.</p>
-</div>
-</section></section>
-<section>
-<section id="قبل-أن-تتكئ-عليها" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
-<h1>قبل أن تتّكئ عليها</h1>
-
-</section>
-<section id="متى-تتفوق-الأداة-على-المهارة" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">متى تتفوّق الأداة على المهارة</h2>
+<section id="الفرق-بين-المهارة-والأداة" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">الفرق بين المهارة والأداة</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="card accent-purple tight">
 <p><strong>المهارة</strong></p>
-<p>عملك أنت. تتغيّر خطواتها معك.</p>
+<p>خطوات يقرؤها الوكيل ويتبعها. تتغيّر معك.</p>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="card accent-teal tight">
 <p><strong>الأداة</strong></p>
-<p>يستخدمها غيرك. ونتيجتها واحدة.</p>
+<p>برنامج يُشغَّل. نتيجته واحدة في كل مرة.</p>
 </div>
 </div></div>
 <div class="center muted">
-<p>وسمِّ للأداة مالكًا واحدًا من اليوم. أداة بلا مالك تصير عبئًا على من يأتي بعدك.</p>
+<p>الأداة وحدها يمكن أن تسلّمها لزميل يشغّلها بنفسه.</p>
 </div>
+</section></section>
+<section>
+<section id="قبل-أن-يكتب-في-مجلدك" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
+<h1>قبل أن يكتب في مجلدك</h1>
+
+</section>
+<section id="اختبار-التراجع-هنا" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">اختبار التراجع هنا</h2>
+<div class="card accent-orange" data-id="undo">
+<p>الأداة تكتب ملفات، لا رسائل. فابدأ في <strong>وضع المسودة</strong>، واجعله يعرض ما سيتغيّر قبل أن يحفظ.</p>
+</div>
+<div class="center muted">
+<p>ابدأ على مجلد تجريبي فيه نسخة من ملفاتك.</p>
+</div>
+</section>
+<section id="تركيب-الإضافة-يحتاج-مصدرا-تعرفه" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">تركيب الإضافة يحتاج مصدرًا تعرفه</h2>
+<div class="card accent-orange" data-id="trust">
+<p>الإضافة تنفّذ شفرة على جهازك بصلاحياتك أنت، ولا أحد يضمن ما بداخلها نيابة عنك.</p>
+</div>
+<div class="center muted">
+<p>لا تركّب إلا من مصدر تعرفه، واسأل تقنية المعلومات قبل مجلد العمل الحقيقي.</p>
+</div>
+</section>
+<section id="اختبر-نفسك" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">اختبر نفسك</h2>
+<div class="qbox">
+<div class="qtitle">
+<p>طلبت أداة تحسب، فخرجت صفحة أنيقة وأرقامها تبدو معقولة. ما أول ما تفعله؟</p>
+</div>
+<p><strong>١.</strong> تحسّن الشكل، ثم تعتمدها.</p>
+<p><strong>٢.</strong> تطلب المنطق، وتتحقّق من حالة واحدة يدويًا.</p>
+</div>
+<div class="fragment">
+<div class="fill-orange">
+<p><strong>١.</strong> الشكل يظهر صحيحًا قبل أن يصير المنطق صحيحًا.</p>
+</div>
+</div>
+<div class="fragment">
+<div class="fill-teal">
+<p><strong>٢.</strong> نعم. المنطق أول ما يخرج خطأً، ولا يُكتشف إلا بطلبه.</p>
+</div>
+</div>
+</section>
+<section id="أهم-النقاط" class="slide level2 sdaia-dark" data-background-color="#1C355E">
+<h2>أهم النقاط</h2>
+<ol type="1">
+<li class="fragment">وضع العمل يعدّل ملفاتك. ووضع البرمجة يترك فيها أداة.</li>
+<li class="fragment">الحلقة: صِف، ثم شغِّل، ثم صحِّح بالوصف.</li>
+<li class="fragment">اطلب المنطق واقرأه. الشكل لا يدلّ عليه.</li>
+<li class="fragment">وكلاء، وتكرار، وإعداد يبقى في المجلد.</li>
+<li class="fragment"><code>CLAUDE.md</code> قواعدك، و<code>.claude/</code> امتداداتك.</li>
+<li class="fragment">الإضافة تنفّذ شفرة بصلاحياتك. اعرف مصدرها.</li>
+</ol>
 </section>
 <section id="حدود-ما-عرض" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">حدود ما عُرِض</h2>
-<div class="card accent-navy" data-id="limits">
-<p>أسماء الأدوات هنا أمثلة للتوضيح، لا توصية ولا اعتماد. والقدرات والواجهات والأسعار تتغيّر. والمرجع في الاستخدام الفعلي سياسة جهتك، وتصنيف بياناتها، وبيئتها التقنية المعتمدة.</p>
+<div class="card accent-navy tight" data-id="limits">
+<p>أسماء الأدوات والملفات هنا <strong>أمثلة للتوضيح، لا توصية ولا اعتماد رسمي</strong>. والقدرات والواجهات والأسعار تتغيّر باستمرار.</p>
+</div>
+<div class="center muted">
+<p>ويبقى المرجع سياسة جهتك، وتصنيف بياناتها، وبيئتها التقنية المعتمدة.</p>
 </div>
 
 

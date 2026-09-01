@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.38">
 
   <meta name="dcterms.date" content="2026-09-01">
-  <title>AI at Work – الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook</title>
+  <title>AI at Work – حين يجب أن يبقى</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -132,200 +132,196 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="../slides_template/assets/anim.svg" data-background-opacity="0.15" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title">الاستناد إلى المصادر والإنشاء باستخدام Gemini Notebook</h1>
-  <p class="subtitle">إجابات مستندة إلى مصادرك + شرائح منها</p>
+  <h1 class="title">حين يجب أن يبقى</h1>
+  <p class="subtitle">الجواب على السؤالين: البقاء والمشاركة</p>
 
 <div class="quarto-title-authors">
 </div>
 
   <p class="date">2026-09-01</p>
 </section>
-<section id="ضع-المصادر-الصحيحة-على-المكتب" class="title-slide slide level1 center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">ضع المصادر الصحيحة على المكتب</h1>
-<div data-id="intro" style="background: #f7f9fc; padding: 1.2em; border-radius: 12px; text-align: center; font-size: 1.15em;">
-<p><strong>في وقت سابق اليوم:</strong> الدماغ لا يعرف إلا ما على المكتب.</p>
-</div>
-<div class="fragment">
-<div class="card-dark center" style="font-size: 1.15em; margin-top: 1em;">
-<p>لذا ضع <strong>المصادر الصحيحة</strong> هناك، واجعله يجيب من <strong>تلك فقط</strong>. هذا هو <strong>الاستناد إلى المصادر (grounding)</strong>. وبدونه، حتى أذكى دماغ يخمّن.</p>
-</div>
-</div>
-</section>
-
-<section id="الطريقة-الخطأ-والطريقة-الصحيحة" class="title-slide slide level1 center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">الطريقة الخطأ والطريقة الصحيحة</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="card accent-orange">
-<p><strong>خطأ</strong></p>
-<p>“لخِّص أحدث اتجاهات السوق.”</p>
-<p>← استشهادات عامّة، وربما مختلَقة.</p>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="card accent-teal">
-<p><strong>صحيح</strong></p>
-<p>ارفع ٥ تقارير ← «استنادًا إلى هذه <strong>فقط</strong>، لخِّص…»</p>
-<p>← محدّدة، قابلة للاستشهاد، قابلة للدفاع.</p>
-</div>
-</div></div>
-<div class="fragment">
-<div class="card-dark center" style="font-size: 1.15em; margin-top: 0.6em;">
-<p><strong>لا استشهاد؟ اعتبره غيرَ مُتَحَقَّقٍ منه.</strong></p>
-</div>
-<div class="center" style="margin-top: 0.4em;">
-<p>لأجل التقارير والعروض وأعمال التخطيط، اطلب مرجع الصفحة.</p>
-</div>
-</div>
-</section>
-
 <section>
-<section id="تعرف-على-gemini-notebook" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h1>تعرّف على Gemini Notebook</h1>
-<p>سابقًا NotebookLM. مساعد بحثي يستند إلى مستنداتك <em>أنت</em></p>
-<div class="spot">
-<p><img data-src="../assets/logos/gemini-notebook.svg"></p>
-</div>
+<section id="سألنا-سؤالين-وأجلنا-الجواب" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>سألنا سؤالين، وأجّلنا الجواب</h1>
+<p>واليوم نبنيه</p>
 </section>
-<section id="فيم-يبرع" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">فيمَ يبرع</h2>
-<div class="card accent-purple" data-id="nlm">
-<p><strong>القراءة العميقة للمستندات الكبيرة</strong> (50+ صفحة). يعمل <strong>من مصادرك المرفوعة فقط</strong>، وكل إجابة تربط بمصدرها.</p>
-</div>
-<div class="fragment">
-<ul>
-<li class="fragment">ارفع تقارير، وعرض، وسياسة، ومستندات إحاطة</li>
-<li class="fragment">اطرح الأسئلة؛ واحصل على إجابات <strong>باستشهادات</strong> إلى المقطع الدقيق</li>
-<li class="fragment">ولّد <strong>ملخّصًا صوتيًا (Audio Overview)</strong> لتستمع إليه في طريقك</li>
-</ul>
-</div>
-</section>
-<section id="الملخص-الصوتي-مادة-تعليمية" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">الملخّص الصوتي مادّة تعليمية</h2>
-<div class="card accent-teal" data-id="audio">
-<p>حوارٌ صوتي بين متحدّثين يشرح مصادرك. يصلح مراجعةً قبل المحاضرة، أو مادة إسناد لمن يتعلّم بالسمع.</p>
+<section id="السؤالان-مرة-أخرى" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">السؤالان، مرة أخرى</h2>
+<div class="card accent-teal" data-id="two">
+<p><strong>البقاء</strong>: أن تجد غدًا ما أُدخِل اليوم. و<strong>المشاركة</strong>: أن يُدخِل أكثر من واحد، ويرى الجميع الشيء نفسه.</p>
 </div>
 <div class="center muted">
-<p>لا يصلح بديلًا عن المحاضرة. المتحدّثان يُبسّطان، وقد يسقط منهما ما هو دقيق في ورقتك.</p>
+<p>نعم لأحدهما تعني تخزينًا. وهنا نبنيه.</p>
 </div>
 </section>
-<section id="يبني-الشرائح-أيضا" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">يبني الشرائح أيضًا</h2>
-<div class="card-dark center" data-id="slides" style="font-size: 1.1em;">
-<p>حوّل مصادرك إلى <strong>عرض تقديمي</strong> يستند إلى المستندات نفسها.</p>
+<section id="الجزء-الثالث-وحده-هو-الفرق" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">الجزء الثالث وحده هو الفرق</h2>
+<div class="flow">
+<div class="flow-step accent-teal">
+<p><span class="t">الواجهة</span> <span class="s">بنيتَها.</span></p>
 </div>
-<div class="fragment">
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="card accent-teal">
-<p><strong>عرض مفصّل</strong></p>
-<p>غنيّ بالنص، يقف بذاته. جيّد للقراءة أو النشرة.</p>
+<div class="flow-arrow">
+<p>←</p>
 </div>
-</div><div class="column" style="width:50%;">
-<div class="card accent-purple">
-<p><strong>شرائح المُقدِّم</strong></p>
-<p>نظيفة وبصرية. تسندك وأنت تتحدّث.</p>
+<div class="flow-step accent-purple">
+<p><span class="t">المنطق</span> <span class="s">بنيتَه.</span></p>
 </div>
-</div></div>
+<div class="flow-arrow">
+<p>←</p>
 </div>
-</section>
-<section id="توجيه-العرض-وتحريره" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">توجيه العرض وتحريره</h2>
-<ul>
-<li class="fragment">سمِّ جمهورك ومواضيعك قبل أن يولّد</li>
-<li class="fragment">صدِّر إلى <code>.pptx</code> أو PDF</li>
-<li class="fragment">عدِّل أي شريحة من زر «مراجعة»</li>
-<li class="fragment">التعديل لا يعود إلى المصادر</li>
-</ul>
-<div class="fragment">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>شرط واحد</strong></p>
-</div>
-<div class="callout-content">
-<p>تحتاج إلى <strong>مصدر واحد مرفوع على الأقل</strong> قبل أن يبني عرضًا.</p>
+<div class="flow-step accent-orange">
+<p><span class="t">التخزين</span> <span class="s">الناقص.</span> <span class="pill">اليوم</span></p>
 </div>
 </div>
-</div>
+<div class="center muted">
+<p>والثلاثة معًا هي <strong>الأداة المتكاملة (full-stack)</strong>.</p>
 </div>
 </section></section>
-<section id="الأداة-الصحيحة-للمهمة-الصحيحة" class="title-slide slide level1 center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">الأداة الصحيحة للمهمة الصحيحة</h1>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">الحاجة</th>
-<th style="text-align: left;">الأداة</th>
-<th style="text-align: left;">لماذا</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">ملفات عملك اليومي</td>
-<td style="text-align: left;"><strong>Cowork</strong></td>
-<td style="text-align: left;">مجلدك، وقواعدك</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">ملف PDF من 100 صفحة</td>
-<td style="text-align: left;"><strong>Gemini Notebook</strong></td>
-<td style="text-align: left;">يستند إلى مستنداتك فقط</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">ويب مباشر مع استشهادات</td>
-<td style="text-align: left;"><strong>البحث العميق (Deep Research)</strong></td>
-<td style="text-align: left;">لحظي وبحواشٍ</td>
-</tr>
-</tbody>
-</table>
-<div class="fragment">
-<div class="center muted" style="margin-top: 0.4em;">
-<p><em>البحث العميق: Perplexity أو ChatGPT أو Gemini.</em></p>
-</div>
-</div>
-</section>
-
 <section>
-<section id="تحقق-سريع" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
-<h1>تحقّق سريع</h1>
-<p>اختر الحركة الصحيحة</p>
+<section id="ثلاث-درجات-للتخزين" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #9B8EC0)">
+<h1>ثلاث درجات للتخزين</h1>
+<p>وأرخصها يكفي أكثر مما تظنّ</p>
 </section>
-<section id="اختبار" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">اختبار</h2>
-<p><strong>١.</strong> تحتاج إلى تلخيص خطة منتج <strong>سرّية غير معلَنة</strong> تراجعها.</p>
+<section id="من-الأرخص-إلى-الأغلى" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">من الأرخص إلى الأغلى</h2>
+<div class="flow ascend">
+<div class="flow-step accent-purple">
+<p><span class="t">ملفّ عندك</span> <span class="s">تفتحه أنت وحدك.</span></p>
+</div>
+<div class="flow-arrow">
+<p>←</p>
+</div>
+<div class="flow-step accent-teal">
+<p><span class="t">جدول تملكه</span> <span class="s">تكتب فيه الصفحة، ويقرؤه من تأذن له.</span></p>
+</div>
+<div class="flow-arrow">
+<p>←</p>
+</div>
+<div class="flow-step accent-orange">
+<p><span class="t">قاعدة بيانات</span> <span class="s">على خادم، بحساب وفاتورة.</span></p>
+</div>
+</div>
+<div class="flow-axis">
+<p>كلّما صعدت: قدرة أكثر، وكلفة ومسؤولية أكثر.</p>
+</div>
+</section>
+<section id="ابدأ-من-الوسطى" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">ابدأ من الوسطى</h2>
+<div class="card accent-teal" data-id="cheap">
+<p>صفحة واحدة تكتب في <strong>جدول تملكه أنت</strong>. البقاء حاصل، والمشاركة حاصلة، وبلا خادم ولا فاتورة ولا مسؤول جديد.</p>
+</div>
+<div class="center muted">
+<p>وهذا يكفي أكثر ما يُطلب في القسم.</p>
+</div>
+</section>
+<section id="وماذا-تشتري-بالثالثة" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">وماذا تشتري بالثالثة</h2>
+<ul>
+<li class="fragment">حساب ودخول لكل مستخدم</li>
+<li class="fragment">صلاحية مختلفة لكل دور</li>
+<li class="fragment">أعداد كبيرة في وقت واحد</li>
+</ul>
+<div class="center muted">
+<p>ثلاثتها حقيقية. ولا تُشترى قبل أن تُحتاج.</p>
+</div>
+</section>
+<section id="وما-يأتي-معها" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">وما يأتي معها</h2>
+<div class="card accent-orange" data-id="cost">
+<p>الخادم يعني حسابًا، وفاتورة شهرية، ونسخة احتياطية، ومسؤولًا عنها بعد سنة.</p>
+</div>
+<div class="center muted">
+<p>اسأل عن المسؤول قبل أن تسأل عن الأداة.</p>
+</div>
+</section></section>
+<section>
+<section id="شاهده-يعمل" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #00C9A7)">
+<h1>شاهِده يعمل</h1>
+<p>استمارة تُدخِل، وصفحة تعرض</p>
+</section>
+<section id="عرض-إدخال-من-جهازين" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">عرض: إدخال من جهازين</h2>
+<div class="card-dark center">
+<p>«ابنِ صفحة واحدة فيها استمارة قصيرة. اكتب كل إدخال في الجدول الذي سأعطيك رابطه، ثم اعرض تحتها كل ما أُدخِل حتى الآن، مرتّبًا بالأحدث. وأرِني أين تُكتب البيانات قبل أن تشغّلها.»</p>
+</div>
+<div class="center muted">
+<p>نشغّلها على الشاشة، ونُدخِل من جهازين في وقت واحد.</p>
+</div>
+</section>
+<section id="ما-تراقبه" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">ما تراقبه</h2>
+<ul>
+<li class="fragment">الإدخال يصل، ويظهر عند الآخر</li>
+<li class="fragment">أغلِق الصفحة وافتحها: يبقى</li>
+<li class="fragment">امسح سطرًا من الجدول: يختفي</li>
+</ul>
+<div class="center muted">
+<p>السطر الأخير هو الدرس. البيانات في الجدول، لا في الصفحة.</p>
+</div>
+</section></section>
+<section>
+<section id="قبل-أن-تفتحها-لأحد" class="title-slide slide level1 sdaia-dark center" data-background-gradient="linear-gradient(135deg, #1C355E, #FF7A5C)">
+<h1>قبل أن تفتحها لأحد</h1>
+
+</section>
+<section id="ما-الذي-صار-مختلفا" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">ما الذي صار مختلفًا</h2>
+<div class="card accent-orange" data-id="news">
+<p>الصفحة كانت تُقرأ. وصارت <strong>تجمع</strong>. وما يجمعه غيرك أصعب في التراجع عنه مما تكتبه أنت.</p>
+</div>
+<div class="center muted">
+<p>فاتّسع <strong>اختبار الجريدة</strong> مرة أخرى: صار يحرس ما يدخل، لا ما تلصقه وحده.</p>
+</div>
+</section>
+<section id="ثلاثة-لا-تجمع-هكذا" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">ثلاثة لا تُجمَع هكذا</h2>
+<ul>
+<li class="fragment">بيانات شخصية عن مستفيدين</li>
+<li class="fragment">ما يربط بنظام رسمي قائم</li>
+<li class="fragment">ما يُبنى عليه قرار لا يُراجَع</li>
+</ul>
+<div class="center muted">
+<p>الثلاثة ممكنة تقنيًا. والمسألة ليست القدرة.</p>
+</div>
+</section>
+<section id="اختبر-نفسك" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">اختبر نفسك</h2>
+<div class="qbox">
+<div class="qtitle">
+<p>تريد استمارة يملؤها زملاؤك في القسم، وتقرأ نتائجها في آخر الفصل. ما أقلّ ما تحتاجه؟</p>
+</div>
+<p><strong>١.</strong> خادم وقاعدة بيانات وحسابات دخول.</p>
+<p><strong>٢.</strong> صفحة تكتب في جدول تملكه.</p>
+</div>
 <div class="fragment">
-<div class="fragment fade-in">
-<div class="card accent-orange">
-<p><strong>اختبار الجريدة أولًا.</strong> هذا عمل سرّي غير معلَن، فتحقّق من القواعد قبل رفعه في أي مكان.</p>
-</div>
+<div class="fill-orange">
+<p><strong>١.</strong> كلها ممكنة، ولا واحدة منها مطلوبة هنا.</p>
 </div>
 </div>
 <div class="fragment">
-<p><strong>٢.</strong> تحتاج إلى إحصاءات السوق <strong>لليوم</strong> من الويب.</p>
-</div>
-<div class="fragment">
-<div class="fragment fade-in">
-<div class="card accent-teal">
-<p><strong>البحث العميق</strong>، للويب المباشر مع استشهادات. Gemini Notebook يقرأ مرفوعاتك فقط.</p>
-</div>
+<div class="fill-teal">
+<p><strong>٢.</strong> نعم. البقاء والمشاركة حاصلان، والمسؤولية تبقى صغيرة.</p>
 </div>
 </div>
 </section>
 <section id="أهم-النقاط" class="slide level2 sdaia-dark" data-background-color="#1C355E">
 <h2>أهم النقاط</h2>
 <ol type="1">
-<li class="fragment">ارفع المصادر أولًا، ثم قيِّده بـ«هذه فقط».</li>
-<li class="fragment">الاستشهاد مؤشّر. انقر عليه وتأكّد من الادّعاء.</li>
-<li class="fragment"><strong>Gemini Notebook</strong> يقرأ بعمق ويبني عروضًا، وتصدّرها <code>.pptx</code>.</li>
-<li class="fragment">طابِق الأداة مع المهمة: Cowork أو Gemini Notebook أو البحث العميق.</li>
+<li class="fragment">التخزين هو الجزء الثالث، وهو وحده الفرق.</li>
+<li class="fragment">أرخصه جدول تملكه أنت، وهو يكفي غالبًا.</li>
+<li class="fragment">الخادم يُشترى حين تُحتاج الحسابات والصلاحيات.</li>
+<li class="fragment">ومعه فاتورة، ومسؤول بعد سنة.</li>
+<li class="fragment">الصفحة صارت تجمع، فاختبار الجريدة يشمل ما يدخل.</li>
 </ol>
+</section>
+<section id="حدود-ما-عرض" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">حدود ما عُرِض</h2>
+<div class="card accent-navy tight" data-id="limits">
+<p>أسماء الأدوات هنا <strong>أمثلة للتوضيح، لا توصية ولا اعتماد رسمي</strong>. والقدرات والواجهات والحدود المجانية تتغيّر باستمرار، فاقرأها من الشاشة وقت الاستخدام.</p>
+</div>
+<div class="center muted">
+<p>ويبقى المرجع سياسة جهتك، وتصنيف بياناتها، وبيئتها التقنية المعتمدة.</p>
+</div>
 
 
 </section></section>

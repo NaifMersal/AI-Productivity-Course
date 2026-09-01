@@ -1,0 +1,76 @@
+.quarto-title-block {
+  display: none;
+}
+
+main.content {
+  max-width: 980px;
+}
+
+main.content > p,
+main.content > ul {
+  max-width: 72ch;
+}
+
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block: 1.5rem 2rem;
+}
+
+.workshop-card {
+  padding: 1.1rem 1.2rem;
+  border: 1px solid #d9e0e7;
+  border-radius: 0.8rem;
+  background: #fff;
+}
+
+.workshop-card h2,
+.workshop-card h3 {
+  margin-block: 0 0.45rem;
+  font-size: 1.15rem;
+}
+
+.workshop-card p {
+  margin-block: 0.35rem;
+}
+
+.workshop-card p:last-child {
+  margin-block-start: 0.85rem;
+}
+
+details {
+  margin-block: 1rem;
+  padding: 0.25rem 1rem;
+  border: 1px solid #d9e0e7;
+  border-radius: 0.65rem;
+  background: #fff;
+}
+
+details summary {
+  cursor: pointer;
+  padding-block: 0.8rem;
+  font-weight: 700;
+}
+
+details[open] summary {
+  border-block-end: 1px solid #e8edf1;
+  margin-block-end: 1rem;
+}
+
+table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  font-size: 0.94rem;
+}
+
+@media (max-width: 700px) {
+  .workshop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 0.86rem;
+  }
+}

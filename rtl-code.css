@@ -1,0 +1,36 @@
+/* Inline code and code blocks stay LTR on RTL `format: html` pages.
+
+   This is the same fix `slides_template/assets/sdaia.scss` applies to the
+   reveal.js decks, repeated here because that stylesheet is loaded only by
+   `format: revealjs`. Every `format: html` page in this repo is `dir: rtl`
+   and gets no such rule by default.
+
+   `unicode-bidi: isolate` is the load-bearing half. `direction: ltr` alone
+   governs the run's INTERNAL order; the span still participates in the
+   surrounding Arabic paragraph's bidi run, so punctuation at its EDGES is
+   neutral and gets resolved by the paragraph, not by the span. A path or a
+   slash-command is almost nothing but edge punctuation, so without isolation
+   `~/.hermes/skills/` renders as `/skills/.hermes/~` and
+   `/plugin marketplace add …` swings its leading slash to the wrong end.
+   Both were observed in this repo, in `exercises/gov5_worksheet.qmd` and
+   `index.qmd` respectively.
+
+   Load this from any `format: html` page that prints a command or a path:
+
+     format:
+       html:
+         css: rtl-code.css          # or ../rtl-code.css from exercises/
+
+   Pages that also use `landing.css` take a list: `css: [landing.css, rtl-code.css]`. */
+
+html[dir="rtl"] code,
+html[dir="rtl"] pre,
+html[dir="rtl"] pre code {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+html[dir="rtl"] pre,
+html[dir="rtl"] pre code {
+  text-align: left;
+}
